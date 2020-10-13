@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Spring;
 use Illuminate\Http\Request;
+use function Psy\debug;
+use Illuminate\Support\Facades\Auth;
 
 class SpringController extends Controller
 {
@@ -14,9 +16,9 @@ class SpringController extends Controller
      */
     public function index()
     {
-        $springs = Spring::latest()->paginate(5);
-        return view('springs.index',compact('springs'))
-            ->with('i', (request()->input('page', 1) - 1) * 5);
+        $springs = Spring::all();
+        return view('springs.index',compact('springs'));
+            //->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
     /**
@@ -38,11 +40,21 @@ class SpringController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'title' => 'required',
+            'latitude' => 'required',
+            'longitude' => 'required',
+            'description' => 'required'
         ]);
-        //$references = json_encode($request);
 
+        $request['user_id'] = Auth::id();
         Spring::create($request->all());
+        // save references
+        //$reference = new Reference();
+        //Reference::create($request);
+        //print_r($request['spring_references']);
+        //foreach ($request['spring_references'] as $reference_info) {
+            //SpringReference::create($reference_info);
+        //}
+
         return redirect()->route('springs.index')
             ->with('success','Spring created successfully.');
     }
@@ -79,7 +91,9 @@ class SpringController extends Controller
     public function update(Request $request, Spring $spring)
     {
         $request->validate([
-            'title' => 'required',
+            'latitude' => 'required',
+            'longitude' => 'required',
+            'description' => 'required',
         ]);
         $spring->update($request->all());
         return redirect()->route('springs.index')

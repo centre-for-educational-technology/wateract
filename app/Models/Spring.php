@@ -10,6 +10,18 @@ class Spring extends Model
     use HasFactory;
 
     protected $fillable = [
-        'title', 'kkr_code', 'latitude', 'longitude', 'county', 'municipality', 'description', 'folklore'
+        'user_id', 'title', 'code', 'kkr_code', 'latitude', 'longitude', 'county', 'place', 'description', 'folklore', 'classification', 'groundwater_body', 'geology', 'ownership', 'status'
     ];
+
+    public function references()
+    {
+        return $this->hasMany('App\Models\SpringReference');
+    }
+
+    public function observationData()
+    {
+        return $this->hasMany('App\Models\SpringObservationData');
+    }
+
+
 }

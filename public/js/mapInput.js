@@ -75,14 +75,14 @@ function geocodeLatLng(geocoder, latitude, longitude) {
                 if (results[0]) {
 
                     let address_components = results[0].address_components;
-                    console.log(address_components);
+                    //console.log(address_components);
 
                     map.setZoom(12);
                     marker = new google.maps.Marker({
                         position: latlng,
                         map: map,
                     });
-                    console.log(results[0]);
+                    //console.log(results[0]);
 
                     let address = getAddressObject(address_components);
                     document.getElementById("county").value = address.county;

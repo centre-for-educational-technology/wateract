@@ -69,23 +69,6 @@ CREATE TABLE `sessions` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `springs` (
-  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `kkr_code` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `latitude` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `longitude` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `county` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `municipality` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `description` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `folklore` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `users` (
   `id` bigint unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -116,6 +99,3 @@ INSERT INTO `migrations` VALUES (3,'2014_10_12_200000_add_two_factor_columns_to_
 INSERT INTO `migrations` VALUES (4,'2019_08_19_000000_create_failed_jobs_table',1);
 INSERT INTO `migrations` VALUES (5,'2019_12_14_000001_create_personal_access_tokens_table',1);
 INSERT INTO `migrations` VALUES (6,'2020_09_23_123829_create_sessions_table',1);
-INSERT INTO `migrations` VALUES (7,'2020_09_24_074006_create_springs_table',1);
-INSERT INTO `migrations` VALUES (8,'2020_09_29_115811_change_springs_table',2);
-INSERT INTO `migrations` VALUES (9,'2020_09_29_120813_change_springs_table',3);

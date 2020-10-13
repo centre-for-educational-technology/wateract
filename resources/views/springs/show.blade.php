@@ -5,7 +5,11 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div>
-                <h2>{{$spring->title}}</h2>
+                @isset($spring->title)
+                    <h2>{{$spring->title}}</h2>
+                @else
+                    <h2>{{ __('springs.unnamed') }}</h2>
+                @endisset
             </div>
         </div>
     </div>
@@ -48,12 +52,14 @@
                     <div>{{$spring->county}}</div>
                 </div>
             </div>
-            <div class="pull-right col-xs-6 col-sm-6 col-md-6">
-                <div class="form-group">
-                    <strong>{{ __('Municipality') }}</strong>
-                    <div>{{$spring->municipality}}</div>
+            @isset($spring->settlement)
+                <div class="pull-right col-xs-6 col-sm-6 col-md-6">
+                    <div class="form-group">
+                        <strong>{{ __('Settlement') }}</strong>
+                        <div>{{$spring->settlement}}</div>
+                    </div>
                 </div>
-            </div>
+            @endisset
         </div>
 
         <!--<div class="form-row">
@@ -91,6 +97,10 @@
                 </div>
             </div>
         </div>
+
+
+
+
 
 @endsection
 

@@ -1,5 +1,6 @@
 @extends('springs.layout')
 
+@auth
 @section('content')
 
     <div class="row">
@@ -12,7 +13,6 @@
 
     @if ($errors->any())
         <div class="alert alert-danger">
-            <strong>Whoops!</strong> There were some problems with your input.<br><br>
             <ul>
                 @foreach ($errors->all() as $error)
                     <li>{{ $error }}</li>
@@ -30,6 +30,9 @@
                 <div class="form-group">
                     <strong>{{ __('Title') }}</strong>
                     <input type="text" name="title" class="form-control" placeholder="" value="{{$spring->title}}">
+                    <small id="title_help_block" class="form-text text-muted">
+                        {{ __('springs.title_help_text') }}
+                    </small>
                 </div>
             </div>
         </div>
@@ -56,10 +59,16 @@
             <div class="pull-left col-xs-6 col-sm-6 col-md-6">
                 <strong>{{ __('Latitude') }}</strong>
                 <input type="text" name="latitude" class="form-control" placeholder="Latitude" id="latitude" value="{{$spring->latitude}}">
+                <small id="latitude_help_block" class="form-text text-muted">
+                    {{ __('springs.latitude_help_text') }}
+                </small>
             </div>
             <div class="pull-right col-xs-6 col-sm-6 col-md-6">
                 <strong>{{ __('Longitude') }}</strong>
                 <input type="text" name="longitude" class="form-control" placeholder="Longitude" id="longitude" value="{{$spring->longitude}}">
+                <small id="longitude_help_block" class="form-text text-muted">
+                    {{ __('springs.longitude_help_text') }}
+                </small>
             </div>
         </div>
 
@@ -72,21 +81,26 @@
             </div>
             <div class="pull-right col-xs-6 col-sm-6 col-md-6">
                 <div class="form-group">
-                    <strong>{{ __('Municipality') }}</strong>
-                    <input type="text" name="municipality" class="form-control" placeholder="Municipality" id="municipality" value="{{$spring->municipality}}">
+                    <strong>{{ __('springs.settlement') }}</strong>
+                    <input type="text" name="settlement" class="form-control" placeholder="Settlement" id="settlement" value="{{$spring->municipality}}">
                 </div>
             </div>
         </div>
 
-        <div class="form-row">
-            <div class="col-xs-12 col-sm-12 col-md-12">PHOTOS</div>
-            <div class="col-xs-12 col-sm-12 col-md-12">REFERENCES</div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>{{__('springs.photos')}}</strong><br />
+                <strong>{{__('springs.references')}}</strong>
+            </div>
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>{{ __('Description of natural conditions') }}</strong>
                 <textarea class="form-control" style="height:150px" name="description" placeholder="Description">{{$spring->description}}</textarea>
+                <small id="description_help_block" class="form-text text-muted">
+                    {{ __('springs.description_help_text') }}
+                </small>
             </div>
         </div>
 
@@ -94,6 +108,77 @@
             <div class="form-group">
                 <strong>{{ __('Folklore') }}</strong>
                 <textarea class="form-control" style="height:150px" name="folklore" placeholder="Folklore">{{$spring->folklore}}</textarea>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Link with other databases</strong>
+            </div>
+        </div>
+
+        <div class="form-row col-xs-12 col-sm-12 col-md-12">
+            <div class="pull-left col-xs-6 col-sm-6 col-md-6">
+                <strong>{{ __('springs.spring_classification') }}</strong>
+                <select name="classification" class="form-control">
+                    <option value="rheocrene"
+                            @if($spring->classification == 'rheocrene') selected @endif>
+                        {{ __('springs.rheocrene') }}</option>
+                    <option value="hillslope_spring"
+                            @if($spring->classification == 'hillslope_spring') selected @endif>
+                        {{ __('springs.hillslope_spring') }}</option>
+                    <option value="limnocrene"
+                            @if($spring->classification == 'limnocrene') selected @endif>
+                        {{ __('springs.limnocrene') }}</option>
+                    <option value="helocrene"
+                            @if($spring->classification == 'helocrene') selected @endif>
+                        {{ __('springs.helocrene') }}</option>
+                    <option value="cave_spring"
+                            @if($spring->classification == 'cave_spring') selected @endif>
+                        {{ __('springs.cave_spring') }}</option>
+                    <option value="hypocrene"
+                            @if($spring->classification == 'hypocrene') selected @endif>
+                        {{ __('springs.hypocrene') }}</option>
+                    <option value="captured_spring"
+                            @if($spring->classification == 'captured_spring') selected @endif>
+                        {{ __('springs.captured_spring') }}</option>
+                    <option value="karst_spring"
+                            @if($spring->classification == 'karst_spring') selected @endif>
+                        {{ __('springs.karst_spring') }}</option>
+                </select>
+            </div>
+            <div class="pull-right col-xs-6 col-sm-6 col-md-6">
+                <strong>{{ __('springs.groundwater_body') }}</strong>
+                <input type="text" name="groundwater_body" class="form-control" placeholder="" >
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>{{ __('springs.geology') }}</strong>
+                <textarea class="form-control" style="height:150px" name="geology" placeholder=""></textarea>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="form-group">
+                    <strong>{{ __('springs.ownership') }}</strong>
+                    <select name="ownership" class="form-control">
+                        <option value="private_property"
+                                @if($spring->ownership == 'private_property') selected @endif>
+                            {{ __('springs.private_property') }}
+                        </option>
+                        <option value="state_property"
+                                @if($spring->ownership == 'state_property') selected @endif>
+                            {{ __('springs.state_property') }}
+                        </option>
+                        <option value="municipal_property"
+                                @if($spring->ownership == 'municipal_property') selected @endif>
+                            {{ __('springs.municipal_property') }}
+                        </option>
+                    </select>
+                </div>
             </div>
         </div>
 
@@ -116,17 +201,6 @@
          image upload ------------- -->
 
 
-
-
-
-
-
-    <!--<div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                <button type="submit" class="btn btn-primary">{{ __('Add') }}</button>
-            </div>
-            <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('springs.index') }}"> Back</a>
-            </div>-->
         <div>
             <div class="row">
                 <div class="col-lg-12 margin-tb">
@@ -164,7 +238,8 @@
 
 @section('scripts')
     @parent
-    <script src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAPS_API_KEY') }}&libraries=places&callback=initMap" async defer></script>
     <script src="/js/mapInput.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAPS_API_KEY') }}&libraries=places&callback=initMap" async defer></script>
 @endsection
 
+@endauth
