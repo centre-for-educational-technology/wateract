@@ -88,9 +88,14 @@
         <div>
             <div class="row">
                 <div class="col-lg-12 margin-tb">
-                    <!--<div class="pull-left">
-                        <button type="submit" class="btn btn-primary">{{ __('Edit') }}</button>
-                    </div>-->
+                    @auth
+                        <form action="{{ route('springs.destroy',$spring->id) }}" method="POST">
+                            <a class="btn btn-primary" href="{{ route('springs.edit',$spring->id) }}">{{ __('springs.edit') }}</a>
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-danger">{{ __('springs.delete') }}</button>
+                        </form>
+                    @endauth
                     <div class="pull-right">
                         <a class="btn btn-primary" href="{{ route('springs.index') }}"> Back</a>
                     </div>

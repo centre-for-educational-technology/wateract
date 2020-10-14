@@ -11,6 +11,7 @@ return [
 |
 */
 
+    'wateract' => 'WaterAct',
     'add_new_spring' => 'Add New Spring',
     'title' => 'Title',
     'title_help_text' => 'Enter the known name (if it excist) of the spring. You can enter several different name formats.',
@@ -45,6 +46,8 @@ return [
     'municipal_property' => 'Municipal property',
     'add' => 'Add',
     'back' => 'Back',
+    'edit' => 'Edit',
+    'delete' => 'Delete',
 
     'add_observation_data' => 'Add Observation Data',
     'measurement_time' => 'Time of measurement',
