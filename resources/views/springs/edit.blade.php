@@ -82,7 +82,7 @@
             <div class="pull-right col-xs-6 col-sm-6 col-md-6">
                 <div class="form-group">
                     <strong>{{ __('springs.settlement') }}</strong>
-                    <input type="text" name="settlement" class="form-control" placeholder="Settlement" id="settlement" value="{{$spring->municipality}}">
+                    <input type="text" name="settlement" class="form-control" placeholder="Settlement" id="settlement" value="{{$spring->settlement}}">
                 </div>
             </div>
         </div>
@@ -149,14 +149,14 @@
             </div>
             <div class="pull-right col-xs-6 col-sm-6 col-md-6">
                 <strong>{{ __('springs.groundwater_body') }}</strong>
-                <input type="text" name="groundwater_body" class="form-control" placeholder="" >
+                <input type="text" name="groundwater_body" class="form-control" placeholder="" value="{{$spring->groundwater_body}}">
             </div>
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>{{ __('springs.geology') }}</strong>
-                <textarea class="form-control" style="height:150px" name="geology" placeholder=""></textarea>
+                <textarea class="form-control" style="height:150px" name="geology" placeholder="">{{$spring->geology}}</textarea>
             </div>
         </div>
 

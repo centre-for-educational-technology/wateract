@@ -2,106 +2,136 @@
 
 @section('content')
 
+    @if ($message = Session::get('success'))
+        <div class="alert alert-success">
+            <p>{{ $message }}</p>
+        </div>
+    @endif
+
     <div class="row">
-        <div class="col-lg-12 margin-tb">
-            <div>
+        <div class="pull-left col-lg-9 margin-tb">
                 @isset($spring->title)
-                    <h2>{{$spring->title}}</h2>
+                    <h1>{{$spring->title}}</h1>
                 @else
-                    <h2>{{ __('springs.unnamed') }}</h2>
+                    <h1>{{ __('springs.unnamed') }}</h1>
+                @endisset
+        </div>
+
+        <div class="pull-right col-lg-3 margin-tb">
+            @auth
+                <form action="{{ route('springs.destroy',$spring->id) }}" method="POST">
+                    <a class="btn btn-primary" href="{{ route('springs.edit',$spring->id) }}">{{ __('springs.edit') }}</a>
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-danger">{{ __('springs.delete') }}</button>
+                </form>
+            @endauth
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div id="map-container" style="width:100%;height:400px;">
+                <div style="width: 100%; height: 100%" id="map"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="pull-left col-xs-9 col-sm-9 col-md-9">
+                @isset($spring->description)
+                    <div class="row margin-tb">
+                        <div class="form-group">
+                            <h4>{{ __('Description of natural conditions') }}</h4>
+                            <div>{{$spring->description}}</div>
+                        </div>
+                    </div>
+                @endisset
+
+                @isset($spring->folklore)
+                    <div class="row margin-tb">
+                        <div class="form-group">
+                            <h4>{{ __('Folklore') }}</h4>
+                            <div class="margin-tb">{{$spring->folklore}}</div>
+                        </div>
+                    </div>
+                @endisset
+
+                @isset($spring->geology)
+                    <div class="row margin-tb">
+                        <div class="form-group">
+                            <h4>{{ __('springs.geology') }}</h4>
+                            <div class="margin-tb">{{$spring->geology}}</div>
+                        </div>
+                    </div>
+                @endisset
+            </div>
+
+            <div class="pull-right col-xs-3 col-sm-3 col-md-3">
+
+                <div class="row">
+                    <strong>{{ __('springs.location') }}</strong>
+                    <div>{{$spring->county}}</div>
+
+                    @isset($spring->settlement)
+                        <div>{{$spring->settlement}}</div>
+                    @endisset
+                </div>
+
+                <div class="row">
+                    <div>{{$spring->latitude}} {{$spring->longitude}}</div>
+                </div>
+
+                @isset($spring->kkr_code)
+                    <div class="row">
+                        <div class="group">
+                            <strong>{{ __('KKR Code') }}</strong>
+                            <div>{{$spring->kkr_code}}</div>
+                        </div>
+                    </div>
+                @endisset
+
+                @isset($spring->classification)
+                    <div class="row">
+                        <strong>{{ __('springs.spring_classification') }}</strong>
+                        <div>{{$spring->classification}}</div>
+                    </div>
+                @endisset
+
+                @isset($spring->groundwater_body)
+                    <div class="row">
+                        <strong>{{ __('springs.groundwater_body') }}</strong>
+                        <div>{{$spring->groundwater_body}}</div>
+                    </div>
+                @endisset
+
+                @isset($spring->ownership)
+                    <div class="row">
+                        <strong>{{ __('springs.ownership') }}</strong>
+                        <div>{{$spring->ownership}}</div>
+                    </div>
+                @endisset
+
+                @isset($spring->status)
+                    <div class="row">
+                        <strong>{{ __('springs.status') }}</strong>
+                        <div>{{$spring->status}}</div>
+                    </div>
                 @endisset
             </div>
         </div>
     </div>
 
-    @isset($spring->kkr_code)
+    <div>
         <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-6">
-                <div class="group">
-                    <strong>{{ __('KKR Code') }}</strong>
-                    <div>{{$spring->kkr_code}}</div>
+            <div class="col-lg-12 margin-tb">
+                <div class="pull-right">
+                    <a class="btn btn-primary" href="{{ route('springs.index') }}"> Back</a>
                 </div>
             </div>
         </div>
-    @endisset
-
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12">
-                <strong>{{  __('Location') }}</strong>
-                <div id="address-map-container" class="col-xs-12 col-sm-12 col-md-12" style="width:100%;height:400px; ">
-                    <div style="width: 100%; height: 100%" id="address-map"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="form-row col-xs-12 col-sm-12 col-md-12">
-            <div class="pull-left col-xs-6 col-sm-6 col-md-6">
-                <strong>{{ __('Latitude') }}</strong>
-                <div>{{$spring->latitude}}</div>
-            </div>
-            <div class="pull-right col-xs-6 col-sm-6 col-md-6">
-                <strong>{{ __('Longitude') }}</strong>
-                <div>{{$spring->longitude}}</div>
-            </div>
-        </div>
-
-        <div class="form-row col-xs-12 col-sm-12 col-md-12">
-            <div class="pull-left col-xs-6 col-sm-6 col-md-6">
-                <div class="form-group">
-                    <strong>{{ __('County') }}</strong>
-                    <div>{{$spring->county}}</div>
-                </div>
-            </div>
-            @isset($spring->settlement)
-                <div class="pull-right col-xs-6 col-sm-6 col-md-6">
-                    <div class="form-group">
-                        <strong>{{ __('Settlement') }}</strong>
-                        <div>{{$spring->settlement}}</div>
-                    </div>
-                </div>
-            @endisset
-        </div>
-
-        <!--<div class="form-row">
-            <div class="col-xs-12 col-sm-12 col-md-12">PHOTOS</div>
-            <div class="col-xs-12 col-sm-12 col-md-12">REFERENCES</div>
-        </div>-->
-
-    @isset($spring->description)
-        <div class="row col-xs-12 col-sm-12 col-md-12">
-            <div class="group">
-                <strong>{{ __('Description of natural conditions') }}</strong>
-                <div>{{$spring->description}}</div>
-            </div>
-        </div>
-    @endisset
-
-    @isset($spring->folklore)
-        <div class="row col-xs-12 col-sm-12 col-md-12">
-            <div class="group">
-                <strong>{{ __('Folklore') }}</strong>
-                <div>{{$spring->folklore}}</div>
-            </div>
-        </div>
-    @endisset
-
-        <div>
-            <div class="row">
-                <div class="col-lg-12 margin-tb">
-                    @auth
-                        <form action="{{ route('springs.destroy',$spring->id) }}" method="POST">
-                            <a class="btn btn-primary" href="{{ route('springs.edit',$spring->id) }}">{{ __('springs.edit') }}</a>
-                            @csrf
-                            @method('DELETE')
-                            <button type="submit" class="btn btn-danger">{{ __('springs.delete') }}</button>
-                        </form>
-                    @endauth
-                    <div class="pull-right">
-                        <a class="btn btn-primary" href="{{ route('springs.index') }}"> Back</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
 
 
 
@@ -116,7 +146,7 @@
         function initMap() {
             var latitude = {{$spring->latitude}};
             var longitude = {{$spring->longitude}};
-            map = new google.maps.Map(document.getElementById("address-map"), {
+            map = new google.maps.Map(document.getElementById("map"), {
                 center: {lat: latitude, lng: longitude},
                 zoom: 12,
                 mapTypeId: 'terrain'

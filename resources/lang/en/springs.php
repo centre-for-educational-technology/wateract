@@ -44,6 +44,7 @@ return [
     'private_property' => 'Private property',
     'state_property' => 'State property',
     'municipal_property' => 'Municipal property',
+    'status' => 'Status',
     'add' => 'Add',
     'back' => 'Back',
     'edit' => 'Edit',

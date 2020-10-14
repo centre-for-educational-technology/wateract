@@ -10,7 +10,7 @@ class Spring extends Model
     use HasFactory;
 
     protected $fillable = [
-        'user_id', 'title', 'code', 'kkr_code', 'latitude', 'longitude', 'county', 'place', 'description', 'folklore', 'classification', 'groundwater_body', 'geology', 'ownership', 'status'
+        'user_id', 'title', 'code', 'kkr_code', 'latitude', 'longitude', 'county', 'settlement', 'description', 'folklore', 'classification', 'groundwater_body', 'geology', 'ownership', 'status'
     ];
 
     public function references()

@@ -96,7 +96,7 @@ class SpringController extends Controller
             'description' => 'required',
         ]);
         $spring->update($request->all());
-        return redirect()->route('springs.index')
+        return redirect()->route('springs.show', compact('spring'))
             ->with('success','Spring updated successfully.');
     }
 
