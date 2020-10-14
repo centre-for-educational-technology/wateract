@@ -13,7 +13,7 @@ return [
 
     'wateract' => 'WaterAct',
     'add_new_spring' => 'Add New Spring',
-    'title' => 'Title',
+    'title' => 'Name',
     'title_help_text' => 'Enter the known name (if it excist) of the spring. You can enter several different name formats.',
     'unnamed' => 'Unnamed',
     'kkr_code' => 'KKR Code',

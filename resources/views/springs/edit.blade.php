@@ -28,7 +28,7 @@
         <div class="form-row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>{{ __('Title') }}</strong>
+                    <strong>{{ __('springs.title') }}</strong>
                     <input type="text" name="title" class="form-control" placeholder="" value="{{$spring->title}}">
                     <small id="title_help_block" class="form-text text-muted">
                         {{ __('springs.title_help_text') }}
