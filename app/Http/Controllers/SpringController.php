@@ -6,6 +6,7 @@ use App\Models\Spring;
 use Illuminate\Http\Request;
 use function Psy\debug;
 use Illuminate\Support\Facades\Auth;
+use App\Models\SpringReference;
 
 class SpringController extends Controller
 {
@@ -46,14 +47,24 @@ class SpringController extends Controller
         ]);
 
         $request['user_id'] = Auth::id();
-        Spring::create($request->all());
+        $spring = Spring::create($request->all());
         // save references
         //$reference = new Reference();
         //Reference::create($request);
         //print_r($request['spring_references']);
-        //foreach ($request['spring_references'] as $reference_info) {
-            //SpringReference::create($reference_info);
-        //}
+        //var_dump($request['spring_references']);exit;
+        foreach ($request['spring_references'] as $reference_info) {
+            //var_dump($reference_info);exit;
+            $spring_reference = new SpringReference();
+            if ($reference_info['url']) {
+                $spring_reference->spring_id = $spring->id;
+                $spring_reference->url = $reference_info['url'];
+                if ($reference_info['url_title']) {
+                    $spring_reference->url_title = $reference_info['url_title'];
+                }
+                $spring_reference->save();
+            }
+        }
 
         return redirect()->route('springs.index')
             ->with('success','Spring created successfully.');
@@ -96,6 +107,33 @@ class SpringController extends Controller
             'description' => 'required',
         ]);
         $spring->update($request->all());
+
+        foreach ($request['spring_references'] as $reference_info) {
+            if (isset($reference_info['id'])) {
+                //$spring_reference = SpringReference::where('id' , '=' , $reference_info['id'] )->get();
+                $spring_reference = SpringReference::find($reference_info['id']);
+                if ($reference_info['url']) {
+                    $spring_reference->url = $reference_info['url'];
+                    if ($reference_info['url_title']) {
+                        $spring_reference->url_title = $reference_info['url_title'];
+                    }
+                    $spring_reference->save();
+                }
+            } else {
+                //var_dump($reference_info);exit;
+                $spring_reference = new SpringReference();
+                if ($reference_info['url']) {
+                    $spring_reference->spring_id = $spring->id;
+                    $spring_reference->url = $reference_info['url'];
+                    if ($reference_info['url_title']) {
+                        $spring_reference->url_title = $reference_info['url_title'];
+                    }
+                    $spring_reference->save();
+                }
+            }
+
+        }
+
         return redirect()->route('springs.show', compact('spring'))
             ->with('success','Spring updated successfully.');
     }
@@ -114,4 +152,5 @@ class SpringController extends Controller
         return redirect()->route('springs.index')
             ->with('success', 'Spring deleted successfully');
     }
+
 }

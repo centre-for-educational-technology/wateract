@@ -66,6 +66,20 @@
                         </div>
                     </div>
                 @endisset
+
+                    @if ( count($spring->references)>0 )
+                        <div class="row margin-tb">
+                            <div class="form-group">
+                                <h4>{{__('springs.references')}}</h4>
+                                @foreach ($spring->references as $spring_reference)
+                                    <div class="form-group">
+                                        <a href="{{ $spring_reference->url }}" target="_blank">{{ $spring_reference->url_title }}</a>
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>
+                    @endif
+
             </div>
 
             <div class="pull-right col-xs-3 col-sm-3 col-md-3">

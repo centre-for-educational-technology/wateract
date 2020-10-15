@@ -28,7 +28,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>{{ __('springs.title') }}</strong>
-                    <input type="text" name="title" class="form-control" placeholder="">
+                    <input type="text" name="title" class="form-control" placeholder="" value="{{old('title')}}">
                     <small id="title_help_block" class="form-text text-muted">
                         {{ __('springs.title_help_text') }}
                     </small>
@@ -40,7 +40,7 @@
             <div class="col-xs-6 col-sm-6 col-md-6">
                 <div class="form-group">
                     <strong>{{ __('springs.kkr_code') }}</strong>
-                    <input type="text" name="kkr_code" class="form-control" placeholder="VEE2096530">
+                    <input type="text" name="kkr_code" class="form-control" placeholder="VEE2096530" value="{{old('kkr_code')}}">
                 </div>
             </div>
         </div>
@@ -57,14 +57,14 @@
         <div class="form-row col-xs-12 col-sm-12 col-md-12">
             <div class="pull-left col-xs-6 col-sm-6 col-md-6">
                 <strong>{{ __('springs.latitude') }}</strong>
-                <input type="text" name="latitude" class="form-control" placeholder="Latitude" id="latitude">
+                <input type="text" name="latitude" class="form-control" placeholder="Latitude" id="latitude" value="{{old('latitude')}}">
                 <small id="latitude_help_block" class="form-text text-muted">
                     {{ __('springs.latitude_help_text') }}
                 </small>
             </div>
             <div class="pull-right col-xs-6 col-sm-6 col-md-6">
                 <strong>{{ __('springs.longitude') }}</strong>
-                <input type="text" name="longitude" class="form-control" placeholder="Longitude" id="longitude">
+                <input type="text" name="longitude" class="form-control" placeholder="Longitude" id="longitude" value="{{old('longitude')}}">
                 <small id="longitude_help_block" class="form-text text-muted">
                     {{ __('springs.longitude_help_text') }}
                 </small>
@@ -75,13 +75,13 @@
             <div class="pull-left col-xs-6 col-sm-6 col-md-6">
                 <div class="form-group">
                     <strong>{{ __('springs.county') }}</strong>
-                    <input type="text" name="county" class="form-control" placeholder="County" id="county">
+                    <input type="text" name="county" class="form-control" placeholder="County" id="county" value="{{old('county')}}">
                 </div>
             </div>
             <div class="pull-right col-xs-6 col-sm-6 col-md-6">
                 <div class="form-group">
                     <strong>{{ __('springs.settlement') }}</strong>
-                    <input type="text" name="settlement" class="form-control" placeholder="Settlement" id="settlement">
+                    <input type="text" name="settlement" class="form-control" placeholder="Settlement" id="settlement" value="{{old('settlement')}}">
                 </div>
             </div>
         </div>
@@ -89,7 +89,6 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>{{__('springs.photos')}}</strong><br />
-                <strong>{{__('springs.references')}}</strong>
             </div>
         </div>
         <!--<div class="col-xs-12 col-sm-12 col-md-12">
@@ -114,25 +113,39 @@
 
             </div>
         </div>
+        -->
 
         <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>{{__('springs.references')}}</strong>
-                <div class="form-group">
-                    <input type="text" placeholder="URL" name="spring_references[1][url]"/>
-                    <input type="text" placeholder="URL description" name="spring_references[1][url_description]"/>
+            <strong>{{__('springs.references')}}</strong>
+
+            <div class="reference-group input-group control-group increment">
+
+                    <input type="text" class="form-control" placeholder="URL" name="spring_references[1][url]"/>
+                    <input type="text" class="form-control" placeholder="URL title" name="spring_references[1][url_title]"/>
+                    <div class="input-group-btn">
+                        <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-plus"></i>Add</button>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <input type="text" placeholder="URL" name="spring_references[2][url]"/>
-                    <input type="text" placeholder="URL description" name="spring_references[2][url_description]"/>
+
+                <div class="clone">
+                    <div class="reference-group control-group input-group">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="URL" name=""/>
+                            <input type="text" class="form-control" placeholder="URL title" name=""/>
+                        </div>
+                        <div class="input-group-btn">
+                            <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-remove"></i> Remove</button>
+                        </div>
+                    </div>
                 </div>
+
             </div>
-        </div>-->
+
 
         <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>{{ __('springs.description') }}</strong>
-                    <textarea class="form-control" style="height:150px" name="description" placeholder="Description"></textarea>
+                    <textarea class="form-control" style="height:150px" name="description" placeholder="Description" >{{old('description')}}</textarea>
                     <small id="description_help_block" class="form-text text-muted">
                         {{ __('springs.description_help_text') }}
                     </small>
@@ -142,7 +155,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>{{ __('springs.folklore') }}</strong>
-                    <textarea class="form-control" style="height:150px" name="folklore" placeholder="Folklore"></textarea>
+                    <textarea class="form-control" style="height:150px" name="folklore" placeholder="Folklore" >{{old('folklore')}}</textarea>
                 </div>
         </div>
 
@@ -168,14 +181,14 @@
             </div>
             <div class="pull-right col-xs-6 col-sm-6 col-md-6">
                 <strong>{{ __('springs.groundwater_body') }}</strong>
-                <input type="text" name="groundwater_body" class="form-control" placeholder="">
+                <input type="text" name="groundwater_body" class="form-control" placeholder="" value="{{old('groundwater_body')}}">
             </div>
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>{{ __('springs.geology') }}</strong>
-                <textarea class="form-control" style="height:150px" name="geology" placeholder=""></textarea>
+                <textarea class="form-control" style="height:150px" name="geology" placeholder="">{{old('geology')}}</textarea>
             </div>
         </div>
 
@@ -212,18 +225,44 @@
 
         $(document).ready(function() {
 
+            let references_count = 1;
             $(".clone").hide();
 
             $(".btn-success").click(function(){
-                var html = $(".clone").html();
-                $(".increment").after(html);
+                //var html = $(".clone").html();
+                //$(".increment").after(html);
+                references_count++;
+                cloneReferenceBlock(references_count);
             });
 
             $("body").on("click",".btn-danger",function(){
+                //$(this).parents(".control-group").remove();
                 $(this).parents(".control-group").remove();
             });
 
         });
+
+        function cloneReferenceBlock(references_count) {
+
+                //alert(references_count);
+
+                var clone = $(".clone").clone();
+                clone.find('input[type=text]').each(function(index) {
+
+                    if (index == 0) {
+                        $(this).attr('name', "spring_references[" + references_count + "][url]");
+                    } else if(index == 1) {
+                        $(this).attr('name', "spring_references[" + references_count + "][url_title]");
+                    }
+                });
+
+                var html = clone.html();
+                $(".reference-group:visible").last().after(html);
+            //$(".increment").after(html);
+
+
+
+        }
 
     </script>
 

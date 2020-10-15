@@ -90,7 +90,24 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>{{__('springs.photos')}}</strong><br />
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
                 <strong>{{__('springs.references')}}</strong>
+                @foreach ($spring->references as $spring_reference)
+                    <div class="form-group">
+                        <input type="hidden" class="" name="spring_references[{{ $loop->index }}][id]" value="{{ $spring_reference->id }}" />
+                        <input type="text" class="form-control" placeholder="URL" name="spring_references[{{ $loop->index }}][url]" value="{{ $spring_reference->url }}" />
+                        <input type="text" class="form-control" placeholder="URL title" name="spring_references[{{ $loop->index }}][url_title]" value="{{ $spring_reference->url_title }}" />
+                    </div>
+                @endforeach
+                @if ( count($spring->references) == 0 )
+                    <input type="text" class="form-control" placeholder="URL" name="spring_references[1][url]"/>
+                    <input type="text" class="form-control" placeholder="URL title" name="spring_references[1][url_title]"/>
+                    @endif
+
             </div>
         </div>
 
