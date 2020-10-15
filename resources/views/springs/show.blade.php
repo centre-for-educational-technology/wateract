@@ -11,9 +11,9 @@
     <div class="row">
         <div class="pull-left col-lg-9 margin-tb">
                 @isset($spring->title)
-                    <h1>{{$spring->title}}</h1>
+                    <h2>{{$spring->title}}</h2>
                 @else
-                    <h1>{{ __('springs.unnamed') }}</h1>
+                    <h2>{{ __('springs.unnamed') }}</h2>
                 @endisset
         </div>
 
@@ -122,20 +122,6 @@
             </div>
         </div>
     </div>
-
-    <div>
-        <div class="row">
-            <div class="col-lg-12 margin-tb">
-                <div class="pull-right">
-                    <a class="btn btn-primary" href="{{ route('springs.index') }}"> Back</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
 
 @endsection
 
