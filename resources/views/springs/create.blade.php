@@ -57,14 +57,14 @@
         <div class="form-row col-xs-12 col-sm-12 col-md-12">
             <div class="pull-left col-xs-6 col-sm-6 col-md-6">
                 <strong>{{ __('springs.latitude') }}</strong>
-                <input type="text" name="latitude" class="form-control" placeholder="Latitude" id="latitude" value="{{old('latitude')}}">
+                <input type="text" name="latitude" class="form-control" placeholder="" id="latitude" value="{{old('latitude')}}">
                 <small id="latitude_help_block" class="form-text text-muted">
                     {{ __('springs.latitude_help_text') }}
                 </small>
             </div>
             <div class="pull-right col-xs-6 col-sm-6 col-md-6">
                 <strong>{{ __('springs.longitude') }}</strong>
-                <input type="text" name="longitude" class="form-control" placeholder="Longitude" id="longitude" value="{{old('longitude')}}">
+                <input type="text" name="longitude" class="form-control" placeholder="" id="longitude" value="{{old('longitude')}}">
                 <small id="longitude_help_block" class="form-text text-muted">
                     {{ __('springs.longitude_help_text') }}
                 </small>
@@ -75,13 +75,13 @@
             <div class="pull-left col-xs-6 col-sm-6 col-md-6">
                 <div class="form-group">
                     <strong>{{ __('springs.county') }}</strong>
-                    <input type="text" name="county" class="form-control" placeholder="County" id="county" value="{{old('county')}}">
+                    <input type="text" name="county" class="form-control" placeholder="" id="county" value="{{old('county')}}">
                 </div>
             </div>
             <div class="pull-right col-xs-6 col-sm-6 col-md-6">
                 <div class="form-group">
                     <strong>{{ __('springs.settlement') }}</strong>
-                    <input type="text" name="settlement" class="form-control" placeholder="Settlement" id="settlement" value="{{old('settlement')}}">
+                    <input type="text" name="settlement" class="form-control" placeholder="" id="settlement" value="{{old('settlement')}}">
                 </div>
             </div>
         </div>
@@ -120,21 +120,21 @@
 
             <div class="reference-group input-group control-group increment">
 
-                    <input type="text" class="form-control" placeholder="URL" name="spring_references[1][url]"/>
-                    <input type="text" class="form-control" placeholder="URL title" name="spring_references[1][url_title]"/>
+                    <input type="text" class="form-control" placeholder="{{__('springs.url')}}" name="spring_references[1][url]"/>
+                    <input type="text" class="form-control" placeholder="{{__('springs.url_title')}}" name="spring_references[1][url_title]"/>
                     <div class="input-group-btn">
-                        <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-plus"></i>Add</button>
+                        <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-plus"></i>{{__('springs.add')}}</button>
                     </div>
                 </div>
 
                 <div class="clone">
                     <div class="reference-group control-group input-group">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="URL" name=""/>
-                            <input type="text" class="form-control" placeholder="URL title" name=""/>
+                            <input type="text" class="form-control" placeholder="{{__('springs.url')}}" name=""/>
+                            <input type="text" class="form-control" placeholder="{{__('springs.url_title')}}" name=""/>
                         </div>
                         <div class="input-group-btn">
-                            <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-remove"></i> Remove</button>
+                            <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-remove"></i>{{__('springs.remove')}}</button>
                         </div>
                     </div>
                 </div>
@@ -145,7 +145,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>{{ __('springs.description') }}</strong>
-                    <textarea class="form-control" style="height:150px" name="description" placeholder="Description" >{{old('description')}}</textarea>
+                    <textarea class="form-control" style="height:150px" name="description" placeholder="" >{{old('description')}}</textarea>
                     <small id="description_help_block" class="form-text text-muted">
                         {{ __('springs.description_help_text') }}
                     </small>
@@ -155,13 +155,13 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>{{ __('springs.folklore') }}</strong>
-                    <textarea class="form-control" style="height:150px" name="folklore" placeholder="Folklore" >{{old('folklore')}}</textarea>
+                    <textarea class="form-control" style="height:150px" name="folklore" placeholder="" >{{old('folklore')}}</textarea>
                 </div>
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Link with other databases</strong>
+                <strong>{{ __('springs.link_with_other_databases') }}</strong>
             </div>
         </div>
 

@@ -28,8 +28,10 @@ Route::get('/logout', function () {
     return view('springs.index', ['springs' => Spring::all()]);
 });
 
-
-//App::setLocale('et');
+Route::get('locale/{locale}', function ($locale){
+    Session::put('locale', $locale);
+    return redirect()->back();
+});
 
 Route::resource('springs', SpringController::class);
 Route::resource('spring_observation_data', SpringObservationDataController::class);
