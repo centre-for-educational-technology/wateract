@@ -43,7 +43,7 @@
                 @isset($spring->description)
                     <div class="row margin-tb">
                         <div class="form-group">
-                            <h4>{{ __('Description of natural conditions') }}</h4>
+                            <h4>{{ __('springs.description') }}</h4>
                             <div>{{$spring->description}}</div>
                         </div>
                     </div>
@@ -52,7 +52,7 @@
                 @isset($spring->folklore)
                     <div class="row margin-tb">
                         <div class="form-group">
-                            <h4>{{ __('Folklore') }}</h4>
+                            <h4>{{ __('springs.folklore') }}</h4>
                             <div class="margin-tb">{{$spring->folklore}}</div>
                         </div>
                     </div>
@@ -75,6 +75,35 @@
                                     <div class="form-group">
                                         <a href="{{ $spring_reference->url }}" target="_blank">{{ $spring_reference->url_title }}</a>
                                     </div>
+                                @endforeach
+                            </div>
+                        </div>
+                    @endif
+
+                    @if ( count($spring->database_links)>0 )
+                        <div class="row margin-tb">
+                            <div class="form-group">
+                                <h4>{{__('springs.link_with_other_databases')}}</h4>
+                                <table class="table">
+                                <tbody>
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">{{__('springs.database_name')}}</th>
+                                        <th scope="col">{{__('springs.code')}}</th>
+                                        <th scope="col">{{__('springs.spring_name')}}</th>
+                                        <th scope="col">{{__('springs.url')}}</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    @foreach ($spring->database_links as $database_link)
+                                        <tr>
+                                            <td>{{ $database_link->database_name }}</td>
+                                            <td>{{ $database_link->code }}</td>
+                                            <td>{{ $database_link->spring_name }}</td>
+                                            <td><a href="{{ $database_link->url }}" target="_blank">{{ $database_link->url }}</a></td>
+                                    </tr>
+                                </tbody>
+                                </table>
                                 @endforeach
                             </div>
                         </div>

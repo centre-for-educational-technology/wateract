@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div>
-                <h2>{{ __('Edit Spring') }}</h2>
+                <h2>{{ __('springs.edit_spring') }}</h2>
             </div>
         </div>
     </div>
@@ -40,7 +40,7 @@
         <div class="form-row">
             <div class="col-xs-6 col-sm-6 col-md-6">
                 <div class="form-group">
-                    <strong>{{ __('KKR Code') }}</strong>
+                    <label><strong>{{ __('springs.kkr_code') }}</strong></label>
                     <input type="text" name="kkr_code" class="form-control" placeholder="VEE2096530" value="{{$spring->kkr_code}}">
                 </div>
             </div>
@@ -48,7 +48,7 @@
 
         <div class="form-row">
             <div class="col-xs-12 col-sm-12 col-md-12">
-                <strong>{{  __('Location') }}</strong>
+                <label><strong>{{  __('springs.location') }}</strong></label>
                 <div id="address-map-container" class="col-xs-12 col-sm-12 col-md-12" style="width:100%;height:400px; ">
                     <div style="width: 100%; height: 100%" id="address-map"></div>
                 </div>
@@ -57,15 +57,15 @@
 
         <div class="form-row col-xs-12 col-sm-12 col-md-12">
             <div class="pull-left col-xs-6 col-sm-6 col-md-6">
-                <strong>{{ __('Latitude') }}</strong>
-                <input type="text" name="latitude" class="form-control" placeholder="Latitude" id="latitude" value="{{$spring->latitude}}">
+                <label><strong>{{ __('springs.latitude') }}</strong></label>
+                <input type="text" name="latitude" class="form-control" placeholder="" id="latitude" value="{{$spring->latitude}}">
                 <small id="latitude_help_block" class="form-text text-muted">
                     {{ __('springs.latitude_help_text') }}
                 </small>
             </div>
             <div class="pull-right col-xs-6 col-sm-6 col-md-6">
-                <strong>{{ __('Longitude') }}</strong>
-                <input type="text" name="longitude" class="form-control" placeholder="Longitude" id="longitude" value="{{$spring->longitude}}">
+                <label><strong>{{ __('springs.longitude') }}</strong></label>
+                <input type="text" name="longitude" class="form-control" placeholder="" id="longitude" value="{{$spring->longitude}}">
                 <small id="longitude_help_block" class="form-text text-muted">
                     {{ __('springs.longitude_help_text') }}
                 </small>
@@ -75,14 +75,14 @@
         <div class="form-row col-xs-12 col-sm-12 col-md-12">
             <div class="pull-left col-xs-6 col-sm-6 col-md-6">
                 <div class="form-group">
-                    <strong>{{ __('County') }}</strong>
-                    <input type="text" name="county" class="form-control" placeholder="County" id="county" value="{{$spring->county}}">
+                    <label><strong>{{ __('springs.county') }}</strong></label>
+                    <input type="text" name="county" class="form-control" placeholder="" id="county" value="{{$spring->county}}">
                 </div>
             </div>
             <div class="pull-right col-xs-6 col-sm-6 col-md-6">
                 <div class="form-group">
-                    <strong>{{ __('springs.settlement') }}</strong>
-                    <input type="text" name="settlement" class="form-control" placeholder="Settlement" id="settlement" value="{{$spring->settlement}}">
+                    <label><strong>{{ __('springs.settlement') }}</strong></label>
+                    <input type="text" name="settlement" class="form-control" placeholder="" id="settlement" value="{{$spring->settlement}}">
                 </div>
             </div>
         </div>
@@ -95,7 +95,7 @@
 
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>{{__('springs.references')}}</strong>
+                <label><strong>{{__('springs.references')}}</strong></label>
                 @foreach ($spring->references as $spring_reference)
                     <div class="form-group">
                         <input type="hidden" class="" name="spring_references[{{ $loop->index }}][id]" value="{{ $spring_reference->id }}" />
@@ -113,8 +113,8 @@
 
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>{{ __('Description of natural conditions') }}</strong>
-                <textarea class="form-control" style="height:150px" name="description" placeholder="Description">{{$spring->description}}</textarea>
+                <label><strong>{{ __('springs.description') }}</strong></label>
+                <textarea class="form-control" style="height:150px" name="description" placeholder="">{{$spring->description}}</textarea>
                 <small id="description_help_block" class="form-text text-muted">
                     {{ __('springs.description_help_text') }}
                 </small>
@@ -123,14 +123,30 @@
 
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>{{ __('Folklore') }}</strong>
-                <textarea class="form-control" style="height:150px" name="folklore" placeholder="Folklore">{{$spring->folklore}}</textarea>
+                <label><strong>{{ __('springs.folklore') }}</strong></label>
+                <textarea class="form-control" style="height:150px" name="folklore" placeholder="">{{$spring->folklore}}</textarea>
             </div>
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Link with other databases</strong>
+                <label><strong>{{ __('springs.link_with_other_databases') }}</strong></label>
+                <div class="database-group form-group input-group control-group databases-increment ">
+                    @foreach ($spring->database_links as $database_link)
+                    <div class="pull-left col-xs-6 col-sm-6 col-md-6">
+                        <input type="hidden" class="" name="spring_databases[{{ $loop->index }}][id]" value="{{ $database_link->id }}" />
+                        <input type="text" class="form-control" placeholder="{{__('springs.database_name')}}" name="spring_databases[{{ $loop->index }}][database_name]" value="{{$database_link->database_name}}" />
+                        <input type="text" class="form-control" placeholder="{{__('springs.spring_name')}}" name="spring_databases[{{ $loop->index }}][spring_name]" value="{{$database_link->spring_name}}" />
+                    </div>
+                    <div class="pull-right col-xs-6 col-sm-6 col-md-6">
+                        <input type="text" class="form-control" placeholder="{{__('springs.code')}}" name="spring_databases[{{ $loop->index }}][code]" value="{{$database_link->code}}" />
+                        <input type="text" class="form-control" placeholder="{{__('springs.url')}}" name="spring_databases[{{ $loop->index }}][url]" value="{{$database_link->url}}" />
+                    </div>
+                    <!--<div class="input-group-btn">
+                        <button class="btn database-btn-success" type="button"><i class="glyphicon glyphicon-plus"></i>{{__('springs.add')}}</button>
+                    </div>-->
+                    @endforeach
+                </div>
             </div>
         </div>
 
@@ -165,14 +181,14 @@
                 </select>
             </div>
             <div class="pull-right col-xs-6 col-sm-6 col-md-6">
-                <strong>{{ __('springs.groundwater_body') }}</strong>
+                <label><strong>{{ __('springs.groundwater_body') }}</strong></label>
                 <input type="text" name="groundwater_body" class="form-control" placeholder="" value="{{$spring->groundwater_body}}">
             </div>
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>{{ __('springs.geology') }}</strong>
+                <label><strong>{{ __('springs.geology') }}</strong></label>
                 <textarea class="form-control" style="height:150px" name="geology" placeholder="">{{$spring->geology}}</textarea>
             </div>
         </div>
@@ -180,7 +196,7 @@
         <div class="form-row">
             <div class="col-xs-6 col-sm-6 col-md-6">
                 <div class="form-group">
-                    <strong>{{ __('springs.ownership') }}</strong>
+                    <label><strong>{{ __('springs.ownership') }}</strong></label>
                     <select name="ownership" class="form-control">
                         <option value="private_property"
                                 @if($spring->ownership == 'private_property') selected @endif>
@@ -222,10 +238,8 @@
             <div class="row">
                 <div class="col-lg-12 margin-tb">
                     <div class="pull-left">
-                        <button type="submit" class="btn btn-primary">{{ __('Edit') }}</button>
-                    </div>
-                    <div class="pull-right">
-                        <a class="btn btn-primary" href="{{ route('springs.index') }}"> Back</a>
+                        <button type="submit" class="btn btn-primary">{{ __('springs.edit') }}</button>
+                        <a class="btn" href="{{ route('springs.index') }}">{{ __('springs.cancel') }}</a>
                     </div>
                 </div>
             </div>
@@ -233,7 +247,6 @@
 
     </form>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
     <script type="text/javascript">
 
         $(document).ready(function() {

@@ -18,6 +18,11 @@ class Spring extends Model
         return $this->hasMany('App\Models\SpringReference');
     }
 
+    public function database_links()
+    {
+        return $this->hasMany('App\Models\SpringDatabaseLink');
+    }
+
     public function observationData()
     {
         return $this->hasMany('App\Models\SpringObservationData');

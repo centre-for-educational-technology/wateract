@@ -11,7 +11,9 @@ return [
 |
 */
 
+    'wateract' => 'Allikad',
     'add_new_spring' => 'Lisa uus allikas',
+    'edit_spring' => 'Muuda allikat',
     'title' => 'Pealkiri',
     'title_help_text' => 'Nimi sisesta juhul, kui see teadolevalt kasutuses on. Võib sisestada mitu erinevat nimekuju.',
     'kkr_code' => 'KKR kood',
@@ -30,6 +32,9 @@ return [
     'description_help_text' => 'Kirjelda ümbritsevat maastikut.',
     'folklore' => 'Pärimuslugu',
     'link_with_other_databases' => 'Seos teiste riiklike andmekogudega',
+    'database_name' => 'andmebaasi nimi',
+    'code' => 'kood',
+    'spring_name' => 'allika nimi andmebaasis',
     'spring_classification' => 'Allika tüüp',
     'rheocrene' => 'reokreen (allikaoja)',
     'hillslope_spring' => 'nõlvaallikas;',
@@ -46,8 +51,14 @@ return [
     'state_property' => 'riigiomand',
     'municipal_property' => 'munitsipaalomand',
     'status' => 'Staatus',
+    'unconfirmed' => 'kinnitamata, ülekontrolli vajav allikas',
+    'confirmed' => 'kinnitatud, teadaolev allikas',
+    'featured' => 'erakorralist ülekontrolli vajav allikas',
     'add' => 'Lisa',
     'remove' => 'Eemalda',
     'back' => 'Tagasi',
+    'edit' => 'Muuda',
+    'delete' => 'Kustuta',
+    'cancel' => 'Katkesta',
 
 ];
