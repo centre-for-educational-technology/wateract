@@ -3,7 +3,8 @@
     <head>
         <title>{{ __('springs.wateract') }}</title>
         <!--<link href="{{ asset('css/app.css') }}" rel="stylesheet">-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css" rel="stylesheet">
+        <script src="{{ asset('js/jquery.js') }}"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css" rel="stylesheet" >
         @yield('scripts')
     </head>
     <body>
