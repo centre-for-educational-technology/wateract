@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Models\Spring;
 use App\Http\Controllers\SpringController;
-use App\Http\Controllers\SpringObservationDataController;
+use App\Http\Controllers\ObservationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,7 +34,8 @@ Route::get('locale/{locale}', function ($locale){
 });
 
 Route::resource('springs', SpringController::class);
-Route::resource('spring_observation_data', SpringObservationDataController::class);
+Route::resource('observations', ObservationController::class);
+Route::resource('springs.observations', ObservationController::class);
 
 Route::get('springs_json', function () {
     $springs = Spring::all();

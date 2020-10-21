@@ -23,9 +23,9 @@ class Spring extends Model
         return $this->hasMany('App\Models\SpringDatabaseLink');
     }
 
-    public function observationData()
+    public function observations()
     {
-        return $this->hasMany('App\Models\SpringObservationData');
+        return $this->hasMany('App\Models\Observation');
     }
 
 

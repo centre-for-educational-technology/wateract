@@ -29,6 +29,14 @@
         </div>
     </div>
 
+    <nav class="navbar">
+    <div class="navbar-nav">
+            <span class="nav-item nav-link active">{{ __('springs.view') }}</span>
+            <a class="nav-item nav-link" href="{{ route('springs.observations.index', $spring->id) }}">{{ __('springs.observations') }}</a>
+            <a class="nav-item nav-link" href="{{$spring->id}}/measurements">{{ __('springs.measurements') }}</a>
+    </div>
+    </nav>
+
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div id="map-container" style="width:100%;height:400px;">
