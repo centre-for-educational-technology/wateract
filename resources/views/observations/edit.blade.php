@@ -15,6 +15,9 @@
                 </a></h2>
         </div>
     </div>
+
+    @include('layouts.spring-navigation', ['spring' => $observation->spring])
+
     <div class="form-row">
         <h3>{{ __('springs.edit_observation') }}</h3>
     </div>

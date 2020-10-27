@@ -13,13 +13,9 @@
             @endisset
         </div>
     </div>
-    <nav class="navbar">
-        <div class="navbar-nav">
-            <a class="nav-item nav-link" href="{{ route('springs.show',$spring->id) }}">{{ __('springs.view') }}</a>
-            <a class="nav-item nav-link active" href="{{ route('springs.observations.index', $spring->id) }}">{{ __('springs.observations') }}</a>
-            <a class="nav-item nav-link" href="{{$spring->id}}/measurements">{{ __('springs.measurements') }}</a>
-        </div>
-    </nav>
+
+    @include('layouts.spring-navigation')
+
     <div class="form-row">
         <h3>{{ __('springs.add_observation') }}</h3>
     </div>

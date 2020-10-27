@@ -186,14 +186,9 @@
             <div class="pull-left col-xs-6 col-sm-6 col-md-6">
                 <label><strong>{{ __('springs.spring_classification') }}</strong></label>
                 <select name="classification" class="form-control">
-                    <option value="rheocrene"> {{ __('springs.rheocrene') }}</option>
-                    <option value="hillslope_spring">{{ __('springs.hillslope_spring') }}</option>
-                    <option value="limnocrene">{{ __('springs.limnocrene') }}</option>
-                    <option value="helocrene">{{ __('springs.helocrene') }}</option>
-                    <option value="cave_spring">{{ __('springs.cave_spring') }}</option>
-                    <option value="hypocrene">{{ __('springs.hypocrene') }}</option>
-                    <option value="captured_spring">{{ __('springs.captured_spring') }}</option>
-                    <option value="karst_spring">{{ __('springs.karst_spring') }}</option>
+                    @foreach (__('springs.classification_options') as $value => $label)
+                        <option value="{{ $value }}">{{ $label }}</option>
+                    @endforeach
                 </select>
             </div>
             <div class="pull-right col-xs-6 col-sm-6 col-md-6">
@@ -214,9 +209,9 @@
                 <div class="form-group">
                     <label><strong>{{ __('springs.ownership') }}</strong></label>
                     <select name="ownership" class="form-control">
-                        <option value="private_property"> {{ __('springs.private_property') }}</option>
-                        <option value="state_property">{{ __('springs.state_property') }}</option>
-                        <option value="municipal_property">{{ __('springs.municipal_property') }}</option>
+                        @foreach (__('springs.ownership_options') as $value => $label)
+                            <option value="{{ $value }}">{{ $label }}</option>
+                        @endforeach
                     </select>
                 </div>
             </div>
@@ -227,9 +222,9 @@
                 <div class="form-group">
                     <label><strong>{{ __('springs.status') }}</strong></label>
                     <select name="status" class="form-control">
-                        <option value="unconfirmed"> {{ __('springs.unconfirmed') }}</option>
-                        <option value="confirmed">{{ __('springs.confirmed') }}</option>
-                        <option value="featured">{{ __('springs.featured') }}</option>
+                        @foreach (__('springs.status_options') as $value => $label)
+                            <option value="{{ $value }}">{{ $label }}</option>
+                        @endforeach
                     </select>
                 </div>
             </div>

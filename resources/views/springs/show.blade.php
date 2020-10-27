@@ -29,13 +29,7 @@
         </div>
     </div>
 
-    <nav class="navbar">
-    <div class="navbar-nav">
-            <span class="nav-item nav-link active">{{ __('springs.view') }}</span>
-            <a class="nav-item nav-link" href="{{ route('springs.observations.index', $spring->id) }}">{{ __('springs.observations') }}</a>
-            <a class="nav-item nav-link" href="{{$spring->id}}/measurements">{{ __('springs.measurements') }}</a>
-    </div>
-    </nav>
+    @include('layouts.spring-navigation')
 
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
@@ -146,7 +140,7 @@
                 @isset($spring->classification)
                     <div class="row">
                         <strong>{{ __('springs.spring_classification') }}</strong>
-                        <div>{{$spring->classification}}</div>
+                        <div>@lang('springs.classification_options.'.$spring->classification)</div>
                     </div>
                 @endisset
 
@@ -160,14 +154,14 @@
                 @isset($spring->ownership)
                     <div class="row">
                         <strong>{{ __('springs.ownership') }}</strong>
-                        <div>{{$spring->ownership}}</div>
+                        <div>@lang('springs.ownership_options.'.$spring->ownership)</div>
                     </div>
                 @endisset
 
                 @isset($spring->status)
                     <div class="row">
                         <strong>{{ __('springs.status') }}</strong>
-                        <div>{{$spring->status}}</div>
+                        <div>@lang('springs.status_options.'.$spring->status)</div>
                     </div>
                 @endisset
             </div>

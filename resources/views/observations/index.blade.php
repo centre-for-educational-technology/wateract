@@ -10,26 +10,25 @@
                 <h2>{{ __('springs.unnamed') }}</h2>
             @endisset
         </div>
-        <div class="pull-right col-lg-3 margin-tb">
-            <a class="btn btn-primary" href="{{ route('springs.observations.create',$spring->id) }}">{{ __('springs.add_observation') }}</a>
-        </div>
+        @auth
+            <div class="pull-right col-lg-3 margin-tb">
+                <a class="btn btn-primary" href="{{ route('springs.observations.create',$spring->id) }}">{{ __('springs.add_observation') }}</a>
+            </div>
+        @endauth
 
     </div>
 
-    <nav class="navbar">
-        <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="{{ route('springs.show',$spring->id) }}">{{ __('springs.view') }}</a>
-            <span class="nav-item nav-link active">{{ __('springs.observations') }}</span>
-            <a class="nav-item nav-link" href="{{$spring->id}}/measurements">{{ __('springs.measurements') }}</a>
-        </div>
-    </nav>
-
+    @include('layouts.spring-navigation')
 
     @if(count($spring->observations)>0)
             @foreach ($spring->observations as $observation)
                 <div>
+                    @auth
                     <div><a class="" href="{{ route('springs.observations.edit',[$spring->id, $observation->id]) }}">
                             {{ $observation->measurement_time }}</a></div>
+                    @else
+                        <div><label><strong>{{ $observation->measurement_time }}</strong></label></div>
+                    @endauth
                     @include('observations.show')
                 </div>
             @endforeach

@@ -28,5 +28,10 @@ class Spring extends Model
         return $this->hasMany('App\Models\Observation');
     }
 
+    public function measurements()
+    {
+        return $this->hasMany('App\Models\Measurement');
+    }
+
 
 }

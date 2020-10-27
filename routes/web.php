@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Models\Spring;
 use App\Http\Controllers\SpringController;
 use App\Http\Controllers\ObservationController;
+use App\Http\Controllers\MeasurementController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,8 +35,10 @@ Route::get('locale/{locale}', function ($locale){
 });
 
 Route::resource('springs', SpringController::class);
-Route::resource('observations', ObservationController::class);
 Route::resource('springs.observations', ObservationController::class);
+Route::resource('observations', ObservationController::class);
+Route::resource('springs.measurements', MeasurementController::class);
+Route::resource('measurements', MeasurementController::class);
 
 Route::get('springs_json', function () {
     $springs = Spring::all();

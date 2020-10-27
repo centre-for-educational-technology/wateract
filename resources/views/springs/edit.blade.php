@@ -146,30 +146,11 @@
             <div class="pull-left col-xs-6 col-sm-6 col-md-6">
                 <strong>{{ __('springs.spring_classification') }}</strong>
                 <select name="classification" class="form-control">
-                    <option value="rheocrene"
-                            @if($spring->classification == 'rheocrene') selected @endif>
-                        {{ __('springs.rheocrene') }}</option>
-                    <option value="hillslope_spring"
-                            @if($spring->classification == 'hillslope_spring') selected @endif>
-                        {{ __('springs.hillslope_spring') }}</option>
-                    <option value="limnocrene"
-                            @if($spring->classification == 'limnocrene') selected @endif>
-                        {{ __('springs.limnocrene') }}</option>
-                    <option value="helocrene"
-                            @if($spring->classification == 'helocrene') selected @endif>
-                        {{ __('springs.helocrene') }}</option>
-                    <option value="cave_spring"
-                            @if($spring->classification == 'cave_spring') selected @endif>
-                        {{ __('springs.cave_spring') }}</option>
-                    <option value="hypocrene"
-                            @if($spring->classification == 'hypocrene') selected @endif>
-                        {{ __('springs.hypocrene') }}</option>
-                    <option value="captured_spring"
-                            @if($spring->classification == 'captured_spring') selected @endif>
-                        {{ __('springs.captured_spring') }}</option>
-                    <option value="karst_spring"
-                            @if($spring->classification == 'karst_spring') selected @endif>
-                        {{ __('springs.karst_spring') }}</option>
+                    @foreach (__('springs.classification_options') as $value => $label)
+                        <option value="{{ $value }}"
+                                @if ( $spring->classification == $value ) selected @endif>
+                            {{ $label }}</option>
+                    @endforeach
                 </select>
             </div>
             <div class="pull-right col-xs-6 col-sm-6 col-md-6">
@@ -190,18 +171,11 @@
                 <div class="form-group">
                     <label><strong>{{ __('springs.ownership') }}</strong></label>
                     <select name="ownership" class="form-control">
-                        <option value="private_property"
-                                @if($spring->ownership == 'private_property') selected @endif>
-                            {{ __('springs.private_property') }}
-                        </option>
-                        <option value="state_property"
-                                @if($spring->ownership == 'state_property') selected @endif>
-                            {{ __('springs.state_property') }}
-                        </option>
-                        <option value="municipal_property"
-                                @if($spring->ownership == 'municipal_property') selected @endif>
-                            {{ __('springs.municipal_property') }}
-                        </option>
+                        @foreach (__('springs.ownership_options') as $value => $label)
+                            <option value="{{ $value }}"
+                                    @if ( $spring->ownership == $value ) selected @endif>
+                            {{ $label }}</option>
+                        @endforeach
                     </select>
                 </div>
             </div>
