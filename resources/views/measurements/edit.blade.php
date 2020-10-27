@@ -3,18 +3,6 @@
 @auth
 @section('content')
 
-    <div class="row">
-        <div class="pull-left col-lg-9 margin-tb">
-            <h2><a href="{{ route('springs.show',$measurement->spring_id) }}">
-                    @isset($measurement->spring->title)
-                        {{$measurement->spring->title}}
-                    @else
-                        {{ __('springs.unnamed') }}
-                    @endisset
-                </a></h2>
-        </div>
-    </div>
-
     @include('layouts.spring-navigation', ['spring' => $measurement->spring])
 
     <div class="form-row">

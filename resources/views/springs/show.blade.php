@@ -8,30 +8,22 @@
         </div>
     @endif
 
-    <div class="row">
-        <div class="pull-left col-lg-9 margin-tb">
-                @isset($spring->title)
-                    <h2>{{$spring->title}}</h2>
-                @else
-                    <h2>{{ __('springs.unnamed') }}</h2>
-                @endisset
-        </div>
+    @include('layouts.spring-navigation')
 
-        <div class="pull-right col-lg-3 margin-tb">
-            @auth
+    @auth
+        <div class="row">
+            <div class="pull-right col-lg-3 margin-tb">
                 <form action="{{ route('springs.destroy',$spring->id) }}" method="POST">
                     <a class="btn btn-primary" href="{{ route('springs.edit',$spring->id) }}">{{ __('springs.edit') }}</a>
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="btn btn-danger">{{ __('springs.delete') }}</button>
                 </form>
-            @endauth
+            </div>
         </div>
-    </div>
+    @endauth
 
-    @include('layouts.spring-navigation')
-
-    <div class="row">
+    <div class="row m-t">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div id="map-container" style="width:100%;height:400px;">
                 <div style="width: 100%; height: 100%" id="map"></div>

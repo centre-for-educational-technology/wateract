@@ -4,18 +4,6 @@
 @auth
 @section('content')
 
-    <div class="row">
-        <div class="pull-left col-lg-9 margin-tb">
-            <h2><a href="{{ route('springs.show',$observation->spring_id) }}">
-                    @isset($spring->title)
-                        {{$spring->title}}
-                    @else
-                        {{ __('springs.unnamed') }}
-                    @endisset
-                </a></h2>
-        </div>
-    </div>
-
     @include('layouts.spring-navigation', ['spring' => $observation->spring])
 
     <div class="form-row">
