@@ -47,7 +47,7 @@
 
     </app-layout>
 </template>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQrm_sXhGYcMCdkq0Mbz9RnhTU0lIJE-Y" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=env.google_maps_api_key" async defer></script>
 <script>
 import AppLayout from './../../Layouts/AppLayout'
 import { gmapApi } from 'gmap-vue';
