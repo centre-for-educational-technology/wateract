@@ -9,7 +9,25 @@
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                    <welcome />
+                    <!--<welcome />-->
+
+                    <table class="table-auto">
+                        <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tr v-for="spring in springs">
+                            <td>{{ spring.title }}</td>
+                            <td>{{ spring.description }}</td>
+                            <td width="130">
+                                <a class="text-white bg-blue-500 border text-xs font-semibold px-4 py-1 leading-normal" :href="'springs/'+spring.id">springs.view</a>
+                            </td>
+                        </tr>
+                    </table>
+
                 </div>
             </div>
         </div>
@@ -18,12 +36,11 @@
 
 <script>
     import AppLayout from './../Layouts/AppLayout'
-    import Welcome from './../Jetstream/Welcome'
 
     export default {
         components: {
             AppLayout,
-            Welcome,
         },
+        props: ['springs'],
     }
 </script>
