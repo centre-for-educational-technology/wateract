@@ -110,7 +110,7 @@
                                 <i class="el-icon-plus"></i>
                             </el-upload>
                             <el-dialog :visible.sync="dialogVisible">
-                                <img width="100%" :src="dialogImageUrl" alt="" />
+                                <img width="100%" :src="dialogPhotoUrl" alt="" />
                             </el-dialog>
                         </div>
 
@@ -177,7 +177,7 @@
                             </select>
                         </div>-->
                         <div class="px-2 py-2">
-                            <el-checkbox v-model="form.special_attention" name="special_attention"><jet-label for="special_attention" value="Needs special attention" /></el-checkbox>
+                            <el-checkbox v-model="form.needs_attention" name="needs_attention"><jet-label for="needs_attention" value="Needs special attention" /></el-checkbox>
                         </div>
                         <div class="px-2 py-2">
                             <el-checkbox v-model="form.featured" name="featured"><jet-label for="featured" value="Featured" /></el-checkbox>
@@ -185,8 +185,8 @@
 
                     </template>
                         <template #actions>
-                            <jet-secondary-button type="submit" @click="save(form)">Save as draft</jet-secondary-button>
-                            <button class="ml-2" type="submit" @click="submit(form)">Submit</button>
+                            <jet-secondary-button type="submit" @click.native="saveDraft(form)">Save as draft</jet-secondary-button>
+                            <jet-button class="ml-2" type="submit" @click.native="submit(form)">Submit</jet-button>
                         </template>
                         <!--<button type="submit" class="text-white bg-blue-500 border text-xs font-semibold px-4 py-1 leading-normal">Save as draft</button>
                         <button type="submit" class="text-white bg-blue-500 border text-xs font-semibold px-4 py-1 leading-normal">Submit</button>-->
@@ -225,16 +225,11 @@ export default {
 
     data() {
         return {
+            dialogVisible: false,
+            dialogPhotoUrl: '',
             map: null,
             markers: [],
             references_counter: 1,
-            references: [{
-                id: '1',
-                url_id: 'references[1][url]',
-                url_title_id: 'references[1][url_title]',
-                url: '',
-                url_title: '',
-            }],
             database_links_counter: 1,
             form: this.$inertia.form({
                 '_method': 'PUT',
@@ -247,10 +242,11 @@ export default {
                 settlement: this.settlement,
                 description: this.description,
                 classification: 'rheocrene',
+                groundwater_body: this.groundwater_body,
                 ownership: 'private_property',
-                status: 'unconfirmed',
-                special_attention: this.special_attention,
-                featured: this.featured,
+                status: 'draft',
+                needs_attention: 0,
+                featured: 0,
                 references: [{
                     id: '1',
                     url_id: 'references[1][url]',
@@ -270,7 +266,6 @@ export default {
                     url: '',
                 }],
                 photos: [],
-
             }, {
                 bag: 'addSpring',
                 resetOnSuccess: false,
@@ -295,38 +290,32 @@ export default {
                 url_id: 'database_links['+ this.database_links_counter +'][url]',
             });
         },
-        addSpring() {
-            this.form.post('/springs/store', {
-                preserveScroll: true
-            });
-        },
-        save: function (data) {
+        saveDraft: function (data) {
             data._method = 'POST';
-            console.log(data);
             this.$inertia.post('/springs', data)
-            //this.reset();
         },
         submit: function (data) {
+            data.status = 'submitted';
             data._method = 'POST';
-            console.log(data);
             this.$inertia.post('/springs', data)
-            //this.reset();
         },
-        /*update: function (data) {
-            data._method = 'PUT';
-            this.$inertia.post('/springs/', data)
-            this.reset();
-        },*/
-        updatePhotos(file) {
-            this.form.photos.push(file.raw);
+        updatePhotos(photo) {
+            //TODO upload photo
+            //var data = new FormData();
+            //data.append('photo', photo.raw || '');
+            //let photo_id = this.$inertia.post('/photos', data);
+            /*let photo_id;
+            axios.post('/photos', data).then(response => {
+                this.onSuccess(response && response.data);
+                photo_id = resolve(response && response.data);
+            });
+            console.log(photo_id);*/
         },
-        handlePhotoCardPreview(file) {
-            this.dialogPhotoUrl = file.url;
+        handlePhotoCardPreview(photo) {
+            this.dialogPhotoUrl = photo.url;
             this.dialogVisible = true;
         },
         updateLocation(location) {
-            console.log(location);
-            console.log(location.latLng);
             this.markers = [{
                 position: location.latLng
             }];
@@ -341,12 +330,28 @@ export default {
                     this.form.country = address.country;
                     this.form.county = address.county;
                     this.form.settlement = address.settlement;
-                    console.log(result[0].formatted_address);
-                    //this.$refs.gmapAutocomplete.$refs.input.value = result[0].formatted_address
+                    //console.log(result[0].formatted_address);
                 }
             })
         }
     }
+}
+
+function getFormData() {
+    let data = new FormData();
+    let fields_array = ['title', 'kkr_code', 'latitude', 'longitude', 'country', 'county', 'settlement',
+        'description', 'classification', 'ownership', 'needs_attention', 'featured'];
+    _.forEach(this.form, function(field_value, field) {
+        if (fields_array.includes(field)) {
+            data.append(field, field_value || '');
+        } else if (['references', 'database_links'].includes(field)) {
+            data.append(field, JSON.stringify(field_value) || '');
+        }
+    });
+    _.forEach(this.form.photos, function(photo, index) {
+        data.append('photos['+index+']', photo || '');
+    });
+    return data;
 }
 
 function getAddressObject(address_components) {
@@ -389,6 +394,3 @@ function getAddressObject(address_components) {
 };
 
 </script>
-<!--<script src="./../../../../public/js/map.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=' + services.google.maps.api-key + '&libraries=places&callback=initMap" async defer></script>
--->

@@ -25,8 +25,8 @@
 
                         <div class="z-depth-1-half map-container w-full" style="height:400px;">
                             <GmapMap ref="map"
-                                 :center="{lat:58.279, lng:26.054}"
-                                 :zoom="5"
+                                 :center="{lat:latitude, lng:longitude}"
+                                 :zoom="9"
                                  map-type-id="terrain"
                                  style="width: 100%; height: 100%"
                             >
@@ -137,22 +137,15 @@ export default {
     data() {
         return {
             map: null,
+            latitude: this.spring.latitude,
+            longitude: this.spring.longitude,
             markers: [{
                 id: this.spring.id,
                 name: this.spring.title,
                 description: this.spring.description,
-                date_build: "",
                 position: {lat: this.spring.latitude, lng: this.spring.longitude}
             }],
         }
     },
-    mounted() {
-        this.$refs.map.$mapPromise.then((map) => {
-            map.panTo({lat:58.279, lng:26.054})
-        });
-    },
 }
 </script>
-<!--<script src="./../../../../public/js/map.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=' + services.google.maps.api-key + '&libraries=places&callback=initMap" async defer></script>
--->
