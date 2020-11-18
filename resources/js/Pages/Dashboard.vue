@@ -42,18 +42,18 @@
                     <table class="table-auto w-full">
                         <thead>
                         <tr>
+                            <th>Id</th>
                             <th>Spring name</th>
                             <th>Location</th>
-                            <th>Classification</th>
                             <th>Status</th>
                         </tr>
                         </thead>
                         <tr v-for="spring in springs">
+                            <td class="text-center">{{spring.id}}</td>
                             <td class="text-center">
                                 <a :href="'springs/'+spring.id">{{ spring.title }}</a>
                             </td>
                             <td class="text-center">{{ spring.country }}</td>
-                            <td class="text-center">{{ spring.classification}}</td>
                             <td class="text-center">
                                 {{ spring.status }}
                             </td>

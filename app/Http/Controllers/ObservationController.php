@@ -6,30 +6,34 @@ use App\Models\Spring;
 use App\Models\Observation;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
 
 class ObservationController extends Controller
 {
     /**
      * Display a listing of the resource.
-     * @param  int  $spring_id
-     * @return \Illuminate\Http\Response
+     * @param string $spring_code
+     * @return \Inertia\Response
      */
-    public function index(int $spring_id)
+    public function index(string $spring_code)
     {
-        $spring = Spring::find($spring_id);
-        return view('observations.index', compact('spring'));
+        $spring = Spring::where('code', $spring_code)->with('observations')->first();
+        return Inertia::render('Observations/Index', ['spring' => $spring]);
     }
 
     /**
      * Show the form for creating a new resource.
      *
-     * @param  int  $spring_id
-     * @return \Illuminate\Http\Response
+     * @param string $spring_code
+     * @return \Inertia\Response
      */
-    public function create(int $spring_id)
+    public function create(string $spring_code)
     {
-        $spring = Spring::find($spring_id);
-        return view('observations.create', compact('spring'));
+        $spring = Spring::where('code', $spring_code)->with('observations')->first();
+        if (Auth::user()) {
+            return Inertia::render('Observations/Create', ['spring' => $spring]);
+        }
+        return Inertia::render('Observations/Index', ['spring' => $spring]);
     }
 
     /**

@@ -91,7 +91,7 @@
 
                             <div id="references">
                                 <div v-for="reference in form.references" :key="reference.id">
-                                    <jet-input :id="reference.url_id" v-model="reference.url" placeholder="URL"/>
+                                    <jet-input :id="reference.url_id" v-model="reference.url" type="url" placeholder="URL"/>
                                     <jet-input :id="reference.url_title_id" v-model="reference.url_title" placeholder="URL title"/>
                                     <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3" @click="addReference">+</button>
                                 </div>
@@ -292,6 +292,16 @@ export default {
         },
         saveDraft: function (data) {
             data._method = 'POST';
+
+            /*this.$inertia.post('/springs', {
+                title: this.form.name,
+                description: this.form.description,
+                latitude: this.form.latitude,
+                longitude: this.form.latitude,
+                references: this.form.references,
+                photos: this.photos
+            })*/
+
             this.$inertia.post('/springs', data)
         },
         submit: function (data) {
@@ -300,16 +310,31 @@ export default {
             this.$inertia.post('/springs', data)
         },
         updatePhotos(photo) {
+            //this.form.photos.push(photo.raw);
+            //savePhoto(photo);
             //TODO upload photo
-            //var data = new FormData();
-            //data.append('photo', photo.raw || '');
+            var data = new FormData();
+            data.append('photo', photo.raw || '');
             //let photo_id = this.$inertia.post('/photos', data);
-            /*let photo_id;
+            let photo_id;
             axios.post('/photos', data).then(response => {
-                this.onSuccess(response && response.data);
-                photo_id = resolve(response && response.data);
-            });
-            console.log(photo_id);*/
+                console.log('resp');
+                console.log(response);
+                //this.onSuccess(response && response.data);
+                //photo_id = resolve(response && response.data);
+            })
+                .catch(function (error) {
+                    // handle error
+                    console.log(error);
+                })
+                .then(function () {
+                    // always executed
+                    console.log('midagi');
+                });
+            ;
+            console.log(photo_id);
+
+
         },
         handlePhotoCardPreview(photo) {
             this.dialogPhotoUrl = photo.url;
@@ -326,6 +351,7 @@ export default {
             geocoder.geocode({ 'latLng': location.latLng }, (result, status) => {
                 if (status === google.maps.GeocoderStatus.OK) {
                     let address_components = result[0].address_components;
+                    console.log(address_components);
                     let address = getAddressObject(address_components);
                     this.form.country = address.country;
                     this.form.county = address.county;
@@ -337,60 +363,59 @@ export default {
     }
 }
 
-function getFormData() {
-    let data = new FormData();
-    let fields_array = ['title', 'kkr_code', 'latitude', 'longitude', 'country', 'county', 'settlement',
-        'description', 'classification', 'ownership', 'needs_attention', 'featured'];
-    _.forEach(this.form, function(field_value, field) {
-        if (fields_array.includes(field)) {
-            data.append(field, field_value || '');
-        } else if (['references', 'database_links'].includes(field)) {
-            data.append(field, JSON.stringify(field_value) || '');
-        }
-    });
-    _.forEach(this.form.photos, function(photo, index) {
-        data.append('photos['+index+']', photo || '');
-    });
-    return data;
+async function savePhoto(photo) {
+
+var data = new FormData();
+data.append('photo', photo.raw || '');
+//let photo_id = this.$inertia.post('/photos', data);
+let photo_id;
+let res = await axios.post('/photos', data);
+
+console.log(`Status code: ${res.status}`);
+console.log(`Status text: ${res.statusText}`);
+console.log(`Request method: ${res.request.method}`);
+console.log(`Path: ${res.request.path}`);
+console.log(`Date: ${res.headers.date}`);
+console.log(`Data: ${res.data}`);
 }
 
 function getAddressObject(address_components) {
-    let ShouldBeComponent = {
-        county: [
-            "administrative_area_level_1",
-            "administrative_area_level_2",
-            "administrative_area_level_3",
-            "administrative_area_level_4",
-            "administrative_area_level_5"
-        ],
-        settlement: [
-            "locality",
-            "sublocality",
-            "sublocality_level_1",
-            "sublocality_level_2",
-            "sublocality_level_3",
-            "sublocality_level_4"
-        ],
-        country: ["country"]
-    };
+let ShouldBeComponent = {
+county: [
+"administrative_area_level_1",
+"administrative_area_level_2",
+"administrative_area_level_3",
+"administrative_area_level_4",
+"administrative_area_level_5"
+],
+settlement: [
+"locality",
+"sublocality",
+"sublocality_level_1",
+"sublocality_level_2",
+"sublocality_level_3",
+"sublocality_level_4"
+],
+country: ["country"]
+};
 
-    var address = {
-        county: "",
-        settlement: "",
-        country: ""
-    };
-    address_components.forEach(component => {
-        for (var shouldBe in ShouldBeComponent) {
-            if (ShouldBeComponent[shouldBe].indexOf(component.types[0]) !== -1) {
-                if (shouldBe === "country") {
-                    address[shouldBe] = component.short_name;
-                } else {
-                    address[shouldBe] = component.long_name;
-                }
-            }
-        }
-    });
-    return address;
+var address = {
+county: "",
+settlement: "",
+country: ""
+};
+address_components.forEach(component => {
+for (var shouldBe in ShouldBeComponent) {
+if (ShouldBeComponent[shouldBe].indexOf(component.types[0]) !== -1) {
+    if (shouldBe === "country") {
+        address[shouldBe] = component.short_name;
+    } else {
+        address[shouldBe] = component.long_name;
+    }
+}
+}
+});
+return address;
 };
 
 </script>

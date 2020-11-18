@@ -7,6 +7,7 @@ use App\Models\MeasurementFieldValue;
 use App\Models\Spring;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Inertia\Inertia;
 
 class MeasurementController extends Controller
 {
@@ -16,22 +17,31 @@ class MeasurementController extends Controller
      * @param int $spring_id
      * @return \Illuminate\Http\Response
      */
-    public function index(int $spring_id)
+    public function index(string $spring_code)
     {
-        $spring = Spring::find($spring_id);
-        return view('measurements.index', compact('spring'));
+        //$spring = Spring::find($spring_id);
+        $spring = Spring::where('code', $spring_code)->with('measurements')->first();
+        return Inertia::render('Measurements/Index', ['spring' => $spring]);
+        //return view('measurements.index', compact('spring'));
+        //$springs = Spring::where('status', ['submitted', 'confirmed'])->get();
     }
 
     /**
      * Show the form for creating a new resource.
      *
-     * @param int $spring_id
-     * @return \Illuminate\Http\Response
+     * @param string $spring_code
+     * @return \Inertia\Response
      */
-    public function create(int $spring_id)
+    public function create(string $spring_code)
     {
-        $spring = Spring::find($spring_id);
-        return view('measurements.create', compact('spring'));
+        if (Auth::user()) {
+            $spring = Spring::where('code', $spring_code)->with('measurements')->first();
+            $fields = \App\Models\MeasurementField::where('visible', 1)->orderBy('position')->get();
+            return Inertia::render('Measurements/Create', ['spring' => $spring, 'measurement_fields' => $fields]);
+        }
+        $spring = Spring::where('code', $spring_code)->with('measurements')->first();
+        return Inertia::render('Measurements/Index', ['spring' => $spring]);
+
     }
 
     /**
@@ -41,8 +51,9 @@ class MeasurementController extends Controller
      * @param int $spring_id
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, int $spring_id)
+    public function store(Request $request)
     {
+        $spring_id = $request['spring_id'];
         $request->validate([
             'analysis_time' => 'required'
         ]);
@@ -54,7 +65,12 @@ class MeasurementController extends Controller
         $request['user_id'] = Auth::id();
         $measurement = Measurement::create($measurement_values);
         // save measurement info
-        foreach ($request['measurement_values'] as $field_id=>$value) {
+        //var_dump($request['measurement_values']);
+        foreach ($request['measurement_values'] as $field_data) {
+            $field_id = $field_data['id'];
+
+            $value = isset($field_data['value']) ? $field_data['value'] : false;
+
             if ($value) {
                 $measurement_value = new MeasurementFieldValue();
                 $measurement_value->measurement_id = $measurement->id;
@@ -107,7 +123,9 @@ class MeasurementController extends Controller
         ];
         $measurement->update($measurement_values);
         // save measurement info
-        foreach ($request['measurement_values'] as $field_id=>$value) {
+        foreach ($request['measurement_values'] as $field_data) {
+            $field_id = $field_data->id;
+            $value = $field_data->value;
             $measurement_value = MeasurementFieldValue::where('field_id', $field_id)
                 ->where('measurement_id', $measurement->id)
                 ->first();

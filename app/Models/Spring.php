@@ -10,12 +10,17 @@ class Spring extends Model
     use HasFactory;
 
     protected $fillable = [
-        'user_id', 'title', 'code', 'kkr_code', 'latitude', 'longitude', 'county', 'settlement', 'description', 'folklore', 'classification', 'groundwater_body', 'geology', 'ownership', 'status'
+        'user_id', 'title', 'code', 'kkr_code', 'latitude', 'longitude', 'country', 'county', 'settlement', 'description', 'folklore', 'classification', 'groundwater_body', 'geology', 'ownership', 'status', 'needs_attention', 'featured'
     ];
 
     public function references()
     {
         return $this->hasMany('App\Models\SpringReference');
+    }
+
+    public function photos()
+    {
+        return $this->hasMany('App\Models\Photo');
     }
 
     public function database_links()
@@ -33,5 +38,9 @@ class Spring extends Model
         return $this->hasMany('App\Models\Measurement');
     }
 
+    public function getRouteKeyName()
+    {
+        return 'code';
+    }
 
 }

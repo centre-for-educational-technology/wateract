@@ -18,7 +18,12 @@
 
         <div class="py-6">
 
-            view observations measurements
+            <!--<spring-navigation :spring="spring"></spring-navigation>-->
+            <div>
+                <a href="">view</a>
+                <a :href="spring.code+'/observations'">observations</a>
+                <a :href="spring.code+'/measurements'">measurements</a>
+            </div>
 
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
@@ -26,7 +31,7 @@
                         <div class="z-depth-1-half map-container w-full" style="height:400px;">
                             <GmapMap ref="map"
                                  :center="{lat:latitude, lng:longitude}"
-                                 :zoom="9"
+                                 :zoom="12"
                                  map-type-id="terrain"
                                  style="width: 100%; height: 100%"
                             >
@@ -41,74 +46,89 @@
                     <div class="flex -mx-2 w-full px-2 py-2">
                         <div class="w-3/4 px-2">
 
-                            <div class="">
-                                <h4>springs.description</h4>
+                            <div class="py-2">
+                                <strong>Description</strong>
                                 <div>{{ spring.description }}</div>
                             </div>
 
-                            <div class="" v-if="spring.folklore">
-                                <h4>springs.folklore</h4>
+                            <div class="py-2" v-if="spring.folklore">
+                                <strong>Folklore</strong>
                                 <div>{{ spring.folklore }}</div>
                             </div>
 
-                            <div class="" v-if="spring.geology">
-                                <h4>springs.geology</h4>
+                            <div class="py-2" v-if="spring.geology">
+                                <strong>Geology</strong>
                                 <div>{{ spring.geology }}</div>
                             </div>
 
-                            <div v-if="spring.references">
-                                <h4>springs.references</h4>
-                                <div>
-                                    <a target="_blank" v-for='data in spring.references'>{{ data.url}}</a>
+                            <div class="py-2" v-if="spring.references.length > 0">
+                                <strong>References</strong>
+                                <div v-for="reference in spring.references">
+                                    <a target="_blank" v-bind:href="reference.url" >{{ reference.url_title}}</a>
                                 </div>
                             </div>
 
-                            <div v-if="spring.database_links">
-                                <h4>springs.database_links</h4>
-                                <div>
-                                    <a target="_blank" v-for='data in spring.database_links'>{{ data.url}}</a>
-                                </div>
+                            <div class="py-2" v-if="spring.database_links.length > 0">
+                                <strong>Database links</strong>
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Database name</th>
+                                        <th scope="col">Code</th>
+                                        <th scope="col">Spring name</th>
+                                        <th scope="col">URL</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr v-for='database_link in spring.database_links'>
+                                            <td>{{ database_link.database_name }}</td>
+                                            <td>{{ database_link.code }}</td>
+                                            <td>{{ database_link.spring_name }}</td>
+                                            <td><a :href="database_link.url" target="_blank">{{ database_link.url }}</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
 
                         </div>
 
                         <div class="w-1/4 px-2">
 
-                            <div class="row">
+                            <div class="py-2">
                                 <strong>Location</strong>
                                 <div>{{spring.county}}</div>
 
                                 <div v-if="spring.settlement">{{spring.settlement}}</div>
                             </div>
 
-                            <div class="row">
+                            <div class="py-2">
                                 <div>{{spring.latitude}} {{spring.longitude}}</div>
                             </div>
 
-                            <div class="row" v-if="spring.kkr_code">
+                            <div class="py-2" v-if="spring.kkr_code">
                                 <div class="group">
-                                    <strong>KKR Code</strong>
+                                    <strong>KKR code</strong>
                                     <div>{{spring.kkr_code}}</div>
                                 </div>
                             </div>
 
-                            <div class="row" v-if="spring.classification">
-                                <strong>spring_classification</strong>
+                            <div class="py-2" v-if="spring.classification">
+                                <strong>Spring classification</strong>
                                 <div>{{spring.classification}}</div>
                             </div>
 
-                            <div class="row" v-if="spring.groundwater_body">
-                                <strong>groundwater_body</strong>
+                            <div class="py-2" v-if="spring.groundwater_body">
+                                <strong>Groundwater body</strong>
                                 <div>{{spring.groundwater_body}}</div>
                             </div>
 
-                            <div class="row" v-if="spring.ownership">
-                                <strong>ownership</strong>
+                            <div class="py-2" v-if="spring.ownership">
+                                <strong>Ownership</strong>
                                 <div>{{spring.ownership}}</div>
                             </div>
 
-                            <div class="row" v-if="spring.status">
-                                <strong>status</strong>
+                            <div class="py-2" v-if="spring.status">
+                                <strong>Status</strong>
                                 <div>{{spring.status}}</div>
                             </div>
 
@@ -125,16 +145,21 @@
 </template>
 
 <script>
-import AppLayout from './../../Layouts/AppLayout'
+import AppLayout from './../../Layouts/AppLayout';
+import SpringNavigation from './../../Layouts/SpringNavigation';
+import JetLabel from "../../Jetstream/Label";
 import { gmapApi } from 'gmap-vue';
 
 export default {
     components: {
         AppLayout,
+        SpringNavigation,
+        JetLabel,
         gmapApi,
     },
     props: ['spring'],
     data() {
+        console.log(this.spring);
         return {
             map: null,
             latitude: this.spring.latitude,

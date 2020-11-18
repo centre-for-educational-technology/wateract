@@ -61,7 +61,7 @@ export default {
         var markers = [];
         _.forEach(this.springs, function(spring) {
             markers.push({
-                id: spring.id,
+                id: spring.code,
                 name: spring.title,
                 description: spring.description,
                 date_build: "",

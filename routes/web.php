@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\PhotoController;
+use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Models\Spring;
 use App\Http\Controllers\SpringController;
@@ -18,16 +21,32 @@ use App\Http\Controllers\MeasurementController;
 */
 
 Route::get('/', function () {
-    return view('springs.index', ['springs' => Spring::all()]);
+    $springs = Spring::where('status', ['submitted', 'confirmed'])->get();
+    return Inertia\Inertia::render('Springs/Index', ['springs' => $springs]);
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return Inertia\Inertia::render('Dashboard');
+    $springs = Spring::where('user_id', Auth::id())->get();
+    return Inertia\Inertia::render('Dashboard', ['springs' => $springs]);
 })->name('dashboard');
-Route::get('/logout', function () {
+
+/*Route::get('/springs', function () {
+    return Inertia\Inertia::render('Springs/Index');
+})->name('springs');
+Route::get('/springs/create', function () {
+    return Inertia\Inertia::render('Springs/Create');
+})->name('springs');*/
+
+Route::resource('admin/users', UserController::class);
+
+/*Route::group(['middleware' => ['auth']], function() {
+    Route::resource('admin/users', UserController::class);
+});*/
+
+/*Route::get('/logout', function () {
     Auth::logout();
     return view('springs.index', ['springs' => Spring::all()]);
-});
+});*/
 
 Route::get('locale/{locale}', function ($locale){
     Session::put('locale', $locale);
@@ -35,6 +54,7 @@ Route::get('locale/{locale}', function ($locale){
 });
 
 Route::resource('springs', SpringController::class);
+Route::resource('photos', PhotoController::class);
 Route::resource('springs.observations', ObservationController::class);
 Route::resource('observations', ObservationController::class);
 Route::resource('springs.measurements', MeasurementController::class);
