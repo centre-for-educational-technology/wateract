@@ -14,10 +14,10 @@
 
                         <div class="flex -mx-2 py-2">
                             <div class="w-full px-2">
-                                <jet-label class="font-bold" for="title" value="Name" />
-                                <jet-input id="title" type="text" class="mt-1 block w-full" v-model="form.title" />
-                                <small id="title_help_block" class="form-text text-muted">
-                                    'springs.title_help_text'
+                                <jet-label class="font-bold" for="name" value="Name" />
+                                <jet-input id="name" type="text" class="mt-1 block w-full" v-model="form.name" />
+                                <small id="name_help_block" class="form-text text-muted">
+                                    'springs.name_help_text'
                                 </small>
                             </div>
                         </div>
@@ -233,7 +233,7 @@ export default {
             database_links_counter: 1,
             form: this.$inertia.form({
                 '_method': 'PUT',
-                title: this.title,
+                name: this.name,
                 kkr_code: this.kkr_code,
                 latitude: this.latitude,
                 longitude: this.longitude,
@@ -248,14 +248,12 @@ export default {
                 needs_attention: 0,
                 featured: 0,
                 references: [{
-                    id: '1',
                     url_id: 'references[1][url]',
                     url_title_id: 'references[1][url_title]',
                     url: '',
                     url_title: '',
                 }],
                 database_links: [{
-                    id: '1',
                     database_name_id: 'database_links[1][database_name]',
                     spring_name_id: 'database_links[1][spring_name]',
                     code_id: 'database_links[1][code]',
@@ -278,8 +276,6 @@ export default {
             this.form.references.push({
                 url_id: 'references['+ ++this.references_counter +'][url]',
                 url_title_id: 'references['+ this.references_counter +'][url_title]',
-                label: 'Enter Fruit Name',
-                value: '',
             });
         },
         addDatabaseLink() {

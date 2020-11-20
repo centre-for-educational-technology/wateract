@@ -18,8 +18,8 @@
 
                         <div class="flex -mx-2">
                             <div class="w-full px-2">
-                                <jet-label class="font-bold" for="title" value="Name" />
-                                <jet-input id="title" type="text" class="mt-1 block w-full" v-model="form.title" />
+                                <jet-label class="font-bold" for="name" value="Name" />
+                                <jet-input id="name" type="text" class="mt-1 block w-full" v-model="form.name" />
                             </div>
                         </div>
 
@@ -35,8 +35,8 @@
                             <jet-label class="font-bold" value="Location" />
                             <div class="z-depth-1-half map-container" style="height:400px;">
                                 <GmapMap
-                                    :center="{lat:58.279, lng:26.054}"
-                                    :zoom="7"
+                                    :center="{lat:form.latitude, lng:form.longitude}"
+                                    :zoom="12"
                                     map-type-id="terrain"
                                     style="width: 100%; height: 100%"
                                     @click="updateLocation"
@@ -141,7 +141,7 @@
                             <jet-label class="font-bold" for="classification" value="Spring classification" />
                             <select id="classification" v-model="form.classification"
                                     class="block w-full bg-white border border-gray-400 hover:border-gray-500 px-2 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
-                                <option v-for='data in classifications' :selected="classification === data.id" :value='data.id'>{{ data.name }}</option>
+                                <option v-for='data in classifications' :selected="form.classification === data.id" :value='data.id'>{{ data.name }}</option>
                             </select>
                         </div>
 
@@ -160,7 +160,7 @@
                         <jet-label class="font-bold" for="ownership" value="Ownership" />
                         <select id="ownership" v-model="form.ownership"
                                 class="block w-full bg-white border border-gray-400 hover:border-gray-500 px-2 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
-                            <option v-for='data in ownerships' :selected="ownership === data.id" :value='data.id'>{{ data.name }}</option>
+                            <option v-for='data in ownerships' :selected="form.ownership === data.id" :value='data.id'>{{ data.name }}</option>
                         </select>
                     </div>
 
@@ -182,7 +182,7 @@
 
             <template #actions>
                 <jet-secondary-button v-if="form.status !== 'submitted'" type="submit" @click.native="saveDraft(form)">Save as draft</jet-secondary-button>
-                <jet-button v-if="form.status !== 'submitted'" class="ml-2" type="submit" @click.native="submit(form)">Submit</jet-button>
+                <jet-button  class="ml-2" type="submit" @click.native="submit(form)">Submit</jet-button>
                 <jet-button v-if="form.status === 'submitted'" class="ml-2" type="submit" @click.native="confirm(form)">Confirm</jet-button>
             </template>
         </jet-form-section>
@@ -217,12 +217,19 @@ export default {
             dialogVisible: false,
             dialogPhotoUrl: '',
             map: null,
-            markers: [],
+            markers: [{
+                id: this.spring.id,
+                name: this.spring.name,
+                description: this.spring.description,
+                position: {lat: this.spring.latitude, lng: this.spring.longitude}
+            }],
             references_counter: this.spring.references.length,
             database_links_counter: this.spring.database_links.length,
             form: this.$inertia.form({
                 '_method': 'PUT',
-                title: this.spring.title,
+                id: this.spring.id,
+                code: this.spring.code,
+                name: this.spring.name,
                 kkr_code: this.spring.kkr_code,
                 latitude: this.spring.latitude,
                 longitude: this.spring.longitude,
@@ -252,7 +259,6 @@ export default {
             this.form.references.push({
                 url_id: 'references[' + ++this.references_counter + '][url]',
                 url_title_id: 'references[' + this.references_counter + '][url_title]',
-                value: '',
             });
         },
         addDatabaseLink() {
@@ -263,27 +269,107 @@ export default {
                 url_id: 'database_links[' + this.database_links_counter + '][url]',
             });
         },
+        updatePhotos(photo) {
+            //this.form.photos.push(photo.raw);
+            //savePhoto(photo);
+            //TODO upload photo
+            var data = new FormData();
+            data.append('photo', photo.raw || '');
+            //let photo_id = this.$inertia.post('/photos', data);
+            let photo_id;
+            axios.post('/photos', data).then(response => {
+                console.log('resp');
+                console.log(response);
+                //this.onSuccess(response && response.data);
+                //photo_id = resolve(response && response.data);
+            })
+                .catch(function (error) {
+                    // handle error
+                    console.log(error);
+                })
+                .then(function () {
+                    // always executed
+                    console.log('midagi');
+                });
+            ;
+            console.log(photo_id);
+
+
+        },
         handlePhotoCardPreview(photo) {
             this.dialogPhotoUrl = photo.url;
             this.dialogVisible = true;
         },
         saveDraft: function (data) {
-            data._method = 'POST';
-            this.$inertia.post('/springs', data)
+            data._method = 'PUT';
+            this.$inertia.post('/springs/' + data.code, data)
         },
         submit: function (data) {
             data.status = 'submitted';
-            data._method = 'POST';
-            this.$inertia.post('/springs', data)
+            data._method = 'PUT';
+            this.$inertia.post('/springs/' + data.code , data)
         },
         confirm: function (data) {
             data.status = 'confirmed';
-            data._method = 'POST';
-            this.$inertia.post('/springs', data)
+            data._method = 'PUT';
+            this.$inertia.post('/springs/' + data.code, data)
         },
+        updateLocation(location) {
+            this.markers = [{
+                position: location.latLng
+            }];
+            this.form.latitude= location.latLng.lat();
+            this.form.longitude = location.latLng.lng();
+
+            const geocoder = new google.maps.Geocoder()
+            geocoder.geocode({ 'latLng': location.latLng }, (result, status) => {
+                if (status === google.maps.GeocoderStatus.OK) {
+                    let address_components = result[0].address_components;
+                    let address = getAddressObject(address_components);
+                    this.form.country = address.country;
+                    this.form.county = address.county;
+                    this.form.settlement = address.settlement;
+                }
+            })
+        }
     },
 }
+function getAddressObject(address_components) {
+    let ShouldBeComponent = {
+        county: [
+            "administrative_area_level_1",
+            "administrative_area_level_2",
+            "administrative_area_level_3",
+            "administrative_area_level_4",
+            "administrative_area_level_5"
+        ],
+        settlement: [
+            "locality",
+            "sublocality",
+            "sublocality_level_1",
+            "sublocality_level_2",
+            "sublocality_level_3",
+            "sublocality_level_4"
+        ],
+        country: ["country"]
+    };
+
+    var address = {
+        county: "",
+        settlement: "",
+        country: ""
+    };
+    address_components.forEach(component => {
+        for (var shouldBe in ShouldBeComponent) {
+            if (ShouldBeComponent[shouldBe].indexOf(component.types[0]) !== -1) {
+                if (shouldBe === "country") {
+                    address[shouldBe] = component.short_name;
+                } else {
+                    address[shouldBe] = component.long_name;
+                }
+            }
+        }
+    });
+    return address;
+};
 </script>
-<!--<script src="./../../../../public/js/map.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=' + services.google.maps.api-key + '&libraries=places&callback=initMap" async defer></script>
--->

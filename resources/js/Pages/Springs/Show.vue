@@ -2,15 +2,15 @@
     <app-layout>
         <template #header>
             <div class="flex w-full">
-                <h2 class="w-3/4 font-semibold text-xl text-gray-800 leading-tight" v-if="spring.title">
-                    {{ spring.title }}
+                <h2 class="w-3/4 font-semibold text-xl text-gray-800 leading-tight" v-if="spring.name">
+                    {{ spring.name }}
                 </h2>
-                <h2 class="w-3/4 font-semibold text-xl text-gray-800 leading-tight" v-if="!spring.title">
+                <h2 class="w-3/4 font-semibold text-xl text-gray-800 leading-tight" v-if="!spring.name">
                     Unnamed
                 </h2>
                 <div class="float-right w-1/4" v-if="$page.user">
-                    <button class=" border text-xs font-semibold px-3 py-2 leading-normal">
-                        <a href="edit">Edit spring</a>
+                    <button class="border text-xs font-semibold px-3 py-2 leading-normal">
+                        <inertia-link :href="'/springs/'+spring.code+'/edit'">Edit spring</inertia-link>
                     </button>
                 </div>
             </div>
@@ -18,12 +18,7 @@
 
         <div class="py-6">
 
-            <!--<spring-navigation :spring="spring"></spring-navigation>-->
-            <div>
-                <a href="">view</a>
-                <a :href="spring.code+'/observations'">observations</a>
-                <a :href="spring.code+'/measurements'">measurements</a>
-            </div>
+            <spring-navigation :spring="spring"></spring-navigation>
 
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
@@ -146,7 +141,7 @@
 
 <script>
 import AppLayout from './../../Layouts/AppLayout';
-import SpringNavigation from './../../Layouts/SpringNavigation';
+import SpringNavigation from './SpringNavigation';
 import JetLabel from "../../Jetstream/Label";
 import { gmapApi } from 'gmap-vue';
 
@@ -159,14 +154,13 @@ export default {
     },
     props: ['spring'],
     data() {
-        console.log(this.spring);
         return {
             map: null,
             latitude: this.spring.latitude,
             longitude: this.spring.longitude,
             markers: [{
                 id: this.spring.id,
-                name: this.spring.title,
+                name: this.spring.name,
                 description: this.spring.description,
                 position: {lat: this.spring.latitude, lng: this.spring.longitude}
             }],

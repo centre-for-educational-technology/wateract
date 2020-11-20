@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\DB;
 class Measurement extends Model
 {
     const TABLE_MEASUREMENT_FIELD_VALUES = 'measurement_field_values';
-    const TABLE_MEASUREMENT_FIELDS = 'measurement_fields';
+    const TABLE_MEASUREMENT_FIELDS = 'model_fields';
     use HasFactory;
 
     protected $fillable = [

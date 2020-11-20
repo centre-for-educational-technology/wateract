@@ -62,7 +62,7 @@ export default {
         _.forEach(this.springs, function(spring) {
             markers.push({
                 id: spring.code,
-                name: spring.title,
+                name: spring.name,
                 description: spring.description,
                 date_build: "",
                 position: {lat: spring.latitude, lng: spring.longitude}

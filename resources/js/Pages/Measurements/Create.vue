@@ -2,13 +2,17 @@
     <app-layout v-if="$page.user">
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                {{ spring.title }}
+                <inertia-link class="mr-4" :href="'/springs/'+spring.code">{{ spring.name }}</inertia-link>
             </h2>
         </template>
 
 
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto py-8 sm:px-6 lg:px-8">
             <jet-form-section>
+
+                <template #title>
+                    Create measurement
+                </template>
 
                 <template #form>
 
@@ -19,10 +23,14 @@
                         </div>
                     </div>
 
+                    <div class="grid grid-cols-2 gap-4">
                         <div v-for="field in measurement_fields" :key="field.id">
-                            <jet-label class="font-bold" :for="field.name" :value="field.name" />
-                            <jet-input :type="field.type" class="mt-1 block w-full" :id="field.name" v-model="field.value" :name="'measurement_values['+ field.name +']'" />
+                            <div :class="{'pull-right': index % 2 === 0, 'pull-left': index % 2 !== 0 }">
+                                <jet-label class="font-bold" :for="field.name" :value="field.name" />
+                                <jet-input :type="field.type" class="mt-1 block w-full" :id="field.name" v-model="field.value" :name="'measurement_values['+ field.name +']'" />
+                            </div>
                         </div>
+                    </div>
 
                 </template>
                 <template #actions>

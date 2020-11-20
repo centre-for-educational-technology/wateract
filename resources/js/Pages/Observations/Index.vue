@@ -2,48 +2,61 @@
     <app-layout>
         <template #header>
             <div class="flex w-full">
-                <h2 class="w-3/4 font-semibold text-xl text-gray-800 leading-tight">
-                    {{ spring.title }}
+                <h2 class="w-3/4 font-semibold text-xl text-gray-800 leading-tight" v-if="spring.name">
+                    {{ spring.name }}
                 </h2>
-                <div class="w-1/4" v-if="$page.user">
-                    <a href="observations/create" class="border text-xs font-semibold px-4 py-1 leading-normal">
-                        Create new observation</a>
+                <h2 class="w-3/4 font-semibold text-xl text-gray-800 leading-tight" v-if="!spring.name">
+                    Unnamed
+                </h2>
+                <div class="float-right w-1/4" v-if="$page.user">
+                    <button class="border text-xs font-semibold px-3 py-2 leading-normal">
+                        <inertia-link :href="'/springs/'+spring.code+'/observations/create'">
+                            Create new observation</inertia-link>
+                    </button>
                 </div>
             </div>
         </template>
 
         <div class="py-6">
 
-            <div>
-                <a :href="'../'+ spring.code">view</a>
-                <a :href="'observations'">observations</a>
-                <a :href="'measurements'">measurements</a>
-            </div>
+            <spring-navigation :spring="spring"></spring-navigation>
 
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
 
-                    <div v-for="observation in spring.observations" :key="observation.id">
+                    <div class="px-4" v-for="observation in spring.observations" :key="observation.id">
 
-                        <div><label><strong>{{ observation.analysis_time }}</strong></label></div>
+                        <jet-label :value="observation.measurement_time" @click.native="showObservation(observation)"/>
+
+                        <observation-view  v-show="observation.show" :observation="observation"></observation-view>
 
                     </div>
 
                 </div>
-
             </div>
-        </div>
+
         </div>
 
     </app-layout>
 </template>
 <script>
 import AppLayout from './../../Layouts/AppLayout'
+import SpringNavigation from '../Springs/SpringNavigation'
+import JetLabel from "../../Jetstream/Label";
+import ObservationView from './ObservationView'
 
 export default {
     components: {
         AppLayout,
+        SpringNavigation,
+        JetLabel,
+        ObservationView
     },
     props: ['spring'],
+    methods: {
+        showObservation(observation) {
+            this.$set(observation, 'show', !observation.show)
+        },
+    },
 }
 </script>
