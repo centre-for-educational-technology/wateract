@@ -92,9 +92,6 @@ class SpringController extends Controller
         $request['user_id'] = Auth::id();
         // create wateract code
         $new_id = DB::table('springs')->max('id') + 1;
-        var_dump(sprintf("%05s", $new_id));
-        $format = 'There are %d monkeys in the %s';
-        echo sprintf('%s%05d', $request['country'], $new_id);
         $code = sprintf('%s%05d', $request['country'], $new_id);
 
         $request['code'] = $code;
@@ -137,17 +134,30 @@ class SpringController extends Controller
         if (isset($databases_info)) {
             //$databases = json_decode($databases_info);
             foreach ($databases_info as $database_info) {
-                if (empty($database_info['database_name']) && empty($database_info['code'])
-                    && empty($database_info['spring_name']) && empty($database_info['url'])) {
-                    continue;
+                if (isset($database_info['id'])) {
+                    $spring_database_link = SpringDatabaseLink::find($database_info['id']);
+                    if (empty($database_info['database_name']) && empty($database_info['code'])
+                        && empty($database_info['spring_name']) && empty($database_info['url'])) {
+                        $spring_database_link->delete();
+                    }
+                    $spring_database_link->database_name = $database_info['database_name'];
+                    $spring_database_link->code = $database_info['code'];
+                    $spring_database_link->spring_name = $database_info['spring_name'];
+                    $spring_database_link->url = $database_info['url'];
+                    $spring_database_link->save();
+                } else {
+                    if (empty($database_info['database_name']) && empty($database_info['code'])
+                        && empty($database_info['spring_name']) && empty($database_info['url'])) {
+                        continue;
+                    }
+                    $spring_database_link = new SpringDatabaseLink();
+                    $spring_database_link->spring_id = $spring->id;
+                    $spring_database_link->database_name = $database_info['database_name'];
+                    $spring_database_link->code = $database_info['code'];
+                    $spring_database_link->spring_name = $database_info['spring_name'];
+                    $spring_database_link->url = $database_info['url'];
+                    $spring_database_link->save();
                 }
-                $spring_database_link = new SpringDatabaseLink();
-                $spring_database_link->spring_id = $spring->id;
-                $spring_database_link->database_name = $database_info['database_name'];
-                $spring_database_link->code = $database_info['code'];
-                $spring_database_link->spring_name = $database_info['spring_name'];
-                $spring_database_link->url = $database_info['url'];
-                $spring_database_link->save();
             }
         }
     }
@@ -185,9 +195,10 @@ class SpringController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Spring  $spring
-     * @return \Illuminate\Http\Response
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Models\Spring $spring
+     * @return \Illuminate\Http\RedirectResponse
+     * @throws \Illuminate\Auth\Access\AuthorizationException
      */
     public function update(Request $request, Spring $spring)
     {
@@ -226,7 +237,9 @@ class SpringController extends Controller
 
         }
 
-        foreach ($request['spring_databases'] as $database_info) {
+        SpringController::saveDatabaseLinks($spring, $request['database_links']);
+
+        /*foreach ($request['spring_databases'] as $database_info) {
             if (isset($database_info['id'])) {
                 $spring_database_link = SpringDatabaseLink::find($database_info['id']);
                 if (empty($database_info['database_name']) && empty($database_info['code'])
@@ -252,7 +265,7 @@ class SpringController extends Controller
                 $spring_database_link->save();
             }
 
-        }
+        }*/
 
         return redirect()->route('springs.show', compact('spring'))
             ->with('success','Spring updated successfully.');

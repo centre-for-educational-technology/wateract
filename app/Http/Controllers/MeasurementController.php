@@ -14,16 +14,13 @@ class MeasurementController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @param int $spring_id
-     * @return \Illuminate\Http\Response
+     * @param string $spring_code
+     * @return \Inertia\Response
      */
     public function index(string $spring_code)
     {
-        //$spring = Spring::find($spring_id);
         $spring = Spring::where('code', $spring_code)->with('measurements')->first();
         return Inertia::render('Measurements/Index', ['spring' => $spring]);
-        //return view('measurements.index', compact('spring'));
-        //$springs = Spring::where('status', ['submitted', 'confirmed'])->get();
     }
 
     /**
@@ -34,12 +31,11 @@ class MeasurementController extends Controller
      */
     public function create(string $spring_code)
     {
+        $spring = Spring::where('code', $spring_code)->with('measurements')->first();
         if (Auth::user()) {
-            $spring = Spring::where('code', $spring_code)->with('measurements')->first();
-            $fields = \App\Models\MeasurementField::where('visible', 1)->orderBy('position')->get();
+            $fields = \App\Models\ModelField::where('model', 'measurement')->where('visible', 1)->orderBy('position')->get();
             return Inertia::render('Measurements/Create', ['spring' => $spring, 'measurement_fields' => $fields]);
         }
-        $spring = Spring::where('code', $spring_code)->with('measurements')->first();
         return Inertia::render('Measurements/Index', ['spring' => $spring]);
 
     }
@@ -90,9 +86,10 @@ class MeasurementController extends Controller
      * @param  \App\Models\Measurement  $measurement
      * @return \Illuminate\Http\Response
      */
-    public function show(Measurement $measurement)
+    public function show(string $spring_code, int $measurement_id)
     {
-        //
+        $measurement = Measurement::find($measurement_id);
+        return response()->json($measurement->getFieldValues());
     }
 
     /**

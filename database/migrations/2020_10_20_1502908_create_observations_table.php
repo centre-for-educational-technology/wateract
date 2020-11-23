@@ -23,19 +23,8 @@ class CreateObservationsTable extends Migration
             $table->string('odor')->nullable();
             $table->string('taste')->nullable();
             $table->string('color')->nullable();
-            $table->double('water_temperature')->nullable();
-            $table->double('air_temperature')->nullable();
-            $table->double('ph')->nullable();
-            $table->double('specific_conductance')->nullable();
-            $table->double('electrical_conductivity')->nullable();
-            $table->double('total_dissolved_solids')->nullable();
-            $table->double('nitrate')->nullable();
-            $table->double('bicarbonate')->nullable();
-            $table->double('redox_potential')->nullable();
-            $table->double('dissolved_oxygen_percentage')->nullable();
-            $table->double('dissolved_oxygen_ppm')->nullable();
-            $table->double('discharge')->nullable();
             $table->text('description')->nullable();
+            $table->string('status')->default('draft');
             $table->timestamps();
         });
     }

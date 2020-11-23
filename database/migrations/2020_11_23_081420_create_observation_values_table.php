@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMeasurementValuesTable extends Migration
+class CreateObservationValuesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateMeasurementValuesTable extends Migration
      */
     public function up()
     {
-        Schema::create('measurement_field_values', function (Blueprint $table) {
+        Schema::create('observation_field_values', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('measurement_id')->unsigned()->index();
-            $table->foreign('measurement_id')->references('id')->on('measurements')->onDelete('cascade');
+            $table->bigInteger('observation_id')->unsigned()->index();
+            $table->foreign('observation_id')->references('id')->on('observations')->onDelete('cascade');
             $table->bigInteger('field_id')->unsigned()->index();
             $table->foreign('field_id')->references('id')->on('model_fields');
             $table->string('value');
@@ -31,6 +31,6 @@ class CreateMeasurementValuesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('measurement_field_values');
+        Schema::dropIfExists('observation_field_values');
     }
 }

@@ -28,7 +28,7 @@
 
                         <jet-label :value="observation.measurement_time" @click.native="showObservation(observation)"/>
 
-                        <observation-view  v-show="observation.show" :observation="observation"></observation-view>
+                        <observation-view  v-show="observation.show" :spring="spring"  :observation="observation"></observation-view>
 
                     </div>
 

@@ -5,12 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class MeasurementFieldValue extends Model
+class ObservationFieldValue extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'measurement_id', 'field', 'value'
+        'observation_id', 'field', 'value'
     ];
 
     public function field()
@@ -18,9 +18,9 @@ class MeasurementFieldValue extends Model
         return $this->belongsTo('App\Models\ModelField');
     }
 
-    public function measurement()
+    public function observation()
     {
-        return $this->belongsTo('App\Models\Measurement');
+        return $this->belongsTo('App\Models\Observation');
     }
 
 }

@@ -16,6 +16,15 @@
             <div>{{ observation.color}}</div>
         </div>
 
+        <div class="grid grid-cols-2 gap-4">
+            <div v-for="field in observation_fields" :key="field.id">
+                <div>
+                    <jet-label :for="field.name" :value="field.name" />
+                    <div>{{field.value}} {{field.unit}}</div>
+                </div>
+            </div>
+        </div>
+
         <div v-if="observation.description">
             <jet-label value="Description" />
             <div>{{ observation.description}}</div>
@@ -31,6 +40,21 @@ import JetLabel from "../../Jetstream/Label";
         components: {
             JetLabel,
         },
-        props: ['observation'],
+        props: ['spring', 'observation'],
+        data() {
+            return {
+                observation_fields: [],
+            }
+        },
+        methods: {
+            getObservationInfo(spring, observation) {
+                axios.get('/springs/'+spring.code+'/observations/'+observation.id).then(response => {
+                    this.observation_fields = response.data;
+                })
+            },
+        },
+        created: function(){
+            this.getObservationInfo(this.spring, this.observation);
+        }
     }
 </script>

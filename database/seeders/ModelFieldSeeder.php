@@ -6,7 +6,7 @@ use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class MeasurementFieldSeeder extends Seeder
+class ModelFieldSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -802,36 +802,6 @@ class MeasurementFieldSeeder extends Seeder
 
         //observation fields
         $observation_field_position = 1;
-        DB::table('model_fields')->insert([
-            'model' => 'observation',
-            'name' => 'odor',
-            'unit' => '',
-            'type' => 'text',
-            'position' => $observation_field_position++,
-            'visible' => 1,
-            'created_at' => $now,
-            'updated_at' => $now,
-        ]);
-        DB::table('model_fields')->insert([
-            'model' => 'observation',
-            'name' => 'taste',
-            'unit' => '',
-            'type' => 'text',
-            'position' => $observation_field_position++,
-            'visible' => 1,
-            'created_at' => $now,
-            'updated_at' => $now,
-        ]);
-        DB::table('model_fields')->insert([
-            'model' => 'observation',
-            'name' => 'color',
-            'unit' => '',
-            'type' => 'text',
-            'position' => $observation_field_position++,
-            'visible' => 1,
-            'created_at' => $now,
-            'updated_at' => $now,
-        ]);
         DB::table('model_fields')->insert([
             'model' => 'observation',
             'name' => 'water_temperature',

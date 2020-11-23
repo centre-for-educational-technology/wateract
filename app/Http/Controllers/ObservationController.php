@@ -4,16 +4,22 @@ namespace App\Http\Controllers;
 
 use App\Models\Spring;
 use App\Models\Observation;
+use App\Models\ObservationFieldValue;
+use Exception;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 use Inertia\Inertia;
+use Inertia\Response;
 
 class ObservationController extends Controller
 {
     /**
      * Display a listing of the resource.
      * @param string $spring_code
-     * @return \Inertia\Response
+     * @return Response
      */
     public function index(string $spring_code)
     {
@@ -21,17 +27,33 @@ class ObservationController extends Controller
         return Inertia::render('Observations/Index', ['spring' => $spring]);
     }
 
+    public function getTasteOptions() {
+        return [
+            array( 'id' => 'fine', 'name' => 'Tastes fine, no complaints'),
+            array('id' => 'flat', 'name' => 'Tastes "flat" - noticeable lack of taste'),
+            array('id' => 'metallic', 'name' => 'Metallic, like iron or rust'),
+            array('id' => 'earthy', 'name' => 'Earthy or moldy'),
+            array('id' => 'rotten', 'name' => 'Smells and tastes like rotten eggs'),
+            array('id' => 'salty', 'name' => 'Tastes salty'),
+        ];
+    }
+
     /**
      * Show the form for creating a new resource.
      *
      * @param string $spring_code
-     * @return \Inertia\Response
+     * @return Response
      */
     public function create(string $spring_code)
     {
         $spring = Spring::where('code', $spring_code)->with('observations')->first();
         if (Auth::user()) {
-            return Inertia::render('Observations/Create', ['spring' => $spring]);
+            $observation_fields = \App\Models\ModelField::where('model', 'observation')->where('visible', 1)->orderBy('position')->get();
+            return Inertia::render('Observations/Create', [
+                'spring' => $spring,
+                'observation_fields' => $observation_fields,
+                'taste_options' => ObservationController::getTasteOptions()
+            ]);
         }
         return Inertia::render('Observations/Index', ['spring' => $spring]);
     }
@@ -39,58 +61,85 @@ class ObservationController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param \Illuminate\Http\Request $request
-     * @param int $spring_id
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @return RedirectResponse
      */
-    public function store(Request $request, int $spring_id)
+    public function store(Request $request)
     {
-        $request->validate([
+        Validator::make($request->all(), [
             'measurement_time' => 'required',
-        ]);
+        ])->validateWithBag('addObservation');
+
         $request['user_id'] = Auth::id();
-        $request['spring_id'] = $spring_id;
-        Observation::create($request->all());
-        $spring = Spring::find($spring_id);
+        $observation = Observation::create($request->all());
+        ObservationController::saveFieldValues($observation, $request['observation_values']);
+
+        $spring = Spring::find($request['spring_id']);
         return redirect()->route('springs.observations.index', compact('spring'))
             ->with('success','Observation added successfully.');
+    }
+
+    public function saveFieldValues($observation, $values) {
+        foreach ($values as $field_data) {
+            $field_id = $field_data['id'];
+            $value = isset($field_data['value']) ? $field_data['value'] : false;
+            if ($value) {
+                $field_value = new ObservationFieldValue();
+                $field_value->observation_id = $observation->id;
+                $field_value->field_id = $field_id;
+                $field_value->value = $value;
+                $field_value->save();
+            }
+        }
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Observation  $observation
-     * @return \Illuminate\Http\Response
+     * @param string $spring_code
+     * @param int $observation_id
+     * @return JsonResponse
      */
-    public function show(Observation $observation)
+    public function show(string $spring_code, int $observation_id)
     {
-        return view('observations.show', compact('observation'));
+        $observation = Observation::find($observation_id);
+        return response()->json($observation->getFieldValues());
     }
 
     /**
      * Show the form for editing the specified resource.
      *
      * @param int $spring_id
-     * @param \App\Models\Observation $observation
-     * @return \Illuminate\Http\Response
+     * @param Observation $observation
+     * @return Response
      */
-    public function edit(int $spring_id, Observation $observation)
+    public function edit(string $spring_code, Observation $observation)
     {
-        return view('observations.edit', compact('observation') );
+        $spring = Spring::where('code', $spring_code)->with('observations')->first();
+        if (Auth::user()) {
+            $observation_fields = \App\Models\ModelField::where('model', 'observation')->where('visible', 1)->orderBy('position')->get();
+            return Inertia::render('Observations/Edit', [
+                'spring' => $spring,
+                'observation' => $observation,
+                'observation_fields' => $observation_fields,
+                'taste_options' => ObservationController::getTasteOptions()
+            ]);
+        }
+        return Inertia::render('Observations/Index', ['spring' => $spring]);
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Observation  $observation
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @param Observation $observation
+     * @return RedirectResponse
      */
     public function update(Request $request, Observation $observation)
     {
-        $request->validate([
+        Validator::make($request->all(), [
             'measurement_time' => 'required',
-        ]);
+        ])->validateWithBag('editObservation');
         $observation->update($request->all());
         $spring = Spring::find($observation->spring_id);
         return redirect()->route('springs.observations.index', compact('spring'))
@@ -100,9 +149,9 @@ class ObservationController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param \App\Models\Observation $observation
-     * @return \Illuminate\Http\Response
-     * @throws \Exception
+     * @param Observation $observation
+     * @return RedirectResponse
+     * @throws Exception
      */
     public function destroy(Observation $observation)
     {
