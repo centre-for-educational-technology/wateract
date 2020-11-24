@@ -5208,12 +5208,7 @@ __webpack_require__.r(__webpack_exports__);
       this.$inertia.post('/measurements', data);
     },
     getNow: function getNow() {
-      var today = new Date();
-      var date = today.getDate() + '.' + (today.getMonth() + 1) + '.' + today.getFullYear();
-      var time = today.getHours() + ":" + today.getMinutes();
-      var dateTime = date + ' ' + time; //console.log(dateTime);
-
-      return dateTime;
+      return new Date().toJSON().slice(0, 19);
     }
   }
 });

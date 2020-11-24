@@ -96,12 +96,7 @@ export default {
             this.$inertia.post('/measurements', data)
         },
         getNow: function() {
-            const today = new Date();
-            const date = today.getDate()+'.'+(today.getMonth()+1)+'.'+today.getFullYear();
-            const time = today.getHours() + ":" + today.getMinutes();
-            const dateTime = date +' '+ time;
-            //console.log(dateTime);
-            return dateTime;
+            return new Date().toJSON().slice(0,19);
         }
     }
 }
