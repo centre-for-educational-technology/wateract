@@ -84,7 +84,7 @@ class SpringController extends Controller
     public function store(Request $request)
     {
         Validator::make($request->all(), [
-            'description' => ['required', 'string', 'max:255'],
+            'description' => 'required',
             'latitude' => 'required',
             'longitude' => 'required',
         ])->validateWithBag('addSpring');
