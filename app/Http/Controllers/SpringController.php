@@ -118,7 +118,7 @@ class SpringController extends Controller
         if (!empty($references_info)) {
             foreach ($references_info as $reference_info) {
                 $spring_reference = new SpringReference();
-                if ($reference_info['url']) {
+                if (isset($reference_info['url'])) {
                     $spring_reference->spring_id = $spring['id'];
                     $spring_reference->url = $reference_info['url'];
                     if ($reference_info['url_title']) {
