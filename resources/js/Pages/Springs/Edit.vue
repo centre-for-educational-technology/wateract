@@ -6,15 +6,11 @@
             </h2>
         </template>
 
-        <jet-form-section>
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
 
-            <template #form>
-        <div class="py-6">
+            <jet-form-section>
 
-            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-
-
+                <template #form>
 
                         <div class="flex -mx-2">
                             <div class="w-full px-2">
@@ -23,12 +19,6 @@
                             </div>
                         </div>
 
-                    <div class="flex -mx-2">
-                        <div class="w-1/2 px-2">
-                            <jet-label class="font-bold" for="kkr_code" value="KKR code" />
-                            <jet-input id="kkr_code" type="text" class="mt-1 block w-full" v-model="form.kkr_code" />
-                        </div>
-                    </div>
 
                     <div class="flex -mx-2 py-2">
                         <div class="w-full px-2">
@@ -123,6 +113,15 @@
                         <textarea id="folklore" type="textarea" class="px-2 mt-1 block w-full border"  rows="5" v-model="form.folklore"></textarea>
                     </div>
 
+                    <div v-if="can('edit spring')">
+
+                    <div class="flex -mx-2">
+                        <div class="w-1/2 px-2">
+                            <jet-label class="font-bold" for="kkr_code" value="KKR code" />
+                            <jet-input id="kkr_code" type="text" class="mt-1 block w-full" v-model="form.kkr_code" />
+                        </div>
+                    </div>
+
                     <div class="px-2 py-2">
                         <jet-label class="font-bold" for="database_links" value="Link with other databases" />
                         <div id="database_links">
@@ -171,21 +170,18 @@
                         <el-checkbox v-model="form.featured" name="featured"><jet-label for="featured" value="Featured" /></el-checkbox>
                     </div>
 
+                    </div>
 
 
-
-                </div>
-            </div>
-
-        </div>
             </template>
 
             <template #actions>
-                <jet-secondary-button v-if="form.status !== 'submitted'" type="submit" @click.native="saveDraft(form)">Save as draft</jet-secondary-button>
-                <jet-button  class="ml-2" type="submit" @click.native="submit(form)">Submit</jet-button>
-                <jet-button v-if="form.status === 'submitted'" class="ml-2" type="submit" @click.native="confirm(form)">Confirm</jet-button>
+                <jet-secondary-button v-if="form.status === 'draft'" type="submit" @click.native="saveDraft(form)">Save as draft</jet-secondary-button>
+                <jet-button v-if="form.status === 'draft'" class="ml-2" type="submit" @click.native="submit(form)">Submit</jet-button>
+                <jet-button v-if="can('edit spring') && form.status === 'submitted'" class="ml-2" type="submit" @click.native="confirm(form)">Confirm</jet-button>
             </template>
         </jet-form-section>
+        </div>
     </app-layout>
 </template>
 

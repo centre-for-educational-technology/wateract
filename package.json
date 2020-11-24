@@ -28,6 +28,7 @@
     "dependencies": {
         "element-ui": "^2.14.0",
         "gmap-vue": "^1.5.0",
+        "laravel-permission-to-vuejs": "^2.0.5",
         "vform": "^1.0.1",
         "vue-lodash": "^2.1.2",
         "vuex": "^3.5.1"

@@ -24,6 +24,8 @@
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
 
+                    <div v-if="spring.observations.length === 0">No observations added.</div>
+
                     <div class="px-4" v-for="observation in spring.observations" :key="observation.id">
 
                         <jet-label :value="observation.measurement_time" @click.native="showObservation(observation)"/>

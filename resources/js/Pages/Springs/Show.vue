@@ -9,7 +9,7 @@
                     Unnamed
                 </h2>
                 <div class="float-right w-1/4" v-if="$page.user">
-                    <button class="border text-xs font-semibold px-3 py-2 leading-normal">
+                    <button v-if="(can('edit spring') && spring.status === 'submitted') || spring.status === 'draft'" class="border text-xs font-semibold px-3 py-2 leading-normal">
                         <inertia-link :href="'/springs/'+spring.code+'/edit'">Edit spring</inertia-link>
                     </button>
                 </div>
@@ -26,7 +26,7 @@
                         <div class="z-depth-1-half map-container w-full" style="height:400px;">
                             <GmapMap ref="map"
                                  :center="{lat:latitude, lng:longitude}"
-                                 :zoom="12"
+                                 :zoom="14"
                                  map-type-id="terrain"
                                  style="width: 100%; height: 100%"
                             >

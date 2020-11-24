@@ -18,7 +18,7 @@
                                 Map
                             </jet-nav-link>
                         </div>
-                        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex" v-if="$page.user">
+                        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex" v-if="$page.user && can('edit user')">
                             <jet-nav-link href="/admin/users" :active="$page.currentRouteName == 'users.index'">
                                 Users
                             </jet-nav-link>

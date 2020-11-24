@@ -12,7 +12,7 @@
 
                     <template #form>
 
-                        <div class="flex -mx-2 py-2">
+                        <div class="flex -mx-2">
                             <div class="w-full px-2">
                                 <jet-label class="font-bold" for="name" value="Name" />
                                 <jet-input id="name" type="text" class="mt-1 block w-full" v-model="form.name" />
@@ -22,14 +22,7 @@
                             </div>
                         </div>
 
-                        <div class="flex -mx-2 py-2">
-                        <div class="w-1/2 px-2">
-                            <jet-label class="font-bold" for="kkr_code" value="KKR code" />
-                            <jet-input id="kkr_code" type="text" class="mt-1 block w-full" v-model="form.kkr_code" />
-                        </div>
-                        </div>
-
-                        <div class="flex -mx-2 py-2">
+                        <div class="flex -mx-2">
                             <div class="w-full px-2">
                                 <jet-label class="font-bold" value="Location" />
                                 <div class="z-depth-1-half map-container" style="height:400px;">
@@ -52,7 +45,7 @@
                             </div>
                         </div>
 
-                        <div class="flex -mx-2 py-2">
+                        <div class="flex -mx-2">
                         <div class="w-1/2 px-2">
                             <jet-label class="font-bold" for="latitude" value="$trans('latitude')" />
                             <jet-input id="latitude" type="text" class="mt-1 block w-full" v-model="form.latitude" />
@@ -128,6 +121,15 @@
                             <textarea id="folklore" type="textarea" class="px-2 mt-1 block w-full border"  rows="5" v-model="form.folklore"></textarea>
                         </div>
 
+                        <div v-if="can('edit spring')">
+
+                            <div class="flex -mx-2">
+                                <div class="w-1/2 px-2">
+                                    <jet-label class="font-bold" for="kkr_code" value="KKR code" />
+                                    <jet-input id="kkr_code" type="text" class="mt-1 block w-full" v-model="form.kkr_code" />
+                                </div>
+                            </div>
+
                         <div class="col-span-12 sm:col-span-4">
                             <jet-label class="font-bold" for="database_links" value="Link with other databases" />
                             <div id="database_links">
@@ -169,18 +171,13 @@
                             </select>
                         </div>
 
-                        <!--<div class="w-1/2 px-2 py-2">
-                            <jet-label class="font-bold" for="status" value="Status" />
-                            <select id="status" v-model="form.status"
-                                    class="block w-full bg-white border border-gray-400 hover:border-gray-500 px-2 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
-                                <option v-for='data in statuses' :selected="status === data.id" :value='data.id'>{{ data.name }}</option>
-                            </select>
-                        </div>-->
                         <div class="px-2 py-2">
                             <el-checkbox v-model="form.needs_attention" name="needs_attention"><jet-label for="needs_attention" value="Needs special attention" /></el-checkbox>
                         </div>
                         <div class="px-2 py-2">
                             <el-checkbox v-model="form.featured" name="featured"><jet-label for="featured" value="Featured" /></el-checkbox>
+                        </div>
+
                         </div>
 
                     </template>

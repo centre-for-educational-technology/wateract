@@ -42,16 +42,16 @@
                     <table class="table-auto w-full">
                         <thead>
                         <tr>
-                            <th>Id</th>
+                            <th>Code</th>
                             <th>Spring name</th>
                             <th>Location</th>
                             <th>Status</th>
                         </tr>
                         </thead>
                         <tr v-for="spring in springs">
-                            <td class="text-center">{{spring.id}}</td>
+                            <td class="text-center">{{spring.code}}</td>
                             <td class="text-center">
-                                <a :href="'springs/'+spring.id">{{ spring.title }}</a>
+                                <a :href="'springs/'+spring.code">{{ spring.name }}</a>
                             </td>
                             <td class="text-center">{{ spring.country }}</td>
                             <td class="text-center">
@@ -80,8 +80,8 @@
             var markers = [];
             _.forEach(this.springs, function(spring) {
                 markers.push({
-                    id: spring.id,
-                    name: spring.title,
+                    code: spring.code,
+                    name: spring.name,
                     description: spring.description,
                     date_build: "",
                     position: {lat: spring.latitude, lng: spring.longitude}
@@ -128,7 +128,7 @@
                 if (marker.name) {
                     markerName = marker.name;
                 }
-                return('<div class="info_window container"> <a href="springs/'+marker.id+'/">'+markerName+'</a></div>');
+                return('<div class="info_window container"> <a href="springs/'+marker.code+'/">'+markerName+'</a></div>');
             },
 
         }

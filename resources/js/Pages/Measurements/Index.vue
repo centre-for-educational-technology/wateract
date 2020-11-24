@@ -9,7 +9,7 @@
                     Unnamed
                 </h2>
                 <div class="float-right w-1/4" v-if="$page.user">
-                    <button class="border text-xs font-semibold px-3 py-2 leading-normal">
+                    <button v-if="can('add measurement')" class="border text-xs font-semibold px-3 py-2 leading-normal">
                         <inertia-link :href="'/springs/'+spring.code+'/measurements/create'">
                             Create new measurement</inertia-link>
                     </button>
@@ -23,6 +23,8 @@
 
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+
+                    <div v-if="spring.measurements.length === 0">No measurements added.</div>
 
                     <div class="px-4" v-for="measurement in spring.measurements" :key="measurement.id">
 
