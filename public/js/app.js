@@ -7280,7 +7280,7 @@ __webpack_require__.r(__webpack_exports__);
         ownership: this.spring.ownership,
         needs_attention: this.spring.needs_attention,
         featured: this.spring.featured,
-        references: this.spring.references,
+        references: getReferences(this.spring),
         database_links: this.spring.database_links,
         photos: [],
         status: this.spring.status
@@ -7368,6 +7368,19 @@ __webpack_require__.r(__webpack_exports__);
     }
   }
 });
+
+function getReferences(spring) {
+  if (spring.references.length !== 0) {
+    return spring.references;
+  }
+
+  return [{
+    url_id: 'references[1][url]',
+    url_title_id: 'references[1][url_title]',
+    url: '',
+    url_title: ''
+  }];
+}
 
 function getAddressObject(address_components) {
   var ShouldBeComponent = {

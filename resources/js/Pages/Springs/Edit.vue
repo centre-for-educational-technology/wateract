@@ -240,7 +240,7 @@ export default {
                 ownership: this.spring.ownership,
                 needs_attention: this.spring.needs_attention,
                 featured: this.spring.featured,
-                references: this.spring.references,
+                references: getReferences(this.spring),
                 database_links: this.spring.database_links,
                 photos: [],
                 status: this.spring.status,
@@ -330,6 +330,19 @@ export default {
         }
     },
 }
+
+function getReferences(spring) {
+    if (spring.references.length !== 0) {
+        return spring.references;
+    }
+    return [{
+        url_id: 'references[1][url]',
+        url_title_id: 'references[1][url_title]',
+        url: '',
+        url_title: '',
+    }];
+}
+
 function getAddressObject(address_components) {
     let ShouldBeComponent = {
         county: [
