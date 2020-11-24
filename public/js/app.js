@@ -7281,7 +7281,7 @@ __webpack_require__.r(__webpack_exports__);
         needs_attention: this.spring.needs_attention,
         featured: this.spring.featured,
         references: getReferences(this.spring),
-        database_links: this.spring.database_links,
+        database_links: getDatabaseLinks(this.spring),
         photos: [],
         status: this.spring.status
       }, {
@@ -7379,6 +7379,23 @@ function getReferences(spring) {
     url_title_id: 'references[1][url_title]',
     url: '',
     url_title: ''
+  }];
+}
+
+function getDatabaseLinks(spring) {
+  if (spring.database_links.length !== 0) {
+    return spring.database_links;
+  }
+
+  return [{
+    database_name_id: 'database_links[1][database_name]',
+    spring_name_id: 'database_links[1][spring_name]',
+    code_id: 'database_links[1][code]',
+    url_id: 'database_links[1][url]',
+    database_name: '',
+    spring_name: '',
+    code: '',
+    url: ''
   }];
 }
 
@@ -99239,54 +99256,6 @@ var render = function() {
                             )
                           }),
                           0
-                        )
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "px-2 py-2" },
-                      [
-                        _c("jet-label", {
-                          staticClass: "font-bold",
-                          attrs: { for: "photos", value: "Photos" }
-                        }),
-                        _vm._v(" "),
-                        _c(
-                          "el-upload",
-                          {
-                            attrs: {
-                              action: "/",
-                              "list-type": "picture-card",
-                              accept: "image/*",
-                              "auto-upload": false,
-                              "on-preview": _vm.handlePhotoCardPreview,
-                              "on-change": _vm.updatePhotos
-                            }
-                          },
-                          [_c("i", { staticClass: "el-icon-plus" })]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "el-dialog",
-                          {
-                            attrs: { visible: _vm.dialogVisible },
-                            on: {
-                              "update:visible": function($event) {
-                                _vm.dialogVisible = $event
-                              }
-                            }
-                          },
-                          [
-                            _c("img", {
-                              attrs: {
-                                width: "100%",
-                                src: _vm.dialogPhotoUrl,
-                                alt: ""
-                              }
-                            })
-                          ]
                         )
                       ],
                       1
