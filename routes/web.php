@@ -21,7 +21,7 @@ use App\Http\Controllers\MeasurementController;
 */
 
 Route::get('/', function () {
-    $springs = Spring::where('status', ['submitted', 'confirmed'])->get();
+    $springs = Spring::whereIn('status', ['submitted', 'confirmed'])->get();
     return Inertia\Inertia::render('Springs/Index', ['springs' => $springs]);
 });
 
