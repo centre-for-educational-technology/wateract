@@ -15,7 +15,7 @@
             <tr>
                 <th>Name</th>
                 <th>Email</th>
-                <th>Roles</th>
+                <!--<th>Roles</th>-->
                 <th></th>
             </tr>
             </thead>
@@ -25,10 +25,10 @@
                 <td>
                     <!--<label v-for="role in row.getRoleNames()">{{ role }}</label>-->
                 </td>
-                <td width="130">
+                <!--<td width="130">
                     <button @click="edit(row)" class="text-white bg-blue-500 border text-xs font-semibold px-4 py-1 leading-normal">Edit</button>
                     <button @click="deleteRow(row)" class="text-white bg-red-500 border text-xs font-semibold px-4 py-1 leading-normal">Delete</button>
-                </td>
+                </td>-->
             </tr>
         </table>
 
@@ -36,7 +36,7 @@
             </div>
         </div>
 
-        <div class="modal fade" id="modal">
+        <div class="modal fade" id="modal" v-show="false">
             <div class="modal-dialog">
 
                 <div class="modal-content">
@@ -62,7 +62,7 @@
                         </button>
                         <button type="submit" class="btn btn-primary" v-show="editMode" @click="update(form)">Update
                         </button>
-                    </div>
+                    </div>-->
                 </div><!-- /.modal-content -->
 
             </div><!-- /.modal-dialog -->

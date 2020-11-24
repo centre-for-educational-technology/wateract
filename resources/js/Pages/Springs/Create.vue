@@ -47,7 +47,7 @@
 
                         <div class="flex -mx-2">
                         <div class="w-1/2 px-2">
-                            <jet-label class="font-bold" for="latitude" value="$trans('latitude')" />
+                            <jet-label class="font-bold" for="latitude" value="Latitude" />
                             <jet-input id="latitude" type="text" class="mt-1 block w-full" v-model="form.latitude" />
                             <small id="latitude_help_block" class="form-text text-muted">
                                 'springs.latitude_help_text'
@@ -56,7 +56,7 @@
                         </div>
 
                         <div class="w-1/2 px-2">
-                            <jet-label class="font-bold" for="longitude" value="springs.longitude" />
+                            <jet-label class="font-bold" for="longitude" value="Longitude" />
                             <jet-input id="longitude" type="text" class="mt-1 block w-full" v-model="form.longitude" />
                             <small id="longitude_help_block" class="form-text text-muted">
                                 'springs.longitude_help_text'
@@ -91,7 +91,7 @@
                             </div>
                         </div>
 
-                        <div class="col-span-12 sm:col-span-4">
+                        <!--<div class="col-span-12 sm:col-span-4">
                             <jet-label class="font-bold" for="photos" value="Photos" />
                             <el-upload
                                 action="/"
@@ -105,7 +105,7 @@
                             <el-dialog :visible.sync="dialogVisible">
                                 <img width="100%" :src="dialogPhotoUrl" alt="" />
                             </el-dialog>
-                        </div>
+                        </div>-->
 
                         <div class="col-span-6 sm:col-span-4">
                             <jet-label class="font-bold" for="description" value="Description" />

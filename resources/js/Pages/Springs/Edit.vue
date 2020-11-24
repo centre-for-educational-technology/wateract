@@ -45,13 +45,13 @@
 
                     <div class="flex -mx-2">
                         <div class="w-1/2 px-2">
-                            <jet-label class="font-bold" for="latitude" value="$trans('latitude')" />
+                            <jet-label class="font-bold" for="latitude" value="Latitude" />
                             <jet-input id="latitude" type="text" class="mt-1 block w-full" v-model="form.latitude" />
                             <!--<jet-input-error :message="form.error('latitude')" class="mt-2" />-->
                         </div>
 
                         <div class="w-1/2 px-2">
-                            <jet-label class="font-bold" for="longitude" value="springs.longitude" />
+                            <jet-label class="font-bold" for="longitude" value="Longitude" />
                             <jet-input id="longitude" type="text" class="mt-1 block w-full" v-model="form.longitude" />
                             <!--<jet-input-error :message="form.error('longitude')" class="mt-2" />-->
                         </div>

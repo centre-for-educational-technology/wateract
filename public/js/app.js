@@ -98156,10 +98156,7 @@ var render = function() {
                         [
                           _c("jet-label", {
                             staticClass: "font-bold",
-                            attrs: {
-                              for: "latitude",
-                              value: "$trans('latitude')"
-                            }
+                            attrs: { for: "latitude", value: "Latitude" }
                           }),
                           _vm._v(" "),
                           _c("jet-input", {
@@ -98201,10 +98198,7 @@ var render = function() {
                         [
                           _c("jet-label", {
                             staticClass: "font-bold",
-                            attrs: {
-                              for: "longitude",
-                              value: "springs.longitude"
-                            }
+                            attrs: { for: "longitude", value: "Longitude" }
                           }),
                           _vm._v(" "),
                           _c("jet-input", {
@@ -98373,54 +98367,6 @@ var render = function() {
                             )
                           }),
                           0
-                        )
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "col-span-12 sm:col-span-4" },
-                      [
-                        _c("jet-label", {
-                          staticClass: "font-bold",
-                          attrs: { for: "photos", value: "Photos" }
-                        }),
-                        _vm._v(" "),
-                        _c(
-                          "el-upload",
-                          {
-                            attrs: {
-                              action: "/",
-                              "list-type": "picture-card",
-                              accept: "image/*",
-                              "auto-upload": false,
-                              "on-preview": _vm.handlePhotoCardPreview,
-                              "on-change": _vm.updatePhotos
-                            }
-                          },
-                          [_c("i", { staticClass: "el-icon-plus" })]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "el-dialog",
-                          {
-                            attrs: { visible: _vm.dialogVisible },
-                            on: {
-                              "update:visible": function($event) {
-                                _vm.dialogVisible = $event
-                              }
-                            }
-                          },
-                          [
-                            _c("img", {
-                              attrs: {
-                                width: "100%",
-                                src: _vm.dialogPhotoUrl,
-                                alt: ""
-                              }
-                            })
-                          ]
                         )
                       ],
                       1
@@ -99111,10 +99057,7 @@ var render = function() {
                         [
                           _c("jet-label", {
                             staticClass: "font-bold",
-                            attrs: {
-                              for: "latitude",
-                              value: "$trans('latitude')"
-                            }
+                            attrs: { for: "latitude", value: "Latitude" }
                           }),
                           _vm._v(" "),
                           _c("jet-input", {
@@ -99138,10 +99081,7 @@ var render = function() {
                         [
                           _c("jet-label", {
                             staticClass: "font-bold",
-                            attrs: {
-                              for: "longitude",
-                              value: "springs.longitude"
-                            }
+                            attrs: { for: "longitude", value: "Longitude" }
                           }),
                           _vm._v(" "),
                           _c("jet-input", {
@@ -100494,8 +100434,6 @@ var render = function() {
                       _vm._v(" "),
                       _c("th", [_vm._v("Email")]),
                       _vm._v(" "),
-                      _c("th", [_vm._v("Roles")]),
-                      _vm._v(" "),
                       _c("th")
                     ])
                   ]),
@@ -100506,37 +100444,7 @@ var render = function() {
                       _vm._v(" "),
                       _c("td", [_vm._v(_vm._s(row.email))]),
                       _vm._v(" "),
-                      _c("td"),
-                      _vm._v(" "),
-                      _c("td", { attrs: { width: "130" } }, [
-                        _c(
-                          "button",
-                          {
-                            staticClass:
-                              "text-white bg-blue-500 border text-xs font-semibold px-4 py-1 leading-normal",
-                            on: {
-                              click: function($event) {
-                                return _vm.edit(row)
-                              }
-                            }
-                          },
-                          [_vm._v("Edit")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "button",
-                          {
-                            staticClass:
-                              "text-white bg-red-500 border text-xs font-semibold px-4 py-1 leading-normal",
-                            on: {
-                              click: function($event) {
-                                return _vm.deleteRow(row)
-                              }
-                            }
-                          },
-                          [_vm._v("Delete")]
-                        )
-                      ])
+                      _c("td")
                     ])
                   })
                 ],
@@ -100547,125 +100455,141 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "modal fade", attrs: { id: "modal" } }, [
-        _c("div", { staticClass: "modal-dialog" }, [
-          _c("div", { staticClass: "modal-content" }, [
-            _c("div", { staticClass: "modal-body" }, [
-              _c("div", { staticClass: "form-group" }, [
-                _c("label", { attrs: { for: "name" } }, [_vm._v("Name")]),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.form.name,
-                      expression: "form.name"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: { required: "", id: "name" },
-                  domProps: { value: _vm.form.name },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
+      _c(
+        "div",
+        {
+          directives: [
+            {
+              name: "show",
+              rawName: "v-show",
+              value: false,
+              expression: "false"
+            }
+          ],
+          staticClass: "modal fade",
+          attrs: { id: "modal" }
+        },
+        [
+          _c("div", { staticClass: "modal-dialog" }, [
+            _c("div", { staticClass: "modal-content" }, [
+              _c("div", { staticClass: "modal-body" }, [
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", { attrs: { for: "name" } }, [_vm._v("Name")]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.form.name,
+                        expression: "form.name"
                       }
-                      _vm.$set(_vm.form, "name", $event.target.value)
+                    ],
+                    staticClass: "form-control",
+                    attrs: { required: "", id: "name" },
+                    domProps: { value: _vm.form.name },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.form, "name", $event.target.value)
+                      }
                     }
-                  }
-                })
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", { attrs: { for: "email" } }, [_vm._v("Email")]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.form.email,
+                        expression: "form.email"
+                      }
+                    ],
+                    staticClass: "form-control",
+                    attrs: { required: "", id: "email" },
+                    domProps: { value: _vm.form.email },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.form, "email", $event.target.value)
+                      }
+                    }
+                  })
+                ])
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "form-group" }, [
-                _c("label", { attrs: { for: "email" } }, [_vm._v("Email")]),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.form.email,
-                      expression: "form.email"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: { required: "", id: "email" },
-                  domProps: { value: _vm.form.email },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
+              _c("div", { staticClass: "modal-footer" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-default",
+                    attrs: { type: "button" },
+                    on: {
+                      click: function($event) {
+                        return _vm.closeModal()
                       }
-                      _vm.$set(_vm.form, "email", $event.target.value)
                     }
-                  }
-                })
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "modal-footer" }, [
-              _c(
-                "button",
-                {
-                  staticClass: "btn btn-default",
-                  attrs: { type: "button" },
-                  on: {
-                    click: function($event) {
-                      return _vm.closeModal()
+                  },
+                  [_vm._v("Close")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    directives: [
+                      {
+                        name: "show",
+                        rawName: "v-show",
+                        value: !_vm.editMode,
+                        expression: "!editMode"
+                      }
+                    ],
+                    staticClass: "btn btn-primary",
+                    attrs: { type: "submit" },
+                    on: {
+                      click: function($event) {
+                        return _vm.save(_vm.form)
+                      }
                     }
-                  }
-                },
-                [_vm._v("Close")]
-              ),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  directives: [
-                    {
-                      name: "show",
-                      rawName: "v-show",
-                      value: !_vm.editMode,
-                      expression: "!editMode"
+                  },
+                  [_vm._v("Save\n                    ")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    directives: [
+                      {
+                        name: "show",
+                        rawName: "v-show",
+                        value: _vm.editMode,
+                        expression: "editMode"
+                      }
+                    ],
+                    staticClass: "btn btn-primary",
+                    attrs: { type: "submit" },
+                    on: {
+                      click: function($event) {
+                        return _vm.update(_vm.form)
+                      }
                     }
-                  ],
-                  staticClass: "btn btn-primary",
-                  attrs: { type: "submit" },
-                  on: {
-                    click: function($event) {
-                      return _vm.save(_vm.form)
-                    }
-                  }
-                },
-                [_vm._v("Save\n                    ")]
-              ),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  directives: [
-                    {
-                      name: "show",
-                      rawName: "v-show",
-                      value: _vm.editMode,
-                      expression: "editMode"
-                    }
-                  ],
-                  staticClass: "btn btn-primary",
-                  attrs: { type: "submit" },
-                  on: {
-                    click: function($event) {
-                      return _vm.update(_vm.form)
-                    }
-                  }
-                },
-                [_vm._v("Update\n                    ")]
-              )
+                  },
+                  [_vm._v("Update\n                    ")]
+                )
+              ]),
+              _vm._v("-->\n            ")
             ])
           ])
-        ])
-      ])
+        ]
+      )
     ]
   )
 }
@@ -117219,7 +117143,7 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(element_ui__WEBPACK_IMPORTED_MODU
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(laravel_permission_to_vuejs__WEBPACK_IMPORTED_MODULE_10__["default"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(gmap_vue__WEBPACK_IMPORTED_MODULE_7__, {
   load: {
-    key: 'AIzaSyCQrm_sXhGYcMCdkq0Mbz9RnhTU0lIJE-Y',
+    key: "AIzaSyCQrm_sXhGYcMCdkq0Mbz9RnhTU0lIJE-Y",
     libraries: 'places' // This is required if you use the Autocomplete plugin
     // OR: libraries: 'places,drawing'
 

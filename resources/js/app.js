@@ -22,7 +22,7 @@ Vue.use(LaravelPermissionToVueJS);
 
 Vue.use(GmapVue, {
     load: {
-        key: 'google_maps_api_key',
+        key: process.env.MIX_GOOGLE_MAPS_API_KEY,
         libraries: 'places', // This is required if you use the Autocomplete plugin
         // OR: libraries: 'places,drawing'
     },
