@@ -7489,6 +7489,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -7498,6 +7499,10 @@ __webpack_require__.r(__webpack_exports__);
   },
   props: ['springs'],
   data: function data() {
+    var mapIcons = {
+      'confirmed': 'https://maps.google.com/mapfiles/ms/micons/blue-dot.png',
+      'submitted': 'https://maps.google.com/mapfiles/ms/micons/orange-dot.png'
+    };
     var markers = [];
 
     _.forEach(this.springs, function (spring) {
@@ -7509,8 +7514,11 @@ __webpack_require__.r(__webpack_exports__);
         position: {
           lat: spring.latitude,
           lng: spring.longitude
-        }
+        },
+        icon: mapIcons[spring.status]
       });
+      console.log(spring.code);
+      console.log(spring.status);
     });
 
     return {
@@ -99920,7 +99928,8 @@ var render = function() {
                           key: index,
                           attrs: {
                             position: location.position,
-                            clickable: true
+                            clickable: true,
+                            icon: location.icon
                           },
                           on: {
                             click: function($event) {

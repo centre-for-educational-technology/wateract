@@ -28,6 +28,7 @@
                                 v-for="(location, index) in markers"
                                 :position="location.position"
                                 :clickable="true"
+                                :icon="location.icon"
                                 @click="toggleInfoWindow(location, location.id)"
                             />
                             <GmapInfoWindow
@@ -58,14 +59,19 @@ export default {
     },
     props: ['springs'],
     data() {
-        var markers = [];
+        const mapIcons = {
+            'confirmed': 'https://maps.google.com/mapfiles/ms/micons/blue-dot.png',
+            'submitted': 'https://maps.google.com/mapfiles/ms/micons/orange-dot.png',
+        };
+        let markers = [];
         _.forEach(this.springs, function(spring) {
             markers.push({
                 id: spring.code,
                 name: spring.name,
                 description: spring.description,
                 date_build: "",
-                position: {lat: spring.latitude, lng: spring.longitude}
+                position: {lat: spring.latitude, lng: spring.longitude},
+                icon: mapIcons[spring.status]
             });
         });
 

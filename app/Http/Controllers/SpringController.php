@@ -24,7 +24,7 @@ class SpringController extends Controller
      */
     public function index()
     {
-        $springs = Spring::where('status', ['submitted', 'confirmed'])->get();
+        $springs = Spring::whereIn('status', ['submitted', 'confirmed'])->get();
         return Inertia::render('Springs/Index', ['springs' => $springs]);
     }
 
@@ -42,7 +42,7 @@ class SpringController extends Controller
                 'statuses' => SpringController::getStatuses()
             ]);
         }
-        $springs = Spring::where('status', ['submitted', 'confirmed'])->get();
+        $springs = Spring::whereIn('status', ['submitted', 'confirmed'])->get();
         return Inertia::render('Springs/Index', ['springs' => $springs]);
     }
 
