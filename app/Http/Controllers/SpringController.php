@@ -87,6 +87,7 @@ class SpringController extends Controller
             'description' => 'required',
             'latitude' => 'required',
             'longitude' => 'required',
+            "references.*.url"  => "nullable|url",
         ])->validateWithBag('addSpring');
 
         $request['user_id'] = Auth::id();
@@ -121,7 +122,7 @@ class SpringController extends Controller
                 if (isset($reference_info['url'])) {
                     $spring_reference->spring_id = $spring['id'];
                     $spring_reference->url = $reference_info['url'];
-                    if ($reference_info['url_title']) {
+                    if (isset($reference_info['url_title'])) {
                         $spring_reference->url_title = $reference_info['url_title'];
                     }
                     $spring_reference->save();
@@ -204,20 +205,22 @@ class SpringController extends Controller
     {
         $this->authorize('update', $spring);
 
-        $request->validate([
+        Validator::make($request->all(), [
+            'description' => 'required',
             'latitude' => 'required',
             'longitude' => 'required',
-            'description' => 'required',
-        ]);
+            "references.*.url"  => "nullable|url",
+        ])->validateWithBag('editSpring');
+
         $spring->update($request->all());
 
         foreach ($request['references'] as $reference_info) {
             if (isset($reference_info['id'])) {
                 //$spring_reference = SpringReference::where('id' , '=' , $reference_info['id'] )->get();
                 $spring_reference = SpringReference::find($reference_info['id']);
-                if ($reference_info['url']) {
+                if (isset($reference_info['url'])) {
                     $spring_reference->url = $reference_info['url'];
-                    if ($reference_info['url_title']) {
+                    if (isset($reference_info['url_title'])) {
                         $spring_reference->url_title = $reference_info['url_title'];
                     }
                     $spring_reference->save();
@@ -225,10 +228,10 @@ class SpringController extends Controller
             } else {
                 //var_dump($reference_info);exit;
                 $spring_reference = new SpringReference();
-                if ($reference_info['url']) {
+                if (isset($reference_info['url'])) {
                     $spring_reference->spring_id = $spring->id;
                     $spring_reference->url = $reference_info['url'];
-                    if ($reference_info['url_title']) {
+                    if (isset($reference_info['url_title'])) {
                         $spring_reference->url_title = $reference_info['url_title'];
                     }
                     $spring_reference->save();

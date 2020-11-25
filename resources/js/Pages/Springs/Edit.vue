@@ -75,10 +75,11 @@
                         <jet-label class="font-bold" for="references" value="References" />
 
                         <div id="references">
-                            <div v-for="reference in form.references" :key="reference.id">
-                                <jet-input :id="reference.url_id" v-model="reference.url" placeholder="URL"/>
-                                <jet-input :id="reference.url_title_id" v-model="reference.url_title" placeholder="URL title"/>
+                            <div v-for="(reference, index) in form.references">
+                                <jet-input v-model="reference.url_title" placeholder="URL title"/>
+                                <jet-input v-model="reference.url" placeholder="URL"/>
                                 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3" @click="addReference">+</button>
+                                <jet-input-error :message="form.error('references.'+index+'.url')" class="mt-2" />
                             </div>
                         </div>
                     </div>
@@ -126,10 +127,10 @@
                         <jet-label class="font-bold" for="database_links" value="Link with other databases" />
                         <div id="database_links">
                             <div v-for="link in form.database_links" :key="link.id">
-                                <jet-input :id="link.database_name_id" v-model="link.database_name" placeholder="Database name"/>
-                                <jet-input :id="link.spring_name_id" v-model="link.spring_name" placeholder="Spring name"/>
-                                <jet-input :id="link.code_id" v-model="link.code" placeholder="Code"/>
-                                <jet-input :id="link.url_id" v-model="link.url" placeholder="URL"/>
+                                <jet-input v-model="link.database_name" placeholder="Database name"/>
+                                <jet-input v-model="link.spring_name" placeholder="Spring name"/>
+                                <jet-input v-model="link.code" placeholder="Code"/>
+                                <jet-input v-model="link.url" placeholder="URL"/>
                                 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3" @click="addDatabaseLink">+</button>
                             </div>
                         </div>
@@ -219,8 +220,6 @@ export default {
                 description: this.spring.description,
                 position: {lat: this.spring.latitude, lng: this.spring.longitude}
             }],
-            references_counter: this.spring.references.length,
-            database_links_counter: this.spring.database_links.length,
             form: this.$inertia.form({
                 '_method': 'PUT',
                 id: this.spring.id,
@@ -245,25 +244,17 @@ export default {
                 photos: [],
                 status: this.spring.status,
             }, {
-                bag: 'addSpring',
+                bag: 'editSpring',
                 resetOnSuccess: false,
             }),
         }
     },
     methods: {
         addReference() {
-            this.form.references.push({
-                url_id: 'references[' + ++this.references_counter + '][url]',
-                url_title_id: 'references[' + this.references_counter + '][url_title]',
-            });
+            this.form.references.push({});
         },
         addDatabaseLink() {
-            this.form.database_links.push({
-                database_name_id: 'database_links[' + ++this.database_links_counter + '][database_name]',
-                spring_name_id: 'database_links[' + ++this.database_links_counter + '][spring_name]',
-                code_id: 'database_links[' + ++this.database_links_counter + '][code]',
-                url_id: 'database_links[' + this.database_links_counter + '][url]',
-            });
+            this.form.database_links.push({});
         },
         updatePhotos(photo) {
             //this.form.photos.push(photo.raw);
@@ -336,8 +327,6 @@ function getReferences(spring) {
         return spring.references;
     }
     return [{
-        url_id: 'references[1][url]',
-        url_title_id: 'references[1][url_title]',
         url: '',
         url_title: '',
     }];
@@ -348,10 +337,6 @@ function getDatabaseLinks(spring) {
         return spring.database_links;
     }
     return [{
-        database_name_id: 'database_links[1][database_name]',
-        spring_name_id: 'database_links[1][spring_name]',
-        code_id: 'database_links[1][code]',
-        url_id: 'database_links[1][url]',
         database_name: '',
         spring_name: '',
         code: '',

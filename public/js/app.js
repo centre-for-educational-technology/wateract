@@ -6829,8 +6829,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       dialogPhotoUrl: '',
       map: null,
       markers: [],
-      references_counter: 1,
-      database_links_counter: 1,
       form: this.$inertia.form({
         '_method': 'PUT',
         name: this.name,
@@ -6848,16 +6846,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         needs_attention: 0,
         featured: 0,
         references: [{
-          url_id: 'references[1][url]',
-          url_title_id: 'references[1][url_title]',
           url: '',
           url_title: ''
         }],
         database_links: [{
-          database_name_id: 'database_links[1][database_name]',
-          spring_name_id: 'database_links[1][spring_name]',
-          code_id: 'database_links[1][code]',
-          url_id: 'database_links[1][url]',
           database_name: '',
           spring_name: '',
           code: '',
@@ -6872,18 +6864,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   },
   methods: {
     addReference: function addReference() {
-      this.form.references.push({
-        url_id: 'references[' + ++this.references_counter + '][url]',
-        url_title_id: 'references[' + this.references_counter + '][url_title]'
-      });
+      this.form.references.push({});
     },
     addDatabaseLink: function addDatabaseLink() {
-      this.form.database_links.push({
-        database_name_id: 'database_links[' + ++this.database_links_counter + '][database_name]',
-        spring_name_id: 'database_links[' + ++this.database_links_counter + '][spring_name]',
-        code_id: 'database_links[' + ++this.database_links_counter + '][code]',
-        url_id: 'database_links[' + this.database_links_counter + '][url]'
-      });
+      this.form.database_links.push({});
     },
     saveDraft: function saveDraft(data) {
       data._method = 'POST';
@@ -7225,6 +7209,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 
@@ -7259,8 +7244,6 @@ __webpack_require__.r(__webpack_exports__);
           lng: this.spring.longitude
         }
       }],
-      references_counter: this.spring.references.length,
-      database_links_counter: this.spring.database_links.length,
       form: this.$inertia.form({
         '_method': 'PUT',
         id: this.spring.id,
@@ -7285,25 +7268,17 @@ __webpack_require__.r(__webpack_exports__);
         photos: [],
         status: this.spring.status
       }, {
-        bag: 'addSpring',
+        bag: 'editSpring',
         resetOnSuccess: false
       })
     };
   },
   methods: {
     addReference: function addReference() {
-      this.form.references.push({
-        url_id: 'references[' + ++this.references_counter + '][url]',
-        url_title_id: 'references[' + this.references_counter + '][url_title]'
-      });
+      this.form.references.push({});
     },
     addDatabaseLink: function addDatabaseLink() {
-      this.form.database_links.push({
-        database_name_id: 'database_links[' + ++this.database_links_counter + '][database_name]',
-        spring_name_id: 'database_links[' + ++this.database_links_counter + '][spring_name]',
-        code_id: 'database_links[' + ++this.database_links_counter + '][code]',
-        url_id: 'database_links[' + this.database_links_counter + '][url]'
-      });
+      this.form.database_links.push({});
     },
     updatePhotos: function updatePhotos(photo) {
       //this.form.photos.push(photo.raw);
@@ -7375,8 +7350,6 @@ function getReferences(spring) {
   }
 
   return [{
-    url_id: 'references[1][url]',
-    url_title_id: 'references[1][url_title]',
     url: '',
     url_title: ''
   }];
@@ -7388,10 +7361,6 @@ function getDatabaseLinks(spring) {
   }
 
   return [{
-    database_name_id: 'database_links[1][database_name]',
-    spring_name_id: 'database_links[1][spring_name]',
-    code_id: 'database_links[1][code]',
-    url_id: 'database_links[1][url]',
     database_name: '',
     spring_name: '',
     code: '',
@@ -7517,8 +7486,6 @@ __webpack_require__.r(__webpack_exports__);
         },
         icon: mapIcons[spring.status]
       });
-      console.log(spring.code);
-      console.log(spring.status);
     });
 
     return {
@@ -98352,37 +98319,32 @@ var render = function() {
                         _c(
                           "div",
                           { attrs: { id: "references" } },
-                          _vm._l(_vm.form.references, function(reference) {
+                          _vm._l(_vm.form.references, function(
+                            reference,
+                            index
+                          ) {
                             return _c(
                               "div",
-                              { key: reference.id },
                               [
                                 _c("jet-input", {
-                                  attrs: {
-                                    id: reference.url_id,
-                                    type: "url",
-                                    placeholder: "URL"
-                                  },
-                                  model: {
-                                    value: reference.url,
-                                    callback: function($$v) {
-                                      _vm.$set(reference, "url", $$v)
-                                    },
-                                    expression: "reference.url"
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c("jet-input", {
-                                  attrs: {
-                                    id: reference.url_title_id,
-                                    placeholder: "URL title"
-                                  },
+                                  attrs: { placeholder: "URL title" },
                                   model: {
                                     value: reference.url_title,
                                     callback: function($$v) {
                                       _vm.$set(reference, "url_title", $$v)
                                     },
                                     expression: "reference.url_title"
+                                  }
+                                }),
+                                _vm._v(" "),
+                                _c("jet-input", {
+                                  attrs: { type: "url", placeholder: "URL" },
+                                  model: {
+                                    value: reference.url,
+                                    callback: function($$v) {
+                                      _vm.$set(reference, "url", $$v)
+                                    },
+                                    expression: "reference.url"
                                   }
                                 }),
                                 _vm._v(" "),
@@ -98394,7 +98356,16 @@ var render = function() {
                                     on: { click: _vm.addReference }
                                   },
                                   [_vm._v("+")]
-                                )
+                                ),
+                                _vm._v(" "),
+                                _c("jet-input-error", {
+                                  staticClass: "mt-2",
+                                  attrs: {
+                                    message: _vm.form.error(
+                                      "references." + index + ".url"
+                                    )
+                                  }
+                                })
                               ],
                               1
                             )
@@ -98556,10 +98527,7 @@ var render = function() {
                                     { key: link.id },
                                     [
                                       _c("jet-input", {
-                                        attrs: {
-                                          id: link.database_name_id,
-                                          placeholder: "Database name"
-                                        },
+                                        attrs: { placeholder: "Database name" },
                                         model: {
                                           value: link.database_name,
                                           callback: function($$v) {
@@ -98570,10 +98538,7 @@ var render = function() {
                                       }),
                                       _vm._v(" "),
                                       _c("jet-input", {
-                                        attrs: {
-                                          id: link.spring_name_id,
-                                          placeholder: "Spring name"
-                                        },
+                                        attrs: { placeholder: "Spring name" },
                                         model: {
                                           value: link.spring_name,
                                           callback: function($$v) {
@@ -98584,10 +98549,7 @@ var render = function() {
                                       }),
                                       _vm._v(" "),
                                       _c("jet-input", {
-                                        attrs: {
-                                          id: link.code_id,
-                                          placeholder: "Code"
-                                        },
+                                        attrs: { placeholder: "Code" },
                                         model: {
                                           value: link.code,
                                           callback: function($$v) {
@@ -98598,10 +98560,7 @@ var render = function() {
                                       }),
                                       _vm._v(" "),
                                       _c("jet-input", {
-                                        attrs: {
-                                          id: link.url_id,
-                                          placeholder: "URL"
-                                        },
+                                        attrs: { placeholder: "URL" },
                                         model: {
                                           value: link.url,
                                           callback: function($$v) {
@@ -99217,36 +99176,32 @@ var render = function() {
                         _c(
                           "div",
                           { attrs: { id: "references" } },
-                          _vm._l(_vm.form.references, function(reference) {
+                          _vm._l(_vm.form.references, function(
+                            reference,
+                            index
+                          ) {
                             return _c(
                               "div",
-                              { key: reference.id },
                               [
                                 _c("jet-input", {
-                                  attrs: {
-                                    id: reference.url_id,
-                                    placeholder: "URL"
-                                  },
-                                  model: {
-                                    value: reference.url,
-                                    callback: function($$v) {
-                                      _vm.$set(reference, "url", $$v)
-                                    },
-                                    expression: "reference.url"
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c("jet-input", {
-                                  attrs: {
-                                    id: reference.url_title_id,
-                                    placeholder: "URL title"
-                                  },
+                                  attrs: { placeholder: "URL title" },
                                   model: {
                                     value: reference.url_title,
                                     callback: function($$v) {
                                       _vm.$set(reference, "url_title", $$v)
                                     },
                                     expression: "reference.url_title"
+                                  }
+                                }),
+                                _vm._v(" "),
+                                _c("jet-input", {
+                                  attrs: { placeholder: "URL" },
+                                  model: {
+                                    value: reference.url,
+                                    callback: function($$v) {
+                                      _vm.$set(reference, "url", $$v)
+                                    },
+                                    expression: "reference.url"
                                   }
                                 }),
                                 _vm._v(" "),
@@ -99258,7 +99213,16 @@ var render = function() {
                                     on: { click: _vm.addReference }
                                   },
                                   [_vm._v("+")]
-                                )
+                                ),
+                                _vm._v(" "),
+                                _c("jet-input-error", {
+                                  staticClass: "mt-2",
+                                  attrs: {
+                                    message: _vm.form.error(
+                                      "references." + index + ".url"
+                                    )
+                                  }
+                                })
                               ],
                               1
                             )
@@ -99420,10 +99384,7 @@ var render = function() {
                                     { key: link.id },
                                     [
                                       _c("jet-input", {
-                                        attrs: {
-                                          id: link.database_name_id,
-                                          placeholder: "Database name"
-                                        },
+                                        attrs: { placeholder: "Database name" },
                                         model: {
                                           value: link.database_name,
                                           callback: function($$v) {
@@ -99434,10 +99395,7 @@ var render = function() {
                                       }),
                                       _vm._v(" "),
                                       _c("jet-input", {
-                                        attrs: {
-                                          id: link.spring_name_id,
-                                          placeholder: "Spring name"
-                                        },
+                                        attrs: { placeholder: "Spring name" },
                                         model: {
                                           value: link.spring_name,
                                           callback: function($$v) {
@@ -99448,10 +99406,7 @@ var render = function() {
                                       }),
                                       _vm._v(" "),
                                       _c("jet-input", {
-                                        attrs: {
-                                          id: link.code_id,
-                                          placeholder: "Code"
-                                        },
+                                        attrs: { placeholder: "Code" },
                                         model: {
                                           value: link.code,
                                           callback: function($$v) {
@@ -99462,10 +99417,7 @@ var render = function() {
                                       }),
                                       _vm._v(" "),
                                       _c("jet-input", {
-                                        attrs: {
-                                          id: link.url_id,
-                                          placeholder: "URL"
-                                        },
+                                        attrs: { placeholder: "URL" },
                                         model: {
                                           value: link.url,
                                           callback: function($$v) {
