@@ -26,9 +26,10 @@
                         <div class="z-depth-1-half map-container w-full" style="height:400px;">
                             <GmapMap ref="map"
                                  :center="{lat:latitude, lng:longitude}"
-                                 :zoom="14"
+                                 :zoom="15"
                                  map-type-id="terrain"
                                  style="width: 100%; height: 100%"
+                                     v-show="googlemap"
                             >
                             <GmapMarker
                                 :key="index"
@@ -36,6 +37,41 @@
                                 :position="location.position"
                             />
                             </GmapMap>
+
+                        <l-map ref="myMap"
+                               :zoom="11"
+                               :center="center"
+                               :tms="tms"
+                               :crs="crs"
+                               :continuousWorld="true"
+                               v-show="leafletmap"
+                        >
+                            <l-control-layers />
+                            <!--<l-tile-layer
+                                :url="url"
+                                :attribution="attribution"
+                            />-->
+                            <l-wms-tile-layer
+                                v-for="layer in layers"
+                                :key="layer.name"
+                                :base-url="baseUrl"
+                                :layers="layer.layers"
+                                :visible="layer.visible"
+                                :name="layer.name"
+                                layer-type="base"
+                                :attribution="attribution"
+                            />
+                            <l-marker :lat-lng="location">
+                                <l-icon
+                                    icon-url="https://maps.google.com/mapfiles/ms/micons/blue-dot.png"
+                                />
+                            </l-marker>
+
+                        </l-map>
+                            <div class="block">
+                                <button class="border float-right" v-if="googlemap" v-on:click="googlemap=false;leafletmap = true;">Maa-amet Map</button>
+                                <button class="border float-right" v-if="leafletmap" v-on:click="leafletmap=false;googlemap = true;">Google Map</button>
+                            </div>
                         </div>
 
                     <div class="flex -mx-2 w-full px-2 py-2">
@@ -145,16 +181,89 @@ import SpringNavigation from './SpringNavigation';
 import JetLabel from "../../Jetstream/Label";
 import { gmapApi } from 'gmap-vue';
 
+import { CRS, latLng } from "leaflet";
+import L from 'leaflet';
+import { LMap, LTileLayer, LMarker, LIcon, LTooltip, LWMSTileLayer, LControlLayers } from 'vue2-leaflet';
+import "proj4leaflet";
+import proj4 from "proj4";
+
+/*const eoxMaps = {
+    resolutions: [
+        2048 , 1024 , 512 , 256 , 128 ,
+        64 , 32 , 16 , 8 , 4 , 2 , 1 , 0.5
+    ],
+    url: 'http://kaart.maaamet.ee/wms/alus',
+    format: 'image/jpeg',
+    style: 'default',
+    projection: 'EPSG :3301',
+};*/
+const swissCrs = new L.Proj.CRS(
+    'EPSG:2056',
+    '+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs',
+    {
+        resolutions: [
+            4000, 3750, 3500, 3250, 3000, 2750, 2500, 2250, 2000, 1750, 1500, 1250, 1000, 750, 650, 500, 250, 100, 50, 20, 10, 5, 2.5, 2, 1.5, 1, 0.5
+        ],
+        origin: [2420000, 1350000]
+    });
+
+var projection = new L.Proj.CRS('EPSG:3301', '+proj=lcc +lat_1=59.33333333333334 +lat_2=58 +lat_0=57.51755393055556 +lon_0=24 +x_0=500000 +y_0=6375000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs', {
+    resolutions: [4000, 2000, 1000, 500, 250, 125, 62.5, 31.25, 15.625, 7.8125, 3.90625, 1.953125, 0.9765625, 0.48828125, 0.244140625, 0.122070313, 0.061035156, 0.030517578, 0.015258789],
+    origin: [40500, 5993000],
+    bounds: L.bounds([40500, 5993000], [1064500, 7017000])
+});
+
 export default {
     components: {
         AppLayout,
         SpringNavigation,
         JetLabel,
         gmapApi,
+        "l-wms-tile-layer": LWMSTileLayer,
+        LControlLayers,
+        LMap,
+        LTileLayer,
+        LMarker,
+        LIcon,
     },
     props: ['spring'],
     data() {
         return {
+            leafletmap: true,
+            googlemap: false,
+            crs: projection,
+            //url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/kaart/{z}/{x}/{y}.jpg&ASUTUS=MAAAMET&KESKKOND=EXAMPLES',
+            tms: true,
+            url: 'http://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}',
+            center: latLng(this.spring.latitude, this.spring.longitude),
+            //url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+            //url: 'http://kaart.maaamet.ee/wms/alus?layers=MA-ALUS',
+            attribution: "<a href='http://www.maaamet.ee'>Maa-amet</a>",
+            location: latLng(this.spring.latitude, this.spring.longitude),
+
+            baseUrl: 'http://kaart.maaamet.ee/wms/alus',
+             layers: [
+                /*{
+                    crs:projection,
+                    name: 'suvaline',
+                    visible: true,
+                    format: 'image/png',
+                    layers: 'MA-ALUS',
+                    transparent: false,
+                    continuousWorld : true,
+                    attribution: "<a  href='http://www.maaamet.ee/'>Maa-amet</a>",
+                },*/
+                {
+                    crs: projection,
+                    name: 'Reljeefvarjutusega põhikaart',
+                    visible: true,
+                    format: 'image/png',
+                    layers: 'pohi_vv',
+                    transparent: true,
+                    continuousWorld : true
+                }
+            ],
+
             map: null,
             latitude: this.spring.latitude,
             longitude: this.spring.longitude,
@@ -166,5 +275,27 @@ export default {
             }],
         }
     },
+    created: function(){
+
+        /*var projection2 = new L.Proj.CRS('EPSG:3301', '+proj=lcc +lat_1=59.33333333333334 +lat_2=58 +lat_0=57.51755393055556 +lon_0=24 +x_0=500000 +y_0=6375000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs', {
+            resolutions: [4000, 2000, 1000, 500, 250, 125, 62.5, 31.25, 15.625, 7.8125, 3.90625, 1.953125, 0.9765625, 0.48828125, 0.244140625, 0.122070313, 0.061035156, 0.030517578, 0.015258789],
+            origin: [40500, 5993000],
+            bounds: L.bounds([40500, 5993000], [1064500, 7017000])
+        });
+        var map = L.map('leafmap', {
+            crs: projection2
+        });
+        var tms = new L.TileLayer('https://tiles.maaamet.ee/tm/tms/1.0.0/kaart/{z}/{x}/{y}.jpg&ASUTUS=MAAAMET&KESKKOND=EXAMPLES', {
+            continuousWorld: true,
+            tms: true,
+            attribution: "<a  href='http://www.maaamet.ee/'>Maa-amet</a>",
+        });
+        map.setView([58.66, 25.05], 3);
+        tms.addTo(map);*/
+    }
 }
+
+
+
 </script>
+

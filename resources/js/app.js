@@ -12,6 +12,7 @@ import * as GmapVue from 'gmap-vue';
 import VueLodash from 'vue-lodash';
 import lodash from 'lodash';
 import LaravelPermissionToVueJS from 'laravel-permission-to-vuejs';
+import 'leaflet/dist/leaflet.css';
 
 Vue.use(InertiaApp);
 Vue.use(InertiaForm);
