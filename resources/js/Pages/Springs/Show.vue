@@ -8,8 +8,8 @@
                 <h2 class="w-3/4 font-semibold text-xl text-gray-800 leading-tight" v-if="!spring.name">
                     Unnamed
                 </h2>
-                <div class="float-right w-1/4" v-if="$page.user">
-                    <button v-if="(can('edit spring') && spring.status === 'submitted') || spring.status === 'draft'" class="border text-xs font-semibold px-3 py-2 leading-normal">
+                <div class="w-1/4" v-if="$page.user">
+                    <button v-if="(can('edit spring') && spring.status === 'submitted') || spring.status === 'draft'" class="float-right border text-xs font-semibold px-3 py-2 leading-normal">
                         <inertia-link :href="'/springs/'+spring.code+'/edit'">Edit spring</inertia-link>
                     </button>
                 </div>

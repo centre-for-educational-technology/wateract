@@ -6,7 +6,7 @@
                     Springs observations and database
                 </h2>
                 <div class="w-1/4" v-if="$page.user">
-                    <a href="springs/create" class="border text-xs font-semibold px-4 py-1 leading-normal">
+                    <a href="springs/create" class="float-right border text-xs font-semibold px-4 py-1 leading-normal">
                         Create new spring</a>
                 </div>
             </div>
