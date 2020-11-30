@@ -18,7 +18,7 @@
 
         <div class="py-6">
 
-            <spring-navigation :spring="spring"></spring-navigation>
+            <spring-navigation :spring="spring" :active_tab="'view'"></spring-navigation>
 
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
@@ -29,7 +29,7 @@
                                  :zoom="15"
                                  map-type-id="terrain"
                                  style="width: 100%; height: 100%"
-                                     v-show="googlemap"
+                                     v-if="googlemap"
                             >
                             <GmapMarker
                                 :key="index"
@@ -39,12 +39,12 @@
                             </GmapMap>
 
                         <l-map ref="myMap"
-                               :zoom="11"
+                               :zoom="12"
                                :center="center"
                                :tms="tms"
                                :crs="crs"
                                :continuousWorld="true"
-                               v-show="leafletmap"
+                               v-if="leafletmap"
                         >
                             <l-control-layers />
                             <!--<l-tile-layer
@@ -197,15 +197,7 @@ import proj4 from "proj4";
     style: 'default',
     projection: 'EPSG :3301',
 };*/
-const swissCrs = new L.Proj.CRS(
-    'EPSG:2056',
-    '+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs',
-    {
-        resolutions: [
-            4000, 3750, 3500, 3250, 3000, 2750, 2500, 2250, 2000, 1750, 1500, 1250, 1000, 750, 650, 500, 250, 100, 50, 20, 10, 5, 2.5, 2, 1.5, 1, 0.5
-        ],
-        origin: [2420000, 1350000]
-    });
+
 
 var projection = new L.Proj.CRS('EPSG:3301', '+proj=lcc +lat_1=59.33333333333334 +lat_2=58 +lat_0=57.51755393055556 +lon_0=24 +x_0=500000 +y_0=6375000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs', {
     resolutions: [4000, 2000, 1000, 500, 250, 125, 62.5, 31.25, 15.625, 7.8125, 3.90625, 1.953125, 0.9765625, 0.48828125, 0.244140625, 0.122070313, 0.061035156, 0.030517578, 0.015258789],
@@ -229,9 +221,10 @@ export default {
     props: ['spring'],
     data() {
         return {
-            leafletmap: true,
-            googlemap: false,
+            leafletmap: false,
+            googlemap: true,
             crs: projection,
+            crs2: L.CRS.EPSG4326,
             //url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/kaart/{z}/{x}/{y}.jpg&ASUTUS=MAAAMET&KESKKOND=EXAMPLES',
             tms: true,
             url: 'http://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}',
@@ -254,10 +247,10 @@ export default {
                     attribution: "<a  href='http://www.maaamet.ee/'>Maa-amet</a>",
                 },*/
                 {
-                    crs: projection,
+                    //crs: projection,
                     name: 'Reljeefvarjutusega põhikaart',
                     visible: true,
-                    format: 'image/png',
+                    format: 'image/jpeg',
                     layers: 'pohi_vv',
                     transparent: true,
                     continuousWorld : true
