@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             ModelFieldSeeder::class,
             PermissionSeeder::class,
-            //CountiesSeeder::class,
+            CountiesSeeder::class,
         ]);
     }
 }
