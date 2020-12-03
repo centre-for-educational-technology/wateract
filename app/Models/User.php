@@ -22,6 +22,8 @@ class User extends Authenticatable
     use HasRoles;
     use LaravelPermissionToVueJS;
 
+    protected $with = ['roles'];
+
     /**
      * The attributes that are mass assignable.
      *

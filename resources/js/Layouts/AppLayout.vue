@@ -36,7 +36,8 @@
 
                     <!-- Settings Dropdown -->
                     <div class="hidden sm:flex sm:items-center sm:ml-6" v-if="$page.user">
-                        <div class="ml-3 relative">
+                        <div class="text-xs text-gray-500">{{ $page.user.name }}</div>
+                        <div class="ml-2 relative">
                             <jet-dropdown align="right" width="48">
                                 <template #trigger>
                                     <button class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition duration-150 ease-in-out">
@@ -46,8 +47,11 @@
 
                                 <template #content>
                                     <!-- Account Management -->
-                                    <div class="block px-4 py-2 text-xs text-gray-400">
-                                        Manage Account
+                                    <div class="block px-4 py-2 text-xs text-gray-400" v-if="($page.user.roles).length > 0">
+                                        {{$page.user.roles[0].name}}
+                                    </div>
+                                    <div class="block px-4 py-2 text-xs text-gray-400" v-if="($page.user.roles).length == 0">
+                                        Spring enthusiast
                                     </div>
 
                                     <jet-dropdown-link href="/user/profile">

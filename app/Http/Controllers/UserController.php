@@ -135,7 +135,7 @@ class UserController extends Controller
                 'all_counties' => $all_counties,
                 'user_role' => $user_role,
                 'user_counties' => $user_counties_ids,
-                'user' => $user ]);
+                'selected_user' => $user ]);
         //}
         //return Inertia::render('Springs/Show', ['spring' => $spring]);
     }

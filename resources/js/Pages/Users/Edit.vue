@@ -78,13 +78,13 @@ export default {
         JetLabel,
         Multiselect,
     },
-    props: ['user', 'roles', 'all_counties', 'user_role', 'user_counties'],
+    props: ['selected_user', 'roles', 'all_counties', 'user_role', 'user_counties'],
     data() {
         return {
             form: this.$inertia.form({
-                id: this.user.id,
-                name: this.user.name,
-                email: this.user.email,
+                id: this.selected_user.id,
+                name: this.selected_user.name,
+                email: this.selected_user.email,
                 role: this.user_role,
                 counties: this.user_counties,
             }, {
