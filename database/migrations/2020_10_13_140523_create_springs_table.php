@@ -23,7 +23,9 @@ class CreateSpringsTable extends Migration
             $table->double('latitude');
             $table->double('longitude');
             $table->string('country')->nullable();
+            $table->bigInteger('country_id')->unsigned()->nullable();
             $table->string('county')->nullable();
+            $table->bigInteger('county_id')->unsigned()->nullable();
             $table->string('settlement')->nullable();
             $table->text('description');
             $table->text('folklore')->nullable();

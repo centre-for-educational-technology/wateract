@@ -102,7 +102,7 @@
 
                     <div class="px-2 py-2">
                         <jet-label class="font-bold" for="description" value="Description" />
-                        <textarea id="description" type="textarea" class="px-2 mt-1 block w-full border" rows="5" v-model="spring.description" ></textarea>
+                        <textarea id="description" type="textarea" class="px-2 mt-1 block w-full border" rows="5" v-model="form.description" ></textarea>
                         <small id="description_help_block" class="form-text text-muted">
                             'springs.description_help_text'
                         </small>
@@ -180,6 +180,8 @@
                 <jet-secondary-button v-if="form.status === 'draft'" type="submit" @click.native="saveDraft(form)">Save as draft</jet-secondary-button>
                 <jet-button v-if="form.status === 'draft'" class="ml-2" type="submit" @click.native="submit(form)">Submit</jet-button>
                 <jet-button v-if="can('edit spring') && form.status === 'submitted'" class="ml-2" type="submit" @click.native="confirm(form)">Confirm</jet-button>
+                <jet-button v-if="can('edit spring') && form.status === 'confirmed'" class="ml-2" type="submit" @click.native="save(form)">Save</jet-button>
+
             </template>
         </jet-form-section>
         </div>
@@ -295,6 +297,10 @@ export default {
             data.status = 'submitted';
             data._method = 'PUT';
             this.$inertia.post('/springs/' + data.code , data)
+        },
+        save: function (data) {
+            data._method = 'PUT';
+            this.$inertia.post('/springs/' + data.code, data)
         },
         confirm: function (data) {
             data.status = 'confirmed';

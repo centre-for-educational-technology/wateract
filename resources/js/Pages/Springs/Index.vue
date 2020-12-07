@@ -23,6 +23,7 @@
                             map-type-id="terrain"
                             style="width: 100%; height: 100%"
                         >
+                            <GmapCluster>
                             <GmapMarker
                                 :key="index"
                                 v-for="(location, index) in markers"
@@ -39,6 +40,7 @@
                             >
                                 <div v-html="infoContent"></div>
                             </GmapInfoWindow>
+                            </GmapCluster>
                         </GmapMap>
                     </div>
 
@@ -51,11 +53,13 @@
 <script>
 import AppLayout from './../../Layouts/AppLayout'
 import { gmapApi } from 'gmap-vue';
+import GmapCluster from 'gmap-vue/dist/components/cluster'
 
 export default {
     components: {
         AppLayout,
         gmapApi,
+        GmapCluster,
     },
     props: ['springs'],
     data() {
@@ -63,6 +67,7 @@ export default {
             'confirmed': 'https://maps.google.com/mapfiles/ms/micons/blue-dot.png',
             'submitted': 'https://maps.google.com/mapfiles/ms/micons/orange-dot.png',
         };
+
         let markers = [];
         _.forEach(this.springs, function(spring) {
             markers.push({
@@ -71,7 +76,7 @@ export default {
                 description: spring.description,
                 date_build: "",
                 position: {lat: spring.latitude, lng: spring.longitude},
-                icon: mapIcons[spring.status]
+                icon: mapIcons[spring.status],
             });
         });
 
@@ -95,7 +100,7 @@ export default {
     mounted() {
             //set bounds of the map
             this.$refs.map.$mapPromise.then((map) => {
-                map.panTo({lat:58.279, lng:26.054})
+                map.panTo({lat:58.379, lng:24.554});
 
             });
 

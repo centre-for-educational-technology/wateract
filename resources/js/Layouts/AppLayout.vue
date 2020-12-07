@@ -28,6 +28,11 @@
                                 Dashboard
                             </jet-nav-link>
                         </div>
+                        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex" v-if="$page.user && can('administrate')">
+                            <jet-nav-link href="/admin" :active="$page.currentRouteName == 'admin'">
+                                Admin
+                            </jet-nav-link>
+                        </div>
                         <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block" v-if="!$page.user">
                             <a href="/register" class="text-sm text-gray-700 underline">Register</a>
                             <a href="/login" class="mx-3 text-sm text-gray-700 underline">Login</a>
@@ -58,9 +63,9 @@
                                         Profile
                                     </jet-dropdown-link>
 
-                                    <!--<jet-dropdown-link href="/user/api-tokens" v-if="$page.jetstream.hasApiFeatures">
+                                    <jet-dropdown-link href="/user/api-tokens" v-if="$page.jetstream.hasApiFeatures">
                                         API Tokens
-                                    </jet-dropdown-link>-->
+                                    </jet-dropdown-link>
 
                                     <div class="border-t border-gray-100"></div>
 

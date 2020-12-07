@@ -53,7 +53,7 @@ class SpringPolicy
      */
     public function update(User $user, Spring $spring)
     {
-        if ($user->hasRole(['editor', 'admin'])) {
+        if ($user->hasRole(['editor', 'admin', 'super-admin'])) {
             return true;
         } else if ($spring->status == 'draft') {
             return $user->id === $spring->user_id;
@@ -70,7 +70,7 @@ class SpringPolicy
      */
     public function delete(User $user, Spring $spring)
     {
-        if ($user->hasRole(['editor', 'admin'])) {
+        if ($user->hasRole(['editor', 'admin', 'super-admin'])) {
             return true;
         } else if ($spring->status == 'unconfirmed') {
             return $user->id === $spring->user_id;

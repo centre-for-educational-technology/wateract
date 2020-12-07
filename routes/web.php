@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CsvFileController;
 use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
@@ -29,6 +30,13 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     $springs = Spring::where('user_id', Auth::id())->get();
     return Inertia\Inertia::render('Dashboard', ['springs' => $springs]);
 })->name('dashboard');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/admin', function () {
+    return Inertia\Inertia::render('Admin');
+})->name('admin');
+
+Route::post('/admin/csvfile', [CsvFileController::class, 'update'])
+    ->middleware(['auth']);
 
 /*Route::get('/springs', function () {
     return Inertia\Inertia::render('Springs/Index');

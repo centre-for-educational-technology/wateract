@@ -21,6 +21,8 @@ class PermissionSeeder extends Seeder
         app()[PermissionRegistrar::class]->forgetCachedPermissions();
 
         // create permissions
+        Permission::create(['name' => 'administrate']);
+        Permission::create(['name' => 'view users']);
         Permission::create(['name' => 'edit user']);
         Permission::create(['name' => 'edit spring']);
         Permission::create(['name' => 'confirm spring']);
@@ -43,6 +45,7 @@ class PermissionSeeder extends Seeder
         $editor_role->givePermissionTo('delete measurement');
 
         $admin_role = Role::create(['name' => 'admin']);
+        $admin_role->givePermissionTo('view users');
         $admin_role->givePermissionTo('edit user');
         $admin_role->givePermissionTo('edit spring');
         $admin_role->givePermissionTo('confirm spring');
@@ -54,7 +57,17 @@ class PermissionSeeder extends Seeder
         $admin_role->givePermissionTo('delete measurement');
 
         $super_admin_role = Role::create(['name' => 'super-admin']);
-        // gets all permissions via Gate::before rule; see AuthServiceProvider
+        $super_admin_role->givePermissionTo('administrate');
+        $super_admin_role->givePermissionTo('view users');
+        $super_admin_role->givePermissionTo('edit user');
+        $super_admin_role->givePermissionTo('edit spring');
+        $super_admin_role->givePermissionTo('confirm spring');
+        $super_admin_role->givePermissionTo('delete spring');
+        $super_admin_role->givePermissionTo('edit observation');
+        $super_admin_role->givePermissionTo('delete observation');
+        $super_admin_role->givePermissionTo('add measurement');
+        $super_admin_role->givePermissionTo('edit measurement');
+        $super_admin_role->givePermissionTo('delete measurement');
 
         // create demo users
         $user = \App\Models\User::factory()->create([

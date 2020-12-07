@@ -9,7 +9,7 @@
                     Unnamed
                 </h2>
                 <div class="w-1/4" v-if="$page.user">
-                    <button v-if="(can('edit spring') && spring.status === 'submitted') || spring.status === 'draft'" class="float-right border text-xs font-semibold px-3 py-2 leading-normal">
+                    <button v-if="(can('edit spring') || spring.status === 'draft')" class="float-right border text-xs font-semibold px-3 py-2 leading-normal">
                         <inertia-link :href="'/springs/'+spring.code+'/edit'">Edit spring</inertia-link>
                     </button>
                 </div>
@@ -101,9 +101,9 @@
 
                             <div class="py-2" v-if="spring.database_links.length > 0">
                                 <strong>Database links</strong>
-                                <table class="table">
+                                <table class="table-auto text-sm border">
                                     <thead>
-                                    <tr>
+                                    <tr class="bg-gray-300">
                                         <th scope="col">Database name</th>
                                         <th scope="col">Code</th>
                                         <th scope="col">Spring name</th>
@@ -111,7 +111,8 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                        <tr v-for='database_link in spring.database_links'>
+                                        <tr v-for="(database_link, index) in spring.database_links"
+                                            :class="{'bg-gray-100': index % 2, 'bg-white': !(index % 2)}">
                                             <td>{{ database_link.database_name }}</td>
                                             <td>{{ database_link.code }}</td>
                                             <td>{{ database_link.spring_name }}</td>
@@ -127,7 +128,8 @@
 
                             <div class="py-2">
                                 <strong>Location</strong>
-                                <div>{{spring.county}}</div>
+
+                                <div>{{spring.country}} {{spring.county}}</div>
 
                                 <div v-if="spring.settlement">{{spring.settlement}}</div>
                             </div>
@@ -221,8 +223,8 @@ export default {
     props: ['spring'],
     data() {
         return {
-            leafletmap: false,
-            googlemap: true,
+            leafletmap: this.spring.country == 'EE' ? true : false,
+            googlemap: this.spring.country == 'EE' ? false : true,
             crs: projection,
             crs2: L.CRS.EPSG4326,
             //url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/kaart/{z}/{x}/{y}.jpg&ASUTUS=MAAAMET&KESKKOND=EXAMPLES',

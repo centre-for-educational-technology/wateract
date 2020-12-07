@@ -30,6 +30,7 @@
         "gmap-vue": "^1.5.0",
         "laravel-permission-to-vuejs": "^2.0.5",
         "leaflet": "^1.7.1",
+        "marker-clusterer-plus": "^2.1.4",
         "proj4leaflet": "^1.0.2",
         "vform": "^1.0.1",
         "vue-lodash": "^2.1.2",
