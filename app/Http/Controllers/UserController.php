@@ -6,6 +6,7 @@ use App\Models\Country;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\County;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -187,20 +188,28 @@ class UserController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     * @throws \Illuminate\Auth\Access\AuthorizationException
      */
-    /*public function destroy($id)
-    {
-        User::find($id)->delete();
-        return redirect()->route('users.index')
-            ->with('success','User deleted successfully');
-    }*/
     public function destroy(Request $request)
     {
-        /*if ($request->has('id')) {
-            User::find($request->input('id'))->delete();
-            return redirect()->back();
-        }*/
+        $user = Auth::user();
+        $this->authorize('update', $user);
+
+        $input = $request->all();
+        Validator::make($input, [
+        ])->after(function ($validator) use ($user, $input) {
+            if (! Hash::check($input['password'], $user->password)) {
+                $validator->errors()->add('current_password', __('The provided password does not match your current password.'));
+            }
+        })->validateWithBag('updatePassword');
+
+        if ($request->has('user_id')) {
+            User::find($request->input('user_id'))->delete();
+            return redirect()->route('users.index')
+                ->with('success','User deleted successfully');
+        }
+        return redirect()->back();
     }
 }

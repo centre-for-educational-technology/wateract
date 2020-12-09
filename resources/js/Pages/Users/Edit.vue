@@ -54,6 +54,11 @@
                 </template>
 
             </jet-form-section>
+
+            <jet-section-border />
+
+            <delete-user class="mt-10 sm:mt-0" :user_id="form.id"/>
+
         </div>
 
     </app-layout>
@@ -62,21 +67,27 @@
 <script>
 import AppLayout from './../../Layouts/AppLayout'
 import JetButton from './../../Jetstream/Button'
+import JetDangerButton from './../../Jetstream/DangerButton'
 import JetFormSection from './../../Jetstream/FormSection'
+import JetSectionBorder from './../../Jetstream/SectionBorder'
 import JetInput from './../../Jetstream/Input'
 import JetInputError from './../../Jetstream/InputError'
 import JetLabel from './../../Jetstream/Label'
 import Multiselect from 'vue-multiselect'
+import DeleteUser from './DeleteUser'
 
 export default {
     components: {
         AppLayout,
         JetButton,
+        JetDangerButton,
         JetFormSection,
+        JetSectionBorder,
         JetInput,
         JetInputError,
         JetLabel,
         Multiselect,
+        DeleteUser,
     },
     props: ['selected_user', 'roles', 'all_counties', 'user_role', 'user_counties'],
     data() {

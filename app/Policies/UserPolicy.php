@@ -32,7 +32,7 @@ class UserPolicy
      */
     public function view(User $user, User $model)
     {
-        if ($user->hasRole('admin')) {
+        if ($user->hasRole(['admin', 'super-admin'])) {
             return true;
         } else if ($user->id == $model->id) {
             return true;
@@ -77,7 +77,7 @@ class UserPolicy
      */
     public function delete(User $user, User $model)
     {
-        if ($user->hasRole('admin')) {
+        if ($user->hasRole(['admin', 'super-admin'])) {
             return true;
         } else if ($user->id == $model->id) {
             return true;
@@ -94,7 +94,7 @@ class UserPolicy
      */
     public function restore(User $user, User $model)
     {
-        if ($user->hasRole('admin')) {
+        if ($user->hasRole(['admin', 'super-admin'])) {
             return true;
         }
         return false;
@@ -109,7 +109,7 @@ class UserPolicy
      */
     public function forceDelete(User $user, User $model)
     {
-        if ($user->hasRole('admin')) {
+        if ($user->hasRole(['admin', 'super-admin'])) {
             return true;
         } else if ($user->id == $model->id) {
             return true;
