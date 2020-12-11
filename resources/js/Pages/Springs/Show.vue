@@ -26,7 +26,7 @@
                         <div class="z-depth-1-half map-container w-full" style="height:400px;">
                             <GmapMap ref="map"
                                  :center="{lat:latitude, lng:longitude}"
-                                 :zoom="15"
+                                 :zoom="19"
                                  map-type-id="terrain"
                                  style="width: 100%; height: 100%"
                                      v-if="googlemap"
@@ -120,6 +120,15 @@
                                         </tr>
                                     </tbody>
                                 </table>
+                            </div>
+
+                            <div class="py-2" v-if="spring.photos.length > 0">
+                                <strong>Gallery</strong>
+                                <div class="grid grid-cols-3 gap-1">
+                                    <div  class="border-1 border-white" v-for="photo in spring.photos">
+                                        <img :src="'/'+photo.thumbnail" />
+                                    </div>
+                                </div>
                             </div>
 
                         </div>

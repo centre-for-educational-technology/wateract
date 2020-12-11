@@ -43,7 +43,7 @@
                         </div>
                     </div>
 
-                    <div class="flex -mx-2">
+                    <div class="flex ">
                         <div class="w-1/2 px-2">
                             <jet-label class="font-bold" for="latitude" value="Latitude" />
                             <jet-input id="latitude" type="text" class="mt-1 block w-full" v-model="form.latitude" />
@@ -71,34 +71,36 @@
                         <jet-input id="settlement" type="text" class="mt-1 block w-full" v-model="form.settlement" />
                     </div>
 
-                    <div class="col-span-12 sm:col-span-4">
+                    <div class="px-2 py-2">
                         <jet-label class="font-bold" for="references" value="References" />
 
                         <div id="references">
                             <div v-for="(reference, index) in form.references">
-                                <jet-input v-model="reference.url_title" placeholder="URL title"/>
-                                <jet-input v-model="reference.url" placeholder="URL"/>
+                                <jet-input class="w-2/5" v-model="reference.url_title" placeholder="URL title"/>
+                                <jet-input class="w-2/5" v-model="reference.url" placeholder="URL"/>
                                 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3" @click="addReference">+</button>
                                 <jet-input-error :message="form.error('references.'+index+'.url')" class="mt-2" />
                             </div>
                         </div>
                     </div>
 
-                    <!--<div class="px-2 py-2">
+                    <div class="px-2 py-2">
                         <jet-label class="font-bold" for="photos" value="Photos" />
                         <el-upload
+                            :file-list="photos"
                             action="/"
                             list-type="picture-card"
                             accept="image/*"
                             :auto-upload="false"
                             :on-preview="handlePhotoCardPreview"
+                            :on-remove="handleRemove"
                             :on-change="updatePhotos">
                             <i class="el-icon-plus"></i>
                         </el-upload>
                         <el-dialog :visible.sync="dialogVisible">
                             <img width="100%" :src="dialogPhotoUrl" alt="" />
                         </el-dialog>
-                    </div>-->
+                    </div>
 
                     <div class="px-2 py-2">
                         <jet-label class="font-bold" for="description" value="Description" />
@@ -116,7 +118,7 @@
 
                     <div v-if="can('edit spring')">
 
-                    <div class="flex -mx-2">
+                    <div class="flex">
                         <div class="w-1/2 px-2">
                             <jet-label class="font-bold" for="kkr_code" value="KKR code" />
                             <jet-input id="kkr_code" type="text" class="mt-1 block w-full" v-model="form.kkr_code" />
@@ -165,10 +167,10 @@
                     </div>
 
                     <div class="px-2 py-2">
-                        <el-checkbox v-model="form.needs_attention" name="needs_attention"><jet-label for="needs_attention" value="Needs special attention" /></el-checkbox>
+                        <el-checkbox :true-label="1" false-label="0" v-model="form.needs_attention" name="needs_attention"><jet-label for="needs_attention" value="Needs special attention" /></el-checkbox>
                     </div>
                     <div class="px-2 py-2">
-                        <el-checkbox v-model="form.featured" name="featured"><jet-label for="featured" value="Featured" /></el-checkbox>
+                        <el-checkbox :true-label="1" false-label="0" v-model="form.featured" name="featured"><jet-label for="featured" value="Featured" /></el-checkbox>
                     </div>
 
                     </div>
@@ -212,6 +214,15 @@ export default {
     },
     props: ['spring', 'classifications', 'ownerships'],
     data() {
+        let photos = [];
+        _.forEach(this.spring.photos, function(photo) {
+            photos.push({
+                id: photo.id,
+                name: '',
+                url: '/' + photo.path,
+            });
+        });
+
         return {
             dialogVisible: false,
             dialogPhotoUrl: '',
@@ -222,6 +233,7 @@ export default {
                 description: this.spring.description,
                 position: {lat: this.spring.latitude, lng: this.spring.longitude}
             }],
+            photos: photos,
             form: this.$inertia.form({
                 '_method': 'PUT',
                 id: this.spring.id,
@@ -233,6 +245,8 @@ export default {
                 country: this.spring.country,
                 county: this.spring.county,
                 settlement: this.spring.settlement,
+                photos_to_add: [],
+                photos_to_delete: [],
                 description: this.spring.description,
                 folklore: this.spring.folklore,
                 classification: this.spring.classification,
@@ -259,16 +273,20 @@ export default {
             this.form.database_links.push({});
         },
         updatePhotos(photo) {
+            console.log('update photos');
             //this.form.photos.push(photo.raw);
             //savePhoto(photo);
-            //TODO upload photo
+
             var data = new FormData();
             data.append('photo', photo.raw || '');
-            //let photo_id = this.$inertia.post('/photos', data);
             let photo_id;
             axios.post('/photos', data).then(response => {
                 console.log('resp');
                 console.log(response);
+                console.log('photo id: ');
+                console.log(response.data.photo_id);
+                photo_id = response.data.photo_id;
+                this.form.photos_to_add.push(photo_id);
                 //this.onSuccess(response && response.data);
                 //photo_id = resolve(response && response.data);
             })
@@ -284,6 +302,14 @@ export default {
             console.log(photo_id);
 
 
+        },
+        handleRemove(photo) {
+            this.form.photos_to_delete.push(photo.id);
+            /*console.log('handle remove');
+            console.log(data.id);
+            // delete photo
+            data._method = 'DELETE';
+            this.$inertia.post('/photos/' + data.id, data)*/
         },
         handlePhotoCardPreview(photo) {
             this.dialogPhotoUrl = photo.url;

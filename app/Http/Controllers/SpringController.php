@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
 use Inertia\Inertia;
+use Inertia\Response;
 use function Psy\debug;
 use Illuminate\Support\Facades\Auth;
 use App\Models\SpringReference;
@@ -20,18 +21,24 @@ class SpringController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function index()
     {
         $springs = Spring::whereIn('status', ['submitted', 'confirmed'])->get();
-        return Inertia::render('Springs/Index', ['springs' => $springs]);
+        $featured_springs = Spring::where('featured', '1')->with('photos')->inRandomOrder()->limit(4)->get();
+        $newest_springs = Spring::whereIn('status', ['submitted', 'confirmed'])->with('photos')->orderBy('created_at', 'desc')->limit(4)->get();
+        return Inertia::render('Springs/Index', [
+            'springs' => $springs,
+            'featured_springs' => $featured_springs,
+            'newest_springs' => $newest_springs,
+        ]);
     }
 
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Inertia\Response
+     * @return Response
      */
     public function create()
     {
@@ -101,7 +108,17 @@ class SpringController extends Controller
         SpringController::saveReferences($spring, $request['references']);
         SpringController::saveDatabaseLinks($spring, $request['database_links']);
 
-        if (!empty($request['photos'])) {
+        if (!empty($request['photo_ids'])) {
+            foreach($request['photo_ids'] as $photo_id) {
+                $photo = Photo::where('id', $photo_id)->first();
+                if ($photo) {
+                    $photo->spring_id = $spring->id;
+                    $photo->save();
+                }
+            }
+        }
+
+        /*if (!empty($request['photos'])) {
             foreach ($request['photos'] as $photo_raw) {
                 var_dump($photo_raw);
                 $photo = new Photo();
@@ -110,7 +127,8 @@ class SpringController extends Controller
                 $photo->path = $path;
                 $photo->save();
             }
-        }
+        }*/
+
         return redirect()->route('springs.index')
             ->with('success','Spring created successfully.');
     }
@@ -166,24 +184,32 @@ class SpringController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Spring  $spring
-     * @return \Illuminate\Http\Response
+     * @param Spring $spring
+     * @return Response
      */
     public function show(Spring $spring)
     {
-        $spring = Spring::where('id', $spring->id)->with('references')->with('database_links')->first();
+        $spring = Spring::where('id', $spring->id)
+            ->with('references')
+            ->with('database_links')
+            ->with('photos')
+            ->first();
         return Inertia::render('Springs/Show', ['spring' => $spring]);
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Spring  $spring
-     * @return \Illuminate\Http\Response
+     * @param Spring $spring
+     * @return Response
      */
     public function edit(Spring $spring)
     {
-        $spring = Spring::where('id', $spring->id)->with('references')->with('database_links')->first();
+        $spring = Spring::where('id', $spring->id)
+            ->with('references')
+            ->with('database_links')
+            ->with('photos')
+            ->first();
         if (Auth::user()) {
             return Inertia::render('Springs/Edit', [
                 'classifications' => SpringController::getClassifications(),
@@ -197,7 +223,7 @@ class SpringController extends Controller
      * Update the specified resource in storage.
      *
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Spring $spring
+     * @param Spring $spring
      * @return \Illuminate\Http\RedirectResponse
      * @throws \Illuminate\Auth\Access\AuthorizationException
      */
@@ -242,6 +268,27 @@ class SpringController extends Controller
 
         SpringController::saveDatabaseLinks($spring, $request['database_links']);
 
+        if (!empty($request['photos_to_add'])) {
+            foreach($request['photos_to_add'] as $photo_id) {
+                $photo = Photo::where('id', $photo_id)->first();
+                if ($photo) {
+                    $photo->spring_id = $spring->id;
+                    $photo->save();
+                }
+            }
+        }
+
+        if (!empty($request['photos_to_delete'])) {
+            foreach($request['photos_to_delete'] as $photo_id) {
+                $photo = Photo::where('id', $photo_id)->first();
+                if ($photo) {
+                    Storage::disk('public')->delete($photo->path);
+                    $photo->delete();
+                }
+            }
+        }
+
+
         return redirect()->route('springs.show', compact('spring'))
             ->with('success','Spring updated successfully.');
     }
@@ -249,7 +296,7 @@ class SpringController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param \App\Models\Spring $spring
+     * @param Spring $spring
      * @return \Illuminate\Http\Response
      * @throws \Exception
      */

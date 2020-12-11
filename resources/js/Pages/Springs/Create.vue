@@ -25,6 +25,7 @@
                         <div class="flex -mx-2">
                             <div class="w-full px-2">
                                 <jet-label class="font-bold" value="Location" />
+                                <!--<button class="dot circle link icon" @click="locatorButtonPressed">Locate</button>-->
                                 <div class="z-depth-1-half map-container" style="height:400px;">
                                     <GmapMap
                                         :center="{lat:58.279, lng:26.054}"
@@ -91,7 +92,7 @@
                             </div>
                         </div>
 
-                        <!--<div class="col-span-12 sm:col-span-4">
+                        <div class="col-span-12 sm:col-span-4">
                             <jet-label class="font-bold" for="photos" value="Photos" />
                             <el-upload
                                 action="/"
@@ -105,7 +106,7 @@
                             <el-dialog :visible.sync="dialogVisible">
                                 <img width="100%" :src="dialogPhotoUrl" alt="" />
                             </el-dialog>
-                        </div>-->
+                        </div>
 
                         <div class="col-span-6 sm:col-span-4">
                             <jet-label class="font-bold" for="description" value="Description" />
@@ -236,6 +237,7 @@ export default {
                 county: this.county,
                 settlement: this.settlement,
                 description: this.description,
+                photo_ids: [],
                 classification: 'rheocrene',
                 groundwater_body: this.groundwater_body,
                 ownership: 'private_property',
@@ -287,16 +289,24 @@ export default {
             this.$inertia.post('/springs', data)
         },
         updatePhotos(photo) {
+
+            let file = photo;
+            const isIMAGE = (file.raw.type === 'image/jpeg' || file.raw.type === 'image/png');
+            if (!isIMAGE) {
+                this.$message.error('Only upload jpg/png picture!');
+                return false;
+            }
+
             //this.form.photos.push(photo.raw);
             //savePhoto(photo);
-            //TODO upload photo
+            // upload photo
             var data = new FormData();
             data.append('photo', photo.raw || '');
             //let photo_id = this.$inertia.post('/photos', data);
             let photo_id;
             axios.post('/photos', data).then(response => {
-                console.log('resp');
-                console.log(response);
+                photo_id = response.data.photo_id;
+                this.form.photo_ids.push(photo_id);
                 //this.onSuccess(response && response.data);
                 //photo_id = resolve(response && response.data);
             })

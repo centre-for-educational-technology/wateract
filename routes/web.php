@@ -23,7 +23,13 @@ use App\Http\Controllers\MeasurementController;
 
 Route::get('/', function () {
     $springs = Spring::whereIn('status', ['submitted', 'confirmed'])->get();
-    return Inertia\Inertia::render('Springs/Index', ['springs' => $springs]);
+    $featured_springs = Spring::where('featured', '1')->with('photos')->inRandomOrder()->limit(4)->get();
+    $newest_springs = Spring::whereIn('status', ['submitted', 'confirmed'])->with('photos')->orderBy('created_at', 'desc')->limit(4)->get();
+    return Inertia\Inertia::render('Springs/Index', [
+        'springs' => $springs,
+        'featured_springs' => $featured_springs,
+        'newest_springs' => $newest_springs,
+    ]);
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

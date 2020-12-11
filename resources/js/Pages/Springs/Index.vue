@@ -44,6 +44,75 @@
                         </GmapMap>
                     </div>
 
+
+                    <!--<div>
+                        <div v-if="featured_springs.length > 0" v-on:click="featured=true;newest = false;">
+                            <jet-label class="semi-bold text-base ml-3">Featured springs</jet-label>
+                        </div>
+                        <div v-if="newest_springs.length > 0" v-on:click="featured=false;newest = true;">
+                            <jet-label class="semi-bold text-base ml-3">Newest springs</jet-label>
+                        </div>
+                    </div>-->
+
+                    <!--<ul class="list-reset flex border-b">
+                        <li class="-mb-px mr-1 ml-1" v-on:click="featured=true;newest = false;">
+                            <jet-label class="cursor-pointer bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 hover:border text-blue-800 font-semibold">Featured springs</jet-label>
+                        </li>
+                        <li class="mr-1" v-on:click="featured=false;newest = true;">
+                            <jet-label class="cursor-pointer bg-white inline-block py-2 px-4 text-blue-400 hover:text-blue-600 hover:border font-semibold" >Newest springs</jet-label>
+                        </li>
+                    </ul>-->
+
+                        <!--<div class="container my-12 mx-auto px-4 md:px-12">
+                            <div class="flex flex-wrap -mx-1 lg:-mx-4">
+
+                                <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+
+                                </div>
+                            </div>
+                        </div>-->
+                    <div v-show="featured" v-if="featured_springs.length > 0">
+                        <ul class="list-reset flex border-b">
+                            <li class="-mb-px mr-1 ml-1">
+                                <jet-label class="cursor-pointer bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 font-semibold">Featured springs</jet-label>
+                            </li>
+                            <li class="mr-1" v-on:click="featured=false;newest = true;" v-if="newest_springs.length>0">
+                                <jet-label class="cursor-pointer bg-white inline-block py-2 px-4 hover:text-gray-800" >Newest springs</jet-label>
+                            </li>
+                        </ul>
+                        <div class="grid grid-cols-4 gap-4 px-4 py-2 my-2" v-show="featured">
+                            <div class="border mx-1" v-for="featured_spring in featured_springs">
+                                <spring-view :spring="featured_spring"></spring-view>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div v-show="newest" v-if="newest_springs.length > 0">
+                        <ul class="list-reset flex border-b">
+                            <li class="mr-1 ml-1" v-on:click="featured=true;newest = false;" v-if="featured_springs.length>0">
+                                <jet-label class="cursor-pointer bg-white inline-block py-2 px-4 hover:text-gray-800">Featured springs</jet-label>
+                            </li>
+                            <li class="-mb-px mr-1">
+                                <jet-label class="cursor-pointer bg-white inline-block py-2 px-4 rounded-t border-l border-t border-r font-semibold" >Newest springs</jet-label>
+                            </li>
+                        </ul>
+                        <div>
+                            <div class="grid grid-cols-4 gap-4 px-4 py-2 my-2" v-show="newest">
+                                <div class="border mx-1" v-for="new_spring in newest_springs">
+                                    <spring-view :spring="new_spring"></spring-view>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    </div>
+
+
+
+
+
+
                 </div>
             </div>
         </div>
@@ -54,26 +123,30 @@
 import AppLayout from './../../Layouts/AppLayout'
 import { gmapApi } from 'gmap-vue';
 import GmapCluster from 'gmap-vue/dist/components/cluster'
+import SpringView from './SpringView'
+import JetLabel from "../../Jetstream/Label";
 
 export default {
     components: {
         AppLayout,
         gmapApi,
         GmapCluster,
+        SpringView,
+        JetLabel,
     },
-    props: ['springs'],
+    props: ['springs', 'featured_springs', 'newest_springs'],
     data() {
         const mapIcons = {
             'confirmed': 'https://maps.google.com/mapfiles/ms/micons/blue-dot.png',
             'submitted': 'https://maps.google.com/mapfiles/ms/micons/orange-dot.png',
         };
-
         let markers = [];
         _.forEach(this.springs, function(spring) {
             markers.push({
                 id: spring.code,
                 name: spring.name,
                 description: spring.description,
+                status: spring.status,
                 date_build: "",
                 position: {lat: spring.latitude, lng: spring.longitude},
                 icon: mapIcons[spring.status],
@@ -81,6 +154,8 @@ export default {
         });
 
         return {
+            featured: this.featured_springs.length>0 ? true: false,
+            newest: this.featured_springs.length>0 ? false: true,
             map: null,
             markers: markers,
             infoWinOpen: false,
@@ -137,7 +212,8 @@ export default {
             if (marker.name) {
                 markerName = marker.name;
             }
-            return('<div class="info_window container"> <a href="springs/'+marker.id+'/">'+markerName+'</a></div>');
+            var markerinfo = '<div>Allikad.info code: '+marker.id+'<br />Status: '+marker.status+'</div>';
+            return('<div class="info_window container"> <a class="underline text-blue-700" href="springs/'+marker.id+'/">'+markerName+'</a><br /><br />'+markerinfo+'</div>');
         },
 
     }
