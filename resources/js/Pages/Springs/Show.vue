@@ -145,6 +145,13 @@
                                 </div>
                             </div>
 
+                            <div class="py-2">
+                                <div class="group">
+                                    <strong>Allikad.info code</strong>
+                                    <div>{{spring.code}}</div>
+                                </div>
+                            </div>
+
                             <div class="py-2" v-if="spring.classification">
                                 <strong>Spring classification</strong>
                                 <div>{{spring.classification}}</div>
