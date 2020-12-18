@@ -4,7 +4,7 @@
 
         <div v-if="spring.photos.length > 0">
             <a :href="'/springs/'+spring.code">
-                <img :src="spring.photos[0].thumbnail" /></a>
+                <img :src="'/'+spring.photos[0].thumbnail" /></a>
         </div>
 
         <div class="text-sm px-3 py-2">
