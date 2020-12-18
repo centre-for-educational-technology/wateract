@@ -122,15 +122,6 @@
                                 </table>
                             </div>
 
-                            <div class="py-2" v-if="spring.photos.length > 0">
-                                <strong>Gallery</strong>
-                                <div class="grid grid-cols-3 gap-1">
-                                    <div  class="border-1 border-white" v-for="photo in spring.photos">
-                                        <img :src="'/'+photo.thumbnail" />
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
 
                         <div class="w-1/4 px-2">
@@ -154,6 +145,13 @@
                                 </div>
                             </div>
 
+                            <div class="py-2">
+                                <div class="group">
+                                    <strong>Allikad.info code</strong>
+                                    <div>{{spring.code}}</div>
+                                </div>
+                            </div>
+
                             <div class="py-2" v-if="spring.classification">
                                 <strong>Spring classification</strong>
                                 <div>{{spring.classification}}</div>
@@ -174,6 +172,17 @@
                                 <div>{{spring.status}}</div>
                             </div>
 
+                            <div class="py-2" v-if="spring.photos.length > 0">
+                                <strong>Gallery</strong>
+                                <div class="grid grid-cols-2 gap-1">
+                                    <div @click="handlePhotoPreview(photo)" class="border-1 border-white" v-for="photo in spring.photos">
+                                        <img :src="'/'+photo.thumbnail" />
+                                    </div>
+                                </div>
+                            </div>
+                            <el-dialog :visible.sync="dialogVisible">
+                                <img width="100%" :src="dialogPhotoUrl" alt="" />
+                            </el-dialog>
                         </div>
 
 
@@ -277,7 +286,15 @@ export default {
                 description: this.spring.description,
                 position: {lat: this.spring.latitude, lng: this.spring.longitude}
             }],
+            dialogVisible: false,
+            dialogPhotoUrl: '',
         }
+    },
+    methods: {
+        handlePhotoPreview(photo) {
+            this.dialogPhotoUrl = '/' + photo.path;
+            this.dialogVisible = true;
+        },
     },
     created: function(){
 

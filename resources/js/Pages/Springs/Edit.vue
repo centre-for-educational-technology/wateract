@@ -23,22 +23,54 @@
                     <div class="flex -mx-2 py-2">
                         <div class="w-full px-2">
                             <jet-label class="font-bold" value="Location" />
-                            <div class="z-depth-1-half map-container" style="height:400px;">
+                            <div class="z-depth-1-half map-container" style="height:450px;">
                                 <GmapMap
-                                    :center="{lat:form.latitude, lng:form.longitude}"
-                                    :zoom="12"
+                                    :center="gmapCenter"
+                                    :zoom="13"
                                     map-type-id="terrain"
                                     style="width: 100%; height: 100%"
                                     @click="updateLocation"
+                                    v-show="googleMap"
                                 >
                                     <GmapMarker
                                         :key="index"
-                                        v-for="(location, index) in markers"
+                                        v-for="(location, index) in gmapMarkers"
                                         :position="location.position"
                                         :draggable="true"
                                         @dragend="updateLocation"
                                     />
                                 </GmapMap>
+                                <l-map ref="leafMap"
+                                       :minZoom="3"
+                                       :maxZoom="13"
+                                       :center="leafletCenter"
+                                       :tms="tms"
+                                       :crs="crs"
+                                       v-if="leafletMap"
+                                       @click="updateLeafletLocation"
+                                       :bounds="bounds"
+                                       @ready="onReady"
+                                       :options="{zoomControl: false}"
+                                >
+                                    <l-control-zoom position="bottomright"></l-control-zoom>
+                                    <l-tile-layer
+                                        v-for="layer in tilelayers"
+                                        :key="layer.name"
+                                        :url="layer.url"
+                                        :zIndex="layer.zindex"
+                                        :attribution="attribution"
+                                        :tms="tms"
+                                        :maxZoom="layer.maxzoom"
+                                        :worldCopyJump="true"
+                                    />
+                                    <l-marker v-for="(location, index) in leafletMarkers"
+                                              :key="index"
+                                              :lat-lng="location"></l-marker>
+                                </l-map>
+                                <div class="block">
+                                    <button class="border float-right" v-if="googleMap" v-on:click="showLeaflet()">Maa-amet Map</button>
+                                    <button class="border float-right" v-if="leafletMap" v-on:click="leafletMap=false;googleMap = true;">Google Map</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -200,6 +232,16 @@ import JetLabel from "../../Jetstream/Label";
 import JetButton from "../../Jetstream/Button";
 import JetSecondaryButton from "../../Jetstream/SecondaryButton";
 import { gmapApi } from 'gmap-vue';
+import { latLngBounds, latLng } from "leaflet";
+import L from 'leaflet';
+import { LMap, LTileLayer, LMarker, LIcon, LControlZoom, LControlLayers } from 'vue2-leaflet';
+import "proj4leaflet";
+
+let projection3301 = new L.Proj.CRS('EPSG:3301', '+proj=lcc +lat_1=59.33333333333334 +lat_2=58 +lat_0=57.51755393055556 +lon_0=24 +x_0=500000 +y_0=6375000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs', {
+    resolutions: [4000, 2000, 1000, 500, 250, 125, 62.5, 31.25, 15.625, 7.8125, 3.90625, 1.953125, 0.9765625, 0.48828125, 0.244140625, 0.122070313, 0.061035156, 0.030517578, 0.015258789],
+    origin: [40500, 5993000],
+    bounds: L.bounds([40500, 5993000], [1064500, 7017000])
+});
 
 export default {
     components: {
@@ -211,6 +253,12 @@ export default {
         JetButton,
         JetSecondaryButton,
         gmapApi,
+        LControlLayers,
+        LMap,
+        LTileLayer,
+        LMarker,
+        LIcon,
+        LControlZoom,
     },
     props: ['spring', 'classifications', 'ownerships'],
     data() {
@@ -221,13 +269,47 @@ export default {
                 name: '',
                 url: '/' + photo.path,
             });
+            //photos.push(['/' + photo.path]);
         });
 
         return {
+            leafletMap: this.spring.country == 'EE' ? true : false,
+            googleMap: this.spring.country == 'EE' ? false : true,
+            leafletMarkers: [latLng(this.spring.latitude, this.spring.longitude)],
+            crs: projection3301,
+            tms: true,
+            leafletCenter: latLng(this.spring.latitude, this.spring.longitude),
+            attribution: "<a href='http://www.maaamet.ee'>Maa-amet</a>",
+            baseUrl: 'http://kaart.maaamet.ee/wms/fotokaart?version=1.3.0',
+            transparency: false,
+            maaamet_map_url: "https://tiles.maaamet.ee/tm/tms/1.0.0/hybriid/{z}/{x}/{y}.png&ASUTUS=MAAAMET&KESKKOND=LIVE&IS=TMSNAIDE",
+
+            bounds: latLngBounds([
+                [60.4349, 29.4338],
+                [56.7458, 20.373]
+            ]),
+
+            tilelayers: [
+                {
+                    name: 'reljeef',
+                    url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/vreljeef/{z}/{x}/{y}.png&ASUTUS=MAAAMET&KESKKOND=ALLIKAD',
+                    zindex: 1,
+                    maxzoom: 11,
+                },
+                {
+                    name: 'hybrid',
+                    url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/hybriid/{z}/{x}/{y}.png&ASUTUS=MAAAMET&KESKKOND=ALLIKAD',
+                    zindex: 2,
+                    maxzoom: 11,
+                }
+
+            ],
+
             dialogVisible: false,
             dialogPhotoUrl: '',
             map: null,
-            markers: [{
+            gmapCenter: {lat:this.spring.latitude, lng:this.spring.longitude},
+            gmapMarkers: [{
                 id: this.spring.id,
                 name: this.spring.name,
                 description: this.spring.description,
@@ -300,10 +382,12 @@ export default {
                 });
             ;
             console.log(photo_id);
-
-
+        },
+        updatePhotosList(photos) {
+            console.log(photos);
         },
         handleRemove(photo) {
+            //console.log('handle delete');
             this.form.photos_to_delete.push(photo.id);
             /*console.log('handle remove');
             console.log(data.id);
@@ -333,12 +417,42 @@ export default {
             data._method = 'PUT';
             this.$inertia.post('/springs/' + data.code, data)
         },
+        showLeaflet() {
+            this.googleMap=false;
+            this.leafletMap = true;
+            this.leafletCenter = latLng(this.form.latitude, this.form.longitude);
+        },
+        updateLeafletLocation(location) {
+            this.leafletMarkers = [ location.latlng ];
+            this.form.latitude = location.latlng.lat;
+            this.form.longitude = location.latlng.lng;
+            this.gmapCenter = {lat:this.form.latitude, lng:this.form.longitude};
+            this.gmapMarkers = [{
+                position: {lat:this.form.latitude, lng:this.form.longitude}
+            }];
+
+            const geocoder = new google.maps.Geocoder()
+            geocoder.geocode({ 'latLng': location.latlng }, (result, status) => {
+                if (status === google.maps.GeocoderStatus.OK) {
+                    let address_components = result[0].address_components;
+                    let address = getAddressObject(address_components);
+                    this.form.country = address.country;
+                    this.form.county = address.county;
+                    this.form.settlement = address.settlement;
+                    //console.log(result[0].formatted_address);
+                }
+            })
+
+        },
         updateLocation(location) {
-            this.markers = [{
+            this.gmapMarkers = [{
                 position: location.latLng
             }];
             this.form.latitude= location.latLng.lat();
             this.form.longitude = location.latLng.lng();
+            // update leaflet map too
+            this.leafletCenter = latLng(this.form.latitude, this.form.longitude);
+            this.leafletMarkers = [latLng(this.form.latitude, this.form.longitude)];
 
             const geocoder = new google.maps.Geocoder()
             geocoder.geocode({ 'latLng': location.latLng }, (result, status) => {
@@ -350,6 +464,10 @@ export default {
                     this.form.settlement = address.settlement;
                 }
             })
+        },
+        onReady() {
+            this.$refs.leafMap.mapObject.setView(this.leafletCenter, 10);
+            //this.$refs.myMap.mapObject.locate({setView: true, maxZoom: 16});
         }
     },
 }

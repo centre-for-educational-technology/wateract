@@ -14,22 +14,22 @@
 
                         <!-- Navigation Links -->
                         <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                            <jet-nav-link href="/springs" :active="$page.currentRouteName == 'springs'">
+                            <jet-nav-link href="/springs" :active="$page.currentRouteName === 'springs'">
                                 Map
                             </jet-nav-link>
                         </div>
                         <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex" v-if="$page.user && can('edit user')">
-                            <jet-nav-link href="/admin/users" :active="$page.currentRouteName == 'users.index'">
+                            <jet-nav-link href="/admin/users" :active="$page.currentRouteName === 'users.index'">
                                 Users
                             </jet-nav-link>
                         </div>
                         <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex" v-if="$page.user">
-                            <jet-nav-link href="/dashboard" :active="$page.currentRouteName == 'dashboard'">
+                            <jet-nav-link href="/dashboard" :active="$page.currentRouteName === 'dashboard'">
                                 Dashboard
                             </jet-nav-link>
                         </div>
                         <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex" v-if="$page.user && can('administrate')">
-                            <jet-nav-link href="/admin" :active="$page.currentRouteName == 'admin'">
+                            <jet-nav-link href="/admin" :active="$page.currentRouteName === 'admin'">
                                 Admin
                             </jet-nav-link>
                         </div>
@@ -55,7 +55,7 @@
                                     <div class="block px-4 py-2 text-xs text-gray-400" v-if="($page.user.roles).length > 0">
                                         {{$page.user.roles[0].name}}
                                     </div>
-                                    <div class="block px-4 py-2 text-xs text-gray-400" v-if="($page.user.roles).length == 0">
+                                    <div class="block px-4 py-2 text-xs text-gray-400" v-if="($page.user.roles).length === 0">
                                         Spring enthusiast
                                     </div>
 
@@ -131,9 +131,10 @@
             <!-- Responsive Navigation Menu -->
             <div :class="{'block': showingNavigationDropdown, 'hidden': ! showingNavigationDropdown}" class="sm:hidden">
                 <div class="pt-2 pb-3 space-y-1">
-                    <jet-responsive-nav-link href="/dashboard" :active="$page.currentRouteName == 'dashboard'">
+                    <jet-responsive-nav-link v-if="$page.user" href="/dashboard" :active="$page.currentRouteName == 'dashboard'">
                         Dashboard
                     </jet-responsive-nav-link>
+                    <a href="/login" v-if="!$page.user" class="'block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out">Login</a>
                 </div>
 
                 <!-- Responsive Settings Options -->
