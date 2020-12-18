@@ -13,6 +13,14 @@ import VueLodash from 'vue-lodash';
 import lodash from 'lodash';
 import LaravelPermissionToVueJS from 'laravel-permission-to-vuejs';
 import 'leaflet/dist/leaflet.css';
+import { L, Icon } from 'leaflet';
+
+delete Icon.Default.prototype._getIconUrl;
+Icon.Default.mergeOptions({
+    iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
+    iconUrl: require('leaflet/dist/images/marker-icon.png'),
+    shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
+});
 
 Vue.use(InertiaApp);
 Vue.use(InertiaForm);

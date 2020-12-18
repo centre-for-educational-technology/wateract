@@ -26,22 +26,64 @@
                             <div class="w-full px-2">
                                 <jet-label class="font-bold" value="Location" />
                                 <!--<button class="dot circle link icon" @click="locatorButtonPressed">Locate</button>-->
-                                <div class="z-depth-1-half map-container" style="height:400px;">
+                                <div class="z-depth-1-half map-container" style="height:450px;">
                                     <GmapMap
-                                        :center="{lat:58.279, lng:26.054}"
+                                        :center="gmapCenter"
                                         :zoom="7"
                                         map-type-id="terrain"
                                         style="width: 100%; height: 100%"
                                         @click="updateLocation"
+                                        v-show="googleMap"
                                     >
                                         <GmapMarker
                                             :key="index"
-                                            v-for="(location, index) in markers"
+                                            v-for="(location, index) in gmapMarkers"
                                             :position="location.position"
                                             :draggable="true"
                                             @dragend="updateLocation"
                                         />
                                     </GmapMap>
+                                    <l-map ref="leafMap"
+                                           :minZoom="3"
+                                           :center="leafletCenter"
+                                           :tms="tms"
+                                           :crs="crs"
+                                           v-show="leafletMap"
+                                           @update:zoom="zoomUpdate"
+                                           @click="updateLeafletLocation"
+                                           :bounds="bounds"
+                                           :options="{zoomControl: false}"
+                                    >
+                                        <l-control-zoom position="bottomright"></l-control-zoom>
+                                        <l-tile-layer
+                                            v-for="layer in tilelayers"
+                                            :key="layer.name"
+                                            :url="layer.url"
+                                            :zIndex="layer.zindex"
+                                            :attribution="attribution"
+                                            :tms="tms"
+                                            :maxZoom="layer.maxzoom"
+                                            :worldCopyJump="true"
+                                        />
+                                        <!--<l-wms-tile-layer
+                                            v-for="layer in layers"
+                                            :key="layer.name"
+                                            :base-url="baseUrl"
+                                            :layers="layer.layers"
+                                            :visible="layer.visible"
+                                            :name="layer.name"
+                                            layer-type="base"
+                                            :attribution="attribution"
+                                            :opacity="layer.opacity"
+                                        />-->
+                                        <l-marker v-for="(location, index) in leafletMarkers"
+                                                  :key="index"
+                                                  :lat-lng="location" ></l-marker>
+                                    </l-map>
+                                    <div class="block">
+                                        <button class="border float-right" v-if="googleMap" v-on:click="googleMap=false;leafletMap = true;">Map of Estonia</button>
+                                        <button class="border float-right" v-if="leafletMap" v-on:click="leafletMap=false;googleMap = true;">World map</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -205,6 +247,17 @@ import JetInputError from "../../Jetstream/InputError";
 import JetLabel from "../../Jetstream/Label";
 import JetSecondaryButton from "../../Jetstream/SecondaryButton";
 import { gmapApi } from 'gmap-vue';
+import { latLngBounds, latLng } from "leaflet";
+import L from 'leaflet';
+import { LMap, LTileLayer, LMarker, LIcon, LControlZoom, LWMSTileLayer, LControlLayers } from 'vue2-leaflet';
+import "proj4leaflet";
+
+let projection3301 = new L.Proj.CRS('EPSG:3301', '+proj=lcc +lat_1=59.33333333333334 +lat_2=58 +lat_0=57.51755393055556 +lon_0=24 +x_0=500000 +y_0=6375000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs', {
+    resolutions: [4000, 2000, 1000, 500, 250, 125, 62.5, 31.25, 15.625, 7.8125, 3.90625, 1.953125, 0.9765625, 0.48828125, 0.244140625, 0.122070313, 0.061035156, 0.030517578, 0.015258789],
+    origin: [40500, 5993000],
+    bounds: L.bounds([40500, 5993000], [1064500, 7017000])
+});
+
 
 export default {
     components: {
@@ -217,16 +270,63 @@ export default {
         JetLabel,
         JetSecondaryButton,
         gmapApi,
+        "l-wms-tile-layer": LWMSTileLayer,
+        LControlLayers,
+        LMap,
+        LTileLayer,
+        LMarker,
+        LIcon,
+        LControlZoom,
     },
 
     props: ['classifications', 'ownerships', 'statuses', 'classification', 'ownership', 'status'],
 
     data() {
         return {
+            leafletMap: true,
+            googleMap: false,
+            leafletMarkers: [],
+            gmapMarkers: [],
+            latitude: 58.279,
+            longitude: 26.054,
+            crs: projection3301,
+            tms: true,
+            gmapCenter: {lat:58.779, lng:25.054},
+            leafletCenter: [58.779, 25.054],
+            attribution: "<a href='http://www.maaamet.ee'>Maa-amet</a>",
+            //baseUrl: 'http://kaart.maaamet.ee/wms/fotokaart?version=1.3.0',
+            transparency: 'true',
+            bounds: latLngBounds([
+                [60.4349, 29.4338],
+                [56.7458, 20.373]
+            ]),
+            tilelayers: [
+                {
+                    name: 'reljeef',
+                    url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/vreljeef/{z}/{x}/{y}.png&ASUTUS=MAAAMET&KESKKOND=ALLIKAD',
+                    zindex: 1,
+                    maxzoom: 11,
+                },
+                {
+                    name: 'hybrid',
+                    url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/hybriid/{z}/{x}/{y}.png&ASUTUS=MAAAMET&KESKKOND=ALLIKAD',
+                    zindex: 2,
+                    maxzoom: 11,
+                }
+            ],
+            /*layers: [
+                {
+                    //crs: projection,
+                    name: 'hybrid',
+                    visible: true,
+                    format: 'image/jpeg',
+                    layers: 'vreljeef,HYBRID', //'pohi_vv'
+                    transparent: true,
+                },
+            ],*/
             dialogVisible: false,
             dialogPhotoUrl: '',
             map: null,
-            markers: [],
             form: this.$inertia.form({
                 '_method': 'PUT',
                 name: this.name,
@@ -261,7 +361,6 @@ export default {
             }),
         }
     },
-
     methods: {
         addReference() {
             this.form.references.push({});
@@ -320,15 +419,46 @@ export default {
                 });
             ;
             console.log(photo_id);
-
-
         },
         handlePhotoCardPreview(photo) {
             this.dialogPhotoUrl = photo.url;
             this.dialogVisible = true;
         },
+        updateLeafletLocation(location) {
+            this.leafletMarkers = [ location.latlng ];
+            this.form.latitude= location.latlng.lat;
+            this.form.longitude = location.latlng.lng;
+            // update gmap too
+            this.gmapCenter = {lat:this.form.latitude, lng:this.form.longitude};
+            this.gmapMarkers = [{
+                position: {lat:this.form.latitude, lng:this.form.longitude}
+            }];
+
+            const geocoder = new google.maps.Geocoder()
+            geocoder.geocode({ 'latLng': location.latlng }, (result, status) => {
+                if (status === google.maps.GeocoderStatus.OK) {
+                    let address_components = result[0].address_components;
+                    let address = getAddressObject(address_components);
+                    this.form.country = address.country;
+                    this.form.county = address.county;
+                    this.form.settlement = address.settlement;
+                    //console.log(result[0].formatted_address);
+                }
+            })
+
+        },
+        zoomUpdate(zoom) {
+            /*if (zoom < 10) {
+                console.log('big map');
+                this.layers[0].visible = true;
+                this.layers[1].visible = false;
+            } else {
+                this.layers[0].visible = false;
+                this.layers[1].visible = true;
+            }*/
+        },
         updateLocation(location) {
-            this.markers = [{
+            this.gmapMarkers = [{
                 position: location.latLng
             }];
             this.form.latitude= location.latLng.lat();
@@ -367,42 +497,42 @@ console.log(`Data: ${res.data}`);
 }
 
 function getAddressObject(address_components) {
-let ShouldBeComponent = {
-county: [
-"administrative_area_level_1",
-"administrative_area_level_2",
-"administrative_area_level_3",
-"administrative_area_level_4",
-"administrative_area_level_5"
-],
-settlement: [
-"locality",
-"sublocality",
-"sublocality_level_1",
-"sublocality_level_2",
-"sublocality_level_3",
-"sublocality_level_4"
-],
-country: ["country"]
-};
+    let ShouldBeComponent = {
+        county: [
+            "administrative_area_level_1",
+            "administrative_area_level_2",
+            "administrative_area_level_3",
+            "administrative_area_level_4",
+            "administrative_area_level_5"
+        ],
+        settlement: [
+            "locality",
+            "sublocality",
+            "sublocality_level_1",
+            "sublocality_level_2",
+            "sublocality_level_3",
+            "sublocality_level_4"
+        ],
+        country: ["country"]
+    };
 
-var address = {
-county: "",
-settlement: "",
-country: ""
-};
-address_components.forEach(component => {
-for (var shouldBe in ShouldBeComponent) {
-if (ShouldBeComponent[shouldBe].indexOf(component.types[0]) !== -1) {
-    if (shouldBe === "country") {
-        address[shouldBe] = component.short_name;
-    } else {
-        address[shouldBe] = component.long_name;
-    }
+    var address = {
+        county: "",
+        settlement: "",
+        country: ""
+    };
+    address_components.forEach(component => {
+        for (var shouldBe in ShouldBeComponent) {
+            if (ShouldBeComponent[shouldBe].indexOf(component.types[0]) !== -1) {
+                if (shouldBe === "country") {
+                    address[shouldBe] = component.short_name;
+                } else {
+                    address[shouldBe] = component.long_name;
+                }
+            }
+        }
+    });
+    return address;
 }
-}
-});
-return address;
-};
 
 </script>
