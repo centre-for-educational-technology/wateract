@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b1dc97d4fd7cf9455a6cbce8d81a9516",
+    "content-hash": "36c3245c7978c7f5f83ca6ac49e40a6c",
     "packages": [
         {
             "name": "ahmedsaoud31/laravel-permission-to-vuejs",
@@ -1382,6 +1382,55 @@
                 "watermark"
             ],
             "time": "2019-11-02T09:15:47+00:00"
+        },
+        {
+            "name": "jamesdordoy/laravelvuedatatable",
+            "version": "1.3.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jamesdordoy/Laravel-Vue-Datatable_Laravel-Package.git",
+                "reference": "97caa1161c7bedcc1a54ad4d818c7e18eadcd916"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jamesdordoy/Laravel-Vue-Datatable_Laravel-Package/zipball/97caa1161c7bedcc1a54ad4d818c7e18eadcd916",
+                "reference": "97caa1161c7bedcc1a54ad4d818c7e18eadcd916",
+                "shasum": ""
+            },
+            "require-dev": {
+                "orchestra/testbench": "^3.7",
+                "phpunit/phpunit": "^7.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "JamesDordoy\\LaravelVueDatatable\\Providers\\LaravelVueDatatableServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JamesDordoy\\LaravelVueDatatable\\": "src/"
+                },
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "James Dordoy",
+                    "email": "jamesdordoy@gmail.com"
+                }
+            ],
+            "funding": [
+                {
+                    "url": "https://github.com/jamesdordoy",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-09-15T13:35:59+00:00"
         },
         {
             "name": "jaybizzle/crawler-detect",

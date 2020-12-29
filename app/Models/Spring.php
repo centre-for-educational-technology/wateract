@@ -28,6 +28,11 @@ class Spring extends Model
         return $this->hasMany('App\Models\SpringDatabaseLink');
     }
 
+    public function feedback()
+    {
+        return $this->hasMany('App\Models\SpringFeedback');
+    }
+
     public function observations()
     {
         return $this->hasMany('App\Models\Observation');

@@ -14,6 +14,7 @@ import lodash from 'lodash';
 import LaravelPermissionToVueJS from 'laravel-permission-to-vuejs';
 import 'leaflet/dist/leaflet.css';
 import { L, Icon } from 'leaflet';
+import DataTable from 'laravel-vue-datatable';
 
 delete Icon.Default.prototype._getIconUrl;
 Icon.Default.mergeOptions({
@@ -28,6 +29,9 @@ Vue.use(PortalVue);
 Vue.use(Vuex)
 Vue.use(ElementUI);
 Vue.use(LaravelPermissionToVueJS);
+Vue.use(require('vue-moment'));
+Vue.use(DataTable);
+
 
 Vue.use(GmapVue, {
     load: {
