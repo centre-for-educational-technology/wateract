@@ -77,6 +77,7 @@ Route::resource('observations', ObservationController::class);
 Route::resource('springs.measurements', MeasurementController::class);
 Route::resource('measurements', MeasurementController::class);
 Route::get('/springs/{spring_id}/feedbackview', [SpringFeedbackController::class, 'view']);
+Route::get('/getSprings', [SpringController::class, 'getSprings']);
 
 Route::get('springs_json', function () {
     $springs = Spring::all();

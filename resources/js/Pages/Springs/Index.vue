@@ -21,6 +21,27 @@
 
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+
+                    <div class="p-4">
+                       <h3 class="text-xl">Browse springs</h3>
+                        <div class="flex">
+                            <jet-input class="w-1/4 mr-3" type="text" v-model="search_name" name="searchbox" placeholder="Spring name" />
+                            <select id="classification" v-model="search_classification"
+                                    class="w-1/4 block bg-white border border-gray-300 hover:border-gray-500 mr-3 px-2 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                                <option value="">Classification</option>
+                                <option v-for='data in classifications' :value='data.id'>{{ data.name }}</option>
+                            </select>
+                            <select id="country" v-model="search_country" class="w-1/4 block bg-white border border-gray-300 hover:border-gray-500 mr-3 px-2 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                                <option value="">Country</option>
+                                <option value="EE">Estonia</option>
+                                <option value="LV">Latvia</option>
+                            </select>
+                            <button class="w-1/4 items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:shadow-outline-gray transition ease-in-out duration-150"
+                                v-on:click="updateMarkers">Search</button>
+                        </div>
+                        <small v-on:click="initializeSearch" class="cursor-pointer underline">See all springs</small>
+                    </div>
+
                     <div class="z-depth-1-half map-container" style="height:500px;">
                         <GmapMap ref="map" v-if="googlemap"
                             :center="{lat:58.279, lng:26.054}"
@@ -132,6 +153,8 @@
 </template>
 <script>
 import AppLayout from './../../Layouts/AppLayout'
+import JetInput from "../../Jetstream/Input";
+import JetSecondaryButton from './../../Jetstream/SecondaryButton'
 import { gmapApi } from 'gmap-vue';
 import GmapCluster from 'gmap-vue/dist/components/cluster'
 import SpringView from './SpringView'
@@ -153,6 +176,8 @@ var projection = new L.Proj.CRS('EPSG:3301', '+proj=lcc +lat_1=59.33333333333334
 export default {
     components: {
         AppLayout,
+        JetInput,
+        JetSecondaryButton,
         gmapApi,
         GmapCluster,
         SpringView,
@@ -167,7 +192,7 @@ export default {
         LPopup,
         'l-marker-cluster': Vue2LeafletMarkerCluster
     },
-    props: ['springs', 'featured_springs', 'newest_springs'],
+    props: ['springs', 'featured_springs', 'newest_springs', 'classifications'],
     data() {
         const mapIcons = {
             'confirmed': 'https://maps.google.com/mapfiles/ms/micons/blue-dot.png',
@@ -194,6 +219,9 @@ export default {
         });
 
         return {
+            search_name: '',
+            search_classification: '',
+            search_country: '',
             leafletmap: true,
             googlemap: false,
             crs: projection,
@@ -296,6 +324,42 @@ export default {
             var markerinfo = '<div>Allikad.info code: '+marker.id+'<br />Status: '+marker.status+'</div>';
             return('<div class="info_window container"> <a class="underline text-blue-700" href="springs/'+marker.id+'/">'+markerName+'</a><br /><br />'+markerinfo+'</div>');
         },
+        initializeSearch: function() {
+            this.search_name = '';
+            this.search_classification = '';
+            this.search_country = '';
+            this.updateMarkers();
+        },
+        updateMarkers: function () {
+            //get markers based on search params
+            let springs = [];
+            let markers = [];
+            let leafletmarkers = [];
+            let params = {
+                "name": this.search_name,
+                "classification": this.search_classification,
+                "country": this.search_country,
+            }
+            axios.get('/getSprings', { params }).then(response => {
+                springs = response.data;
+                _.forEach(springs, function(spring) {
+                    markers.push({
+                        id: spring.code,
+                        name: spring.name,
+                        status: spring.status,
+                        position: {lat: spring.latitude, lng: spring.longitude},
+                    });
+                    leafletmarkers.push({
+                        id: spring.code,
+                        name: spring.name,
+                        status: spring.status,
+                        position: latLng(spring.latitude, spring.longitude),
+                    });
+                });
+                this.markers=markers;
+                this.leafletmarkers = leafletmarkers;
+            })
+        }
 
     }
 }

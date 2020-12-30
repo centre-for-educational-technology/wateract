@@ -32,6 +32,7 @@ class SpringController extends Controller
             'springs' => $springs,
             'featured_springs' => $featured_springs,
             'newest_springs' => $newest_springs,
+            'classifications' => SpringController::getClassifications(),
         ]);
     }
 
@@ -308,6 +309,27 @@ class SpringController extends Controller
 
         return redirect()->route('springs.index')
             ->with('success', 'Spring deleted successfully');
+    }
+
+    public function getSprings(Request $request)
+    {
+        $name = $request->input('name');
+        $classification = $request->input('classification');
+        $country = $request->input('country');
+        if ( $classification && $country ) {
+            $springs = Spring::where('name', 'LIKE', '%'.$name.'%')
+                ->where('classification', $classification)
+                ->where('country', $country)->get();
+        } else if ( $classification ) {
+            $springs = Spring::where('name', 'LIKE', '%'.$name.'%')
+                ->where('classification', $classification)->get();
+        } else if ( $country ) {
+            $springs = Spring::where('name', 'LIKE', '%'.$name.'%')
+                ->where('country', $country)->get();
+        } else {
+            $springs = Spring::where('name', 'LIKE', '%'.$name.'%')->get();
+        }
+        return response()->json($springs);
     }
 
 }
