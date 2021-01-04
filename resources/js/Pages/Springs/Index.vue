@@ -1,3 +1,8 @@
+<style>
+    @import "leaflet.markercluster/dist/MarkerCluster.css";
+    @import "leaflet.markercluster/dist/MarkerCluster.Default.css";
+</style>
+
 <template>
     <app-layout>
         <template #header>
@@ -16,8 +21,29 @@
 
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+
+                    <div class="p-4">
+                       <h3 class="text-xl">Browse springs</h3>
+                        <div class="flex">
+                            <jet-input class="w-1/4 mr-3" type="text" v-model="search_name" name="searchbox" placeholder="Spring name" />
+                            <select id="classification" v-model="search_classification"
+                                    class="w-1/4 block bg-white border border-gray-300 hover:border-gray-500 mr-3 px-2 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                                <option value="">Classification</option>
+                                <option v-for='data in classifications' :value='data.id'>{{ data.name }}</option>
+                            </select>
+                            <select id="country" v-model="search_country" class="w-1/4 block bg-white border border-gray-300 hover:border-gray-500 mr-3 px-2 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                                <option value="">Country</option>
+                                <option value="EE">Estonia</option>
+                                <option value="LV">Latvia</option>
+                            </select>
+                            <button class="w-1/4 items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:shadow-outline-gray transition ease-in-out duration-150"
+                                v-on:click="updateMarkers">Search</button>
+                        </div>
+                        <small v-on:click="initializeSearch" class="cursor-pointer underline">See all springs</small>
+                    </div>
+
                     <div class="z-depth-1-half map-container" style="height:500px;">
-                        <GmapMap ref="map"
+                        <GmapMap ref="map" v-if="googlemap"
                             :center="{lat:58.279, lng:26.054}"
                             :zoom="7"
                             map-type-id="terrain"
@@ -42,35 +68,46 @@
                             </GmapInfoWindow>
                             </GmapCluster>
                         </GmapMap>
+                        <l-map ref="leafletMap" style="width:100%;height:100%"
+                               :minZoom="3"
+                               :zoom="13"
+                               :center="leafletCenter"
+                               :tms="tms"
+                               :crs="crs"
+                               :continuousWorld="true"
+                               v-if="leafletmap"
+                               :bounds="bounds"
+                               :options="{zoomControl: false}"
+                        >
+                            <l-tile-layer
+                                v-for="layer in tilelayers"
+                                :key="layer.name"
+                                :url="layer.url"
+                                :zIndex="layer.zindex"
+                                :attribution="attribution"
+                                :tms="tms"
+                                :maxZoom="layer.maxzoom"
+                                :worldCopyJump="true"
+                            />
+                            <l-marker-cluster>
+                            <l-marker v-for="(marker, index) in leafletmarkers"
+                                      :key="index"
+                                      :lat-lng="marker.position">
+                                <l-popup>
+                                    <div class="pb-2"><a class="underline text-blue-700" :href="'springs/'+marker.id+'/'">{{marker.name}}</a></div>
+                                    <div>Allikad.info code: {{marker.id}} <br /> Status: {{marker.status}}</div>
+                                </l-popup>
+                            </l-marker>
+                            </l-marker-cluster>
+                            <l-control-zoom position="bottomright"  ></l-control-zoom>
+
+                        </l-map>
+                        <div class="block">
+                            <button class="border float-right" v-if="googlemap" v-on:click="googlemap=false;leafletmap = true;">Maa-amet Map</button>
+                            <button class="border float-right" v-if="leafletmap" v-on:click="leafletmap=false;googlemap = true;">Google Map</button>
+                        </div>
                     </div>
 
-
-                    <!--<div>
-                        <div v-if="featured_springs.length > 0" v-on:click="featured=true;newest = false;">
-                            <jet-label class="semi-bold text-base ml-3">Featured springs</jet-label>
-                        </div>
-                        <div v-if="newest_springs.length > 0" v-on:click="featured=false;newest = true;">
-                            <jet-label class="semi-bold text-base ml-3">Newest springs</jet-label>
-                        </div>
-                    </div>-->
-
-                    <!--<ul class="list-reset flex border-b">
-                        <li class="-mb-px mr-1 ml-1" v-on:click="featured=true;newest = false;">
-                            <jet-label class="cursor-pointer bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 hover:border text-blue-800 font-semibold">Featured springs</jet-label>
-                        </li>
-                        <li class="mr-1" v-on:click="featured=false;newest = true;">
-                            <jet-label class="cursor-pointer bg-white inline-block py-2 px-4 text-blue-400 hover:text-blue-600 hover:border font-semibold" >Newest springs</jet-label>
-                        </li>
-                    </ul>-->
-
-                        <!--<div class="container my-12 mx-auto px-4 md:px-12">
-                            <div class="flex flex-wrap -mx-1 lg:-mx-4">
-
-                                <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-
-                                </div>
-                            </div>
-                        </div>-->
                     <div v-show="featured" v-if="featured_springs.length > 0">
                         <ul class="list-reset flex border-b">
                             <li class="-mb-px mr-1 ml-1">
@@ -108,39 +145,61 @@
 
                     </div>
 
-
-
-
-
-
                 </div>
             </div>
-        </div>
+        <!--</div>-->
 
     </app-layout>
 </template>
 <script>
 import AppLayout from './../../Layouts/AppLayout'
+import JetInput from "../../Jetstream/Input";
+import JetSecondaryButton from './../../Jetstream/SecondaryButton'
 import { gmapApi } from 'gmap-vue';
 import GmapCluster from 'gmap-vue/dist/components/cluster'
 import SpringView from './SpringView'
 import JetLabel from "../../Jetstream/Label";
 
+import { CRS, latLngBounds, latLng } from "leaflet";
+import L from 'leaflet';
+import { LMap, LTileLayer, LMarker, LIcon, LControlZoom, LPopup, LWMSTileLayer, LControlLayers } from 'vue2-leaflet';
+import "proj4leaflet";
+import proj4 from "proj4";
+import Vue2LeafletMarkerCluster from 'vue2-leaflet-markercluster'
+
+var projection = new L.Proj.CRS('EPSG:3301', '+proj=lcc +lat_1=59.33333333333334 +lat_2=58 +lat_0=57.51755393055556 +lon_0=24 +x_0=500000 +y_0=6375000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs', {
+    resolutions: [4000, 2000, 1000, 500, 250, 125, 62.5, 31.25, 15.625, 7.8125, 3.90625, 1.953125, 0.9765625, 0.48828125, 0.244140625, 0.122070313, 0.061035156, 0.030517578, 0.015258789],
+    origin: [40500, 5993000],
+    bounds: L.bounds([40500, 5993000], [1064500, 7017000])
+});
+
 export default {
     components: {
         AppLayout,
+        JetInput,
+        JetSecondaryButton,
         gmapApi,
         GmapCluster,
         SpringView,
         JetLabel,
+        "l-wms-tile-layer": LWMSTileLayer,
+        LControlLayers,
+        LMap,
+        LTileLayer,
+        LMarker,
+        LIcon,
+        LControlZoom,
+        LPopup,
+        'l-marker-cluster': Vue2LeafletMarkerCluster
     },
-    props: ['springs', 'featured_springs', 'newest_springs'],
+    props: ['springs', 'featured_springs', 'newest_springs', 'classifications'],
     data() {
         const mapIcons = {
             'confirmed': 'https://maps.google.com/mapfiles/ms/micons/blue-dot.png',
             'submitted': 'https://maps.google.com/mapfiles/ms/micons/orange-dot.png',
         };
         let markers = [];
+        let leafletmarkers = [];
         _.forEach(this.springs, function(spring) {
             markers.push({
                 id: spring.code,
@@ -151,9 +210,48 @@ export default {
                 position: {lat: spring.latitude, lng: spring.longitude},
                 icon: mapIcons[spring.status],
             });
+            leafletmarkers.push({
+                id: spring.code,
+                name: spring.name,
+                status: spring.status,
+                position: latLng(spring.latitude, spring.longitude),
+            });
         });
 
         return {
+            search_name: '',
+            search_classification: '',
+            search_country: '',
+            leafletmap: true,
+            googlemap: false,
+            crs: projection,
+            tms: true,
+            leafletCenter: latLng(58.379, 24.554),
+            attribution: "<a href='http://www.maaamet.ee'>Maa-amet</a>",
+            maaamet_url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/vreljeef/{z}/{x}/{y}.png&ASUTUS=MAAAMET&KESKKOND=LIVE&IS=TMSNAIDE',
+            zoom: 5,
+            baseUrl: 'http://kaart.maaamet.ee/wms/alus',
+            bounds: latLngBounds([
+                [60.4349, 29.4338],
+                [56.7458, 20.373]
+            ]),
+            leafletmarkers: leafletmarkers,
+            tilelayers: [
+                {
+                    name: 'reljeef',
+                    url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/vreljeef/{z}/{x}/{y}.png&ASUTUS=MAAAMET&KESKKOND=LIVE&IS=TMSNAIDE',
+                    zindex: 1,
+                    maxzoom: 11,
+                },
+                {
+                    name: 'hybrid',
+                    url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/hybriid/{z}/{x}/{y}.png&ASUTUS=MAAAMET&KESKKOND=LIVE&IS=TMSNAIDE',
+                    zindex: 2,
+                    maxzoom: 11,
+                }
+
+            ],
+
             featured: this.featured_springs.length>0 ? true: false,
             newest: this.featured_springs.length>0 ? false: true,
             map: null,
@@ -174,19 +272,30 @@ export default {
     },
     mounted() {
             //set bounds of the map
-            this.$refs.map.$mapPromise.then((map) => {
+            /*this.$refs.map.$mapPromise.then((map) => {
                 map.panTo({lat:58.379, lng:24.554});
 
-            });
-
-
-        /*this.map = new window.google.maps.Map(this.refs["map"], {
-            center: {lat: 58, lng: 60},
-            zoom: 4,
-        })*/
-        /*this.mapRef.$mapPromise.then((map) => {
-            map.panTo({lat: 1.38, lng: 103.80})
-        })*/
+            });*/
+            /*console.log('mount');
+            const layers = {
+                'Muinsuskaitsealused allikad' : 'http://allikad.info/kml/Kult_allikad_komb.kmz',
+                'Loodusdirektiivi allikaelupaigad' : 'http://allikad.info/kml/LD_allikad_pind1.kmz',
+                'Parandkultuuriallikad' : 'http://allikad.info/kml/Par_allikad_punkt1.kmz',
+                'Allikate seirejaamad' : 'http://allikad.info/kml/Seire_allikad_punkt1.kmz',
+                'Allikalised vaariselupaigad' : 'http://allikad.info/kml/VEP_allikad_pind1.kmz',
+                'Looduskaitsealused allikad' : 'http://allikad.info/kml/UOB_allikad_komb.kmz',
+                'Urglooduse raamatu allikad' : 'http://allikad.info/kml/Urg_allikad_komb.kmz'
+            };
+            this.$refs.map.$mapPromise.then((map) => {
+                _.forEach(layers, function(layer_file, layer_name) {
+                    console.log(layer_file);
+                    let options = {
+                        map: map,
+                        url: layer_file,
+                    }
+                    let kml = new google.maps.KmlLayer(options)
+                });
+            })*/
     },
     methods: {
         toggleInfoWindow: function (marker, idx) {
@@ -215,6 +324,42 @@ export default {
             var markerinfo = '<div>Allikad.info code: '+marker.id+'<br />Status: '+marker.status+'</div>';
             return('<div class="info_window container"> <a class="underline text-blue-700" href="springs/'+marker.id+'/">'+markerName+'</a><br /><br />'+markerinfo+'</div>');
         },
+        initializeSearch: function() {
+            this.search_name = '';
+            this.search_classification = '';
+            this.search_country = '';
+            this.updateMarkers();
+        },
+        updateMarkers: function () {
+            //get markers based on search params
+            let springs = [];
+            let markers = [];
+            let leafletmarkers = [];
+            let params = {
+                "name": this.search_name,
+                "classification": this.search_classification,
+                "country": this.search_country,
+            }
+            axios.get('/getSprings', { params }).then(response => {
+                springs = response.data;
+                _.forEach(springs, function(spring) {
+                    markers.push({
+                        id: spring.code,
+                        name: spring.name,
+                        status: spring.status,
+                        position: {lat: spring.latitude, lng: spring.longitude},
+                    });
+                    leafletmarkers.push({
+                        id: spring.code,
+                        name: spring.name,
+                        status: spring.status,
+                        position: latLng(spring.latitude, spring.longitude),
+                    });
+                });
+                this.markers=markers;
+                this.leafletmarkers = leafletmarkers;
+            })
+        }
 
     }
 }

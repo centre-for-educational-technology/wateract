@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CsvFileController;
 use App\Http\Controllers\PhotoController;
+use App\Http\Controllers\SpringFeedbackController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -29,6 +30,7 @@ Route::get('/', function () {
         'springs' => $springs,
         'featured_springs' => $featured_springs,
         'newest_springs' => $newest_springs,
+        'classifications' => (new App\Http\Controllers\SpringController)->getClassifications(),
     ]);
 });
 
@@ -69,10 +71,15 @@ Route::get('locale/{locale}', function ($locale){
 
 Route::resource('springs', SpringController::class);
 Route::resource('photos', PhotoController::class);
+Route::resource('spring_feedback', SpringFeedbackController::class);
+Route::resource('springs.feedback', SpringFeedbackController::class);
 Route::resource('springs.observations', ObservationController::class);
 Route::resource('observations', ObservationController::class);
 Route::resource('springs.measurements', MeasurementController::class);
 Route::resource('measurements', MeasurementController::class);
+Route::get('/springs/{spring_id}/feedbackview', [SpringFeedbackController::class, 'view']);
+Route::get('/myspringsview', [UserController::class, 'mySprings']);
+Route::get('/getSprings', [SpringController::class, 'getSprings']);
 
 Route::get('springs_json', function () {
     $springs = Spring::all();
