@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Country;
+use App\Models\Spring;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\County;
@@ -11,6 +12,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Inertia\Inertia;
+use JamesDordoy\LaravelVueDatatable\Http\Resources\DataTableCollectionResource;
 use Spatie\Permission\Models\Role;
 
 class UserController extends Controller
@@ -212,4 +214,15 @@ class UserController extends Controller
         }
         return redirect()->back();
     }
+
+    public function mySprings(Request $request)
+    {
+        $length = $request->input('length');
+        $orderBy = $request->input('column', 'created_at');
+        $orderByDir = $request->input('dir', 'desc');
+        $query = Spring::where('user_id', Auth::id())->orderBy($orderBy, $orderByDir);
+        $data = $query->paginate($length);
+        return new DataTableCollectionResource($data);
+    }
+
 }
