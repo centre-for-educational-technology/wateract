@@ -15,6 +15,17 @@ import LaravelPermissionToVueJS from 'laravel-permission-to-vuejs';
 import 'leaflet/dist/leaflet.css';
 import { L, Icon } from 'leaflet';
 import DataTable from 'laravel-vue-datatable';
+import VueInternationalization from 'vue-i18n';
+import Locale from './vue-i18n-locales.generated';
+import store from "./Modules/store";
+
+Vue.use(VueInternationalization);
+const lang = localStorage.getItem('locale') || 'et';
+
+const i18n = new VueInternationalization({
+    locale: lang,
+    messages: Locale
+});
 
 delete Icon.Default.prototype._getIconUrl;
 Icon.Default.mergeOptions({
@@ -46,6 +57,8 @@ Vue.use(VueLodash, { name: 'custom' , lodash: lodash })
 const app = document.getElementById('app');
 
 new Vue({
+    i18n,
+    store,
     render: (h) =>
         h(InertiaApp, {
             props: {

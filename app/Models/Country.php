@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Country extends Model
 {
     use HasFactory;
+
+    public function spring()
+    {
+        return $this->hasMany('App\Models\Spring');
+    }
 }

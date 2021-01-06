@@ -3,7 +3,7 @@
     <div class="grid grid-cols-2 gap-4 border rounded px-4 py-2 my-2">
         <div v-for="field in measurement_fields" :key="field.id">
             <div>
-                <jet-label class="font-bold" :for="field.name" :value="field.name" />
+                <jet-label class="font-bold" :for="field.name" :value="$t('springs.measurement_fields.'+field.name)" />
                 <div>{{field.value}} {{field.unit}}</div>
             </div>
         </div>

@@ -163,6 +163,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Spatie\Permission\PermissionServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
+        MartinLindhe\VueInternationalizationGenerator\GeneratorProvider::class,
 
         /*
          * Package Service Providers...

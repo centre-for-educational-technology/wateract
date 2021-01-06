@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "36c3245c7978c7f5f83ca6ac49e40a6c",
+    "content-hash": "ed702c31a88dfbc41fdc6f8880024b7f",
     "packages": [
         {
             "name": "ahmedsaoud31/laravel-permission-to-vuejs",
@@ -6277,6 +6277,66 @@
                 "test"
             ],
             "time": "2020-07-09T08:09:16+00:00"
+        },
+        {
+            "name": "librenms/laravel-vue-i18n-generator",
+            "version": "0.1.47",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/librenms/laravel-vue-i18n-generator.git",
+                "reference": "86f8f089c81921790279ad756b084a043cdd609e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/librenms/laravel-vue-i18n-generator/zipball/86f8f089c81921790279ad756b084a043cdd609e",
+                "reference": "86f8f089c81921790279ad756b084a043cdd609e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "illuminate/console": "^5.0|^6.0|^7.0|^8.0",
+                "illuminate/support": "^5.0|^6.0|^7.0|^8.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.1.*",
+                "phpunit/phpunit": "~4.7"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "MartinLindhe\\VueInternationalizationGenerator\\GeneratorProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MartinLindhe\\VueInternationalizationGenerator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Martin Lindhe",
+                    "email": "martin@ubique.se"
+                },
+                {
+                    "name": "Tony Murray",
+                    "email": "murraytony@gmail.com"
+                }
+            ],
+            "description": "Generates a vue-i18n compatible include file from your Laravel translations.",
+            "homepage": "http://github.com/librenms/laravel-vue-i18n-generator",
+            "keywords": [
+                "laravel",
+                "vue-i18n"
+            ],
+            "time": "2020-09-25T08:51:26+00:00"
         },
         {
             "name": "mockery/mockery",

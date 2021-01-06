@@ -8,11 +8,11 @@
         <template #header>
             <div class="flex w-full">
                 <h2 class="w-3/4 font-semibold text-xl text-gray-800 leading-tight">
-                    Springs observations and database
+                    {{ $t('springs.observations_and_database') }}
                 </h2>
                 <div class="w-1/4" v-if="$page.user">
                     <a href="springs/create" class="float-right border text-xs font-semibold px-4 py-1 leading-normal">
-                        Create new spring</a>
+                        {{ $t('springs.create_new_spring') }}</a>
                 </div>
             </div>
         </template>
@@ -23,23 +23,23 @@
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
 
                     <div class="p-4">
-                       <h3 class="text-xl">Browse springs</h3>
+                       <h3 class="text-xl">{{ $t('springs.browse_springs') }}</h3>
                         <div class="flex">
-                            <jet-input class="w-1/4 mr-3" type="text" v-model="search_name" name="searchbox" placeholder="Spring name" />
+                            <jet-input class="w-1/4 mr-3" type="text" v-model="search_name" name="searchbox" :placeholder="$t('springs.search_spring_name')" />
                             <select id="classification" v-model="search_classification"
                                     class="w-1/4 block bg-white border border-gray-300 hover:border-gray-500 mr-3 px-2 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
-                                <option value="">Classification</option>
-                                <option v-for='data in classifications' :value='data.id'>{{ data.name }}</option>
+                                <option value="">{{ $t('springs.classification') }}</option>
+                                <option v-for='data in classifications' :value='data.id'> {{ $t( data.name ) }}</option>
                             </select>
                             <select id="country" v-model="search_country" class="w-1/4 block bg-white border border-gray-300 hover:border-gray-500 mr-3 px-2 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
-                                <option value="">Country</option>
-                                <option value="EE">Estonia</option>
-                                <option value="LV">Latvia</option>
+                                <option value="">{{ $t('springs.country') }}</option>
+                                <option value="EE">{{ $t('springs.countries.ee') }}</option>
+                                <option value="LV">{{ $t('springs.countries.lv') }}</option>
                             </select>
                             <button class="w-1/4 items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:shadow-outline-gray transition ease-in-out duration-150"
-                                v-on:click="updateMarkers">Search</button>
+                                v-on:click="updateMarkers">{{ $t('springs.search') }}</button>
                         </div>
-                        <small v-on:click="initializeSearch" class="cursor-pointer underline">See all springs</small>
+                        <small v-on:click="initializeSearch" class="cursor-pointer underline">{{ $t('springs.see_all_springs') }}</small>
                     </div>
 
                     <div class="z-depth-1-half map-container" style="height:500px;">
@@ -70,6 +70,7 @@
                         </GmapMap>
                         <l-map ref="leafletMap" style="width:100%;height:100%"
                                :minZoom="3"
+                               :maxZoom="14"
                                :zoom="13"
                                :center="leafletCenter"
                                :tms="tms"
@@ -94,8 +95,8 @@
                                       :key="index"
                                       :lat-lng="marker.position">
                                 <l-popup>
-                                    <div class="pb-2"><a class="underline text-blue-700" :href="'springs/'+marker.id+'/'">{{marker.name}}</a></div>
-                                    <div>Allikad.info code: {{marker.id}} <br /> Status: {{marker.status}}</div>
+                                    <div class="pb-2"><a class="underline text-blue-700" :href="'springs/'+marker.id+'/'">{{marker.name || 'Unnamed'}}</a></div>
+                                    <div>{{ $t('springs.wateract_code') }}: {{marker.id}} <br />{{ $t('springs.status') }}: {{marker.status}}</div>
                                 </l-popup>
                             </l-marker>
                             </l-marker-cluster>
@@ -111,10 +112,12 @@
                     <div v-show="featured" v-if="featured_springs.length > 0">
                         <ul class="list-reset flex border-b">
                             <li class="-mb-px mr-1 ml-1">
-                                <jet-label class="cursor-pointer bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 font-semibold">Featured springs</jet-label>
+                                <jet-label class="cursor-pointer bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 font-semibold">
+                                    {{  $t('springs.featured_springs') }}</jet-label>
                             </li>
                             <li class="mr-1" v-on:click="featured=false;newest = true;" v-if="newest_springs.length>0">
-                                <jet-label class="cursor-pointer bg-white inline-block py-2 px-4 hover:text-gray-800" >Newest springs</jet-label>
+                                <jet-label class="cursor-pointer bg-white inline-block py-2 px-4 hover:text-gray-800" >
+                                    {{ $t('springs.newest_springs') }}</jet-label>
                             </li>
                         </ul>
                         <div class="grid grid-cols-4 gap-4 px-4 py-2 my-2" v-show="featured">
@@ -127,10 +130,12 @@
                     <div v-show="newest" v-if="newest_springs.length > 0">
                         <ul class="list-reset flex border-b">
                             <li class="mr-1 ml-1" v-on:click="featured=true;newest = false;" v-if="featured_springs.length>0">
-                                <jet-label class="cursor-pointer bg-white inline-block py-2 px-4 hover:text-gray-800">Featured springs</jet-label>
+                                <jet-label class="cursor-pointer bg-white inline-block py-2 px-4 hover:text-gray-800">
+                                    {{  $t('springs.featured_springs') }}</jet-label>
                             </li>
                             <li class="-mb-px mr-1">
-                                <jet-label class="cursor-pointer bg-white inline-block py-2 px-4 rounded-t border-l border-t border-r font-semibold" >Newest springs</jet-label>
+                                <jet-label class="cursor-pointer bg-white inline-block py-2 px-4 rounded-t border-l border-t border-r font-semibold" >
+                                    {{ $t('springs.newest_springs') }}</jet-label>
                             </li>
                         </ul>
                         <div>
@@ -142,12 +147,10 @@
                         </div>
                     </div>
 
-
-                    </div>
-
                 </div>
+
             </div>
-        <!--</div>-->
+        </div>
 
     </app-layout>
 </template>
@@ -248,6 +251,12 @@ export default {
                     url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/hybriid/{z}/{x}/{y}.png&ASUTUS=MAAAMET&KESKKOND=LIVE&IS=TMSNAIDE',
                     zindex: 2,
                     maxzoom: 11,
+                },
+                {
+                    name: 'pohi',
+                    url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/epk_vv/{z}/{x}/{y}.png&ASUTUS=MAAAMET&KESKKOND=LIVE&IS=TMSNAIDE',
+                    zindex: 3,
+                    maxzoom: 11,
                 }
 
             ],
@@ -298,6 +307,9 @@ export default {
             })*/
     },
     methods: {
+        zoomUpdate(zoom) {
+            console.log(zoom);
+        },
         toggleInfoWindow: function (marker, idx) {
             this.infoWindowPos = ({
                     lat : marker.position.lat,

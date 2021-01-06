@@ -11,7 +11,7 @@
                 <div class="w-1/4" v-if="$page.user">
                     <button v-if="can('add measurement')" class="float-right border text-xs font-semibold px-3 py-2 leading-normal">
                         <inertia-link :href="'/springs/'+spring.code+'/measurements/create'">
-                            Create new measurement</inertia-link>
+                            {{ $t('springs.add_new_measurement') }}</inertia-link>
                     </button>
                 </div>
             </div>

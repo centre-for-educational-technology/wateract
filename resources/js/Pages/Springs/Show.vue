@@ -11,7 +11,7 @@
                 <div class="w-1/4" v-if="$page.user">
                     <div class="float-right">
                         <button v-if="(can('edit spring') || spring.status === 'draft')" class="border text-xs font-semibold px-3 py-2 leading-normal">
-                            <inertia-link :href="'/springs/'+spring.code+'/edit'">Edit</inertia-link>
+                            <inertia-link :href="'/springs/'+spring.code+'/edit'">{{ $t('springs.edit') }}</inertia-link>
                         </button>
                         <spring-feedback class="mt-10 sm:mt-0" :spring="spring" />
                     </div>
@@ -43,6 +43,7 @@
                         <div ref="leafmap"> </div>
                         <l-map ref="myMap" style="z-index:0;width:100%;height:100%"
                                :minZoom="3"
+                               :maxZoom="14"
                                :zoom="13"
                                :center="leafletCenter"
                                :tms="tms"
@@ -89,36 +90,36 @@
                         <div class="w-3/4 px-2">
 
                             <div class="py-2">
-                                <strong>Description</strong>
+                                <strong>{{ $t('springs.description') }}</strong>
                                 <div>{{ spring.description }}</div>
                             </div>
 
                             <div class="py-2" v-if="spring.folklore">
-                                <strong>Folklore</strong>
+                                <strong>{{ $t('springs.folklore') }}</strong>
                                 <div>{{ spring.folklore }}</div>
                             </div>
 
                             <div class="py-2" v-if="spring.geology">
-                                <strong>Geology</strong>
+                                <strong>{{ $t('springs.geology') }}</strong>
                                 <div>{{ spring.geology }}</div>
                             </div>
 
                             <div class="py-2" v-if="spring.references.length > 0">
-                                <strong>References</strong>
+                                <strong>{{ $t('springs.references') }}</strong>
                                 <div v-for="reference in spring.references">
                                     <a target="_blank" v-bind:href="reference.url" >{{ reference.url_title}}</a>
                                 </div>
                             </div>
 
                             <div class="py-2" v-if="spring.database_links.length > 0">
-                                <strong>Database links</strong>
+                                <strong>{{ $t('springs.link_with_other_databases') }}</strong>
                                 <table class="table-auto text-sm border">
                                     <thead>
-                                    <tr class="bg-gray-300">
-                                        <th scope="col">Database name</th>
-                                        <th scope="col">Code</th>
-                                        <th scope="col">Spring name</th>
-                                        <th scope="col">URL</th>
+                                    <tr class="bg-gray-300 uppercase text-xs">
+                                        <th scope="col">{{ $t('springs.database_name') }}</th>
+                                        <th scope="col">{{ $t('springs.code') }}</th>
+                                        <th scope="col">{{ $t('springs.spring_name') }}</th>
+                                        <th scope="col">{{ $t('springs.url') }}</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -138,7 +139,7 @@
                         <div class="w-1/4 px-2">
 
                             <div class="py-2">
-                                <strong>Location</strong>
+                                <strong>{{ $t('springs.location') }}</strong>
 
                                 <div>{{spring.country}} {{spring.county}}</div>
 
@@ -151,7 +152,7 @@
 
                             <div class="py-2" v-if="spring.kkr_code">
                                 <div class="group">
-                                    <strong>KKR code</strong>
+                                    <strong>{{ $t('springs.kkr_code') }}</strong>
                                     <div>{{spring.kkr_code}}</div>
                                 </div>
                             </div>
@@ -174,13 +175,13 @@
                             </div>
 
                             <div class="py-2" v-if="spring.ownership">
-                                <strong>Ownership</strong>
+                                <strong>{{ $t('springs.ownership') }}</strong>
                                 <div>{{spring.ownership}}</div>
                             </div>
 
                             <div class="py-2" v-if="spring.status">
-                                <strong>Status</strong>
-                                <div>{{spring.status}}</div>
+                                <strong>{{ $t('springs.status') }}</strong>
+                                <div>{{ $t('springs.status_options.'+spring.status) }}</div>
                             </div>
 
                             <div class="py-2" v-if="spring.photos.length > 0">
@@ -268,14 +269,20 @@ export default {
             tilelayers: [
                 {
                     name: 'reljeef',
-                    url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/vreljeef/{z}/{x}/{y}.png&ASUTUS=MAAAMET&KESKKOND=LIVE&IS=TMSNAIDE',
+                    url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/vreljeef/{z}/{x}/{y}.png&ASUTUS=ALLIKAD&KESKKOND=LIVE',
                     zindex: 1,
                     maxzoom: 11,
                 },
                 {
                     name: 'hybrid',
-                    url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/hybriid/{z}/{x}/{y}.png&ASUTUS=MAAAMET&KESKKOND=LIVE&IS=TMSNAIDE',
+                    url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/hybriid/{z}/{x}/{y}.png&ASUTUS=ALLIKAD&KESKKOND=LIVE',
                     zindex: 2,
+                    maxzoom: 11,
+                },
+                {
+                    name: 'pohi',
+                    url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/epk_vv/{z}/{x}/{y}.png&ASUTUS=ALLIKAD&KESKKOND=LIVE',
+                    zindex: 3,
                     maxzoom: 11,
                 }
 
@@ -330,10 +337,10 @@ export default {
             this.dialogVisible = true;
         },
         onReady() {
-            this.$refs.myMap.mapObject.setView(this.leafletCenter, 10);
-            console.log(this.$refs.myMap);
-            console.log(this.$refs.myMap.mapObject);
-            console.log(this.bounds);
+            this.$refs.myMap.mapObject.setView(this.leafletCenter, 11);
+            //console.log(this.$refs.myMap);
+            //console.log(this.$refs.myMap.mapObject);
+            //console.log(this.bounds);
             //this.$refs.myMap.mapObject.fitBounds(this.bounds);
             //this.$refs.myMap.mapObject.setView(this.center, 10);
             //this.$refs.myMap.mapObject.zoomIn(7);

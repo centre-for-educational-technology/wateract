@@ -13,6 +13,11 @@ class Spring extends Model
         'user_id', 'name', 'code', 'kkr_code', 'latitude', 'longitude', 'country', 'county', 'settlement', 'description', 'folklore', 'classification', 'groundwater_body', 'geology', 'ownership', 'status', 'needs_attention', 'featured'
     ];
 
+    public function country_info()
+    {
+        return $this->belongsTo('App\Models\Country', 'country_id', 'id');
+    }
+
     public function references()
     {
         return $this->hasMany('App\Models\SpringReference');
