@@ -10,18 +10,19 @@
         <div class="text-sm px-3 py-2">
             <strong><a class="text-base" :href="'/springs/'+spring.code">{{ spring.name }}</a></strong>
             <div>
-                {{ spring.country }}
+                <span v-if="spring.country_info">{{ $t('springs.countries.'+spring.country_info.code) }}</span>
+                <span v-if="!spring.country_info">{{ spring.country }}</span>
                 {{ spring.county }}
                 {{ spring.settlement }}
 
             </div>
             <div v-if="spring.classification">
-                <jet-label class="font-bold">Classification</jet-label>
-                <div>{{spring.classification}}</div>
+                <jet-label class="font-bold">{{ $t('springs.classification')}}</jet-label>
+                <div>{{ $t('springs.classification_options.'+spring.classification) }}</div>
             </div>
             <div v-if="spring.status">
-                <jet-label class="font-bold">Status</jet-label>
-                <div>{{spring.status}}</div>
+                <jet-label class="font-bold">{{  $t('springs.status') }}</jet-label>
+                <div>{{ $t('springs.status_options.'+spring.status) }}</div>
             </div>
         </div>
 

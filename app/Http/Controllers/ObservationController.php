@@ -29,12 +29,12 @@ class ObservationController extends Controller
 
     public function getTasteOptions() {
         return [
-            array( 'id' => 'fine', 'name' => 'Tastes fine, no complaints'),
-            array('id' => 'flat', 'name' => 'Tastes "flat" - noticeable lack of taste'),
-            array('id' => 'metallic', 'name' => 'Metallic, like iron or rust'),
-            array('id' => 'earthy', 'name' => 'Earthy or moldy'),
-            array('id' => 'rotten', 'name' => 'Smells and tastes like rotten eggs'),
-            array('id' => 'salty', 'name' => 'Tastes salty'),
+            array( 'id' => 'fine', 'name' => 'springs.taste_options.fine'),
+            array('id' => 'flat', 'name' => 'springs.taste_options.flat'),
+            array('id' => 'metallic', 'name' => 'springs.taste_options.metallic'),
+            array('id' => 'earthy', 'name' => 'springs.taste_options.earthy'),
+            array('id' => 'rotten', 'name' => 'springs.taste_options.rotten'),
+            array('id' => 'salty', 'name' => 'springs.taste_options.salty'),
         ];
     }
 

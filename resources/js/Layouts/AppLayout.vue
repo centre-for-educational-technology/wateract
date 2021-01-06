@@ -8,24 +8,24 @@
                         <!-- Logo -->
                         <div class="flex-shrink-0 flex items-center">
                             <a href="/">
-                                WaterAct project
+                                {{  $t('springs.wateract') }}
                             </a>
                         </div>
 
                         <!-- Navigation Links -->
                         <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                             <jet-nav-link href="/springs" :active="$page.currentRouteName === 'springs'">
-                                Map
+                                {{ $t('springs.map') }}
                             </jet-nav-link>
                         </div>
                         <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex" v-if="$page.user && can('edit user')">
                             <jet-nav-link href="/admin/users" :active="$page.currentRouteName === 'users.index'">
-                                Users
+                                {{ $t('springs.users') }}
                             </jet-nav-link>
                         </div>
                         <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex" v-if="$page.user">
                             <jet-nav-link href="/dashboard" :active="$page.currentRouteName === 'dashboard'">
-                                Dashboard
+                                {{ $t('springs.dashboard') }}
                             </jet-nav-link>
                         </div>
                         <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex" v-if="$page.user && can('administrate')">
@@ -33,15 +33,18 @@
                                 Admin
                             </jet-nav-link>
                         </div>
-                        <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block" v-if="!$page.user">
+                    </div>
+
+                        <div class="hidden sm:flex sm:items-center sm:ml-6" v-if="!$page.user">
+                            <div class="text-sm text-gray-500 pr-10"><locale-dropdown></locale-dropdown></div>
                             <a href="/register" class="text-sm text-gray-700 underline">Register</a>
                             <a href="/login" class="mx-3 text-sm text-gray-700 underline">Login</a>
                         </div>
-                    </div>
 
                     <!-- Settings Dropdown -->
                     <div class="hidden sm:flex sm:items-center sm:ml-6" v-if="$page.user">
-                        <div class="text-xs text-gray-500">{{ $page.user.name }}</div>
+                        <div class="text-sm text-gray-500 pr-10"><locale-dropdown></locale-dropdown></div>
+                        <div class="text-sm text-gray-500">{{ $page.user.name }}</div>
                         <div class="ml-2 relative">
                             <jet-dropdown align="right" width="48">
                                 <template #trigger>
@@ -231,6 +234,7 @@
     import JetDropdownLink from './../Jetstream/DropdownLink'
     import JetNavLink from './../Jetstream/NavLink'
     import JetResponsiveNavLink from './../Jetstream/ResponsiveNavLink'
+    import LocaleDropdown from './../Components/LocaleDropdown'
 
     export default {
         components: {
@@ -240,6 +244,7 @@
             JetDropdownLink,
             JetNavLink,
             JetResponsiveNavLink,
+            LocaleDropdown,
         },
 
         data() {

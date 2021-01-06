@@ -26,8 +26,8 @@ class SpringController extends Controller
     public function index()
     {
         $springs = Spring::whereIn('status', ['submitted', 'confirmed'])->get();
-        $featured_springs = Spring::where('featured', '1')->with('photos')->inRandomOrder()->limit(4)->get();
-        $newest_springs = Spring::whereIn('status', ['submitted', 'confirmed'])->with('photos')->orderBy('created_at', 'desc')->limit(4)->get();
+        $featured_springs = Spring::where('featured', '1')->with('photos')->with('country_info')->inRandomOrder()->limit(4)->get();
+        $newest_springs = Spring::whereIn('status', ['submitted', 'confirmed'])->with('photos')->with('country_info')->orderBy('created_at', 'desc')->limit(4)->get();
         return Inertia::render('Springs/Index', [
             'springs' => $springs,
             'featured_springs' => $featured_springs,
@@ -56,22 +56,22 @@ class SpringController extends Controller
 
     public function getClassifications() {
         return [
-            array( 'id' => 'rheocrene', 'name' => 'Rheocrene'),
-            array('id' => 'hillslope_spring', 'name' => 'Hillslope spring'),
-            array('id' => 'limnocrene', 'name' => 'Limnocrene'),
-            array('id' => 'helocrene', 'name' => 'Helocrene'),
-            array('id' => 'cave_spring', 'name' => 'Cave spring'),
-            array('id' => 'hypocrene', 'name' => 'Hypocrene'),
-            array('id' => 'captured_spring', 'name' => 'Captured spring'),
-            array('id' => 'karst_spring', 'name' => 'Karst spring'),
+            array( 'id' => 'rheocrene', 'name' => 'springs.classification_options.rheocrene'),
+            array('id' => 'hillslope_spring', 'name' => 'springs.classification_options.hillslope_spring'),
+            array('id' => 'limnocrene', 'name' => 'springs.classification_options.limnocrene'),
+            array('id' => 'helocrene', 'name' => 'springs.classification_options.helocrene'),
+            array('id' => 'cave_spring', 'name' => 'springs.classification_options.cave_spring'),
+            array('id' => 'hypocrene', 'name' => 'springs.classification_options.hypocrene'),
+            array('id' => 'captured_spring', 'name' => 'springs.classification_options.captured_spring'),
+            array('id' => 'karst_spring', 'name' => 'springs.classification_options.karst_spring'),
         ];
     }
 
     public function getOwnerships() {
         return [
-            array('id' => 'private_property', 'name' => 'Private property'),
-            array('id' => 'state_property', 'name' => 'State property'),
-            array('id' => 'municipal_property', 'name' => 'Municipal property'),
+            array('id' => 'private_property', 'name' => 'springs.ownership_options.private_property'),
+            array('id' => 'state_property', 'name' => 'springs.ownership_options.state_property'),
+            array('id' => 'municipal_property', 'name' => 'springs.ownership_options.municipal_property'),
         ];
     }
 

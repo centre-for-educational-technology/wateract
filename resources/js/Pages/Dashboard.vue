@@ -7,12 +7,12 @@
     <app-layout>
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                Dashboard
+                {{ $t('springs.dashboard') }}
             </h2>
         </template>
 
         <template #title>
-            My Springs
+            {{ $t('springs.my_springs') }}
         </template>
 
         <div class="py-6">
@@ -68,7 +68,7 @@
                                           :key="index"
                                           :lat-lng="marker.position">
                                     <l-popup>
-                                        <div class="pb-2"><a class="underline text-blue-700" :href="'springs/'+marker.id+'/'">{{marker.name}}</a></div>
+                                        <div class="pb-2"><a class="underline text-blue-700" :href="'springs/'+marker.id+'/'">{{marker.name || 'Unnamed'}}</a></div>
                                         <div>Allikad.info code: {{marker.id}} <br /> Status: {{marker.status}}</div>
                                     </l-popup>
                                 </l-marker>
@@ -179,6 +179,12 @@
                         url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/hybriid/{z}/{x}/{y}.png&ASUTUS=MAAAMET&KESKKOND=LIVE&IS=TMSNAIDE',
                         zindex: 2,
                         maxzoom: 11,
+                    },
+                    {
+                        name: 'pohi',
+                        url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/epk_vv/{z}/{x}/{y}.png&ASUTUS=MAAAMET&KESKKOND=LIVE&IS=TMSNAIDE',
+                        zindex: 3,
+                        maxzoom: 11,
                     }
 
                 ],
@@ -203,12 +209,13 @@
                         label: 'Spring name',
                         name: 'name',
                         orderable: true,
+                        transform: ({data}) => `<a class="underline" href="/springs/${data['code']}">${data['name'] || 'Unnamed'}</a>`,
                     },
                     {
-                        label: 'Location',
+                        label: this.$i18n.t('springs.location'),
                         name: 'country',
                         orderable: true,
-                        transform: ({data}) => `${data['country']}, ${data['county']}, ${data['settlement']}`,
+                        transform: ({data}) => `${data['country']}, ${data['county']}${data['settlement'] ? ', ' + data['settlement'] : ''}`,
                     },
                     {
                         label: 'Date & Time',

@@ -11,22 +11,22 @@
             <jet-form-section>
 
                 <template #title>
-                    Create measurement
+                    {{ $t('springs.add_new_measurement')}}
                 </template>
 
                 <template #form>
 
                     <div class="flex -mx-2 py-2">
                         <div class="w-1/2 px-2">
-                            <jet-label class="font-bold" for="analysis_time" value="Analysis time" />
+                            <jet-label class="font-bold" for="analysis_time" :value="$t('springs.analysis_time')" />
                             <input type="datetime-local" id="analysis_time" v-model="form.analysis_time" />
                         </div>
                     </div>
 
                     <div class="grid grid-cols-2 gap-4">
                         <div v-for="field in measurement_fields" :key="field.id">
-                            <div :class="{'pull-right': index % 2 === 0, 'pull-left': index % 2 !== 0 }">
-                                <jet-label class="font-bold" :for="field.name" :value="field.name" />
+                            <div>
+                                <jet-label class="font-bold" :for="field.name" :value="$t('springs.measurement_fields.'+field.name)" />
                                 <jet-input :type="field.type" class="mt-1 block w-full" :id="field.name" v-model="field.value" :name="'measurement_values['+ field.name +']'" />
                             </div>
                         </div>
@@ -34,8 +34,8 @@
 
                 </template>
                 <template #actions>
-                    <jet-secondary-button type="submit" @click.native="saveDraft(form)">Save as draft</jet-secondary-button>
-                    <jet-button class="ml-2" type="submit" @click.native="submit(form)">Submit</jet-button>
+                    <!--<jet-secondary-button type="submit" @click.native="saveDraft(form)">{{ $t('springs.save_as_draft') }}</jet-secondary-button>-->
+                    <jet-button class="ml-2" type="submit" @click.native="submit(form)">{{ $t('springs.submit') }}</jet-button>
                 </template>
             </jet-form-section>
         </div>

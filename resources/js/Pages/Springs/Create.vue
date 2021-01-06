@@ -2,7 +2,7 @@
     <app-layout>
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                Create new spring
+                {{ $t('springs.create_new_spring') }}
             </h2>
         </template>
 
@@ -14,17 +14,17 @@
 
                         <div class="flex -mx-2">
                             <div class="w-full px-2">
-                                <jet-label class="font-bold" for="name" value="Name" />
+                                <jet-label class="font-bold" for="name" :value="$t('springs.name')" />
                                 <jet-input id="name" type="text" class="mt-1 block w-full" v-model="form.name" />
-                                <small id="name_help_block" class="form-text text-muted">
+                                <!--<small id="name_help_block" class="form-text text-muted">
                                     'springs.name_help_text'
-                                </small>
+                                </small>-->
                             </div>
                         </div>
 
                         <div class="flex -mx-2">
                             <div class="w-full px-2">
-                                <jet-label class="font-bold" value="Location" />
+                                <jet-label class="font-bold" :value="$t('springs.location')" />
                                 <!--<button class="dot circle link icon" @click="locatorButtonPressed">Locate</button>-->
                                 <div class="z-depth-1-half map-container" style="height:450px;">
                                     <GmapMap
@@ -45,6 +45,7 @@
                                     </GmapMap>
                                     <l-map ref="leafMap"
                                            :minZoom="3"
+                                           :maxZoom="14"
                                            :center="leafletCenter"
                                            :tms="tms"
                                            :crs="crs"
@@ -90,44 +91,46 @@
 
                         <div class="flex -mx-2">
                         <div class="w-1/2 px-2">
-                            <jet-label class="font-bold" for="latitude" value="Latitude" />
+                            <jet-label class="font-bold" for="latitude" :value="$t('springs.latitude')" />
                             <jet-input id="latitude" type="text" class="mt-1 block w-full" v-model="form.latitude" />
-                            <small id="latitude_help_block" class="form-text text-muted">
+                            <!--<small id="latitude_help_block" class="form-text text-muted">
                                 'springs.latitude_help_text'
-                            </small>
+                            </small>-->
                             <jet-input-error :message="form.error('latitude')" class="mt-2" />
                         </div>
 
                         <div class="w-1/2 px-2">
-                            <jet-label class="font-bold" for="longitude" value="Longitude" />
+                            <jet-label class="font-bold" for="longitude" :value="$t('springs.longitude')" />
                             <jet-input id="longitude" type="text" class="mt-1 block w-full" v-model="form.longitude" />
-                            <small id="longitude_help_block" class="form-text text-muted">
+                            <!--<small id="longitude_help_block" class="form-text text-muted">
                                 'springs.longitude_help_text'
-                            </small>
+                            </small>-->
                             <jet-input-error :message="form.error('longitude')" class="mt-2" />
                         </div>
                         </div>
 
 
-                        <div class="col-span-6 sm:col-span-4">
-                            <jet-label class="font-bold" for="country" value="Country" />
-                            <jet-input id="country" type="text" class="mt-1 block w-full" v-model="form.country" />
-                        </div>
-                        <div class="col-span-6 sm:col-span-4">
-                            <jet-label class="font-bold" for="county" value="County" />
-                            <jet-input id="county" type="text" class="mt-1 block w-full" v-model="form.county" />
-                        </div>
-                        <div class="col-span-6 sm:col-span-4">
-                            <jet-label class="font-bold" for="settlement" value="Settlement" />
-                            <jet-input id="settlement" type="text" class="mt-1 block w-full" v-model="form.settlement" />
+                        <div class="flex -mx-2">
+                            <div class="w-1/3 px-2">
+                                <jet-label class="font-bold" for="country" :value="$t('springs.country')" />
+                                <jet-input id="country" type="text" class="mt-1 block w-full" v-model="form.country" />
+                            </div>
+                            <div class="w-1/3 px-2">
+                                <jet-label class="font-bold" for="county" :value="$t('springs.county')" />
+                                <jet-input id="county" type="text" class="mt-1 block w-full" v-model="form.county" />
+                            </div>
+                            <div class="w-1/3 px-2">
+                                <jet-label class="font-bold" for="settlement" :value="$t('springs.settlement')" />
+                                <jet-input id="settlement" type="text" class="mt-1 block w-full" v-model="form.settlement" />
+                            </div>
                         </div>
 
                         <div class="col-span-12 sm:col-span-4">
-                            <jet-label class="font-bold" for="references" value="References" />
+                            <jet-label class="font-bold" for="references" :value="$t('springs.references')" />
                             <div id="references">
-                                <div v-for="(reference, index) in form.references">
-                                    <jet-input v-model="reference.url_title" placeholder="URL title"/>
-                                    <jet-input v-model="reference.url" type="url" placeholder="URL"/>
+                                <div v-for="(reference, index) in form.references" class="py-1">
+                                    <jet-input v-model="reference.url_title" :placeholder="$t('springs.url_title')"/>
+                                    <jet-input v-model="reference.url" type="url" :placeholder="$t('springs.url')"/>
                                     <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3" @click="addReference">+</button>
                                     <jet-input-error :message="form.error('references.'+index+'.url')" class="mt-2" />
                                 </div>
@@ -135,7 +138,7 @@
                         </div>
 
                         <div class="col-span-12 sm:col-span-4">
-                            <jet-label class="font-bold" for="photos" value="Photos" />
+                            <jet-label class="font-bold" for="photos" :value="$t('springs.photos')" />
                             <el-upload
                                 action="/"
                                 list-type="picture-card"
@@ -151,16 +154,16 @@
                         </div>
 
                         <div class="col-span-6 sm:col-span-4">
-                            <jet-label class="font-bold" for="description" value="Description" />
+                            <jet-label class="font-bold" for="description" :value="$t('springs.description')" />
                             <textarea id="description" type="textarea" class="px-2 mt-1 block w-full border" rows="5" v-model="form.description" ></textarea>
-                            <small id="description_help_block" class="form-text text-muted">
+                            <!--<small id="description_help_block" class="form-text text-muted">
                                 'springs.description_help_text'
-                            </small>
+                            </small>-->
                             <jet-input-error :message="form.error('description')" class="mt-2" />
                         </div>
 
                         <div class="col-span-6 sm:col-span-4">
-                            <jet-label class="font-bold" for="folklore" value="Folklore" />
+                            <jet-label class="font-bold" for="folklore" :value="$t('springs.folklore')" />
                             <textarea id="folklore" type="textarea" class="px-2 mt-1 block w-full border"  rows="5" v-model="form.folklore"></textarea>
                         </div>
 
@@ -168,19 +171,19 @@
 
                             <div class="flex -mx-2">
                                 <div class="w-1/2 px-2">
-                                    <jet-label class="font-bold" for="kkr_code" value="KKR code" />
+                                    <jet-label class="font-bold" for="kkr_code" :value="$t('springs.kkr_code')" />
                                     <jet-input id="kkr_code" type="text" class="mt-1 block w-full" v-model="form.kkr_code" />
                                 </div>
                             </div>
 
                         <div class="col-span-12 sm:col-span-4">
-                            <jet-label class="font-bold" for="database_links" value="Link with other databases" />
+                            <jet-label class="font-bold" for="database_links" :value="$t('springs.link_with_other_databases')" />
                             <div id="database_links">
-                                <div v-for="link in form.database_links" :key="link.id">
-                                    <jet-input v-model="link.database_name" placeholder="Database name"/>
-                                    <jet-input v-model="link.spring_name" placeholder="Spring name"/>
-                                    <jet-input v-model="link.code" placeholder="Code"/>
-                                    <jet-input v-model="link.url" placeholder="URL"/>
+                                <div v-for="link in form.database_links" :key="link.id" class="py-1">
+                                    <jet-input v-model="link.database_name" :placeholder="$t('springs.database_name')"/>
+                                    <jet-input v-model="link.spring_name" :placeholder="$t('springs.spring_name')"/>
+                                    <jet-input v-model="link.code" :placeholder="$t('springs.code')"/>
+                                    <jet-input v-model="link.url" :placeholder="$t('springs.url')"/>
                                     <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3" @click="addDatabaseLink">+</button>
                                 </div>
                             </div>
@@ -188,45 +191,45 @@
 
                         <div class="flex -mx-2 py-2">
                             <div class="w-1/2 px-2">
-                                <jet-label class="font-bold" for="classification" value="Spring classification" />
+                                <jet-label class="font-bold" for="classification" :value="$t('springs.spring_classification')" />
                                 <select id="classification" v-model="form.classification"
                                     class="block w-full bg-white border border-gray-400 hover:border-gray-500 px-2 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
-                                    <option v-for='data in classifications' :selected="classification === data.id" :value='data.id'>{{ data.name }}</option>
+                                    <option v-for='data in classifications' :selected="classification === data.id" :value='data.id'>{{ $t(data.name) }}</option>
                                 </select>
                             </div>
 
                             <div class="w-1/2 px-2">
-                                <jet-label class="font-bold" for="groundwater_body" value="Groundwater body"></jet-label>
+                                <jet-label class="font-bold" for="groundwater_body" :value="$t('springs.groundwater_body')"></jet-label>
                                 <jet-input id="groundwater_body" type="text" class="mt-1 block w-full" v-model="form.groundwater_body" />
                             </div>
                         </div>
 
                         <div class="col-span-6 sm:col-span-4">
-                            <jet-label class="font-bold" for="folklore" value="Geology" />
+                            <jet-label class="font-bold" for="folklore" :value="$t('springs.geology')" />
                             <textarea id="geology" type="textarea" class="px-2 mt-1 block w-full border" rows="5" v-model="form.geology"></textarea>
                         </div>
 
                         <div class="w-1/2 px-2 py-2">
-                            <jet-label class="font-bold" for="ownership" value="Ownership" />
+                            <jet-label class="font-bold" for="ownership" :value="$t('springs.ownership')" />
                             <select id="ownership" v-model="form.ownership"
                                     class="block w-full bg-white border border-gray-400 hover:border-gray-500 px-2 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
-                                <option v-for='data in ownerships' :selected="ownership === data.id" :value='data.id'>{{ data.name }}</option>
+                                <option v-for='data in ownerships' :selected="ownership === data.id" :value='data.id'>{{ $t(data.name) }}</option>
                             </select>
                         </div>
 
                         <div class="px-2 py-2">
-                            <el-checkbox v-model="form.needs_attention" name="needs_attention"><jet-label for="needs_attention" value="Needs special attention" /></el-checkbox>
+                            <el-checkbox v-model="form.needs_attention" name="needs_attention"><jet-label for="needs_attention" :value="$t('springs.needs_attention')" /></el-checkbox>
                         </div>
                         <div class="px-2 py-2">
-                            <el-checkbox v-model="form.featured" name="featured"><jet-label for="featured" value="Featured" /></el-checkbox>
+                            <el-checkbox v-model="form.featured" name="featured"><jet-label for="featured" :value="$t('springs.featured')" /></el-checkbox>
                         </div>
 
                         </div>
 
                     </template>
                         <template #actions>
-                            <jet-secondary-button type="submit" @click.native="saveDraft(form)">Save as draft</jet-secondary-button>
-                            <jet-button class="ml-2" type="submit" @click.native="submit(form)">Submit</jet-button>
+                            <jet-secondary-button type="submit" @click.native="saveDraft(form)">{{ $t('springs.save_as_draft') }}</jet-secondary-button>
+                            <jet-button class="ml-2" type="submit" @click.native="submit(form)">{{ $t('springs.submit') }}</jet-button>
                         </template>
                         <!--<button type="submit" class="text-white bg-blue-500 border text-xs font-semibold px-4 py-1 leading-normal">Save as draft</button>
                         <button type="submit" class="text-white bg-blue-500 border text-xs font-semibold px-4 py-1 leading-normal">Submit</button>-->
@@ -311,6 +314,12 @@ export default {
                     name: 'hybrid',
                     url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/hybriid/{z}/{x}/{y}.png&ASUTUS=MAAAMET&KESKKOND=ALLIKAD',
                     zindex: 2,
+                    maxzoom: 11,
+                },
+                {
+                    name: 'pohi',
+                    url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/epk_vv/{z}/{x}/{y}.png&ASUTUS=MAAAMET&KESKKOND=LIVE&IS=TMSNAIDE',
+                    zindex: 3,
                     maxzoom: 11,
                 }
             ],
@@ -426,12 +435,14 @@ export default {
         },
         updateLeafletLocation(location) {
             this.leafletMarkers = [ location.latlng ];
-            this.form.latitude= location.latlng.lat;
-            this.form.longitude = location.latlng.lng;
+            let latitude = location.latlng.lat;
+            let longitude = location.latlng.lng;
+            this.form.latitude= parseFloat(location.latlng.lat).toFixed(6);
+            this.form.longitude = parseFloat(location.latlng.lng).toFixed(6);
             // update gmap too
-            this.gmapCenter = {lat:this.form.latitude, lng:this.form.longitude};
+            this.gmapCenter = {lat:latitude, lng:longitude};
             this.gmapMarkers = [{
-                position: {lat:this.form.latitude, lng:this.form.longitude}
+                position: {lat:latitude, lng:longitude}
             }];
 
             const geocoder = new google.maps.Geocoder()

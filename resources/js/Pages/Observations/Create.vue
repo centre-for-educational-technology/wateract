@@ -11,63 +11,63 @@
             <jet-form-section>
 
                 <template #title>
-                    Create observation
+                    {{ $t('springs.create_observation')}}
                 </template>
 
                 <template #form>
 
                     <div class="flex -mx-2 py-2">
                         <div class="w-1/2 px-2">
-                            <jet-label class="font-bold" for="measurement_time" value="Measurement time" />
+                            <jet-label class="font-bold" for="measurement_time" :value="$t('springs.measurement_time')" />
                             <input type="datetime-local" id="measurement_time" v-model="form.measurement_time" />
                         </div>
                     </div>
 
                     <div class="flex -mx-2 py-2">
                         <div class="w-full px-2">
-                            <jet-label class="font-bold" for="odor" value="Odor" />
+                            <jet-label class="font-bold" for="odor" :value="$t('springs.odor')" />
                             <jet-input id="odor" type="text" class="mt-1 block w-full" v-model="form.odor" />
                         </div>
                     </div>
 
                     <div class="flex -mx-2 py-2">
                         <div class="w-1/2 px-2">
-                            <jet-label class="font-bold" for="taste" value="Taste" />
+                            <jet-label class="font-bold" for="taste" :value="$t('springs.taste')" />
                             <select id="taste" v-model="form.taste"
                                 class="block w-full bg-white border border-gray-400 hover:border-gray-500 px-2 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
-                                <option v-for='data in taste_options' :selected="form.taste === data.id" :value='data.id'>{{ data.name }}</option>
+                                <option v-for='data in taste_options' :selected="form.taste === data.id" :value='data.id'>{{ $t(data.name) }}</option>
                             </select>
                         </div>
                     </div>
 
                     <div class="flex -mx-2 py-2">
                         <div class="w-full px-2">
-                            <jet-label class="font-bold" for="color" value="Color and turbidity" />
+                            <jet-label class="font-bold" for="color" :value="$t('springs.color_and_turbidity')" />
                             <jet-input id="color" type="text" class="mt-1 block w-full" v-model="form.color" />
                         </div>
+                    </div>
+
+                    <div class="col-span-6 sm:col-span-4">
+                        <jet-label class="font-bold" for="description" :value="$t('springs.description')" />
+                        <textarea id="description" type="textarea" class="px-2 mt-1 block w-full border" rows="5" v-model="form.description" ></textarea>
+                        <!--<small id="description_help_block" class="form-text text-muted">
+                            'springs.description_help_text'
+                        </small>-->
                     </div>
 
                     <div class="grid grid-cols-2 gap-4">
                         <div v-for="(field, index) in observation_fields" :key="field.id">
                             <div :class="{'pull-right': index % 2 === 0, 'pull-left': index % 2 !== 0 }">
-                                <jet-label class="font-bold" :for="field.name" :value="field.name" />
+                                <jet-label class="font-bold" :for="field.name" :value="$t('springs.'+field.name)" />
                                 <jet-input :type="field.type" class="mt-1 block w-full" :id="field.name" v-model="field.value" />
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-span-6 sm:col-span-4">
-                        <jet-label class="font-bold" for="description" value="Description" />
-                        <textarea id="description" type="textarea" class="px-2 mt-1 block w-full border" rows="5" v-model="form.description" ></textarea>
-                        <small id="description_help_block" class="form-text text-muted">
-                            'springs.description_help_text'
-                        </small>
-                    </div>
-
                 </template>
                 <template #actions>
-                    <jet-secondary-button type="submit" @click.native="saveDraft(form)">Save as draft</jet-secondary-button>
-                    <jet-button class="ml-2" type="submit" @click.native="submit(form)">Submit</jet-button>
+                    <!--<jet-secondary-button type="submit" @click.native="saveDraft(form)">{{ $t('springs.save_as_draft') }}</jet-secondary-button>-->
+                    <jet-button class="ml-2" type="submit" @click.native="submit(form)">{{ $t('springs.submit') }}</jet-button>
                 </template>
             </jet-form-section>
         </div>
