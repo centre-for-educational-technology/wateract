@@ -191,6 +191,7 @@ class SpringController extends Controller
     public function show(Spring $spring)
     {
         $spring = Spring::where('id', $spring->id)
+            ->with('user')
             ->with('references')
             ->with('database_links')
             ->with('photos')
