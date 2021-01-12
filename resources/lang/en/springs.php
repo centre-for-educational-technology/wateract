@@ -36,6 +36,7 @@ return [
     'wateract_code' => 'Allikad.info code',
     'featured_springs' => 'Featured springs',
     'newest_springs' => 'Newest springs',
+    'added_by' => 'Added by',
     'name' => 'Name',
     'name_help_text' => 'Enter the known name (if it excist) of the spring. You can enter several different name formats.',
     'unnamed' => 'Unnamed',
@@ -79,6 +80,7 @@ return [
     ],
     'status' => 'Status',
     'status_options' => [
+        'draft' => 'Draft',
         'submitted' => 'Submitted',
         'confirmed' => 'Confirmed',
     ],
@@ -96,7 +98,7 @@ return [
     'confirm' => 'Confirm',
     'view' => 'View',
     'observations' => 'Observations',
-    'measurements' => 'Measurements',
+    'measurements' => 'Analyses',
     'feedback' => 'Feedback',
 
     'create_observation' => 'Create Observation',
@@ -139,6 +141,7 @@ return [
     'discharge_help_text' => 'If there is no possibility to measure the flow rate, you can try to estimate it.',
     'kkr_objects' => 'Link with other KKR objects',
 
+    'no_measurements_added' => 'No analyses added.',
     'add_new_measurement' => 'Add New Analysis',
     'edit_measurement' => 'Edit Analysis',
     'analysis_time' => 'Time of analysis',

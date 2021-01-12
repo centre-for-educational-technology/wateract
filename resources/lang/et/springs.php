@@ -38,8 +38,10 @@ return [
     'wateract_code' => 'Allikad.info kood',
     'featured_springs' => 'Esiletoodud allikad',
     'newest_springs' => 'Viimati lisatud allikad',
+    'added_by' => 'Lisas',
     'name' => 'Nimi',
     'name_help_text' => 'Nimi sisesta juhul, kui see teadolevalt kasutuses on. Võib sisestada mitu erinevat nimekuju.',
+    'unnamed' => '(Nimi teadmata)',
     'kkr_code' => 'KKR kood',
     'location' => 'Asukoht',
     'latitude' => 'Laiuskraad',
@@ -62,7 +64,7 @@ return [
     'spring_classification' => 'Allika tüüp',
     'classification_options' => [
         'rheocrene' => 'reokreen (allikaoja)',
-        'hillslope_spring' => 'nõlvaallikas;',
+        'hillslope_spring' => 'nõlvaallikas',
         'limnocrene' => 'limnokreen (allikajärv/tiik)',
         'helocrene' => 'helokreen (allikasoo)',
         'cave_spring' => 'koopaallikas',
@@ -80,6 +82,7 @@ return [
     ],
     'status' => 'Staatus',
     'status_options' => [
+        'draft' => 'mustand',
         'submitted' => 'kinnitamata, ülekontrolli vajav allikas',
         'confirmed' => 'kinnitatud, teadaolev allikas',
     ],
@@ -139,6 +142,7 @@ return [
     'discharge' => 'Vooluhulk',
     'discharge_help_text' => 'Kui vooluhulga mõõtmiseks lävend ja vahendid puuduvad, võid proovida hinnata seda kõhutunde järgi.',
 
+    'no_measurements_added' => 'Ühtegi mõõtmistulemust ei ole lisatud.',
     'add_new_measurement' => 'Lisa mõõtmistulemus',
     'edit_measurement' => 'Muuda mõõtmistulemust',
     'analysis_time' => 'Mõõtmise teostamise aeg',

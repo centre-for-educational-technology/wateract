@@ -2,7 +2,13 @@ export default {
     "en": {
         "auth": {
             "failed": "These credentials do not match our records.",
-            "throttle": "Too many login attempts. Please try again in {seconds} seconds."
+            "throttle": "Too many login attempts. Please try again in {seconds} seconds.",
+            "name": "Name",
+            "email": "Email",
+            "password": "Password",
+            "confirm_password": "Confirm Password",
+            "already_register": "Already registered?",
+            "register": "Register"
         },
         "pagination": {
             "previous": "&laquo; Previous",
@@ -72,6 +78,7 @@ export default {
             "wateract_code": "Allikad.info code",
             "featured_springs": "Featured springs",
             "newest_springs": "Newest springs",
+            "added_by": "Added by",
             "name": "Name",
             "name_help_text": "Enter the known name (if it excist) of the spring. You can enter several different name formats.",
             "unnamed": "Unnamed",
@@ -115,6 +122,7 @@ export default {
             },
             "status": "Status",
             "status_options": {
+                "draft": "Draft",
                 "submitted": "Submitted",
                 "confirmed": "Confirmed"
             },
@@ -132,7 +140,7 @@ export default {
             "confirm": "Confirm",
             "view": "View",
             "observations": "Observations",
-            "measurements": "Measurements",
+            "measurements": "Analyses",
             "feedback": "Feedback",
             "create_observation": "Create Observation",
             "edit_observation": "Edit Observation",
@@ -173,6 +181,7 @@ export default {
             "discharge": "Discharge",
             "discharge_help_text": "If there is no possibility to measure the flow rate, you can try to estimate it.",
             "kkr_objects": "Link with other KKR objects",
+            "no_measurements_added": "No analyses added.",
             "add_new_measurement": "Add New Analysis",
             "edit_measurement": "Edit Analysis",
             "analysis_time": "Time of analysis",
@@ -371,6 +380,16 @@ export default {
         }
     },
     "et": {
+        "auth": {
+            "failed": "Need andmed ei ühti meie andmetega.",
+            "throttle": "Liiga palju sisselogimise katseid. Palun proovi uuesti {seconds} sekundi pärast.",
+            "name": "Nimi",
+            "email": "Epost",
+            "password": "Parool",
+            "confirm_password": "Kinnita parool",
+            "already_register": "Juba registreerunud?",
+            "register": "Registreeri"
+        },
         "profile": {
             "profile": "Profiil",
             "logout": "Logi välja",
@@ -432,8 +451,10 @@ export default {
             "wateract_code": "Allikad.info kood",
             "featured_springs": "Esiletoodud allikad",
             "newest_springs": "Viimati lisatud allikad",
+            "added_by": "Lisas",
             "name": "Nimi",
             "name_help_text": "Nimi sisesta juhul, kui see teadolevalt kasutuses on. Võib sisestada mitu erinevat nimekuju.",
+            "unnamed": "(Nimi teadmata)",
             "kkr_code": "KKR kood",
             "location": "Asukoht",
             "latitude": "Laiuskraad",
@@ -456,7 +477,7 @@ export default {
             "spring_classification": "Allika tüüp",
             "classification_options": {
                 "rheocrene": "reokreen (allikaoja)",
-                "hillslope_spring": "nõlvaallikas;",
+                "hillslope_spring": "nõlvaallikas",
                 "limnocrene": "limnokreen (allikajärv/tiik)",
                 "helocrene": "helokreen (allikasoo)",
                 "cave_spring": "koopaallikas",
@@ -474,6 +495,7 @@ export default {
             },
             "status": "Staatus",
             "status_options": {
+                "draft": "mustand",
                 "submitted": "kinnitamata, ülekontrolli vajav allikas",
                 "confirmed": "kinnitatud, teadaolev allikas"
             },
@@ -531,6 +553,7 @@ export default {
             "dissolved_oxygen_ppm_help_text": "Enne hapnikusisalduse mõõtmise teostamist veendu, et su mõõtur oleks kalibreeritud. Mõõtmisel veenud, et mõõtur oleks allikas piisavalt kaua näidu stabiliseerumiseks.",
             "discharge": "Vooluhulk",
             "discharge_help_text": "Kui vooluhulga mõõtmiseks lävend ja vahendid puuduvad, võid proovida hinnata seda kõhutunde järgi.",
+            "no_measurements_added": "Ühtegi mõõtmistulemust ei ole lisatud.",
             "add_new_measurement": "Lisa mõõtmistulemus",
             "edit_measurement": "Muuda mõõtmistulemust",
             "analysis_time": "Mõõtmise teostamise aeg",

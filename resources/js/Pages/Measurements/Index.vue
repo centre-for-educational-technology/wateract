@@ -6,11 +6,11 @@
                     {{ spring.name }}
                 </h2>
                 <h2 class="w-3/4 font-semibold text-xl text-gray-800 leading-tight" v-if="!spring.name">
-                    Unnamed
+                    {{ $t('springs.unnamed') }}
                 </h2>
                 <div class="w-1/4" v-if="$page.user">
                     <button v-if="can('add measurement')" class="float-right border text-xs font-semibold px-3 py-2 leading-normal">
-                        <inertia-link :href="'/springs/'+spring.code+'/measurements/create'">
+                        <inertia-link :href="'/springs/'+spring.code+'/analyses/create'">
                             {{ $t('springs.add_new_measurement') }}</inertia-link>
                     </button>
                 </div>
@@ -24,7 +24,7 @@
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
 
-                    <div v-if="spring.measurements.length === 0">No measurements added.</div>
+                    <div v-if="spring.measurements.length === 0">{{ $t('springs.no_measurements_added') }}</div>
 
                     <div class="px-4" v-for="measurement in spring.measurements" :key="measurement.id">
 
