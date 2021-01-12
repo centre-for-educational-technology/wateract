@@ -42,7 +42,7 @@
                                 <div v-html="infoContent"></div>
                             </GmapInfoWindow>
                         </GmapMap>
-                        <l-map ref="leafletMap" style="width:100%;height:100%"
+                        <l-map ref="leafletMap" style="z-index:1;width:100%;height:100%"
                                :minZoom="3"
                                :zoom="13"
                                :center="leafletCenter"
@@ -227,6 +227,7 @@
                         label: 'Allikad.info code',
                         name: 'code',
                         orderable: true,
+                        transform: ({data}) => `<a class="underline" href="/springs/${data['code']}">${data['code']}</a>`,
                     },
                     {
                         label: 'Status',
