@@ -1,16 +1,16 @@
 <template>
     <jet-action-section>
         <template #title>
-            Browser Sessions
+            {{ $t('profile.browser_sessions') }}
         </template>
 
         <template #description>
-            Manage and logout your active sessions on other browsers and devices.
+            {{  $t('profile.manage_and_logout') }}
         </template>
 
         <template #content>
             <div class="max-w-xl text-sm text-gray-600">
-                If necessary, you may logout of all of your other browser sessions across all of your devices. If you feel your account has been compromised, you should also update your password.
+                {{ $t('profile.sessions_logout_helptext') }}
             </div>
 
             <!-- Other Browser Sessions -->
@@ -35,8 +35,8 @@
                             <div class="text-xs text-gray-500">
                                 {{ session.ip_address }},
 
-                                <span class="text-green-500 font-semibold" v-if="session.is_current_device">This device</span>
-                                <span v-else>Last active {{ session.last_active }}</span>
+                                <span class="text-green-500 font-semibold" v-if="session.is_current_device">{{ $t('profile.this_device') }}</span>
+                                <span v-else>{{ $t('profile.last_active') }} {{ session.last_active }}</span>
                             </div>
                         </div>
                     </div>
@@ -45,25 +45,25 @@
 
             <div class="flex items-center mt-5">
                 <jet-button @click.native="confirmLogout">
-                    Logout Other Browser Sessions
+                    {{ $t('profile.logout_other_browser_sessions') }}
                 </jet-button>
 
                 <jet-action-message :on="form.recentlySuccessful" class="ml-3">
-                    Done.
+                    {{ $t('profile.done') }}
                 </jet-action-message>
             </div>
 
             <!-- Logout Other Devices Confirmation Modal -->
             <jet-dialog-modal :show="confirmingLogout" @close="confirmingLogout = false">
                 <template #title>
-                    Logout Other Browser Sessions
+                    {{ $t('profile.logout_other_browser_sessions') }}
                 </template>
 
                 <template #content>
-                    Please enter your password to confirm you would like to logout of your other browser sessions across all of your devices.
+                    {{ $t('profile.browser_sessions_logout_confirmation') }}
 
                     <div class="mt-4">
-                        <jet-input type="password" class="mt-1 block w-3/4" placeholder="Password"
+                        <jet-input type="password" class="mt-1 block w-3/4" :placeholder="$t('profile.password')"
                                     ref="password"
                                     v-model="form.password"
                                     @keyup.enter.native="logoutOtherBrowserSessions" />
@@ -74,11 +74,11 @@
 
                 <template #footer>
                     <jet-secondary-button @click.native="confirmingLogout = false">
-                        Nevermind
+                        {{  $t('profile.nevermind') }}
                     </jet-secondary-button>
 
                     <jet-button class="ml-2" @click.native="logoutOtherBrowserSessions" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
-                        Logout Other Browser Sessions
+                        {{ $t('profile.logout_other_browser_sessions') }}
                     </jet-button>
                 </template>
             </jet-dialog-modal>
