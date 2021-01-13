@@ -13,6 +13,9 @@ module.exports = {
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
             },
+            backgroundImage: theme => ({
+                'springs-header': "url('/images/springs-header.png')",
+            }),
         },
     },
 
