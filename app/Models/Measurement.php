@@ -21,6 +21,11 @@ class Measurement extends Model
         return $this->belongsTo('App\Models\Spring');
     }
 
+    public function user()
+    {
+        return $this->belongsTo('App\Models\User');
+    }
+
     /**
      * @return \Illuminate\Support\Collection
      */

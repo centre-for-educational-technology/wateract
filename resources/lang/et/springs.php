@@ -103,6 +103,8 @@ return [
     'measurements' => 'Mõõtmised',
     'feedback' => 'Tagasiside',
 
+    'add_new_observation' => 'Lisa uus vaatlus',
+    'no_observations_added' => 'Ühtegi vaatlust ei ole veel lisatud.',
     'create_observation' => 'Lisa vaatlus',
     'edit_observation' => 'Muuda vaatlust',
     'measurement_time' => 'Mõõtmise teostamise aeg',
@@ -143,7 +145,7 @@ return [
     'discharge_help_text' => 'Kui vooluhulga mõõtmiseks lävend ja vahendid puuduvad, võid proovida hinnata seda kõhutunde järgi.',
 
     'no_measurements_added' => 'Ühtegi mõõtmistulemust ei ole lisatud.',
-    'add_new_measurement' => 'Lisa mõõtmistulemus',
+    'add_new_measurement' => 'Lisa uus mõõtmistulemus',
     'edit_measurement' => 'Muuda mõõtmistulemust',
     'analysis_time' => 'Mõõtmise teostamise aeg',
     'measurement_fields' => [

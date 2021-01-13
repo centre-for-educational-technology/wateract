@@ -24,7 +24,7 @@ export default {
     },
     methods: {
         getMeasurementInfo(spring, measurement) {
-            axios.get('/springs/'+spring.code+'/measurements/'+measurement.id).then(response => {
+            axios.get('/springs/'+spring.code+'/analyses/'+measurement.id).then(response => {
                 this.measurement_fields = response.data;
             })
         },

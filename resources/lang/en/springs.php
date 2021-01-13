@@ -101,6 +101,8 @@ return [
     'measurements' => 'Analyses',
     'feedback' => 'Feedback',
 
+    'add_new_observation' => 'Add new observation',
+    'no_observations_added' => 'No observations added.',
     'create_observation' => 'Create Observation',
     'edit_observation' => 'Edit Observation',
     'measurement_time' => 'Time of measurement',
