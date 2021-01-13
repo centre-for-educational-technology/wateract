@@ -23,14 +23,7 @@ use App\Http\Controllers\MeasurementController;
 */
 
 Route::get('/', function () {
-    $springs = Spring::whereIn('status', ['submitted', 'confirmed'])->get();
-    $featured_springs = Spring::where('featured', '1')->with('photos')->inRandomOrder()->limit(4)->get();
-    $newest_springs = Spring::whereIn('status', ['submitted', 'confirmed'])->with('photos')->orderBy('created_at', 'desc')->limit(4)->get();
-    return Inertia\Inertia::render('Springs/Index', [
-        'springs' => $springs,
-        'featured_springs' => $featured_springs,
-        'newest_springs' => $newest_springs,
-        'classifications' => (new App\Http\Controllers\SpringController)->getClassifications(),
+    return Inertia\Inertia::render('Springs/LandingPage', [
     ]);
 });
 
@@ -46,22 +39,10 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/admin', function () {
 Route::post('/admin/csvfile', [CsvFileController::class, 'update'])
     ->middleware(['auth']);
 
-/*Route::get('/springs', function () {
-    return Inertia\Inertia::render('Springs/Index');
-})->name('springs');
-Route::get('/springs/create', function () {
-    return Inertia\Inertia::render('Springs/Create');
-})->name('springs');*/
-
 Route::resource('admin/users', UserController::class);
 
 /*Route::group(['middleware' => ['auth']], function() {
     Route::resource('admin/users', UserController::class);
-});*/
-
-/*Route::get('/logout', function () {
-    Auth::logout();
-    return view('springs.index', ['springs' => Spring::all()]);
 });*/
 
 Route::get('locale/{locale}', function ($locale){
@@ -75,7 +56,7 @@ Route::resource('spring_feedback', SpringFeedbackController::class);
 Route::resource('springs.feedback', SpringFeedbackController::class);
 Route::resource('springs.observations', ObservationController::class);
 Route::resource('observations', ObservationController::class);
-Route::resource('springs.measurements', MeasurementController::class);
+Route::resource('springs.analyses', MeasurementController::class);
 Route::resource('measurements', MeasurementController::class);
 Route::get('/springs/{spring_id}/feedbackview', [SpringFeedbackController::class, 'view']);
 Route::get('/myspringsview', [UserController::class, 'mySprings']);

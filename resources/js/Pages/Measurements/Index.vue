@@ -6,11 +6,11 @@
                     {{ spring.name }}
                 </h2>
                 <h2 class="w-3/4 font-semibold text-xl text-gray-800 leading-tight" v-if="!spring.name">
-                    Unnamed
+                    {{ $t('springs.unnamed') }}
                 </h2>
                 <div class="w-1/4" v-if="$page.user">
                     <button v-if="can('add measurement')" class="float-right border text-xs font-semibold px-3 py-2 leading-normal">
-                        <inertia-link :href="'/springs/'+spring.code+'/measurements/create'">
+                        <inertia-link :href="'/springs/'+spring.code+'/analyses/create'">
                             {{ $t('springs.add_new_measurement') }}</inertia-link>
                     </button>
                 </div>
@@ -24,54 +24,44 @@
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
 
-                    <div v-if="spring.measurements.length === 0">No measurements added.</div>
+                    <div class="px-4 py-5 sm:p-6 ">
 
-                    <div class="px-4" v-for="measurement in spring.measurements" :key="measurement.id">
+                        <div v-if="measurements.length === 0">{{ $t('springs.no_measurements_added') }}</div>
 
-                        <jet-label :value="measurement.analysis_time" @click.native="showMeasurement(measurement)"/>
+                        <div class="py-1" v-for="measurement in measurements" :key="measurement.id">
 
-                        <measurement-view :spring="spring" :measurement="measurement" v-show="measurement.show"></measurement-view>
+                            <div class="cursor-pointer p-1 inline hover:bg-gray-100 hover:font-bold"
+                                 @click="showMeasurement(measurement)">
+                                {{ measurement.analysis_time }}
+                                <span class="pl-2" v-if="measurement.user">{{ measurement.user.name }}</span>
+                            </div>
+                            <measurement-view :spring="spring" :measurement="measurement" v-show="measurement.show"></measurement-view>
 
-                    </div>
+                        </div>
 
                     </div>
 
                 </div>
             </div>
+        </div>
 
     </app-layout>
 </template>
 <script>
 import AppLayout from './../../Layouts/AppLayout'
 import SpringNavigation from '../Springs/SpringNavigation'
-import JetLabel from "../../Jetstream/Label";
 import MeasurementView from './MeasurementView'
 
 export default {
     components: {
         AppLayout,
         SpringNavigation,
-        JetLabel,
         MeasurementView,
     },
-    props: ['spring'],
-    data() {
-        return {
-            measurementshow: [true, true, true],
-        }
-    },
+    props: ['spring', 'measurements'],
     methods: {
         showMeasurement(measurement) {
-
-            //console.log(this.measurementshow[measurement.id] );
-                //this.measurementshow[measurement.id] = !this.measurementshow[measurement.id]
             this.$set(measurement, 'show', !measurement.show)
-            //console.log(this.measurementshow[measurement.id] );
-            //this.$forceUpdate();
-            /*axios.get('/springs/'+spring.code+'/measurements/'+measurement.id).then(response => {
-                console.log('resp');
-                console.log(response);
-            })*/
         },
     },
 }

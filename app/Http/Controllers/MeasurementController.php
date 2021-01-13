@@ -19,8 +19,12 @@ class MeasurementController extends Controller
      */
     public function index(string $spring_code)
     {
-        $spring = Spring::where('code', $spring_code)->with('measurements')->first();
-        return Inertia::render('Measurements/Index', ['spring' => $spring]);
+        $spring = Spring::where('code', $spring_code)->first();
+        $measurements = Measurement::where('spring_id', $spring->id)->with('user')->get();
+        return Inertia::render('Measurements/Index', [
+            'spring' => $spring,
+            'measurements' => $measurements
+        ]);
     }
 
     /**
@@ -76,7 +80,7 @@ class MeasurementController extends Controller
             }
         }
         $spring = Spring::find($spring_id);
-        return redirect()->route('springs.measurements.index', compact('spring'))
+        return redirect()->route('springs.analyses.index', compact('spring'))
             ->with('success','Measurement added successfully.');
     }
 
@@ -144,7 +148,7 @@ class MeasurementController extends Controller
             }
         }
         $spring = Spring::find($measurement->spring_id);
-        return redirect()->route('springs.measurements.index', compact('spring'))
+        return redirect()->route('springs.analyses.index', compact('spring'))
             ->with('success','Measurement updated successfully.');
     }
 

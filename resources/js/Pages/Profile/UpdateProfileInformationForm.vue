@@ -1,11 +1,11 @@
 <template>
     <jet-form-section @submitted="updateProfileInformation">
         <template #title>
-            Profile Information
+            {{ $t('profile.profile_information') }}
         </template>
 
         <template #description>
-            Update your account's profile information and email address.
+            {{ $t('profile.profile_information_description') }}
         </template>
 
         <template #form>
@@ -16,11 +16,11 @@
                             ref="photo"
                             @change="updatePhotoPreview">
 
-                <jet-label for="photo" value="Photo" />
+                <jet-label for="photo" :value="$t('profile.photo')" />
 
                 <!-- Current Profile Photo -->
                 <div class="mt-2" v-show="! photoPreview">
-                    <img :src="$page.user.profile_photo_url" alt="Current Profile Photo" class="rounded-full h-20 w-20 object-cover">
+                    <img :src="$page.user.profile_photo_url" :alt="$t('profile.current_profile_photo')" class="rounded-full h-20 w-20 object-cover">
                 </div>
 
                 <!-- New Profile Photo Preview -->
@@ -31,11 +31,11 @@
                 </div>
 
                 <jet-secondary-button class="mt-2 mr-2" type="button" @click.native.prevent="selectNewPhoto">
-                    Select A New Photo
+                    {{ $t('profile.select_new_photo')}}
                 </jet-secondary-button>
 
                 <jet-secondary-button type="button" class="mt-2" @click.native.prevent="deletePhoto" v-if="$page.user.profile_photo_path">
-                    Remove Photo
+                    {{ $t('profile.remove_photo')}}
                 </jet-secondary-button>
 
                 <jet-input-error :message="form.error('photo')" class="mt-2" />
@@ -43,14 +43,14 @@
 
             <!-- Name -->
             <div class="col-span-6 sm:col-span-4">
-                <jet-label for="name" value="Name" />
+                <jet-label for="name" :value="$t('profile.name')" />
                 <jet-input id="name" type="text" class="mt-1 block w-full" v-model="form.name" autocomplete="name" />
                 <jet-input-error :message="form.error('name')" class="mt-2" />
             </div>
 
             <!-- Email -->
             <div class="col-span-6 sm:col-span-4">
-                <jet-label for="email" value="Email" />
+                <jet-label for="email" :value="$t('profile.email')" />
                 <jet-input id="email" type="email" class="mt-1 block w-full" v-model="form.email" />
                 <jet-input-error :message="form.error('email')" class="mt-2" />
             </div>
@@ -58,11 +58,11 @@
 
         <template #actions>
             <jet-action-message :on="form.recentlySuccessful" class="mr-3">
-                Saved.
+                {{ $t('profile.saved') }}
             </jet-action-message>
 
             <jet-button :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
-                Save
+                {{ $t('profile.save') }}
             </jet-button>
         </template>
     </jet-form-section>

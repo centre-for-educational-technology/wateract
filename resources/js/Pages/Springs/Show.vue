@@ -6,7 +6,7 @@
                     {{ spring.name }}
                 </h2>
                 <h2 class="w-3/4 font-semibold text-xl text-gray-800 leading-tight" v-if="!spring.name">
-                    Unnamed
+                    {{ $t('springs.unnamed') }}
                 </h2>
                 <div class="w-1/4" v-if="$page.user">
                     <div class="float-right">
@@ -65,16 +65,6 @@
                                 :maxZoom="layer.maxzoom"
                                 :worldCopyJump="true"
                             />
-                            <!--<l-wms-tile-layer
-                                v-for="layer in layers"
-                                :key="layer.name"
-                                :base-url="baseUrl"
-                                :layers="layer.layers"
-                                :visible="layer.visible"
-                                :name="layer.name"
-                                layer-type="base"
-                                :attribution="attribution"
-                            />-->
                             <l-marker :lat-lng="location">
                             </l-marker>
                             <l-control-zoom position="bottomright"  ></l-control-zoom>
@@ -138,6 +128,13 @@
 
                         <div class="w-1/4 px-2">
 
+                            <div class="py-2" v-if="(spring.user && $page.user)">
+                                <div class="group">
+                                    <strong>{{ $t('springs.added_by') }}</strong>
+                                    <div>{{ spring.user.name }}</div>
+                                </div>
+                            </div>
+
                             <div class="py-2">
                                 <strong>{{ $t('springs.location') }}</strong>
 
@@ -159,24 +156,24 @@
 
                             <div class="py-2">
                                 <div class="group">
-                                    <strong>Allikad.info code</strong>
+                                    <strong>{{  $t('springs.wateract_code') }}</strong>
                                     <div>{{spring.code}}</div>
                                 </div>
                             </div>
 
                             <div class="py-2" v-if="spring.classification">
-                                <strong>Spring classification</strong>
-                                <div>{{spring.classification}}</div>
+                                <strong>{{ $t('springs.spring_classification') }}</strong>
+                                <div>{{ $t('springs.classification_options.'+spring.classification) }}</div>
                             </div>
 
                             <div class="py-2" v-if="spring.groundwater_body">
-                                <strong>Groundwater body</strong>
+                                <strong>{{ $t('springs.groundwater_body') }}</strong>
                                 <div>{{spring.groundwater_body}}</div>
                             </div>
 
                             <div class="py-2" v-if="spring.ownership">
                                 <strong>{{ $t('springs.ownership') }}</strong>
-                                <div>{{spring.ownership}}</div>
+                                <div>{{ $t('springs.ownership_options.'+spring.ownership) }}</div>
                             </div>
 
                             <div class="py-2" v-if="spring.status">
@@ -288,36 +285,6 @@ export default {
 
             ],
 
-             layers: [
-                /*{
-                    crs:projection,
-                    name: 'suvaline',
-                    visible: true,
-                    format: 'image/png',
-                    layers: 'MA-ALUS',
-                    transparent: false,
-                    continuousWorld : true,
-                    attribution: "<a  href='http://www.maaamet.ee/'>Maa-amet</a>",
-                },*/
-                {
-                    //crs: projection,
-                    name: 'Reljeefvarjutusega põhikaart',
-                    visible: true,
-                    format: 'image/jpeg',
-                    layers: 'pohi_vv',
-                    transparent: true,
-                    continuousWorld : true
-                },
-                 /*{
-                     //crs: projection,
-                     name: 'hybrid',
-                     visible: true,
-                     format: 'image/jpeg',
-                     layers: 'HYBRID,vreljeef', //'pohi_vv'
-                     transparent: true,
-                 },*/
-            ],
-
             map: null,
             latitude: this.spring.latitude,
             longitude: this.spring.longitude,
@@ -338,12 +305,6 @@ export default {
         },
         onReady() {
             this.$refs.myMap.mapObject.setView(this.leafletCenter, 11);
-            //console.log(this.$refs.myMap);
-            //console.log(this.$refs.myMap.mapObject);
-            //console.log(this.bounds);
-            //this.$refs.myMap.mapObject.fitBounds(this.bounds);
-            //this.$refs.myMap.mapObject.setView(this.center, 10);
-            //this.$refs.myMap.mapObject.zoomIn(7);
         }
     },
     mounted: function() {

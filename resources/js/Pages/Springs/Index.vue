@@ -6,15 +6,16 @@
 <template>
     <app-layout>
         <template #header>
-            <div class="flex w-full">
-                <h2 class="w-3/4 font-semibold text-xl text-gray-800 leading-tight">
+            <h2 class="px-4 inline">{{ $t('springs.observations_and_database') }}</h2>
+            <!--<div class="flex w-full">
+                <h2 class="w-4/5 font-semibold text-xl text-gray-800 leading-tight">
                     {{ $t('springs.observations_and_database') }}
-                </h2>
-                <div class="w-1/4" v-if="$page.user">
-                    <a href="springs/create" class="float-right border text-xs font-semibold px-4 py-1 leading-normal">
+                </h2>-->
+                <div class="text-right inline" v-if="$page.user">
+                    <a href="springs/create" class="float-right border text-xs font-semibold py-1 leading-normal">
                         {{ $t('springs.create_new_spring') }}</a>
                 </div>
-            </div>
+            <!--</div>-->
         </template>
 
         <div class="py-6">
@@ -25,18 +26,18 @@
                     <div class="p-4">
                        <h3 class="text-xl">{{ $t('springs.browse_springs') }}</h3>
                         <div class="flex">
-                            <jet-input class="w-1/4 mr-3" type="text" v-model="search_name" name="searchbox" :placeholder="$t('springs.search_spring_name')" />
+                            <jet-input class="w-1/3 lg:w-1/4 sm:w-1/3 mr-3" type="text" v-model="search_name" name="searchbox" :placeholder="$t('springs.search_spring_name')" />
                             <select id="classification" v-model="search_classification"
-                                    class="w-1/4 block bg-white border border-gray-300 hover:border-gray-500 mr-3 px-2 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                                    class="w-1/3 lg:w-1/4 sm:w-1/3 block bg-white border border-gray-300 hover:border-gray-500 mr-3 px-2 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
                                 <option value="">{{ $t('springs.classification') }}</option>
                                 <option v-for='data in classifications' :value='data.id'> {{ $t( data.name ) }}</option>
                             </select>
-                            <select id="country" v-model="search_country" class="w-1/4 block bg-white border border-gray-300 hover:border-gray-500 mr-3 px-2 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                            <!--<select id="country" v-model="search_country" class="w-1/4 block bg-white border border-gray-300 hover:border-gray-500 mr-3 px-2 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
                                 <option value="">{{ $t('springs.country') }}</option>
                                 <option value="EE">{{ $t('springs.countries.ee') }}</option>
                                 <option value="LV">{{ $t('springs.countries.lv') }}</option>
-                            </select>
-                            <button class="w-1/4 items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:shadow-outline-gray transition ease-in-out duration-150"
+                            </select>-->
+                            <button class="w-1/3 lg:w-1/4 sm:w-1/3 items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:shadow-outline-gray transition ease-in-out duration-150"
                                 v-on:click="updateMarkers">{{ $t('springs.search') }}</button>
                         </div>
                         <small v-on:click="initializeSearch" class="cursor-pointer underline">{{ $t('springs.see_all_springs') }}</small>
@@ -96,7 +97,7 @@
                                       :lat-lng="marker.position">
                                 <l-popup>
                                     <div class="pb-2"><a class="underline text-blue-700" :href="'springs/'+marker.id+'/'">{{marker.name || 'Unnamed'}}</a></div>
-                                    <div>{{ $t('springs.wateract_code') }}: {{marker.id}} <br />{{ $t('springs.status') }}: {{marker.status}}</div>
+                                    <div>{{ $t('springs.wateract_code') }}: {{marker.id}} <br />{{ $t('springs.status') }}: {{ $t('springs.status_options.'+marker.status) }}</div>
                                 </l-popup>
                             </l-marker>
                             </l-marker-cluster>
@@ -120,7 +121,7 @@
                                     {{ $t('springs.newest_springs') }}</jet-label>
                             </li>
                         </ul>
-                        <div class="grid grid-cols-4 gap-4 px-4 py-2 my-2" v-show="featured">
+                        <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4 px-4 py-2 my-2" v-show="featured">
                             <div class="border mx-1" v-for="featured_spring in featured_springs">
                                 <spring-view :spring="featured_spring"></spring-view>
                             </div>
@@ -139,7 +140,7 @@
                             </li>
                         </ul>
                         <div>
-                            <div class="grid grid-cols-4 gap-4 px-4 py-2 my-2" v-show="newest">
+                            <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4 px-4 py-2 my-2" v-show="newest">
                                 <div class="border mx-1" v-for="new_spring in newest_springs">
                                     <spring-view :spring="new_spring"></spring-view>
                                 </div>

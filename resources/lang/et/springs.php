@@ -15,6 +15,11 @@ return [
     'map' => 'Kaart',
     'users' => 'Kasutajad',
     'dashboard' => 'Töölaud',
+    'register' => 'Registreeri',
+    'login' => 'Logi sisse',
+    'spring_enthusiast' => 'Allikahuviline',
+    'admin' => 'Administraator',
+    'editor' => 'Toimetaja',
     'observations_and_database' => 'Allikate vaatlused ja andmebaas',
     'create_new_spring' => 'Lisa uus allikas',
     'edit_spring' => 'Muuda allikat',
@@ -33,8 +38,10 @@ return [
     'wateract_code' => 'Allikad.info kood',
     'featured_springs' => 'Esiletoodud allikad',
     'newest_springs' => 'Viimati lisatud allikad',
+    'added_by' => 'Lisas',
     'name' => 'Nimi',
     'name_help_text' => 'Nimi sisesta juhul, kui see teadolevalt kasutuses on. Võib sisestada mitu erinevat nimekuju.',
+    'unnamed' => '(Nimi teadmata)',
     'kkr_code' => 'KKR kood',
     'location' => 'Asukoht',
     'latitude' => 'Laiuskraad',
@@ -57,7 +64,7 @@ return [
     'spring_classification' => 'Allika tüüp',
     'classification_options' => [
         'rheocrene' => 'reokreen (allikaoja)',
-        'hillslope_spring' => 'nõlvaallikas;',
+        'hillslope_spring' => 'nõlvaallikas',
         'limnocrene' => 'limnokreen (allikajärv/tiik)',
         'helocrene' => 'helokreen (allikasoo)',
         'cave_spring' => 'koopaallikas',
@@ -75,6 +82,7 @@ return [
     ],
     'status' => 'Staatus',
     'status_options' => [
+        'draft' => 'mustand',
         'submitted' => 'kinnitamata, ülekontrolli vajav allikas',
         'confirmed' => 'kinnitatud, teadaolev allikas',
     ],
@@ -95,6 +103,8 @@ return [
     'measurements' => 'Mõõtmised',
     'feedback' => 'Tagasiside',
 
+    'add_new_observation' => 'Lisa uus vaatlus',
+    'no_observations_added' => 'Ühtegi vaatlust ei ole veel lisatud.',
     'create_observation' => 'Lisa vaatlus',
     'edit_observation' => 'Muuda vaatlust',
     'measurement_time' => 'Mõõtmise teostamise aeg',
@@ -134,7 +144,8 @@ return [
     'discharge' => 'Vooluhulk',
     'discharge_help_text' => 'Kui vooluhulga mõõtmiseks lävend ja vahendid puuduvad, võid proovida hinnata seda kõhutunde järgi.',
 
-    'add_new_measurement' => 'Lisa mõõtmistulemus',
+    'no_measurements_added' => 'Ühtegi mõõtmistulemust ei ole lisatud.',
+    'add_new_measurement' => 'Lisa uus mõõtmistulemus',
     'edit_measurement' => 'Muuda mõõtmistulemust',
     'analysis_time' => 'Mõõtmise teostamise aeg',
     'measurement_fields' => [

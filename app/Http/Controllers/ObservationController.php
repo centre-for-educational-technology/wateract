@@ -23,8 +23,12 @@ class ObservationController extends Controller
      */
     public function index(string $spring_code)
     {
-        $spring = Spring::where('code', $spring_code)->with('observations')->first();
-        return Inertia::render('Observations/Index', ['spring' => $spring]);
+        $spring = Spring::where('code', $spring_code)->first();
+        $observations = Observation::where('spring_id', $spring->id)->with('user')->get();
+        return Inertia::render('Observations/Index', [
+            'spring' => $spring,
+            'observations' => $observations
+        ]);
     }
 
     public function getTasteOptions() {
