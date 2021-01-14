@@ -58,7 +58,7 @@ return [
     'link_with_other_databases' => 'Link with other databases',
     'database_name' => 'Database name',
     'code' => 'Code',
-    'spring_name' => 'Spring name in database',
+    'spring_name_in_database' => 'Spring name in database',
     'spring_classification' => 'Spring classification',
     'classification_options' => [
         'rheocrene' => 'Rheocrene',
@@ -227,4 +227,11 @@ return [
         'colonies_37C' => 'Colonies at 37 ºC',
         'clostridium_perfringens' => 'Clostridium perfringens',
     ],
+    'my_springs' => 'My springs',
+    'my_observations' => 'My observations',
+    'my_measurements' => 'My Analyses',
+    'spring_name' => 'Spring name',
+    'spring_code' => 'Spring code',
+    'date_time' => 'Date & Time',
+    'created_at' => 'Created at',
 ];

@@ -100,7 +100,7 @@ export default {
             "link_with_other_databases": "Link with other databases",
             "database_name": "Database name",
             "code": "Code",
-            "spring_name": "Spring name in database",
+            "spring_name_in_database": "Spring name in database",
             "spring_classification": "Spring classification",
             "classification_options": {
                 "rheocrene": "Rheocrene",
@@ -266,7 +266,14 @@ export default {
                 "colonies_22C": "Colonies at 22 ºC",
                 "colonies_37C": "Colonies at 37 ºC",
                 "clostridium_perfringens": "Clostridium perfringens"
-            }
+            },
+            "my_springs": "My springs",
+            "my_observations": "My observations",
+            "my_measurements": "My Analyses",
+            "spring_name": "Spring name",
+            "spring_code": "Spring code",
+            "date_time": "Date & Time",
+            "created_at": "Created at"
         },
         "validation": {
             "accepted": "The {attribute} must be accepted.",
@@ -475,7 +482,7 @@ export default {
             "link_with_other_databases": "Seos teiste riiklike andmekogudega",
             "database_name": "andmebaasi nimi",
             "code": "kood",
-            "spring_name": "allika nimi andmebaasis",
+            "spring_name_in_database": "allika nimi andmebaasis",
             "spring_classification": "Allika tüüp",
             "classification_options": {
                 "rheocrene": "reokreen (allikaoja)",
@@ -640,7 +647,14 @@ export default {
                 "colonies_22C": "Kolooniate arv 22 ºC",
                 "colonies_37C": "Kolooniate arv 37 ºC",
                 "clostridium_perfringens": "Clostridium perfringens"
-            }
+            },
+            "my_springs": "Minu allikad",
+            "my_observations": "Minu vaatlused",
+            "my_measurements": "Minu mõõtmistulemused",
+            "spring_name": "Allika nimi",
+            "spring_code": "Allika kood",
+            "date_time": "Kuupäev",
+            "created_at": "Lisatud"
         },
         "validation": {
             "accepted": "{attribute} tuleb aktsepteerida.",
