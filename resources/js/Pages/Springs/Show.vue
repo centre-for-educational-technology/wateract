@@ -103,7 +103,7 @@
 
                             <div class="py-2" v-if="spring.database_links.length > 0">
                                 <strong>{{ $t('springs.link_with_other_databases') }}</strong>
-                                <table class="table-auto text-sm border">
+                                <table class="table-auto text-sm border w-full">
                                     <thead>
                                     <tr class="bg-gray-300 uppercase text-xs">
                                         <th scope="col">{{ $t('springs.database_name') }}</th>
@@ -118,7 +118,7 @@
                                             <td>{{ database_link.database_name }}</td>
                                             <td>{{ database_link.code }}</td>
                                             <td>{{ database_link.spring_name }}</td>
-                                            <td><a :href="database_link.url" target="_blank">{{ database_link.url }}</a></td>
+                                            <td><a :href="database_link.url" target="_blank" class="hover:underline">{{ stripUrl(database_link.url) }}</a></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -299,6 +299,10 @@ export default {
         }
     },
     methods: {
+        stripUrl(url) {
+            let stripped = url.slice(0, 25);
+            return stripped;
+        },
         handlePhotoPreview(photo) {
             this.dialogPhotoUrl = '/' + photo.path;
             this.dialogVisible = true;
