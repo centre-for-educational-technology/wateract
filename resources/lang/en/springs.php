@@ -49,11 +49,17 @@ return [
     'county' => 'County',
     'settlement' => 'Settlement',
     'photos' => 'Photos',
+    'photos_help_text' => 'Take photos of the spring from different directions and make sure that surrounding landscape and vegetation is also visible. If available, look at previous photos of the same spring to ensure that the new photo will be framed the same way as the older ones.  ',
     'references' => 'References',
     'url' => 'URL',
     'url_title' => 'URL title',
     'description' => 'Description of natural conditions',
-    'description_help_text' => 'Describe the surrounding landscape and natural conditions.',
+    'description_help_text' => 'While describing a spring, try to answer following guestions:
+        Does the spring form a pool or is it like a small stream? What is the bottom substrate of the spring?
+        Are there plants or algae growing inside the spring?
+        What do the surroundings of the spring look like?
+        Are there man-made objects inside the spring or around the spring?
+        How accessible is the spring?',
     'folklore' => 'Folklore',
     'link_with_other_databases' => 'Link with other databases',
     'database_name' => 'Database name',
