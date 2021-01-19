@@ -229,6 +229,9 @@ return [
         'colonies_37C' => 'Kolooniate arv 37 ºC',
         'clostridium_perfringens' => 'Clostridium perfringens',
     ],
+
+    'no_feedback_added' => 'Tagasisidet pole antud.',
+
     'my_springs' => 'Minu allikad',
     'my_observations' => 'Minu vaatlused',
     'my_measurements' => 'Minu mõõtmistulemused',

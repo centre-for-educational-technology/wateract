@@ -12,9 +12,11 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+                changaOne: ['Changa One', 'serif'],
             },
             backgroundImage: theme => ({
                 'springs-header': "url('/images/springs-header.png')",
+                'springs-footer': "url('/images/springs-footer.png')",
             }),
         },
     },

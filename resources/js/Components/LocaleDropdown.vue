@@ -2,14 +2,14 @@
     <div class="dropdown">
         <jet-dropdown width="15">
             <template #trigger>
-                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    {{ $i18n.locale }}
+                <button class="btn dropdown-toggle p-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{ locales[$i18n.locale] }}
                 </button>
             </template>
             <template #content>
-            <div v-for="(locale, index) in locales" :key="index">
+            <div v-for="(language, locale) in locales" :key="locale">
                 <a class="p-2" href="#" @click.prevent="setLocale(locale)">
-                {{ locale }}
+                {{ language }}
             </a></div>
             </template>
         </jet-dropdown>
@@ -27,7 +27,12 @@ export default {
     },
     data() {
         return {
-            locales: ['en', 'et'],
+            locales: {
+                'en': 'ENG',
+                'et': 'EST',
+                //'lv': 'LAV',
+                //'ru': 'RUS'
+            },
         }
     },
     methods: {

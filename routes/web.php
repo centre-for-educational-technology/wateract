@@ -23,8 +23,11 @@ use App\Http\Controllers\MeasurementController;
 */
 
 Route::get('/', function () {
-    return Inertia\Inertia::render('Springs/LandingPage', [
-    ]);
+    return Inertia\Inertia::render('Springs/LandingPage', []);
+});
+
+Route::get('/info', function () {
+    return Inertia\Inertia::render('Springs/InfoPage', []);
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

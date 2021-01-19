@@ -233,6 +233,9 @@ return [
         'colonies_37C' => 'Colonies at 37 ºC',
         'clostridium_perfringens' => 'Clostridium perfringens',
     ],
+
+    'no_feedback_added' => 'No feedback added.',
+
     'my_springs' => 'My springs',
     'my_observations' => 'My observations',
     'my_measurements' => 'My Analyses',

@@ -6,7 +6,7 @@
 <template>
     <app-layout>
         <template #header>
-            <h2 class="px-4 inline">{{ $t('springs.observations_and_database') }}</h2>
+            <h1 class="inline">{{ $t('springs.observations_and_database') }}</h1>
             <!--<div class="flex w-full">
                 <h2 class="w-4/5 font-semibold text-xl text-gray-800 leading-tight">
                     {{ $t('springs.observations_and_database') }}
@@ -69,7 +69,7 @@
                             </GmapInfoWindow>
                             </GmapCluster>
                         </GmapMap>
-                        <l-map ref="leafletMap" style="width:100%;height:100%"
+                        <l-map ref="leafletMap" style="z-index:1;width:100%;height:100%"
                                :minZoom="3"
                                :maxZoom="14"
                                :zoom="13"
@@ -97,7 +97,7 @@
                                       :lat-lng="marker.position">
                                 <l-popup>
                                     <div class="pb-2"><a class="underline text-blue-700" :href="'springs/'+marker.id+'/'">{{marker.name || 'Unnamed'}}</a></div>
-                                    <div>{{ $t('springs.wateract_code') }}: {{marker.id}} <br />{{ $t('springs.status') }}: {{ $t('springs.status_options.'+marker.status) }}</div>
+                                    <div>{{ $t('springs.spring_code') }}: {{marker.id}} <br />{{ $t('springs.status') }}: {{ $t('springs.status_options.'+marker.status) }}</div>
                                 </l-popup>
                             </l-marker>
                             </l-marker-cluster>
