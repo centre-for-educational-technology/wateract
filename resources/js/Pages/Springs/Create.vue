@@ -1,9 +1,9 @@
 <template>
     <app-layout>
         <template #header>
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            <h1>
                 {{ $t('springs.create_new_spring') }}
-            </h2>
+            </h1>
         </template>
 
 
@@ -12,13 +12,15 @@
 
                     <template #form>
 
+                        <el-dialog :visible.sync="helpDialogVisible">
+                            <div class="break-normal">{{ helptext }}</div>
+                        </el-dialog>
+
                         <div class="flex -mx-2">
                             <div class="w-full px-2">
-                                <jet-label class="font-bold" for="name" :value="$t('springs.name')" />
+                                <jet-label class="inline-block font-bold" for="name" :value="$t('springs.name')" />
+                                <help-button @click.native="showHelpDialog( $t('springs.name_help_text') )"></help-button>
                                 <jet-input id="name" type="text" class="mt-1 block w-full" v-model="form.name" />
-                                <!--<small id="name_help_block" class="form-text text-muted">
-                                    'springs.name_help_text'
-                                </small>-->
                             </div>
                         </div>
 
@@ -91,20 +93,16 @@
 
                         <div class="flex -mx-2">
                         <div class="w-1/2 px-2">
-                            <jet-label class="font-bold" for="latitude" :value="$t('springs.latitude')" />
+                            <jet-label class="inline-block font-bold" for="latitude" :value="$t('springs.latitude')" />
+                            <help-button @click.native="showHelpDialog( $t('springs.latitude_help_text') )"></help-button>
                             <jet-input id="latitude" type="text" class="mt-1 block w-full" v-model="form.latitude" />
-                            <!--<small id="latitude_help_block" class="form-text text-muted">
-                                'springs.latitude_help_text'
-                            </small>-->
                             <jet-input-error :message="form.error('latitude')" class="mt-2" />
                         </div>
 
                         <div class="w-1/2 px-2">
-                            <jet-label class="font-bold" for="longitude" :value="$t('springs.longitude')" />
+                            <jet-label class="inline-block font-bold" for="longitude" :value="$t('springs.longitude')" />
+                            <help-button @click.native="showHelpDialog( $t('springs.longitude_help_text') )"></help-button>
                             <jet-input id="longitude" type="text" class="mt-1 block w-full" v-model="form.longitude" />
-                            <!--<small id="longitude_help_block" class="form-text text-muted">
-                                'springs.longitude_help_text'
-                            </small>-->
                             <jet-input-error :message="form.error('longitude')" class="mt-2" />
                         </div>
                         </div>
@@ -138,7 +136,8 @@
                         </div>
 
                         <div class="col-span-12 sm:col-span-4">
-                            <jet-label class="font-bold" for="photos" :value="$t('springs.photos')" />
+                            <jet-label class="font-bold inline-block" for="photos" :value="$t('springs.photos')" />
+                            <help-button @click.native="showHelpDialog( $t('springs.photos_help_text') )"></help-button>
                             <el-upload
                                 action="/"
                                 list-type="picture-card"
@@ -154,11 +153,9 @@
                         </div>
 
                         <div class="col-span-6 sm:col-span-4">
-                            <jet-label class="font-bold" for="description" :value="$t('springs.description')" />
+                            <jet-label class="inline-block font-bold" for="description" :value="$t('springs.description')" />
+                            <help-button @click.native="showHelpDialog( $t('springs.description_help_text') )"></help-button>
                             <textarea id="description" type="textarea" class="px-2 mt-1 block w-full border" rows="5" v-model="form.description" ></textarea>
-                            <!--<small id="description_help_block" class="form-text text-muted">
-                                'springs.description_help_text'
-                            </small>-->
                             <jet-input-error :message="form.error('description')" class="mt-2" />
                         </div>
 
@@ -194,6 +191,7 @@
                                 <jet-label class="font-bold" for="classification" :value="$t('springs.spring_classification')" />
                                 <select id="classification" v-model="form.classification"
                                     class="block w-full bg-white border border-gray-400 hover:border-gray-500 px-2 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                                    <option value=""></option>
                                     <option v-for='data in classifications' :selected="classification === data.id" :value='data.id'>{{ $t(data.name) }}</option>
                                 </select>
                             </div>
@@ -213,6 +211,7 @@
                             <jet-label class="font-bold" for="ownership" :value="$t('springs.ownership')" />
                             <select id="ownership" v-model="form.ownership"
                                     class="block w-full bg-white border border-gray-400 hover:border-gray-500 px-2 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                                <option value=""></option>
                                 <option v-for='data in ownerships' :selected="ownership === data.id" :value='data.id'>{{ $t(data.name) }}</option>
                             </select>
                         </div>
@@ -249,6 +248,7 @@ import JetInput from "../../Jetstream/Input";
 import JetInputError from "../../Jetstream/InputError";
 import JetLabel from "../../Jetstream/Label";
 import JetSecondaryButton from "../../Jetstream/SecondaryButton";
+import HelpButton from '../../Components/HelpButton';
 import { gmapApi } from 'gmap-vue';
 import { latLngBounds, latLng } from "leaflet";
 import L from 'leaflet';
@@ -272,6 +272,7 @@ export default {
         JetInputError,
         JetLabel,
         JetSecondaryButton,
+        HelpButton,
         gmapApi,
         "l-wms-tile-layer": LWMSTileLayer,
         LControlLayers,
@@ -333,6 +334,8 @@ export default {
                     transparent: true,
                 },
             ],*/
+            helpDialogVisible: false,
+            helptext: '',
             dialogVisible: false,
             dialogPhotoUrl: '',
             map: null,
@@ -347,9 +350,9 @@ export default {
                 settlement: this.settlement,
                 description: this.description,
                 photo_ids: [],
-                classification: 'rheocrene',
+                classification: '',
                 groundwater_body: this.groundwater_body,
-                ownership: 'private_property',
+                ownership: '',
                 status: 'draft',
                 needs_attention: 0,
                 featured: 0,
@@ -428,6 +431,10 @@ export default {
                 });
             ;
             console.log(photo_id);
+        },
+        showHelpDialog(helptext) {
+            this.helptext = helptext;
+            this.helpDialogVisible = true;
         },
         handlePhotoCardPreview(photo) {
             this.dialogPhotoUrl = photo.url;

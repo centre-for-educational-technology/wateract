@@ -6,9 +6,9 @@
 <template>
     <app-layout>
         <template #header>
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            <h1>
                 {{ $t('springs.dashboard') }}
-            </h2>
+            </h1>
         </template>
 
         <template #title>
@@ -68,8 +68,8 @@
                                           :key="index"
                                           :lat-lng="marker.position">
                                     <l-popup>
-                                        <div class="pb-2"><a class="underline text-blue-700" :href="'springs/'+marker.id+'/'">{{marker.name || 'Unnamed'}}</a></div>
-                                        <div>Allikad.info code: {{marker.id}} <br /> Status: {{marker.status}}</div>
+                                        <div class="pb-2"><a class="underline text-blue-700" :href="'springs/'+marker.id+'/'">{{marker.name || $t('springs.unnamed')}}</a></div>
+                                        <div>{{ $t('springs.spring_code') }}: {{marker.id}} <br /> {{  $t('springs.status') }}: {{ $t('springs.status_options.'+marker.status) }}</div>
                                     </l-popup>
                                 </l-marker>
                             </l-marker-cluster>
@@ -82,18 +82,12 @@
                         </div>
                     </div>
 
-                    <div class="m-4">
-                        <h3 class="text-xl">My springs</h3>
-                        <data-table
-                                :columns="columns"
-                                :url="'/myspringsview'"
-                                framework="tailwind"
-                                order-by="created_at"
-                                order-dir="desc"
-                                :pagination="pagination"
-                                :classes="classes">
-                            <span slot="filters" slot-scope="{ tableData, perPage }"></span>
-                        </data-table>
+                        <user-springs class="m-4" />
+
+                        <user-observations class="m-4" />
+
+                        <user-measurements class="m-4" />
+
                     </div>
 
                 </div>
@@ -112,6 +106,9 @@
     import "proj4leaflet";
     import proj4 from "proj4";
     import Vue2LeafletMarkerCluster from 'vue2-leaflet-markercluster'
+    import UserSprings from "./Springs/UserSprings";
+    import UserObservations from "./Observations/UserObservations";
+    import UserMeasurements from "./Measurements/UserMeasurements";
 
     var projection = new L.Proj.CRS('EPSG:3301', '+proj=lcc +lat_1=59.33333333333334 +lat_2=58 +lat_0=57.51755393055556 +lon_0=24 +x_0=500000 +y_0=6375000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs', {
         resolutions: [4000, 2000, 1000, 500, 250, 125, 62.5, 31.25, 15.625, 7.8125, 3.90625, 1.953125, 0.9765625, 0.48828125, 0.244140625, 0.122070313, 0.061035156, 0.030517578, 0.015258789],
@@ -122,6 +119,9 @@
     export default {
         components: {
             AppLayout,
+            UserSprings,
+            UserObservations,
+            UserMeasurements,
             gmapApi,
             "l-wms-tile-layer": LWMSTileLayer,
             LControlLayers,
@@ -204,63 +204,6 @@
                         height: -35
                     }
                 },
-                columns: [
-                    {
-                        label: 'Spring name',
-                        name: 'name',
-                        orderable: true,
-                        transform: ({data}) => `<a class="underline" href="/springs/${data['code']}">${data['name'] || 'Unnamed'}</a>`,
-                    },
-                    {
-                        label: this.$i18n.t('springs.location'),
-                        name: 'country',
-                        orderable: true,
-                        transform: ({data}) => `${data['country']}, ${data['county']}${data['settlement'] ? ', ' + data['settlement'] : ''}`,
-                    },
-                    {
-                        label: 'Date & Time',
-                        name: 'created_at',
-                        orderable: true,
-                        transform: ({data, name}) => `${moment(data[name]).format("DD.MM.YYYY H:mm")}`,
-                    },
-                    {
-                        label: 'Allikad.info code',
-                        name: 'code',
-                        orderable: true,
-                        transform: ({data}) => `<a class="underline" href="/springs/${data['code']}">${data['code']}</a>`,
-                    },
-                    {
-                        label: 'Status',
-                        name: 'status',
-                        orderable: true,
-                    },
-                ],
-                pagination: {
-                    'size': 'small',
-                },
-                classes: {
-                    "td": {
-                        'py-4': true,
-                        'px-6': true,
-                        'border-b': true,
-                        'border-grey-light': true,
-                        'text-gray-light': true,
-                    },
-                    "th": {
-                        'text-gray-dark': true,
-                        'border-gray': true,
-                        'border-b-2': true,
-                        'border-t-2': true,
-                        'border-gray-200': true,
-                        'py-3': true,
-                        'px-4': true,
-                        'bg-gray-100': true,
-                        'text-left': true,
-                        'text-xs': true,
-                        'font-semibold': true,
-                        'uppercase': true,
-                    },
-                }
             }
         },
         methods: {

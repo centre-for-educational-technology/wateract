@@ -91,16 +91,17 @@ export default {
             "county": "County",
             "settlement": "Settlement",
             "photos": "Photos",
+            "photos_help_text": "Take photos of the spring from different directions and make sure that surrounding landscape and vegetation is also visible. If available, look at previous photos of the same spring to ensure that the new photo will be framed the same way as the older ones.  ",
             "references": "References",
             "url": "URL",
             "url_title": "URL title",
             "description": "Description of natural conditions",
-            "description_help_text": "Describe the surrounding landscape and natural conditions.",
+            "description_help_text": "While describing a spring, try to answer following guestions:\n        Does the spring form a pool or is it like a small stream? What is the bottom substrate of the spring?\n        Are there plants or algae growing inside the spring?\n        What do the surroundings of the spring look like?\n        Are there man-made objects inside the spring or around the spring?\n        How accessible is the spring?",
             "folklore": "Folklore",
             "link_with_other_databases": "Link with other databases",
             "database_name": "Database name",
             "code": "Code",
-            "spring_name": "Spring name in database",
+            "spring_name_in_database": "Spring name in database",
             "spring_classification": "Spring classification",
             "classification_options": {
                 "rheocrene": "Rheocrene",
@@ -266,7 +267,15 @@ export default {
                 "colonies_22C": "Colonies at 22 ºC",
                 "colonies_37C": "Colonies at 37 ºC",
                 "clostridium_perfringens": "Clostridium perfringens"
-            }
+            },
+            "no_feedback_added": "No feedback added.",
+            "my_springs": "My springs",
+            "my_observations": "My observations",
+            "my_measurements": "My Analyses",
+            "spring_name": "Spring name",
+            "spring_code": "Spring code",
+            "date_time": "Date & Time",
+            "created_at": "Created at"
         },
         "validation": {
             "accepted": "The {attribute} must be accepted.",
@@ -455,7 +464,7 @@ export default {
             "newest_springs": "Viimati lisatud allikad",
             "added_by": "Lisas",
             "name": "Nimi",
-            "name_help_text": "Nimi sisesta juhul, kui see teadolevalt kasutuses on. Võib sisestada mitu erinevat nimekuju.",
+            "name_help_text": "Nimi sisesta juhul, kui see teadaolevalt kasutuses on. Võib sisestada mitu erinevat nimekuju.",
             "unnamed": "(Nimi teadmata)",
             "kkr_code": "KKR kood",
             "location": "Asukoht",
@@ -466,6 +475,7 @@ export default {
             "county": "Maakond",
             "settlement": "Asula",
             "photos": "Fotod",
+            "photos_help_text": "Tee pilt allikast selliselt, et peale jääks ka ümbruskond. Kui võimalik, siis tee pilt allikast igast ilmakaarest. Kui allikal on olemas kaanepilt, siis proovi teha üks pilt võimalikult samasugune - sama kaugelt ja samas suunas.",
             "references": "Internetiviited",
             "url": "viide",
             "url_title": "viite pealkiri",
@@ -475,7 +485,7 @@ export default {
             "link_with_other_databases": "Seos teiste riiklike andmekogudega",
             "database_name": "andmebaasi nimi",
             "code": "kood",
-            "spring_name": "allika nimi andmebaasis",
+            "spring_name_in_database": "allika nimi andmebaasis",
             "spring_classification": "Allika tüüp",
             "classification_options": {
                 "rheocrene": "reokreen (allikaoja)",
@@ -544,7 +554,7 @@ export default {
             "ph": "pH (elektrooniliselt või indikaatorribaga)",
             "ph_help_text": "Enne pH mõõtmise teostamist veendu, et su pH mõõtur oleks kalibreeritud. Mõõtmisel veenud, et pH mõõtur oleks allikas piisavalt kaua näidu stabiliseerumiseks.",
             "specific_conductance": "Erielektrijuhtivus",
-            "specific_conductance_help_text": "Before entering a value, find out whether your conductivity meter shows specific conductance or electrical conductivity.",
+            "specific_conductance_help_text": "Enne väärtuse sisestamist selgita välja, kas sinu mõõteseade näitab erielktrijuhtivust või elektrijuhtivust.",
             "electrical_conductivity": "Elektrijuhtivus",
             "electrical_conductivity_help_text": "Enne väärtuse sisestamist selgita välja, kas sinu mõõteseade näitab erielektrijuhtivust või elektrijuhtivust.",
             "total_dissolved_solids": "Mineralisatsioon",
@@ -640,7 +650,15 @@ export default {
                 "colonies_22C": "Kolooniate arv 22 ºC",
                 "colonies_37C": "Kolooniate arv 37 ºC",
                 "clostridium_perfringens": "Clostridium perfringens"
-            }
+            },
+            "no_feedback_added": "Tagasisidet pole antud.",
+            "my_springs": "Minu allikad",
+            "my_observations": "Minu vaatlused",
+            "my_measurements": "Minu mõõtmistulemused",
+            "spring_name": "Allika nimi",
+            "spring_code": "Allika kood",
+            "date_time": "Kuupäev",
+            "created_at": "Lisatud"
         },
         "validation": {
             "accepted": "{attribute} tuleb aktsepteerida.",

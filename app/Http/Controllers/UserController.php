@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Country;
+use App\Models\Measurement;
+use App\Models\Observation;
 use App\Models\Spring;
 use Illuminate\Http\Request;
 use App\Models\User;
@@ -221,6 +223,26 @@ class UserController extends Controller
         $orderBy = $request->input('column', 'created_at');
         $orderByDir = $request->input('dir', 'desc');
         $query = Spring::where('user_id', Auth::id())->orderBy($orderBy, $orderByDir);
+        $data = $query->paginate($length);
+        return new DataTableCollectionResource($data);
+    }
+
+    public function myObservations(Request $request)
+    {
+        $length = $request->input('length');
+        $orderBy = $request->input('column', 'created_at');
+        $orderByDir = $request->input('dir', 'desc');
+        $query = Observation::where('user_id', Auth::id())->with('spring')->orderBy($orderBy, $orderByDir);
+        $data = $query->paginate($length);
+        return new DataTableCollectionResource($data);
+    }
+
+    public function myMeasurements(Request $request)
+    {
+        $length = $request->input('length');
+        $orderBy = $request->input('column', 'created_at');
+        $orderByDir = $request->input('dir', 'desc');
+        $query = Measurement::where('user_id', Auth::id())->with('spring')->orderBy($orderBy, $orderByDir);
         $data = $query->paginate($length);
         return new DataTableCollectionResource($data);
     }

@@ -7,15 +7,42 @@
 
             <div class="absolute" style="top:0;width:100%;height:100%">
                 <!-- Primary Navigation Menu -->
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" >
-                    <div class="flex justify-between h-15">
-                        <div class="flex min-h-full">
+                <div class="fixed bg-white w-full max-w-7xl mx-auto sm:px-6 lg:px-8 z-50" style="top:0;left:0;">
+                    <div class="flex justify-between h-10">
+                        <div class="flex min-h-full px-4">
                             <!-- Logo -->
                             <div class="flex-shrink-0 flex items-center font-semibold text-xl">
                                 <a href="/">
                                     {{  $t('springs.wateract') }}
                                 </a>
                             </div>
+
+                            <!-- New navigation -->
+                            <!--<div class="hidden space-x-4 sm:-my-px sm:ml-5 sm:flex text-sm font-medium inline-flex items-center px-1 pt-1">
+                                <a href="/info?#why-study-springs">
+                                    Why study springs?
+                                </a>
+                            </div>
+                            <div class="hidden space-x-4 sm:-my-px sm:ml-5 sm:flex text-sm font-medium inline-flex items-center px-1 pt-1 leading-5 text-gray-500">
+                                <a href="/info?#how-to-find-springs">
+                                    How to find springs?
+                                </a>
+                            </div>
+                            <div class="hidden space-x-4 sm:-my-px sm:ml-5 sm:flex text-sm font-medium inline-flex items-center px-1 pt-1 leading-5 text-gray-500">
+                                <a href="/info?#instructions">
+                                    Instructions
+                                </a>
+                            </div>
+                            <div class="hidden space-x-4 sm:-my-px sm:ml-5 sm:flex text-sm font-medium inline-flex items-center px-1 pt-1 leading-5 text-gray-500">
+                                <a href="/info?#contacts-and-feedback">
+                                    Contacts and feedback
+                                </a>
+                            </div>
+                            <div class="hidden space-x-4 sm:-my-px sm:ml-5 sm:flex text-sm font-medium inline-flex items-center px-1 pt-1 leading-5 text-gray-500">
+                                <a href="/info?#about-wateract">
+                                    About wateract
+                                </a>
+                            </div>-->
 
                             <!-- Navigation Links -->
                             <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
@@ -143,7 +170,7 @@
                 </div>
 
                 <header>
-                    <div class="max-w-7xl hidden lg:block mx-auto px-4 sm:px-6 lg:px-8 text-xl font-semibold text-center lg:pt-6">
+                    <div class="max-w-7xl hidden lg:block mx-auto px-4 sm:px-6 lg:px-8 text-xl font-semibold text-center lg:pt-20">
                         <slot name="header"></slot>
                     </div>
                 </header>
@@ -259,13 +286,20 @@
         </header>
 
         <!-- Page Content -->
-        <main>
+        <main class="mb-auto">
             <slot></slot>
         </main>
 
         <!-- Modal Portal -->
         <portal-target name="modal" multiple>
         </portal-target>
+
+        <footer>
+            <div class="relative bg-no-repeat bg-springs-footer bg-cover">
+                <img src="/images/springs-footer.png" style="vertical-align: bottom; width: 100%; opacity: 0"/>
+            </div>
+        </footer>
+
     </div>
 </template>
 

@@ -23,8 +23,11 @@ use App\Http\Controllers\MeasurementController;
 */
 
 Route::get('/', function () {
-    return Inertia\Inertia::render('Springs/LandingPage', [
-    ]);
+    return Inertia\Inertia::render('Springs/LandingPage', []);
+});
+
+Route::get('/info', function () {
+    return Inertia\Inertia::render('Springs/InfoPage', []);
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
@@ -60,6 +63,8 @@ Route::resource('springs.analyses', MeasurementController::class);
 Route::resource('measurements', MeasurementController::class);
 Route::get('/springs/{spring_id}/feedbackview', [SpringFeedbackController::class, 'view']);
 Route::get('/myspringsview', [UserController::class, 'mySprings']);
+Route::get('/myobservationsview', [UserController::class, 'myObservations']);
+Route::get('/mymeasurementsview', [UserController::class, 'myMeasurements']);
 Route::get('/getSprings', [SpringController::class, 'getSprings']);
 
 Route::get('springs_json', function () {

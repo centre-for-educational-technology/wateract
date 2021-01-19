@@ -2,20 +2,20 @@
     <app-layout>
         <template #header>
             <div class="flex w-full">
-                <h2 class="w-3/4 font-semibold text-xl text-gray-800 leading-tight" v-if="spring.name">
-                    {{ spring.name }}
-                </h2>
-                <h2 class="w-3/4 font-semibold text-xl text-gray-800 leading-tight" v-if="!spring.name">
-                    {{ $t('springs.unnamed') }}
-                </h2>
-                <div class="w-1/4" v-if="$page.user">
-                    <div class="float-right">
-                        <button v-if="(can('edit spring') || spring.status === 'draft')" class="border text-xs font-semibold px-3 py-2 leading-normal">
-                            <inertia-link :href="'/springs/'+spring.code+'/edit'">{{ $t('springs.edit') }}</inertia-link>
-                        </button>
-                        <spring-feedback class="mt-10 sm:mt-0" :spring="spring" />
-                    </div>
+            <h1 class="inline w-4/5" v-if="spring.name">
+                {{ spring.name }}
+            </h1>
+            <h1 class="inline w-4/5" v-if="!spring.name">
+                {{ $t('springs.unnamed') }}
+            </h1>
+            <div class="w-1/5" v-if="$page.user">
+                <div class="float-right">
+                    <button v-if="(can('edit spring') || spring.status === 'draft')" class="bg-gray-100 hover:bg-blue-100 border text-xs font-semibold px-3 py-2 leading-normal">
+                        <inertia-link :href="'/springs/'+spring.code+'/edit'">{{ $t('springs.edit') }}</inertia-link>
+                    </button>
+                    <spring-feedback class="mt-10 sm:mt-0" :spring="spring" />
                 </div>
+            </div>
             </div>
         </template>
 
@@ -103,7 +103,7 @@
 
                             <div class="py-2" v-if="spring.database_links.length > 0">
                                 <strong>{{ $t('springs.link_with_other_databases') }}</strong>
-                                <table class="table-auto text-sm border">
+                                <table class="table-auto text-sm border w-full">
                                     <thead>
                                     <tr class="bg-gray-300 uppercase text-xs">
                                         <th scope="col">{{ $t('springs.database_name') }}</th>
@@ -118,7 +118,7 @@
                                             <td>{{ database_link.database_name }}</td>
                                             <td>{{ database_link.code }}</td>
                                             <td>{{ database_link.spring_name }}</td>
-                                            <td><a :href="database_link.url" target="_blank">{{ database_link.url }}</a></td>
+                                            <td><a :href="database_link.url" target="_blank" class="hover:underline">{{ stripUrl(database_link.url) }}</a></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -299,6 +299,10 @@ export default {
         }
     },
     methods: {
+        stripUrl(url) {
+            let stripped = url.slice(0, 25);
+            return stripped;
+        },
         handlePhotoPreview(photo) {
             this.dialogPhotoUrl = '/' + photo.path;
             this.dialogVisible = true;

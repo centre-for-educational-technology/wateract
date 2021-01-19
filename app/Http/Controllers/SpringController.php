@@ -50,8 +50,7 @@ class SpringController extends Controller
                 'statuses' => SpringController::getStatuses()
             ]);
         }
-        $springs = Spring::whereIn('status', ['submitted', 'confirmed'])->get();
-        return Inertia::render('Springs/Index', ['springs' => $springs]);
+        return SpringController::index();
     }
 
     public function getClassifications() {
@@ -208,6 +207,7 @@ class SpringController extends Controller
     public function edit(Spring $spring)
     {
         $spring = Spring::where('id', $spring->id)
+            ->with('user')
             ->with('references')
             ->with('database_links')
             ->with('photos')
