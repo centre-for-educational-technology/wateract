@@ -23,12 +23,35 @@ use App\Http\Controllers\MeasurementController;
 */
 
 Route::get('/', function () {
-    return Inertia\Inertia::render('Springs/LandingPage', []);
+    $springs = Spring::whereIn('status', ['submitted', 'confirmed'])->get();
+    return Inertia\Inertia::render('Springs/LandingPage', ['springs' => $springs]);
 });
 
 Route::get('/info', function () {
     return Inertia\Inertia::render('Springs/InfoPage', []);
 });
+
+Route::get('/about-springs', function () {
+    return Inertia\Inertia::render('StaticPages/AboutSprings', [
+        'currentRouteName' => 'about-springs'
+    ]);
+});
+Route::get('/instructions', function () {
+    return Inertia\Inertia::render('StaticPages/Instructions', [
+        'currentRouteName' => 'instructions'
+    ]);
+});
+Route::get('/news', function () {
+    return Inertia\Inertia::render('StaticPages/News', [
+        'currentRouteName' => 'news'
+    ]);
+});
+Route::get('/about-wateract', function () {
+    return Inertia\Inertia::render('StaticPages/AboutWateract', [
+        'currentRouteName' => 'about-wateract'
+    ]);
+});
+
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     $springs = Spring::where('user_id', Auth::id())->get();
@@ -62,6 +85,7 @@ Route::resource('observations', ObservationController::class);
 Route::resource('springs.analyses', MeasurementController::class);
 Route::resource('measurements', MeasurementController::class);
 Route::get('/springs/{spring_id}/feedbackview', [SpringFeedbackController::class, 'view']);
+Route::get('/springsforreview', [SpringController::class, 'springsForReview']);
 Route::get('/myspringsview', [UserController::class, 'mySprings']);
 Route::get('/myobservationsview', [UserController::class, 'myObservations']);
 Route::get('/mymeasurementsview', [UserController::class, 'myMeasurements']);

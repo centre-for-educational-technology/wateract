@@ -2,3 +2,5 @@ node_modules
 vendor
 storage
 .env
+public/js/app.js
+public/css/app.css

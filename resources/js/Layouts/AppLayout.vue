@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen bg-gray-100">
+    <div class="min-h-screen bg-gray-100 flex flex-col h-full">
 
         <!-- Navigation -->
         <nav class="relative bg-no-repeat bg-springs-header bg-cover">
@@ -7,7 +7,7 @@
 
             <div class="absolute" style="top:0;width:100%;height:100%">
                 <!-- Primary Navigation Menu -->
-                <div class="fixed bg-white w-full max-w-7xl mx-auto sm:px-6 lg:px-8 z-50" style="top:0;left:0;">
+                <div class="fixed bg-white w-full mx-auto sm:px-6 lg:px-8 z-50" style="top:0;left:0;">
                     <div class="flex justify-between h-10">
                         <div class="flex min-h-full px-4">
                             <!-- Logo -->
@@ -17,52 +17,30 @@
                                 </a>
                             </div>
 
-                            <!-- New navigation -->
-                            <!--<div class="hidden space-x-4 sm:-my-px sm:ml-5 sm:flex text-sm font-medium inline-flex items-center px-1 pt-1">
-                                <a href="/info?#why-study-springs">
-                                    Why study springs?
-                                </a>
-                            </div>
-                            <div class="hidden space-x-4 sm:-my-px sm:ml-5 sm:flex text-sm font-medium inline-flex items-center px-1 pt-1 leading-5 text-gray-500">
-                                <a href="/info?#how-to-find-springs">
-                                    How to find springs?
-                                </a>
-                            </div>
-                            <div class="hidden space-x-4 sm:-my-px sm:ml-5 sm:flex text-sm font-medium inline-flex items-center px-1 pt-1 leading-5 text-gray-500">
-                                <a href="/info?#instructions">
-                                    Instructions
-                                </a>
-                            </div>
-                            <div class="hidden space-x-4 sm:-my-px sm:ml-5 sm:flex text-sm font-medium inline-flex items-center px-1 pt-1 leading-5 text-gray-500">
-                                <a href="/info?#contacts-and-feedback">
-                                    Contacts and feedback
-                                </a>
-                            </div>
-                            <div class="hidden space-x-4 sm:-my-px sm:ml-5 sm:flex text-sm font-medium inline-flex items-center px-1 pt-1 leading-5 text-gray-500">
-                                <a href="/info?#about-wateract">
-                                    About wateract
-                                </a>
-                            </div>-->
-
                             <!-- Navigation Links -->
                             <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                                 <jet-nav-link href="/springs" :active="$page.currentRouteName === 'springs.index'">
-                                    {{ $t('springs.map') }}
+                                    {{ $t('springs.springs_map') }}
                                 </jet-nav-link>
                             </div>
-                            <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex" v-if="$page.user && can('edit user')">
-                                <jet-nav-link href="/admin/users" :active="$page.currentRouteName === 'users.index'">
-                                    {{ $t('springs.users') }}
+                            <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                                <jet-nav-link href="/about-springs" :active="$page.currentRouteName === 'about-springs'">
+                                    {{ $t('springs.about_springs') }}
                                 </jet-nav-link>
                             </div>
-                            <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex" v-if="$page.user">
-                                <jet-nav-link href="/dashboard" :active="$page.currentRouteName === 'dashboard'">
-                                    {{ $t('springs.dashboard') }}
+                            <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                                <jet-nav-link href="/instructions" :active="$page.currentRouteName === 'instructions'">
+                                    {{ $t('springs.instructions') }}
                                 </jet-nav-link>
                             </div>
-                            <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex" v-if="$page.user && can('administrate')">
-                                <jet-nav-link href="/admin" :active="$page.currentRouteName === 'admin'">
-                                    Admin
+                            <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                                <jet-nav-link href="/news" :active="$page.currentRouteName === 'news'">
+                                    {{ $t('springs.news') }}
+                                </jet-nav-link>
+                            </div>
+                            <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                                <jet-nav-link href="/about-wateract" :active="$page.currentRouteName === 'about-wateract'">
+                                    {{ $t('springs.about_wateract') }}
                                 </jet-nav-link>
                             </div>
                         </div>
@@ -94,8 +72,20 @@
                                             {{ $t('springs.spring_enthusiast') }}
                                         </div>
 
+                                        <jet-dropdown-link href="/dashboard">
+                                            {{ $t('springs.dashboard') }}
+                                        </jet-dropdown-link>
+
                                         <jet-dropdown-link href="/user/profile">
                                             {{ $t('profile.profile')}}
+                                        </jet-dropdown-link>
+
+                                        <jet-dropdown-link href="/admin/users" v-if="can('edit user')">
+                                            {{ $t('springs.users') }}
+                                        </jet-dropdown-link>
+
+                                        <jet-dropdown-link href="/admin" v-if="can('administrate')">
+                                            Admin
                                         </jet-dropdown-link>
 
                                         <jet-dropdown-link href="/user/api-tokens" v-if="$page.jetstream.hasApiFeatures">
@@ -170,7 +160,7 @@
                 </div>
 
                 <header>
-                    <div class="max-w-7xl hidden lg:block mx-auto px-4 sm:px-6 lg:px-8 text-xl font-semibold text-center lg:pt-20">
+                    <div class="max-w-7xl hidden lg:block mx-auto px-4 sm:px-6 lg:px-8 text-xl sm:text-2xl lg:text-3xl font-semibold text-center lg:pt-20">
                         <slot name="header"></slot>
                     </div>
                 </header>
@@ -190,13 +180,19 @@
             <div :class="{'block': showingNavigationDropdown, 'hidden': ! showingNavigationDropdown}" class="sm:hidden">
                 <div class="pt-2 pb-3 space-y-1">
                     <jet-responsive-nav-link href="/springs" :active="$page.currentRouteName == 'springs'">
-                        {{ $t('springs.map') }}
+                        {{ $t('springs.springs_map') }}
                     </jet-responsive-nav-link>
-                    <jet-responsive-nav-link v-if="$page.user && can('edit user')" href="/admin/users" :active="$page.currentRouteName == 'users'">
-                        {{ $t('springs.users') }}
+                    <jet-responsive-nav-link href="/about-springs" :active="$page.currentRouteName == 'about-springs'">
+                        {{ $t('springs.about_springs') }}
                     </jet-responsive-nav-link>
-                    <jet-responsive-nav-link v-if="$page.user" href="/dashboard" :active="$page.currentRouteName == 'dashboard'">
-                        {{ $t('springs.dashboard') }}
+                    <jet-responsive-nav-link href="/instructions" :active="$page.currentRouteName == 'instructions'">
+                        {{ $t('springs.instructions') }}
+                    </jet-responsive-nav-link>
+                    <jet-responsive-nav-link href="/news" :active="$page.currentRouteName == 'news'">
+                        {{ $t('springs.news') }}
+                    </jet-responsive-nav-link>
+                    <jet-responsive-nav-link href="/about-wateract" :active="$page.currentRouteName == 'about-wateract'">
+                        {{ $t('springs.about_wateract') }}
                     </jet-responsive-nav-link>
                     <div><a href="/login" v-if="!$page.user" class="'block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out">
                         {{ $t('springs.login') }}</a></div>
@@ -218,8 +214,21 @@
                     </div>
 
                     <div class="mt-3 space-y-1">
+
+                        <jet-responsive-nav-link href="/dashboard" :active="$page.currentRouteName === 'dashboard'">
+                            {{ $t('springs.dashboard') }}
+                        </jet-responsive-nav-link>
+
                         <jet-responsive-nav-link href="/user/profile" :active="$page.currentRouteName == 'profile.show'">
                             {{ $t('profile.profile')}}
+                        </jet-responsive-nav-link>
+
+                        <jet-responsive-nav-link href="/admin/users" v-if="$page.user && can('edit user')" :active="$page.currentRouteName === 'users.index'">
+                            {{ $t('springs.users') }}
+                        </jet-responsive-nav-link>
+
+                        <jet-responsive-nav-link href="/admin" v-if="$page.user && can('administrate')" :active="$page.currentRouteName === 'admin'">
+                            Admin
                         </jet-responsive-nav-link>
 
                         <jet-responsive-nav-link href="/user/api-tokens" :active="$page.currentRouteName == 'api-tokens.index'" v-if="$page.jetstream.hasApiFeatures">
@@ -286,7 +295,7 @@
         </header>
 
         <!-- Page Content -->
-        <main class="mb-auto">
+        <main class="mb-auto flex-1">
             <slot></slot>
         </main>
 
@@ -295,7 +304,7 @@
         </portal-target>
 
         <footer>
-            <div class="relative bg-no-repeat bg-springs-footer bg-cover">
+            <div class="w-full relative bg-no-repeat bg-springs-footer bg-cover">
                 <img src="/images/springs-footer.png" style="vertical-align: bottom; width: 100%; opacity: 0"/>
             </div>
         </footer>

@@ -31,7 +31,7 @@ return [
     'delete_account' => 'Kustuta konto',
     'permanently_delete_account' => 'Kustuta jäädavalt oma konto.',
     'password' => 'Parool',
-    'delete_account_notification' => 'Kui su konto on kustutatakse, siis kõik su kontoga seotud andmed kustutatakse jäädavalt. Enne kustutamist, salvesta endale kõik andmed, mida soovid alles jätta.',
+    'delete_account_notification' => 'Kui su konto kustutatakse, siis kõik su kontoga seotud andmed kustutatakse jäädavalt. Enne kustutamist, salvesta endale kõik andmed, mida soovid alles jätta.',
     'delete_account_confirmation' => 'Oled sa kindel, et soovid oma konto kustutada? Kui su konto on kustutatud, siis kõik kontoga seotud andmed kustutatakse jäädavalt. Palun sisesta oma parool kinnitamaks et soovid jäädavalt kustutada oma konto.',
     'nevermind' => 'Katkesta',
 

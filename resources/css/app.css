@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
 
 h1 {
-    @apply text-xl;
+    @apply text-3xl;
     @apply font-changaOne;
     @apply text-center;
     @apply font-normal;
@@ -13,8 +13,7 @@ h1 {
 }
 
 h2 {
-    @apply text-lg;
+    @apply text-xl;
     @apply font-changaOne;
-    @apply mt-10;
     color: #247493;
 }
