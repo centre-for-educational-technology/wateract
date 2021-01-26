@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Country;
+use App\Models\County;
 use App\Models\Photo;
 use App\Models\Spring;
 use App\Models\SpringDatabaseLink;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
@@ -12,6 +15,7 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
 use Inertia\Inertia;
 use Inertia\Response;
+use JamesDordoy\LaravelVueDatatable\Http\Resources\DataTableCollectionResource;
 use function Psy\debug;
 use Illuminate\Support\Facades\Auth;
 use App\Models\SpringReference;
@@ -94,7 +98,7 @@ class SpringController extends Controller
             'description' => 'required',
             'latitude' => 'required',
             'longitude' => 'required',
-            "references.*.url"  => "nullable|url",
+            "references.*.url" => "nullable|url",
         ])->validateWithBag('addSpring');
 
         $request['user_id'] = Auth::id();
@@ -103,6 +107,16 @@ class SpringController extends Controller
         $code = sprintf('%s%05d', $request['country'], $new_id);
 
         $request['code'] = $code;
+
+        $country_id = SpringController::getCountryId($request['country']);
+        if ($country_id) {
+            $request['country_id'] = $country_id;
+        }
+        $county_id = SpringController::getCountyId($request['county']);
+        if ($county_id) {
+            $request['county_id'] = $county_id;
+        }
+
         $spring = Spring::create($request->all());
 
         SpringController::saveReferences($spring, $request['references']);
@@ -118,19 +132,26 @@ class SpringController extends Controller
             }
         }
 
-        /*if (!empty($request['photos'])) {
-            foreach ($request['photos'] as $photo_raw) {
-                var_dump($photo_raw);
-                $photo = new Photo();
-                $photo->spring_id = $spring->id;
-                $path = Storage::disk('public')->put('spring-photos', $photo_raw);
-                $photo->path = $path;
-                $photo->save();
-            }
-        }*/
-
         return redirect()->route('springs.index')
             ->with('success','Spring created successfully.');
+    }
+
+    public function getCountryId($country_code) {
+        $country_id = null;
+        $country_obj = Country::where('code', $country_code)->first();
+        if ($country_obj) {
+            $country_id = $country_obj->id;
+        }
+        return $country_id;
+    }
+
+    public function getCountyId($county_name) {
+        $county_id = null;
+        $county_obj = County::where('name', $county_name)->first();
+        if ($county_obj) {
+            $county_id = $county_obj->id;
+        }
+        return $county_id;
     }
 
     public function saveReferences($spring, $references_info) {
@@ -240,6 +261,15 @@ class SpringController extends Controller
             "references.*.url"  => "nullable|url",
         ])->validateWithBag('editSpring');
 
+        $country_id = SpringController::getCountryId($request['country']);
+        if ($country_id) {
+            $request['country_id'] = $country_id;
+        }
+        $county_id = SpringController::getCountyId($request['county']);
+        if ($county_id) {
+            $request['county_id'] = $county_id;
+        }
+
         $spring->update($request->all());
 
         foreach ($request['references'] as $reference_info) {
@@ -331,6 +361,25 @@ class SpringController extends Controller
             $springs = Spring::where('name', 'LIKE', '%'.$name.'%')->get();
         }
         return response()->json($springs);
+    }
+
+    public function springsForReview(Request $request)
+    {
+        $user = User::where('id', Auth::id())->first();
+        $length = $request->input('length');
+        $orderBy = $request->input('column', 'created_at');
+        $orderByDir = $request->input('dir', 'desc');
+        if ($user->hasRole('editor')) {
+            $user_counties_ids = $user->user_counties_ids();
+            $query = Spring::where('status', 'submitted')
+                ->whereIn('county_id', $user_counties_ids)
+                ->orderBy($orderBy, $orderByDir);
+            $data = $query->paginate($length);
+            return new DataTableCollectionResource($data);
+        }
+        $query = Spring::where('status', 'submitted')->orderBy($orderBy, $orderByDir);
+        $data = $query->paginate($length);
+        return new DataTableCollectionResource($data);
     }
 
 }

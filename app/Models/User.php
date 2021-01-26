@@ -6,6 +6,7 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\DB;
 use Laravel\Fortify\TwoFactorAuthenticatable;
 use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Sanctum\HasApiTokens;
@@ -68,5 +69,19 @@ class User extends Authenticatable
     public function springs()
     {
         return $this->hasMany('App\Models\Spring');
+    }
+
+    public function user_counties_ids()
+    {
+        $user_counties_ids = [];
+        $user_counties = DB::table('model_has_counties')
+            ->where('model_id', $this->id)
+            ->where('model_type', 'App\Models\User')
+            ->get();
+        foreach ($user_counties as $user_county) {
+            $county_obj = County::where('id', $user_county->county_id)->first();
+            $user_counties_ids []= $county_obj->id;
+        }
+        return $user_counties_ids;
     }
 }
