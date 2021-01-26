@@ -11,7 +11,7 @@
             </div>
             <div>
                 <div id="how-to-find-springs" class="h-1"></div>
-                <h2>Kuidas allikaid leida?</h2>
+                <h2 class="mt-10">Kuidas allikaid leida?</h2>
                 <div>
                     Looduses allikate ülesleidmiseks on mitmeid märke, mida jälgida:
                     Paljud väikesed vooluveekogud algavad allikatest. Seega, sattudes mõne oja juurde, tasub seda mööda ülesvoolu liikuda ja vaadata, kus kohast veevool algab. Heaks paigaks, kus allikaid otsida, on jõeorud ja kõigi peajõkke suubuvate ojakeste lähted.
@@ -22,7 +22,7 @@
             </div>
             <div>
                 <div id="how-to-recognize-springs" class="h-1"></div>
-                <h2>Kuidas allikaid ära tunda?</h2>
+                <h2 class="mt-10">Kuidas allikaid ära tunda?</h2>
                 <div>
                     Iga looduslik veesilm pole allikas ja ka iga oja ei alga allikast. Veendumaks, kas sinu leitud võimalik allikas on ka tegelikult looduslikult maapinnale jõudva põhjavee väljavoolukoht, proovi leida sellele kinnitust, vastates järgmistele küsimustele:
                     Kas sellel on vaatluse hetkel väljavool või on maapinnal näha märke, et see on olemas vähemalt mingi osa aastast? Kas veesilmast viib välja mõni kasvõi hetkel kuiv voolukanal?
@@ -32,7 +32,7 @@
             </div>
             <div>
                 <div id="how-to-describe-springs" class="h-1"></div>
-                <h2>Kuidas allikaid kirjeldada?</h2>
+                <h2 class="mt-10">Kuidas allikaid kirjeldada?</h2>
                 <div>
                     Allikat kirjeldades tuleks tähelepanu pöörata järgmistele tahkudele:
                     <ul class="list-disc">
@@ -53,7 +53,7 @@
             </div>
             <div>
                 <div id="how-to-take-pictures" class="h-1"></div>
-                <h2>Kuidas allikaid pildistada?</h2>
+                <h2 class="mt-10">Kuidas allikaid pildistada?</h2>
                 <div>
                     <div class="mb-3">
                         Iga allikast tehtud foto on kui ülestähendus, mis kirjeldab kindlat kohta kindlal ajahetkel. Iga pilt räägib loo, kuid seireks sobiva foto saamiseks peab arvestama mõningate oluliste asjadega, mida kirjeldatakse allpool.
@@ -89,7 +89,7 @@
             </div>
             <div>
                 <div id="how-to-assess-water" class="h-1"></div>
-                <h2>Kuidas hinnata allikavee omadusi?</h2>
+                <h2 class="mt-10">Kuidas hinnata allikavee omadusi?</h2>
                 <div>
                     <div>
                         <h3 class="font-bold mt-3">Kuidas iseloomustada allikavee kvaliteeti?</h3>
@@ -142,7 +142,7 @@
             </div>
             <div>
                 <div id="how-to-measure-flow-rate" class="h-1"></div>
-                <h2>Kuidas mõõta allika vooluhulka?</h2>
+                <h2 class="mt-10">Kuidas mõõta allika vooluhulka?</h2>
                 <div>
                     <div class="font-bold">Olulisus</div>
                     <div>
