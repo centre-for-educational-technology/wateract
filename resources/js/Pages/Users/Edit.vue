@@ -2,9 +2,7 @@
     <app-layout>
 
         <template #header>
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                Edit user
-            </h2>
+            <h1>{{ $t('users.edit_user') }}</h1>
         </template>
 
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -13,27 +11,27 @@
                 <template #form>
 
                     <div class="col-span-6 sm:col-span-4">
-                        <jet-label for="name" value="Name" />
+                        <jet-label for="name" :value="$t('users.name')" />
                         <jet-input id="name" type="text" class="mt-1 block w-full" v-model="form.name" />
                         <jet-input-error :message="form.error('name')" class="mt-2" />
                     </div>
 
                     <div class="col-span-6 sm:col-span-4">
-                        <jet-label for="email" value="Email" />
+                        <jet-label for="email" :value="$t('users.email')" />
                         <jet-input id="email" type="email" readonly="true" class="bg-gray-100 mt-1 block w-full" v-model="form.email" />
                         <jet-input-error :message="form.error('email')" class="mt-2" />
                     </div>
 
                     <div class="col-span-6 sm:col-span-4">
-                        <jet-label for="role" value="Role" />
-                        <input type="radio" value="" v-model="form.role" /> spring enthusiast
+                        <jet-label for="role" :value="$t('users.role')" />
+                        <input type="radio" value="" v-model="form.role" /> {{ $t('springs.spring_enthusiast') }}
                         <div v-for="role in roles">
-                            <input type="radio" :value="role.name" v-model="form.role"/> {{ role.name }}
+                            <input type="radio" :value="role.name" v-model="form.role"/> {{ $t('springs.'+role.name) }}
                         </div>
                     </div>
 
                     <div class="col-span-6 sm:col-span-4">
-                        <jet-label for="counties" value="Counties" />
+                        <jet-label for="counties" :value="$t('users.counties')" />
                         <multiselect label="name" track-by="id"
                                      :close-on-select="false"
                                      v-model="form.counties"
@@ -41,7 +39,10 @@
                                      group-label="country"
                                      group-values="counties"
                                      :group-select="true"
-                                     :multiple="true">
+                                     :multiple="true"
+                                     :placeholder="$t('users.select_counties')"
+                                     :show-labels="false"
+                            >
                         </multiselect>
                     </div>
 
@@ -49,7 +50,7 @@
 
                 <template #actions>
                     <jet-button :class="{ 'opacity-25': form.processing }" :disabled="form.processing" type="submit" @click.native="updateUser(form)">
-                        Save
+                        {{ $t('users.save') }}
                     </jet-button>
                 </template>
 

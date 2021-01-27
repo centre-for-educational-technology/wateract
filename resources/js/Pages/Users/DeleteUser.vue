@@ -2,49 +2,47 @@
 
     <jet-action-section>
         <template #title>
-            Delete User
+            {{ $t('users.delete_user') }}
         </template>
 
         <template #description>
-            Permanently delete user account.
+            {{ $t('users.permanently_delete_user_account') }}
         </template>
 
         <template #content>
             <div class="max-w-xl text-sm text-gray-600">
-                User account will be permanently deleted.
+                {{ $t('users.delete_account_notification') }}
             </div>
 
-                <jet-danger-button @click.native="confirmUserDeletion">
-                    Delete User
-                </jet-danger-button>
+            <jet-danger-button @click.native="confirmUserDeletion">
+                {{ $t('users.delete_user') }}
+            </jet-danger-button>
 
             <!-- Delete Account Confirmation Modal -->
             <jet-dialog-modal :show="confirmingUserDeletion" @close="confirmingUserDeletion = false">
                 <template #title>
-                    Delete Account
+                    {{ $t('users.delete_user') }}
                 </template>
 
                 <template #content>
-                    Are you sure you want to delete this user account? This account will be permanently deleted.
-                    Please enter your password to confirm you would like to permanently delete this user account.
+                    {{ $t('users.delete_account_confirmation') }}
 
                     <div class="mt-4">
-                        <jet-input type="password" class="mt-1 block w-3/4" placeholder="Password"
+                        <jet-input type="password" class="mt-1 block w-3/4" :placeholder="$t('users.password')"
                                    ref="password"
                                    v-model="form.password"
                                    @keyup.enter.native="deleteUser" />
-
                         <jet-input-error :message="form.error('password')" class="mt-2" />
                     </div>
                 </template>
 
                 <template #footer>
                     <jet-secondary-button @click.native="confirmingUserDeletion = false">
-                        Nevermind
+                        {{ $t('users.nevermind') }}
                     </jet-secondary-button>
 
                     <jet-danger-button class="ml-2" @click.native="deleteUser" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
-                        Delete Account
+                        {{ $t('users.delete_user') }}
                     </jet-danger-button>
                 </template>
             </jet-dialog-modal>

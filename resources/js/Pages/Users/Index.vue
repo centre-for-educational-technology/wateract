@@ -11,12 +11,12 @@
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                     <div class="px-4 py-5 bg-white sm:p-6">
 
-                    <table class="table-auto" style="width:100%">
+                    <table class="table-auto w-full">
                         <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Email</th>
-                                <th>Role</th>
+                                <th>{{ $t('users.name') }}</th>
+                                <th>{{ $t('users.email') }}</th>
+                                <th>{{ $t('users.role') }}</th>
                                 <th></th>
                             </tr>
                         </thead>
@@ -25,11 +25,11 @@
                                 <td>{{ row.name }}</td>
                                 <td>{{ row.email }}</td>
                                 <td>
-                                    <label v-for="role in row.roles">{{ role.name }}</label>
+                                    <label v-for="role in row.roles">{{ $t('springs.'+role.name) }}</label>
                                 </td>
                                 <td class="float-right">
-                                    <inertia-link class="block pl-3 pr-4 py-2 border bg-white uppercase text-xs hover:text-gray-500 rounded-md" :href="'/admin/users/'+row.id+'/edit'">Edit</inertia-link>
-                                    <!--<button @click="deleteRow(row)" class="text-white bg-red-500 border text-xs font-semibold px-4 py-1 leading-normal">Delete</button-->
+                                    <inertia-link class="block pl-3 pr-4 py-2 border bg-white uppercase text-xs hover:text-gray-500 rounded-md" :href="'/admin/users/'+row.id+'/edit'">
+                                        {{ $t('users.edit') }}</inertia-link>
                                 </td>
                             </tr>
                         </tbody>
