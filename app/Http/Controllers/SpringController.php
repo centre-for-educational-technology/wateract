@@ -59,14 +59,8 @@ class SpringController extends Controller
 
     public function getClassifications() {
         return [
-            array( 'id' => 'rheocrene', 'name' => 'springs.classification_options.rheocrene'),
-            array('id' => 'hillslope_spring', 'name' => 'springs.classification_options.hillslope_spring'),
-            array('id' => 'limnocrene', 'name' => 'springs.classification_options.limnocrene'),
-            array('id' => 'helocrene', 'name' => 'springs.classification_options.helocrene'),
-            array('id' => 'cave_spring', 'name' => 'springs.classification_options.cave_spring'),
-            array('id' => 'hypocrene', 'name' => 'springs.classification_options.hypocrene'),
-            array('id' => 'captured_spring', 'name' => 'springs.classification_options.captured_spring'),
-            array('id' => 'karst_spring', 'name' => 'springs.classification_options.karst_spring'),
+            array( 'id' => 'gravity_spring', 'name' => 'springs.classification_options.gravity_spring' ),
+            array( 'id' => 'artesian_spring', 'name' => 'springs.classification_options.artesian_spring' ),
         ];
     }
 

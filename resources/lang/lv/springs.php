@@ -2,14 +2,14 @@
 
 return [
 
-/*
-|--------------------------------------------------------------------------
-| Springs Language Lines
-|--------------------------------------------------------------------------
-|
-| The following language lines are used in springs pages.
-|
-*/
+    /*
+    |--------------------------------------------------------------------------
+    | Springs Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines are used in springs pages.
+    |
+    */
 
     'wateract' => 'WaterAct',
     'springs_map' => 'Springs map',

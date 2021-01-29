@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen bg-gray-100 flex flex-col h-full">
+    <div class="min-h-screen bg-gradient-to-b from-gray-100 to-white flex flex-col h-full">
 
         <!-- Navigation -->
         <nav class="relative bg-no-repeat bg-springs-header bg-cover">
@@ -43,6 +43,11 @@
                                     {{ $t('springs.about_wateract') }}
                                 </jet-nav-link>
                             </div>
+                            <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex" v-if="$page.user">
+                                <jet-nav-link href="/dashboard" :active="$page.currentRouteName === 'dashboard'">
+                                    {{ $t('springs.dashboard') }}
+                                </jet-nav-link>
+                            </div>
                         </div>
 
                         <div class="hidden sm:flex sm:items-center sm:ml-6" v-if="!$page.user">
@@ -71,10 +76,6 @@
                                         <div class="block px-4 py-2 text-xs text-gray-400" v-if="($page.user.roles).length === 0">
                                             {{ $t('springs.spring_enthusiast') }}
                                         </div>
-
-                                        <jet-dropdown-link href="/dashboard">
-                                            {{ $t('springs.dashboard') }}
-                                        </jet-dropdown-link>
 
                                         <jet-dropdown-link href="/user/profile">
                                             {{ $t('profile.profile')}}

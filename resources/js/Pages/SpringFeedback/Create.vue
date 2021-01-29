@@ -2,36 +2,36 @@
 
     <div class="inline-block">
         <button type="submit" class="border text-xs font-semibold px-3 py-2 ml-2 leading-normal" v-on:click="showFeedbackWindow">
-            Feedback
+            {{ $t('springs.feedback') }}
         </button>
 
             <!-- Feedback Modal -->
             <jet-dialog-modal :show="addFeedback" @close="addFeedback = false">
                 <template #title>
-                    Feedback
+                    {{ $t('springs.feedback') }}
                 </template>
 
                 <template #content>
-                    Please leave us a feedback about this spring.
+                    {{ $t('springs.leave_feedback') }}
 
                     <div class="mt-4">
-                        <jet-label class="font-bold">Spring name</jet-label>
+                        <jet-label class="font-bold">{{ $t('springs.spring_name') }}</jet-label>
                         <jet-input type="text" class="mt-1 block w-3/4" v-model="form.spring_name" />
-                        <jet-label class="font-bold">Location</jet-label>
+                        <jet-label class="font-bold">{{ $t('springs.location') }}</jet-label>
                         <jet-input type="number" v-model="form.latitude"></jet-input>
                         <jet-input type="number" v-model="form.longitude"></jet-input>
-                        <textarea type="textarea" ref="feedback" class="px-2 mt-1 block w-full border" v-model="form.feedback" placeholder="Write feedback here" rows="5"></textarea>
+                        <textarea type="textarea" ref="feedback" class="px-2 mt-1 block w-full border" v-model="form.feedback" :placeholder="$t('springs.write_feedback')" rows="5"></textarea>
                         <jet-input-error :message="form.error('feedback')" class="mt-2" />
                     </div>
                 </template>
 
                 <template #footer>
                     <jet-secondary-button @click.native="addFeedback = false">
-                        Cancel
+                        {{ $t('springs.cancel') }}
                     </jet-secondary-button>
 
                     <jet-button class="ml-2" @click.native="createSpringFeedback" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
-                        Submit
+                        {{ $t('springs.submit') }}
                     </jet-button>
                 </template>
             </jet-dialog-modal>

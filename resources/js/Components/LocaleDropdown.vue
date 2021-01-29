@@ -30,8 +30,7 @@ export default {
             locales: {
                 'en': 'ENG',
                 'et': 'EST',
-                //'lv': 'LAV',
-                //'ru': 'RUS'
+                'lv': 'LAV',
             },
         }
     },
@@ -40,6 +39,7 @@ export default {
             this.$store.dispatch('changeLocale', language)
                 .then(() => {
                     this.$i18n.locale = language;
+                    axios.get('/locale/'+language);
                 }).catch((error => {
             }));
         }

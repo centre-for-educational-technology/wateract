@@ -34,11 +34,10 @@ class ObservationController extends Controller
     public function getTasteOptions() {
         return [
             array( 'id' => 'fine', 'name' => 'springs.taste_options.fine'),
-            array('id' => 'flat', 'name' => 'springs.taste_options.flat'),
             array('id' => 'metallic', 'name' => 'springs.taste_options.metallic'),
             array('id' => 'earthy', 'name' => 'springs.taste_options.earthy'),
             array('id' => 'rotten', 'name' => 'springs.taste_options.rotten'),
-            array('id' => 'salty', 'name' => 'springs.taste_options.salty'),
+            array('id' => 'sweet', 'name' => 'springs.taste_options.sweet'),
         ];
     }
 
