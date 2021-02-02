@@ -5,7 +5,7 @@
             <h1>{{ $t('springs.spring_observations_database') }}</h1>
         </template>
 
-        <h2 class="text-center text-xl lg:text-2xl mt-0">{{ $t('springs.collect_all_springs_to_map') }}</h2>
+        <h2 class="text-center text-xl lg:text-2xl mt-0">{{ $t('springs.springs_slogan') }}</h2>
 
         <div>
             <div class="hidden lg:grid lg:grid-cols-12">
@@ -65,7 +65,7 @@
             <img src="/images/springs-3.png" />
         </div>
 
-        <div class="mx-10 lg:mx-28 lg:-mt-28">
+        <div class="mx-10 lg:mx-28 lg:-mt-16">
             <h1>{{ $t('springs.about_springs') }}</h1>
             <div class="py-5">
                 <h2 class="mt-0">{{ $t('springs.why_study_springs') }}</h2>
@@ -95,6 +95,7 @@
             <h1>{{ $t('springs.instructions') }}</h1>
             <div class="grid grid-cols-2 lg:grid-cols-3 gap-10 mt-5">
                 <div>
+                    <img class="mx-auto w-3/4" src="/images/icons/how-to-find.png" />
                     <h2>{{ $t('springs.how_to.find_springs') }}</h2>
                     <div>
                         {{ $t('springs.how_to.find_springs_text') }}
@@ -104,6 +105,7 @@
                     </div>
                 </div>
                 <div>
+                    <img class="mx-auto w-3/4" src="/images/icons/how-to-recognize.png" />
                     <h2>{{ $t('springs.how_to.recognize_springs') }}</h2>
                     <div>
                         {{ $t('springs.how_to.recognize_springs_text') }}
@@ -113,6 +115,7 @@
                     </div>
                 </div>
                 <div>
+                    <img class="mx-auto w-3/4" src="/images/icons/how-to-describe.png" />
                     <h2>{{ $t('springs.how_to.describe_springs') }}</h2>
                     <div>
                         {{ $t('springs.how_to.describe_springs_text') }}
@@ -122,6 +125,7 @@
                     </div>
                 </div>
                 <div>
+                    <img class="mx-auto w-3/4" src="/images/icons/how-to-take-pictures.png" />
                     <h2>{{ $t('springs.how_to.take_pictures') }}</h2>
                     <div>
                         {{ $t('springs.how_to.take_pictures_text') }}
@@ -131,6 +135,7 @@
                     </div>
                 </div>
                 <div>
+                    <img class="mx-auto w-3/4" src="/images/icons/how-to-assess-water.png" />
                     <h2>{{ $t('springs.how_to.assess_water') }}</h2>
                     <div>
                         {{ $t('springs.how_to.assess_water_text') }}
@@ -140,6 +145,7 @@
                     </div>
                 </div>
                 <div>
+                    <img class="mx-auto w-3/4" src="/images/icons/how-to-measure-flow-rate.png" />
                     <h2>{{ $t('springs.how_to.measure_flow_rate') }}</h2>
                     <div>
                         {{ $t('springs.how_to.measure_flow_rate_text') }}
@@ -160,24 +166,8 @@
         </div>-->
 
         <div class="mx-10 lg:mx-28">
-            <h1>{{ $t('springs.partners') }}</h1>
-            <div class="grid grid-cols-5 gap-6 my-5">
-                <img src="/images/logos/okoloogia-est.png" />
-                <img src="/images/logos/vpr-eng.png" />
-                <img src="/images/logos/keskkonnaministeerium-eng.png" />
-                <img src="/images/logos/keskkonnaagentuur-eng.png" />
-                <img src="/images/logos/geoloogiateenistus-est.png" />
-            </div>
-            <div class="grid grid-cols-3 gap-6 my-5">
-                <img src="/images/logos/tlu-eng.jpg" />
-                <img src="/images/logos/kik-eng.png" />
-                <img src="/images/logos/lu-eng.png" />
-            </div>
-            <div class="grid grid-cols-3 gap-6 my-5">
-                <img src="/images/logos/lvgmc-lat.png" />
-                <img src="/images/logos/dap-eng.jpg" />
-                <img src="/images/logos/interreg-est-lat.jpg" />
-            </div>
+            <h1 class="mb-5">{{ $t('springs.partners') }}</h1>
+            <img src="/images/logos.jpg" />
         </div>
 
     </app-layout>
