@@ -31,11 +31,15 @@
             </div>
 
             <div class="my-5">
-                More information about the project: https://videscentrs.lvgmc.lv/iebuvets/projekts-vienotu-darbibu-kopums-efektivakai-kopejo-pazemes-udenu-resursu-apsaimniekosanai
+                More information about the project: <a class="underline" href="https://videscentrs.lvgmc.lv/iebuvets/projekts-vienotu-darbibu-kopums-efektivakai-kopejo-pazemes-udenu-resursu-apsaimniekosanai" target="_blank" rel="noopener noreferrer">https://videscentrs.lvgmc.lv/iebuvets/projekts-vienotu-darbibu-kopums-efektivakai-kopejo-pazemes-udenu-resursu-apsaimniekosanai</a>
             </div>
 
-            <div class="mt-5">
+            <div class="my-5">
                 Total budget of the projects is EUR 411 764.76. Interreg V-A Estonia-Latvia cross-border cooperation programme contributes EUR 350 000 EUR and partners’ self-contribution is EUR 61 764.76. Project duration is 24 months (01.06.2020.-31.05.2022.)
+            </div>
+
+            <div class="mt-5 w-1/2">
+                <img src="/images/interreg-est-lat-eu.jpg" />
             </div>
 
         </div>

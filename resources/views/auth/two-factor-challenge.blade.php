@@ -1,7 +1,7 @@
 <x-guest-layout>
     <x-jet-authentication-card>
         <x-slot name="logo">
-            <x-jet-authentication-card-logo />
+            <a href="/"><img class="mx-auto w-1/4" src="/images/springs-logo.png" /></a>
         </x-slot>
 
         <div x-data="{ recovery: false }">

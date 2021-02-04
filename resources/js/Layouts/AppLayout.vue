@@ -195,10 +195,12 @@
                     <jet-responsive-nav-link href="/about-wateract" :active="$page.currentRouteName == 'about-wateract'">
                         {{ $t('springs.about_wateract') }}
                     </jet-responsive-nav-link>
-                    <div><a href="/login" v-if="!$page.user" class="'block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out">
-                        {{ $t('springs.login') }}</a></div>
-                    <div><a href="/register" v-if="!$page.user" class="'block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out">
-                        {{ $t('springs.register') }}</a></div>
+                    <div v-if="!$page.user" class="border-t border-b border-gray-200">
+                        <div><a href="/login" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out">
+                            {{ $t('springs.login') }}</a></div>
+                        <div><a href="/register" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out">
+                            {{ $t('springs.register') }}</a></div>
+                    </div>
                 </div>
 
                 <!-- Responsive Settings Options -->
