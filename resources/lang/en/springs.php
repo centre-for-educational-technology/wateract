@@ -272,4 +272,10 @@ return [
     'spring_code' => 'Spring code',
     'date_time' => 'Date & Time',
     'created_at' => 'Created at',
+
+    'delete_spring' => 'Delete spring',
+    'delete_spring_notification' => 'Spring and spring observations and measurements will be deleted permanently.',
+    'permanently_delete_spring' => 'Permanently delete spring',
+    'delete_spring_confirmation' => 'Are you sure you want to delete this spring?',
+    'nevermind' => 'Nevermind',
 ];

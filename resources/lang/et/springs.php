@@ -268,4 +268,10 @@ return [
     'spring_code' => 'Allika kood',
     'date_time' => 'Kuupäev',
     'created_at' => 'Lisatud',
+
+    'delete_spring' => 'Kustuta allikas',
+    'delete_spring_notification' => 'Allikas ning allika vaatlused ja mõõtmised kustutatakse jäädavalt.',
+    'permanently_delete_spring' => 'Kustuta allikas jäädavalt',
+    'delete_spring_confirmation' => 'Oled sa kindel, et soovid selle allika kustutada?',
+    'nevermind' => 'Katkesta',
 ];

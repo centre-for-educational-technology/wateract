@@ -27,10 +27,6 @@ Route::get('/', function () {
     return Inertia\Inertia::render('Springs/LandingPage', ['springs' => $springs]);
 });
 
-Route::get('/info', function () {
-    return Inertia\Inertia::render('Springs/InfoPage', []);
-});
-
 Route::get('/about-springs', function () {
     return Inertia\Inertia::render('StaticPages/AboutSprings', [
         'currentRouteName' => 'about-springs'

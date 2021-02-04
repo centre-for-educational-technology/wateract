@@ -228,9 +228,15 @@
                 <jet-button v-if="form.status === 'draft'" class="ml-2" type="submit" @click.native="submit(form)">Submit</jet-button>
                 <jet-button v-if="can('edit spring') && form.status === 'submitted'" class="ml-2" type="submit" @click.native="confirm(form)">{{ $t('springs.confirm') }}</jet-button>
                 <jet-button v-if="can('edit spring') && form.status === 'confirmed'" class="ml-2" type="submit" @click.native="save(form)">{{ $t('springs.save') }}</jet-button>
-
             </template>
+
         </jet-form-section>
+
+            <div v-if="can('delete spring')">
+                <jet-section-border />
+                <delete-spring class="mt-10 sm:mt-0" :spring_id="form.id" />
+            </div>
+
         </div>
     </app-layout>
 </template>
@@ -239,12 +245,14 @@
 <script>
 import AppLayout from './../../Layouts/AppLayout'
 import JetFormSection from "./../../Jetstream/FormSection";
+import JetSectionBorder from './../../Jetstream/SectionBorder'
 import JetInput from "../../Jetstream/Input";
 import JetInputError from "../../Jetstream/InputError";
 import JetLabel from "../../Jetstream/Label";
 import JetButton from "../../Jetstream/Button";
 import JetSecondaryButton from "../../Jetstream/SecondaryButton";
 import HelpButton from '../../Components/HelpButton';
+import DeleteSpring from './DeleteSpring'
 import { gmapApi } from 'gmap-vue';
 import { latLngBounds, latLng } from "leaflet";
 import L from 'leaflet';
@@ -261,12 +269,14 @@ export default {
     components: {
         AppLayout,
         JetFormSection,
+        JetSectionBorder,
         JetInput,
         JetInputError,
         JetLabel,
         JetButton,
         JetSecondaryButton,
         HelpButton,
+        DeleteSpring,
         gmapApi,
         LControlLayers,
         LMap,

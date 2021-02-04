@@ -10,6 +10,7 @@ use App\Models\SpringDatabaseLink;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
@@ -309,6 +310,7 @@ class SpringController extends Controller
                 $photo = Photo::where('id', $photo_id)->first();
                 if ($photo) {
                     Storage::disk('public')->delete($photo->path);
+                    Storage::disk('public')->delete($photo->thumbnail);
                     $photo->delete();
                 }
             }
@@ -322,17 +324,33 @@ class SpringController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param Spring $spring
-     * @return \Illuminate\Http\Response
-     * @throws \Exception
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     * @throws \Illuminate\Auth\Access\AuthorizationException
      */
-    public function destroy(Spring $spring)
+    public function destroy(Request $request)
     {
+        if ( !$request->has('spring_id') ) {
+            return redirect()->back();
+        }
+
+        $spring_id = $request->input('spring_id');
+        $spring = Spring::where('id', $spring_id)->first();
+
         $this->authorize('delete', $spring);
 
+        // delete spring photos
+        $photos = Photo::where('spring_id', $spring_id)->get();
+        foreach($photos as $photo) {
+            Storage::disk('public')->delete($photo->path);
+            Storage::disk('public')->delete($photo->thumbnail);
+            $photo->delete();
+        }
+
+        // deletes spring, and also related database relations (including observations and measurements)
         $spring->delete();
 
-        return redirect()->route('springs.index')
+        return Redirect::route('springs.index')
             ->with('success', 'Spring deleted successfully');
     }
 
