@@ -300,8 +300,11 @@ export default {
     },
     methods: {
         stripUrl(url) {
-            let stripped = url.slice(0, 25);
-            return stripped;
+            if (url) {
+                let stripped = url.slice(0, 25);
+                return stripped;
+            }
+            return "";
         },
         handlePhotoPreview(photo) {
             this.dialogPhotoUrl = '/' + photo.path;
