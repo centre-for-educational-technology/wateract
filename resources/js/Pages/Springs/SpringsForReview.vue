@@ -36,7 +36,7 @@ export default {
                     label: this.$i18n.t('springs.name'),
                     name: 'name',
                     orderable: true,
-                    transform: ({data}) => `<a class="underline" href="/springs/${data['code']}">${data['name'] || this.$i18n.t('springs.unnamed')}</a>`,
+                    transform: ({data}) => `<a class="underline" href="/springs/${data['code']}/edit">${data['name'] || this.$i18n.t('springs.unnamed')}</a>`,
                 },
                 {
                     label: this.$i18n.t('springs.location'),
@@ -54,7 +54,7 @@ export default {
                     label: this.$i18n.t('springs.code'),
                     name: 'code',
                     orderable: true,
-                    transform: ({data}) => `<a class="underline" href="/springs/${data['code']}">${data['code']}</a>`,
+                    transform: ({data}) => `<a class="underline" href="/springs/${data['code']}/edit">${data['code']}</a>`,
                 },
                 {
                     label: this.$i18n.t('springs.status'),
