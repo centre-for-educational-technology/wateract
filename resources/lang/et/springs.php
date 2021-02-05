@@ -98,7 +98,7 @@ return [
     'spring_classification' => 'Allika tüüp',
     'classification_options' => [
         'gravity_spring' => 'Langeallikas',
-        'artesian_spring' => 'Tõusallikas',
+        'artesian_spring' => 'Tõusuallikas',
     ],
     'groundwater_body' => 'Põhjaveekogum',
     'geology' => 'Geoloogia (avamusala)',
