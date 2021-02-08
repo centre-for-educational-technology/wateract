@@ -30,6 +30,23 @@
                         </div>
                     </div>
 
+                    <div class="col-span-12 sm:col-span-4">
+                        <jet-label class="font-bold inline-block" for="photos" :value="$t('springs.photos')" />
+                        <help-button @click.native="showHelpDialog( $t('springs.photos_help_text') )"></help-button>
+                        <el-upload
+                            action="/"
+                            list-type="picture-card"
+                            accept="image/*"
+                            :auto-upload="false"
+                            :on-preview="handlePhotoCardPreview"
+                            :on-change="updatePhotos">
+                            <i class="el-icon-plus"></i>
+                        </el-upload>
+                        <el-dialog :visible.sync="dialogVisible">
+                            <img width="100%" :src="dialogPhotoUrl" alt="" />
+                        </el-dialog>
+                    </div>
+
                     <div class="flex -mx-2 py-2">
                         <div class="w-full px-2">
                             <jet-label class="font-bold inline-block" for="odor" :value="$t('springs.odor')" />
@@ -68,6 +85,7 @@
                         <div v-for="(field, index) in observation_fields" :key="field.id">
                             <div :class="{'pull-right': index % 2 === 0, 'pull-left': index % 2 !== 0 }">
                                 <jet-label class="font-bold inline-block" :for="field.name" :value="$t('springs.'+field.name)" />
+                                <span v-if="field.unit">({{ field.unit}})</span>
                                 <help-button v-if="fieldsWithHelpText.includes(field.name)" @click.native="showHelpDialog( $t('springs.'+field.name+'_help_text') )"></help-button>
                                 <jet-input :type="field.type" class="mt-1 block w-full" :id="field.name" v-model="field.value" />
                             </div>
@@ -119,9 +137,12 @@ export default {
             ],
             helpDialogVisible: false,
             helpText: '',
+            dialogVisible: false,
+            dialogPhotoUrl: '',
             form: this.$inertia.form({
                 '_method': 'PUT',
                 measurement_time: '',
+                photo_ids: [],
                 odor: '',
                 taste: '',
                 color: '',
@@ -139,6 +160,33 @@ export default {
         showHelpDialog(helptext) {
             this.helpText = helptext;
             this.helpDialogVisible = true;
+        },
+        handlePhotoCardPreview(photo) {
+            this.dialogPhotoUrl = photo.url;
+            this.dialogVisible = true;
+        },
+        updatePhotos(photo) {
+            let file = photo;
+            const isIMAGE = (file.raw.type === 'image/jpeg' || file.raw.type === 'image/png');
+            if (!isIMAGE) {
+                this.$message.error('Only upload jpg/png picture!');
+                return false;
+            }
+            // upload photo
+            var data = new FormData();
+            data.append('photo', photo.raw || '');
+            let photo_id;
+            axios.post('/photos', data).then(response => {
+                photo_id = response.data.photo_id;
+                this.form.photo_ids.push(photo_id);
+            })
+                .catch(function (error) {
+                    // handle error
+                    console.log(error);
+                })
+                .then(function () {
+                    // always executed
+                });
         },
         saveDraft: function (data) {
             data._method = 'POST';

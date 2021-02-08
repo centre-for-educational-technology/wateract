@@ -28,9 +28,13 @@ class Spring extends Model
         return $this->hasMany('App\Models\SpringReference');
     }
 
-    public function photos()
+    public function all_photos()
     {
         return $this->hasMany('App\Models\Photo');
+    }
+
+    public function photos() {
+        return $this->all_photos()->where('observation_id', null);
     }
 
     public function database_links()

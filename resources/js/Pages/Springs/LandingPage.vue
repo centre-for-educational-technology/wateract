@@ -95,7 +95,7 @@
             <h1>{{ $t('springs.instructions') }}</h1>
             <div class="grid grid-cols-2 lg:grid-cols-3 gap-10 mt-5">
                 <div>
-                    <img class="mx-auto w-3/4" src="/images/icons/how-to-find.png" />
+                    <img class="mx-auto w-3/5" src="/images/icons/how-to-find.png" />
                     <h2>{{ $t('springs.how_to.find_springs') }}</h2>
                     <div>
                         {{ $t('springs.how_to.find_springs_text') }}
@@ -105,7 +105,7 @@
                     </div>
                 </div>
                 <div>
-                    <img class="mx-auto w-3/4" src="/images/icons/how-to-recognize.png" />
+                    <img class="mx-auto w-3/5" src="/images/icons/how-to-recognize.png" />
                     <h2>{{ $t('springs.how_to.recognize_springs') }}</h2>
                     <div>
                         {{ $t('springs.how_to.recognize_springs_text') }}
@@ -115,7 +115,7 @@
                     </div>
                 </div>
                 <div>
-                    <img class="mx-auto w-3/4" src="/images/icons/how-to-describe.png" />
+                    <img class="mx-auto w-3/5" src="/images/icons/how-to-describe.png" />
                     <h2>{{ $t('springs.how_to.describe_springs') }}</h2>
                     <div>
                         {{ $t('springs.how_to.describe_springs_text') }}
@@ -125,7 +125,7 @@
                     </div>
                 </div>
                 <div>
-                    <img class="mx-auto w-3/4" src="/images/icons/how-to-take-pictures.png" />
+                    <img class="mx-auto w-3/5" src="/images/icons/how-to-take-pictures.png" />
                     <h2>{{ $t('springs.how_to.take_pictures') }}</h2>
                     <div>
                         {{ $t('springs.how_to.take_pictures_text') }}
@@ -135,7 +135,7 @@
                     </div>
                 </div>
                 <div>
-                    <img class="mx-auto w-3/4" src="/images/icons/how-to-assess-water.png" />
+                    <img class="mx-auto w-3/5" src="/images/icons/how-to-assess-water.png" />
                     <h2>{{ $t('springs.how_to.assess_water') }}</h2>
                     <div>
                         {{ $t('springs.how_to.assess_water_text') }}
@@ -145,7 +145,7 @@
                     </div>
                 </div>
                 <div>
-                    <img class="mx-auto w-3/4" src="/images/icons/how-to-measure-flow-rate.png" />
+                    <img class="mx-auto w-3/5" src="/images/icons/how-to-measure-flow-rate.png" />
                     <h2>{{ $t('springs.how_to.measure_flow_rate') }}</h2>
                     <div>
                         {{ $t('springs.how_to.measure_flow_rate_text') }}

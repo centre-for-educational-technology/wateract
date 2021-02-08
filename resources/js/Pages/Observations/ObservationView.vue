@@ -1,6 +1,19 @@
 <template>
 
     <div class="border rounded px-4 py-2 my-2">
+
+        <div v-if="observation.photos.length > 0">
+            <jet-label :value="$t('springs.photos')" />
+            <div class="grid grid-cols-6 gap-1">
+                <div @click="handlePhotoPreview(photo)" class="border-1 border-white" v-for="photo in observation.photos">
+                    <img :src="'/'+photo.thumbnail" />
+                </div>
+            </div>
+        </div>
+        <el-dialog :visible.sync="dialogVisible">
+            <img width="100%" :src="dialogPhotoUrl" alt="" />
+        </el-dialog>
+
         <div v-if="observation.odor">
             <jet-label :value="$t('springs.odor')" />
             <div>{{ observation.odor}}</div>
@@ -44,6 +57,8 @@ import JetLabel from "../../Jetstream/Label";
         data() {
             return {
                 observation_fields: [],
+                dialogVisible: false,
+                dialogPhotoUrl: '',
             }
         },
         methods: {
@@ -51,6 +66,10 @@ import JetLabel from "../../Jetstream/Label";
                 axios.get('/springs/'+spring.code+'/observations/'+observation.id).then(response => {
                     this.observation_fields = response.data;
                 })
+            },
+            handlePhotoPreview(photo) {
+                this.dialogPhotoUrl = '/' + photo.path;
+                this.dialogVisible = true;
             },
         },
         created: function(){

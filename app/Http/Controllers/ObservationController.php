@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Photo;
 use App\Models\Spring;
 use App\Models\Observation;
 use App\Models\ObservationFieldValue;
@@ -24,7 +25,7 @@ class ObservationController extends Controller
     public function index(string $spring_code)
     {
         $spring = Spring::where('code', $spring_code)->first();
-        $observations = Observation::where('spring_id', $spring->id)->with('user')->get();
+        $observations = Observation::where('spring_id', $spring->id)->with('user')->with('photos')->get();
         return Inertia::render('Observations/Index', [
             'spring' => $spring,
             'observations' => $observations
@@ -76,6 +77,17 @@ class ObservationController extends Controller
         $request['user_id'] = Auth::id();
         $observation = Observation::create($request->all());
         ObservationController::saveFieldValues($observation, $request['observation_values']);
+
+        if (!empty($request['photo_ids'])) {
+            foreach($request['photo_ids'] as $photo_id) {
+                $photo = Photo::where('id', $photo_id)->first();
+                if ($photo) {
+                    $photo->spring_id = $request['spring_id'];
+                    $photo->observation_id = $observation->id;
+                    $photo->save();
+                }
+            }
+        }
 
         $spring = Spring::find($request['spring_id']);
         return redirect()->route('springs.observations.index', compact('spring'))

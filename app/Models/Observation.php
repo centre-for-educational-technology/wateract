@@ -26,6 +26,11 @@ class Observation extends Model
         return $this->belongsTo('App\Models\User');
     }
 
+    public function photos()
+    {
+        return $this->hasMany('App\Models\Photo');
+    }
+
     /**
      * @return \Illuminate\Support\Collection
      */
