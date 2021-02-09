@@ -56,8 +56,15 @@
                                            @click="updateLeafletLocation"
                                            :bounds="bounds"
                                            :options="{zoomControl: false}"
+                                           @ready="onReady"
+                                           @locationfound="onLocationFound"
                                     >
                                         <l-control-zoom position="bottomright"></l-control-zoom>
+                                        <l-control>
+                                            <p @click="showLocation" class="bg-white font-bold p-1 cursor-pointer rounded hover:bg-gray-100">
+                                                Pan to Current Location
+                                            </p>
+                                        </l-control>
                                         <l-tile-layer
                                             v-for="layer in tilelayers"
                                             :key="layer.name"
@@ -252,7 +259,7 @@ import HelpButton from '../../Components/HelpButton';
 import { gmapApi } from 'gmap-vue';
 import { latLngBounds, latLng } from "leaflet";
 import L from 'leaflet';
-import { LMap, LTileLayer, LMarker, LIcon, LControlZoom, LWMSTileLayer, LControlLayers } from 'vue2-leaflet';
+import { LMap, LTileLayer, LMarker, LIcon, LControlZoom, LWMSTileLayer, LControl, LControlLayers } from 'vue2-leaflet';
 import "proj4leaflet";
 
 let projection3301 = new L.Proj.CRS('EPSG:3301', '+proj=lcc +lat_1=59.33333333333334 +lat_2=58 +lat_0=57.51755393055556 +lon_0=24 +x_0=500000 +y_0=6375000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs', {
@@ -276,6 +283,7 @@ export default {
         gmapApi,
         "l-wms-tile-layer": LWMSTileLayer,
         LControlLayers,
+        LControl,
         LMap,
         LTileLayer,
         LMarker,
@@ -287,6 +295,7 @@ export default {
 
     data() {
         return {
+            leafletMapObject: null,
             leafletMap: true,
             googleMap: false,
             leafletMarkers: [],
@@ -439,6 +448,16 @@ export default {
         handlePhotoCardPreview(photo) {
             this.dialogPhotoUrl = photo.url;
             this.dialogVisible = true;
+        },
+        onReady(mapObject) {
+            this.leafletMapObject = mapObject;
+        },
+        showLocation() {
+            this.leafletMapObject.locate();
+        },
+        onLocationFound(location) {
+            this.updateLeafletLocation(location);
+            this.leafletMapObject.setView(location.latlng, 12);
         },
         updateLeafletLocation(location) {
             this.leafletMarkers = [ location.latlng ];
