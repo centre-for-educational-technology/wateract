@@ -209,7 +209,7 @@ class SpringController extends Controller
             ->with('user')
             ->with('references')
             ->with('database_links')
-            ->with('photos')
+            ->with('all_photos')
             ->first();
         return Inertia::render('Springs/Show', ['spring' => $spring]);
     }

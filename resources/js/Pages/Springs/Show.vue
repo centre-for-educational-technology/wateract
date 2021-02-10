@@ -181,10 +181,10 @@
                                 <div>{{ $t('springs.status_options.'+spring.status) }}</div>
                             </div>
 
-                            <div class="py-2" v-if="spring.photos.length > 0">
+                            <div class="py-2" v-if="spring.all_photos.length > 0">
                                 <strong>Gallery</strong>
                                 <div class="grid grid-cols-2 gap-1">
-                                    <div @click="handlePhotoPreview(photo)" class="border-1 border-white" v-for="photo in spring.photos">
+                                    <div @click="handlePhotoPreview(photo)" class="border-1 border-white" v-for="photo in spring.all_photos">
                                         <img :src="'/'+photo.thumbnail" />
                                     </div>
                                 </div>
