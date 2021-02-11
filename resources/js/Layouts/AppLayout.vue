@@ -307,6 +307,12 @@
         </portal-target>
 
         <footer>
+            <div class="text-center relative mx-10 mt-10 z-30 lg:mt-15 lg:-mb-20 sm:-mb-10 -mb-5">
+                {{ $t('springs.join_springs_fb')}}:
+                <a class="underline" href="https://www.facebook.com/groups/allikainfo/">
+                    https://www.facebook.com/groups/allikainfo/</a><br />
+                {{ $t('springs.email') }}: <a class="underline" href="mailto:info@allikad.info">info@allikad.info</a>
+            </div>
             <div class="w-full relative bg-no-repeat bg-springs-footer bg-cover">
                 <img src="/images/springs-footer.png" style="vertical-align: bottom; width: 100%; opacity: 0"/>
             </div>

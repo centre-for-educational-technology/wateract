@@ -43,6 +43,8 @@ return [
     ],
     'partners' => 'Partners',
     'contact' => 'Contact',
+    'email' => 'Email',
+    'join_springs_fb' => 'Join springs community in Facebook',
     'users' => 'Users',
     'dashboard' => 'Dashboard',
     'register' => 'Register',

@@ -43,6 +43,8 @@ return [
     ],
     'partners' => 'Partnerid',
     'contact' => 'Kontakt',
+    'email' => 'E-post',
+    'join_springs_fb' => 'Liitu allikainfo kogukonnaga Facebookis',
     'users' => 'Kasutajad',
     'dashboard' => 'Töölaud',
     'register' => 'Registreeri',
