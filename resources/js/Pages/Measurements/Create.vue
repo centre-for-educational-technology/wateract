@@ -26,7 +26,8 @@
                     <div class="grid grid-cols-2 gap-4">
                         <div v-for="field in measurement_fields" :key="field.id">
                             <div>
-                                <jet-label class="font-bold" :for="field.name" :value="$t('springs.measurement_fields.'+field.name)" />
+                                <jet-label class="font-bold inline-block" :for="field.name" :value="$t('springs.measurement_fields.'+field.name)" />
+                                <span v-if="field.unit">({{ field.unit}})</span>
                                 <jet-input :type="field.type" class="mt-1 block w-full" :id="field.name" v-model="field.value" :name="'measurement_values['+ field.name +']'" />
                             </div>
                         </div>
