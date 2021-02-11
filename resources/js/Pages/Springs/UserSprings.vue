@@ -10,7 +10,17 @@
 
     <div>
 
-        <h3 class="text-xl">{{  $t('springs.my_springs') }}</h3>
+        <div class="flex w-full mb-1 ">
+            <h3 class="flex w-3/4 text-xl">{{  $t('springs.my_springs') }}</h3>
+            <div class="flex w-1/4 text-right inline">
+                <div class="w-full">
+                    <div class="float-right p-2 text-sm font-semibold leading-normal cursor-pointer bg-blue-100" v-if="$page.user">
+                        <a href="springs/create">
+                            {{ $t('springs.create_new_spring') }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <data-table
             :columns="columns"
             :translate="translate"
