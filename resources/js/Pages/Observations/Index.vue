@@ -9,10 +9,8 @@
                     {{ $t('springs.unnamed') }}
                 </h1>
                 <div class="w-1/5 float-right inline" v-if="$page.user">
-                    <button class="float-right border text-xs font-semibold px-3 py-2 leading-normal">
-                        <inertia-link :href="'/springs/'+spring.code+'/observations/create'">
-                            {{  $t('springs.add_new_observation') }}</inertia-link>
-                    </button>
+                    <nav-button :href="'/springs/'+spring.code+'/observations/create'">
+                        {{ $t('springs.add_new_observation') }}</nav-button>
                 </div>
             </div>
         </template>
@@ -50,12 +48,14 @@
 </template>
 <script>
 import AppLayout from './../../Layouts/AppLayout'
+import NavButton from '../../Components/NavButton'
 import SpringNavigation from '../Springs/SpringNavigation'
 import ObservationView from './ObservationView'
 
 export default {
     components: {
         AppLayout,
+        NavButton,
         SpringNavigation,
         ObservationView
     },

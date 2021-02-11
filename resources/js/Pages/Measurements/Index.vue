@@ -9,10 +9,8 @@
                     {{ $t('springs.unnamed') }}
                 </h1>
                 <div class="w-1/5" v-if="$page.user">
-                    <button v-if="can('add measurement')" class="float-right border text-xs font-semibold px-3 py-2 leading-normal">
-                        <inertia-link :href="'/springs/'+spring.code+'/analyses/create'">
-                            {{ $t('springs.add_new_measurement') }}</inertia-link>
-                    </button>
+                    <nav-button v-if="can('add measurement')" :href="'/springs/'+spring.code+'/analyses/create'">
+                        {{ $t('springs.add_new_measurement') }}</nav-button>
                 </div>
             </div>
         </template>
@@ -49,12 +47,14 @@
 </template>
 <script>
 import AppLayout from './../../Layouts/AppLayout'
+import NavButton from '../../Components/NavButton'
 import SpringNavigation from '../Springs/SpringNavigation'
 import MeasurementView from './MeasurementView'
 
 export default {
     components: {
         AppLayout,
+        NavButton,
         SpringNavigation,
         MeasurementView,
     },

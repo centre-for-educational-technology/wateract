@@ -7,15 +7,9 @@
     <app-layout>
         <template #header>
             <h1 class="inline">{{ $t('springs.observations_and_database') }}</h1>
-            <!--<div class="flex w-full">
-                <h2 class="w-4/5 font-semibold text-xl text-gray-800 leading-tight">
-                    {{ $t('springs.observations_and_database') }}
-                </h2>-->
-                <div class="text-right inline" v-if="$page.user">
-                    <a href="springs/create" class="float-right border text-xs font-semibold py-1 leading-normal">
-                        {{ $t('springs.create_new_spring') }}</a>
-                </div>
-            <!--</div>-->
+            <div class="text-right inline float-right" v-if="$page.user">
+                <nav-button :href="'springs/create'">{{ $t('springs.create_new_spring') }}</nav-button>
+            </div>
         </template>
 
         <div class="py-6">
@@ -163,6 +157,7 @@ import { gmapApi } from 'gmap-vue';
 import GmapCluster from 'gmap-vue/dist/components/cluster'
 import SpringView from './SpringView'
 import JetLabel from "../../Jetstream/Label";
+import NavButton from '../../Components/NavButton';
 
 import { CRS, latLngBounds, latLng } from "leaflet";
 import L from 'leaflet';
@@ -186,6 +181,7 @@ export default {
         GmapCluster,
         SpringView,
         JetLabel,
+        NavButton,
         "l-wms-tile-layer": LWMSTileLayer,
         LControlLayers,
         LMap,

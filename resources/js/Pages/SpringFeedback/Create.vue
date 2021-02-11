@@ -1,7 +1,7 @@
 <template>
 
     <div class="inline-block">
-        <button type="submit" class="border text-xs font-semibold px-3 py-2 ml-2 leading-normal" v-on:click="showFeedbackWindow">
+        <button class="inline px-3 py-2 text-xs font-semibold leading-normal cursor-pointer bg-blue-100 hover:bg-gray-100 border border-blue-200" v-on:click="showFeedbackWindow">
             {{ $t('springs.feedback') }}
         </button>
 

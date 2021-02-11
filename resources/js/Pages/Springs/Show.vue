@@ -10,9 +10,7 @@
             </h1>
             <div class="w-1/5" v-if="$page.user">
                 <div class="float-right">
-                    <button v-if="(can('edit spring') || spring.status === 'draft')" class="bg-gray-100 hover:bg-blue-100 border text-xs font-semibold px-3 py-2 leading-normal">
-                        <inertia-link :href="'/springs/'+spring.code+'/edit'">{{ $t('springs.edit') }}</inertia-link>
-                    </button>
+                    <nav-button v-if="(can('edit spring') || spring.status === 'draft')" :href="'/springs/'+spring.code+'/edit'">{{ $t('springs.edit') }}</nav-button>
                     <spring-feedback class="mt-10 sm:mt-0" :spring="spring" />
                 </div>
             </div>
@@ -208,6 +206,7 @@
 import AppLayout from './../../Layouts/AppLayout';
 import SpringNavigation from './SpringNavigation';
 import JetLabel from "../../Jetstream/Label";
+import NavButton from '../../Components/NavButton';
 import { gmapApi } from 'gmap-vue';
 import SpringFeedback from './../SpringFeedback/Create'
 
@@ -229,6 +228,7 @@ export default {
         AppLayout,
         SpringNavigation,
         JetLabel,
+        NavButton,
         SpringFeedback,
         gmapApi,
         "l-wms-tile-layer": LWMSTileLayer,

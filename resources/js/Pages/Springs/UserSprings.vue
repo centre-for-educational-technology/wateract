@@ -14,10 +14,7 @@
             <h3 class="flex w-3/4 text-xl">{{  $t('springs.my_springs') }}</h3>
             <div class="flex w-1/4 text-right inline">
                 <div class="w-full">
-                    <div class="float-right p-2 text-sm font-semibold leading-normal cursor-pointer bg-blue-100" v-if="$page.user">
-                        <a href="springs/create">
-                            {{ $t('springs.create_new_spring') }}</a>
-                    </div>
+                    <nav-button :href="'springs/create'">{{ $t('springs.create_new_spring') }}</nav-button>
                 </div>
             </div>
         </div>
@@ -38,7 +35,12 @@
 </template>
 
 <script>
+import NavButton from '../../Components/NavButton';
+
 export default {
+    components: {
+        NavButton,
+    },
     data() {
         return {
             columns: [
