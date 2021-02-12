@@ -61,9 +61,11 @@
                                     >
                                         <l-control-zoom position="bottomright"></l-control-zoom>
                                         <l-control>
-                                            <p @click="showLocation" class="bg-white font-bold p-1 cursor-pointer rounded hover:bg-gray-100">
-                                                Pan to Current Location
-                                            </p>
+                                            <svg @click="showLocation" class="h-8 w-8 p-1 bg-white border-2 rounded cursor-pointer hover:bg-gray-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd">
+                                                    <title>{{ $t('springs.pan_to_current_location') }}</title>
+                                                </path>
+                                            </svg>
                                         </l-control>
                                         <l-tile-layer
                                             v-for="layer in tilelayers"
@@ -306,8 +308,7 @@ export default {
             tms: true,
             gmapCenter: {lat:58.779, lng:25.054},
             leafletCenter: [58.779, 25.054],
-            attribution: "<a href='http://www.maaamet.ee'>Maa-amet</a>",
-            //baseUrl: 'http://kaart.maaamet.ee/wms/fotokaart?version=1.3.0',
+            attribution: "<a href='https://www.maaamet.ee'>Maa-amet</a>",
             transparency: 'true',
             bounds: latLngBounds([
                 [60.4349, 29.4338],

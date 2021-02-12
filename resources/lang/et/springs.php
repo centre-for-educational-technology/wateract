@@ -79,6 +79,7 @@ return [
     'unnamed' => '(Nimi teadmata)',
     'kkr_code' => 'KKR kood',
     'location' => 'Asukoht',
+    'pan_to_current_location' => 'Määra asukoht automaatselt',
     'latitude' => 'Laiuskraad',
     'latitude_help_text' => 'Täida juhul, kui sisestad allika andmebaasi käsitsi, mitte kaardil märkides. Koordinaat tuleb sisestada kümnendkraadides kujul DD,DDDDD kuni viienda komakohani.',
     'longitude' => 'Pikkuskraad',

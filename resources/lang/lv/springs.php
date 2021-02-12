@@ -77,6 +77,7 @@ return [
     'unnamed' => 'Unnamed',
     'kkr_code' => 'KKR Code',
     'location' => 'Location',
+    'pan_to_current_location' => 'Pan to Current Location',
     'latitude' => 'Latitude',
     'latitude_help_text' => 'Fill it only if you enter the spring to the database manually, not by marking it on the map. The coordinate must be entered in decimal degrees as DD,DDDDD to the fifth decimal place.',
     'longitude' => 'Longitude',
