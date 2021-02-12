@@ -225,12 +225,21 @@
                             </select>
                         </div>
 
-                        <div class="px-2 py-2">
-                            <el-checkbox v-model="form.needs_attention" name="needs_attention"><jet-label for="needs_attention" :value="$t('springs.needs_attention')" /></el-checkbox>
-                        </div>
-                        <div class="px-2 py-2">
-                            <el-checkbox v-model="form.featured" name="featured"><jet-label for="featured" :value="$t('springs.featured')" /></el-checkbox>
-                        </div>
+                            <div class="px-2 py-2">
+                                <el-checkbox v-model="form.needs_attention" name="needs_attention">
+                                    <jet-label for="needs_attention" :value="$t('springs.needs_attention')" />
+                                </el-checkbox>
+                            </div>
+                            <div class="px-2 py-2">
+                                <el-checkbox v-model="form.featured" name="featured">
+                                    <jet-label for="featured" :value="$t('springs.featured')" />
+                                </el-checkbox>
+                            </div>
+                            <div class="px-2 py-2">
+                                <el-checkbox v-model="form.unlisted" name="unlisted">
+                                    <jet-label for="unlisted" :value="$t('springs.unlisted')" />
+                                </el-checkbox>
+                            </div>
 
                         </div>
 
@@ -366,6 +375,7 @@ export default {
                 status: 'draft',
                 needs_attention: 0,
                 featured: 0,
+                unlisted: 0,
                 references: [{
                     url: '',
                     url_title: '',
@@ -392,16 +402,6 @@ export default {
         },
         saveDraft: function (data) {
             data._method = 'POST';
-
-            /*this.$inertia.post('/springs', {
-                title: this.form.name,
-                description: this.form.description,
-                latitude: this.form.latitude,
-                longitude: this.form.latitude,
-                references: this.form.references,
-                photos: this.photos
-            })*/
-
             this.$inertia.post('/springs', data)
         },
         submit: function (data) {

@@ -122,6 +122,7 @@ return [
     ],
     'needs_attention' => 'Needs special attention',
     'featured' => 'Featured',
+    'unlisted' => 'Unlisted',
     'save_as_draft' => 'Save as draft',
     'submit' => 'Submit',
     'add' => 'Add',

@@ -22,8 +22,14 @@ use App\Http\Controllers\MeasurementController;
 |
 */
 
+// main menu routes
 Route::get('/', function () {
-    $springs = Spring::whereIn('status', ['submitted', 'confirmed'])->get();
+    $user = Auth::user();
+    if ($user && $user->hasRole(['editor', 'admin', 'super-admin'])) {
+        $springs = Spring::whereIn('status', ['submitted', 'confirmed'])->get();
+    } else {
+        $springs = Spring::whereIn('status', ['submitted', 'confirmed'])->where('unlisted', 0)->get();
+    }
     return Inertia\Inertia::render('Springs/LandingPage', ['springs' => $springs]);
 });
 

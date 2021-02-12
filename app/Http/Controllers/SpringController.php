@@ -30,9 +30,16 @@ class SpringController extends Controller
      */
     public function index()
     {
-        $springs = Spring::whereIn('status', ['submitted', 'confirmed'])->get();
-        $featured_springs = Spring::where('featured', '1')->with('photos')->with('country_info')->inRandomOrder()->limit(4)->get();
-        $newest_springs = Spring::whereIn('status', ['submitted', 'confirmed'])->with('photos')->with('country_info')->orderBy('created_at', 'desc')->limit(4)->get();
+        $user = Auth::user();
+        if ($user && $user->hasRole(['editor', 'admin', 'super-admin'])) {
+            $springs = Spring::whereIn('status', ['submitted', 'confirmed'])->get();
+            $featured_springs = Spring::where('featured', '1')->with('photos')->with('country_info')->inRandomOrder()->limit(4)->get();
+            $newest_springs = Spring::whereIn('status', ['submitted', 'confirmed'])->with('photos')->with('country_info')->orderBy('created_at', 'desc')->limit(4)->get();
+        } else {
+            $springs = Spring::whereIn('status', ['submitted', 'confirmed'])->where('unlisted', 0)->get();
+            $featured_springs = Spring::where('featured', '1')->where('unlisted', 0)->with('photos')->with('country_info')->inRandomOrder()->limit(4)->get();
+            $newest_springs = Spring::whereIn('status', ['submitted', 'confirmed'])->where('unlisted', 0)->with('photos')->with('country_info')->orderBy('created_at', 'desc')->limit(4)->get();
+        }
         return Inertia::render('Springs/Index', [
             'springs' => $springs,
             'featured_springs' => $featured_springs,
@@ -358,19 +365,31 @@ class SpringController extends Controller
     {
         $name = $request->input('name');
         $classification = $request->input('classification');
-        $country = $request->input('country');
-        if ( $classification && $country ) {
-            $springs = Spring::where('name', 'LIKE', '%'.$name.'%')
-                ->where('classification', $classification)
-                ->where('country', $country)->get();
-        } else if ( $classification ) {
-            $springs = Spring::where('name', 'LIKE', '%'.$name.'%')
-                ->where('classification', $classification)->get();
-        } else if ( $country ) {
-            $springs = Spring::where('name', 'LIKE', '%'.$name.'%')
-                ->where('country', $country)->get();
+        $user = Auth::user();
+        if ($user && $user->hasRole(['editor', 'admin', 'super-admin'])) {
+            if ($classification) {
+                $springs = Spring::where('name', 'LIKE', '%' . $name . '%')
+                    ->where('classification', $classification)
+                    ->whereIn('status', ['submitted', 'confirmed'])
+                    ->get();
+            } else {
+                $springs = Spring::where('name', 'LIKE', '%' . $name . '%')
+                    ->whereIn('status', ['submitted', 'confirmed'])
+                    ->get();
+            }
         } else {
-            $springs = Spring::where('name', 'LIKE', '%'.$name.'%')->get();
+            if ($classification) {
+                $springs = Spring::where('name', 'LIKE', '%' . $name . '%')
+                    ->where('classification', $classification)
+                    ->where('unlisted', 0)
+                    ->whereIn('status', ['submitted', 'confirmed'])
+                    ->get();
+            } else {
+                $springs = Spring::where('name', 'LIKE', '%' . $name . '%')
+                    ->where('unlisted', 0)
+                    ->whereIn('status', ['submitted', 'confirmed'])
+                    ->get();
+            }
         }
         return response()->json($springs);
     }

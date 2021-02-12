@@ -119,6 +119,7 @@ return [
     ],
     'needs_attention' => 'Erakorralist ülekontrolli vajav allikas',
     'featured' => 'Esiletoodud',
+    'unlisted' => 'Peidetud',
     'save_as_draft' => 'Salvesta mustand',
     'submit' => 'Esita',
     'add' => 'Lisa',

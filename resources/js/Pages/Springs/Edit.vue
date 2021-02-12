@@ -211,12 +211,21 @@
                         </select>
                     </div>
 
-                    <div class="px-2 py-2">
-                        <el-checkbox :true-label="1" false-label="0" v-model="form.needs_attention" name="needs_attention"><jet-label for="needs_attention" :value="$t('springs.needs_attention')" /></el-checkbox>
-                    </div>
-                    <div class="px-2 py-2">
-                        <el-checkbox :true-label="1" false-label="0" v-model="form.featured" name="featured"><jet-label for="featured" :value="$t('springs.featured')" /></el-checkbox>
-                    </div>
+                        <div class="px-2 py-2">
+                            <el-checkbox :true-label="1" false-label="0" v-model="form.needs_attention" name="needs_attention">
+                                <jet-label for="needs_attention" :value="$t('springs.needs_attention')" />
+                            </el-checkbox>
+                        </div>
+                        <div class="px-2 py-2">
+                            <el-checkbox :true-label="1" false-label="0" v-model="form.featured" name="featured">
+                                <jet-label for="featured" :value="$t('springs.featured')" />
+                            </el-checkbox>
+                        </div>
+                        <div class="px-2 py-2">
+                            <el-checkbox :true-label="1" false-label="0" v-model="form.unlisted" name="unlisted">
+                                <jet-label for="unlisted" :value="$t('springs.unlisted')" />
+                            </el-checkbox>
+                        </div>
 
                     </div>
 
@@ -369,6 +378,7 @@ export default {
                 ownership: this.spring.ownership,
                 needs_attention: this.spring.needs_attention,
                 featured: this.spring.featured,
+                unlisted: this.spring.unlisted,
                 references: getReferences(this.spring),
                 database_links: getDatabaseLinks(this.spring),
                 photos: [],
