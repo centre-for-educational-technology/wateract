@@ -16,14 +16,13 @@
 
                 <template #form>
 
-                    <div class="flex -mx-2 py-2">
-                        <div class="w-1/2 px-2">
-                            <jet-label class="font-bold" for="analysis_time" :value="$t('springs.analysis_time')" />
-                            <input type="datetime-local" id="analysis_time" v-model="form.analysis_time" />
-                        </div>
+                    <div class="py-2">
+                        <jet-label class="font-bold" for="analysis_time" :value="$t('springs.analysis_time')" />
+                        <datetime :auto="true" :title="$t('springs.analysis_time')" value-zone="local"
+                                  :phrases="datetime_phrases"  type="datetime" v-model="form.analysis_time"></datetime>
                     </div>
 
-                    <div class="grid grid-cols-2 gap-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
                         <div v-for="field in measurement_fields" :key="field.id">
                             <div>
                                 <jet-label class="font-bold inline-block" :for="field.name" :value="$t('springs.measurement_fields.'+field.name)" />
@@ -35,7 +34,7 @@
 
                 </template>
                 <template #actions>
-                    <!--<jet-secondary-button type="submit" @click.native="saveDraft(form)">{{ $t('springs.save_as_draft') }}</jet-secondary-button>-->
+                    <jet-secondary-button type="submit" @click.native="saveDraft(form)">{{ $t('springs.save_as_draft') }}</jet-secondary-button>
                     <jet-button class="ml-2" type="submit" @click.native="submit(form)">{{ $t('springs.submit') }}</jet-button>
                 </template>
             </jet-form-section>
@@ -50,6 +49,8 @@ import JetInput from "../../Jetstream/Input";
 import JetInputError from "../../Jetstream/InputError";
 import JetButton from "../../Jetstream/Button";
 import JetSecondaryButton from "../../Jetstream/SecondaryButton";
+import { Datetime } from 'vue-datetime'
+import 'vue-datetime/dist/vue-datetime.css'
 
 export default {
     components: {
@@ -60,13 +61,15 @@ export default {
         JetInputError,
         JetButton,
         JetSecondaryButton,
+        datetime: Datetime,
     },
     props: ['spring','measurement_fields'],
     data() {
         return {
+            datetime_phrases: {ok: this.$i18n.t('springs.ok'), cancel: this.$i18n.t('springs.cancel')},
             form: this.$inertia.form({
-                '_method': 'PUT',
-                analysis_time: this.getNow(),
+                '_method': 'POST',
+                analysis_time: new Date().toISOString(),
                 spring_id: this.spring.id,
                 measurement_values: this.measurement_fields,
                 photos: [],
@@ -88,12 +91,10 @@ export default {
             });
         },
         saveDraft: function (data) {
-            data._method = 'POST';
             this.$inertia.post('/measurements', data)
         },
         submit: function (data) {
-            //data.status = 'submitted';
-            data._method = 'POST';
+            data.status = 'submitted';
             this.$inertia.post('/measurements', data)
         },
         getNow: function() {
