@@ -2,6 +2,11 @@
 
     <div class="border rounded px-4 py-2 my-2">
 
+        <nav-button v-if="(can('edit observation') || ( observation.status === 'draft' && observation.user_id == $page.user.id ))"
+                    class="float-right"
+                    :href="'/springs/'+spring.code+'/observations/'+observation.id+'/edit'">
+            {{ $t('springs.edit') }}</nav-button>
+
         <div v-if="observation.photos.length > 0">
             <jet-label :value="$t('springs.photos')" />
             <div class="grid grid-cols-6 gap-1">
@@ -21,7 +26,7 @@
 
         <div v-if="observation.taste">
             <jet-label :value="$t('springs.taste')" />
-            <div>{{ observation.taste}}</div>
+            <div>{{ $t('springs.taste_options.'+observation.taste) }}</div>
         </div>
 
         <div v-if="observation.color">
@@ -49,9 +54,12 @@
 </template>
 <script>
 import JetLabel from "../../Jetstream/Label";
+import NavButton from '../../Components/NavButton';
+
     export default {
         components: {
             JetLabel,
+            NavButton,
         },
         props: ['spring', 'observation'],
         data() {

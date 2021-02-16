@@ -17,3 +17,13 @@ h2 {
     @apply font-changaOne;
     color: #247493;
 }
+
+.vdatetime-input {
+    @apply border;
+    @apply rounded;
+    @apply p-2;
+}
+
+textarea {
+    @apply rounded;
+}

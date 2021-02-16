@@ -128,6 +128,7 @@ return [
     'edit' => 'Muuda',
     'delete' => 'Kustuta',
     'cancel' => 'Katkesta',
+    'ok' => 'OK',
     'save' => 'Salvesta',
     'confirm' => 'Kinnita',
     'view' => 'Vaade',

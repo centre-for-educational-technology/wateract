@@ -6,12 +6,11 @@
             </h1>
         </template>
 
-
         <div class="max-w-7xl mx-auto py-8 sm:px-6 lg:px-8">
             <jet-form-section>
 
                 <template #title>
-                    {{ $t('springs.create_observation')}}
+                    {{ $t('springs.edit_observation') }}
                 </template>
 
                 <template #form>
@@ -20,25 +19,26 @@
                         <div class="break-normal">{{ helpText }}</div>
                     </el-dialog>
 
-
                     <div>
                         <div>
                             <jet-label class="font-bold inline-block" for="measurement_time" :value="$t('springs.measurement_time')" />
                             <help-button @click.native="showHelpDialog( $t('springs.measurement_time_help_text') )"></help-button>
                         </div>
                         <datetime :auto="true" :title="$t('springs.measurement_time')" value-zone="local"
-                                  :phrases="datetime_phrases"  type="datetime" v-model="form.measurement_time"></datetime>
+                                  :phrases="datetime_phrases" type="datetime" v-model="form.measurement_time"></datetime>
                     </div>
 
-                    <div class="col-span-12 sm:col-span-4">
+                    <div class="py-2">
                         <jet-label class="font-bold inline-block" for="photos" :value="$t('springs.photos')" />
                         <help-button @click.native="showHelpDialog( $t('springs.photos_help_text') )"></help-button>
                         <el-upload
+                            :file-list="photos"
                             action="/"
                             list-type="picture-card"
                             accept="image/*"
                             :auto-upload="false"
-                            :on-preview="handlePhotoCardPreview"
+                            :on-preview="handlePhotoPreview"
+                            :on-remove="handlePhotoRemove"
                             :on-change="updatePhotos">
                             <i class="el-icon-plus"></i>
                         </el-upload>
@@ -49,18 +49,17 @@
 
                     <div class="flex -mx-2 py-2">
                         <div class="w-full px-2">
-                            <jet-label class="font-bold inline-block" for="odor" :value="$t('springs.odor')" />
-                            <help-button @click.native="showHelpDialog( $t('springs.odor_help_text') )"></help-button>
+                            <jet-label class="font-bold" for="odor" :value="$t('springs.odor')" />
                             <jet-input id="odor" type="text" class="mt-1 block w-full" v-model="form.odor" />
                         </div>
                     </div>
 
                     <div class="flex -mx-2 py-2">
-                        <div class="w-1/2 px-2">
+                        <div class="lg:w-1/2 px-2">
                             <jet-label class="font-bold inline-block" for="taste" :value="$t('springs.taste')" />
                             <help-button @click.native="showHelpDialog( $t('springs.taste_help_text') )"></help-button>
                             <select id="taste" v-model="form.taste"
-                                class="block w-full bg-white border border-gray-400 hover:border-gray-500 px-2 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                                    class="block w-full bg-white border border-gray-400 hover:border-gray-500 px-2 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
                                 <option value=""></option>
                                 <option v-for='data in taste_options' :selected="form.taste === data.id" :value='data.id'>{{ $t(data.name) }}</option>
                             </select>
@@ -81,7 +80,7 @@
                         <textarea id="description" type="textarea" class="px-2 mt-1 block w-full border" rows="5" v-model="form.description" ></textarea>
                     </div>
 
-                    <div class="grid grid-cols-2 gap-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div v-for="(field, index) in observation_fields" :key="field.id">
                             <div :class="{'pull-right': index % 2 === 0, 'pull-left': index % 2 !== 0 }">
                                 <jet-label class="font-bold inline-block" :for="field.name" :value="$t('springs.'+field.name)" />
@@ -94,8 +93,15 @@
 
                 </template>
                 <template #actions>
-                    <jet-secondary-button type="submit" @click.native="saveDraft(form)">{{ $t('springs.save_as_draft') }}</jet-secondary-button>
-                    <jet-button class="ml-2" type="submit" @click.native="submit(form)">{{ $t('springs.submit') }}</jet-button>
+                    <jet-secondary-button v-if="form.status === 'draft'" type="submit"
+                                          @click.native="save(form)">
+                        {{ $t('springs.save_as_draft') }}</jet-secondary-button>
+                    <jet-button v-if="form.status === 'draft'" class="ml-2" type="submit"
+                                @click.native="submit(form)">
+                        {{  $t('springs.submit') }}</jet-button>
+                    <jet-button v-if="can('edit spring') && form.status === 'submitted'"
+                                type="submit" @click.native="save(form)">
+                        {{ $t('springs.save') }}</jet-button>
                 </template>
             </jet-form-section>
         </div>
@@ -125,8 +131,16 @@ export default {
         HelpButton,
         datetime: Datetime,
     },
-    props: ['spring', 'observation_fields', 'taste_options'],
+    props: ['spring', 'observation', 'observation_fields', 'taste_options'],
     data() {
+        let photos = [];
+        _.forEach(this.observation.photos, function(photo) {
+            photos.push({
+                id: photo.id,
+                name: '',
+                url: '/' + photo.path,
+            });
+        });
         return {
             fieldsWithHelpText: [
                 'air_temperature',
@@ -141,20 +155,25 @@ export default {
             helpDialogVisible: false,
             helpText: '',
             datetime_phrases: {ok: this.$i18n.t('springs.ok'), cancel: this.$i18n.t('springs.cancel')},
+            mm: this.observation.measurement_time.toString(),
+            photos: photos,
             dialogVisible: false,
             dialogPhotoUrl: '',
             form: this.$inertia.form({
-                '_method': 'POST',
-                measurement_time: new Date().toISOString(),
-                photo_ids: [],
-                odor: '',
-                taste: '',
-                color: '',
-                description: '',
+                '_method': 'PUT',
+                id: this.observation.id,
+                measurement_time: new Date(this.observation.measurement_time).toISOString(),
+                odor: this.observation.odor,
+                taste: this.observation.taste,
+                color: this.observation.color,
                 spring_id: this.spring.id,
                 observation_values: this.observation_fields,
+                description: this.observation.description,
+                photos_to_add: [],
+                photos_to_delete: [],
+                status: this.observation.status,
             }, {
-                bag: 'addObservation',
+                bag: 'editObservation',
                 resetOnSuccess: false,
             }),
         }
@@ -164,24 +183,20 @@ export default {
             this.helpText = helptext;
             this.helpDialogVisible = true;
         },
-        handlePhotoCardPreview(photo) {
-            this.dialogPhotoUrl = photo.url;
-            this.dialogVisible = true;
+        save: function (data) {
+            this.$inertia.post('/observations/' + data.id, data)
+        },
+        submit: function (data) {
+            data.status = 'submitted';
+            this.$inertia.post('/observations/' + data.id, data)
         },
         updatePhotos(photo) {
-            let file = photo;
-            const isIMAGE = (file.raw.type === 'image/jpeg' || file.raw.type === 'image/png');
-            if (!isIMAGE) {
-                this.$message.error('Only upload jpg/png picture!');
-                return false;
-            }
-            // upload photo
             var data = new FormData();
             data.append('photo', photo.raw || '');
             let photo_id;
             axios.post('/photos', data).then(response => {
                 photo_id = response.data.photo_id;
-                this.form.photo_ids.push(photo_id);
+                this.form.photos_to_add.push(photo_id);
             })
                 .catch(function (error) {
                     // handle error
@@ -189,14 +204,16 @@ export default {
                 })
                 .then(function () {
                     // always executed
+                    console.log('midagi');
                 });
+            ;
         },
-        saveDraft: function (data) {
-            this.$inertia.post('/observations', data)
+        handlePhotoRemove(photo) {
+            this.form.photos_to_delete.push(photo.id);
         },
-        submit: function (data) {
-            data.status = 'submitted';
-            this.$inertia.post('/observations', data)
+        handlePhotoPreview(photo) {
+            this.dialogPhotoUrl = photo.url;
+            this.dialogVisible = true;
         },
     }
 }

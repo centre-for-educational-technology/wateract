@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ModelField;
 use App\Models\Photo;
 use App\Models\Spring;
 use App\Models\Observation;
 use App\Models\ObservationFieldValue;
+use DateTime;
 use Exception;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
@@ -67,13 +69,15 @@ class ObservationController extends Controller
      *
      * @param Request $request
      * @return RedirectResponse
+     * @throws Exception
      */
     public function store(Request $request)
     {
         Validator::make($request->all(), [
             'measurement_time' => 'required',
         ])->validateWithBag('addObservation');
-
+        $date = new DateTime($request['measurement_time']);
+        $request['measurement_time'] = $date->format('Y-m-d H:i');
         $request['user_id'] = Auth::id();
         $observation = Observation::create($request->all());
         ObservationController::saveFieldValues($observation, $request['observation_values']);
@@ -101,9 +105,30 @@ class ObservationController extends Controller
             if ($value) {
                 $field_value = new ObservationFieldValue();
                 $field_value->observation_id = $observation->id;
-                $field_value->field_id = $field_id;
+                $field_value->field_id = $field_data['id'];
                 $field_value->value = $value;
                 $field_value->save();
+            }
+        }
+    }
+
+    public function updateFieldValues($observation, $values) {
+        foreach ($values as $field_data) {
+            $field_id = $field_data['id'];
+            $value = isset($field_data['value']) ? $field_data['value'] : false;
+            // check if exists
+            $field_value = ObservationFieldValue::where('observation_id', $observation->id)
+                ->where('field_id', $field_id)->first();
+            if ($value) {
+                if ( !$field_value) {
+                    $field_value = new ObservationFieldValue();
+                    $field_value->observation_id = $observation->id;
+                    $field_value->field_id = $field_id;
+                }
+                $field_value->value = $value;
+                $field_value->save();
+            } else if ($field_value && !$value) {
+                $field_value->delete();
             }
         }
     }
@@ -124,7 +149,7 @@ class ObservationController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param int $spring_id
+     * @param string $spring_code
      * @param Observation $observation
      * @return Response
      */
@@ -132,7 +157,14 @@ class ObservationController extends Controller
     {
         $spring = Spring::where('code', $spring_code)->with('observations')->first();
         if (Auth::user()) {
-            $observation_fields = \App\Models\ModelField::where('model', 'observation')->where('visible', 1)->orderBy('position')->get();
+            $observation = Observation::where('id', $observation->id)->with('photos')->first();
+            $observation_fields = ModelField::where('model', 'observation')->where('visible', 1)->orderBy('position')->get();
+            foreach ( $observation_fields as $field ) {
+                $field_value = ObservationFieldValue::where('observation_id', $observation->id)->where('field_id', $field['id'])->first();
+                if ($field_value) {
+                    $field['value'] = $field_value->value;
+                }
+            }
             return Inertia::render('Observations/Edit', [
                 'spring' => $spring,
                 'observation' => $observation,
@@ -149,16 +181,27 @@ class ObservationController extends Controller
      * @param Request $request
      * @param Observation $observation
      * @return RedirectResponse
+     * @throws Exception
      */
     public function update(Request $request, Observation $observation)
     {
         Validator::make($request->all(), [
             'measurement_time' => 'required',
         ])->validateWithBag('editObservation');
+
         $observation->update($request->all());
+
+        ObservationController::updateFieldValues($observation, $request['observation_values']);
+
         $spring = Spring::find($observation->spring_id);
+
+        (new PhotoController)->savePhotos($request['photos_to_add'], $spring->id, $observation->id);
+
+        (new PhotoController)->deletePhotos($request['photos_to_delete']);
+
         return redirect()->route('springs.observations.index', compact('spring'))
             ->with('success','Observation updated successfully.');
+
     }
 
     /**

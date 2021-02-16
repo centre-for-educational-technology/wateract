@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Photo;
 use http\Env\Response;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use Intervention\Image\Facades\Image;
 
@@ -43,6 +44,7 @@ class PhotoController extends Controller
         //$orig_file_path = Storage::disk('public')->put('spring-photos', $orig_photo);
 
         $image = PhotoController::storeImage($request);
+        $datetime = $image['datetime'];
         $path = $image['path'];
         $thumbnail = $image['thumbnail'];
 
@@ -57,9 +59,9 @@ class PhotoController extends Controller
         $photo->spring_id = null;
         $photo->path = $path;
         $photo->thumbnail = $thumbnail;
-        $photo->caption = '';
+        $photo->caption = $datetime;
         $photo->save();
-        return response()->json(['error'=>false, 'photo_id'=>$photo->id]);
+        return response()->json(['error'=>false, 'photo_id'=>$photo->id, 'exif_data' => $image['exif']]);
     }
 
     public function storeImage($request) {
@@ -77,10 +79,14 @@ class PhotoController extends Controller
         // Create unique file name
         $fileNameToStore = $filename.'_'.time().'.'.$extension;
         $thumbnailFileNameToStore = '300_200_'.$filename.'_'.time().'.'.$extension;
+        // exif data
+        $exif_data = Image::make($file)->exif();
+
+        $photo_datetime = Image::make($file)->exif('DateTimeOriginal');
         // Refer image to method resizeImage
         $path = $this->resizeImage($file, $fileNameToStore);
         $thumbnail = $this->thumbnailImage($file, $thumbnailFileNameToStore);
-        return array('path' => $path, 'thumbnail' => $thumbnail);
+        return array('datetime' => $photo_datetime, 'path' => $path, 'thumbnail' => $thumbnail, 'exif' => $exif_data);
     }
 
     /**
@@ -183,4 +189,45 @@ class PhotoController extends Controller
         var_dump($photo->id);
         exit;
     }
+
+    /**
+     * Saves specified photos
+     *
+     * @param array $photo_ids
+     * @param $spring_id
+     * @param $observation_id
+     * @return void
+     */
+    public function savePhotos(array $photo_ids, $spring_id, $observation_id) {
+        if (Auth::user() && !empty($photo_ids)) {
+            foreach($photo_ids as $photo_id) {
+                $photo = Photo::where('id', $photo_id)->first();
+                if ($photo) {
+                    $photo->spring_id = $spring_id;
+                    if ($observation_id) $photo->observation_id = $observation_id;
+                    $photo->save();
+                }
+            }
+        }
+    }
+
+    /**
+     * Removes specified photos
+     *
+     * @param array $photo_ids
+     * @return void
+     */
+    public function deletePhotos(array $photo_ids) {
+        if (Auth::user() && !empty($photo_ids)) {
+            foreach($photo_ids as $photo_id) {
+                $photo = Photo::where('id', $photo_id)->first();
+                if ($photo) {
+                    Storage::disk('public')->delete($photo->path);
+                    Storage::disk('public')->delete($photo->thumbnail);
+                    $photo->delete();
+                }
+            }
+        }
+    }
+
 }

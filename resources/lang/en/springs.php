@@ -131,6 +131,7 @@ return [
     'edit' => 'Edit',
     'delete' => 'Delete',
     'cancel' => 'Cancel',
+    'ok' => 'Ok',
     'save' => 'Save',
     'confirm' => 'Confirm',
     'view' => 'View',
