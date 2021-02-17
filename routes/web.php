@@ -84,7 +84,9 @@ Route::resource('spring_feedback', SpringFeedbackController::class);
 Route::resource('springs.feedback', SpringFeedbackController::class);
 Route::resource('springs.observations', ObservationController::class);
 Route::resource('observations', ObservationController::class);
-Route::resource('springs.analyses', MeasurementController::class);
+Route::resource('springs.analyses', MeasurementController::class, [ 'parameters' => [
+    'analyses' => 'measurement'
+]]);
 Route::resource('measurements', MeasurementController::class);
 Route::get('/springs/{spring_id}/feedbackview', [SpringFeedbackController::class, 'view']);
 Route::get('/springsforreview', [SpringController::class, 'springsForReview']);

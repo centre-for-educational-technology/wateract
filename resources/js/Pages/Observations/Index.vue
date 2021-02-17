@@ -30,7 +30,7 @@
 
                             <div class="cursor-pointer p-1 inline hover:bg-gray-100 hover:font-bold"
                                  @click="showObservation(observation)">
-                                {{ observation.measurement_time }}
+                                {{ $moment(observation.measurement_time).format("DD.MM.YYYY H:mm") }}
                                 <span class="pl-2" v-if="observation.user">{{ observation.user.name }}</span>
                             </div>
 

@@ -7,6 +7,7 @@ use App\Models\MeasurementFieldValue;
 use App\Models\Spring;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Validator;
 use Inertia\Inertia;
 
 class MeasurementController extends Controller
@@ -97,36 +98,62 @@ class MeasurementController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Show the form for editing the specified measurement.
      *
-     * @param  \App\Models\Measurement  $measurement
-     * @return \Illuminate\Http\Response
+     * @param string $spring_code
+     * @param \App\Models\Measurement $measurement
+     * @return \Inertia\Response
      */
-    public function edit(int $spring_id, Measurement $measurement)
+    public function edit(string $spring_code, Measurement $measurement)
     {
-        return view('measurements.edit', compact('measurement') );
+        $spring = Spring::where('code', $spring_code)->with('measurements')->first();
+        if (Auth::user()) {
+            $measurement_fields = \App\Models\ModelField::where('model', 'measurement')->where('visible', 1)->orderBy('position')->get();
+            foreach ( $measurement_fields as $field ) {
+                $field_value = MeasurementFieldValue::where('measurement_id', $measurement->id)->where('field_id', $field['id'])->first();
+                if ($field_value) {
+                    $field['value'] = $field_value->value;
+                }
+            }
+            return Inertia::render('Measurements/Edit', [
+                'spring' => $spring,
+                'measurement' => $measurement,
+                'measurement_fields' => $measurement_fields
+            ]);
+        }
+        return Inertia::render('Measurements/Index', ['spring' => $spring]);
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update the specified measurement in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\Measurement  $measurement
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function update(Request $request, Measurement $measurement)
     {
-        $request->validate([
+        Validator::make($request->all(), [
             'analysis_time' => 'required',
-        ]);
-        $measurement_values = [
-            'analysis_time' => $request['analysis_time']
-        ];
-        $measurement->update($measurement_values);
-        // save measurement info
-        foreach ($request['measurement_values'] as $field_data) {
-            $field_id = $field_data->id;
-            $value = $field_data->value;
+        ])->validateWithBag('editMeasurement');
+
+        $measurement->update($request->all());
+
+        MeasurementController::updateFieldValues($measurement, $request['measurement_values']);
+
+        $spring = Spring::find($measurement->spring_id);
+        return redirect()->route('springs.analyses.index', compact('spring'))
+            ->with('success','Measurement updated successfully.');
+    }
+
+    /**
+     * @param $measurement
+     * @param $measurement_field_values
+     */
+    public function updateFieldValues($measurement, $measurement_field_values) {
+        foreach ($measurement_field_values as $field_data) {
+            $field_id = $field_data['id'];
+            $value = isset($field_data['value']) ? $field_data['value'] : false;
             $measurement_value = MeasurementFieldValue::where('field_id', $field_id)
                 ->where('measurement_id', $measurement->id)
                 ->first();
@@ -147,9 +174,6 @@ class MeasurementController extends Controller
                 }
             }
         }
-        $spring = Spring::find($measurement->spring_id);
-        return redirect()->route('springs.analyses.index', compact('spring'))
-            ->with('success','Measurement updated successfully.');
     }
 
     /**

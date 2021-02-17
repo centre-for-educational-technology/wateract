@@ -30,7 +30,7 @@
 
                             <div class="cursor-pointer p-1 inline hover:bg-gray-100 hover:font-bold"
                                  @click="showMeasurement(measurement)">
-                                {{ measurement.analysis_time }}
+                                {{ $moment(measurement.analysis_time).format("DD.MM.YYYY H:mm") }}
                                 <span class="pl-2" v-if="measurement.user">{{ measurement.user.name }}</span>
                             </div>
                             <measurement-view :spring="spring" :measurement="measurement" v-show="measurement.show"></measurement-view>

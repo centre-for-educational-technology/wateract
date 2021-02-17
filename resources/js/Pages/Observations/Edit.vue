@@ -155,7 +155,6 @@ export default {
             helpDialogVisible: false,
             helpText: '',
             datetime_phrases: {ok: this.$i18n.t('springs.ok'), cancel: this.$i18n.t('springs.cancel')},
-            mm: this.observation.measurement_time.toString(),
             photos: photos,
             dialogVisible: false,
             dialogPhotoUrl: '',

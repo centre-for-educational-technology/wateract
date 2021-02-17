@@ -13,7 +13,7 @@ class Measurement extends Model
     use HasFactory;
 
     protected $fillable = [
-        'spring_id', 'user_id', 'analysis_time'
+        'spring_id', 'user_id', 'analysis_time', 'status'
     ];
 
     public function spring()
