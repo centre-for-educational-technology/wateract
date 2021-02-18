@@ -45,7 +45,7 @@
 
         <div>
             <h1>{{ $t('springs.springs') }}</h1>
-            <maps style="height:600px;" :springs="springs"></maps>
+            <maps class="px-10" style="height:600px;" :springs="springs"></maps>
 
             <div class="text-center">
                 <div class="py-5">
