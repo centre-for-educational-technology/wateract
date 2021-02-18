@@ -73,7 +73,16 @@
                    :bounds="bounds"
                    :options="{zoomControl: false}"
                    @update:zoom="zoomUpdate"
+                   @ready="onReady"
+                   @locationfound="onLocationFound"
             >
+                <l-control>
+                    <svg @click="showLocation" class="h-8 w-8 p-1 bg-white border-2 rounded cursor-pointer hover:bg-gray-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd">
+                            <title>{{ $t('springs.pan_to_current_location') }}</title>
+                        </path>
+                    </svg>
+                </l-control>
                 <l-tile-layer
                     v-for="layer in maaametLayers"
                     :key="layer.name"
@@ -84,6 +93,10 @@
                     :maxZoom="layer.maxzoom"
                     :worldCopyJump="true"
                 />
+                <l-marker
+                    :lat-lng="currentPosition"
+                    :icon="currentPositionIcon"
+                ></l-marker>
                 <l-marker-cluster>
                     <l-marker v-for="(marker, index) in leafletmarkers"
                               :key="index"
@@ -117,9 +130,9 @@
 import JetLabel from "../../Jetstream/Label";
 import { gmapApi } from 'gmap-vue';
 import GmapCluster from 'gmap-vue/dist/components/cluster'
-import { CRS, latLngBounds, latLng } from "leaflet";
+import { CRS, latLngBounds, latLng, icon } from "leaflet";
 import L from 'leaflet';
-import { LMap, LTileLayer, LMarker, LIcon, LControlZoom, LPopup, LWMSTileLayer, LControlLayers } from 'vue2-leaflet';
+import { LMap, LTileLayer, LMarker, LIcon, LControlZoom, LControl, LPopup, LWMSTileLayer, LControlLayers } from 'vue2-leaflet';
 import "proj4leaflet";
 import Vue2LeafletMarkerCluster from 'vue2-leaflet-markercluster'
 import { Icon } from 'leaflet';
@@ -138,6 +151,9 @@ let projection = new L.Proj.CRS('EPSG:3301', '+proj=lcc +lat_1=59.33333333333334
     bounds: L.bounds([40500, 5993000], [1064500, 7017000])
 });
 
+let redDotSvgString = '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="40" stroke="black" stroke-width="10" fill="red"/></svg>';
+let redDotIconUrl = encodeURI("data:image/svg+xml," + redDotSvgString).replace('#','%23');
+
 export default {
     components: {
         latLngBounds,
@@ -146,6 +162,7 @@ export default {
         GmapCluster,
         "l-wms-tile-layer": LWMSTileLayer,
         LControlLayers,
+        LControl,
         LMap,
         LTileLayer,
         LMarker,
@@ -180,6 +197,12 @@ export default {
             });
         });
         return {
+            currentPosition: {lat: null, lng: null},
+            currentPositionIcon: icon({
+                iconUrl: redDotIconUrl,
+                iconSize: [16, 16],
+                iconAnchor: [8, 16]
+            }),
             projection: projection,
             crs_3857: L.CRS.EPSG3857,
 
@@ -262,6 +285,17 @@ export default {
         }
     },
     methods: {
+        onReady(mapObject) {
+            this.leafletMapObject = mapObject;
+        },
+        showLocation() {
+            this.leafletMapObject.locate();
+        },
+        onLocationFound(location) {
+            //this.updateLeafletLocation(location);
+            this.currentPosition= location.latlng;
+            this.leafletMapObject.setView(location.latlng, 9);
+        },
         zoomUpdate(zoom) {
             //console.log('updating zoom');
             //console.log(zoom);

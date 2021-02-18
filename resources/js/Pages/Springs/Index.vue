@@ -26,11 +26,6 @@
                                 <option value="">{{ $t('springs.classification') }}</option>
                                 <option v-for='data in classifications' :value='data.id'> {{ $t( data.name ) }}</option>
                             </select>
-                            <!--<select id="country" v-model="search_country" class="w-1/4 block bg-white border border-gray-300 hover:border-gray-500 mr-3 px-2 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
-                                <option value="">{{ $t('springs.country') }}</option>
-                                <option value="EE">{{ $t('springs.countries.ee') }}</option>
-                                <option value="LV">{{ $t('springs.countries.lv') }}</option>
-                            </select>-->
                             <button class="w-1/3 lg:w-1/4 sm:w-1/3 items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:shadow-outline-gray transition ease-in-out duration-150"
                                 v-on:click="updateMarkers">{{ $t('springs.search') }}</button>
                         </div>
@@ -74,7 +69,16 @@
                                v-if="leafletmap"
                                :bounds="bounds"
                                :options="{zoomControl: false}"
+                               @ready="onReady"
+                               @locationfound="onLocationFound"
                         >
+                            <l-control>
+                                <svg @click="showLocation" class="h-8 w-8 p-1 bg-white border-2 rounded cursor-pointer hover:bg-gray-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd">
+                                        <title>{{ $t('springs.pan_to_current_location') }}</title>
+                                    </path>
+                                </svg>
+                            </l-control>
                             <l-tile-layer
                                 v-for="layer in tilelayers"
                                 :key="layer.name"
@@ -85,15 +89,19 @@
                                 :maxZoom="layer.maxzoom"
                                 :worldCopyJump="true"
                             />
+                            <l-marker
+                                :lat-lng="currentPosition"
+                                :icon="currentPositionIcon"
+                            ></l-marker>
                             <l-marker-cluster>
-                            <l-marker v-for="(marker, index) in leafletmarkers"
+                                <l-marker v-for="(marker, index) in leafletmarkers"
                                       :key="index"
                                       :lat-lng="marker.position">
-                                <l-popup>
-                                    <div class="pb-2"><a class="underline text-blue-700" :href="'springs/'+marker.id+'/'">{{marker.name || 'Unnamed'}}</a></div>
-                                    <div>{{ $t('springs.spring_code') }}: {{marker.id}} <br />{{ $t('springs.status') }}: {{ $t('springs.status_options.'+marker.status) }}</div>
-                                </l-popup>
-                            </l-marker>
+                                    <l-popup>
+                                        <div class="pb-2"><a class="underline text-blue-700" :href="'springs/'+marker.id+'/'">{{marker.name || 'Unnamed'}}</a></div>
+                                        <div>{{ $t('springs.spring_code') }}: {{marker.id}} <br />{{ $t('springs.status') }}: {{ $t('springs.status_options.'+marker.status) }}</div>
+                                    </l-popup>
+                                </l-marker>
                             </l-marker-cluster>
                             <l-control-zoom position="bottomright"  ></l-control-zoom>
 
@@ -159,9 +167,9 @@ import SpringView from './SpringView'
 import JetLabel from "../../Jetstream/Label";
 import NavButton from '../../Components/NavButton';
 
-import { CRS, latLngBounds, latLng } from "leaflet";
+import { CRS, latLngBounds, latLng, icon } from "leaflet";
 import L from 'leaflet';
-import { LMap, LTileLayer, LMarker, LIcon, LControlZoom, LPopup, LWMSTileLayer, LControlLayers } from 'vue2-leaflet';
+import { LMap, LTileLayer, LMarker, LIcon, LControlZoom, LControl, LPopup, LWMSTileLayer, LControlLayers } from 'vue2-leaflet';
 import "proj4leaflet";
 import proj4 from "proj4";
 import Vue2LeafletMarkerCluster from 'vue2-leaflet-markercluster'
@@ -171,6 +179,9 @@ var projection = new L.Proj.CRS('EPSG:3301', '+proj=lcc +lat_1=59.33333333333334
     origin: [40500, 5993000],
     bounds: L.bounds([40500, 5993000], [1064500, 7017000])
 });
+
+let redDotSvgString = '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="40" stroke="black" stroke-width="10" fill="red"/></svg>';
+let redDotIconUrl = encodeURI("data:image/svg+xml," + redDotSvgString).replace('#','%23');
 
 export default {
     components: {
@@ -184,6 +195,7 @@ export default {
         NavButton,
         "l-wms-tile-layer": LWMSTileLayer,
         LControlLayers,
+        LControl,
         LMap,
         LTileLayer,
         LMarker,
@@ -221,7 +233,12 @@ export default {
         return {
             search_name: '',
             search_classification: '',
-            search_country: '',
+            currentPosition: {lat: null, lng: null},
+            currentPositionIcon: icon({
+                iconUrl: redDotIconUrl,
+                iconSize: [16, 16],
+                iconAnchor: [8, 16]
+            }),
             leafletmap: true,
             googlemap: false,
             crs: projection,
@@ -304,6 +321,17 @@ export default {
             })*/
     },
     methods: {
+        onReady(mapObject) {
+            this.leafletMapObject = mapObject;
+        },
+        showLocation() {
+            this.leafletMapObject.locate();
+        },
+        onLocationFound(location) {
+            //this.updateLeafletLocation(location);
+            this.currentPosition= location.latlng;
+            this.leafletMapObject.setView(location.latlng, 9);
+        },
         zoomUpdate(zoom) {
             console.log(zoom);
         },
@@ -347,7 +375,6 @@ export default {
             let params = {
                 "name": this.search_name,
                 "classification": this.search_classification,
-                "country": this.search_country,
             }
             axios.get('/getSprings', { params }).then(response => {
                 springs = response.data;
