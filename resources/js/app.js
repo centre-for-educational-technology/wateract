@@ -18,6 +18,7 @@ import DataTable from 'laravel-vue-datatable';
 import VueInternationalization from 'vue-i18n';
 import Locale from './vue-i18n-locales.generated';
 import store from "./Modules/store";
+import VueGtag from "vue-gtag";
 
 Vue.use(VueInternationalization);
 const lang = localStorage.getItem('locale') || 'et';
@@ -53,6 +54,10 @@ Vue.use(GmapVue, {
     installComponents: true
 });
 Vue.use(VueLodash, { name: 'custom' , lodash: lodash })
+
+Vue.use(VueGtag, {
+    config: { id: process.env.MIX_GOOGLE_ANALYTICS_KEY }
+});
 
 const app = document.getElementById('app');
 
