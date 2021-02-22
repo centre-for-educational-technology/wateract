@@ -11,21 +11,21 @@ return [
     |
     */
 
-    'users' => 'Users',
-    'name' => 'Name',
-    'email' => 'Email',
-    'role' => 'Role',
-    'counties' => 'Counties',
-    'edit' => 'Edit',
-    'edit_user' => 'Edit User',
-    'save' => 'Save',
-    'select_counties' => 'Select counties',
+    'users' => 'Lietotāji',
+    'name' => 'Vārds',
+    'email' => 'E-psts',
+    'role' => 'Loma',
+    'counties' => 'Novadi',
+    'edit' => 'Rediģēt',
+    'edit_user' => 'Labot lietotāju',
+    'save' => 'Saglabāt',
+    'select_counties' => 'Izvēlēties novadu',
 
-    'delete_user' => 'Delete User',
-    'permanently_delete_user_account' => 'Permanently delete user account.',
-    'delete_account_notification' => 'User account will be permanently deleted.',
-    'delete_account_confirmation' => 'Are you sure you want to delete this user account? This account will be permanently deleted. Please enter your password to confirm you would like to permanently delete this user account.',
-    'password' => 'Password',
-    'nevermind' => 'Nevermind',
+    'delete_user' => 'Dzēst lietotāju',
+    'permanently_delete_user_account' => 'Neatgriezeniski dzēst lietotāja kontu.',
+    'delete_account_notification' => 'Lietotāja konts tiks dzēsts neatgriezeniski.',
+    'delete_account_confirmation' => 'Vai esat drošs, ka vēlaties dzēst šo lietotāja kontu? Šis konts tiks dzēsts neatgriezeniski. Lūdzu ievadiet savu paroli, lai apstiprinātu, ka vēlaties neatgriezeniski dzēst šo lietotāja kontu.',
+    'password' => 'Parole',
+    'nevermind' => 'Atcelt',
 
 ];

@@ -12,18 +12,18 @@ return [
     |
     */
 
-    'failed' => 'These credentials do not match our records.',
-    'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
-    'name' => 'Name',
-    'email' => 'Email',
-    'password' => 'Password',
-    'confirm_password' => 'Confirm Password',
-    'already_register' => 'Already registered?',
-    'register' => 'Register',
-    'remember_me' => 'Remember me',
-    'login' => 'Login',
-    'forgot_password' => 'Forgot your password?',
-    'forgot_password_text' => 'Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.',
-    'email_password_reset_link' => 'Email Password Reset Link',
+    'failed' => 'Šie pieslēgšanās dati nav reģistrēti mūsu sistēmā.',
+    'throttle' => 'Pārāk daudz pieslēgšanās mēģinājumu. Lūdzu mēģiniet vēlreiz pēc :seconds sekundēm.',
+    'name' => 'Vārds',
+    'email' => 'E-pasts',
+    'password' => 'Parole',
+    'confirm_password' => 'Apstiprināt paroli',
+    'already_register' => 'Esat jau reģistrējies?',
+    'register' => 'Reģistrēties',
+    'remember_me' => 'Atcerēties mani',
+    'login' => 'Pieslēgties',
+    'forgot_password' => 'Aizmirsi savu paroli?',
+    'forgot_password_text' => 'Aizmirsi savu paroli? Nav problēmu. Paziņojiet mums savu e-pasta adresi, uz kuru mēs Jums nosūtīsim paroles atiestatīšanas saiti.',
+    'email_password_reset_link' => 'Saņemt e-pastā paroles atiestatīšanas saiti',
 
 ];
