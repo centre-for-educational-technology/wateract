@@ -45,7 +45,7 @@
 
         <div>
             <h1>{{ $t('springs.springs') }}</h1>
-            <maps class="px-10" style="height:600px;" :springs="springs"></maps>
+            <leaflet-maps class="px-5 lg:px-10" style="height:500px;" :springs="springs"></leaflet-maps>
 
             <div class="text-center">
                 <div class="py-5">
@@ -175,12 +175,12 @@
 
 <script>
 import AppLayout from './../../Layouts/AppLayout';
-import Maps from './Maps';
+import LeafletMaps from './LeafletMaps';
 
 export default {
     components: {
-        Maps,
         AppLayout,
+        LeafletMaps,
     },
     props: ['springs'],
 }

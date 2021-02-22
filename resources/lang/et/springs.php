@@ -279,4 +279,9 @@ return [
     'permanently_delete_spring' => 'Kustuta allikas jäädavalt',
     'delete_spring_confirmation' => 'Oled sa kindel, et soovid selle allika kustutada?',
     'nevermind' => 'Katkesta',
+
+    'estonia_map' => 'Maa-ameti kaart',
+    'world_map' => 'Maailma kaart',
+    'relief_map' => 'Reljeefkaart',
+    'orthophoto' => 'Ortofoto',
 ];

@@ -277,4 +277,9 @@ return [
     'spring_code' => 'Spring code',
     'date_time' => 'Date & Time',
     'created_at' => 'Created at',
+
+    'estonia_map' => 'Estonia Map',
+    'world_map' => 'World Map',
+    'relief_map' => 'Relief Map',
+    'orthophoto' => 'Ortophoto',
 ];

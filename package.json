@@ -34,6 +34,7 @@
         "laravel-permission-to-vuejs": "^2.0.5",
         "laravel-vue-datatable": "^0.6.0",
         "leaflet": "^1.7.1",
+        "leaflet-gesture-handling": "^1.2.1",
         "luxon": "^1.26.0",
         "marker-clusterer-plus": "^2.1.4",
         "proj4leaflet": "^1.0.2",

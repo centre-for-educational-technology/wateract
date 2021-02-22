@@ -318,7 +318,11 @@ export default {
             "delete_spring_notification": "Spring and spring observations and measurements will be deleted permanently.",
             "permanently_delete_spring": "Permanently delete spring",
             "delete_spring_confirmation": "Are you sure you want to delete this spring?",
-            "nevermind": "Nevermind"
+            "nevermind": "Nevermind",
+            "estonia_map": "Estonia Map",
+            "world_map": "World Map",
+            "relief_map": "Relief Map",
+            "orthophoto": "Ortophoto"
         },
         "users": {
             "users": "Users",
@@ -941,7 +945,11 @@ export default {
             "delete_spring_notification": "Allikas ning allika vaatlused ja mõõtmised kustutatakse jäädavalt.",
             "permanently_delete_spring": "Kustuta allikas jäädavalt",
             "delete_spring_confirmation": "Oled sa kindel, et soovid selle allika kustutada?",
-            "nevermind": "Katkesta"
+            "nevermind": "Katkesta",
+            "estonia_map": "Maa-ameti kaart",
+            "world_map": "Maailma kaart",
+            "relief_map": "Reljeefkaart",
+            "orthophoto": "Ortofoto"
         },
         "users": {
             "users": "Kasutajad",
@@ -1391,7 +1399,11 @@ export default {
             "spring_name": "Spring name",
             "spring_code": "Spring code",
             "date_time": "Date & Time",
-            "created_at": "Created at"
+            "created_at": "Created at",
+            "estonia_map": "Estonia Map",
+            "world_map": "World Map",
+            "relief_map": "Relief Map",
+            "orthophoto": "Ortophoto"
         },
         "users": {
             "users": "Users",

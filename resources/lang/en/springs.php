@@ -283,4 +283,9 @@ return [
     'permanently_delete_spring' => 'Permanently delete spring',
     'delete_spring_confirmation' => 'Are you sure you want to delete this spring?',
     'nevermind' => 'Nevermind',
+
+    'estonia_map' => 'Estonia Map',
+    'world_map' => 'World Map',
+    'relief_map' => 'Relief Map',
+    'orthophoto' => 'Ortophoto',
 ];
