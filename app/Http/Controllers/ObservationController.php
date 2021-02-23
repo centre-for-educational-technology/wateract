@@ -189,6 +189,8 @@ class ObservationController extends Controller
             'measurement_time' => 'required',
         ])->validateWithBag('editObservation');
 
+        $date = new DateTime($request['measurement_time']);
+        $request['measurement_time'] = $date->format('Y-m-d H:i');
         $observation->update($request->all());
 
         ObservationController::updateFieldValues($observation, $request['observation_values']);
