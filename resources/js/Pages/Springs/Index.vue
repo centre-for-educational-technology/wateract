@@ -1,8 +1,3 @@
-<style>
-    @import "leaflet.markercluster/dist/MarkerCluster.css";
-    @import "leaflet.markercluster/dist/MarkerCluster.Default.css";
-</style>
-
 <template>
     <app-layout>
         <template #header>
@@ -32,85 +27,7 @@
                         <small v-on:click="initializeSearch" class="cursor-pointer underline">{{ $t('springs.see_all_springs') }}</small>
                     </div>
 
-                    <div class="z-depth-1-half map-container" style="height:500px;">
-                        <GmapMap ref="map" v-if="googlemap"
-                            :center="{lat:58.279, lng:26.054}"
-                            :zoom="7"
-                            map-type-id="terrain"
-                            style="width: 100%; height: 100%"
-                        >
-                            <GmapCluster>
-                            <GmapMarker
-                                :key="index"
-                                v-for="(location, index) in markers"
-                                :position="location.position"
-                                :clickable="true"
-                                :icon="location.icon"
-                                @click="toggleInfoWindow(location, location.id)"
-                            />
-                            <GmapInfoWindow
-                                :options="infoOptions"
-                                :position="infoWindowPos"
-                                :opened="infoWinOpen"
-                                @closeclick="infoWinOpen=false"
-                            >
-                                <div v-html="infoContent"></div>
-                            </GmapInfoWindow>
-                            </GmapCluster>
-                        </GmapMap>
-                        <l-map ref="leafletMap" style="z-index:1;width:100%;height:100%"
-                               :minZoom="3"
-                               :maxZoom="14"
-                               :zoom="13"
-                               :center="leafletCenter"
-                               :tms="tms"
-                               :crs="crs"
-                               :continuousWorld="true"
-                               v-if="leafletmap"
-                               :bounds="bounds"
-                               :options="{zoomControl: false}"
-                               @ready="onReady"
-                               @locationfound="onLocationFound"
-                        >
-                            <l-control>
-                                <svg @click="showLocation" class="h-8 w-8 p-1 bg-white border-2 rounded cursor-pointer hover:bg-gray-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd">
-                                        <title>{{ $t('springs.pan_to_current_location') }}</title>
-                                    </path>
-                                </svg>
-                            </l-control>
-                            <l-tile-layer
-                                v-for="layer in tilelayers"
-                                :key="layer.name"
-                                :url="layer.url"
-                                :zIndex="layer.zindex"
-                                :attribution="attribution"
-                                :tms="tms"
-                                :maxZoom="layer.maxzoom"
-                                :worldCopyJump="true"
-                            />
-                            <l-marker
-                                :lat-lng="currentPosition"
-                                :icon="currentPositionIcon"
-                            ></l-marker>
-                            <l-marker-cluster>
-                                <l-marker v-for="(marker, index) in leafletmarkers"
-                                      :key="index"
-                                      :lat-lng="marker.position">
-                                    <l-popup>
-                                        <div class="pb-2"><a class="underline text-blue-700" :href="'springs/'+marker.id+'/'">{{marker.name || 'Unnamed'}}</a></div>
-                                        <div>{{ $t('springs.spring_code') }}: {{marker.id}} <br />{{ $t('springs.status') }}: {{ $t('springs.status_options.'+marker.status) }}</div>
-                                    </l-popup>
-                                </l-marker>
-                            </l-marker-cluster>
-                            <l-control-zoom position="bottomright"  ></l-control-zoom>
-
-                        </l-map>
-                        <div class="block">
-                            <button class="border float-right" v-if="googlemap" v-on:click="googlemap=false;leafletmap = true;">Maa-amet Map</button>
-                            <button class="border float-right" v-if="leafletmap" v-on:click="leafletmap=false;googlemap = true;">Google Map</button>
-                        </div>
-                    </div>
+                    <leaflet-maps style="height:500px;" :key="mapRefresh" :springs="mapSprings" ></leaflet-maps>
 
                     <div v-show="featured" v-if="featured_springs.length > 0">
                         <ul class="list-reset flex border-b">
@@ -161,136 +78,30 @@
 import AppLayout from './../../Layouts/AppLayout'
 import JetInput from "../../Jetstream/Input";
 import JetSecondaryButton from './../../Jetstream/SecondaryButton'
-import { gmapApi } from 'gmap-vue';
-import GmapCluster from 'gmap-vue/dist/components/cluster'
 import SpringView from './SpringView'
 import JetLabel from "../../Jetstream/Label";
 import NavButton from '../../Components/NavButton';
-
-import { CRS, latLngBounds, latLng, icon } from "leaflet";
-import L from 'leaflet';
-import { LMap, LTileLayer, LMarker, LIcon, LControlZoom, LControl, LPopup, LWMSTileLayer, LControlLayers } from 'vue2-leaflet';
-import "proj4leaflet";
-import proj4 from "proj4";
-import Vue2LeafletMarkerCluster from 'vue2-leaflet-markercluster'
-
-var projection = new L.Proj.CRS('EPSG:3301', '+proj=lcc +lat_1=59.33333333333334 +lat_2=58 +lat_0=57.51755393055556 +lon_0=24 +x_0=500000 +y_0=6375000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs', {
-    resolutions: [4000, 2000, 1000, 500, 250, 125, 62.5, 31.25, 15.625, 7.8125, 3.90625, 1.953125, 0.9765625, 0.48828125, 0.244140625, 0.122070313, 0.061035156, 0.030517578, 0.015258789],
-    origin: [40500, 5993000],
-    bounds: L.bounds([40500, 5993000], [1064500, 7017000])
-});
-
-let redDotSvgString = '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="40" stroke="black" stroke-width="10" fill="red"/></svg>';
-let redDotIconUrl = encodeURI("data:image/svg+xml," + redDotSvgString).replace('#','%23');
+import LeafletMaps from './LeafletMaps';
 
 export default {
     components: {
         AppLayout,
         JetInput,
         JetSecondaryButton,
-        gmapApi,
-        GmapCluster,
         SpringView,
         JetLabel,
         NavButton,
-        "l-wms-tile-layer": LWMSTileLayer,
-        LControlLayers,
-        LControl,
-        LMap,
-        LTileLayer,
-        LMarker,
-        LIcon,
-        LControlZoom,
-        LPopup,
-        'l-marker-cluster': Vue2LeafletMarkerCluster
+        LeafletMaps,
     },
     props: ['springs', 'featured_springs', 'newest_springs', 'classifications'],
     data() {
-        const mapIcons = {
-            'confirmed': 'https://maps.google.com/mapfiles/ms/micons/blue-dot.png',
-            'submitted': 'https://maps.google.com/mapfiles/ms/micons/orange-dot.png',
-        };
-        let markers = [];
-        let leafletmarkers = [];
-        _.forEach(this.springs, function(spring) {
-            markers.push({
-                id: spring.code,
-                name: spring.name,
-                description: spring.description,
-                status: spring.status,
-                date_build: "",
-                position: {lat: spring.latitude, lng: spring.longitude},
-                icon: mapIcons[spring.status],
-            });
-            leafletmarkers.push({
-                id: spring.code,
-                name: spring.name,
-                status: spring.status,
-                position: latLng(spring.latitude, spring.longitude),
-            });
-        });
-
         return {
+            mapSprings: this.springs,
+            mapRefresh: 0,
             search_name: '',
             search_classification: '',
-            currentPosition: {lat: null, lng: null},
-            currentPositionIcon: icon({
-                iconUrl: redDotIconUrl,
-                iconSize: [16, 16],
-                iconAnchor: [8, 16]
-            }),
-            leafletmap: true,
-            googlemap: false,
-            crs: projection,
-            tms: true,
-            leafletCenter: latLng(58.379, 24.554),
-            attribution: "<a href='http://www.maaamet.ee'>Maa-amet</a>",
-            maaamet_url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/vreljeef/{z}/{x}/{y}.png&ASUTUS=MAAAMET&KESKKOND=LIVE&IS=TMSNAIDE',
-            zoom: 5,
-            baseUrl: 'http://kaart.maaamet.ee/wms/alus',
-            bounds: latLngBounds([
-                [60.4349, 29.4338],
-                [56.7458, 20.373]
-            ]),
-            leafletmarkers: leafletmarkers,
-            tilelayers: [
-                {
-                    name: 'reljeef',
-                    url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/vreljeef/{z}/{x}/{y}.png&ASUTUS=MAAAMET&KESKKOND=LIVE&IS=TMSNAIDE',
-                    zindex: 1,
-                    maxzoom: 11,
-                },
-                {
-                    name: 'hybrid',
-                    url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/hybriid/{z}/{x}/{y}.png&ASUTUS=MAAAMET&KESKKOND=LIVE&IS=TMSNAIDE',
-                    zindex: 2,
-                    maxzoom: 11,
-                },
-                {
-                    name: 'pohi',
-                    url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/epk_vv/{z}/{x}/{y}.png&ASUTUS=MAAAMET&KESKKOND=LIVE&IS=TMSNAIDE',
-                    zindex: 3,
-                    maxzoom: 11,
-                }
-
-            ],
-
             featured: this.featured_springs.length>0 ? true: false,
             newest: this.featured_springs.length>0 ? false: true,
-            map: null,
-            markers: markers,
-            infoWinOpen: false,
-            infoContent: '',
-            infoWindowPos: {
-                lat: 0,
-                lng: 0
-            },
-            infoOptions: {
-                pixelOffset: {
-                    width: 0,
-                    height: -35
-                }
-            },
         }
     },
     mounted() {
@@ -321,46 +132,6 @@ export default {
             })*/
     },
     methods: {
-        onReady(mapObject) {
-            this.leafletMapObject = mapObject;
-        },
-        showLocation() {
-            this.leafletMapObject.locate();
-        },
-        onLocationFound(location) {
-            //this.updateLeafletLocation(location);
-            this.currentPosition= location.latlng;
-            this.leafletMapObject.setView(location.latlng, 9);
-        },
-        zoomUpdate(zoom) {
-            console.log(zoom);
-        },
-        toggleInfoWindow: function (marker, idx) {
-            this.infoWindowPos = ({
-                    lat : marker.position.lat,
-                    lng : marker.position.lng,
-                }
-            );
-            this.infoContent = this.getInfoWindowContent(marker);
-
-            //check if its the same marker that was selected if yes toggle
-            if (this.currentMidx == idx) {
-                this.infoWinOpen = !this.infoWinOpen;
-            }
-            //if different marker set infowindow to open and reset current marker index
-            else {
-                this.infoWinOpen = true;
-                this.currentMidx = idx;
-            }
-        },
-        getInfoWindowContent: function (marker) {
-            var markerName = "Unnamed";
-            if (marker.name) {
-                markerName = marker.name;
-            }
-            var markerinfo = '<div>Allikad.info code: '+marker.id+'<br />Status: '+marker.status+'</div>';
-            return('<div class="info_window container"> <a class="underline text-blue-700" href="springs/'+marker.id+'/">'+markerName+'</a><br /><br />'+markerinfo+'</div>');
-        },
         initializeSearch: function() {
             this.search_name = '';
             this.search_classification = '';
@@ -368,32 +139,14 @@ export default {
             this.updateMarkers();
         },
         updateMarkers: function () {
-            //get markers based on search params
-            let springs = [];
-            let markers = [];
-            let leafletmarkers = [];
+            //get springs based on search params
             let params = {
                 "name": this.search_name,
                 "classification": this.search_classification,
             }
             axios.get('/getSprings', { params }).then(response => {
-                springs = response.data;
-                _.forEach(springs, function(spring) {
-                    markers.push({
-                        id: spring.code,
-                        name: spring.name,
-                        status: spring.status,
-                        position: {lat: spring.latitude, lng: spring.longitude},
-                    });
-                    leafletmarkers.push({
-                        id: spring.code,
-                        name: spring.name,
-                        status: spring.status,
-                        position: latLng(spring.latitude, spring.longitude),
-                    });
-                });
-                this.markers=markers;
-                this.leafletmarkers = leafletmarkers;
+                this.mapSprings = response.data;
+                this.mapRefresh++;
             })
         }
 
