@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Measurement;
 use App\Models\MeasurementFieldValue;
 use App\Models\Spring;
+use DateTime;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
@@ -51,6 +52,7 @@ class MeasurementController extends Controller
      * @param \Illuminate\Http\Request $request
      * @param int $spring_id
      * @return \Illuminate\Http\Response
+     * @throws \Exception
      */
     public function store(Request $request)
     {
@@ -58,10 +60,11 @@ class MeasurementController extends Controller
         $request->validate([
             'analysis_time' => 'required'
         ]);
+        $date = new DateTime($request['analysis_time']);
         $measurement_values = [
             'user_id' => Auth::id(),
             'spring_id' => $spring_id,
-            'analysis_time' => $request['analysis_time']
+            'analysis_time' => $date->format('Y-m-d H:i')
         ];
         $request['user_id'] = Auth::id();
         $measurement = Measurement::create($measurement_values);
@@ -127,9 +130,10 @@ class MeasurementController extends Controller
     /**
      * Update the specified measurement in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Measurement  $measurement
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Models\Measurement $measurement
      * @return \Illuminate\Http\RedirectResponse
+     * @throws \Exception
      */
     public function update(Request $request, Measurement $measurement)
     {
@@ -137,6 +141,8 @@ class MeasurementController extends Controller
             'analysis_time' => 'required',
         ])->validateWithBag('editMeasurement');
 
+        $date = new DateTime($request['analysis_time']);
+        $request['analysis_time'] = $date->format('Y-m-d H:i');
         $measurement->update($request->all());
 
         MeasurementController::updateFieldValues($measurement, $request['measurement_values']);
