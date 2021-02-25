@@ -2,18 +2,15 @@
     <app-layout>
         <template #header>
             <div class="flex w-full">
-            <h1 class="inline w-4/5" v-if="spring.name">
-                {{ spring.name }}
-            </h1>
-            <h1 class="inline w-4/5" v-if="!spring.name">
-                {{ $t('springs.unnamed') }}
-            </h1>
-            <div class="w-1/5" v-if="$page.user">
-                <div class="float-right">
-                    <nav-button v-if="(can('edit spring') || spring.status === 'draft')" :href="'/springs/'+spring.code+'/edit'">{{ $t('springs.edit') }}</nav-button>
-                    <spring-feedback class="mt-10 sm:mt-0" :spring="spring" />
+                <h1 class="inline w-4/5">
+                    {{ spring.name || $t('springs.unnamed') }}
+                </h1>
+                <div class="w-1/5" v-if="$page.user">
+                    <div class="float-right">
+                        <nav-button v-if="(can('edit spring') || spring.status === 'draft')" :href="'/springs/'+spring.code+'/edit'">{{ $t('springs.edit') }}</nav-button>
+                        <spring-feedback class="mt-10 sm:mt-0" :spring="spring" />
+                    </div>
                 </div>
-            </div>
             </div>
         </template>
 
@@ -24,55 +21,9 @@
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
 
-                        <div class="z-depth-1-half map-container w-full" style="height:410px;">
-                            <GmapMap ref="map"
-                                 :center="{lat:latitude, lng:longitude}"
-                                 :zoom="19"
-                                 map-type-id="terrain"
-                                 style="width: 100%; height: 100%"
-                                     v-if="googlemap"
-                            >
-                            <GmapMarker
-                                :key="index"
-                                v-for="(location, index) in markers"
-                                :position="location.position"
-                            />
-                            </GmapMap>
-                        <div ref="leafmap"> </div>
-                        <l-map ref="myMap" style="z-index:0;width:100%;height:100%"
-                               :minZoom="3"
-                               :maxZoom="14"
-                               :zoom="13"
-                               :center="leafletCenter"
-                               :tms="tms"
-                               :crs="crs"
-                               :continuousWorld="true"
-                               v-if="leafletmap"
-                               @ready="onReady"
-                               :bounds="bounds"
-                               :options="{zoomControl: false}"
-                        >
-                            <!--<l-control-layers />-->
-                            <l-tile-layer
-                                v-for="layer in tilelayers"
-                                :key="layer.name"
-                                :url="layer.url"
-                                :zIndex="layer.zindex"
-                                :attribution="attribution"
-                                :tms="tms"
-                                :maxZoom="layer.maxzoom"
-                                :worldCopyJump="true"
-                            />
-                            <l-marker :lat-lng="location">
-                            </l-marker>
-                            <l-control-zoom position="bottomright"  ></l-control-zoom>
-
-                        </l-map>
-                            <div class="block">
-                                <button class="border float-right" v-if="googlemap" v-on:click="googlemap=false;leafletmap = true;">Maa-amet Map</button>
-                                <button class="border float-right" v-if="leafletmap" v-on:click="leafletmap=false;googlemap = true;">Google Map</button>
-                            </div>
-                        </div>
+                    <div class="z-depth-1-half map-container w-full" style="height:500px;">
+                        <leaflet-maps :spring="spring" :view="'show'"></leaflet-maps>
+                    </div>
 
                     <div class="flex -mx-2 w-full px-2 py-2">
                         <div class="w-3/4 px-2">
@@ -205,23 +156,10 @@
 <script>
 import AppLayout from './../../Layouts/AppLayout';
 import SpringNavigation from './SpringNavigation';
-import JetLabel from "../../Jetstream/Label";
+import JetLabel from '../../Jetstream/Label';
 import NavButton from '../../Components/NavButton';
-import { gmapApi } from 'gmap-vue';
-import SpringFeedback from './../SpringFeedback/Create'
-
-import { CRS, latLngBounds, latLng } from "leaflet";
-import L from 'leaflet';
-import { LMap, LTileLayer, LMarker, LIcon, LControlZoom, LTooltip, LWMSTileLayer, LControlLayers } from 'vue2-leaflet';
-import "proj4leaflet";
-import proj4 from "proj4";
-
-
-var projection = new L.Proj.CRS('EPSG:3301', '+proj=lcc +lat_1=59.33333333333334 +lat_2=58 +lat_0=57.51755393055556 +lon_0=24 +x_0=500000 +y_0=6375000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs', {
-    resolutions: [4000, 2000, 1000, 500, 250, 125, 62.5, 31.25, 15.625, 7.8125, 3.90625, 1.953125, 0.9765625, 0.48828125, 0.244140625, 0.122070313, 0.061035156, 0.030517578, 0.015258789],
-    origin: [40500, 5993000],
-    bounds: L.bounds([40500, 5993000], [1064500, 7017000])
-});
+import SpringFeedback from './../SpringFeedback/Create';
+import LeafletMaps from './LeafletMaps';
 
 export default {
     components: {
@@ -230,70 +168,11 @@ export default {
         JetLabel,
         NavButton,
         SpringFeedback,
-        gmapApi,
-        "l-wms-tile-layer": LWMSTileLayer,
-        LControlLayers,
-        LMap,
-        LTileLayer,
-        LMarker,
-        LIcon,
-        LControlZoom,
+        LeafletMaps,
     },
     props: ['spring'],
     data() {
         return {
-            leafletmap: this.spring.country == 'EE' ? true : false,
-            googlemap: this.spring.country == 'EE' ? false : true,
-            crs: projection,
-            //crs:null,
-            crs2: L.CRS.EPSG4326,
-            //url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/kaart/{z}/{x}/{y}.jpg&ASUTUS=MAAAMET&KESKKOND=EXAMPLES',
-            tms: true,
-            url: 'http://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}',
-            leafletCenter: latLng(this.spring.latitude, this.spring.longitude),
-            //maaamet_url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-            //url: 'http://kaart.maaamet.ee/wms/alus?layers=MA-ALUS',
-            attribution: "<a href='http://www.maaamet.ee'>Maa-amet</a>",
-            location: latLng(this.spring.latitude, this.spring.longitude),
-            maaamet_url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/vreljeef/{z}/{x}/{y}.png&ASUTUS=MAAAMET&KESKKOND=LIVE&IS=TMSNAIDE',
-            zoom: 5,
-            baseUrl: 'http://kaart.maaamet.ee/wms/alus',
-            bounds: latLngBounds([
-                [60.4349, 29.4338],
-                [56.7458, 20.373]
-            ]),
-
-            tilelayers: [
-                {
-                    name: 'reljeef',
-                    url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/vreljeef/{z}/{x}/{y}.png&ASUTUS=ALLIKAD&KESKKOND=LIVE',
-                    zindex: 1,
-                    maxzoom: 11,
-                },
-                {
-                    name: 'hybrid',
-                    url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/hybriid/{z}/{x}/{y}.png&ASUTUS=ALLIKAD&KESKKOND=LIVE',
-                    zindex: 2,
-                    maxzoom: 11,
-                },
-                {
-                    name: 'pohi',
-                    url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/epk_vv/{z}/{x}/{y}.png&ASUTUS=ALLIKAD&KESKKOND=LIVE',
-                    zindex: 3,
-                    maxzoom: 11,
-                }
-
-            ],
-
-            map: null,
-            latitude: this.spring.latitude,
-            longitude: this.spring.longitude,
-            markers: [{
-                id: this.spring.id,
-                name: this.spring.name,
-                description: this.spring.description,
-                position: {lat: this.spring.latitude, lng: this.spring.longitude}
-            }],
             dialogVisible: false,
             dialogPhotoUrl: '',
         }
@@ -310,47 +189,7 @@ export default {
             this.dialogPhotoUrl = '/' + photo.path;
             this.dialogVisible = true;
         },
-        onReady() {
-            this.$refs.myMap.mapObject.setView(this.leafletCenter, 11);
-        }
     },
-    mounted: function() {
-        console.log(this.bounds);
-        //this.$refs.myMap.fitBounds(this.bounds);
-        //});
-        /*this.$nextTick(() => {
-            this.map = this.$refs.myMap.mapObject;
-        });
-        console.log(this.$refs.leafmap);
-        console.log(this.bounds);
-
-        this.map.fitBounds(this.bounds);*/
-
-        //this.$refs.leafmap.mapObject.fitBounds(this.bounds);
-        /*map.fitBounds([
-            [60.28165, 30.624],
-            [57.17855, 19.46739]
-        ]);*/
-
-        /*var projection2 = new L.Proj.CRS('EPSG:3301', '+proj=lcc +lat_1=59.33333333333334 +lat_2=58 +lat_0=57.51755393055556 +lon_0=24 +x_0=500000 +y_0=6375000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs', {
-            resolutions: [4000, 2000, 1000, 500, 250, 125, 62.5, 31.25, 15.625, 7.8125, 3.90625, 1.953125, 0.9765625, 0.48828125, 0.244140625, 0.122070313, 0.061035156, 0.030517578, 0.015258789],
-            origin: [40500, 5993000],
-            bounds: L.bounds([40500, 5993000], [1064500, 7017000])
-        });
-        var map = L.map('leafmap', {
-            crs: projection2
-        });
-        var tms = new L.TileLayer('https://tiles.maaamet.ee/tm/tms/1.0.0/foto/{z}/{x}/{y}.jpg&ASUTUS=MAAAMET&KESKKOND=LIVE&IS=TMSNAIDE', {
-            continuousWorld: true,
-            tms: true,
-            attribution: "<a  href='http://www.maaamet.ee/'>Maa-amet</a>",
-        });
-        map.setView([58.66, 25.05], 3);
-        map.addLayer(tms);*/
-    }
 }
 
-
-
 </script>
-

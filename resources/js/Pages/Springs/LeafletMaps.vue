@@ -37,6 +37,9 @@
                     :icon="currentPositionIcon"
                 ></l-marker>
 
+                <l-marker v-if="this.spring" :lat-lng="springLocation">
+                </l-marker>
+
                 <l-marker-cluster>
                     <l-marker v-for="(marker, index) in leafletmarkers"
                               :key="index"
@@ -94,14 +97,17 @@
                     :zIndex="layer.zindex"
                     :attribution="attribution"
                     :tms="tms"
-                    :maxZoom="layer.maxzoom"
                     :worldCopyJump="true"
+                    :options="{ maxNativeZoom: layer.maxzoom, maxZoom: layer.maxzoom }"
                 />
 
                 <l-marker
                     :lat-lng="currentPosition"
                     :icon="currentPositionIcon"
                 ></l-marker>
+
+                <l-marker v-if="this.spring" :lat-lng="springLocation">
+                </l-marker>
 
                 <l-marker-cluster>
                     <l-marker v-for="(marker, index) in leafletmarkers"
@@ -153,36 +159,36 @@ let redDotIconUrl = encodeURI("data:image/svg+xml," + redDotSvgString).replace('
 let relief_layers = [
     {
         name: 'reljeef',
-        url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/vreljeef/{z}/{x}/{y}.png&ASUTUS=ALLIKAD',
+        url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/vreljeef/{z}/{x}/{y}.png&ASUTUS=TLU&KESKKOND=ALLIKAD',
         zindex: 1,
-        maxzoom: 11,
+        maxzoom: 10,
     },
     {
         name: 'hybrid',
-        url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/hybriid/{z}/{x}/{y}.png&ASUTUS=ALLIKAD',
+        url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/hybriid/{z}/{x}/{y}.png&ASUTUS=TLU&KESKKOND=ALLIKAD',
         zindex: 3,
-        maxzoom: 11,
+        maxzoom: 10,
     },
     {
         name: 'pohi',
-        url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/epk_vv/{z}/{x}/{y}.png&ASUTUS=ALLIKAD',
+        url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/epk_vv/{z}/{x}/{y}.png&ASUTUS=TLU&KESKKOND=ALLIKAD',
         zindex: 2,
-        maxzoom: 11,
+        maxzoom: 14,
     },
 ];
 
 let orthophoto_layers = [
     {
         name: 'hybrid',
-        url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/hybriid/{z}/{x}/{y}.png&ASUTUS=ALLIKAD',
+        url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/hybriid/{z}/{x}/{y}.png&ASUTUS=TLU&KESKKOND=ALLIKAD',
         zindex: 2,
-        maxzoom: 11,
+        maxzoom: 13,
     },
     {
         name: 'foto',
-        url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/foto/{z}/{x}/{y}.png&ASUTUS=ALLIKAD',
+        url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/foto/{z}/{x}/{y}.png&ASUTUS=TLU&KESKKOND=ALLIKAD',
         zindex: 1,
-        maxzoom: 11,
+        maxzoom: 14,
     },
 ];
 
@@ -213,7 +219,7 @@ export default {
         'l-marker-cluster': Vue2LeafletMarkerCluster,
         GestureHandling,
     },
-    props: ['springs'],
+    props: ['springs', 'spring', 'view'],
     data() {
         let leafletmarkers = [];
         _.forEach(this.springs, function(spring) {
@@ -224,6 +230,11 @@ export default {
                 position: latLng(spring.latitude, spring.longitude),
             });
         });
+        let springLocation = {lat: null, lng: null};
+        if (this.spring) {
+            springLocation = {lat: this.spring.latitude, lng: this.spring.longitude}
+        }
+
         return {
             mapOptions: {
                 zoomSnap: 0.5,
@@ -244,6 +255,8 @@ export default {
                 iconSize: [16, 16],
                 iconAnchor: [8, 16]
             }),
+
+            springLocation: springLocation,
 
             layerIndex: 0,
             markers: [],
@@ -282,6 +295,10 @@ export default {
         },
         openStreetOnReady(mapObject) {
             this.openStreetMapObject = mapObject;
+            if (this.view === 'show') {
+                let openStreetCenter = latLng(this.spring.latitude, this.spring.longitude);
+                this.openStreetMapObject.setView(openStreetCenter, 15);
+            }
         },
         openStreetShowLocation() {
             this.openStreetMapObject.locate();
@@ -293,6 +310,10 @@ export default {
         },
         onReady(mapObject) {
             this.leafletMapObject = mapObject;
+            if (this.view === 'show') {
+                let leafletCenter = latLng(this.spring.latitude, this.spring.longitude);
+                this.leafletMapObject.setView(leafletCenter, 11);
+            }
         },
         showLocation() {
             this.leafletMapObject.locate();
