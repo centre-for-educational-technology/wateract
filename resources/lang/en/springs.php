@@ -63,6 +63,8 @@ return [
     'classification' => 'Classification',
     'country' => 'Country',
     'countries' => [
+        'EE' => 'Estonia',
+        'LV' => 'Latvia',
         'ee' => 'Estonia',
         'lv' => 'Latvia',
     ],

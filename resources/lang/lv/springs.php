@@ -63,6 +63,8 @@ return [
     'classification' => 'Klasifikācija',
     'country' => 'Valsts',
     'countries' => [
+        'EE' => 'Igaunija',
+        'LV' => 'Latvija',
         'ee' => 'Igaunija',
         'lv' => 'Latvija',
     ],

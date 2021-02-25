@@ -2,13 +2,20 @@
 
     <div>
 
-        <div v-if="spring.photos.length > 0">
+        <div v-if="spring.all_photos.length > 0">
             <a :href="'/springs/'+spring.code">
-                <img :src="'/'+spring.photos[0].thumbnail" /></a>
+                <img :src="'/'+spring.all_photos[0].thumbnail" /></a>
+        </div>
+
+        <div v-if="spring.all_photos.length == 0">
+            <a :href="'/springs/'+spring.code">
+                <img src="/images/spring-default-image.jpg" /></a>
         </div>
 
         <div class="text-sm px-3 py-2">
-            <strong><a class="text-base" :href="'/springs/'+spring.code">{{ spring.name }}</a></strong>
+            <div class="font-bold">
+                <a class="text-base" :href="'/springs/'+spring.code">{{ spring.name || $t('springs.unnamed') }}</a>
+            </div>
             <div>
                 <span v-if="spring.country_info">{{ $t('springs.countries.'+spring.country_info.code) }}</span>
                 <span v-if="!spring.country_info">{{ spring.country }}</span>

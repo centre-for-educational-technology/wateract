@@ -33,12 +33,12 @@ class SpringController extends Controller
         $user = Auth::user();
         if ($user && $user->hasRole(['editor', 'admin', 'super-admin'])) {
             $springs = Spring::whereIn('status', ['submitted', 'confirmed'])->get();
-            $featured_springs = Spring::where('featured', '1')->with('photos')->with('country_info')->inRandomOrder()->limit(4)->get();
-            $newest_springs = Spring::whereIn('status', ['submitted', 'confirmed'])->with('photos')->with('country_info')->orderBy('created_at', 'desc')->limit(4)->get();
+            $featured_springs = Spring::where('featured', '1')->with('all_photos')->with('country_info')->inRandomOrder()->limit(4)->get();
+            $newest_springs = Spring::whereIn('status', ['submitted', 'confirmed'])->with('all_photos')->with('country_info')->orderBy('created_at', 'desc')->limit(4)->get();
         } else {
             $springs = Spring::whereIn('status', ['submitted', 'confirmed'])->where('unlisted', 0)->get();
-            $featured_springs = Spring::where('featured', '1')->where('unlisted', 0)->with('photos')->with('country_info')->inRandomOrder()->limit(4)->get();
-            $newest_springs = Spring::whereIn('status', ['submitted', 'confirmed'])->where('unlisted', 0)->with('photos')->with('country_info')->orderBy('created_at', 'desc')->limit(4)->get();
+            $featured_springs = Spring::where('featured', '1')->where('unlisted', 0)->with('all_photos')->with('country_info')->inRandomOrder()->limit(4)->get();
+            $newest_springs = Spring::whereIn('status', ['submitted', 'confirmed'])->where('unlisted', 0)->with('all_photos')->with('country_info')->orderBy('created_at', 'desc')->limit(4)->get();
         }
         return Inertia::render('Springs/Index', [
             'springs' => $springs,

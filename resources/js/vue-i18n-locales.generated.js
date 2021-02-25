@@ -109,6 +109,8 @@ export default {
             "classification": "Classification",
             "country": "Country",
             "countries": {
+                "EE": "Estonia",
+                "LV": "Latvia",
                 "ee": "Estonia",
                 "lv": "Latvia"
             },
@@ -1195,6 +1197,8 @@ export default {
             "classification": "Klasifikācija",
             "country": "Valsts",
             "countries": {
+                "EE": "Igaunija",
+                "LV": "Latvija",
                 "ee": "Igaunija",
                 "lv": "Latvija"
             },
