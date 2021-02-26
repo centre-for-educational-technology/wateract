@@ -25,8 +25,8 @@
                         <leaflet-maps :spring="spring" :view="'show'"></leaflet-maps>
                     </div>
 
-                    <div class="flex -mx-2 w-full px-2 py-2">
-                        <div class="w-3/4 px-2">
+                    <div class="sm:flex -mx-2 w-full px-2 py-2">
+                        <div class="sm:w-3/4 px-2">
 
                             <div class="py-2">
                                 <strong>{{ $t('springs.description') }}</strong>
@@ -75,7 +75,7 @@
 
                         </div>
 
-                        <div class="w-1/4 px-2">
+                        <div class="sm:w-1/4 px-2">
 
                             <div class="py-2" v-if="(spring.user && $page.user)">
                                 <div class="group">

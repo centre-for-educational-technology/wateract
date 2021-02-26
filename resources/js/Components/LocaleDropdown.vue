@@ -30,7 +30,7 @@ export default {
             locales: {
                 'en': 'ENG',
                 'et': 'EST',
-                'lv': 'LAT',
+                'lv': 'LAV',
             },
         }
     },

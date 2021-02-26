@@ -6,7 +6,6 @@
             </h1>
         </template>
 
-
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <jet-form-section>
 
@@ -27,39 +26,82 @@
                         <div class="flex -mx-2">
                             <div class="w-full px-2">
                                 <jet-label class="font-bold" :value="$t('springs.location')" />
-                                <!--<button class="dot circle link icon" @click="locatorButtonPressed">Locate</button>-->
-                                <div class="z-depth-1-half map-container" style="height:450px;">
-                                    <GmapMap
-                                        :center="gmapCenter"
-                                        :zoom="7"
-                                        map-type-id="terrain"
-                                        style="width: 100%; height: 100%"
-                                        @click="updateLocation"
-                                        v-show="googleMap"
+
+                                <GmapMap :center="{lat:54, lng:54}"></GmapMap>
+                                <div class="z-depth-1-half map-container block" style="height:500px;" v-if="openStreetMap">
+                                    <l-map ref="openstreetmap" style="width:100%;height:100%;z-index:1;"
+                                           :center="openStreetCenter"
+                                           @update:zoom="openStreetZoomUpdate"
+                                           :zoom="openStreetMapZoom"
+                                           :tms="tms"
+                                           :continuousWorld="true"
+                                           @update:center="openStreetCenterUpdate"
+                                           :options="mapOptions"
+                                           @ready="openStreetOnReady"
+                                           @locationfound="openStreetOnLocationFound"
+                                           @click="updateLeafletLocation"
                                     >
-                                        <GmapMarker
-                                            :key="index"
-                                            v-for="(location, index) in gmapMarkers"
-                                            :position="location.position"
-                                            :draggable="true"
-                                            @dragend="updateLocation"
+
+                                        <l-control>
+                                            <svg @click="openStreetShowLocation" class="h-8 w-8 p-1 bg-white border-2 rounded cursor-pointer hover:bg-gray-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd">
+                                                    <title>{{ $t('springs.pan_to_current_location') }}</title>
+                                                </path>
+                                            </svg>
+                                        </l-control>
+
+                                        <l-control position="bottomright">
+                                            <div class="bg-white p-1 border-2 rounded cursor-pointer hover:bg-gray-100" @click="showMaaametMap">{{ $t('springs.estonia_map') }}</div>
+                                        </l-control>
+
+                                        <l-tile-layer
+                                            :url="layer.url"
+                                            :attribution="layer.attribution"
                                         />
-                                    </GmapMap>
-                                    <l-map ref="leafMap"
-                                           :minZoom="3"
+
+                                        <l-marker
+                                            :lat-lng="currentPosition"
+                                            :icon="currentPositionIcon"
+                                        ></l-marker>
+
+                                        <l-marker
+                                            :lat-lng="springLocation"
+                                            :icon="springLocationIcon"
+                                        ></l-marker>
+
+                                        <l-marker-cluster>
+                                            <l-marker v-for="(marker, index) in leafletMarkers"
+                                                      :key="index"
+                                                      :lat-lng="marker.position">
+                                                <l-popup>
+                                                    <div class="pb-2"><a class="underline text-blue-700" :href="'springs/'+marker.id+'/'">{{marker.name || 'Unnamed'}}</a></div>
+                                                    <div>{{ $t('springs.spring_code') }}: {{marker.id}} <br />{{ $t('springs.status') }}: {{ $t('springs.status_options.'+marker.status) }}</div>
+                                                </l-popup>
+                                            </l-marker>
+                                        </l-marker-cluster>
+
+                                    </l-map>
+                                </div>
+
+                                <div class="z-depth-1-half map-container block" style="height:500px;" v-show="maaametMap">
+                                    <l-map ref="leafletMap" style="width:100%;height:100%;z-index:1;"
                                            :maxZoom="14"
-                                           :center="leafletCenter"
+                                           :minZoom="3"
+                                           :zoom="maaametMapZoom"
+                                           :center="maaametCenter"
                                            :tms="tms"
                                            :crs="crs"
-                                           v-show="leafletMap"
-                                           @update:zoom="zoomUpdate"
-                                           @click="updateLeafletLocation"
+                                           :continuousWorld="true"
                                            :bounds="bounds"
-                                           :options="{zoomControl: false}"
+                                           @update:zoom="maaametZoomUpdate"
+                                           @update:center="maaametCenterUpdate"
+                                           :options="mapOptions"
                                            @ready="onReady"
                                            @locationfound="onLocationFound"
+                                           @click="updateLeafletLocation"
+
                                     >
-                                        <l-control-zoom position="bottomright"></l-control-zoom>
+
                                         <l-control>
                                             <svg @click="showLocation" class="h-8 w-8 p-1 bg-white border-2 rounded cursor-pointer hover:bg-gray-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd">
@@ -67,6 +109,17 @@
                                                 </path>
                                             </svg>
                                         </l-control>
+
+                                        <l-control position="bottomright">
+                                            <div class="bg-white p-1 border-2 rounded cursor-pointer hover:bg-gray-100" @click="showWorldMap">{{ $t('springs.world_map') }}</div>
+                                        </l-control>
+                                        <l-control  position="bottomright">
+                                            <div class="bg-white p-1 border-2 rounded cursor-pointer hover:bg-gray-100" @click="showOrthoPhoto">{{ $t('springs.orthophoto') }}</div>
+                                        </l-control>
+                                        <l-control position="bottomright">
+                                            <div class="bg-white p-1 border-2 rounded cursor-pointer hover:bg-gray-100" @click="showReliefMap">{{ $t('springs.relief_map') }}</div>
+                                        </l-control>
+
                                         <l-tile-layer
                                             v-for="layer in tilelayers"
                                             :key="layer.name"
@@ -74,29 +127,35 @@
                                             :zIndex="layer.zindex"
                                             :attribution="attribution"
                                             :tms="tms"
-                                            :maxZoom="layer.maxzoom"
                                             :worldCopyJump="true"
+                                            :options="{ maxNativeZoom: layer.maxzoom, maxZoom: layer.maxzoom }"
                                         />
-                                        <!--<l-wms-tile-layer
-                                            v-for="layer in layers"
-                                            :key="layer.name"
-                                            :base-url="baseUrl"
-                                            :layers="layer.layers"
-                                            :visible="layer.visible"
-                                            :name="layer.name"
-                                            layer-type="base"
-                                            :attribution="attribution"
-                                            :opacity="layer.opacity"
-                                        />-->
-                                        <l-marker v-for="(location, index) in leafletMarkers"
-                                                  :key="index"
-                                                  :lat-lng="location" ></l-marker>
+
+                                        <l-marker
+                                            :lat-lng="currentPosition"
+                                            :icon="currentPositionIcon"
+                                        ></l-marker>
+
+                                        <l-marker
+                                            :lat-lng="springLocation"
+                                            :icon="springLocationIcon"
+                                        ></l-marker>
+
+                                        <l-marker-cluster>
+                                            <l-marker v-for="(marker, index) in leafletMarkers"
+                                                      :key="index"
+                                                      :lat-lng="marker.position">
+                                                <l-popup>
+                                                    <div class="pb-2"><a class="underline text-blue-700" :href="'springs/'+marker.id+'/'">{{marker.name || 'Unnamed'}}</a></div>
+                                                    <div>{{ $t('springs.spring_code') }}: {{marker.id}} <br />{{ $t('springs.status') }}: {{ $t('springs.status_options.'+marker.status) }}</div>
+                                                </l-popup>
+                                            </l-marker>
+                                        </l-marker-cluster>
+
                                     </l-map>
-                                    <div class="block">
-                                        <button class="border float-right" v-if="googleMap" v-on:click="googleMap=false;leafletMap = true;">Map of Estonia</button>
-                                        <button class="border float-right" v-if="leafletMap" v-on:click="leafletMap=false;googleMap = true;">World map</button>
-                                    </div>
+
                                 </div>
+
                             </div>
                         </div>
 
@@ -201,7 +260,7 @@
                                 <select id="classification" v-model="form.classification"
                                     class="block w-full bg-white border border-gray-400 hover:border-gray-500 px-2 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
                                     <option value=""></option>
-                                    <option v-for='data in classifications' :selected="classification === data.id" :value='data.id'>{{ $t(data.name) }}</option>
+                                    <option v-for='data in classifications' :value='data.id'>{{ $t(data.name) }}</option>
                                 </select>
                             </div>
 
@@ -221,7 +280,7 @@
                             <select id="ownership" v-model="form.ownership"
                                     class="block w-full bg-white border border-gray-400 hover:border-gray-500 px-2 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
                                 <option value=""></option>
-                                <option v-for='data in ownerships' :selected="ownership === data.id" :value='data.id'>{{ $t(data.name) }}</option>
+                                <option v-for='data in ownerships' :value='data.id'>{{ $t(data.name) }}</option>
                             </select>
                         </div>
 
@@ -268,16 +327,67 @@ import JetLabel from "../../Jetstream/Label";
 import JetSecondaryButton from "../../Jetstream/SecondaryButton";
 import HelpButton from '../../Components/HelpButton';
 import { gmapApi } from 'gmap-vue';
-import { latLngBounds, latLng } from "leaflet";
+import { latLngBounds, latLng, icon } from "leaflet";
 import L from 'leaflet';
-import { LMap, LTileLayer, LMarker, LIcon, LControlZoom, LWMSTileLayer, LControl, LControlLayers } from 'vue2-leaflet';
+import { LMap, LTileLayer, LMarker, LIcon, LControlZoom, LPopup, LControl, LControlLayers } from 'vue2-leaflet';
 import "proj4leaflet";
+import Vue2LeafletMarkerCluster from 'vue2-leaflet-markercluster'
+import { GestureHandling } from "leaflet-gesture-handling";
+import "leaflet-gesture-handling/dist/leaflet-gesture-handling.css";
+import "leaflet.markercluster/dist/MarkerCluster.css";
+import "leaflet.markercluster/dist/MarkerCluster.Default.css";
 
 let projection3301 = new L.Proj.CRS('EPSG:3301', '+proj=lcc +lat_1=59.33333333333334 +lat_2=58 +lat_0=57.51755393055556 +lon_0=24 +x_0=500000 +y_0=6375000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs', {
     resolutions: [4000, 2000, 1000, 500, 250, 125, 62.5, 31.25, 15.625, 7.8125, 3.90625, 1.953125, 0.9765625, 0.48828125, 0.244140625, 0.122070313, 0.061035156, 0.030517578, 0.015258789],
     origin: [40500, 5993000],
     bounds: L.bounds([40500, 5993000], [1064500, 7017000])
 });
+
+let redDotSvgString = '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="40" stroke="black" stroke-width="10" fill="red"/></svg>';
+let redDotIconUrl = encodeURI("data:image/svg+xml," + redDotSvgString).replace('#','%23');
+
+let relief_layers = [
+    {
+        name: 'reljeef',
+        url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/vreljeef/{z}/{x}/{y}.png&ASUTUS=TLU&KESKKOND=ALLIKAD',
+        zindex: 1,
+        maxzoom: 10,
+    },
+    {
+        name: 'hybrid',
+        url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/hybriid/{z}/{x}/{y}.png&ASUTUS=TLU&KESKKOND=ALLIKAD',
+        zindex: 3,
+        maxzoom: 10,
+    },
+    {
+        name: 'pohi',
+        url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/epk_vv/{z}/{x}/{y}.png&ASUTUS=TLU&KESKKOND=ALLIKAD',
+        zindex: 2,
+        maxzoom: 14,
+    },
+];
+
+let orthophoto_layers = [
+    {
+        name: 'hybrid',
+        url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/hybriid/{z}/{x}/{y}.png&ASUTUS=TLU&KESKKOND=ALLIKAD',
+        zindex: 2,
+        maxzoom: 13,
+    },
+    {
+        name: 'foto',
+        url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/foto/{z}/{x}/{y}.png&ASUTUS=TLU&KESKKOND=ALLIKAD',
+        zindex: 1,
+        maxzoom: 14,
+    },
+];
+
+let openstreet_layers = [
+    {
+        url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    }
+];
 
 
 export default {
@@ -292,7 +402,6 @@ export default {
         JetSecondaryButton,
         HelpButton,
         gmapApi,
-        "l-wms-tile-layer": LWMSTileLayer,
         LControlLayers,
         LControl,
         LMap,
@@ -300,66 +409,75 @@ export default {
         LMarker,
         LIcon,
         LControlZoom,
+        LPopup,
+        'l-marker-cluster': Vue2LeafletMarkerCluster,
+        GestureHandling,
     },
 
-    props: ['classifications', 'ownerships', 'statuses', 'classification', 'ownership', 'status'],
+    props: ['springs', 'classifications', 'ownerships'],
 
     data() {
+        let leafletmarkers = [];
+        /*_.forEach(this.springs, function(spring) {
+            leafletmarkers.push({
+                id: spring.code,
+                name: spring.name,
+                status: spring.status,
+                position: latLng(spring.latitude, spring.longitude),
+            });
+        });*/
         return {
+            mapOptions: {
+                zoomSnap: 1,
+                gestureHandling:true
+            },
+
+            openStreetMap: false,
+            openStreetMapZoom: 7,
+            openStreetCenter: latLng(58.379, 24.554),
+
+            maaametMap: true,
+            maaametMapZoom: 13,
+            maaametCenter: latLng(58.379, 24.554),
+
+            currentPosition: {lat: null, lng: null},
+            currentPositionIcon: icon({
+                iconUrl: redDotIconUrl,
+                iconSize: [16, 16],
+                iconAnchor: [8, 16]
+            }),
+
+            springLocation: {lat: null, lng: null},
+            springLocationIcon: icon({
+                iconUrl: '/images/marker-icon-red.png',
+                shadowUrl: '/images/marker-shadow.png',
+                iconSize: [25, 41],
+                iconAnchor: [12, 41],
+                shadowSize: [41, 41]
+            }),
+
             leafletMapObject: null,
-            leafletMap: true,
-            googleMap: false,
-            leafletMarkers: [],
-            gmapMarkers: [],
+            leafletMarkers: leafletmarkers,
             latitude: 58.279,
             longitude: 26.054,
             crs: projection3301,
             tms: true,
-            gmapCenter: {lat:58.779, lng:25.054},
-            leafletCenter: [58.779, 25.054],
             attribution: "<a href='https://www.maaamet.ee'>Maa-amet</a>",
             transparency: 'true',
             bounds: latLngBounds([
                 [60.4349, 29.4338],
                 [56.7458, 20.373]
             ]),
-            tilelayers: [
-                {
-                    name: 'reljeef',
-                    url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/vreljeef/{z}/{x}/{y}.png&ASUTUS=MAAAMET&KESKKOND=ALLIKAD',
-                    zindex: 1,
-                    maxzoom: 11,
-                },
-                {
-                    name: 'hybrid',
-                    url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/hybriid/{z}/{x}/{y}.png&ASUTUS=MAAAMET&KESKKOND=ALLIKAD',
-                    zindex: 2,
-                    maxzoom: 11,
-                },
-                {
-                    name: 'pohi',
-                    url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/epk_vv/{z}/{x}/{y}.png&ASUTUS=MAAAMET&KESKKOND=LIVE&IS=TMSNAIDE',
-                    zindex: 3,
-                    maxzoom: 11,
-                }
-            ],
-            /*layers: [
-                {
-                    //crs: projection,
-                    name: 'hybrid',
-                    visible: true,
-                    format: 'image/jpeg',
-                    layers: 'vreljeef,HYBRID', //'pohi_vv'
-                    transparent: true,
-                },
-            ],*/
+            layerIndex: 0,
+            layers: openstreet_layers,
+            tilelayers: relief_layers,
             helpDialogVisible: false,
             helptext: '',
             dialogVisible: false,
             dialogPhotoUrl: '',
             map: null,
             form: this.$inertia.form({
-                '_method': 'PUT',
+                '_method': 'POST',
                 name: this.name,
                 kkr_code: this.kkr_code,
                 latitude: this.latitude,
@@ -410,7 +528,6 @@ export default {
             this.$inertia.post('/springs', data)
         },
         updatePhotos(photo) {
-
             let file = photo;
             const isIMAGE = (file.raw.type === 'image/jpeg' || file.raw.type === 'image/png');
             if (!isIMAGE) {
@@ -418,8 +535,6 @@ export default {
                 return false;
             }
 
-            //this.form.photos.push(photo.raw);
-            //savePhoto(photo);
             // upload photo
             var data = new FormData();
             data.append('photo', photo.raw || '');
@@ -427,6 +542,8 @@ export default {
             let photo_id;
             axios.post('/photos', data).then(response => {
                 photo_id = response.data.photo_id;
+                console.log('exif');
+                console.log(response.data.exif_data);
                 this.form.photo_ids.push(photo_id);
                 //this.onSuccess(response && response.data);
                 //photo_id = resolve(response && response.data);
@@ -450,27 +567,11 @@ export default {
             this.dialogPhotoUrl = photo.url;
             this.dialogVisible = true;
         },
-        onReady(mapObject) {
-            this.leafletMapObject = mapObject;
-        },
-        showLocation() {
-            this.leafletMapObject.locate();
-        },
-        onLocationFound(location) {
-            this.updateLeafletLocation(location);
-            this.leafletMapObject.setView(location.latlng, 12);
-        },
+
         updateLeafletLocation(location) {
-            this.leafletMarkers = [ location.latlng ];
-            let latitude = location.latlng.lat;
-            let longitude = location.latlng.lng;
+            this.springLocation = location.latlng;
             this.form.latitude= parseFloat(location.latlng.lat).toFixed(6);
             this.form.longitude = parseFloat(location.latlng.lng).toFixed(6);
-            // update gmap too
-            this.gmapCenter = {lat:latitude, lng:longitude};
-            this.gmapMarkers = [{
-                position: {lat:latitude, lng:longitude}
-            }];
 
             const geocoder = new google.maps.Geocoder()
             geocoder.geocode({ 'latLng': location.latlng }, (result, status) => {
@@ -485,36 +586,92 @@ export default {
             })
 
         },
-        zoomUpdate(zoom) {
-            /*if (zoom < 10) {
-                console.log('big map');
-                this.layers[0].visible = true;
-                this.layers[1].visible = false;
-            } else {
-                this.layers[0].visible = false;
-                this.layers[1].visible = true;
-            }*/
+        showReliefMap() {
+            this.tilelayers = relief_layers;
         },
-        updateLocation(location) {
-            this.gmapMarkers = [{
-                position: location.latLng
-            }];
-            this.form.latitude= location.latLng.lat();
-            this.form.longitude = location.latLng.lng();
-
-            const geocoder = new google.maps.Geocoder()
-            geocoder.geocode({ 'latLng': location.latLng }, (result, status) => {
-                if (status === google.maps.GeocoderStatus.OK) {
-                    let address_components = result[0].address_components;
-                    console.log(address_components);
-                    let address = getAddressObject(address_components);
-                    this.form.country = address.country;
-                    this.form.county = address.county;
-                    this.form.settlement = address.settlement;
-                    //console.log(result[0].formatted_address);
-                }
+        showOrthoPhoto() {
+            this.tilelayers = orthophoto_layers;
+        },
+        showWorldMap() {
+            this.maaametMap = false;
+            this.openStreetMap = true;
+        },
+        showMaaametMap() {
+            this.openStreetMap = false;
+            this.maaametMap = true;
+        },
+        openStreetOnReady(mapObject) {
+            this.openStreetMapObject = mapObject;
+        },
+        openStreetShowLocation() {
+            this.openStreetMapObject.locate();
+        },
+        openStreetOnLocationFound(location) {
+            this.currentPosition= location.latlng;
+            this.openStreetMapObject.setView(location.latlng, 9);
+            this.leafletMapObject.setView(location.latlng, 9);
+        },
+        onReady(mapObject) {
+            this.leafletMapObject = mapObject;
+        },
+        showLocation() {
+            this.leafletMapObject.locate();
+        },
+        onLocationFound(location) {
+            this.currentPosition= location.latlng;
+            this.leafletMapObject.setView(location.latlng, 9);
+        },
+        maaametZoomUpdate(zoom) {
+            this.openStreetMapZoom = zoom + 4;
+        },
+        maaametCenterUpdate(center) {
+            let new_center_latitude= center.lat;
+            let new_center_longitude = center.lng;
+            let center_latitude= this.openStreetCenter.lat;
+            let center_longitude = this.openStreetCenter.lng;
+            if (new_center_latitude !== center_latitude || new_center_longitude !== center_longitude) {
+                this.openStreetCenter = center;
+            }
+        },
+        openStreetZoomUpdate(zoom) {
+            this.maaametMapZoom = zoom - 4;
+        },
+        openStreetCenterUpdate(center) {
+            let new_center_latitude= center.lat;
+            let new_center_longitude = center.lng;
+            let center_latitude= this.maaametCenter.lat;
+            let center_longitude = this.maaametCenter.lng;
+            if (new_center_latitude !== center_latitude || new_center_longitude !== center_longitude) {
+                this.maaametCenter = center;
+            }
+        },
+        getExistingSprings() {
+            let params = {
+                "name": '',
+                "classification": '',
+            }
+            axios.get('/getSprings', { params }).then(response => {
+                let springs = response.data;
+                let markers = [];
+                _.forEach(springs, function(spring) {
+                    markers.push({
+                        id: spring.code,
+                        name: spring.name,
+                        status: spring.status,
+                        position: latLng(spring.latitude, spring.longitude),
+                    });
+                });
+                this.leafletMarkers = markers;
             })
+        },
+    },
+    computed: {
+        layer () {
+            return this.layers[this.layerIndex]
         }
+    },
+    created: function(){
+        this.getExistingSprings();
     }
 }
 

@@ -64,7 +64,7 @@ class SpringController extends Controller
         }
         return SpringController::index();
     }
-
+    
     public function getClassifications() {
         return [
             array( 'id' => 'gravity_spring', 'name' => 'springs.classification_options.gravity_spring' ),
@@ -241,7 +241,7 @@ class SpringController extends Controller
                 'ownerships' => SpringController::getOwnerships(),
                 'spring' => $spring]);
         }
-        return Inertia::render('Springs/Show', ['spring' => $spring]);
+        return SpringController::show($spring);
     }
 
     /**
@@ -363,9 +363,26 @@ class SpringController extends Controller
 
     public function getSprings(Request $request)
     {
+        $user = Auth::user();
+
+        $spring_id = $request->input('spring_id');
+        // for edit map get all springs except given spring
+        if ($spring_id) {
+            if ($user && $user->hasRole(['editor', 'admin', 'super-admin'])) {
+                $springs = Spring::where('id', '!=', $spring_id)
+                    ->whereIn('status', ['submitted', 'confirmed'])
+                    ->get();
+            } else {
+                $springs = Spring::where('unlisted', 0)
+                    ->where('id', '!=', $spring_id)
+                    ->whereIn('status', ['submitted', 'confirmed'])
+                    ->get();
+            }
+            return response()->json($springs);
+        }
+
         $name = $request->input('name');
         $classification = $request->input('classification');
-        $user = Auth::user();
         if ($user && $user->hasRole(['editor', 'admin', 'super-admin'])) {
             if ($classification) {
                 $springs = Spring::where('name', 'LIKE', '%' . $name . '%')
@@ -391,6 +408,7 @@ class SpringController extends Controller
                     ->get();
             }
         }
+
         return response()->json($springs);
     }
 

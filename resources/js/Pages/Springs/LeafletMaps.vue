@@ -3,7 +3,7 @@
     <div>
 
         <div class="z-depth-1-half map-container block" style="height:500px;" v-if="openStreetMap">
-            <l-map ref="openstreetmap" style="width:100%;height:100%;z-index:1;"
+            <l-map ref="openstreetmap" style="width:100%;height:100%;z-index:0;"
                    :center="openStreetCenter"
                    @update:zoom="openStreetZoomUpdate"
                    :zoom="openStreetMapZoom"
@@ -23,7 +23,7 @@
                     </svg>
                 </l-control>
 
-                <l-control position="bottomright">
+                <l-control position="bottomright" v-if="ee_spring">
                     <div class="bg-white p-1 border-2 rounded cursor-pointer hover:bg-gray-100" @click="showMaaametMap">{{ $t('springs.estonia_map') }}</div>
                 </l-control>
 
@@ -55,7 +55,7 @@
         </div>
 
         <div class="z-depth-1-half map-container block" style="height:500px;" v-show="maaametMap">
-            <l-map ref="leafletMap" style="width:100%;height:100%;z-index:1;"
+            <l-map ref="leafletMap" style="width:100%;height:100%;z-index:0;"
                    :maxZoom="14"
                    :minZoom="3"
                    :zoom="maaametMapZoom"
@@ -199,12 +199,6 @@ let openstreet_layers = [
     }
 ];
 
-let crs2 = L.CRS.EPSG3857;
-let world_bounds = latLngBounds([
-    [-90.0,-180.0],
-    [90.0,180.0]
-]);
-
 export default {
     components: {
         latLngBounds,
@@ -235,19 +229,28 @@ export default {
             springLocation = {lat: this.spring.latitude, lng: this.spring.longitude}
         }
 
+        let map = 'maaamet';
+        let ee_spring = true;
+        if (this.spring && this.spring.country !== 'EE') {
+            map = 'openstreet';
+            ee_spring = false;
+        }
+
         return {
             mapOptions: {
-                zoomSnap: 0.5,
+                zoomSnap: 1,
                 gestureHandling:true
             },
 
-            openStreetMap: false,
+            openStreetMap: map !== 'maaamet',
             openStreetMapZoom: 7,
             openStreetCenter: latLng(58.379, 24.554),
 
-            maaametMap: true,
+            maaametMap: map !== 'openstreet',
             maaametMapZoom: 13,
             maaametCenter: latLng(58.379, 24.554),
+
+            ee_spring: ee_spring,
 
             currentPosition: {lat: null, lng: null},
             currentPositionIcon: icon({
@@ -259,15 +262,9 @@ export default {
             springLocation: springLocation,
 
             layerIndex: 0,
-            markers: [],
             leafletmarkers: leafletmarkers,
-            latitude: 58.279,
-            longitude: 26.054,
             crs: projection,
-            crs2: L.CRS.EPSG4326,
             tms: true,
-            //url: 'http://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}',
-            center: [58.779, 25.054],
             attribution: "<a href='http://www.maaamet.ee'>Maa-amet</a>",
             bounds: latLngBounds([
                 [60.4349, 29.4338],
