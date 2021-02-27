@@ -14,10 +14,12 @@
                 <h2 class="mt-10">Kuidas allikaid leida?</h2>
                 <div>
                     Looduses allikate ülesleidmiseks on mitmeid märke, mida jälgida:
-                    Paljud väikesed vooluveekogud algavad allikatest. Seega, sattudes mõne oja juurde, tasub seda mööda ülesvoolu liikuda ja vaadata, kus kohast veevool algab. Heaks paigaks, kus allikaid otsida, on jõeorud ja kõigi peajõkke suubuvate ojakeste lähted.
-                    Talviti, kui temperatuur on püsinud miinuspoolel ja lumi on maas, tasub otsida avatud veega kohti. Kui mõni oja, kraav või veesilm on jäävaba, on see märgiks allikalisest toitest. Allikad säilitavad ühtlase temperatuuri kõigil aastaaegadel.
-                    Sageli on allikakohtade ümbruses naabrusest lopsakam taimestik, eriti kui need asuvad orgudes või madalamatel aladel.
-                    Loomarajad viivad tihti allikateni. Seega otsi loomade jala- ja tegevusjälgi.
+                    <ul class="list-disc ml-5">
+                        <li>Paljud väikesed vooluveekogud algavad allikatest. Seega, sattudes mõne oja juurde, tasub seda mööda ülesvoolu liikuda ja vaadata, kus kohast veevool algab. Heaks paigaks, kus allikaid otsida, on jõeorud ja kõigi peajõkke suubuvate ojakeste lähted.</li>
+                        <li>Talviti, kui temperatuur on püsinud miinuspoolel ja lumi on maas, tasub otsida avatud veega kohti. Kui mõni oja, kraav või veesilm on jäävaba, on see märgiks allikalisest toitest. Allikad säilitavad ühtlase temperatuuri kõigil aastaaegadel.</li>
+                        <li>Sageli on allikakohtade ümbruses naabrusest lopsakam taimestik, eriti kui need asuvad orgudes või madalamatel aladel.</li>
+                        <li>Loomarajad viivad tihti allikateni. Seega otsi loomade jala- ja tegevusjälgi.</li>
+                    </ul>
                 </div>
             </div>
             <div>
@@ -25,9 +27,11 @@
                 <h2 class="mt-10">Kuidas allikaid ära tunda?</h2>
                 <div>
                     Iga looduslik veesilm pole allikas ja ka iga oja ei alga allikast. Veendumaks, kas sinu leitud võimalik allikas on ka tegelikult looduslikult maapinnale jõudva põhjavee väljavoolukoht, proovi leida sellele kinnitust, vastates järgmistele küsimustele:
-                    Kas sellel on vaatluse hetkel väljavool või on maapinnal näha märke, et see on olemas vähemalt mingi osa aastast? Kas veesilmast viib välja mõni kasvõi hetkel kuiv voolukanal?
-                    Kas oletatavas allikas on vesi märkimisväärselt soojem või külmem kui õhutemperatuur (olenevalt aastaajast)? Allikavee temperatuur on sageli vahemikus 7-10 kraadi.
-                    Allikas ei külmu talvel kas siis, kui temperatuur on olnud pikemat aega alla nulli.
+                    <ol class="list-decimal ml-5">
+                        <li>Kas sellel on vaatluse hetkel väljavool või on maapinnal näha märke, et see on olemas vähemalt mingi osa aastast? Kas veesilmast viib välja mõni kasvõi hetkel kuiv voolukanal?</li>
+                        <li>Kas oletatavas allikas on vesi märkimisväärselt soojem või külmem kui õhutemperatuur (olenevalt aastaajast)? Allikavee temperatuur on sageli vahemikus 7-10 kraadi.</li>
+                        <li>Allikas ei külmu talvel kas siis, kui temperatuur on olnud pikemat aega alla nulli.</li>
+                    </ol>
                 </div>
             </div>
             <div>
@@ -35,19 +39,19 @@
                 <h2 class="mt-10">Kuidas allikaid kirjeldada?</h2>
                 <div>
                     Allikat kirjeldades tuleks tähelepanu pöörata järgmistele tahkudele:
-                    <ul class="list-disc">
-                        <li class="ml-5">Kas allikast on väljavool?</li>
-                        <li class="ml-5">Kas allikas moodustab veesilma või voolab maapinnale väikese ojana?</li>
-                        <li class="ml-5">Kui see moodustab oja, siis kas sellel on üks väljavoolukoht, mitu selgelt eristuvad väljavoolukohta või selgelt eristuvad väljavoolukohad puuduvad ja vesi imbub maapinnale hajusalt suuremalt alalt?</li>
-                        <li class="ml-5">Kui allikas moodustab veesilma, siis kas selle põhjas on grifoone ehk nn keemise kohti? Kui on, siis kui palju neid kohti on?</li>
-                        <li class="ml-5">Milline on allika põhjamaterjal? Kas see on liiv, muda, vms? Kas allika põhjas on näha sädelevaid helbeid? Kas allika põhjas on poorseid lubjamoodustusi (allikalupja)?</li>
-                        <li class="ml-5">Kas allikas või hajusa väljavoolu puhul allikalisel alal kasvab taimi? Kui kasvab, siis kas oskad nimetada liike? Kas allikas kasvab vetikaid?</li>
-                        <li class="ml-5">Kas allikas on ookrit (limane oranž-pruun rauarikas sete)?</li>
-                        <li class="ml-5">Kuidas allika ümbrus välja näeb? Kas see asub metsas, põllul, heinamaal, kraavis, asulas vms?</li>
-                        <li class="ml-5">Kas allikas on looduslikus olekus või on see ümbritsetud betoonist, puidust vms. rakkega?</li>
-                        <li class="ml-5">Kas allikas või selle ümber on inimeste tehtud asju, näiteks raha, prügi, tass?</li>
-                        <li class="ml-5">Milline on ligipääs allikale? Kas allikani viib rada või tuleb allikani jõudmiseks läbida metsikut maastikku? Kas allika ümber on külastustaristu?</li>
-                        <li class="ml-5">Kas allikas on kõigile ligipääsetav või asub see suletud territooriumil või õuemaal?</li>
+                    <ul class="list-disc ml-5">
+                        <li>Kas allikast on väljavool?</li>
+                        <li>Kas allikas moodustab veesilma või voolab maapinnale väikese ojana?</li>
+                        <li>Kui see moodustab oja, siis kas sellel on üks väljavoolukoht, mitu selgelt eristuvad väljavoolukohta või selgelt eristuvad väljavoolukohad puuduvad ja vesi imbub maapinnale hajusalt suuremalt alalt?</li>
+                        <li>Kui allikas moodustab veesilma, siis kas selle põhjas on grifoone ehk nn keemise kohti? Kui on, siis kui palju neid kohti on?</li>
+                        <li>Milline on allika põhjamaterjal? Kas see on liiv, muda, vms? Kas allika põhjas on näha sädelevaid helbeid? Kas allika põhjas on poorseid lubjamoodustusi (allikalupja)?</li>
+                        <li>Kas allikas või hajusa väljavoolu puhul allikalisel alal kasvab taimi? Kui kasvab, siis kas oskad nimetada liike? Kas allikas kasvab vetikaid?</li>
+                        <li>Kas allikas on ookrit (limane oranž-pruun rauarikas sete)?</li>
+                        <li>Kuidas allika ümbrus välja näeb? Kas see asub metsas, põllul, heinamaal, kraavis, asulas vms?</li>
+                        <li>Kas allikas on looduslikus olekus või on see ümbritsetud betoonist, puidust vms. rakkega?</li>
+                        <li>Kas allikas või selle ümber on inimeste tehtud asju, näiteks raha, prügi, tass?</li>
+                        <li>Milline on ligipääs allikale? Kas allikani viib rada või tuleb allikani jõudmiseks läbida metsikut maastikku? Kas allika ümber on külastustaristu?</li>
+                        <li>Kas allikas on kõigile ligipääsetav või asub see suletud territooriumil või õuemaal?</li>
                     </ul>
                 </div>
             </div>
@@ -65,24 +69,24 @@
                     </div>
                     <div class="my-3">
                         Seega lühidalt öeldes võimaldab fotoseire:
-                        <ul class="list-disc">
-                            <li class="ml-5">jäädvustada ajas toimuvaid muutuseid</li>
-                            <li class="ml-5">seostada toimunud muutuseid muutustega kliimas, keskkonnatingimustes, inimmõjus</li>
-                            <li class="ml-5">jäädvustada ekstreemsete muutuste ulatust ja mõju</li>
-                            <li class="ml-5">välja töötada baastasemed, millega tulevikus toimuvaid muutuseid võrrelda</li>
-                            <li class="ml-5">tuvastada probleeme, kuni need on veel väikesed</li>
-                            <li class="ml-5">arendada välja parem arusaam põhjust-tagajärg seostest</li>
+                        <ul class="list-disc ml-5">
+                            <li>jäädvustada ajas toimuvaid muutuseid</li>
+                            <li>seostada toimunud muutuseid muutustega kliimas, keskkonnatingimustes, inimmõjus</li>
+                            <li>jäädvustada ekstreemsete muutuste ulatust ja mõju</li>
+                            <li>välja töötada baastasemed, millega tulevikus toimuvaid muutuseid võrrelda</li>
+                            <li>tuvastada probleeme, kuni need on veel väikesed</li>
+                            <li>arendada välja parem arusaam põhjust-tagajärg seostest</li>
                         </ul>
                     </div>
                     <div class="mt-3">
                         Pilti tehes pea meeles mõned üldised reeglid:
-                        <ul class="list-disc">
-                            <li class="ml-5">Rohkem ei ole alati parem.</li>
-                            <li class="ml-5">Kui võimalik, siis tee pilt pilvisel, kuid valgusküllasel päeval. Sellisel moel on tulemuseks selged, kuid ilma väga tugevate varjudeta fotod. Vahel tasub hetk oodata, et Päike pilve taha läheks.</li>
-                            <li class="ml-5">Kui võimalik, siis vaata varem samast allikast tehtud pilte. Proovi kasutada sama kadreeringut ja tee pildid sama nurga alt.</li>
-                            <li class="ml-5">Veendu, et fotod on tehtud samast kohast. Selleks on abiks mõni lihtsalt äratuntav objekt - kivi, puu vms.</li>
-                            <li class="ml-5">Tee allikast pilti erinevatest suundadest. Veendu, et pildile mahub ka ümbritsev maastik ja taimkatte.</li>
-                            <li class="ml-5">Pildid annavad tunnistust piirkonnast toimunud muutustest. Kui samast allikast oli pilte lisatud vaid päeva-paari eest ning need on hea kvaliteedida ja läbimõeldult tehtud, siis pole mõte täpselt samasuguseid fotosid lisama hakata.</li>
+                        <ul class="list-disc ml-5">
+                            <li>Rohkem ei ole alati parem.</li>
+                            <li>Kui võimalik, siis tee pilt pilvisel, kuid valgusküllasel päeval. Sellisel moel on tulemuseks selged, kuid ilma väga tugevate varjudeta fotod. Vahel tasub hetk oodata, et Päike pilve taha läheks.</li>
+                            <li>Kui võimalik, siis vaata varem samast allikast tehtud pilte. Proovi kasutada sama kadreeringut ja tee pildid sama nurga alt.</li>
+                            <li>Veendu, et fotod on tehtud samast kohast. Selleks on abiks mõni lihtsalt äratuntav objekt - kivi, puu vms.</li>
+                            <li>Tee allikast pilti erinevatest suundadest. Veendu, et pildile mahub ka ümbritsev maastik ja taimkatte.</li>
+                            <li>Pildid annavad tunnistust piirkonnast toimunud muutustest. Kui samast allikast oli pilte lisatud vaid päeva-paari eest ning need on hea kvaliteedida ja läbimõeldult tehtud, siis pole mõte täpselt samasuguseid fotosid lisama hakata.</li>
                         </ul>
                     </div>
                 </div>
@@ -102,12 +106,12 @@
 
                         <div class="my-3">
                             <span class="font-bold">Maitse</span> iseloomustamiseks soovitame kasutada USA Geoloogiateenistuse (USGS) väljapakutud skaalat:
-                            <ul class="list-disc">
-                                <li class="ml-5">maitse on hea, etteheiteid pole</li>
-                                <li class="ml-5">maitse on metalne, nagu raud või rooste</li>
-                                <li class="ml-5">maitse on mullane või hallitusene</li>
-                                <li class="ml-5">maitse ja lõhn meenutavad mädanenud muna</li>
-                                <li class="ml-5">maitse on magus</li>
+                            <ul class="list-disc ml-5">
+                                <li>maitse on hea, etteheiteid pole</li>
+                                <li>maitse on metalne, nagu raud või rooste</li>
+                                <li>maitse on mullane või hallitusene</li>
+                                <li>maitse ja lõhn meenutavad mädanenud muna</li>
+                                <li>maitse on magus</li>
                             </ul>
                         </div>
                         <div class="my-3"><span class="font-bold">Nuusuta</span> vett ja kirjelda selle lõhna.</div>
@@ -126,15 +130,15 @@
                                 Sõltuvalt varustuse olemasolust ja kättesaadavusest (mõõteseadmed, testimiskomplektid jne), aga ka teie oskustest, on veekvaliteedi mõõtmiseks palju võimalusi. Näiteks, allikavee temperatuuri mõõtmiseks ei ole alati vaja hirmkallist mõõteseadet, piisab lihtsast töökorras termomeetrist.
                             </div>
                             <div>Milliste veekvaliteedi parameetrite mõõtmiseks vajalikud vahendid sul olemas on?</div>
-                            <ul class="list-disc">
-                                <li class="ml-5">Veetemperatuur (termomeeter, elektrooniline temperatuuri mõõtja)</li>
-                                <li class="ml-5">pH (pH-meeter, kolorimeetriline test, testribad)</li>
-                                <li class="ml-5">Elektrijuhtivus ja erijuhtivus (juhtivusmõõtur)</li>
-                                <li class="ml-5">Lahustatud tahkete ainete koguarv (juhtivusmõõtur)</li>
-                                <li class="ml-5">Lahustunud hapnik (elektrooniline oksümeeter, kolorimeetriline test)</li>
-                                <li class="ml-5">Redokspotentsiaal (mitme parameetriga veekvaliteedi andur)</li>
-                                <li class="ml-5">Leelisus (leeliselisuse tiitrimise komplekt)</li>
-                                <li class="ml-5">Nitraadid (nitraatide tiitrimiskomplekt, testribad)</li>
+                            <ul class="list-disc ml-5">
+                                <li>Veetemperatuur (termomeeter, elektrooniline temperatuuri mõõtja)</li>
+                                <li>pH (pH-meeter, kolorimeetriline test, testribad)</li>
+                                <li>Elektrijuhtivus ja erijuhtivus (juhtivusmõõtur)</li>
+                                <li>Lahustatud tahkete ainete koguarv (juhtivusmõõtur)</li>
+                                <li>Lahustunud hapnik (elektrooniline oksümeeter, kolorimeetriline test)</li>
+                                <li>Redokspotentsiaal (mitme parameetriga veekvaliteedi andur)</li>
+                                <li>Leelisus (leeliselisuse tiitrimise komplekt)</li>
+                                <li>Nitraadid (nitraatide tiitrimiskomplekt, testribad)</li>
                             </ul>
                         </div>
                     </div>

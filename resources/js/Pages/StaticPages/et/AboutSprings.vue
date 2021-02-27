@@ -43,11 +43,11 @@
                     </div>
                     <div class="mt-3">
                         Allikad saab liigitada mitmete tunnuste alusel, millest kõige üldisemaks on liigitus väljavoolu iseloomu järgi:
-                        <ul class="list-disc">
-                            <li class="ml-5">
+                        <ul class="list-disc ml-5">
+                            <li>
                                 Langeallikad (gravitatsioonilised allikad, nõlvaallikad) - moodustuvad surveta põhjavee väljavoolualal. Vesi liigub seal raskusjõu mõjul põhjaveekihi toitealalt väljavoolualale.  Vesi liigub maapinnas sügavamale, kuni jõuab vettpidava kihini (veepidemeni), mida mööda horisontaalselt liikudes lõikub ühel hetkel maapinnaga ning väljub sealt allikana. Langeallikaid leidub tavaliselt mäenõlvadel ja oruveerudel. Langeallikad tavaliselt seisuveekogu ei moodusta, allikast moodustub kohe oja. Langeallika näitena saab tuua näiteks Tallinnas asuva Rõõmuallika või Põlulas asuva Lavi allika.
                             </li>
-                            <li class="ml-5">
+                            <li>
                                 Tõusuallikad - esinevad survelise põhjaveega alal, kus vesi tõuseb hüdrostaatilise rõhu mõjul maapinnale. Sellised allikad moodustuva kohtades, kus survelise veekihi lasuv veepide mingil põhjusel katkeb, näiteks tektooniliste rikete kohal või oruveerudel.  Üldjuhul moodustavad survelised allikad väikese seisuveekogu, mille põhjasettes võib esineda “keevaid” lehtreid. Selliselt tekkinud suuremates allikajärvedest võib nimetada näiteks Äntu Sinijärve.
                             </li>
                         </ul>
