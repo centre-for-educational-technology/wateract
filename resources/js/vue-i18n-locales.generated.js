@@ -325,7 +325,8 @@ export default {
             "world_map": "World Map",
             "relief_map": "Relief Map",
             "orthophoto": "Ortophoto",
-            "country_not_supported": "This country is not supported."
+            "country_not_supported": "This country is not supported.",
+            "observation_description": "Description (natural conditions, folklore, accessibility)"
         },
         "users": {
             "users": "Users",
@@ -953,7 +954,8 @@ export default {
             "world_map": "Maailma kaart",
             "relief_map": "Reljeefkaart",
             "orthophoto": "Ortofoto",
-            "country_not_supported": "See riik ei ole toetatud."
+            "country_not_supported": "See riik ei ole toetatud.",
+            "observation_description": "Kirjeldus (looduslikud olud, pärimused, ligipääsetavus)"
         },
         "users": {
             "users": "Kasutajad",
@@ -1417,7 +1419,8 @@ export default {
             "world_map": "World Map",
             "relief_map": "Relief Map",
             "orthophoto": "Ortophoto",
-            "country_not_supported": "This country is not supported."
+            "country_not_supported": "This country is not supported.",
+            "observation_description": "Description (natural conditions, folklore, accessibility)"
         },
         "users": {
             "users": "Lietotāji",

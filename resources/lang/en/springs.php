@@ -292,4 +292,5 @@ return [
     'orthophoto' => 'Ortophoto',
 
     'country_not_supported' => 'This country is not supported.',
+    'observation_description' => 'Description (natural conditions, folklore, accessibility)',
 ];

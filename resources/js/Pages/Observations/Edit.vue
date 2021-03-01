@@ -75,7 +75,7 @@
                     </div>
 
                     <div class="col-span-6 sm:col-span-4">
-                        <jet-label class="font-bold inline-block" for="description" :value="$t('springs.description')" />
+                        <jet-label class="font-bold inline-block" for="description" :value="$t('springs.observation_description')" />
                         <help-button @click.native="showHelpDialog( $t('springs.description_help_text') )"></help-button>
                         <textarea id="description" type="textarea" class="px-2 mt-1 block w-full border" rows="5" v-model="form.description" ></textarea>
                     </div>

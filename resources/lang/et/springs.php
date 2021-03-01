@@ -286,4 +286,5 @@ return [
     'orthophoto' => 'Ortofoto',
 
     'country_not_supported' => 'See riik ei ole toetatud.',
+    'observation_description' => 'Kirjeldus (looduslikud olud, pärimused, ligipääsetavus)',
 ];
