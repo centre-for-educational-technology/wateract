@@ -313,9 +313,12 @@
             </template>
 
             <template #actions>
-                <jet-secondary-button v-if="form.status === 'draft'" type="submit" @click.native="saveDraft(form)">Save as draft</jet-secondary-button>
-                <jet-button v-if="form.status === 'draft'" class="ml-2" type="submit" @click.native="submit(form)">Submit</jet-button>
+                <jet-secondary-button v-if="form.status === 'draft'" type="submit" @click.native="saveDraft(form)">{{ $t('springs.save_as_draft') }}</jet-secondary-button>
+                <jet-button v-if="form.status === 'draft'" class="ml-2" type="submit" @click.native="submit(form)">{{ $t('springs.submit') }}</jet-button>
+
+                <jet-secondary-button v-if="can('edit spring') && form.status === 'submitted'" class="ml-2" type="submit" @click.native="save(form)">{{ $t('springs.save') }}</jet-secondary-button>
                 <jet-button v-if="can('edit spring') && form.status === 'submitted'" class="ml-2" type="submit" @click.native="confirm(form)">{{ $t('springs.confirm') }}</jet-button>
+
                 <jet-button v-if="can('edit spring') && form.status === 'confirmed'" class="ml-2" type="submit" @click.native="save(form)">{{ $t('springs.save') }}</jet-button>
             </template>
 
