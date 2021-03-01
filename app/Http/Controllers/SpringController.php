@@ -57,6 +57,7 @@ class SpringController extends Controller
     {
         if (Auth::user()) {
             return Inertia::render('Springs/Create', [
+                'countries' => Country::all(),
                 'classifications' => SpringController::getClassifications(),
                 'ownerships' => SpringController::getOwnerships(),
                 'statuses' => SpringController::getStatuses()
@@ -64,7 +65,7 @@ class SpringController extends Controller
         }
         return SpringController::index();
     }
-    
+
     public function getClassifications() {
         return [
             array( 'id' => 'gravity_spring', 'name' => 'springs.classification_options.gravity_spring' ),
@@ -96,12 +97,24 @@ class SpringController extends Controller
      */
     public function store(Request $request)
     {
+
+        $country_code = $request['country'];
+
         Validator::make($request->all(), [
             'description' => 'required',
             'latitude' => 'required',
             'longitude' => 'required',
+            'country' => 'required',
             "references.*.url" => "nullable|url",
-        ])->validateWithBag('addSpring');
+        ])->after(function ($validator) use ($country_code)  {
+        $allowed_countries = Country::all()->pluck('code')->all();
+        if (! in_array($country_code, $allowed_countries)) {
+            $validator->errors()->add(
+                'country', __('springs.country_not_supported')
+            );
+        }
+    })->validateWithBag('addSpring');
+
 
         $request['user_id'] = Auth::id();
         // create wateract code
@@ -237,6 +250,7 @@ class SpringController extends Controller
             ->first();
         if (Auth::user()) {
             return Inertia::render('Springs/Edit', [
+                'countries' => Country::all(),
                 'classifications' => SpringController::getClassifications(),
                 'ownerships' => SpringController::getOwnerships(),
                 'spring' => $spring]);
@@ -256,12 +270,22 @@ class SpringController extends Controller
     {
         $this->authorize('update', $spring);
 
+        $country_code = $request['country'];
+
         Validator::make($request->all(), [
             'description' => 'required',
             'latitude' => 'required',
             'longitude' => 'required',
+            'country' => 'required',
             "references.*.url"  => "nullable|url",
-        ])->validateWithBag('editSpring');
+        ])->after(function ($validator) use ($country_code)  {
+            $allowed_countries = Country::all()->pluck('code')->all();
+            if (! in_array($country_code, $allowed_countries)) {
+                $validator->errors()->add(
+                    'country', __('springs.country_not_supported')
+                );
+            }
+        })->validateWithBag('editSpring');
 
         $country_id = SpringController::getCountryId($request['country']);
         if ($country_id) {

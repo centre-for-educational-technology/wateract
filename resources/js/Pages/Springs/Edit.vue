@@ -179,7 +179,11 @@
                     <div class="flex">
                         <div class="w-1/3 px-2">
                             <jet-label class="font-bold" for="country" :value="$t('springs.country')" />
-                            <jet-input id="country" type="text" class="mt-1 block w-full" v-model="form.country" />
+                            <select v-model="form.country"
+                                    class="block w-full bg-white border border-gray-400 hover:border-gray-500 px-2 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                                <option value=""></option>
+                                <option v-for='data in countries' :value='data.code'>{{ $t('springs.countries.'+data.code) }}</option>
+                            </select>
                         </div>
                         <div class="w-1/3 px-2">
                             <jet-label class="font-bold" for="county" :value="$t('springs.county')" />
@@ -190,6 +194,7 @@
                             <jet-input id="settlement" type="text" class="mt-1 block w-full" v-model="form.settlement" />
                         </div>
                     </div>
+                    <jet-input-error :message="form.error('country')" class="mt-2 px-2" />
 
                     <div class="px-2 py-2">
                         <jet-label class="font-bold" for="references" :value="$t('springs.references')" />
@@ -424,7 +429,7 @@ export default {
         'l-marker-cluster': Vue2LeafletMarkerCluster,
         GestureHandling,
     },
-    props: ['spring', 'classifications', 'ownerships'],
+    props: ['spring', 'countries', 'classifications', 'ownerships'],
     data() {
         let photos = [];
         _.forEach(this.spring.photos, function(photo) {

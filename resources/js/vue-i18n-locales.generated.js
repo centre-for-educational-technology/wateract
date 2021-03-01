@@ -324,7 +324,8 @@ export default {
             "estonia_map": "Estonia Map",
             "world_map": "World Map",
             "relief_map": "Relief Map",
-            "orthophoto": "Ortophoto"
+            "orthophoto": "Ortophoto",
+            "country_not_supported": "This country is not supported."
         },
         "users": {
             "users": "Users",
@@ -951,7 +952,8 @@ export default {
             "estonia_map": "Maa-ameti kaart",
             "world_map": "Maailma kaart",
             "relief_map": "Reljeefkaart",
-            "orthophoto": "Ortofoto"
+            "orthophoto": "Ortofoto",
+            "country_not_supported": "See riik ei ole toetatud."
         },
         "users": {
             "users": "Kasutajad",
@@ -1087,6 +1089,9 @@ export default {
                 "image": "Pilt",
                 "result_text_under_image": "Tulemuse tekst pildi all",
                 "short_text": "Lühitekst",
+                "latitude": "Laiuskraadi",
+                "longitude": "Pikkuskraadi",
+                "country": "Riigi",
                 "description": "Kirjelduse"
             }
         }
@@ -1411,7 +1416,8 @@ export default {
             "estonia_map": "Estonia Map",
             "world_map": "World Map",
             "relief_map": "Relief Map",
-            "orthophoto": "Ortophoto"
+            "orthophoto": "Ortophoto",
+            "country_not_supported": "This country is not supported."
         },
         "users": {
             "users": "Lietotāji",

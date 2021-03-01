@@ -289,4 +289,6 @@ return [
     'world_map' => 'World Map',
     'relief_map' => 'Relief Map',
     'orthophoto' => 'Ortophoto',
+
+    'country_not_supported' => 'This country is not supported.',
 ];

@@ -284,4 +284,6 @@ return [
     'world_map' => 'Maailma kaart',
     'relief_map' => 'Reljeefkaart',
     'orthophoto' => 'Ortofoto',
+
+    'country_not_supported' => 'See riik ei ole toetatud.',
 ];

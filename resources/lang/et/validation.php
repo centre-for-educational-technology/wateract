@@ -152,5 +152,9 @@ return [
         'image'                   => 'Pilt',
         'result_text_under_image' => 'Tulemuse tekst pildi all',
         'short_text'              => 'Lühitekst',
+        'latitude'                => 'Laiuskraadi',
+        'longitude'               => 'Pikkuskraadi',
+        'country'                 => 'Riigi',
+        'description'             => 'Kirjelduse',
     ],
 ];
