@@ -49,6 +49,15 @@ class SpringFeedbackController extends Controller
 
         $request['user_id'] = Auth::id();
         $spring_feedback = SpringFeedback::create($request->all());
+
+        // spring status back to submitted
+        $spring_id = $request['spring_id'];
+        $spring = Spring::where('id', $spring_id)->first();
+        if ($spring->status === 'confirmed') {
+            $spring->status = 'submitted';
+            $spring->save();
+        }
+
         return redirect()->back();
     }
 
