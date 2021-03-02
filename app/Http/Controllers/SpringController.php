@@ -231,7 +231,15 @@ class SpringController extends Controller
             ->with('database_links')
             ->with('all_photos')
             ->first();
-        return Inertia::render('Springs/Show', ['spring' => $spring]);
+
+        $photo_url = '';
+        if ( count($spring->all_photos) > 0 ) {
+            $base_url = env('APP_URL', '');
+            $photo_url = $base_url . '/' . $spring->all_photos[0]->thumbnail;
+        }
+
+        return Inertia::render('Springs/Show', ['spring' => $spring])
+            ->withViewData(['og_title' => $spring->name, 'og_image' => $photo_url]);
     }
 
     /**

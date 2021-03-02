@@ -13,6 +13,10 @@
         <link rel="icon" href="/images/favicons/favicon.ico">
         <link rel="manifest" href="/images/favicons/site.webmanifest">
 
+        <meta property="og:title" content="{{ $og_title ?? 'Allikad.info' }}">
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="{{ $og_image ?? '' }}" />
+
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Fonts -->
