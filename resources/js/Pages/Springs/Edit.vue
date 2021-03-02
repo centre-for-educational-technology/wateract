@@ -163,15 +163,15 @@
                         <div class="w-1/2 px-2">
                             <jet-label class="font-bold inline-block" for="latitude" :value="$t('springs.latitude')" />
                             <help-button @click.native="showHelpDialog( $t('springs.latitude_help_text') )"></help-button>
-                            <jet-input id="latitude" type="text" class="mt-1 block w-full" v-model="form.latitude" />
-                            <!--<jet-input-error :message="form.error('latitude')" class="mt-2" />-->
+                            <jet-input id="latitude" type="number" class="mt-1 block w-full" v-model="form.latitude" v-on:change.native="updateLocation" />
+                            <jet-input-error :message="form.error('latitude')" class="mt-2" />
                         </div>
 
                         <div class="w-1/2 px-2">
                             <jet-label class="font-bold inline-block" for="longitude" :value="$t('springs.longitude')" />
                             <help-button @click.native="showHelpDialog( $t('springs.longitude_help_text') )"></help-button>
-                            <jet-input id="longitude" type="text" class="mt-1 block w-full" v-model="form.longitude" />
-                            <!--<jet-input-error :message="form.error('longitude')" class="mt-2" />-->
+                            <jet-input id="longitude" type="number" class="mt-1 block w-full" v-model="form.longitude" v-on:change.native="updateLocation" />
+                            <jet-input-error :message="form.error('longitude')" class="mt-2" />
                         </div>
                     </div>
 
@@ -602,13 +602,18 @@ export default {
             data._method = 'PUT';
             this.$inertia.post('/springs/' + data.code, data)
         },
-        updateLeafletLocation(location) {
-            this.springLocation = location.latlng;
-            this.form.latitude= parseFloat(location.latlng.lat).toFixed(6);
-            this.form.longitude = parseFloat(location.latlng.lng).toFixed(6);
-
+        updateLocation() {
+            let latitude = Number(this.form.latitude);
+            let longitude = Number(this.form.longitude);
+            if ( latitude && longitude ) {
+                this.springLocation = {lat: latitude, lng: longitude};
+                this.updateAddressFields( this.springLocation );
+                this.leafletMapObject.setView( this.springLocation );
+            }
+        },
+        updateAddressFields(location) {
             const geocoder = new google.maps.Geocoder()
-            geocoder.geocode({ 'latLng': location.latlng }, (result, status) => {
+            geocoder.geocode({ 'latLng': location }, (result, status) => {
                 if (status === google.maps.GeocoderStatus.OK) {
                     let address_components = result[0].address_components;
                     let address = getAddressObject(address_components);
@@ -617,7 +622,12 @@ export default {
                     this.form.settlement = address.settlement;
                 }
             })
-
+        },
+        updateLeafletLocation(location) {
+            this.springLocation = location.latlng;
+            this.form.latitude= parseFloat(location.latlng.lat).toFixed(6);
+            this.form.longitude = parseFloat(location.latlng.lng).toFixed(6);
+            this.updateAddressFields( location.latlng )
         },
         showReliefMap() {
             this.tilelayers = relief_layers;
@@ -635,8 +645,7 @@ export default {
         },
         openStreetOnReady(mapObject) {
             this.openStreetMapObject = mapObject;
-            let openStreetCenter = latLng(this.spring.latitude, this.spring.longitude);
-            this.openStreetMapObject.setView(openStreetCenter, 15);
+            this.openStreetMapObject.setView(this.springLocation, this.openStreetMapZoom);
         },
         openStreetShowLocation() {
             this.openStreetMapObject.locate();

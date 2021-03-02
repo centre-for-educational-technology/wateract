@@ -163,14 +163,14 @@
                         <div class="w-1/2 px-2">
                             <jet-label class="inline-block font-bold" for="latitude" :value="$t('springs.latitude')" />
                             <help-button @click.native="showHelpDialog( $t('springs.latitude_help_text') )"></help-button>
-                            <jet-input id="latitude" type="text" class="mt-1 block w-full" v-model="form.latitude" />
+                            <jet-input id="latitude" type="number" class="mt-1 block w-full" v-model="form.latitude" v-on:change.native="updateLocation" />
                             <jet-input-error :message="form.error('latitude')" class="mt-2" />
                         </div>
 
                         <div class="w-1/2 px-2">
                             <jet-label class="inline-block font-bold" for="longitude" :value="$t('springs.longitude')" />
                             <help-button @click.native="showHelpDialog( $t('springs.longitude_help_text') )"></help-button>
-                            <jet-input id="longitude" type="text" class="mt-1 block w-full" v-model="form.longitude" />
+                            <jet-input id="longitude" type="number" class="mt-1 block w-full" v-model="form.longitude" v-on:change.native="updateLocation" />
                             <jet-input-error :message="form.error('longitude')" class="mt-2" />
                         </div>
                         </div>
@@ -570,24 +570,32 @@ export default {
             this.dialogPhotoUrl = photo.url;
             this.dialogVisible = true;
         },
-
-        updateLeafletLocation(location) {
-            this.springLocation = location.latlng;
-            this.form.latitude= parseFloat(location.latlng.lat).toFixed(6);
-            this.form.longitude = parseFloat(location.latlng.lng).toFixed(6);
-
+        updateLocation() {
+            let latitude = Number(this.form.latitude);
+            let longitude = Number(this.form.longitude);
+            if ( latitude && longitude ) {
+                this.springLocation = {lat: latitude, lng: longitude};
+                this.updateAddressFields( this.springLocation );
+                this.leafletMapObject.setView( this.springLocation );
+            }
+        },
+        updateAddressFields(location) {
             const geocoder = new google.maps.Geocoder()
-            geocoder.geocode({ 'latLng': location.latlng }, (result, status) => {
+            geocoder.geocode({ 'latLng': location }, (result, status) => {
                 if (status === google.maps.GeocoderStatus.OK) {
                     let address_components = result[0].address_components;
                     let address = getAddressObject(address_components);
                     this.form.country = address.country;
                     this.form.county = address.county;
                     this.form.settlement = address.settlement;
-                    //console.log(result[0].formatted_address);
                 }
             })
-
+        },
+        updateLeafletLocation(location) {
+            this.springLocation = location.latlng;
+            this.form.latitude= parseFloat(location.latlng.lat).toFixed(6);
+            this.form.longitude = parseFloat(location.latlng.lng).toFixed(6);
+            this.updateAddressFields( location.latlng );
         },
         showReliefMap() {
             this.tilelayers = relief_layers;
