@@ -26,4 +26,7 @@ return [
     'forgot_password_text' => 'Aizmirsi savu paroli? Nav problēmu. Paziņojiet mums savu e-pasta adresi, uz kuru mēs Jums nosūtīsim paroles atiestatīšanas saiti.',
     'email_password_reset_link' => 'Saņemt e-pastā paroles atiestatīšanas saiti',
 
+    'agree_with_conditions' => 'I have read and agree with Allikad.info',
+    'privacy_policy' => 'Privacy policy',
+
 ];

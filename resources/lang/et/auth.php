@@ -29,4 +29,7 @@ return [
     'forgot_password_text' => 'Unustasid oma parooli? Pole probleemi. Sisesta oma e-posti aadress ja me saadame sulle parooli lähtestamise lingi, mis lubab sul endale uue parooli panna.',
     'email_password_reset_link' => 'Saada parooli lähtestamise link',
 
+    'agree_with_conditions' => 'Olen tutvunud ja nõus Allikad.info',
+    'privacy_policy' => 'Privaatsustingimustega',
+
 ];

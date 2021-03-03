@@ -13,7 +13,9 @@ export default {
             "login": "Login",
             "forgot_password": "Forgot your password?",
             "forgot_password_text": "Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.",
-            "email_password_reset_link": "Email Password Reset Link"
+            "email_password_reset_link": "Email Password Reset Link",
+            "agree_with_conditions": "I have read and agree with Allikad.info",
+            "privacy_policy": "Privacy policy"
         },
         "pagination": {
             "previous": "&laquo; Previous",
@@ -326,7 +328,8 @@ export default {
             "relief_map": "Relief Map",
             "orthophoto": "Ortophoto",
             "country_not_supported": "This country is not supported.",
-            "observation_description": "Description (natural conditions, folklore, accessibility)"
+            "observation_description": "Description (natural conditions, folklore, accessibility)",
+            "privacy_policy": "Privacy policy"
         },
         "users": {
             "users": "Users",
@@ -645,7 +648,9 @@ export default {
             "login": "Logi sisse",
             "forgot_password": "Unustasid parooli?",
             "forgot_password_text": "Unustasid oma parooli? Pole probleemi. Sisesta oma e-posti aadress ja me saadame sulle parooli lähtestamise lingi, mis lubab sul endale uue parooli panna.",
-            "email_password_reset_link": "Saada parooli lähtestamise link"
+            "email_password_reset_link": "Saada parooli lähtestamise link",
+            "agree_with_conditions": "Olen tutvunud ja nõus Allikad.info",
+            "privacy_policy": "Privaatsustingimustega"
         },
         "passwords": {
             "reset": "Sinu parool on lähtestatud!",
@@ -955,7 +960,8 @@ export default {
             "relief_map": "Reljeefkaart",
             "orthophoto": "Ortofoto",
             "country_not_supported": "See riik ei ole toetatud.",
-            "observation_description": "Kirjeldus (looduslikud olud, pärimused, ligipääsetavus)"
+            "observation_description": "Kirjeldus (looduslikud olud, pärimused, ligipääsetavus)",
+            "privacy_policy": "Privaatsustingimused"
         },
         "users": {
             "users": "Kasutajad",
@@ -1112,7 +1118,9 @@ export default {
             "login": "Pieslēgties",
             "forgot_password": "Aizmirsi savu paroli?",
             "forgot_password_text": "Aizmirsi savu paroli? Nav problēmu. Paziņojiet mums savu e-pasta adresi, uz kuru mēs Jums nosūtīsim paroles atiestatīšanas saiti.",
-            "email_password_reset_link": "Saņemt e-pastā paroles atiestatīšanas saiti"
+            "email_password_reset_link": "Saņemt e-pastā paroles atiestatīšanas saiti",
+            "agree_with_conditions": "I have read and agree with Allikad.info",
+            "privacy_policy": "Privacy policy"
         },
         "passwords": {
             "reset": "Jūsu parole ir atjaunināta!",
@@ -1420,7 +1428,8 @@ export default {
             "relief_map": "Relief Map",
             "orthophoto": "Ortophoto",
             "country_not_supported": "This country is not supported.",
-            "observation_description": "Description (natural conditions, folklore, accessibility)"
+            "observation_description": "Description (natural conditions, folklore, accessibility)",
+            "privacy_policy": "Privacy policy"
         },
         "users": {
             "users": "Lietotāji",

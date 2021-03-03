@@ -29,6 +29,12 @@
                 <x-jet-input class="block mt-1 w-full" type="password" name="password_confirmation" required autocomplete="new-password" />
             </div>
 
+            <div class="mt-4">
+                <input type="checkbox" name="agree_with_conditions" required />
+                <x-jet-label class="inline" value="{{ __('auth.agree_with_conditions') }}" />
+                <a class="underline text-sm" target="_blank" href="/privacy-policy">{{ __('auth.privacy_policy') }}</a>
+            </div>
+
             <div class="flex items-center justify-end mt-4">
                 <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
                     {{ __('auth.already_register') }}

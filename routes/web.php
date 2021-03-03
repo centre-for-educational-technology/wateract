@@ -53,6 +53,11 @@ Route::get('/about-wateract', function () {
         'currentRouteName' => 'about-wateract'
     ]);
 });
+Route::get('/privacy-policy', function () {
+    return Inertia\Inertia::render('StaticPages/PrivacyPolicy', [
+        'currentRouteName' => 'privacy-policy'
+    ]);
+});
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
