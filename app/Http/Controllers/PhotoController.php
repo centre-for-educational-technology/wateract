@@ -61,7 +61,7 @@ class PhotoController extends Controller
         $photo->thumbnail = $thumbnail;
         $photo->caption = $datetime;
         $photo->save();
-        return response()->json(['error'=>false, 'photo_id'=>$photo->id, 'exif_data' => $image['exif']]);
+        return response()->json(['error'=>false, 'photo_id'=>$photo->id]);
     }
 
     public function storeImage($request) {

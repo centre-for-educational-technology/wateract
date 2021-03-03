@@ -163,14 +163,14 @@
                         <div class="w-1/2 px-2">
                             <jet-label class="inline-block font-bold" for="latitude" :value="$t('springs.latitude')" />
                             <help-button @click.native="showHelpDialog( $t('springs.latitude_help_text') )"></help-button>
-                            <jet-input id="latitude" type="number" class="mt-1 block w-full" v-model="form.latitude" v-on:change.native="updateLocation" />
+                            <jet-input id="latitude" type="text" class="mt-1 block w-full" v-model="form.latitude" v-on:change.native="updateLocation" />
                             <jet-input-error :message="form.error('latitude')" class="mt-2" />
                         </div>
 
                         <div class="w-1/2 px-2">
                             <jet-label class="inline-block font-bold" for="longitude" :value="$t('springs.longitude')" />
                             <help-button @click.native="showHelpDialog( $t('springs.longitude_help_text') )"></help-button>
-                            <jet-input id="longitude" type="number" class="mt-1 block w-full" v-model="form.longitude" v-on:change.native="updateLocation" />
+                            <jet-input id="longitude" type="text" class="mt-1 block w-full" v-model="form.longitude" v-on:change.native="updateLocation" />
                             <jet-input-error :message="form.error('longitude')" class="mt-2" />
                         </div>
                         </div>
