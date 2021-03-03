@@ -54,7 +54,7 @@ export default {
                     label: this.$i18n.t('springs.location'),
                     name: 'country',
                     orderable: true,
-                    transform: ({data}) => `${data['country']}, ${data['county']}${data['settlement'] ? ', ' + data['settlement'] : ''}`,
+                    transform: ({data}) => `${this.$i18n.t('springs.countries.'+data['country'])}${data['county'] ? ', ' + data['county'] : ''}${data['settlement'] ? ', ' + data['settlement'] : ''}`,
                 },
                 {
                     label: this.$i18n.t('springs.date_time'),
@@ -73,6 +73,12 @@ export default {
                     name: 'status',
                     orderable: true,
                     transform: ({data, name}) => `${this.$i18n.t('springs.status_options.'+data[name])}`,
+                },
+                {
+                    label: this.$i18n.t('springs.feedback'),
+                    name: 'feedback',
+                    orderable: false,
+                    transform: ({data, name}) => `${ (data[name].length > 0) ? (data[name]).length : ''}`,
                 },
             ],
             pagination: {

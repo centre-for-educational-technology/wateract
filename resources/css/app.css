@@ -42,3 +42,7 @@ textarea {
 .min-w-full {
     min-width: 100%;
 }
+
+.overflow-x-auto {
+    overflow-x: auto;
+}

@@ -458,7 +458,7 @@ class SpringController extends Controller
             $data = $query->paginate($length);
             return new DataTableCollectionResource($data);
         }
-        $query = Spring::where('status', 'submitted')->orderBy($orderBy, $orderByDir);
+        $query = Spring::where('status', 'submitted')->with('feedback')->orderBy($orderBy, $orderByDir);
         $data = $query->paginate($length);
         return new DataTableCollectionResource($data);
     }

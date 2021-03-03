@@ -222,7 +222,7 @@ class UserController extends Controller
         $length = $request->input('length');
         $orderBy = $request->input('column', 'created_at');
         $orderByDir = $request->input('dir', 'desc');
-        $query = Spring::where('user_id', Auth::id())->orderBy($orderBy, $orderByDir);
+        $query = Spring::where('user_id', Auth::id())->with('feedback')->orderBy($orderBy, $orderByDir);
         $data = $query->paginate($length);
         return new DataTableCollectionResource($data);
     }
