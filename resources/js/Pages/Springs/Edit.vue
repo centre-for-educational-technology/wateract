@@ -16,6 +16,11 @@
                         <div class="break-normal">{{ helptext }}</div>
                     </el-dialog>
 
+                    <div class="py-2" v-if="(spring.user ? (spring.user.id !== $page.user.id) : false)">
+                        <jet-label class="font-bold" :value="$t('springs.added_by')" />
+                        <div>{{ spring.user.name }}</div>
+                    </div>
+
                     <div class="flex -mx-2">
                         <div class="w-full px-2">
                             <jet-label class="font-bold inline-block" for="name" :value="$t('springs.name')" />
