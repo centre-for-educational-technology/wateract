@@ -233,13 +233,19 @@ class SpringController extends Controller
             ->first();
 
         $photo_url = '';
+        $spring_url = '';
         if ( count($spring->all_photos) > 0 ) {
             $base_url = env('APP_URL', '');
             $photo_url = $base_url . '/' . $spring->all_photos[0]->thumbnail;
+            $spring_url = $base_url . '/springs/' .  $spring->code;
         }
 
         return Inertia::render('Springs/Show', ['spring' => $spring])
-            ->withViewData(['og_title' => $spring->name, 'og_image' => $photo_url]);
+            ->withViewData([
+                'og_title' => $spring->name,
+                'og_image' => $photo_url,
+                'og_url' => $spring_url
+            ]);
     }
 
     /**
