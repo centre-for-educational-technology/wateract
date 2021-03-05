@@ -66,13 +66,18 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/admin', function () {
-    return Inertia\Inertia::render('Admin');
+    return Inertia\Inertia::render('Admin', [
+        'springs_to_update' => Spring::whereNull('county')->whereNull('settlement')->get(),
+    ]);
 })->name('admin');
 
 Route::post('/admin/csvfile', [CsvFileController::class, 'update'])
     ->middleware(['auth']);
 
 Route::resource('admin/users', UserController::class);
+
+Route::post('/admin/updateSpringAddress', [SpringController::class, 'updateSpringAddress'])
+    ->middleware(['auth']);;
 
 /*Route::group(['middleware' => ['auth']], function() {
     Route::resource('admin/users', UserController::class);

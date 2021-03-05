@@ -469,4 +469,19 @@ class SpringController extends Controller
         return new DataTableCollectionResource($data);
     }
 
+    public function updateSpringAddress(Request $request) {
+        $spring_id = $request->input('spring_id');
+        if ($spring_id) {
+            $spring = Spring::where('id', $spring_id)->first();
+            $county_name = $request->input('county');
+            $county_id = SpringController::getCountyId($county_name);
+            if ($county_id) {
+                $spring->county_id = $county_id;
+            }
+            $spring->county = $county_name;
+            $spring->settlement = $request->input('settlement');
+            $spring->save();
+        }
+    }
+
 }
