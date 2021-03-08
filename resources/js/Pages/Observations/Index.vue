@@ -1,17 +1,12 @@
 <template>
     <app-layout>
         <template #header>
-            <div class="flex w-full">
-                <h1 class="inline w-4/5" v-if="spring.name">
-                    {{ spring.name }}
-                </h1>
-                <h1 class="inline w-4/5" v-if="!spring.name">
-                    {{ $t('springs.unnamed') }}
-                </h1>
-                <div class="w-1/5 float-right inline" v-if="$page.user">
-                    <nav-button :href="'/springs/'+spring.code+'/observations/create'">
-                        {{ $t('springs.add_new_observation') }}</nav-button>
-                </div>
+            <h1>
+                {{ spring.name ||  $t('springs.unnamed')}}
+            </h1>
+            <div class="sm:float-right sm:mt-0 mt-4" v-if="$page.user">
+                <nav-button :href="'/springs/'+spring.code+'/observations/create'">
+                    {{ $t('springs.add_new_observation') }}</nav-button>
             </div>
         </template>
 

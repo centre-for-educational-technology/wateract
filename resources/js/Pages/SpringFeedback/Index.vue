@@ -12,14 +12,9 @@
 <template>
     <app-layout>
         <template #header>
-            <div class="flex w-full">
-                <h1 class="w-4/5" v-if="spring.name">
-                    {{ spring.name }}
-                </h1>
-                <h1 class="w-4/5" v-if="!spring.name">
-                    {{ $t('springs.unnamed') }}
-                </h1>
-            </div>
+            <h1>
+                {{ spring.name ||  $t('springs.unnamed')}}
+            </h1>
         </template>
 
         <div class="py-6">

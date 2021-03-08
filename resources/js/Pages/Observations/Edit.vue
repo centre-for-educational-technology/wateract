@@ -93,13 +93,16 @@
 
                 </template>
                 <template #actions>
-                    <jet-secondary-button v-if="form.status === 'draft'" type="submit"
+                    <jet-secondary-button :class="{ 'opacity-25': processingPhotos }" :disabled="processingPhotos"
+                                          v-if="form.status === 'draft'" type="submit"
                                           @click.native="save(form)">
                         {{ $t('springs.save_as_draft') }}</jet-secondary-button>
-                    <jet-button v-if="form.status === 'draft'" class="ml-2" type="submit"
+                    <jet-button :class="{ 'opacity-25': processingPhotos }" :disabled="processingPhotos"
+                                v-if="form.status === 'draft'" class="ml-2" type="submit"
                                 @click.native="submit(form)">
                         {{  $t('springs.submit') }}</jet-button>
-                    <jet-button v-if="can('edit spring') && form.status === 'submitted'"
+                    <jet-button :class="{ 'opacity-25': processingPhotos }" :disabled="processingPhotos"
+                                v-if="can('edit spring') && form.status === 'submitted'"
                                 type="submit" @click.native="save(form)">
                         {{ $t('springs.save') }}</jet-button>
                 </template>
@@ -158,6 +161,7 @@ export default {
             photos: photos,
             dialogVisible: false,
             dialogPhotoUrl: '',
+            processingPhotos: false,
             form: this.$inertia.form({
                 '_method': 'PUT',
                 id: this.observation.id,
@@ -190,12 +194,14 @@ export default {
             this.$inertia.post('/observations/' + data.id, data)
         },
         updatePhotos(photo) {
+            this.processingPhotos = true;
             var data = new FormData();
             data.append('photo', photo.raw || '');
             let photo_id;
             axios.post('/photos', data).then(response => {
                 photo_id = response.data.photo_id;
                 this.form.photos_to_add.push(photo_id);
+                this.processingPhotos = false;
             })
                 .catch(function (error) {
                     // handle error
@@ -203,7 +209,7 @@ export default {
                 })
                 .then(function () {
                     // always executed
-                    console.log('midagi');
+                    console.log('upload complete');
                 });
             ;
         },

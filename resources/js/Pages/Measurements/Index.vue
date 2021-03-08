@@ -1,17 +1,12 @@
 <template>
     <app-layout>
         <template #header>
-            <div class="flex w-full">
-                <h1 class="w-4/5" v-if="spring.name">
-                    {{ spring.name }}
-                </h1>
-                <h1 class="w-4/5" v-if="!spring.name">
-                    {{ $t('springs.unnamed') }}
-                </h1>
-                <div class="w-1/5" v-if="$page.user">
-                    <nav-button v-if="can('add measurement')" :href="'/springs/'+spring.code+'/analyses/create'">
-                        {{ $t('springs.add_new_measurement') }}</nav-button>
-                </div>
+            <h1>
+                {{ spring.name ||  $t('springs.unnamed')}}
+            </h1>
+            <div class="sm:float-right sm:mt-0 mt-4" v-if="$page.user">
+                <nav-button v-if="can('add measurement')" :href="'/springs/'+spring.code+'/analyses/create'">
+                    {{ $t('springs.add_new_measurement') }}</nav-button>
             </div>
         </template>
 

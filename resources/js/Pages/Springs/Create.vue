@@ -309,8 +309,10 @@
 
                     </template>
                         <template #actions>
-                            <jet-secondary-button type="submit" @click.native="saveDraft(form)">{{ $t('springs.save_as_draft') }}</jet-secondary-button>
-                            <jet-button class="ml-2" type="submit" @click.native="submit(form)">{{ $t('springs.submit') }}</jet-button>
+                            <jet-secondary-button :class="{ 'opacity-25': processingPhotos }" :disabled="processingPhotos" type="submit" @click.native="saveDraft(form)">
+                                {{ $t('springs.save_as_draft') }}</jet-secondary-button>
+                            <jet-button class="ml-2" :class="{ 'opacity-25': processingPhotos }" :disabled="processingPhotos" type="submit" @click.native="submit(form)">
+                                {{ $t('springs.submit') }}</jet-button>
                         </template>
 
             </jet-form-section>
@@ -479,6 +481,7 @@ export default {
             dialogVisible: false,
             dialogPhotoUrl: '',
             map: null,
+            processingPhotos: false,
             form: this.$inertia.form({
                 '_method': 'POST',
                 name: this.name,
@@ -531,6 +534,7 @@ export default {
             this.$inertia.post('/springs', data)
         },
         updatePhotos(photo) {
+            this.processingPhotos = true;
             let file = photo;
             const isIMAGE = (file.raw.type === 'image/jpeg' || file.raw.type === 'image/png');
             if (!isIMAGE) {
@@ -545,11 +549,9 @@ export default {
             let photo_id;
             axios.post('/photos', data).then(response => {
                 photo_id = response.data.photo_id;
-                console.log('exif');
-                console.log(response.data.exif_data);
                 this.form.photo_ids.push(photo_id);
-                //this.onSuccess(response && response.data);
-                //photo_id = resolve(response && response.data);
+                console.log("photo_id: " + photo_id);
+                this.processingPhotos = false;
             })
                 .catch(function (error) {
                     // handle error
@@ -557,10 +559,9 @@ export default {
                 })
                 .then(function () {
                     // always executed
-                    console.log('midagi');
+                    console.log('upload complete');
                 });
             ;
-            console.log(photo_id);
         },
         showHelpDialog(helptext) {
             this.helptext = helptext;

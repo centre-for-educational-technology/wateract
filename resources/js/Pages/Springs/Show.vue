@@ -1,16 +1,12 @@
 <template>
     <app-layout>
         <template #header>
-            <div class="flex w-full">
-                <h1 class="inline w-4/5">
-                    {{ spring.name || $t('springs.unnamed') }}
-                </h1>
-                <div class="w-1/5" v-if="$page.user">
-                    <div class="float-right">
-                        <nav-button v-if="(can('edit spring') || spring.status === 'draft')" :href="'/springs/'+spring.code+'/edit'">{{ $t('springs.edit') }}</nav-button>
-                        <spring-feedback class="mt-10 sm:mt-0" :spring="spring" />
-                    </div>
-                </div>
+            <h1>
+                {{ spring.name ||  $t('springs.unnamed')}}
+            </h1>
+            <div class="sm:float-right sm:mt-0 mt-4" v-if="$page.user">
+                <nav-button v-if="(can('edit spring') || spring.status === 'draft')" :href="'/springs/'+spring.code+'/edit'">{{ $t('springs.edit') }}</nav-button>
+                <spring-feedback :spring="spring" />
             </div>
         </template>
 
@@ -131,7 +127,7 @@
                             </div>
 
                             <div class="py-2" v-if="spring.all_photos.length > 0">
-                                <strong>Gallery</strong>
+                                <strong>{{ $t('springs.gallery') }}</strong>
                                 <div class="grid grid-cols-2 gap-1">
                                     <div @click="handlePhotoPreview(photo)" class="border-1 border-white" v-for="photo in spring.all_photos">
                                         <img :src="'/'+photo.thumbnail" />

@@ -94,8 +94,10 @@
 
                 </template>
                 <template #actions>
-                    <jet-secondary-button type="submit" @click.native="saveDraft(form)">{{ $t('springs.save_as_draft') }}</jet-secondary-button>
-                    <jet-button class="ml-2" type="submit" @click.native="submit(form)">{{ $t('springs.submit') }}</jet-button>
+                    <jet-secondary-button :class="{ 'opacity-25': processingPhotos }" :disabled="processingPhotos" type="submit" @click.native="saveDraft(form)">
+                        {{ $t('springs.save_as_draft') }}</jet-secondary-button>
+                    <jet-button :class="{ 'opacity-25': processingPhotos }" :disabled="processingPhotos" class="ml-2" type="submit" @click.native="submit(form)">
+                        {{ $t('springs.submit') }}</jet-button>
                 </template>
             </jet-form-section>
         </div>
@@ -143,6 +145,7 @@ export default {
             datetime_phrases: {ok: this.$i18n.t('springs.ok'), cancel: this.$i18n.t('springs.cancel')},
             dialogVisible: false,
             dialogPhotoUrl: '',
+            processingPhotos: false,
             form: this.$inertia.form({
                 '_method': 'POST',
                 measurement_time: new Date().toISOString(),
@@ -169,6 +172,7 @@ export default {
             this.dialogVisible = true;
         },
         updatePhotos(photo) {
+            this.processingPhotos = true;
             let file = photo;
             const isIMAGE = (file.raw.type === 'image/jpeg' || file.raw.type === 'image/png');
             if (!isIMAGE) {
@@ -182,6 +186,7 @@ export default {
             axios.post('/photos', data).then(response => {
                 photo_id = response.data.photo_id;
                 this.form.photo_ids.push(photo_id);
+                this.processingPhotos = false;
             })
                 .catch(function (error) {
                     // handle error
@@ -189,6 +194,7 @@ export default {
                 })
                 .then(function () {
                     // always executed
+                    console.log('upload complete');
                 });
         },
         saveDraft: function (data) {

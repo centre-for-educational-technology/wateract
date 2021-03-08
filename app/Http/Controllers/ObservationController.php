@@ -172,7 +172,7 @@ class ObservationController extends Controller
                 'taste_options' => ObservationController::getTasteOptions()
             ]);
         }
-        return Inertia::render('Observations/Index', ['spring' => $spring]);
+        return ObservationController::index($spring_code);
     }
 
     /**

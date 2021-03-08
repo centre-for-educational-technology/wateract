@@ -2,7 +2,7 @@
 
     <div class="inline-block">
         <button class="inline px-3 py-2 text-xs font-semibold leading-normal cursor-pointer bg-blue-100 hover:bg-gray-100 border border-blue-200" v-on:click="showFeedbackWindow">
-            {{ $t('springs.feedback') }}
+            {{ $t('springs.leave_feedback') }}
         </button>
 
             <!-- Feedback Modal -->
@@ -12,7 +12,7 @@
                 </template>
 
                 <template #content>
-                    {{ $t('springs.leave_feedback') }}
+                    {{ $t('springs.leave_feedback_text') }}
 
                     <div class="mt-4">
                         <jet-label class="font-bold">{{ $t('springs.spring_name') }}</jet-label>

@@ -1,8 +1,8 @@
 <template>
     <app-layout>
         <template #header>
-            <h1 class="inline">{{ $t('springs.observations_and_database') }}</h1>
-            <div class="text-right inline float-right" v-if="$page.user">
+            <h1>{{ $t('springs.observations_and_database') }}</h1>
+            <div class="sm:float-right lg:mt-0 mt-4" v-if="$page.user">
                 <nav-button :href="'springs/create'">{{ $t('springs.create_new_spring') }}</nav-button>
             </div>
         </template>

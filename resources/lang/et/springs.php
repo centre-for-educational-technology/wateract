@@ -132,6 +132,7 @@ return [
     'save' => 'Salvesta',
     'confirm' => 'Kinnita',
     'view' => 'Vaade',
+    'gallery' => 'Galerii',
     'observations' => 'Vaatlused',
     'measurements' => 'Mõõtmised',
     'feedback' => 'Tagasiside',
@@ -261,8 +262,9 @@ return [
         'clostridium_perfringens' => 'Clostridium perfringens',
     ],
 
+    'leave_feedback' => 'Jäta tagasiside',
     'write_feedback' => 'Kirjuta siia tagasiside',
-    'leave_feedback' => 'Palun jäta meile tagasisidet selle allika kohta.',
+    'leave_feedback_text' => 'Palun jäta meile tagasisidet selle allika kohta.',
     'no_feedback_added' => 'Tagasisidet pole antud.',
 
     'my_springs' => 'Minu allikad',

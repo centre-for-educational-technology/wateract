@@ -51,7 +51,7 @@
                 <template #form>
 
                     Springs to update: {{ springs_to_update.length }}
-                    
+
                 </template>
 
                 <template #actions v-if="springs_to_update.length > 0">

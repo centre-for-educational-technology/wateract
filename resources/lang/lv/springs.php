@@ -136,6 +136,7 @@ return [
     'save' => 'Saglabāt',
     'confirm' => 'Apstiprināt',
     'view' => 'Skatīt',
+    'gallery' => 'Gallery',
     'observations' => 'Novērojumi',
     'measurements' => 'Mērījumi',
     'feedback' => 'Atgriezeniskā saite',
@@ -266,8 +267,9 @@ return [
         'clostridium_perfringens' => 'Clostridium perfringens',
     ],
 
+    'leave_feedback' => 'Atgriezeniskā saite',
     'write_feedback' => 'Rakstiet atsauksmes šeit',
-    'leave_feedback' => 'Lūdzu, atstājiet mums atsauksmes par avotiem.',
+    'leave_feedback_text' => 'Lūdzu, atstājiet mums atsauksmes par avotiem.',
     'no_feedback_added' => 'Atsauksmes nav pievienotas.',
 
     'my_springs' => 'Mani avoti',

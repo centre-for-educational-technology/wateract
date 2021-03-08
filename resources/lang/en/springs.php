@@ -137,6 +137,7 @@ return [
     'save' => 'Save',
     'confirm' => 'Confirm',
     'view' => 'View',
+    'gallery' => 'Gallery',
     'observations' => 'Observations',
     'measurements' => 'Analyses',
     'feedback' => 'Feedback',
@@ -267,8 +268,9 @@ return [
         'clostridium_perfringens' => 'Clostridium perfringens',
     ],
 
+    'leave_feedback' => 'Leave Feedback',
     'write_feedback' => 'Write feedback here',
-    'leave_feedback' => 'Please leave us a feedback about this spring.',
+    'leave_feedback_text' => 'Please leave us a feedback about this spring.',
     'no_feedback_added' => 'No feedback added.',
 
     'my_springs' => 'My springs',
