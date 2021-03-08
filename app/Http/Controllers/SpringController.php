@@ -8,8 +8,10 @@ use App\Models\Photo;
 use App\Models\Spring;
 use App\Models\SpringDatabaseLink;
 use App\Models\User;
+use App\Notifications\SpringConfirmed;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
@@ -308,6 +310,13 @@ class SpringController extends Controller
         $county_id = SpringController::getCountyId($request['county']);
         if ($county_id) {
             $request['county_id'] = $county_id;
+        }
+
+        if ( $spring->status == 'submitted' && $request['status'] == 'confirmed' ) {
+            $spring_creator = $spring->user()->first();
+            if ( $spring_creator != Auth::user() ) {
+                $spring_creator->notify( new SpringConfirmed($spring) );
+            }
         }
 
         $spring->update($request->all());

@@ -290,4 +290,9 @@ return [
     'country_not_supported' => 'See riik ei ole toetatud.',
     'observation_description' => 'Kirjeldus (looduslikud olud, pärimused, ligipääsetavus)',
     'privacy_policy' => 'Privaatsustingimused',
+
+    'spring_confirmed' => 'Allikas kinnitatud',
+    'spring' => 'Allikas',
+    'spring_confirmed_text' => 'on kinnitatud Allikad.info toimetajate poolt. Sa saad lisada sellele allikale vaatlusi!',
+    'team' => 'meeskond',
 ];

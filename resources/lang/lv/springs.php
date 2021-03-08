@@ -295,4 +295,9 @@ return [
     'country_not_supported' => 'This country is not supported.',
     'observation_description' => 'Description (natural conditions, folklore, accessibility)',
     'privacy_policy' => 'Privacy policy',
+
+    'spring_confirmed' => 'Spring Confirmed',
+    'spring' => 'Spring',
+    'spring_confirmed_text' => 'has been confirmed by :attribute editors now. You are able to add observations and measurements to it!',
+    'team' => 'Team',
 ];
