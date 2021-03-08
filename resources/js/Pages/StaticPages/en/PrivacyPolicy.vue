@@ -155,13 +155,28 @@
                 </div>
             </div>
             <div class="mt-5">
-                <h2>7. Allikad.info uses Secure Sockets Layer (SSL)</h2>
+                <h2>7. Use of Facebook Pixel</h2>
+                <div>
+                    We use the "visitor action pixels" from Facebook Inc (1 Hacker Way, Menlo Park, CA 94025, USA, or, if you are based in the EU, Facebook Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Ireland ("Facebook")) on our website.
+                </div>
+                <div class="mt-5">
+                    This allows user behavior to be tracked after they have been redirected to the provider's website by clicking on a Facebook ad. This enables us to measure the effectiveness of Facebook ads for statistical and market research purposes. The data collected in this way is anonymous to us, i.e. we do not see the personal data of individual users. However, this data is stored and processed by Facebook, which is why we are informing you, based on our knowledge of the situation. Facebook may link this information to your Facebook account and also use it for its own promotional purposes, in accordance with Facebook's Data Usage Policy <a class="underline" href="https://www.facebook.com/about/privacy/">https://www.facebook.com/about/privacy/</a>. You can allow Facebook and its partners to place ads on and off Facebook. A cookie may also be stored on your computer for these purposes.
+                </div>
+                <div class="mt-5">
+                    The legal basis for the use of this service is Art. 6 paragraph 1 sentence 1 letter f GDPR. You can object to the collection of your data by Facebook pixel, or to the use of your data for the purpose of displaying Facebook ads by contacting the following address: <a class="underline" href="https://www.facebook.com/settings?tab=ads">https://www.facebook.com/settings?tab=ads</a>.
+                </div>
+                <div class="mt-5">
+                    Facebook is certified under the Privacy Shield Agreement and thus guarantees compliance with European data protection legislation (<a class="underline" href="https://www.privacyshield.gov/participant?id=a2zt0000000GnywAAC&status=Active">https://www.privacyshield.gov/participant?id=a2zt0000000GnywAAC&status=Active</a>).
+                </div>
+            </div>
+            <div class="mt-5">
+                <h2>8. Allikad.info uses Secure Sockets Layer (SSL)</h2>
                 <div>
                     The Secure Sockets Layer is a protocol that aims to allow the applications to transmit information in a secure and protected way. The applications that use the SSL certificates are able to manage sending and receiving of the protection keys, and encrypt and decrypt information transmitted using the same keys. In this way, all sensitive data that travels inside the Platform maintains a heightened level of security. The same SSL certificate technology is used by Allikad.info partners when communication between different platforms is needed; this keeps the data transfer secure not only within the Allikad.info platform but also when transferring data to and from the partner platforms.
                 </div>
             </div>
             <div class="mt-5">
-                <h2>8. CHANGES/MODIFICATIONS IN OUR PRIVACY POLICY</h2>
+                <h2>9. CHANGES/MODIFICATIONS IN OUR PRIVACY POLICY</h2>
                 <div>
                     We will review our privacy policy from time to time. Our privacy policies are subject to change and modification. Any change, update or modification will be effective immediately upon posting on our Platform.  Any material change to this Privacy Policy will be made known by changing the effective date (located at the bottom of this page). An alert will also be published on the Allikad.info platform to inform users of any significant changes. Please return to this page periodically to make sure that you are up to date with the most current version of this Privacy Policy.
                 </div>
