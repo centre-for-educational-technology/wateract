@@ -11,15 +11,12 @@ use App\Models\User;
 use App\Notifications\SpringConfirmed;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
-use Illuminate\Validation\Rule;
 use Inertia\Inertia;
 use Inertia\Response;
 use JamesDordoy\LaravelVueDatatable\Http\Resources\DataTableCollectionResource;
-use function Psy\debug;
 use Illuminate\Support\Facades\Auth;
 use App\Models\SpringReference;
 
@@ -95,7 +92,7 @@ class SpringController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function store(Request $request)
     {
@@ -109,14 +106,13 @@ class SpringController extends Controller
             'country' => 'required',
             "references.*.url" => "nullable|url",
         ])->after(function ($validator) use ($country_code)  {
-        $allowed_countries = Country::all()->pluck('code')->all();
-        if (! in_array($country_code, $allowed_countries)) {
-            $validator->errors()->add(
-                'country', __('springs.country_not_supported')
-            );
+            $allowed_countries = Country::all()->pluck('code')->all();
+            if (! in_array($country_code, $allowed_countries)) {
+                $validator->errors()->add(
+                    'country', __('springs.country_not_supported')
+                );
         }
-    })->validateWithBag('addSpring');
-
+        })->validateWithBag('addSpring');
 
         $request['user_id'] = Auth::id();
         // create wateract code
@@ -149,8 +145,13 @@ class SpringController extends Controller
             }
         }
 
-        return redirect()->route('springs.index')
-            ->with('success','Spring created successfully.');
+        $success_msg = __('springs.messages.spring_added');
+        if ( $request['status'] == 'submitted' ) {
+            $success_msg = __('springs.messages.spring_submitted');
+        }
+
+        return redirect()->route('dashboard')
+            ->with('success', $success_msg);
     }
 
     public function getCountryId($country_code) {
@@ -189,7 +190,6 @@ class SpringController extends Controller
 
     public function saveDatabaseLinks($spring, $databases_info) {
         if (isset($databases_info)) {
-            //$databases = json_decode($databases_info);
             foreach ($databases_info as $database_info) {
                 if (isset($database_info['id'])) {
                     $spring_database_link = SpringDatabaseLink::find($database_info['id']);
@@ -370,9 +370,8 @@ class SpringController extends Controller
             }
         }
 
-
         return redirect()->route('springs.show', compact('spring'))
-            ->with('success','Spring updated successfully.');
+            ->with('success', __('springs.messages.spring_updated'));
     }
 
     /**
@@ -405,7 +404,7 @@ class SpringController extends Controller
         $spring->delete();
 
         return Redirect::route('springs.index')
-            ->with('success', 'Spring deleted successfully');
+            ->with('success', __('springs.messages.spring_deleted'));
     }
 
     public function getSprings(Request $request)

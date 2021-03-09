@@ -299,6 +299,7 @@
 
         <!-- Page Content -->
         <main class="mb-auto flex-1">
+            <flash-messages />
             <slot></slot>
         </main>
 
@@ -329,6 +330,7 @@
     import JetNavLink from './../Jetstream/NavLink'
     import JetResponsiveNavLink from './../Jetstream/ResponsiveNavLink'
     import LocaleDropdown from './../Components/LocaleDropdown'
+    import FlashMessages from './../Components/FlashMessages'
 
     export default {
         components: {
@@ -339,6 +341,7 @@
             JetNavLink,
             JetResponsiveNavLink,
             LocaleDropdown,
+            FlashMessages,
         },
 
         data() {

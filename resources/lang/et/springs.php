@@ -295,4 +295,11 @@ return [
     'spring' => 'Allikas',
     'spring_confirmed_text' => 'on kinnitatud Allikad.info toimetajate poolt. Sa saad lisada sellele allikale vaatlusi!',
     'team' => 'meeskond',
+
+    'messages' => [
+        'spring_added' => 'Uus allikas lisatud (mustand). Sa saad lisada vaatlusi peale allika esitamist.',
+        'spring_submitted' => 'Uus allikas esitatud.',
+        'spring_updated' => 'Allikas edukalt uuendatud.',
+        'spring_deleted' => 'Allikas edukalt kustutatud.',
+    ],
 ];
