@@ -305,7 +305,14 @@ return [
     'messages' => [
         'spring_added' => 'New spring added (draft). You are able to add observations after publishing a spring.',
         'spring_submitted' => 'New spring submitted.',
-        'spring_updated' => 'Spring updated successfully.',
+        'spring_updated' => 'Spring successfully updated.',
         'spring_deleted' => 'Spring successfully deleted.',
+        'spring_feedback_added' => 'New feedback added.',
+        'observation_added' => 'New observation added.',
+        'observation_updated' => 'Observation successfully updated.',
+        'observation_deleted' => 'Observation successfully deleted.',
+        'measurement_added' => 'New measurement added.',
+        'measurement_updated' => 'Measurement updated successfully.',
+        'measurement_deleted' => 'Measurement successfully deleted.',
     ],
 ];

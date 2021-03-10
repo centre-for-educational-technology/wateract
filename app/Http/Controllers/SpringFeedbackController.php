@@ -6,6 +6,7 @@ use App\Models\Spring;
 use App\Models\SpringFeedback;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Validator;
 use Inertia\Inertia;
 use Inertia\Response;
@@ -58,7 +59,8 @@ class SpringFeedbackController extends Controller
             $spring->save();
         }
 
-        return redirect()->back();
+        return redirect()->back()
+            ->with('success', __('springs.messages.spring_feedback_added'));
     }
 
     /**

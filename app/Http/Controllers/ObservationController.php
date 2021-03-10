@@ -95,7 +95,7 @@ class ObservationController extends Controller
 
         $spring = Spring::find($request['spring_id']);
         return redirect()->route('springs.observations.index', compact('spring'))
-            ->with('success','Observation added successfully.');
+            ->with('success', __('springs.messages.observation_added'));
     }
 
     public function saveFieldValues($observation, $values) {
@@ -202,7 +202,7 @@ class ObservationController extends Controller
         (new PhotoController)->deletePhotos($request['photos_to_delete']);
 
         return redirect()->route('springs.observations.index', compact('spring'))
-            ->with('success','Observation updated successfully.');
+            ->with('success', __('springs.messages.observation_updated'));
 
     }
 
@@ -218,6 +218,6 @@ class ObservationController extends Controller
         $observation->delete();
         $spring = Spring::find($observation->spring_id);
         return redirect()->route('springs.observations.index', compact('spring'))
-            ->with('success','Observation deleted successfully.');
+            ->with('success', __('springs.messages.observation_deleted'));
     }
 }

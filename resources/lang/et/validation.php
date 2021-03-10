@@ -156,5 +156,6 @@ return [
         'longitude'               => 'Pikkuskraadi',
         'country'                 => 'Riigi',
         'description'             => 'Kirjelduse',
+        'feedback'                => 'Tagasiside',
     ],
 ];

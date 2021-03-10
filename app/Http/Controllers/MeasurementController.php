@@ -85,7 +85,7 @@ class MeasurementController extends Controller
         }
         $spring = Spring::find($spring_id);
         return redirect()->route('springs.analyses.index', compact('spring'))
-            ->with('success','Measurement added successfully.');
+            ->with('success', __('springs.messages.measurement_added'));
     }
 
     /**
@@ -149,7 +149,7 @@ class MeasurementController extends Controller
 
         $spring = Spring::find($measurement->spring_id);
         return redirect()->route('springs.analyses.index', compact('spring'))
-            ->with('success','Measurement updated successfully.');
+            ->with('success', __('springs.messages.measurement_updated'));
     }
 
     /**

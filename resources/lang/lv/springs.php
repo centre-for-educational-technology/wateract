@@ -306,5 +306,12 @@ return [
         'spring_submitted' => 'New spring submitted.',
         'spring_updated' => 'Spring updated successfully.',
         'spring_deleted' => 'Spring successfully deleted.',
+        'spring_feedback_added' => 'Feedback added.',
+        'observation_added' => 'New observation added.',
+        'observation_updated' => 'Observation successfully updated.',
+        'observation_deleted' => 'Observation successfully deleted.',
+        'measurement_added' => 'New measurement added.',
+        'measurement_updated' => 'Measurement updated successfully.',
+        'measurement_deleted' => 'Measurement successfully deleted.',
     ],
 ];

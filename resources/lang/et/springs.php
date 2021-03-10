@@ -301,5 +301,12 @@ return [
         'spring_submitted' => 'Uus allikas esitatud.',
         'spring_updated' => 'Allikas edukalt uuendatud.',
         'spring_deleted' => 'Allikas edukalt kustutatud.',
+        'spring_feedback_added' => 'Allikale tagasiside lisatud.',
+        'observation_added' => 'Uus vaatlus lisatud.',
+        'observation_updated' => 'Vaatlus edukalt uuendatud.',
+        'observation_deleted' => 'Vaatlus edukalt kustutatud.',
+        'measurement_added' => 'Uus mõõtmistulemus lisatud.',
+        'measurement_updated' => 'Mõõtmistulemus edukalt uuendatud.',
+        'measurement_deleted' => 'Mõõtmistulemus edukalt kustutatud.',
     ],
 ];

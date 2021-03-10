@@ -17,7 +17,7 @@
 
                         <div class="flex -mx-2">
                             <div class="w-full px-2">
-                                <jet-label class="inline-block font-bold" for="name" :value="$t('springs.name')" />
+                                <jet-label class="inline-block font-bold" for="name" :value="$t('springs.spring_name')" />
                                 <help-button @click.native="showHelpDialog( $t('springs.name_help_text') )"></help-button>
                                 <jet-input id="name" type="text" class="mt-1 block w-full" v-model="form.name" />
                             </div>

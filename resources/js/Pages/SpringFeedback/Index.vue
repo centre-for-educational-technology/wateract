@@ -63,30 +63,30 @@ export default {
         return {
             columns: [
                 {
-                    label: 'Date & Time',
+                    label: this.$i18n.t('springs.date_time'),
                     name: 'created_at',
                     orderable: true,
                     transform: ({data, name}) => `${moment(data[name]).format("DD.MM.YYYY H:mm")}`,
                 },
                 {
-                    label: 'Author',
+                    label: this.$i18n.t('springs.added_by'),
                     name: 'user.name',
                     columnName: 'user.name',
                     orderable: false,
                 },
                 {
-                    label: 'Spring name',
+                    label: this.$i18n.t('springs.spring_name'),
                     name: 'spring_name',
                     orderable: false,
                 },
                 {
-                    label: 'Feedback',
+                    label: this.$i18n.t('springs.feedback'),
                     width: 300,
                     name: 'feedback',
                     orderable: false,
                 },
                 {
-                    label: 'Location',
+                    label: this.$i18n.t('springs.location'),
                     name: 'location',
                     orderable: false,
                     transform: ({data}) => `${data['latitude']}, ${data['longitude']}`,

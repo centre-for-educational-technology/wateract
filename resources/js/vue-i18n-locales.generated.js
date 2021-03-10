@@ -331,7 +331,17 @@ export default {
             "orthophoto": "Ortophoto",
             "country_not_supported": "This country is not supported.",
             "observation_description": "Description (natural conditions, folklore, accessibility)",
-            "privacy_policy": "Privacy policy"
+            "privacy_policy": "Privacy policy",
+            "spring_confirmed": "Spring Confirmed",
+            "spring": "Spring",
+            "spring_confirmed_text": "has been confirmed by {attribute} editors now. You are able to add observations and measurements to it!",
+            "team": "Team",
+            "messages": {
+                "spring_added": "New spring added (draft). You are able to add observations after publishing a spring.",
+                "spring_submitted": "New spring submitted.",
+                "spring_updated": "Spring updated successfully.",
+                "spring_deleted": "Spring successfully deleted."
+            }
         },
         "users": {
             "users": "Users",
@@ -629,7 +639,7 @@ export default {
         "When two factor authentication is enabled, you will be prompted for a secure, random token during authentication. You may retrieve this token from your phone's Google Authenticator application.": "When two factor authentication is enabled, you will be prompted for a secure, random token during authentication. You may retrieve this token from your phone's Google Authenticator application.",
         "Whoops! Something went wrong.": "Ups! Midagi läks valesti.",
         "Whoops!": "Ups!",
-        "You are logged in!": "You are logged in!",
+        "You are logged in!": "Sa oled sisse logitud!",
         "You are receiving this email because we received a password reset request for your account.": "Saatsime Sulle selle kirja, kuna saime parooli lähtestamise soovi Sinu kontole.",
         "You have enabled two factor authentication.": "You have enabled two factor authentication.",
         "You have not enabled two factor authentication.": "You have not enabled two factor authentication.",
@@ -965,7 +975,17 @@ export default {
             "orthophoto": "Ortofoto",
             "country_not_supported": "See riik ei ole toetatud.",
             "observation_description": "Kirjeldus (looduslikud olud, pärimused, ligipääsetavus)",
-            "privacy_policy": "Privaatsustingimused"
+            "privacy_policy": "Privaatsustingimused",
+            "spring_confirmed": "Allikas kinnitatud",
+            "spring": "Allikas",
+            "spring_confirmed_text": "on kinnitatud Allikad.info toimetajate poolt. Sa saad lisada sellele allikale vaatlusi!",
+            "team": "meeskond",
+            "messages": {
+                "spring_added": "Uus allikas lisatud (mustand). Sa saad lisada vaatlusi peale allika esitamist.",
+                "spring_submitted": "Uus allikas esitatud.",
+                "spring_updated": "Allikas edukalt uuendatud.",
+                "spring_deleted": "Allikas edukalt kustutatud."
+            }
         },
         "users": {
             "users": "Kasutajad",
@@ -1104,7 +1124,8 @@ export default {
                 "latitude": "Laiuskraadi",
                 "longitude": "Pikkuskraadi",
                 "country": "Riigi",
-                "description": "Kirjelduse"
+                "description": "Kirjelduse",
+                "feedback": "Tagasiside"
             }
         }
     },
@@ -1435,7 +1456,17 @@ export default {
             "orthophoto": "Ortophoto",
             "country_not_supported": "This country is not supported.",
             "observation_description": "Description (natural conditions, folklore, accessibility)",
-            "privacy_policy": "Privacy policy"
+            "privacy_policy": "Privacy policy",
+            "spring_confirmed": "Spring Confirmed",
+            "spring": "Spring",
+            "spring_confirmed_text": "has been confirmed by {attribute} editors now. You are able to add observations and measurements to it!",
+            "team": "Team",
+            "messages": {
+                "spring_added": "New spring added (draft). You are able to add observations after publishing a spring.",
+                "spring_submitted": "New spring submitted.",
+                "spring_updated": "Spring updated successfully.",
+                "spring_deleted": "Spring successfully deleted."
+            }
         },
         "users": {
             "users": "Lietotāji",

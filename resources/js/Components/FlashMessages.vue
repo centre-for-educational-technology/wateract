@@ -26,6 +26,17 @@ export default {
             },
             deep: true,
         },
+        show: 'setFadeOut',
     },
+    methods: {
+        setFadeOut() {
+            setTimeout(() => (
+                this.show = false
+            ), 3000);
+        },
+    },
+    mounted () {
+        this.setFadeOut()
+    }
 }
 </script>
