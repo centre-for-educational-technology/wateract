@@ -242,7 +242,10 @@ class SpringController extends Controller
             $spring_url = $base_url . '/springs/' .  $spring->code;
         }
 
-        return Inertia::render('Springs/Show', ['spring' => $spring])
+        return Inertia::render('Springs/Show', [
+                'spring' => $spring,
+                'can_edit' => $spring->canEdit()
+            ])
             ->withViewData([
                 'og_title' => $spring->name,
                 'og_image' => $photo_url,
@@ -258,6 +261,8 @@ class SpringController extends Controller
      */
     public function edit(Spring $spring)
     {
+        $this->authorize('update', $spring);
+
         $spring = Spring::where('id', $spring->id)
             ->with('user')
             ->with('references')

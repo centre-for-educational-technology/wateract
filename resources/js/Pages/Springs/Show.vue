@@ -5,7 +5,7 @@
                 {{ spring.name ||  $t('springs.unnamed')}}
             </h1>
             <div class="sm:float-right sm:mt-0 mt-4" v-if="$page.user">
-                <nav-button v-if="(can('edit spring') || spring.status === 'draft')" :href="'/springs/'+spring.code+'/edit'">{{ $t('springs.edit') }}</nav-button>
+                <nav-button v-if="( can_edit || ( spring.status !== 'confirmed' && $page.user.id === spring_creator ) )" :href="'/springs/'+spring.code+'/edit'">{{ $t('springs.edit') }}</nav-button>
                 <spring-feedback :spring="spring" />
             </div>
         </template>
@@ -166,11 +166,12 @@ export default {
         SpringFeedback,
         LeafletMaps,
     },
-    props: ['spring'],
+    props: ['spring', 'can_edit'],
     data() {
         return {
             dialogVisible: false,
             dialogPhotoUrl: '',
+            spring_creator: this.spring.user ? this.spring.user.id : null,
         }
     },
     methods: {

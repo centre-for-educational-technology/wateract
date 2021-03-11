@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Auth;
 
 class Spring extends Model
 {
@@ -60,6 +61,23 @@ class Spring extends Model
     public function getRouteKeyName()
     {
         return 'code';
+    }
+
+    public function canEdit() {
+        $user = Auth::user();
+        if ( !$user ) {
+            return false;
+        }
+        if ( $user->hasRole(['admin', 'super-admin']) ) {
+            return true;
+        } else if ( $user->hasRole(['editor'])) {
+            $user_counties_ids = $user->user_counties_ids();
+            // can edit if I am editor of this county
+            if ( in_array( $this->county_id, $user_counties_ids) ) {
+                return true;
+            }
+        }
+        return false;
     }
 
 }

@@ -53,9 +53,9 @@ class SpringPolicy
      */
     public function update(User $user, Spring $spring)
     {
-        if ($user->hasRole(['editor', 'admin', 'super-admin'])) {
+        if ( $spring->canEdit() ) {
             return true;
-        } else if ($spring->status == 'draft') {
+        } else if ( $spring->status !== 'confirmed' ) {
             return $user->id === $spring->user_id;
         }
         return false;
@@ -70,9 +70,9 @@ class SpringPolicy
      */
     public function delete(User $user, Spring $spring)
     {
-        if ($user->hasRole(['editor', 'admin', 'super-admin'])) {
+        if ( $spring->canEdit() ) {
             return true;
-        } else if ($spring->status == 'unconfirmed') {
+        } else if ( $spring->status !== 'confirmed' ) {
             return $user->id === $spring->user_id;
         }
         return false;
@@ -87,10 +87,7 @@ class SpringPolicy
      */
     public function restore(User $user, Spring $spring)
     {
-        if ($user->hasRole('editor')) {
-            return true;
-        }
-        return false;
+        //
     }
 
     /**
@@ -102,9 +99,6 @@ class SpringPolicy
      */
     public function forceDelete(User $user, Spring $spring)
     {
-        if ($user->hasRole('editor')) {
-            return true;
-        }
-        return false;
+        //
     }
 }
