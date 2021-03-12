@@ -320,7 +320,10 @@ export default {
             this.leafletMapObject.setView(location.latlng, 9);
         },
         maaametZoomUpdate(zoom) {
-            this.openStreetMapZoom = zoom + 4;
+            let new_zoom = zoom + 4;
+            if ( this.openStreetMapZoom !== new_zoom ) {
+                this.openStreetMapZoom = zoom + 4;
+            }
         },
         maaametCenterUpdate(center) {
             let new_center_latitude= center.lat;
@@ -332,7 +335,10 @@ export default {
             }
         },
         openStreetZoomUpdate(zoom) {
-            this.maaametMapZoom = zoom - 4;
+            let new_zoom = zoom - 4;
+            if (this.maaametMapZoom != new_zoom) {
+                this.maaametMapZoom = zoom - 4;
+            }
         },
         openStreetCenterUpdate(center) {
             let new_center_latitude= center.lat;
