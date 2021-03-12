@@ -28,7 +28,7 @@
                                 {{ $moment(measurement.analysis_time).format("DD.MM.YYYY H:mm") }}
                                 <span class="pl-2" v-if="measurement.user">{{ measurement.user.name }}</span>
                             </div>
-                            <measurement-view :spring="spring" :measurement="measurement" v-show="measurement.show"></measurement-view>
+                            <measurement-view :spring="spring" :measurement="measurement" :can_edit="can_edit" v-show="measurement.show"></measurement-view>
 
                         </div>
 
@@ -53,7 +53,7 @@ export default {
         SpringNavigation,
         MeasurementView,
     },
-    props: ['spring', 'measurements'],
+    props: ['spring', 'measurements', 'can_edit'],
     methods: {
         showMeasurement(measurement) {
             this.$set(measurement, 'show', !measurement.show)

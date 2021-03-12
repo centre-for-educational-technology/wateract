@@ -55,7 +55,7 @@ class SpringPolicy
     {
         if ( $spring->canEdit() ) {
             return true;
-        } else if ( $spring->status !== 'confirmed' ) {
+        } else if ( $spring->status === 'draft' ) {
             return $user->id === $spring->user_id;
         }
         return false;
@@ -72,7 +72,7 @@ class SpringPolicy
     {
         if ( $spring->canEdit() ) {
             return true;
-        } else if ( $spring->status !== 'confirmed' ) {
+        } else if ( $spring->status === 'draft' ) {
             return $user->id === $spring->user_id;
         }
         return false;

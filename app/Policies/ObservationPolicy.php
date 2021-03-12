@@ -3,6 +3,7 @@
 namespace App\Policies;
 
 use App\Models\Observation;
+use App\Models\Spring;
 use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
@@ -53,7 +54,13 @@ class ObservationPolicy
      */
     public function update(User $user, Observation $observation)
     {
-        //
+        $spring = Spring::find($observation->spring_id);
+        if ( $spring->canEdit() ) {
+            return true;
+        } else if ( $observation->status === 'draft' ) {
+            return $user->id === $observation->user_id;
+        }
+        return false;
     }
 
     /**
@@ -65,7 +72,13 @@ class ObservationPolicy
      */
     public function delete(User $user, Observation $observation)
     {
-        //
+        $spring = Spring::find($observation->spring_id);
+        if ( $spring->canEdit() ) {
+            return true;
+        } else if ( $observation->status === 'draft' ) {
+            return $user->id === $observation->user_id;
+        }
+        return false;
     }
 
     /**

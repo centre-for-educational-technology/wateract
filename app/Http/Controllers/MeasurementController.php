@@ -23,9 +23,11 @@ class MeasurementController extends Controller
     {
         $spring = Spring::where('code', $spring_code)->first();
         $measurements = Measurement::where('spring_id', $spring->id)->with('user')->get();
+        $can_edit = $spring->canEdit();
         return Inertia::render('Measurements/Index', [
             'spring' => $spring,
-            'measurements' => $measurements
+            'measurements' => $measurements,
+            'can_edit' => $can_edit,
         ]);
     }
 
@@ -37,13 +39,14 @@ class MeasurementController extends Controller
      */
     public function create(string $spring_code)
     {
+        $this->authorize('create', Measurement::class);
+
         $spring = Spring::where('code', $spring_code)->with('measurements')->first();
         if (Auth::user()) {
             $fields = \App\Models\ModelField::where('model', 'measurement')->where('visible', 1)->orderBy('position')->get();
             return Inertia::render('Measurements/Create', ['spring' => $spring, 'measurement_fields' => $fields]);
         }
-        return Inertia::render('Measurements/Index', ['spring' => $spring]);
-
+        return MeasurementController::index($spring_code);
     }
 
     /**
@@ -56,6 +59,8 @@ class MeasurementController extends Controller
      */
     public function store(Request $request)
     {
+        $this->authorize('create', Measurement::class);
+
         $spring_id = $request['spring_id'];
         $request->validate([
             'analysis_time' => 'required'
@@ -109,6 +114,8 @@ class MeasurementController extends Controller
      */
     public function edit(string $spring_code, Measurement $measurement)
     {
+        $this->authorize('update', $measurement);
+
         $spring = Spring::where('code', $spring_code)->with('measurements')->first();
         if (Auth::user()) {
             $measurement_fields = \App\Models\ModelField::where('model', 'measurement')->where('visible', 1)->orderBy('position')->get();
@@ -124,7 +131,7 @@ class MeasurementController extends Controller
                 'measurement_fields' => $measurement_fields
             ]);
         }
-        return Inertia::render('Measurements/Index', ['spring' => $spring]);
+        return MeasurementController::index($spring_code);
     }
 
     /**
@@ -137,6 +144,8 @@ class MeasurementController extends Controller
      */
     public function update(Request $request, Measurement $measurement)
     {
+        $this->authorize('update', $measurement);
+
         Validator::make($request->all(), [
             'analysis_time' => 'required',
         ])->validateWithBag('editMeasurement');
@@ -186,10 +195,18 @@ class MeasurementController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  \App\Models\Measurement  $measurement
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function destroy(Measurement $measurement)
     {
-        //
+        $this->authorize('delete', $measurement);
+
+        $spring = Spring::find($measurement->spring_id);
+
+        // deletes measurement, also related database relations (measurement fields values)
+        $measurement->delete();
+
+        return redirect()->route('springs.analyses.index', compact('spring'))
+            ->with('success', __('springs.messages.measurement_deleted'));
     }
 }

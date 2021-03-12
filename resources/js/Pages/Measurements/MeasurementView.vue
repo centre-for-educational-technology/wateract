@@ -3,7 +3,7 @@
     <div class="border rounded px-4 py-2 my-2">
 
         <div v-if="$page.user">
-            <nav-button v-if="(can('edit observation') || ( measurement.status === 'draft' && measurement.user_id === $page.user.id ))"
+            <nav-button v-if="( can_edit || ( measurement.status === 'draft' && measurement.user_id === $page.user.id ))"
                         class="float-right"
                         :href="'/springs/'+spring.code+'/analyses/'+measurement.id+'/edit'">
                 {{ $t('springs.edit') }}</nav-button>
@@ -29,7 +29,7 @@ export default {
         JetLabel,
         NavButton,
     },
-    props: ['spring', 'measurement'],
+    props: ['spring', 'measurement', 'can_edit'],
     data() {
         return {
             measurement_fields: [],

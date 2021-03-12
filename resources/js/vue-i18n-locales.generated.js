@@ -325,6 +325,14 @@ export default {
             "permanently_delete_spring": "Permanently delete spring",
             "delete_spring_confirmation": "Are you sure you want to delete this spring?",
             "nevermind": "Nevermind",
+            "delete_observation": "Delete observation",
+            "delete_observation_notification": "Observation and observation photos and data will be deleted permanently.",
+            "permanently_delete_observation": "Permanently delete observation",
+            "delete_observation_confirmation": "Are you sure you want to delete this observation?",
+            "delete_measurement": "Delete analysis",
+            "delete_measurement_notification": "Analysis data will be deleted permanently.",
+            "permanently_delete_measurement": "Permanently delete analysis",
+            "delete_measurement_confirmation": "Are you sure you want to delete this analysis?",
             "estonia_map": "Estonia Map",
             "world_map": "World Map",
             "relief_map": "Relief Map",
@@ -339,8 +347,15 @@ export default {
             "messages": {
                 "spring_added": "New spring added (draft). You are able to add observations after publishing a spring.",
                 "spring_submitted": "New spring submitted.",
-                "spring_updated": "Spring updated successfully.",
-                "spring_deleted": "Spring successfully deleted."
+                "spring_updated": "Spring successfully updated.",
+                "spring_deleted": "Spring successfully deleted.",
+                "spring_feedback_added": "New feedback added.",
+                "observation_added": "New observation added.",
+                "observation_updated": "Observation successfully updated.",
+                "observation_deleted": "Observation successfully deleted.",
+                "measurement_added": "New measurement added.",
+                "measurement_updated": "Measurement updated successfully.",
+                "measurement_deleted": "Measurement successfully deleted."
             }
         },
         "users": {
@@ -969,6 +984,14 @@ export default {
             "permanently_delete_spring": "Kustuta allikas jäädavalt",
             "delete_spring_confirmation": "Oled sa kindel, et soovid selle allika kustutada?",
             "nevermind": "Katkesta",
+            "delete_observation": "Kustuta vaatlus",
+            "delete_observation_notification": "Vaatlus ja vaatluse fotod ning andmed kustutatakse jäädavalt.",
+            "permanently_delete_observation": "Kustuta vaatlus jäädavalt",
+            "delete_observation_confirmation": "Oled sa kindel, et soovid selle vaatluse kustutada?",
+            "delete_measurement": "Kustuta mõõtmistulemus",
+            "delete_measurement_notification": "Mõõtmistulemuse andmed kustutatakse jäädavalt.",
+            "permanently_delete_measurement": "Kustuta mõõtmistulemus jäädavalt",
+            "delete_measurement_confirmation": "Oled sa kindel, et soovid selle mõõtmistulemuse kustutada?",
             "estonia_map": "Maa-ameti kaart",
             "world_map": "Maailma kaart",
             "relief_map": "Reljeefkaart",
@@ -984,7 +1007,14 @@ export default {
                 "spring_added": "Uus allikas lisatud (mustand). Sa saad lisada vaatlusi peale allika esitamist.",
                 "spring_submitted": "Uus allikas esitatud.",
                 "spring_updated": "Allikas edukalt uuendatud.",
-                "spring_deleted": "Allikas edukalt kustutatud."
+                "spring_deleted": "Allikas edukalt kustutatud.",
+                "spring_feedback_added": "Allikale tagasiside lisatud.",
+                "observation_added": "Uus vaatlus lisatud.",
+                "observation_updated": "Vaatlus edukalt uuendatud.",
+                "observation_deleted": "Vaatlus edukalt kustutatud.",
+                "measurement_added": "Uus mõõtmistulemus lisatud.",
+                "measurement_updated": "Mõõtmistulemus edukalt uuendatud.",
+                "measurement_deleted": "Mõõtmistulemus edukalt kustutatud."
             }
         },
         "users": {
@@ -1450,6 +1480,14 @@ export default {
             "permanently_delete_spring": "Permanently delete spring",
             "delete_spring_confirmation": "Are you sure you want to delete this spring?",
             "nevermind": "Nevermind",
+            "delete_observation": "Delete observation",
+            "delete_observation_notification": "Observation and observation photos and data will be deleted permanently.",
+            "permanently_delete_observation": "Permanently delete observation",
+            "delete_observation_confirmation": "Are you sure you want to delete this observation?",
+            "delete_measurement": "Delete analysis",
+            "delete_measurement_notification": "Analysis data will be deleted permanently.",
+            "permanently_delete_measurement": "Permanently delete analysis",
+            "delete_measurement_confirmation": "Are you sure you want to delete this analysis?",
             "estonia_map": "Estonia Map",
             "world_map": "World Map",
             "relief_map": "Relief Map",
@@ -1465,7 +1503,14 @@ export default {
                 "spring_added": "New spring added (draft). You are able to add observations after publishing a spring.",
                 "spring_submitted": "New spring submitted.",
                 "spring_updated": "Spring updated successfully.",
-                "spring_deleted": "Spring successfully deleted."
+                "spring_deleted": "Spring successfully deleted.",
+                "spring_feedback_added": "Feedback added.",
+                "observation_added": "New observation added.",
+                "observation_updated": "Observation successfully updated.",
+                "observation_deleted": "Observation successfully deleted.",
+                "measurement_added": "New measurement added.",
+                "measurement_updated": "Measurement updated successfully.",
+                "measurement_deleted": "Measurement successfully deleted."
             }
         },
         "users": {

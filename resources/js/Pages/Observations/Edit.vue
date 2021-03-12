@@ -107,12 +107,19 @@
                         {{ $t('springs.save') }}</jet-button>
                 </template>
             </jet-form-section>
+
+            <div v-if="can('delete observation')">
+                <jet-section-border />
+                <delete-observation class="mt-10 sm:mt-0" :observation_id="form.id" />
+            </div>
+
         </div>
     </app-layout>
 </template>
 <script>
 import AppLayout from './../../Layouts/AppLayout'
 import JetFormSection from "../../Jetstream/FormSection";
+import JetSectionBorder from './../../Jetstream/SectionBorder';
 import JetLabel from "../../Jetstream/Label";
 import JetInput from "../../Jetstream/Input";
 import JetInputError from "../../Jetstream/InputError";
@@ -121,11 +128,13 @@ import JetSecondaryButton from "../../Jetstream/SecondaryButton";
 import HelpButton from '../../Components/HelpButton';
 import { Datetime } from 'vue-datetime'
 import 'vue-datetime/dist/vue-datetime.css'
+import DeleteObservation from './Delete'
 
 export default {
     components: {
         AppLayout,
         JetFormSection,
+        JetSectionBorder,
         JetLabel,
         JetInput,
         JetInputError,
@@ -133,6 +142,7 @@ export default {
         JetSecondaryButton,
         HelpButton,
         datetime: Datetime,
+        DeleteObservation,
     },
     props: ['spring', 'observation', 'observation_fields', 'taste_options'],
     data() {

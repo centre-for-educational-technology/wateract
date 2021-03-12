@@ -29,7 +29,7 @@
                                 <span class="pl-2" v-if="observation.user">{{ observation.user.name }}</span>
                             </div>
 
-                            <observation-view  v-show="observation.show" :spring="spring"  :observation="observation"></observation-view>
+                            <observation-view  v-show="observation.show" :spring="spring"  :observation="observation" :can_edit="can_edit"></observation-view>
 
                         </div>
                     </div>
@@ -54,7 +54,7 @@ export default {
         SpringNavigation,
         ObservationView
     },
-    props: ['spring', 'observations'],
+    props: ['spring', 'observations', 'can_edit'],
     methods: {
         showObservation(observation) {
             this.$set(observation, 'show', !observation.show)

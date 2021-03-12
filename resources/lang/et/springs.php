@@ -282,6 +282,16 @@ return [
     'delete_spring_confirmation' => 'Oled sa kindel, et soovid selle allika kustutada?',
     'nevermind' => 'Katkesta',
 
+    'delete_observation' => 'Kustuta vaatlus',
+    'delete_observation_notification' => 'Vaatlus ja vaatluse fotod ning andmed kustutatakse jäädavalt.',
+    'permanently_delete_observation' => 'Kustuta vaatlus jäädavalt',
+    'delete_observation_confirmation' => 'Oled sa kindel, et soovid selle vaatluse kustutada?',
+
+    'delete_measurement' => 'Kustuta mõõtmistulemus',
+    'delete_measurement_notification' => 'Mõõtmistulemuse andmed kustutatakse jäädavalt.',
+    'permanently_delete_measurement' => 'Kustuta mõõtmistulemus jäädavalt',
+    'delete_measurement_confirmation' => 'Oled sa kindel, et soovid selle mõõtmistulemuse kustutada?',
+
     'estonia_map' => 'Maa-ameti kaart',
     'world_map' => 'Maailma kaart',
     'relief_map' => 'Reljeefkaart',

@@ -287,6 +287,16 @@ return [
     'delete_spring_confirmation' => 'Are you sure you want to delete this spring?',
     'nevermind' => 'Nevermind',
 
+    'delete_observation' => 'Delete observation',
+    'delete_observation_notification' => 'Observation and observation photos and data will be deleted permanently.',
+    'permanently_delete_observation' => 'Permanently delete observation',
+    'delete_observation_confirmation' => 'Are you sure you want to delete this observation?',
+
+    'delete_measurement' => 'Delete analysis',
+    'delete_measurement_notification' => 'Analysis data will be deleted permanently.',
+    'permanently_delete_measurement' => 'Permanently delete analysis',
+    'delete_measurement_confirmation' => 'Are you sure you want to delete this analysis?',
+
     'estonia_map' => 'Estonia Map',
     'world_map' => 'World Map',
     'relief_map' => 'Relief Map',

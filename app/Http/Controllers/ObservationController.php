@@ -13,6 +13,7 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 use Inertia\Inertia;
 use Inertia\Response;
@@ -30,7 +31,8 @@ class ObservationController extends Controller
         $observations = Observation::where('spring_id', $spring->id)->with('user')->with('photos')->get();
         return Inertia::render('Observations/Index', [
             'spring' => $spring,
-            'observations' => $observations
+            'observations' => $observations,
+            'can_edit' => $spring->canEdit()
         ]);
     }
 
@@ -155,6 +157,8 @@ class ObservationController extends Controller
      */
     public function edit(string $spring_code, Observation $observation)
     {
+        $this->authorize('update', $observation);
+
         $spring = Spring::where('code', $spring_code)->with('observations')->first();
         if (Auth::user()) {
             $observation = Observation::where('id', $observation->id)->with('photos')->first();
@@ -185,6 +189,8 @@ class ObservationController extends Controller
      */
     public function update(Request $request, Observation $observation)
     {
+        $this->authorize('update', $observation);
+
         Validator::make($request->all(), [
             'measurement_time' => 'required',
         ])->validateWithBag('editObservation');
@@ -215,8 +221,20 @@ class ObservationController extends Controller
      */
     public function destroy(Observation $observation)
     {
-        $observation->delete();
+        $this->authorize('delete', $observation);
+
+        // delete observation photos
+        $photos = Photo::where('observation_id', $observation->id)->get();
+        foreach($photos as $photo) {
+            Storage::disk('public')->delete($photo->path);
+            Storage::disk('public')->delete($photo->thumbnail);
+            $photo->delete();
+        }
+
         $spring = Spring::find($observation->spring_id);
+        // deletes observation, also related database relations (observation fields values)
+        $observation->delete();
+
         return redirect()->route('springs.observations.index', compact('spring'))
             ->with('success', __('springs.messages.observation_deleted'));
     }

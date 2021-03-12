@@ -45,12 +45,19 @@
                         {{ $t('springs.save') }}</jet-button>
                 </template>
             </jet-form-section>
+
+            <div v-if="can('delete measurement')">
+                <jet-section-border />
+                <delete-measurement class="mt-10 sm:mt-0" :measurement_id="form.id" />
+            </div>
+
         </div>
     </app-layout>
 </template>
 <script>
 import AppLayout from './../../Layouts/AppLayout';
 import JetFormSection from "../../Jetstream/FormSection";
+import JetSectionBorder from './../../Jetstream/SectionBorder';
 import JetLabel from "../../Jetstream/Label";
 import JetInput from "../../Jetstream/Input";
 import JetInputError from "../../Jetstream/InputError";
@@ -58,17 +65,20 @@ import JetButton from "../../Jetstream/Button";
 import JetSecondaryButton from "../../Jetstream/SecondaryButton";
 import { Datetime } from 'vue-datetime'
 import 'vue-datetime/dist/vue-datetime.css'
+import DeleteMeasurement from './Delete'
 
 export default {
     components: {
         AppLayout,
         JetFormSection,
+        JetSectionBorder,
         JetLabel,
         JetInput,
         JetInputError,
         JetButton,
         JetSecondaryButton,
         datetime: Datetime,
+        DeleteMeasurement,
     },
     props: ['spring', 'measurement', 'measurement_fields'],
     data() {

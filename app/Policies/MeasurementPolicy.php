@@ -3,6 +3,7 @@
 namespace App\Policies;
 
 use App\Models\Measurement;
+use App\Models\Spring;
 use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
@@ -30,7 +31,7 @@ class MeasurementPolicy
      */
     public function view(User $user, Measurement $measurement)
     {
-        //
+        return true;
     }
 
     /**
@@ -41,7 +42,10 @@ class MeasurementPolicy
      */
     public function create(User $user)
     {
-        //
+        if ( $user->hasRole(['editor', 'admin', 'super-admin']) ) {
+            return true;
+        }
+        return false;
     }
 
     /**
@@ -53,7 +57,13 @@ class MeasurementPolicy
      */
     public function update(User $user, Measurement $measurement)
     {
-        //
+        $spring = Spring::find($measurement->spring_id);
+        if ( $spring->canEdit() ) {
+            return true;
+        } else if ( $measurement->status === 'draft' ) {
+            return $user->id === $measurement->user_id;
+        }
+        return false;
     }
 
     /**
@@ -65,7 +75,13 @@ class MeasurementPolicy
      */
     public function delete(User $user, Measurement $measurement)
     {
-        //
+        $spring = Spring::find($measurement->spring_id);
+        if ( $spring->canEdit() ) {
+            return true;
+        } else if ( $measurement->status === 'draft' ) {
+            return $user->id === $measurement->user_id;
+        }
+        return false;
     }
 
     /**
