@@ -102,16 +102,15 @@
                                 @click.native="submit(form)">
                         {{  $t('springs.submit') }}</jet-button>
                     <jet-button :class="{ 'opacity-25': processingPhotos }" :disabled="processingPhotos"
-                                v-if="can('edit spring') && form.status === 'submitted'"
+                                v-if="form.status === 'submitted'"
                                 type="submit" @click.native="save(form)">
                         {{ $t('springs.save') }}</jet-button>
                 </template>
             </jet-form-section>
 
-            <div v-if="can('delete observation')">
-                <jet-section-border />
-                <delete-observation class="mt-10 sm:mt-0" :observation_id="form.id" />
-            </div>
+            <jet-section-border />
+
+            <delete-observation class="mt-10 sm:mt-0" :observation_id="form.id" />
 
         </div>
     </app-layout>

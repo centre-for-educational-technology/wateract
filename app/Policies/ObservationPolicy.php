@@ -57,10 +57,9 @@ class ObservationPolicy
         $spring = Spring::find($observation->spring_id);
         if ( $spring->canEdit() ) {
             return true;
-        } else if ( $observation->status === 'draft' ) {
+        } else {
             return $user->id === $observation->user_id;
         }
-        return false;
     }
 
     /**
@@ -75,10 +74,9 @@ class ObservationPolicy
         $spring = Spring::find($observation->spring_id);
         if ( $spring->canEdit() ) {
             return true;
-        } else if ( $observation->status === 'draft' ) {
+        } else {
             return $user->id === $observation->user_id;
         }
-        return false;
     }
 
     /**

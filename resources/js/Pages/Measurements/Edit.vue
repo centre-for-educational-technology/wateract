@@ -40,16 +40,15 @@
                     <jet-button v-if="form.status === 'draft'" class="ml-2" type="submit"
                                 @click.native="submit(form)">
                         {{  $t('springs.submit') }}</jet-button>
-                    <jet-button v-if="can('edit spring') && form.status === 'submitted'"
+                    <jet-button v-if="form.status === 'submitted'"
                                 type="submit" @click.native="save(form)">
                         {{ $t('springs.save') }}</jet-button>
                 </template>
             </jet-form-section>
 
-            <div v-if="can('delete measurement')">
-                <jet-section-border />
-                <delete-measurement class="mt-10 sm:mt-0" :measurement_id="form.id" />
-            </div>
+            <jet-section-border />
+
+            <delete-measurement class="mt-10 sm:mt-0" :measurement_id="form.id" />
 
         </div>
     </app-layout>

@@ -60,10 +60,9 @@ class MeasurementPolicy
         $spring = Spring::find($measurement->spring_id);
         if ( $spring->canEdit() ) {
             return true;
-        } else if ( $measurement->status === 'draft' ) {
+        } else  {
             return $user->id === $measurement->user_id;
         }
-        return false;
     }
 
     /**
@@ -78,10 +77,9 @@ class MeasurementPolicy
         $spring = Spring::find($measurement->spring_id);
         if ( $spring->canEdit() ) {
             return true;
-        } else if ( $measurement->status === 'draft' ) {
+        } else {
             return $user->id === $measurement->user_id;
         }
-        return false;
     }
 
     /**
