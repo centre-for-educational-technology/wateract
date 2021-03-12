@@ -27,6 +27,7 @@ class CsvFileController extends Controller
             $lines = explode("\r\n", $contents);
             $field_names = explode(";", array_shift($lines));
             $ai_codes = array();
+            $res = array();
             foreach ($lines as $line) {
                 // Skip the empty line
                 if (empty($line)) continue;
@@ -49,6 +50,7 @@ class CsvFileController extends Controller
             }
 
             $ee_country_id = Country::where('code', 'EE')->first()->id;
+            $lv_country_id = Country::where('code', 'LV')->first()->id;
 
             $i = 0;
             foreach($res as $spring) {
@@ -60,15 +62,24 @@ class CsvFileController extends Controller
                     // create spring
                     $new_spring = new Spring();
                     $new_spring->code = $spring['ai_kood'];
-                    $new_spring->kkr_code = $spring['KKR_kood'];
+                    //$new_spring->kkr_code = $spring['KKR_kood'];
                     $new_spring->name = $spring['Nimi'];
                     $latitude = str_replace(',', '.', $spring['N']);
                     $new_spring->latitude = doubleval($latitude);
                     $longitude = str_replace(',', '.', $spring['E']);
                     $new_spring->longitude = doubleval($longitude);
-                    $new_spring->country = 'EE';
-                    $new_spring->country_id = $ee_country_id;
-                    $new_spring->description = $spring['Nimi'];
+                    $new_spring->country = 'LV';
+                    $new_spring->country_id = $lv_country_id;
+                    $description = trim($spring['Lood olude kirjeldus']);
+                    if (!$description) {
+                        $description = $spring['Nimi'];
+                    }
+                    $new_spring->description = $description;
+                    $geology = null;
+                    if (trim($spring['Geoloogia']) !== '') {
+                        $geology = $spring['Geoloogia'];
+                    }
+                    $new_spring->geology = $geology;
                     $new_spring->status = 'submitted';
                     $new_spring->save();
 

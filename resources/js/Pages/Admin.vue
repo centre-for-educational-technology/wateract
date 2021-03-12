@@ -128,6 +128,8 @@ export default {
             data.append('csv_file', file || '');
             axios.post('/admin/csvfile', data).then(response => {
                 console.log(response);
+            }).catch(function(error) {
+                console.log(error);
             });
         },
     }
