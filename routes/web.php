@@ -4,6 +4,7 @@ use App\Http\Controllers\CsvFileController;
 use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\SpringFeedbackController;
 use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Models\Spring;
@@ -30,7 +31,17 @@ Route::get('/', function () {
     } else {
         $springs = Spring::whereIn('status', ['submitted', 'confirmed'])->where('unlisted', 0)->get();
     }
-    return Inertia\Inertia::render('Springs/LandingPage', ['springs' => $springs]);
+    $base_url = env('APP_URL', '');
+    $photo_url = $base_url . '/images/springs-slogan-en.png';
+    if ( App::getLocale() == 'et' ) {
+        $photo_url = $base_url . '/images/springs-slogan-et.png';
+    }
+    return Inertia\Inertia::render('Springs/LandingPage', ['springs' => $springs])
+        ->withViewData([
+        'og_title' => env( 'APP_NAME', ''),
+        'og_image' => $photo_url,
+        'og_url' => $base_url
+    ]);
 });
 
 Route::get('/about-springs', function () {

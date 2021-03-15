@@ -10,6 +10,7 @@ use App\Models\SpringDatabaseLink;
 use App\Models\User;
 use App\Notifications\SpringConfirmed;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Storage;
@@ -39,11 +40,20 @@ class SpringController extends Controller
             $featured_springs = Spring::where('featured', '1')->where('unlisted', 0)->with('all_photos')->with('country_info')->inRandomOrder()->limit(4)->get();
             $newest_springs = Spring::whereIn('status', ['submitted', 'confirmed'])->where('unlisted', 0)->with('all_photos')->with('country_info')->orderBy('created_at', 'desc')->limit(4)->get();
         }
+        $base_url = env('APP_URL', '');
+        $photo_url = $base_url . '/images/springs-slogan-en.png';
+        if ( App::getLocale() == 'et' ) {
+            $photo_url = $base_url . '/images/springs-slogan-et.png';
+        }
         return Inertia::render('Springs/Index', [
             'springs' => $springs,
             'featured_springs' => $featured_springs,
             'newest_springs' => $newest_springs,
             'classifications' => SpringController::getClassifications(),
+        ])->withViewData([
+            'og_title' => env( 'APP_NAME', ''),
+            'og_image' => $photo_url,
+            'og_url' => $base_url
         ]);
     }
 
@@ -234,12 +244,12 @@ class SpringController extends Controller
             ->with('all_photos')
             ->first();
 
-        $photo_url = '';
-        $spring_url = '';
+        $base_url = env('APP_URL', '');
+        $spring_url = $base_url . '/springs/' .  $spring->code;
         if ( count($spring->all_photos) > 0 ) {
-            $base_url = env('APP_URL', '');
             $photo_url = $base_url . '/' . $spring->all_photos[0]->thumbnail;
-            $spring_url = $base_url . '/springs/' .  $spring->code;
+        } else {
+            $photo_url = $base_url . '/images/spring-default-image.jpg';
         }
 
         return Inertia::render('Springs/Show', [
