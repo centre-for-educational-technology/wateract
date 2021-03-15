@@ -32,14 +32,10 @@ Route::get('/', function () {
         $springs = Spring::whereIn('status', ['submitted', 'confirmed'])->where('unlisted', 0)->get();
     }
     $base_url = env('APP_URL', '');
-    $photo_url = $base_url . '/images/springs-slogan-en.png';
-    if ( App::getLocale() == 'et' ) {
-        $photo_url = $base_url . '/images/springs-slogan-et.png';
-    }
     return Inertia\Inertia::render('Springs/LandingPage', ['springs' => $springs])
         ->withViewData([
         'og_title' => env( 'APP_NAME', ''),
-        'og_image' => $photo_url,
+        'og_image' => $base_url . '/images/springs-slogan.jpg',
         'og_url' => $base_url
     ]);
 });

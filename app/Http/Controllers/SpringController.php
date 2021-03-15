@@ -41,7 +41,7 @@ class SpringController extends Controller
             $newest_springs = Spring::whereIn('status', ['submitted', 'confirmed'])->where('unlisted', 0)->with('all_photos')->with('country_info')->orderBy('created_at', 'desc')->limit(4)->get();
         }
         $base_url = env('APP_URL', '');
-        $photo_url = $base_url . '/images/springs-slogan.png';
+        $photo_url = $base_url . '/images/springs-slogan.jpg';
         return Inertia::render('Springs/Index', [
             'springs' => $springs,
             'featured_springs' => $featured_springs,
