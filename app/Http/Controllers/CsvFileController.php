@@ -61,7 +61,9 @@ class CsvFileController extends Controller
 
                     // create spring
                     $new_spring = new Spring();
-                    $new_spring->code = $spring['ai_kood'];
+                    $new_id = DB::table('springs')->max('id') + 1;
+                    $code = sprintf('%s%05d', 'LV', $new_id);
+                    $new_spring->code = $code;
                     //$new_spring->kkr_code = $spring['KKR_kood'];
                     $new_spring->name = $spring['Nimi'];
                     $latitude = str_replace(',', '.', $spring['N']);
