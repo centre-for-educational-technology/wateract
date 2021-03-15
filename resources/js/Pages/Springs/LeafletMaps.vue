@@ -242,12 +242,17 @@ export default {
                 gestureHandling:true
             },
 
+            cacheOpenStreetMapZoom: 7,
+            cacheOpenStreetCenter: latLng(58.379, 24.554),
+            cacheMaaametMapZoom: 3,
+            cacheMaaametCenter: latLng(58.379, 24.554),
+
             openStreetMap: map !== 'maaamet',
             openStreetMapZoom: 7,
             openStreetCenter: latLng(58.379, 24.554),
 
             maaametMap: map !== 'openstreet',
-            maaametMapZoom: 13,
+            maaametMapZoom: 3,
             maaametCenter: latLng(58.379, 24.554),
 
             ee_spring: ee_spring,
@@ -284,10 +289,14 @@ export default {
         },
         showWorldMap() {
             this.maaametMap = false;
+            this.openStreetMapZoom = this.cacheOpenStreetMapZoom;
+            this.openStreetCenter = this.cacheOpenStreetCenter;
             this.openStreetMap = true;
         },
         showMaaametMap() {
             this.openStreetMap = false;
+            this.maaametMapZoom = this.cacheMaaametMapZoom;
+            this.maaametCenter = this.cacheMaaametCenter;
             this.maaametMap = true;
         },
         openStreetOnReady(mapObject) {
@@ -320,9 +329,10 @@ export default {
             this.leafletMapObject.setView(location.latlng, 9);
         },
         maaametZoomUpdate(zoom) {
-            let new_zoom = zoom + 4;
-            if ( this.openStreetMapZoom !== new_zoom ) {
-                this.openStreetMapZoom = zoom + 4;
+            let new_openstreet_zoom = zoom + 4;
+            this.cacheMaaametMapZoom = zoom;
+            if ( this.cacheOpenStreetMapZoom !== new_openstreet_zoom ) {
+                this.cacheOpenStreetMapZoom = new_openstreet_zoom;
             }
         },
         maaametCenterUpdate(center) {
@@ -331,13 +341,14 @@ export default {
             let center_latitude= this.openStreetCenter.lat;
             let center_longitude = this.openStreetCenter.lng;
             if (new_center_latitude !== center_latitude || new_center_longitude !== center_longitude) {
-                this.openStreetCenter = center;
+                this.cacheOpenStreetCenter = center;
             }
         },
         openStreetZoomUpdate(zoom) {
-            let new_zoom = zoom - 4;
-            if (this.maaametMapZoom != new_zoom) {
-                this.maaametMapZoom = zoom - 4;
+            let new_maaamet_zoom = zoom - 4;
+            this.cacheOpenStreetMapZoom = zoom;
+            if (this.cacheMaaametMapZoom !== new_maaamet_zoom) {
+                this.cacheMaaametMapZoom = new_maaamet_zoom;
             }
         },
         openStreetCenterUpdate(center) {
@@ -346,7 +357,7 @@ export default {
             let center_latitude= this.maaametCenter.lat;
             let center_longitude = this.maaametCenter.lng;
             if (new_center_latitude !== center_latitude || new_center_longitude !== center_longitude) {
-                this.maaametCenter = center;
+                this.cacheMaaametCenter = center;
             }
         },
     },
