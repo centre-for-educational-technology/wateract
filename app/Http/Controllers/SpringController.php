@@ -41,10 +41,7 @@ class SpringController extends Controller
             $newest_springs = Spring::whereIn('status', ['submitted', 'confirmed'])->where('unlisted', 0)->with('all_photos')->with('country_info')->orderBy('created_at', 'desc')->limit(4)->get();
         }
         $base_url = env('APP_URL', '');
-        $photo_url = $base_url . '/images/springs-slogan-en.png';
-        if ( App::getLocale() == 'et' ) {
-            $photo_url = $base_url . '/images/springs-slogan-et.png';
-        }
+        $photo_url = $base_url . '/images/springs-slogan.png';
         return Inertia::render('Springs/Index', [
             'springs' => $springs,
             'featured_springs' => $featured_springs,
@@ -53,7 +50,7 @@ class SpringController extends Controller
         ])->withViewData([
             'og_title' => env( 'APP_NAME', ''),
             'og_image' => $photo_url,
-            'og_url' => $base_url
+            'og_url' => $base_url . '/springs'
         ]);
     }
 
