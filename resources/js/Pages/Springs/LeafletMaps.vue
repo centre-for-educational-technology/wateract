@@ -40,7 +40,7 @@
                 <l-marker v-if="this.spring" :lat-lng="springLocation">
                 </l-marker>
 
-                <l-marker-cluster>
+                <l-marker-cluster :options="openStreetClusterOptions">
                     <l-marker v-for="(marker, index) in leafletmarkers"
                               :key="index"
                               :lat-lng="marker.position">
@@ -109,7 +109,7 @@
                 <l-marker v-if="this.spring" :lat-lng="springLocation">
                 </l-marker>
 
-                <l-marker-cluster>
+                <l-marker-cluster :options="maaametClusterOptions">
                     <l-marker v-for="(marker, index) in leafletmarkers"
                               :key="index"
                               :lat-lng="marker.position">
@@ -240,6 +240,14 @@ export default {
             mapOptions: {
                 zoomSnap: 1,
                 gestureHandling:true
+            },
+            maaametClusterOptions: {
+                disableClusteringAtZoom: 11,
+                maxClusterRadius: 70,
+            },
+            openStreetClusterOptions: {
+                disableClusteringAtZoom: 15,
+                maxClusterRadius: 70,
             },
 
             cacheOpenStreetMapZoom: 7,

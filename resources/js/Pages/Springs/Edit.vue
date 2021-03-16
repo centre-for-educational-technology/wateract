@@ -75,7 +75,7 @@
                                         :icon="springLocationIcon"
                                     ></l-marker>
 
-                                    <l-marker-cluster>
+                                    <l-marker-cluster :options="openStreetClusterOptions">
                                         <l-marker v-for="(marker, index) in leafletMarkers"
                                                   :key="index"
                                                   :lat-lng="marker.position">
@@ -146,7 +146,7 @@
                                         :icon="springLocationIcon"
                                     ></l-marker>
 
-                                    <l-marker-cluster>
+                                    <l-marker-cluster :options="maaametClusterOptions">
                                         <l-marker v-for="(marker, index) in leafletMarkers"
                                                   :key="index"
                                                   :lat-lng="marker.position">
@@ -465,6 +465,14 @@ export default {
             mapOptions: {
                 zoomSnap: 1,
                 gestureHandling:true
+            },
+            maaametClusterOptions: {
+                disableClusteringAtZoom: 11,
+                maxClusterRadius: 70,
+            },
+            openStreetClusterOptions: {
+                disableClusteringAtZoom: 15,
+                maxClusterRadius: 70,
             },
 
             openStreetMap: this.spring.country == 'EE' ? false : true,
