@@ -111,6 +111,8 @@ Route::get('/myspringsview', [UserController::class, 'mySprings']);
 Route::get('/myobservationsview', [UserController::class, 'myObservations']);
 Route::get('/mymeasurementsview', [UserController::class, 'myMeasurements']);
 Route::get('/getSprings', [SpringController::class, 'getSprings']);
+Route::get('/getObservations', [ObservationController::class, 'getObservations']);
+Route::get('/getMeasurements', [MeasurementController::class, 'getMeasurements']);
 
 Route::get('springs_json', function () {
     $springs = Spring::all();

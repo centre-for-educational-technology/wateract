@@ -209,4 +209,16 @@ class MeasurementController extends Controller
         return redirect()->route('springs.analyses.index', compact('spring'))
             ->with('success', __('springs.messages.measurement_deleted'));
     }
+
+    public function getMeasurements(Request $request)
+    {
+        $measurements = Measurement::where('status', 'submitted')
+            ->orderBy($request['order_by'], 'desc')
+            ->with('spring')
+            ->with('user')
+            ->limit(20)
+            ->get();
+
+        return response()->json($measurements);
+    }
 }

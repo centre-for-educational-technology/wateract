@@ -29,43 +29,7 @@
 
                     <leaflet-maps style="height:500px;" :key="mapRefresh" :springs="mapSprings" ></leaflet-maps>
 
-                    <div v-show="featured" v-if="featured_springs.length > 0">
-                        <ul class="list-reset flex border-b">
-                            <li class="-mb-px mr-1 ml-1">
-                                <jet-label class="cursor-pointer bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 font-semibold">
-                                    {{  $t('springs.featured_springs') }}</jet-label>
-                            </li>
-                            <li class="mr-1" v-on:click="featured=false;newest = true;" v-if="newest_springs.length>0">
-                                <jet-label class="cursor-pointer bg-white inline-block py-2 px-4 hover:text-gray-800" >
-                                    {{ $t('springs.newest_springs') }}</jet-label>
-                            </li>
-                        </ul>
-                        <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4 px-4 py-2 my-2" v-show="featured">
-                            <div class="border mx-1" v-for="featured_spring in featured_springs">
-                                <spring-view :spring="featured_spring"></spring-view>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div v-show="newest" v-if="newest_springs.length > 0">
-                        <ul class="list-reset flex border-b">
-                            <li class="mr-1 ml-1" v-on:click="featured=true;newest = false;" v-if="featured_springs.length>0">
-                                <jet-label class="cursor-pointer bg-white inline-block py-2 px-4 hover:text-gray-800">
-                                    {{  $t('springs.featured_springs') }}</jet-label>
-                            </li>
-                            <li class="-mb-px mr-1">
-                                <jet-label class="cursor-pointer bg-white inline-block py-2 px-4 rounded-t border-l border-t border-r font-semibold" >
-                                    {{ $t('springs.newest_springs') }}</jet-label>
-                            </li>
-                        </ul>
-                        <div>
-                            <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4 px-4 py-2 my-2" v-show="newest">
-                                <div class="border mx-1" v-for="new_spring in newest_springs">
-                                    <spring-view :spring="new_spring"></spring-view>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <tabs :featured_springs="featured_springs" :newest_springs="newest_springs" ></tabs>
 
                 </div>
 
@@ -82,6 +46,7 @@ import SpringView from './SpringView'
 import JetLabel from "../../Jetstream/Label";
 import NavButton from '../../Components/NavButton';
 import LeafletMaps from './LeafletMaps';
+import Tabs from './Tabs';
 
 export default {
     components: {
@@ -92,6 +57,7 @@ export default {
         JetLabel,
         NavButton,
         LeafletMaps,
+        Tabs,
     },
     props: ['springs', 'featured_springs', 'newest_springs', 'classifications'],
     data() {
@@ -100,8 +66,6 @@ export default {
             mapRefresh: 0,
             search_name: '',
             search_classification: '',
-            featured: this.featured_springs.length>0 ? true: false,
-            newest: this.featured_springs.length>0 ? false: true,
         }
     },
     mounted() {

@@ -238,4 +238,17 @@ class ObservationController extends Controller
         return redirect()->route('springs.observations.index', compact('spring'))
             ->with('success', __('springs.messages.observation_deleted'));
     }
+
+    public function getObservations(Request $request)
+    {
+        $observations = Observation::where('status', 'submitted')
+            ->orderBy($request['order_by'], 'desc')
+            ->with('spring')
+            ->with('photos')
+            ->with('user')
+            ->limit(20)
+            ->get();
+
+        return response()->json($observations);
+    }
 }

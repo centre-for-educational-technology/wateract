@@ -300,6 +300,8 @@ return [
     'country_not_supported' => 'See riik ei ole toetatud.',
     'observation_description' => 'Kirjeldus (looduslikud olud, pärimused, ligipääsetavus)',
     'privacy_policy' => 'Privaatsustingimused',
+    'newest_observations' => 'Viimati lisatud vaatlused',
+    'newest_measurements' => 'Viimati lisatud mõõtmistulemused',
 
     'spring_confirmed' => 'Allikas kinnitatud',
     'spring' => 'Allikas',
