@@ -314,6 +314,9 @@ return [
     'spring_confirmed_text' => 'has been confirmed by :attribute editors now. You are able to add observations and measurements to it!',
     'team' => 'Team',
 
+    'continue_filling' => 'Continue filling',
+    'submitted' => 'Submitted',
+
     'messages' => [
         'spring_added' => 'New spring added (draft). You are able to add observations after publishing a spring.',
         'spring_submitted' => 'New spring submitted.',

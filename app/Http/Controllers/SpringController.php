@@ -238,8 +238,20 @@ class SpringController extends Controller
             ->with('user')
             ->with('references')
             ->with('database_links')
-            ->with('all_photos')
             ->first();
+
+        $spring_photos = Photo::with(['observation' => function($query) {
+            $query->where('observations.status', 'submitted');
+        }])
+            ->where('spring_id', $spring->id)
+            ->get();
+
+        $photos = $spring->photos;
+        foreach($spring_photos as $photo) {
+            if ($photo->observation !== null) {
+                $photos []= $photo;
+            }
+        }
 
         $base_url = env('APP_URL', '');
         $spring_url = $base_url . '/springs/' .  $spring->code;
@@ -251,6 +263,7 @@ class SpringController extends Controller
 
         return Inertia::render('Springs/Show', [
                 'spring' => $spring,
+                'photos' => $photos,
                 'can_edit' => $spring->canEdit()
             ])
             ->withViewData([

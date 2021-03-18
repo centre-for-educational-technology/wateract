@@ -22,7 +22,9 @@ class MeasurementController extends Controller
     public function index(string $spring_code)
     {
         $spring = Spring::where('code', $spring_code)->first();
-        $measurements = Measurement::where('spring_id', $spring->id)->with('user')->get();
+        $measurements = Measurement::where('spring_id', $spring->id)
+            ->where('status', 'submitted')
+            ->with('user')->get();
         $can_edit = $spring->canEdit();
         return Inertia::render('Measurements/Index', [
             'spring' => $spring,
@@ -54,7 +56,7 @@ class MeasurementController extends Controller
      *
      * @param \Illuminate\Http\Request $request
      * @param int $spring_id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      * @throws \Exception
      */
     public function store(Request $request)
@@ -87,6 +89,10 @@ class MeasurementController extends Controller
                 $measurement_value->value = $value;
                 $measurement_value->save();
             }
+        }
+        if ($measurement->status === 'draft') {
+            return redirect()->route('dashboard')
+                ->with('success', __('springs.messages.measurement_added'));
         }
         $spring = Spring::find($spring_id);
         return redirect()->route('springs.analyses.index', compact('spring'))
@@ -156,6 +162,10 @@ class MeasurementController extends Controller
 
         MeasurementController::updateFieldValues($measurement, $request['measurement_values']);
 
+        if ($measurement->status === 'draft') {
+            return redirect()->route('dashboard')
+                ->with('success', __('springs.messages.measurement_updated'));
+        }
         $spring = Spring::find($measurement->spring_id);
         return redirect()->route('springs.analyses.index', compact('spring'))
             ->with('success', __('springs.messages.measurement_updated'));

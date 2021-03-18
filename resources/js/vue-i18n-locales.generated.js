@@ -346,6 +346,8 @@ export default {
             "spring": "Spring",
             "spring_confirmed_text": "has been confirmed by {attribute} editors now. You are able to add observations and measurements to it!",
             "team": "Team",
+            "continue_filling": "Continue filling",
+            "submitted": "Submitted",
             "messages": {
                 "spring_added": "New spring added (draft). You are able to add observations after publishing a spring.",
                 "spring_submitted": "New spring submitted.",
@@ -1007,6 +1009,8 @@ export default {
             "spring": "Allikas",
             "spring_confirmed_text": "on kinnitatud Allikad.info toimetajate poolt. Sa saad lisada sellele allikale vaatlusi!",
             "team": "meeskond",
+            "continue_filling": "Jätka täitmist",
+            "submitted": "Esitatud",
             "messages": {
                 "spring_added": "Uus allikas lisatud (mustand). Sa saad lisada vaatlusi peale allika esitamist.",
                 "spring_submitted": "Uus allikas esitatud.",
@@ -1505,6 +1509,8 @@ export default {
             "spring": "Spring",
             "spring_confirmed_text": "has been confirmed by {attribute} editors now. You are able to add observations and measurements to it!",
             "team": "Team",
+            "continue_filling": "Continue filling",
+            "submitted": "Submitted",
             "messages": {
                 "spring_added": "New spring added (draft). You are able to add observations after publishing a spring.",
                 "spring_submitted": "New spring submitted.",

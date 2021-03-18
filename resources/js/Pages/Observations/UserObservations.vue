@@ -23,7 +23,11 @@
 
 </template>
 <script>
+import ObservationStatusCell from '../../Components/DataTable/ObservationStatusCell';
 export default {
+    components: {
+        ObservationStatusCell,
+    },
     data() {
         return {
             columns: [
@@ -50,6 +54,12 @@ export default {
                     name: 'created_at',
                     orderable: true,
                     transform: ({data, name}) => `${moment(data[name]).format("DD.MM.YYYY H:mm")}`,
+                },
+                {
+                    label: this.$i18n.t('springs.status'),
+                    name: 'status',
+                    orderable: true,
+                    component: ObservationStatusCell,
                 },
             ],
             pagination: {

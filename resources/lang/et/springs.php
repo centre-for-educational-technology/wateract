@@ -308,6 +308,9 @@ return [
     'spring_confirmed_text' => 'on kinnitatud Allikad.info toimetajate poolt. Sa saad lisada sellele allikale vaatlusi!',
     'team' => 'meeskond',
 
+    'continue_filling' => 'Jätka täitmist',
+    'submitted' => 'Esitatud',
+
     'messages' => [
         'spring_added' => 'Uus allikas lisatud (mustand). Sa saad lisada vaatlusi peale allika esitamist.',
         'spring_submitted' => 'Uus allikas esitatud.',

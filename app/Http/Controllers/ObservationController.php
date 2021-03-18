@@ -28,7 +28,9 @@ class ObservationController extends Controller
     public function index(string $spring_code)
     {
         $spring = Spring::where('code', $spring_code)->first();
-        $observations = Observation::where('spring_id', $spring->id)->with('user')->with('photos')->get();
+        $observations = Observation::where('spring_id', $spring->id)
+            ->where('status', 'submitted')
+            ->with('user')->with('photos')->get();
         return Inertia::render('Observations/Index', [
             'spring' => $spring,
             'observations' => $observations,
@@ -93,6 +95,11 @@ class ObservationController extends Controller
                     $photo->save();
                 }
             }
+        }
+
+        if ($observation->status === "draft") {
+            return redirect()->route('dashboard')
+                ->with('success', __('springs.messages.observation_added'));
         }
 
         $spring = Spring::find($request['spring_id']);
@@ -207,6 +214,10 @@ class ObservationController extends Controller
 
         (new PhotoController)->deletePhotos($request['photos_to_delete']);
 
+        if ($observation->status === "draft") {
+            return redirect()->route('dashboard')
+                ->with('success', __('springs.messages.observation_updated'));
+        }
         return redirect()->route('springs.observations.index', compact('spring'))
             ->with('success', __('springs.messages.observation_updated'));
 
