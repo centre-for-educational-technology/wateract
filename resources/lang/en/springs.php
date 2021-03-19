@@ -317,6 +317,16 @@ return [
     'continue_filling' => 'Continue filling',
     'submitted' => 'Submitted',
 
+    'statistics' => 'Statistics',
+    'number_of_springs' => 'Number of springs',
+    'number_of_observations' => 'Number of observations',
+    'number_of_spring_photos' => 'Spring photos',
+    'most_active_users' => 'Most active users',
+    'new_springs_last_7_days' => 'New springs (last 7 days)',
+    'new_observations_last_7_days' => 'New observations (last 7 days)',
+    'new_springs' => 'New springs',
+    'new_observations' => 'New observations',
+
     'messages' => [
         'spring_added' => 'New spring added (draft). You are able to add observations after publishing a spring.',
         'spring_submitted' => 'New spring submitted.',

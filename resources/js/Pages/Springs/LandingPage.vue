@@ -47,6 +47,8 @@
             <h1>{{ $t('springs.springs') }}</h1>
             <leaflet-maps class="px-5 lg:px-10" style="height:500px;" :springs="springs"></leaflet-maps>
 
+            <statistics class="mt-5 px-5 lg:px-10"></statistics>
+
             <div class="text-center">
                 <div class="py-5">
                     <div class="inline p-2 text-sm font-semibold leading-normal cursor-pointer bg-blue-100 mr-3" v-if="$page.user">
@@ -176,11 +178,13 @@
 <script>
 import AppLayout from './../../Layouts/AppLayout';
 import LeafletMaps from './LeafletMaps';
+import Statistics from './Statistics';
 
 export default {
     components: {
         AppLayout,
         LeafletMaps,
+        Statistics,
     },
     props: ['springs'],
 }

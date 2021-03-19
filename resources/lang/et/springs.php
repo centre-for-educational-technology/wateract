@@ -311,6 +311,16 @@ return [
     'continue_filling' => 'Jätka täitmist',
     'submitted' => 'Esitatud',
 
+    'statistics' => 'Statistika',
+    'number_of_springs' => 'Allikaid kokku',
+    'number_of_observations' => 'Vaatlusi kokku',
+    'number_of_spring_photos' => 'Allika fotosid kokku',
+    'most_active_users' => 'Aktiivsemad kasutajad',
+    'new_springs_last_7_days' => 'Uusi allikaid (viimased 7 päeva)',
+    'new_observations_last_7_days' => 'Uusi vaatlusi (viimased 7 päeva)',
+    'new_springs' => 'Uusi allikaid',
+    'new_observations' => 'Uusi vaatlusi',
+
     'messages' => [
         'spring_added' => 'Uus allikas lisatud (mustand). Sa saad lisada vaatlusi peale allika esitamist.',
         'spring_submitted' => 'Uus allikas esitatud.',

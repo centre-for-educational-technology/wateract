@@ -3,6 +3,7 @@
 use App\Http\Controllers\CsvFileController;
 use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\SpringFeedbackController;
+use App\Http\Controllers\StatisticsController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
@@ -113,29 +114,4 @@ Route::get('/mymeasurementsview', [UserController::class, 'myMeasurements']);
 Route::get('/getSprings', [SpringController::class, 'getSprings']);
 Route::get('/getObservations', [ObservationController::class, 'getObservations']);
 Route::get('/getMeasurements', [MeasurementController::class, 'getMeasurements']);
-
-Route::get('springs_json', function () {
-    $springs = Spring::all();
-    $features = array();
-    foreach( $springs as $spring) {
-        $coordinates = array($spring->longitude, $spring->latitude);
-        $title = $spring->title;
-        if (!$title) {
-            $title = __('springs.unnamed');
-        }
-        $features[] = array(
-            'type' => 'Feature',
-            'geometry' => array('type' => 'Point', 'coordinates' => $coordinates),
-            'properties' => array(
-                'id' => $spring->id,
-                'title' => $title,
-                'status' => $spring->status,
-            ),
-        );
-    }
-    $new_data = array(
-        'type' => 'FeatureCollection',
-        'features' => $features,
-    );
-    return json_encode($new_data, JSON_PRETTY_PRINT);
-});
+Route::get('/getStatistics', [StatisticsController::class, 'getStatistics']);
