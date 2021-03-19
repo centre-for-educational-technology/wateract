@@ -85,7 +85,7 @@ class StatisticsController extends Controller
             ->join('springs', 'photos.spring_id', '=', 'springs.id')
             ->get();
 
-        $all_spring_photos = $public_spring_photos->merge($observation_photos);
+        $all_spring_photos = $public_spring_photos->concat($observation_photos);
         return $all_spring_photos->random(1);
 
     }
