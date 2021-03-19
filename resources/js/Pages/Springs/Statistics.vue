@@ -1,6 +1,6 @@
 <template>
 
-    <div class="grid md:grid-cols-3 grid-cols-1 gap-10">
+    <div class="grid md:grid-cols-3 grid-cols-1 md:gap-10 gap-4">
 
         <div class="bg-blue-100 p-5">
             <h4>{{ $t('springs.statistics') }}</h4>

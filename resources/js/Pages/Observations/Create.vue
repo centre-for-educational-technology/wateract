@@ -20,6 +20,9 @@
                         <div class="break-normal">{{ helpText }}</div>
                     </el-dialog>
 
+                    <div class="p-5 bg-blue-50">
+                        {{ $t('springs.all_fields_not_required') }}
+                    </div>
 
                     <div>
                         <div>

@@ -16,6 +16,10 @@
 
                 <template #form>
 
+                    <div class="p-5 bg-blue-50">
+                        {{ $t('springs.all_fields_not_required') }}
+                    </div>
+
                     <div class="py-2">
                         <jet-label class="font-bold" for="analysis_time" :value="$t('springs.analysis_time')" />
                         <datetime :auto="true" :title="$t('springs.analysis_time')" value-zone="local"

@@ -314,6 +314,7 @@ return [
     'spring_confirmed_text' => 'has been confirmed by :attribute editors now. You are able to add observations and measurements to it!',
     'team' => 'Team',
 
+    'all_fields_not_required' => 'All fields are not required. Fill in as much as you can.',
     'continue_filling' => 'Continue filling',
     'submitted' => 'Submitted',
 

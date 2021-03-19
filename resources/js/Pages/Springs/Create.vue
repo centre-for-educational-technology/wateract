@@ -15,6 +15,10 @@
                             <div class="break-normal">{{ helptext }}</div>
                         </el-dialog>
 
+                        <div class="p-5 bg-blue-50">
+                            {{ $t('springs.all_fields_not_required') }}
+                        </div>
+
                         <div class="flex -mx-2">
                             <div class="w-full px-2">
                                 <jet-label class="inline-block font-bold" for="name" :value="$t('springs.spring_name')" />

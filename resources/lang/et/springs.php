@@ -308,6 +308,7 @@ return [
     'spring_confirmed_text' => 'on kinnitatud Allikad.info toimetajate poolt. Sa saad lisada sellele allikale vaatlusi!',
     'team' => 'meeskond',
 
+    'all_fields_not_required' => 'Kõik väljad ei ole kohustuslikud, täida niipalju kui oskad või saad.',
     'continue_filling' => 'Jätka täitmist',
     'submitted' => 'Esitatud',
 
