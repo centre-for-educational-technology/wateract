@@ -57,7 +57,7 @@ class StatisticsController extends Controller
             ->select('user_id', 'users.name', DB::raw('count(*) as total'))
             ->join('users', 'springs.user_id', '=', 'users.id')
             ->where('user_id', '!=', null)
-            ->groupBy('user_id')
+            ->groupBy('user_id', 'users.name')
             ->orderBy('total', 'DESC')
             ->limit(3)
             ->get();
