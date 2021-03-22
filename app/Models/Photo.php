@@ -10,7 +10,7 @@ class Photo extends Model
     use HasFactory;
 
     protected $fillable = [
-        'spring_id', 'observation_id', 'path', 'thumbnail', 'caption'
+        'spring_id', 'observation_id', 'user_id', 'path', 'thumbnail', 'photo_taken', 'caption'
     ];
 
     public function spring()
@@ -21,5 +21,10 @@ class Photo extends Model
     public function observation()
     {
         return $this->belongsTo('App\Models\Observation');
+    }
+
+    public function user()
+    {
+        return $this->belongsTo('App\Models\User');
     }
 }

@@ -307,6 +307,7 @@ return [
     'privacy_policy' => 'Privacy policy',
     'newest_observations' => 'Newest observations',
     'newest_measurements' => 'Newest analysis',
+    'photo_date' => 'Photo date',
 
     'spring_confirmed' => 'Spring Confirmed',
     'spring' => 'Spring',

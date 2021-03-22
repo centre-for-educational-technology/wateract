@@ -48,18 +48,12 @@ class PhotoController extends Controller
         $path = $image['path'];
         $thumbnail = $image['thumbnail'];
 
-        //$orig_file_path = Storage::path($orig_file_path);
-        //var_dump($orig_file_path);
-        //$resized_photo = PhotoController::imageResizer($orig_photo, 1024, 1024);
-
-        //Storage::disk('public')->delete($orig_file_path);
-
-        //$path = Storage::disk('public')->put('spring-photos', $orig_photo);
         $photo = new Photo();
         $photo->spring_id = null;
+        $photo->user_id = Auth::id();
         $photo->path = $path;
         $photo->thumbnail = $thumbnail;
-        $photo->caption = $datetime;
+        $photo->photo_taken = $datetime;
         $photo->save();
         return response()->json(['error'=>false, 'photo_id'=>$photo->id]);
     }
