@@ -47,7 +47,7 @@
             <h1>{{ $t('springs.springs') }}</h1>
             <leaflet-maps class="px-5 lg:px-10" style="height:500px;" :springs="springs"></leaflet-maps>
 
-            <statistics class="mt-5 px-5 lg:px-10"></statistics>
+            <statistics class="mt-5 px-5 lg:px-10" style="max-width:1120px; margin:20px auto"></statistics>
 
             <div class="text-center">
                 <div class="py-5">
