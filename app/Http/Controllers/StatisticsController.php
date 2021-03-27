@@ -36,7 +36,6 @@ class StatisticsController extends Controller
             'number_of_observations_7_days' => $number_of_observations_7_days,
             'springs_active_users' => $this->mostActiveSpringUsers(),
             'observations_active_users' => $this->mostActiveObservationUsers(),
-            'photo' => $this->getRandomSpringPhoto(),
         ];
         return response()->json($statistics);
     }
@@ -59,7 +58,7 @@ class StatisticsController extends Controller
             ->where('user_id', '!=', null)
             ->groupBy('user_id', 'users.name')
             ->orderBy('total', 'DESC')
-            ->limit(3)
+            ->limit(5)
             ->get();
     }
 
@@ -69,24 +68,8 @@ class StatisticsController extends Controller
             ->join('users', 'observations.user_id', '=', 'users.id')
             ->groupBy('user_id', 'users.name')
             ->orderBy('total', 'DESC')
-            ->limit(3)
+            ->limit(5)
             ->get();
     }
 
-    public function getRandomSpringPhoto() {
-        $public_spring_ids = Spring::where('unlisted', 0)->whereIn('status', ['submitted', 'confirmed'])->pluck('id');
-        $public_spring_photos = Photo::where('observation_id', null)
-            ->whereIn('spring_id', $public_spring_ids)
-            ->join('springs', 'photos.spring_id', '=', 'springs.id')
-            ->get();
-
-        $observation_ids = Observation::where('status', 'submitted')->pluck('id');
-        $observation_photos = Photo::whereIn('observation_id', $observation_ids)
-            ->join('springs', 'photos.spring_id', '=', 'springs.id')
-            ->get();
-
-        $all_spring_photos = $public_spring_photos->concat($observation_photos);
-        return $all_spring_photos->random(1);
-
-    }
 }

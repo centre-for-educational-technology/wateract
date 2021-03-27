@@ -256,10 +256,7 @@ class ObservationController extends Controller
             ->orderBy($request['order_by'], 'desc')
             ->with('spring')
             ->with('photos')
-            ->with('user')
-            ->limit(20)
-            ->get();
-
-        return response()->json($observations);
+            ->with('user');
+        return $observations->paginate(10);
     }
 }
