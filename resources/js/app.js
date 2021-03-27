@@ -15,6 +15,7 @@ import LaravelPermissionToVueJS from 'laravel-permission-to-vuejs';
 import 'leaflet/dist/leaflet.css';
 import { L, Icon } from 'leaflet';
 import DataTable from 'laravel-vue-datatable';
+import TailablePagination from 'tailable-pagination';
 import VueInternationalization from 'vue-i18n';
 import Locale from './vue-i18n-locales.generated';
 import store from "./Modules/store";
@@ -43,7 +44,7 @@ Vue.use(ElementUI);
 Vue.use(LaravelPermissionToVueJS);
 Vue.use(require('vue-moment'));
 Vue.use(DataTable);
-
+Vue.use(TailablePagination);
 
 Vue.use(GmapVue, {
     load: {

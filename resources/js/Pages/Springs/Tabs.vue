@@ -1,3 +1,8 @@
+<style>
+p.leading-5 {
+    display: none;
+}
+</style>
 <template>
 
     <div>
@@ -38,7 +43,7 @@
         </div>
 
         <div class="px-4 py-2 my-2" v-show="observations">
-            <div class="py-1" v-for="new_observation in newest_observations" :key="new_observation.id">
+            <div class="py-1" v-for="new_observation in newest_observations.data" :key="new_observation.id">
 
                 <div class="">
                     <span class="font-semibold hover:underline">
@@ -53,10 +58,11 @@
 
                 <observation-view v-show="new_observation.show" :spring="new_observation.spring" :observation="new_observation" :can_edit="false"></observation-view>
             </div>
+            <tailable-pagination :size="'small'" :data="newest_observations" :showNumbers="true" @page-changed="getNewestObservations"></tailable-pagination>
         </div>
 
         <div class="px-4 py-2 my-2" v-show="measurements">
-            <div class="py-1" v-for="new_measurement in newest_measurements" :key="new_measurement.id">
+            <div class="py-1" v-for="new_measurement in newest_measurements.data" :key="new_measurement.id">
 
                 <div class="">
                     <span class="font-semibold hover:underline">
@@ -71,6 +77,7 @@
 
                 <measurement-view v-show="new_measurement.show" :spring="new_measurement.spring" :measurement="new_measurement" :can_edit="false"></measurement-view>
             </div>
+            <tailable-pagination v-show="newest_measurements.data.length > 0" :size="'small'" :data="newest_measurements" :showNumbers="true" @page-changed="getNewestMeasurements"></tailable-pagination>
         </div>
 
     </div>
@@ -96,8 +103,8 @@ export default {
             newest: this.featured_springs.length>0 ? false: true,
             observations: false,
             measurements: false,
-            newest_observations: [],
-            newest_measurements: [],
+            newest_observations: {"data": []},
+            newest_measurements: {"data": []},
         }
     },
     methods: {
@@ -125,9 +132,10 @@ export default {
             this.observations = false;
             this.measurements = true;
         },
-        getNewestObservations() {
+        getNewestObservations(page = 1) {
             let params = {
                 "order_by": "created_at",
+                "page": page,
             }
             axios.get('/getObservations', { params }).then(response => {
                 this.newest_observations = response.data;
@@ -136,9 +144,10 @@ export default {
         showObservation(observation) {
             this.$set(observation, 'show', !observation.show)
         },
-        getNewestMeasurements() {
+        getNewestMeasurements(page = 1) {
             let params = {
                 "order_by": "created_at",
+                "page": page,
             }
             axios.get('/getMeasurements', { params }).then(response => {
                 this.newest_measurements = response.data;

@@ -71,7 +71,8 @@ class MeasurementController extends Controller
         $measurement_values = [
             'user_id' => Auth::id(),
             'spring_id' => $spring_id,
-            'analysis_time' => $date->format('Y-m-d H:i')
+            'analysis_time' => $date->format('Y-m-d H:i'),
+            'status' => $request['status'],
         ];
         $request['user_id'] = Auth::id();
         $measurement = Measurement::create($measurement_values);
@@ -225,10 +226,7 @@ class MeasurementController extends Controller
         $measurements = Measurement::where('status', 'submitted')
             ->orderBy($request['order_by'], 'desc')
             ->with('spring')
-            ->with('user')
-            ->limit(20)
-            ->get();
-
-        return response()->json($measurements);
+            ->with('user');
+        return $measurements->paginate(10);
     }
 }

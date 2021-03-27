@@ -38,6 +38,7 @@
         "luxon": "^1.26.0",
         "marker-clusterer-plus": "^2.1.4",
         "proj4leaflet": "^1.0.2",
+        "tailable-pagination": "^0.1.22",
         "vform": "^1.0.1",
         "vue-datetime": "^1.0.0-beta.14",
         "vue-gtag": "^1.11.0",
