@@ -340,7 +340,7 @@ class SpringController extends Controller
 
         if ( $spring->status == 'submitted' && $request['status'] == 'confirmed' ) {
             $spring_creator = $spring->user()->first();
-            if ( $spring_creator != Auth::user() ) {
+            if ( $spring_creator && $spring_creator != Auth::user() ) {
                 $spring_creator->notify( new SpringConfirmed($spring) );
             }
         }
