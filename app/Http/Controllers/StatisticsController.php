@@ -19,13 +19,13 @@ class StatisticsController extends Controller
         $number_of_measurements = Measurement::where('status', 'submitted')->count();
         $number_of_springs_7_days = Spring::whereIn('status', ['submitted', 'confirmed'])
             ->whereBetween('created_at', [
-                Carbon::now()->subdays(7)->format('Y-m-d'),
-                Carbon::now()->subday()->format('Y-m-d')
+                Carbon::now()->subdays(7)->format('Y-m-d H:i'),
+                Carbon::now()->format('Y-m-d H:i')
             ])->count();
         $number_of_observations_7_days = Observation::whereIn('status', ['submitted', 'confirmed'])
             ->whereBetween('created_at', [
-                Carbon::now()->subdays(7)->format('Y-m-d'),
-                Carbon::now()->subday()->format('Y-m-d')
+                Carbon::now()->subdays(7)->format('Y-m-d H:i'),
+                Carbon::now()->format('Y-m-d H:i')
             ])->count();
         $statistics = [
             'number_of_springs' => $number_of_springs,
