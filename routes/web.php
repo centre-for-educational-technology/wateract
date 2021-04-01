@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CsvFileController;
+use App\Http\Controllers\NewsController;
 use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\SpringFeedbackController;
 use App\Http\Controllers\StatisticsController;
@@ -51,11 +52,6 @@ Route::get('/instructions', function () {
         'currentRouteName' => 'instructions'
     ]);
 });
-Route::get('/news', function () {
-    return Inertia\Inertia::render('StaticPages/News', [
-        'currentRouteName' => 'news'
-    ]);
-});
 Route::get('/about-wateract', function () {
     return Inertia\Inertia::render('StaticPages/AboutWateract', [
         'currentRouteName' => 'about-wateract'
@@ -96,6 +92,7 @@ Route::get('locale/{locale}', function ($locale){
     return redirect()->back();
 });
 
+Route::resource('news', NewsController::class);
 Route::resource('springs', SpringController::class);
 Route::resource('photos', PhotoController::class);
 Route::resource('spring_feedback', SpringFeedbackController::class);
@@ -115,3 +112,4 @@ Route::get('/getSprings', [SpringController::class, 'getSprings']);
 Route::get('/getObservations', [ObservationController::class, 'getObservations']);
 Route::get('/getMeasurements', [MeasurementController::class, 'getMeasurements']);
 Route::get('/getStatistics', [StatisticsController::class, 'getStatistics']);
+Route::get('/getNews', [NewsController::class, 'getNews']);

@@ -358,6 +358,14 @@ export default {
             "new_observations_last_7_days": "New observations (last 7 days)",
             "new_springs": "New springs",
             "new_observations": "New observations",
+            "add_new_news": "Add new news",
+            "edit_news": "Edit news",
+            "title": "Title",
+            "body_text": "Body text",
+            "locale": "Locale",
+            "delete_news": "Delete news",
+            "delete_news_notification": "News will be deleted permanently.",
+            "delete_news_confirmation": "Are you sure you want to delete this news?",
             "messages": {
                 "spring_added": "New spring added (draft). You are able to add observations after publishing a spring.",
                 "spring_submitted": "New spring submitted.",
@@ -369,7 +377,10 @@ export default {
                 "observation_deleted": "Observation successfully deleted.",
                 "measurement_added": "New measurement added.",
                 "measurement_updated": "Measurement updated successfully.",
-                "measurement_deleted": "Measurement successfully deleted."
+                "measurement_deleted": "Measurement successfully deleted.",
+                "news_added": "New news added.",
+                "news_updated": "News successfully updated.",
+                "news_deleted": "News successfully deleted."
             }
         },
         "users": {
@@ -1031,6 +1042,14 @@ export default {
             "new_observations_last_7_days": "Uusi vaatlusi (viimased 7 päeva)",
             "new_springs": "Uusi allikaid",
             "new_observations": "Uusi vaatlusi",
+            "add_new_news": "Lisa uus uudis",
+            "edit_news": "Muuda uudist",
+            "title": "Pealkiri",
+            "body_text": "Sisu",
+            "locale": "Keel",
+            "delete_news": "Kustuta uudis",
+            "delete_news_notification": "Uudis kustutatakse jäädavalt.",
+            "delete_news_confirmation": "Oled sa kindel, et soovid selle uudise kustutada?",
             "messages": {
                 "spring_added": "Uus allikas lisatud (mustand). Sa saad lisada vaatlusi peale allika esitamist.",
                 "spring_submitted": "Uus allikas esitatud.",
@@ -1042,7 +1061,10 @@ export default {
                 "observation_deleted": "Vaatlus edukalt kustutatud.",
                 "measurement_added": "Uus mõõtmistulemus lisatud.",
                 "measurement_updated": "Mõõtmistulemus edukalt uuendatud.",
-                "measurement_deleted": "Mõõtmistulemus edukalt kustutatud."
+                "measurement_deleted": "Mõõtmistulemus edukalt kustutatud.",
+                "news_added": "Uus uudis lisatud.",
+                "news_updated": "Uudis edukalt uuendatud.",
+                "news_deleted": "Uudis edukalt kustutatud."
             }
         },
         "users": {
@@ -1541,6 +1563,14 @@ export default {
             "new_observations_last_7_days": "New observations (last 7 days)",
             "new_springs": "New springs",
             "new_observations": "New observations",
+            "add_new_news": "Add new news",
+            "edit_news": "Edit news",
+            "title": "Title",
+            "body_text": "Body text",
+            "locale": "Locale",
+            "delete_news": "Delete news",
+            "delete_news_notification": "News will be deleted permanently.",
+            "delete_news_confirmation": "Are you sure you want to delete this news?",
             "messages": {
                 "spring_added": "New spring added (draft). You are able to add observations after publishing a spring.",
                 "spring_submitted": "New spring submitted.",
@@ -1552,7 +1582,10 @@ export default {
                 "observation_deleted": "Observation successfully deleted.",
                 "measurement_added": "New measurement added.",
                 "measurement_updated": "Measurement updated successfully.",
-                "measurement_deleted": "Measurement successfully deleted."
+                "measurement_deleted": "Measurement successfully deleted.",
+                "news_added": "New news added.",
+                "news_updated": "News successfully updated.",
+                "news_deleted": "News successfully deleted."
             }
         },
         "users": {

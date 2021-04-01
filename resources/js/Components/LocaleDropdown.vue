@@ -40,6 +40,10 @@ export default {
                 .then(() => {
                     this.$i18n.locale = language;
                     axios.get('/locale/'+language);
+                    var page_url = window.location.href;
+                    if ( page_url.endsWith("news") ) {
+                        window.location.reload(true)
+                    }
                 }).catch((error => {
             }));
         }

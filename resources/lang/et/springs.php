@@ -322,6 +322,15 @@ return [
     'new_springs' => 'Uusi allikaid',
     'new_observations' => 'Uusi vaatlusi',
 
+    'add_new_news' => 'Lisa uus uudis',
+    'edit_news' => 'Muuda uudist',
+    'title' => 'Pealkiri',
+    'body_text' => 'Sisu',
+    'locale' => 'Keel',
+    'delete_news' => 'Kustuta uudis',
+    'delete_news_notification' => 'Uudis kustutatakse jäädavalt.',
+    'delete_news_confirmation' => 'Oled sa kindel, et soovid selle uudise kustutada?',
+
     'messages' => [
         'spring_added' => 'Uus allikas lisatud (mustand). Sa saad lisada vaatlusi peale allika esitamist.',
         'spring_submitted' => 'Uus allikas esitatud.',
@@ -334,5 +343,8 @@ return [
         'measurement_added' => 'Uus mõõtmistulemus lisatud.',
         'measurement_updated' => 'Mõõtmistulemus edukalt uuendatud.',
         'measurement_deleted' => 'Mõõtmistulemus edukalt kustutatud.',
+        'news_added' => 'Uus uudis lisatud.',
+        'news_updated' => 'Uudis edukalt uuendatud.',
+        'news_deleted' => 'Uudis edukalt kustutatud.',
     ],
 ];

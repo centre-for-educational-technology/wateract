@@ -327,6 +327,15 @@ return [
     'new_springs' => 'New springs',
     'new_observations' => 'New observations',
 
+    'add_new_news' => 'Add new news',
+    'edit_news' => 'Edit news',
+    'title' => 'Title',
+    'body_text' => 'Body text',
+    'locale' => 'Locale',
+    'delete_news' => 'Delete news',
+    'delete_news_notification' => 'News will be deleted permanently.',
+    'delete_news_confirmation' => 'Are you sure you want to delete this news?',
+
     'messages' => [
         'spring_added' => 'New spring added (draft). You are able to add observations after publishing a spring.',
         'spring_submitted' => 'New spring submitted.',
@@ -339,5 +348,8 @@ return [
         'measurement_added' => 'New measurement added.',
         'measurement_updated' => 'Measurement updated successfully.',
         'measurement_deleted' => 'Measurement successfully deleted.',
+        'news_added' => 'New news added.',
+        'news_updated' => 'News successfully updated.',
+        'news_deleted' => 'News successfully deleted.',
     ],
 ];
