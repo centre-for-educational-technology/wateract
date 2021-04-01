@@ -244,9 +244,10 @@ class SpringController extends Controller
             $query->where('observations.status', 'submitted');
         }])
             ->where('spring_id', $spring->id)
+            ->with('user')
             ->get();
 
-        $photos = $spring->photos;
+        $photos = Photo::where('spring_id', $spring->id)->where('observation_id', null)->with('user')->get();
         foreach($spring_photos as $photo) {
             if ($photo->observation !== null) {
                 $photos []= $photo;

@@ -19,13 +19,13 @@ class StatisticsController extends Controller
         $number_of_measurements = Measurement::where('status', 'submitted')->count();
         $number_of_springs_7_days = Spring::whereIn('status', ['submitted', 'confirmed'])
             ->whereBetween('created_at', [
-                Carbon::now()->subdays(7)->format('Y-m-d'),
-                Carbon::now()->subday()->format('Y-m-d')
+                Carbon::now()->subdays(7)->format('Y-m-d H:i'),
+                Carbon::now()->format('Y-m-d H:i')
             ])->count();
         $number_of_observations_7_days = Observation::whereIn('status', ['submitted', 'confirmed'])
             ->whereBetween('created_at', [
-                Carbon::now()->subdays(7)->format('Y-m-d'),
-                Carbon::now()->subday()->format('Y-m-d')
+                Carbon::now()->subdays(7)->format('Y-m-d H:i'),
+                Carbon::now()->format('Y-m-d H:i')
             ])->count();
         $statistics = [
             'number_of_springs' => $number_of_springs,
@@ -56,7 +56,7 @@ class StatisticsController extends Controller
             ->select('user_id', 'users.name', DB::raw('count(*) as total'))
             ->join('users', 'springs.user_id', '=', 'users.id')
             ->where('user_id', '!=', null)
-            ->groupBy('user_id')
+            ->groupBy('user_id', 'users.name')
             ->orderBy('total', 'DESC')
             ->limit(5)
             ->get();
@@ -66,7 +66,7 @@ class StatisticsController extends Controller
         return DB::table('observations')
             ->select('user_id', 'users.name', DB::raw('count(*) as total'))
             ->join('users', 'observations.user_id', '=', 'users.id')
-            ->groupBy('user_id')
+            ->groupBy('user_id', 'users.name')
             ->orderBy('total', 'DESC')
             ->limit(5)
             ->get();

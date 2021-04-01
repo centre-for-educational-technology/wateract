@@ -302,6 +302,7 @@ return [
     'privacy_policy' => 'Privaatsustingimused',
     'newest_observations' => 'Viimati lisatud vaatlused',
     'newest_measurements' => 'Viimati lisatud mõõtmistulemused',
+    'photo_date' => 'Foto kuupäev',
 
     'spring_confirmed' => 'Allikas kinnitatud',
     'spring' => 'Allikas',

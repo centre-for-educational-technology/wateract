@@ -136,6 +136,14 @@
                             </div>
                             <el-dialog :visible.sync="dialogVisible">
                                 <img width="100%" :src="dialogPhotoUrl" alt="" />
+                                <span class="text-xs text-left">
+                                    <span v-if="dialogPhotoUserName">
+                                        {{ $t('springs.added_by') }}: {{ dialogPhotoUserName }}
+                                    </span>
+                                    <span v-if="dialogPhotoDate" class="ml-5">
+                                        {{ $t('springs.photo_date') }}: {{ dialogPhotoDate }}
+                                    </span>
+                                </span>
                             </el-dialog>
                         </div>
 
@@ -171,6 +179,8 @@ export default {
         return {
             dialogVisible: false,
             dialogPhotoUrl: '',
+            dialogPhotoUserName: false,
+            dialogPhotoDate: false,
             spring_creator: this.spring.user ? this.spring.user.id : null,
         }
     },
@@ -184,6 +194,14 @@ export default {
         },
         handlePhotoPreview(photo) {
             this.dialogPhotoUrl = '/' + photo.path;
+            this.dialogPhotoUserName = false;
+            if (photo.user) {
+                this.dialogPhotoUserName = photo.user.name;
+            }
+            this.dialogPhotoDate = false;
+            if (photo.photo_taken) {
+                this.dialogPhotoDate = moment(photo.photo_taken).format("DD.MM.YYYY H:mm");
+            }
             this.dialogVisible = true;
         },
     },
