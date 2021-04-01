@@ -146,6 +146,12 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'latitude'                => 'Latitude',
+        'longitude'               => 'Longitude',
+        'country'                 => 'Country',
+        'description'             => 'Description',
+        'feedback'                => 'Feedback',
+    ],
 
 ];
