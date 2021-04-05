@@ -1,3 +1,5 @@
+<meta name="csrf-token" content="{{ csrf_token() }}">
+{!! htmlScriptTagJsApi() !!}
 <x-guest-layout>
     <x-jet-authentication-card>
         <x-slot name="logo">
