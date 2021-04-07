@@ -31,6 +31,7 @@ export default {
                 'en': 'ENG',
                 'et': 'EST',
                 'lv': 'LAV',
+                'ru': 'RUS',
             },
         }
     },

@@ -153,10 +153,10 @@ return [
     */
 
     'attributes' => [
-        'latitude'                => 'Latitude',
-        'longitude'               => 'Longitude',
+        'latitude'                => 'Широта',
+        'longitude'               => 'Долгота',
         'country'                 => 'Страна',
         'description'             => 'Описание',
-        'feedback'                => 'Feedback',
+        'feedback'                => 'Обратная связь, отзыв',
     ],
 ];

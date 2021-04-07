@@ -14,7 +14,7 @@ p.leading-5 {
                 <nav-button :href="'news/create'">{{ $t('springs.add_new_news') }}</nav-button>
             </div>
         </template>
-        
+
             <div class="py-6">
                 <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
                     <div class="p-10 bg-white overflow-hidden shadow-xl sm:rounded-lg">

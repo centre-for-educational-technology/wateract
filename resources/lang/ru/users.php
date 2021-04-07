@@ -11,21 +11,21 @@ return [
     |
     */
 
-    'users' => 'Users',
-    'name' => 'Name',
-    'email' => 'Email',
+    'users' => 'Пользователи',
+    'name' => 'Имя',
+    'email' => 'Электронная почта',
     'role' => 'Role',
-    'counties' => 'Counties',
-    'edit' => 'Edit',
-    'edit_user' => 'Edit User',
-    'save' => 'Save',
-    'select_counties' => 'Select counties',
+    'counties' => 'Округи',
+    'edit' => 'Редактировать',
+    'edit_user' => 'Редактировать пользователя',
+    'save' => 'Сохранить',
+    'select_counties' => 'Выберите округа',
 
-    'delete_user' => 'Delete User',
-    'permanently_delete_user_account' => 'Permanently delete user account.',
-    'delete_account_notification' => 'User account will be permanently deleted.',
-    'delete_account_confirmation' => 'Are you sure you want to delete this user account? This account will be permanently deleted. Please enter your password to confirm you would like to permanently delete this user account.',
-    'password' => 'Password',
-    'nevermind' => 'Nevermind',
+    'delete_user' => 'Удалить пользователя',
+    'permanently_delete_user_account' => 'Удалить учетную запись пользователя без возможности восстановления.',
+    'delete_account_notification' => 'Учетная запись пользователя будет удалена без возможности восстановления.',
+    'delete_account_confirmation' => 'Вы уверены, что хотите удалить эту учетную запись пользователя? Эта учетная запись будет удалена без возможности восстановления. Пожалуйста, введите свой пароль, чтобы подтвердить, что вы хотите навсегда удалить эту учетную запись пользователя.',
+    'password' => 'Пароль',
+    'nevermind' => 'Неважно',
 
 ];

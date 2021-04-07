@@ -12,21 +12,21 @@ return [
     |
     */
 
-    'failed' => 'These credentials do not match our records.',
-    'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
-    'name' => 'Name',
-    'email' => 'Email',
-    'password' => 'Password',
-    'confirm_password' => 'Confirm Password',
-    'already_register' => 'Already registered?',
-    'register' => 'Register',
-    'remember_me' => 'Remember me',
-    'login' => 'Login',
-    'forgot_password' => 'Forgot your password?',
-    'forgot_password_text' => 'Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.',
-    'email_password_reset_link' => 'Email Password Reset Link',
+    'failed' => 'Эти учетные данные не соответствуют нашим записям.',
+    'throttle' => 'Слишком много попыток входа. Пожалуйста, попробуйте еще раз через :seconds seconds.',
+    'name' => 'Имя',
+    'email' => 'Электронная почта',
+    'password' => 'Пароль',
+    'confirm_password' => 'Подтвердите Пароль',
+    'already_register' => 'Уже зарегистрирован?',
+    'register' => 'Регистрироваться',
+    'remember_me' => 'Запомни меня',
+    'login' => 'Вход',
+    'forgot_password' => 'Забыли ваш пароль?',
+    'forgot_password_text' => 'Забыли ваш пароль? Без проблем. Просто сообщите нам свой адрес электронной почты, и мы пришлем вам ссылку для сброса пароля, которая позволит вам выбрать новый.',
+    'email_password_reset_link' => 'Ссылка для сброса пароля электронной почты',
 
-    'agree_with_conditions' => 'I have read and agree with Allikad.info',
-    'privacy_policy' => 'Privacy policy',
+    'agree_with_conditions' => 'Я прочитал и согласен с Allikad.info',
+    'privacy_policy' => 'Политика конфиденциальности',
 
 ];

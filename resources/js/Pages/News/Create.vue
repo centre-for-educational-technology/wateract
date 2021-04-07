@@ -29,6 +29,7 @@
                             <option value="et" :selected="form.locale === 'et'" >et</option>
                             <option value="en" :selected="form.locale === 'en'" >en</option>
                             <option value="lv" :selected="form.locale === 'lv'" >lv</option>
+                            <option value="ru" :selected="form.locale === 'ru'" >ru</option>
                         </select>
                     </div>
 
