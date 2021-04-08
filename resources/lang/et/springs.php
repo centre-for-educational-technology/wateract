@@ -295,6 +295,7 @@ return [
     'estonia_map' => 'Maa-ameti kaart',
     'world_map' => 'Maailma kaart',
     'relief_map' => 'Reljeefkaart',
+    'relief_shaded_map' => 'Reljeefvarjutusega kaart',
     'orthophoto' => 'Ortofoto',
 
     'country_not_supported' => 'See riik ei ole toetatud.',

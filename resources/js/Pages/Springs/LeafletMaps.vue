@@ -87,6 +87,9 @@
                     <div class="bg-white p-1 border-2 rounded cursor-pointer hover:bg-gray-100" @click="showOrthoPhoto">{{ $t('springs.orthophoto') }}</div>
                 </l-control>
                 <l-control position="bottomright">
+                    <div class="bg-white p-1 border-2 rounded cursor-pointer hover:bg-gray-100" @click="showReliefShadedMap">{{ $t('springs.relief_shaded_map') }}</div>
+                </l-control>
+                <l-control position="bottomright">
                     <div class="bg-white p-1 border-2 rounded cursor-pointer hover:bg-gray-100" @click="showReliefMap">{{ $t('springs.relief_map') }}</div>
                 </l-control>
 
@@ -139,6 +142,7 @@ import { GestureHandling } from "leaflet-gesture-handling";
 import "leaflet-gesture-handling/dist/leaflet-gesture-handling.css";
 import "leaflet.markercluster/dist/MarkerCluster.css";
 import "leaflet.markercluster/dist/MarkerCluster.Default.css";
+import { relief_shaded_layers, relief_layers, orthophoto_layers } from '../../constants.js';
 
 delete Icon.Default.prototype._getIconUrl;
 Icon.Default.mergeOptions({
@@ -155,42 +159,6 @@ let projection = new L.Proj.CRS('EPSG:3301', '+proj=lcc +lat_1=59.33333333333334
 
 let redDotSvgString = '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="40" stroke="black" stroke-width="10" fill="red"/></svg>';
 let redDotIconUrl = encodeURI("data:image/svg+xml," + redDotSvgString).replace('#','%23');
-
-let relief_layers = [
-    {
-        name: 'reljeef',
-        url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/vreljeef/{z}/{x}/{y}.png&ASUTUS=TLU&KESKKOND=ALLIKAD',
-        zindex: 1,
-        maxzoom: 10,
-    },
-    {
-        name: 'hybrid',
-        url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/hybriid/{z}/{x}/{y}.png&ASUTUS=TLU&KESKKOND=ALLIKAD',
-        zindex: 3,
-        maxzoom: 10,
-    },
-    {
-        name: 'pohi',
-        url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/epk_vv/{z}/{x}/{y}.png&ASUTUS=TLU&KESKKOND=ALLIKAD',
-        zindex: 2,
-        maxzoom: 14,
-    },
-];
-
-let orthophoto_layers = [
-    {
-        name: 'hybrid',
-        url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/hybriid/{z}/{x}/{y}.png&ASUTUS=TLU&KESKKOND=ALLIKAD',
-        zindex: 2,
-        maxzoom: 13,
-    },
-    {
-        name: 'foto',
-        url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/foto/{z}/{x}/{y}.png&ASUTUS=TLU&KESKKOND=ALLIKAD',
-        zindex: 1,
-        maxzoom: 14,
-    },
-];
 
 let openstreet_layers = [
     {
@@ -291,6 +259,9 @@ export default {
     methods: {
         showReliefMap() {
             this.tilelayers = relief_layers;
+        },
+        showReliefShadedMap() {
+            this.tilelayers = relief_shaded_layers;
         },
         showOrthoPhoto() {
             this.tilelayers = orthophoto_layers;

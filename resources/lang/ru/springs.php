@@ -301,6 +301,7 @@ return [
     'estonia_map' => 'Карта Эстонии',
     'world_map' => 'Карта мира',
     'relief_map' => 'Карта рельефа',
+    'relief_shaded_map' => 'Карта Relief Shaded',
     'orthophoto' => 'Ортофото',
 
     'country_not_supported' => 'Эта страна не поддерживается.',

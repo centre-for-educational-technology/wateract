@@ -301,6 +301,7 @@ return [
     'estonia_map' => 'Estonia Map',
     'world_map' => 'World Map',
     'relief_map' => 'Relief Map',
+    'relief_shaded_map' => 'Relief Shaded Map',
     'orthophoto' => 'Ortophoto',
 
     'country_not_supported' => 'This country is not supported.',

@@ -300,6 +300,7 @@ return [
     'estonia_map' => 'Igaunijas karte',
     'world_map' => 'Pasaules karte',
     'relief_map' => 'Reljefa karte',
+    'relief_shaded_map' => 'Relief Shaded karte',
     'orthophoto' => 'Ortofoto',
 
     'country_not_supported' => 'Šī valsts nav atbalstīta.',
