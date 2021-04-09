@@ -45,7 +45,7 @@
 
         <div>
             <h1>{{ $t('springs.springs') }}</h1>
-            <leaflet-maps class="px-5 lg:px-10" style="height:500px;" :springs="springs"></leaflet-maps>
+            <leaflet-maps class="px-5 lg:px-10" :springs="springs"></leaflet-maps>
 
             <statistics class="mt-5 px-5 lg:px-10" style="max-width:1120px; margin:20px auto"></statistics>
 
@@ -162,10 +162,6 @@
         <div>
             <img src="/images/springs-5.png" />
         </div>
-
-        <!--<div class="mx-10 lg:mx-28">
-            <h1 class="text-center text-xl sm:text-2xl lg:text-3xl uppercase pb-2">{{ $t('springs.news') }}</h1>
-        </div>-->
 
         <div class="mx-10 lg:mx-28">
             <h1 class="mb-5">{{ $t('springs.partners') }}</h1>

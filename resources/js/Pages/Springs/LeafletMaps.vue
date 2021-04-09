@@ -1,8 +1,8 @@
 <template>
 
-    <div>
+    <div class="h-500 lg:h-600 2xl:h-700">
 
-        <div class="z-depth-1-half map-container block" style="height:500px;" v-if="openStreetMap">
+        <div class="z-depth-1-half map-container block h-full" v-if="openStreetMap">
             <l-map ref="openstreetmap" style="width:100%;height:100%;z-index:0;"
                    :center="openStreetCenter"
                    @update:zoom="openStreetZoomUpdate"
@@ -23,7 +23,9 @@
                     </svg>
                 </l-control>
 
-                <l-control position="bottomright" v-if="ee_spring">
+                <!--<l-control-fullscreen />-->
+
+                <l-control position="bottomright" v-if="ee_spring && !fullscreen">
                     <div class="bg-white p-1 border-2 rounded cursor-pointer hover:bg-gray-100" @click="showMaaametMap">{{ $t('springs.estonia_map') }}</div>
                 </l-control>
 
@@ -37,8 +39,10 @@
                     :icon="currentPositionIcon"
                 ></l-marker>
 
-                <l-marker v-if="this.spring" :lat-lng="springLocation">
-                </l-marker>
+                <l-marker v-if="this.spring"
+                          :lat-lng="springLocation"
+                          :icon="springLocationIcon"
+                ></l-marker>
 
                 <l-marker-cluster :options="openStreetClusterOptions">
                     <l-marker v-for="(marker, index) in leafletmarkers"
@@ -54,7 +58,7 @@
             </l-map>
         </div>
 
-        <div class="z-depth-1-half map-container block" style="height:500px;" v-show="maaametMap">
+        <div class="z-depth-1-half map-container block h-full" v-show="maaametMap">
             <l-map ref="leafletMap" style="width:100%;height:100%;z-index:0;"
                    :maxZoom="14"
                    :minZoom="3"
@@ -70,8 +74,9 @@
                    @ready="onReady"
                    @locationfound="onLocationFound"
 
-            >
 
+            >
+<!-- @fullscreenchange="maaametFullscreenChanged" -->
                 <l-control>
                     <svg @click="showLocation" class="h-8 w-8 p-1 bg-white border-2 rounded cursor-pointer hover:bg-gray-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd">
@@ -80,7 +85,7 @@
                     </svg>
                 </l-control>
 
-                <l-control position="bottomright">
+                <l-control position="bottomright" v-if="!fullscreen">
                     <div class="bg-white p-1 border-2 rounded cursor-pointer hover:bg-gray-100" @click="showWorldMap">{{ $t('springs.world_map') }}</div>
                 </l-control>
                 <l-control  position="bottomright">
@@ -92,6 +97,8 @@
                 <l-control position="bottomright">
                     <div class="bg-white p-1 border-2 rounded cursor-pointer hover:bg-gray-100" @click="showReliefMap">{{ $t('springs.relief_map') }}</div>
                 </l-control>
+
+                <!--<l-control-fullscreen />-->
 
                 <l-tile-layer
                     v-for="layer in tilelayers"
@@ -109,15 +116,18 @@
                     :icon="currentPositionIcon"
                 ></l-marker>
 
-                <l-marker v-if="this.spring" :lat-lng="springLocation">
-                </l-marker>
+                <l-marker v-if="this.spring"
+                          :lat-lng="springLocation"
+                          :icon="springLocationIcon"
+                ></l-marker>
+
 
                 <l-marker-cluster :options="maaametClusterOptions">
                     <l-marker v-for="(marker, index) in leafletmarkers"
                               :key="index"
                               :lat-lng="marker.position">
                         <l-popup>
-                            <div class="pb-2"><a class="underline text-blue-700" :href="'springs/'+marker.id+'/'">{{marker.name || 'Unnamed'}}</a></div>
+                            <div class="pb-2"><a class="underline text-blue-700" :href="'/springs/'+marker.id+'/'">{{marker.name || 'Unnamed'}}</a></div>
                             <div>{{ $t('springs.spring_code') }}: {{marker.id}} <br />{{ $t('springs.status') }}: {{ $t('springs.status_options.'+marker.status) }}</div>
                         </l-popup>
                     </l-marker>
@@ -142,7 +152,8 @@ import { GestureHandling } from "leaflet-gesture-handling";
 import "leaflet-gesture-handling/dist/leaflet-gesture-handling.css";
 import "leaflet.markercluster/dist/MarkerCluster.css";
 import "leaflet.markercluster/dist/MarkerCluster.Default.css";
-import { relief_shaded_layers, relief_layers, orthophoto_layers } from '../../constants.js';
+import { relief_shaded_layers, relief_layers, orthophoto_layers, springLocationIcon } from '../../constants.js';
+import LControlFullscreen from 'vue2-leaflet-fullscreen';
 
 delete Icon.Default.prototype._getIconUrl;
 Icon.Default.mergeOptions({
@@ -180,6 +191,7 @@ export default {
         LPopup,
         'l-marker-cluster': Vue2LeafletMarkerCluster,
         GestureHandling,
+        LControlFullscreen,
     },
     props: ['springs', 'spring', 'view'],
     data() {
@@ -241,6 +253,7 @@ export default {
             }),
 
             springLocation: springLocation,
+            springLocationIcon: springLocationIcon,
 
             layerIndex: 0,
             leafletmarkers: leafletmarkers,
@@ -253,6 +266,7 @@ export default {
             ]),
             layers: openstreet_layers,
             tilelayers: relief_layers,
+            fullscreen: false,
 
         }
     },
@@ -339,11 +353,48 @@ export default {
                 this.cacheMaaametCenter = center;
             }
         },
+        maaametFullscreenChanged(fullscreen) {
+            if (this.leafletMapObject.isFullscreen()) {
+                this.fullscreen = true;
+            } else {
+                this.fullscreen = false;
+            }
+        },
+        openStreetFullscreenChanged(fullscreen) {
+            if (this.openStreetMapObject.isFullscreen()) {
+                this.fullscreen = true;
+            } else {
+                this.fullscreen = false;
+            }
+        },
+        getExistingSprings(spring) {
+            let params = {
+                'spring_id': spring.id
+            }
+            axios.get('/getSprings', { params }).then(response => {
+                let springs = response.data;
+                let markers = [];
+                _.forEach(springs, function(spring) {
+                    markers.push({
+                        id: spring.code,
+                        name: spring.name,
+                        status: spring.status,
+                        position: latLng(spring.latitude, spring.longitude),
+                    });
+                });
+                this.leafletmarkers = markers;
+            })
+        }
     },
     computed: {
         layer () {
             return this.layers[this.layerIndex]
         }
     },
+    created: function(){
+        if (this.spring) {
+            this.getExistingSprings(this.spring);
+        }
+    }
 }
 </script>

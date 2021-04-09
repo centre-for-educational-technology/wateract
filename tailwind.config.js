@@ -17,6 +17,11 @@ module.exports = {
                 'springs-header': "url('/images/springs-header.png')",
                 'springs-footer': "url('/images/springs-footer.png')",
             }),
+            height: {
+                '500': '500px',
+                '600': '600px',
+                '700': '700px',
+            },
         },
     },
 

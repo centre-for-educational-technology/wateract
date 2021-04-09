@@ -1,4 +1,6 @@
 
+import { icon } from "leaflet";
+
 export const relief_shaded_layers = [
     {
         name: 'reljeef',
@@ -55,3 +57,11 @@ export const orthophoto_layers = [
         maxzoom: 14,
     },
 ];
+
+export const springLocationIcon = icon({
+    iconUrl: '/images/marker-icon-red.png',
+    shadowUrl: '/images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    shadowSize: [41, 41]
+});

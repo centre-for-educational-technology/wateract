@@ -17,9 +17,7 @@
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
 
-                    <div class="z-depth-1-half map-container w-full" style="height:500px;">
-                        <leaflet-maps :spring="spring" :view="'show'"></leaflet-maps>
-                    </div>
+                    <leaflet-maps :spring="spring" :view="'show'"></leaflet-maps>
 
                     <div class="sm:flex -mx-2 w-full px-2 py-2">
                         <div class="sm:w-3/4 px-2">

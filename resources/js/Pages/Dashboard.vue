@@ -15,7 +15,7 @@
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
 
-                    <leaflet-maps style="height:500px;" :springs="springs"></leaflet-maps>
+                    <leaflet-maps :springs="springs"></leaflet-maps>
 
                     <springs-for-review v-if="can('confirm spring')" class="m-4" />
 

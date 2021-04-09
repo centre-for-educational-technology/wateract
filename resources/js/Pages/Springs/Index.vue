@@ -27,7 +27,7 @@
                         <small v-on:click="initializeSearch" class="cursor-pointer underline">{{ $t('springs.see_all_springs') }}</small>
                     </div>
 
-                    <leaflet-maps style="height:500px;" :key="mapRefresh" :springs="mapSprings" ></leaflet-maps>
+                    <leaflet-maps :key="mapRefresh" :springs="mapSprings" ></leaflet-maps>
 
                     <tabs :featured_springs="featured_springs" :newest_springs="newest_springs" ></tabs>
 
