@@ -50,12 +50,12 @@ class Spring extends Model
 
     public function observations()
     {
-        return $this->hasMany('App\Models\Observation');
+        return $this->hasMany('App\Models\Observation')->where('status', 'submitted');
     }
 
     public function measurements()
     {
-        return $this->hasMany('App\Models\Measurement');
+        return $this->hasMany('App\Models\Measurement')->where('status', 'submitted');
     }
 
     public function getRouteKeyName()

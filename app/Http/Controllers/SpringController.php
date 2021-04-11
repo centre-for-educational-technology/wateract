@@ -518,4 +518,20 @@ class SpringController extends Controller
         }
     }
 
+    public function getSpringInfo(Request $request)
+    {
+        if (! $request['spring_id'] ) {
+            return false;
+        }
+        $spring = Spring::where('id', $request['spring_id'])->first();
+        if ($spring) {
+            return [
+                'observations_count' =>  $spring->observations()->count(),
+                'measurements_count' => $spring->measurements()->count(),
+                'feedback_count' => $spring->feedback()->count(),
+            ];
+        }
+        return false;
+    }
+
 }
