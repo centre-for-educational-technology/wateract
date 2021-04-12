@@ -382,7 +382,8 @@ export default {
                 "measurement_deleted": "Measurement successfully deleted.",
                 "news_added": "New news added.",
                 "news_updated": "News successfully updated.",
-                "news_deleted": "News successfully deleted."
+                "news_deleted": "News successfully deleted.",
+                "uploading_photos": "Please wait. Uploading photos."
             }
         },
         "users": {
@@ -1074,7 +1075,8 @@ export default {
                 "measurement_deleted": "Mõõtmistulemus edukalt kustutatud.",
                 "news_added": "Uus uudis lisatud.",
                 "news_updated": "Uudis edukalt uuendatud.",
-                "news_deleted": "Uudis edukalt kustutatud."
+                "news_deleted": "Uudis edukalt kustutatud.",
+                "uploading_photos": "Palun oota. Laadin fotosid."
             }
         },
         "users": {
@@ -1586,7 +1588,8 @@ export default {
                 "observation_deleted": "Novērojums veiksmīgi izdzēsts.",
                 "measurement_added": "Pievients jauns mērījums.",
                 "measurement_updated": "Mērījums veiksmīgi atjaunots.",
-                "measurement_deleted": "Mērījums veiksmīgi izdzēsts."
+                "measurement_deleted": "Mērījums veiksmīgi izdzēsts.",
+                "uploading_photos": "Please wait. Uploading photos."
             },
             "add_new_news": "Add new news",
             "edit_news": "Edit news",
@@ -2113,7 +2116,8 @@ export default {
                 "measurement_deleted": "Измерение успешно удалено.",
                 "news_added": "Новые новости Добавлены.",
                 "news_updated": "Новости успешно обновлены.",
-                "news_deleted": "Новости успешно удалены."
+                "news_deleted": "Новости успешно удалены.",
+                "uploading_photos": "Please wait. Uploading photos."
             }
         },
         "users": {

@@ -341,6 +341,7 @@ return [
         'measurement_added' => 'Pievients jauns mērījums.',
         'measurement_updated' => 'Mērījums veiksmīgi atjaunots.',
         'measurement_deleted' => 'Mērījums veiksmīgi izdzēsts.',
+        'uploading_photos' => 'Please wait. Uploading photos.',
     ],
 
     'add_new_news' => 'Add new news',

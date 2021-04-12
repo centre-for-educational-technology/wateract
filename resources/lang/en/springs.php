@@ -354,5 +354,6 @@ return [
         'news_added' => 'New news added.',
         'news_updated' => 'News successfully updated.',
         'news_deleted' => 'News successfully deleted.',
+        'uploading_photos' => 'Please wait. Uploading photos.',
     ],
 ];

@@ -316,6 +316,7 @@
 
                     </template>
                         <template #actions>
+                            <div class="text-gray-500 mr-2" v-if="processingPhotos">{{ $t('springs.messages.uploading_photos') }}</div>
                             <jet-secondary-button :class="{ 'opacity-25': processingPhotos }" :disabled="processingPhotos" type="submit" @click.native="saveDraft(form)">
                                 {{ $t('springs.save_as_draft') }}</jet-secondary-button>
                             <jet-button class="ml-2" :class="{ 'opacity-25': processingPhotos }" :disabled="processingPhotos" type="submit" @click.native="submit(form)">
@@ -530,7 +531,6 @@ export default {
             axios.post('/photos', data).then(response => {
                 photo_id = response.data.photo_id;
                 this.form.photo_ids.push(photo_id);
-                console.log("photo_id: " + photo_id);
                 this.processingPhotos = false;
             })
                 .catch(function (error) {

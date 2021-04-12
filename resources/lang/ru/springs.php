@@ -354,5 +354,6 @@ return [
         'news_added' => 'Новые новости Добавлены.',
         'news_updated' => 'Новости успешно обновлены.',
         'news_deleted' => 'Новости успешно удалены.',
+        'uploading_photos' => 'Please wait. Uploading photos.',
     ],
 ];

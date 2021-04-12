@@ -348,5 +348,6 @@ return [
         'news_added' => 'Uus uudis lisatud.',
         'news_updated' => 'Uudis edukalt uuendatud.',
         'news_deleted' => 'Uudis edukalt kustutatud.',
+        'uploading_photos' => 'Palun oota. Laadin fotosid.',
     ],
 ];
