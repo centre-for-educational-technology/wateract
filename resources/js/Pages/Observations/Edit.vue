@@ -86,7 +86,13 @@
                                 <jet-label class="font-bold inline-block" :for="field.name" :value="$t('springs.'+field.name)" />
                                 <span v-if="field.unit">({{ field.unit}})</span>
                                 <help-button v-if="fieldsWithHelpText.includes(field.name)" @click.native="showHelpDialog( $t('springs.'+field.name+'_help_text') )"></help-button>
-                                <jet-input :type="field.type" class="mt-1 block w-full" :id="field.name" v-model="field.value" />
+                                <jet-input v-if="field.type !== 'dropdown'" :type="field.type" class="mt-1 block w-full" :id="field.name" v-model="field.value" />
+                                <select v-if="field.type === 'dropdown'" :id="field.name" v-model="field.value"
+                                        class="mt-1 block w-full bg-white border border-gray-400 hover:border-gray-500 px-2 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"
+                                >
+                                    <option value=""></option>
+                                    <option v-for='data in field_options[field.name]' :value='data.id'>{{ $t('springs.'+data.id) }}</option>
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -143,7 +149,7 @@ export default {
         datetime: Datetime,
         DeleteObservation,
     },
-    props: ['spring', 'observation', 'observation_fields', 'taste_options'],
+    props: ['spring', 'observation', 'observation_fields', 'taste_options', 'field_options'],
     data() {
         let photos = [];
         _.forEach(this.observation.photos, function(photo) {

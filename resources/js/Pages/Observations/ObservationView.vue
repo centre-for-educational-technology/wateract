@@ -45,7 +45,8 @@
             <div v-for="field in observation_fields" :key="field.id">
                 <div>
                     <jet-label :for="field.name" :value="$t('springs.'+field.name)" />
-                    <div>{{field.value}} {{field.unit}}</div>
+                    <div v-if="field.type !== 'dropdown'">{{field.value}} {{field.unit}}</div>
+                    <div v-if="field.type === 'dropdown'">{{ $t('springs.'+field.value) }}</div>
                 </div>
             </div>
         </div>

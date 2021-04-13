@@ -125,6 +125,7 @@ return [
     'needs_attention' => 'Needs special attention',
     'featured' => 'Featured',
     'unlisted' => 'Unlisted',
+    'not_a_spring' => 'Not a spring',
     'save_as_draft' => 'Save as draft',
     'submit' => 'Submit',
     'add' => 'Add',
@@ -356,4 +357,12 @@ return [
         'news_deleted' => 'News successfully deleted.',
         'uploading_photos' => 'Please wait. Uploading photos.',
     ],
+
+    'discharge_measurement_method' => 'Discharge measurement method',
+    'volumetric' => 'Volumetric method',
+    'stream_area' => 'Stream area/velocity methods',
+    'weirs' => 'Weirs',
+    'approximate_estimation' => 'Approximate estimation',
+    'current_meter' => 'With current-meter',
+
 ];

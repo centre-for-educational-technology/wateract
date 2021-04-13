@@ -48,6 +48,18 @@ class ObservationController extends Controller
         ];
     }
 
+    public function getObservationFieldsOptions() {
+        return [
+            'discharge_measurement_method' => [
+                array('id' => 'volumetric'),
+                array('id' => 'stream_area'),
+                array('id' => 'weirs'),
+                array('id' => 'approximate_estimation'),
+                array('id' => 'current_meter'),
+            ],
+        ];
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -62,7 +74,8 @@ class ObservationController extends Controller
             return Inertia::render('Observations/Create', [
                 'spring' => $spring,
                 'observation_fields' => $observation_fields,
-                'taste_options' => ObservationController::getTasteOptions()
+                'taste_options' => ObservationController::getTasteOptions(),
+                'field_options' => ObservationController::getObservationFieldsOptions(),
             ]);
         }
         return Inertia::render('Observations/Index', ['spring' => $spring]);
@@ -180,7 +193,8 @@ class ObservationController extends Controller
                 'spring' => $spring,
                 'observation' => $observation,
                 'observation_fields' => $observation_fields,
-                'taste_options' => ObservationController::getTasteOptions()
+                'taste_options' => ObservationController::getTasteOptions(),
+                'field_options' => ObservationController::getObservationFieldsOptions(),
             ]);
         }
         return ObservationController::index($spring_code);

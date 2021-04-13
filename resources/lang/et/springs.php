@@ -120,6 +120,7 @@ return [
     'needs_attention' => 'Erakorralist ülekontrolli vajav allikas',
     'featured' => 'Esiletoodud',
     'unlisted' => 'Peidetud',
+    'not_a_spring' => 'Ei ole allikas',
     'save_as_draft' => 'Salvesta mustand',
     'submit' => 'Esita',
     'add' => 'Lisa',
@@ -350,4 +351,11 @@ return [
         'news_deleted' => 'Uudis edukalt kustutatud.',
         'uploading_photos' => 'Palun oota. Laadin fotosid.',
     ],
+
+    'discharge_measurement_method' => 'Vooluhulga määramise meetod',
+    'volumetric' => 'mahumeetod',
+    'stream_area' => 'ujukimeetod',
+    'weirs' => 'ülevool',
+    'approximate_estimation' => 'silma järgi hinnatud',
+    'current_meter' => 'voolukiiruse mõõteseadmega',
 ];

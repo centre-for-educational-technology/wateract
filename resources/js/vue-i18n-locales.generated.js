@@ -168,6 +168,7 @@ export default {
             "needs_attention": "Needs special attention",
             "featured": "Featured",
             "unlisted": "Unlisted",
+            "not_a_spring": "Not a spring",
             "save_as_draft": "Save as draft",
             "submit": "Submit",
             "add": "Add",
@@ -384,7 +385,13 @@ export default {
                 "news_updated": "News successfully updated.",
                 "news_deleted": "News successfully deleted.",
                 "uploading_photos": "Please wait. Uploading photos."
-            }
+            },
+            "discharge_measurement_method": "Discharge measurement method",
+            "volumetric": "Volumetric method",
+            "stream_area": "Stream area/velocity methods",
+            "weirs": "Weirs",
+            "approximate_estimation": "Approximate estimation",
+            "current_meter": "With current-meter"
         },
         "users": {
             "users": "Users",
@@ -862,6 +869,7 @@ export default {
             "needs_attention": "Erakorralist ülekontrolli vajav allikas",
             "featured": "Esiletoodud",
             "unlisted": "Peidetud",
+            "not_a_spring": "Ei ole allikas",
             "save_as_draft": "Salvesta mustand",
             "submit": "Esita",
             "add": "Lisa",
@@ -1077,7 +1085,13 @@ export default {
                 "news_updated": "Uudis edukalt uuendatud.",
                 "news_deleted": "Uudis edukalt kustutatud.",
                 "uploading_photos": "Palun oota. Laadin fotosid."
-            }
+            },
+            "discharge_measurement_method": "Vooluhulga määramise meetod",
+            "volumetric": "mahumeetod",
+            "stream_area": "ujukimeetod",
+            "weirs": "ülevool",
+            "approximate_estimation": "silma järgi hinnatud",
+            "current_meter": "voolukiiruse mõõteseadmega"
         },
         "users": {
             "users": "Kasutajad",
@@ -1311,7 +1325,7 @@ export default {
             "partners": "Partneri",
             "contact": "Kontakti",
             "email": "E-pasts",
-            "join_springs_fb": "Join springs community in Facebook",
+            "join_springs_fb": "Pievienoties avotu kopienai sociālajā tīklā Facebook",
             "users": "Lietotāji",
             "dashboard": "Info panelis",
             "register": "Reģistrēties",
@@ -1386,6 +1400,7 @@ export default {
             "needs_attention": "Nepieciešama īpaša uzmanība",
             "featured": "Piedāvāts",
             "unlisted": "Unlisted",
+            "not_a_spring": "Nav avots",
             "save_as_draft": "Saglabāt kā melnrakstu",
             "submit": "Iesniegt",
             "add": "Pievienot",
@@ -1397,7 +1412,7 @@ export default {
             "save": "Saglabāt",
             "confirm": "Apstiprināt",
             "view": "Skatīt",
-            "gallery": "Gallery",
+            "gallery": "Galerija",
             "observations": "Novērojumi",
             "measurements": "Mērījumi",
             "feedback": "Atgriezeniskā saite",
@@ -1591,14 +1606,20 @@ export default {
                 "measurement_deleted": "Mērījums veiksmīgi izdzēsts.",
                 "uploading_photos": "Please wait. Uploading photos."
             },
-            "add_new_news": "Add new news",
+            "add_new_news": "Pievienot jaunas ziņas",
             "edit_news": "Edit news",
-            "title": "Title",
-            "body_text": "Body text",
+            "title": "Nosaukums",
+            "body_text": "Pamatteksts",
             "locale": "Locale",
             "delete_news": "Delete news",
             "delete_news_notification": "News will be deleted permanently.",
-            "delete_news_confirmation": "Are you sure you want to delete this news?"
+            "delete_news_confirmation": "Are you sure you want to delete this news?",
+            "discharge_measurement_method": "Izplūstošā ūdens daudzuma mērījumu metodes",
+            "volumetric": "Ūdens daudzuma noteikšana",
+            "stream_area": "Plūsmas šķērsgriezuma laukuma un ātruma noteikšana",
+            "weirs": "Ūdens pārgāznes",
+            "approximate_estimation": "Aptuvenais novērtējums",
+            "current_meter": "Ar strāvas mērītāju"
         },
         "users": {
             "users": "Lietotāji",
@@ -1902,6 +1923,7 @@ export default {
             "needs_attention": "Требует особого внимания",
             "featured": "Обработанный",
             "unlisted": "Не внесено в список",
+            "not_a_spring": "Не родник",
             "save_as_draft": "Сохранить как черновик",
             "submit": "Представлять на рассмотрение",
             "add": "Добавлять",
@@ -2118,7 +2140,13 @@ export default {
                 "news_updated": "Новости успешно обновлены.",
                 "news_deleted": "Новости успешно удалены.",
                 "uploading_photos": "Please wait. Uploading photos."
-            }
+            },
+            "discharge_measurement_method": "Метод измерения расхода родника",
+            "volumetric": "Объемный метод",
+            "stream_area": "Методы площади / скорости потока",
+            "weirs": "Переполнение",
+            "approximate_estimation": "Приблизительная оценка",
+            "current_meter": "С расходомером"
         },
         "users": {
             "users": "Пользователи",

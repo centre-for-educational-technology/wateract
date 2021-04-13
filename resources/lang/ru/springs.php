@@ -125,6 +125,7 @@ return [
     'needs_attention' => 'Требует особого внимания',
     'featured' => 'Обработанный',
     'unlisted' => 'Не внесено в список',
+    'not_a_spring' => 'Не родник',
     'save_as_draft' => 'Сохранить как черновик',
     'submit' => 'Представлять на рассмотрение',
     'add' => 'Добавлять',
@@ -356,4 +357,12 @@ return [
         'news_deleted' => 'Новости успешно удалены.',
         'uploading_photos' => 'Please wait. Uploading photos.',
     ],
+
+    'discharge_measurement_method' => 'Метод измерения расхода родника',
+    'volumetric' => 'Объемный метод',
+    'stream_area' => 'Методы площади / скорости потока',
+    'weirs' => 'Переполнение',
+    'approximate_estimation' => 'Приблизительная оценка',
+    'current_meter' => 'С расходомером',
+
 ];
