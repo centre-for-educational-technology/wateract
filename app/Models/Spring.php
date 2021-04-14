@@ -11,7 +11,7 @@ class Spring extends Model
     use HasFactory;
 
     protected $fillable = [
-        'user_id', 'name', 'code', 'kkr_code', 'latitude', 'longitude', 'country', 'country_id', 'county', 'county_id', 'settlement', 'description', 'folklore', 'classification', 'groundwater_body', 'geology', 'ownership', 'status', 'needs_attention', 'featured', 'unlisted'
+        'user_id', 'name', 'code', 'kkr_code', 'latitude', 'longitude', 'country', 'country_id', 'county', 'county_id', 'settlement', 'description', 'folklore', 'classification', 'groundwater_body', 'geology', 'ownership', 'status', 'needs_attention', 'featured', 'unlisted', 'not_a_spring'
     ];
 
     public function user()

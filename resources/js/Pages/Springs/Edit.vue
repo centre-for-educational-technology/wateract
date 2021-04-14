@@ -315,6 +315,11 @@
                                 <jet-label for="unlisted" :value="$t('springs.unlisted')" />
                             </el-checkbox>
                         </div>
+                        <div class="px-2 py-2">
+                            <el-checkbox :true-label="1" false-label="0" v-model="form.not_a_spring" name="not_a_spring">
+                                <jet-label for="not_a_spring" :value="$t('springs.not_a_spring')" />
+                            </el-checkbox>
+                        </div>
 
                     </div>
 
@@ -515,6 +520,7 @@ export default {
                 needs_attention: this.spring.needs_attention,
                 featured: this.spring.featured,
                 unlisted: this.spring.unlisted,
+                not_a_spring: this.spring.not_a_spring,
                 references: getReferences(this.spring),
                 database_links: getDatabaseLinks(this.spring),
                 photos: [],

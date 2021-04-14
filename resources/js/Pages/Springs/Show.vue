@@ -81,7 +81,7 @@
                             <div class="py-2">
                                 <strong>{{ $t('springs.location') }}</strong>
 
-                                <div>{{spring.country}} {{spring.county}}</div>
+                                <div>{{ $t('springs.countries.'+spring.country) }} {{spring.county}}</div>
 
                                 <div v-if="spring.settlement">{{spring.settlement}}</div>
                             </div>
@@ -121,7 +121,8 @@
 
                             <div class="py-2" v-if="spring.status">
                                 <strong>{{ $t('springs.status') }}</strong>
-                                <div>{{ $t('springs.status_options.'+spring.status) }}</div>
+                                <div v-if="!spring.not_a_spring">{{ $t('springs.status_options.'+spring.status) }}</div>
+                                <div v-if="spring.not_a_spring">{{ $t('springs.not_a_spring') }}</div>
                             </div>
 
                             <div class="py-2" v-if="photos.length > 0">

@@ -301,7 +301,7 @@ return [
     'estonia_map' => 'Igaunijas karte',
     'world_map' => 'Pasaules karte',
     'relief_map' => 'Reljefa karte',
-    'relief_shaded_map' => 'Relief Shaded karte',
+    'relief_shaded_map' => 'Karte ar iekrāsotu reljefu',
     'orthophoto' => 'Ortofoto',
 
     'country_not_supported' => 'Šī valsts nav atbalstīta.',
@@ -342,17 +342,17 @@ return [
         'measurement_added' => 'Pievients jauns mērījums.',
         'measurement_updated' => 'Mērījums veiksmīgi atjaunots.',
         'measurement_deleted' => 'Mērījums veiksmīgi izdzēsts.',
-        'uploading_photos' => 'Please wait. Uploading photos.',
+        'uploading_photos' => 'Lūdzu uzgaidiet. Notiek fotogrāfiju augšupielāde.',
     ],
 
     'add_new_news' => 'Pievienot jaunas ziņas',
-    'edit_news' => 'Edit news',
+    'edit_news' => 'Labot ziņas',
     'title' => 'Nosaukums',
     'body_text' => 'Pamatteksts',
-    'locale' => 'Locale',
-    'delete_news' => 'Delete news',
-    'delete_news_notification' => 'News will be deleted permanently.',
-    'delete_news_confirmation' => 'Are you sure you want to delete this news?',
+    'locale' => 'Lokalizācija',
+    'delete_news' => 'Dzēst ziņas',
+    'delete_news_notification' => 'Ziņas tiks dzēstas neatgriezeniski',
+    'delete_news_confirmation' => 'Vai esat drošs, ka vēlaties dzēst šīs ziņas?',
 
     'discharge_measurement_method' => 'Izplūstošā ūdens daudzuma mērījumu metodes',
     'volumetric' => 'Ūdens daudzuma noteikšana',
@@ -360,5 +360,7 @@ return [
     'weirs' => 'Ūdens pārgāznes',
     'approximate_estimation' => 'Aptuvenais novērtējums',
     'current_meter' => 'Ar strāvas mērītāju',
+
+    'supporters' => 'Atbalstītāji',
 
 ];
