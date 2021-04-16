@@ -18,7 +18,7 @@ class CreateNewsTable extends Migration
             $table->bigInteger('user_id')->unsigned()->nullable();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('set null');
             $table->string('title')->nullable();
-            $table->text('body_text')->nullable();
+            $table->mediumText('body_text')->nullable();
             $table->string('locale')->nullable();
             $table->tinyInteger('visible')->default(1);
             $table->timestamps();

@@ -79,7 +79,12 @@ export default {
     props: ['news'],
     data() {
         return {
-            customToolbar: [["bold", "italic", "underline"], ["link"]],
+            customToolbar: [
+                ["bold", "italic", "underline", "strike"],
+                [{ 'color': [] }, { 'background': [] }],
+                [{ 'script': 'sub'}, { 'script': 'super' }],
+                ["link", "video", "image"],
+            ],
             form: this.$inertia.form({
                 '_method': 'PUT',
                 id: this.news.id,

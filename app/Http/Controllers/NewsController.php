@@ -31,6 +31,8 @@ class NewsController extends Controller
      */
     public function create()
     {
+        $this->authorize('create', News::class);
+
         if (Auth::user()) {
             return Inertia::render('News/Create', []);
         }
@@ -45,8 +47,9 @@ class NewsController extends Controller
      */
     public function store(Request $request)
     {
+        $this->authorize('create', News::class);
+
         Validator::make($request->all(), [
-            'title' => 'required',
             'body_text' => 'required',
         ])->validateWithBag('addNews');
 
@@ -75,7 +78,7 @@ class NewsController extends Controller
      */
     public function edit(News $news)
     {
-        //$this->authorize('update', $news);
+        $this->authorize('update', $news);
 
         if (Auth::user()) {
             return Inertia::render('News/Edit', [
@@ -93,17 +96,16 @@ class NewsController extends Controller
      */
     public function update(Request $request, News $news)
     {
-        //$this->authorize('update', $spring);
+        $this->authorize('update', $news);
 
         Validator::make($request->all(), [
-            'title' => 'required',
             'body_text' => 'required',
         ])->validateWithBag('editNews');
 
         $news->update($request->all());
 
         return redirect()->route('news.index')
-            ->with('success', __('news.messages.news_updated'));
+            ->with('success', __('springs.messages.news_updated'));
     }
 
     /**
@@ -115,7 +117,7 @@ class NewsController extends Controller
      */
     public function destroy(News $news)
     {
-        //$this->authorize('delete', $news);
+        $this->authorize('delete', $news);
 
         $news->delete();
 
