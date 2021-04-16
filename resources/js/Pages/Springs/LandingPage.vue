@@ -9,10 +9,11 @@
 
         <div>
             <div class="hidden lg:grid lg:grid-cols-12">
-                <div class="col-span-3 ml-28 my-15">
+                <div class="col-span-3 ml-28 my-15 z-10">
                     <div class="mb-2">
-                        <a href="springs" class="cursor-pointer">
-                            <img src="/images/est-lat-map.png" /></a>
+                        <a target="_blank" :href="'https://allikad.info/manuals/allikad.info_manual_'+ this.locales[this.$i18n.locale] +'.pdf'"
+                           class="border-red-500 cursor-pointer">
+                            <img :src="'/images/manuals/allikad.info_manual_'+ this.$i18n.locale + '.png'" /></a>
                     </div>
                     <div class="mb-2 w-full text-sm font-semibold p-2 leading-normal cursor-pointer bg-blue-100" v-if="$page.user">
                         <a href="springs/create">
@@ -183,5 +184,15 @@ export default {
         Statistics,
     },
     props: ['springs'],
+    data() {
+        return {
+            locales: {
+                'en': 'ENG',
+                'et': 'EST',
+                'lv': 'LAV',
+                'ru': 'RUS',
+            },
+        }
+    },
 }
 </script>

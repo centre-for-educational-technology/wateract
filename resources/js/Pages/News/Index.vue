@@ -15,33 +15,31 @@ p.leading-5 {
             </div>
         </template>
 
-            <div class="py-6">
-                <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
-                    <div class="p-10 bg-white overflow-hidden shadow-xl sm:rounded-lg">
+            <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
+                <div class="p-10 bg-white overflow-hidden shadow-xl sm:rounded-lg">
 
-                        <div v-for="news_item in news.data" :key="news_item.id">
+                    <div v-for="news_item in news.data" :key="news_item.id">
 
-                            <div v-if="$page.user && is('admin')">
-                                <nav-button class="float-right"
-                                            :href="'/news/'+news_item.id+'/edit'">
-                                    {{ $t('springs.edit') }}</nav-button>
-                            </div>
-
-                            <h2>
-                                {{ news_item.title }}
-                            </h2>
-
-                            <!--<div>{{ moment(news_item.created_at).format("DD.MM.YYYY H:mm") }}</div>-->
-
-                            <div class="news-content pt-5" v-html="news_item.body_text"></div>
-
-                            <jet-section-border />
-
+                        <div v-if="$page.user && is('admin')">
+                            <nav-button class="float-right"
+                                        :href="'/news/'+news_item.id+'/edit'">
+                                {{ $t('springs.edit') }}</nav-button>
                         </div>
 
-                        <tailable-pagination v-show="news.data.length > 0" :size="'small'" :data="news" :showNumbers="true" @page-changed="getLatestNews"></tailable-pagination>
+                        <h2>
+                            {{ news_item.title }}
+                        </h2>
+
+                        <!--<div>{{ moment(news_item.created_at).format("DD.MM.YYYY H:mm") }}</div>-->
+
+                        <div class="news-content pt-5" v-html="news_item.body_text"></div>
+
+                        <jet-section-border />
 
                     </div>
+
+                    <tailable-pagination v-show="news.data.length > 0" :size="'small'" :data="news" :showNumbers="true" @page-changed="getLatestNews"></tailable-pagination>
+
                 </div>
             </div>
 
