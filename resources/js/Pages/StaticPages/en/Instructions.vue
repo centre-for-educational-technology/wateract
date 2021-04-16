@@ -8,6 +8,11 @@
                 <div>
                     All obtained monitoring data must be submitted through the web-based map application allikad.info.  In order to use this application for adding new springs or new observations, you have to register and logged in. You can use allikad.info on site, using your smartphone or phablet, or fill the forms later at home with the help of a PC.
                 </div>
+                <div class="mt-5">
+                    <a target="_blank" href="https://allikad.info/manuals/volunteer_monitoring_manual_ENG.pdf">
+                        <img class="inline-block max-h-40" src="/images/manuals/volunteer_monitoring_manual_ENG.png" />
+                    </a>
+                </div>
             </div>
             <div>
                 <div id="how-to-find-springs" class="h-1"></div>
@@ -146,6 +151,11 @@
                                 <li>Alkalinity (alkalinity titration kit)</li>
                                 <li>Nitrates (nitrates titration kit, strip test kit)</li>
                             </ul>
+                            <div class="mt-5">
+                                <a target="_blank" href="https://allikad.info/manuals/water_quality_manual_ENG.pdf">
+                                    <img class="inline-block max-h-40" src="/images/manuals/water_quality_manual_ENG.png" />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -160,6 +170,11 @@
                     <div class="mt-3">
                         Spring discharge is a function of water volume and velocity, e.g. it is the volume of water that flows through a certain area (cross-section of the flow channel) in a specific unit of time. Discharge is commonly expressed in cubic meters per second (m3/s). Field conditions are rarely ideal for discharge measurements. Moreover, as discharge may vary seasonally, the measurement may require a situation-based approach.
                     </div>
+                </div>
+                <div class="mt-5">
+                    <a target="_blank" href="https://allikad.info/manuals/discharge_manual_ENG.pdf">
+                        <img class="inline-block max-h-40" src="/images/manuals/discharge_manual_ENG.png" />
+                    </a>
                 </div>
             </div>
 

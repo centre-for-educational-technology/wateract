@@ -8,6 +8,11 @@
                 <div>
                     Kõik kogutud seireandmed tuleb esitada läbi veebipõhise kaardirakenduse allikad.info. Rakendusse uute allikate või uute vaatluste lisamiseks peate esmalt tegema endale kasutajakonto ja sisse logima. Allikad.info veebirakendust saab kasutada nii allika juures kohapeal, kasutades nutitelefoni või tahvlit, või täites nõutud väljad hiljem kodus arvuti abil.
                 </div>
+                <div class="mt-5">
+                    <a target="_blank" href="https://allikad.info/manuals/volunteer_monitoring_manual_EST.pdf">
+                        <img class="inline-block max-h-40" src="/images/manuals/volunteer_monitoring_manual_EST.png" />
+                    </a>
+                </div>
             </div>
             <div>
                 <div id="how-to-find-springs" class="h-1"></div>
@@ -140,6 +145,11 @@
                                 <li>Leelisus (leeliselisuse tiitrimise komplekt)</li>
                                 <li>Nitraadid (nitraatide tiitrimiskomplekt, testribad)</li>
                             </ul>
+                            <div class="mt-5">
+                                <a target="_blank" href="https://allikad.info/manuals/water_quality_manual_EST.pdf">
+                                    <img class="inline-block max-h-40" src="/images/manuals/water_quality_manual_EST.png" />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -155,6 +165,11 @@
                     <div class="mt-3">
                         <span class="font-bold">Vooluhulk</span> on vee mahu ja vee liikumise kiiruse funktsioon - tegu on vee kogusega, mis voolab kindlas ajaühikus läbi voolukanali ristlõike. Vooluhulka väljendatakse tavaliselt kuupmeetrites sekundis (m3/s) või väiksemate veekogude puhul liitrites sekundis (l/s). Looduslikes tingimustes on olud vooluhulga mõõtmise teostamiseks harva ideaalsed. Lisaks nõuab looduslikus voolukanalis mõõtmine sageli olukorrapõhist lähenemist ja kohandamist, sest lisaks kõigele muule võib ka vee kogus hooajaliselt olla väga erinev.
                     </div>
+                </div>
+                <div class="mt-5">
+                    <a target="_blank" href="https://allikad.info/manuals/discharge_manual_EST.pdf">
+                        <img class="inline-block max-h-40" src="/images/manuals/discharge_manual_EST.png" />
+                    </a>
                 </div>
             </div>
 

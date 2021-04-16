@@ -11,6 +11,8 @@
 
         <about-springs-en v-if="$i18n.locale == 'en'"></about-springs-en>
 
+        <about-springs-lv v-if="$i18n.locale == 'lv'"></about-springs-lv>
+
     </app-layout>
 </template>
 
@@ -18,12 +20,14 @@
 import AppLayout from './../../Layouts/AppLayout';
 import AboutSpringsEt from './et/AboutSprings';
 import AboutSpringsEn from './en/AboutSprings';
+import AboutSpringsLv from './lv/AboutSprings';
 
 export default {
     components: {
         AppLayout,
         AboutSpringsEt,
         AboutSpringsEn,
+        AboutSpringsLv,
     },
 }
 </script>
