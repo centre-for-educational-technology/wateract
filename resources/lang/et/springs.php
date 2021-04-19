@@ -358,4 +358,7 @@ return [
     'weirs' => 'ülevool',
     'approximate_estimation' => 'silma järgi hinnatud',
     'current_meter' => 'voolukiiruse mõõteseadmega',
+
+    'supporters' => 'Toetajad',
+
 ];

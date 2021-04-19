@@ -169,6 +169,20 @@
             <img src="/images/logos.jpg" />
         </div>
 
+        <div class="mt-10 mx-10 lg:mx-28">
+            <h1 class="mb-5">{{ $t('springs.supporters') }}</h1>
+            <div class="flex justify-center">
+                <div class="inline-block mr-5">
+                    <a target="_blank" href="https://www.ohtuleht.ee/">
+                        <img src="/images/supporters/ohtuleht.png" /></a>
+                </div>
+                <div class="inline-block">
+                    <a target="_blank" href="https://www.ekool.eu/">
+                        <img src="/images/supporters/ekool.png" /></a>
+                </div>
+            </div>
+        </div>
+
     </app-layout>
 </template>
 

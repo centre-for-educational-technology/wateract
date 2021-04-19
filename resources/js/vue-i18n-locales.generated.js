@@ -391,7 +391,8 @@ export default {
             "stream_area": "Stream area/velocity methods",
             "weirs": "Weirs",
             "approximate_estimation": "Approximate estimation",
-            "current_meter": "With current-meter"
+            "current_meter": "With current-meter",
+            "supporters": "Supporters"
         },
         "users": {
             "users": "Users",
@@ -1091,7 +1092,8 @@ export default {
             "stream_area": "ujukimeetod",
             "weirs": "ülevool",
             "approximate_estimation": "silma järgi hinnatud",
-            "current_meter": "voolukiiruse mõõteseadmega"
+            "current_meter": "voolukiiruse mõõteseadmega",
+            "supporters": "Toetajad"
         },
         "users": {
             "users": "Kasutajad",
@@ -2147,7 +2149,8 @@ export default {
             "stream_area": "Методы площади / скорости потока",
             "weirs": "Переполнение",
             "approximate_estimation": "Приблизительная оценка",
-            "current_meter": "С расходомером"
+            "current_meter": "С расходомером",
+            "supporters": "Supporters"
         },
         "users": {
             "users": "Пользователи",

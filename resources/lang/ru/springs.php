@@ -365,4 +365,6 @@ return [
     'approximate_estimation' => 'Приблизительная оценка',
     'current_meter' => 'С расходомером',
 
+    'supporters' => 'Supporters',
+
 ];

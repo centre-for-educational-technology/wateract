@@ -365,4 +365,6 @@ return [
     'approximate_estimation' => 'Approximate estimation',
     'current_meter' => 'With current-meter',
 
+    'supporters' => 'Supporters',
+
 ];
