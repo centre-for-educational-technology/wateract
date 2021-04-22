@@ -169,7 +169,7 @@ return [
     'ph_help_text' => 'Pirms pH mērīšanas, pārliecinieties, vai Jūsu pH-metrs ir kalibrēts.  Veicot mērījumu, pārliecinieties, ka mērīšanas zonde atrodas ūdenī pietiekami ilgi, lai rādījums nostabilizētos.',
     'specific_conductance' => 'Īpatnējā vadītspēja',
     'specific_conductance_help_text' => 'Pirms vērtības ievadīšanas noskaidrojiet, vai Jūsu vadītspējas mērītājs atspoguļo īpatnējo vadītspēju vai elektrovadītspēju.',
-    'electrical_conductivity' => 'Elektrovadītspēja',
+    'electrical_conductivity' => 'Īpatnējā vadītspēja',
     'electrical_conductivity_help_text' => 'Pirms vērtības ievadīšanas noskaidrojiet, vai Jūsu vadītspējas mērītājs atspoguļo īpatnējo vadītspēju vai elektrovadītspēju.',
     'total_dissolved_solids' => 'Kopējās izšķīdušās vielas',
     'nitrate' => 'Nitrāts (NO3)',

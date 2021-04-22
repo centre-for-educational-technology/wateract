@@ -170,7 +170,7 @@ return [
     'ph_help_text' => 'Before measuring the pH, make sure that your pH-meter is calibrated.  When measuring, make sure that the measuring probe was in the spring water long enough for the reading to stabilize.',
     'specific_conductance' => 'Specific conductance',
     'specific_conductance_help_text' => 'Before entering a value, find out whether your conductivity meter shows specific conductance or electrical conductivity.',
-    'electrical_conductivity' => 'Electrical conductivity',
+    'electrical_conductivity' => 'Specific conductance',
     'electrical_conductivity_help_text' => 'Before entering a value, find out whether your conductivity meter shows specific conductance or electrical conductivity.',
     'total_dissolved_solids' => 'Total dissolved solids',
     'nitrate' => 'Nitrate (NO3)',
