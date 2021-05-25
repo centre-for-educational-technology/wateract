@@ -92,7 +92,7 @@ return [
     'url' => 'URL',
     'url_title' => 'URL title',
     'description' => 'Description of natural conditions',
-    'description_help_text' => 'While describing a spring, try to answer following guestions:
+    'description_help_text' => 'While describing a spring, try to answer following questions:
         Does the spring form a pool or is it like a small stream? What is the bottom substrate of the spring?
         Are there plants or algae growing inside the spring?
         What do the surroundings of the spring look like?
