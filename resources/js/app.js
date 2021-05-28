@@ -22,7 +22,21 @@ import store from "./Modules/store";
 import VueGtag from "vue-gtag";
 
 Vue.use(VueInternationalization);
-const lang = localStorage.getItem('locale') || 'et';
+
+let lang = localStorage.getItem('locale');
+if (!lang) {
+    let locale = 'en';
+    let browserLang = navigator.language;
+    if (browserLang) {
+        let userLang = browserLang.split('-')[0];
+        let possibleLanguages = ['et', 'en', 'lv', 'ru'];
+        if (possibleLanguages.includes(userLang)) {
+            locale = userLang;
+        }
+    }
+    lang = locale;
+    axios.get('/locale/'+locale);
+}
 
 const i18n = new VueInternationalization({
     locale: lang,

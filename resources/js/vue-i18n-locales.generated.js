@@ -140,7 +140,7 @@ export default {
             "url": "URL",
             "url_title": "URL title",
             "description": "Description of natural conditions",
-            "description_help_text": "While describing a spring, try to answer following guestions:\n        Does the spring form a pool or is it like a small stream? What is the bottom substrate of the spring?\n        Are there plants or algae growing inside the spring?\n        What do the surroundings of the spring look like?\n        Are there man-made objects inside the spring or around the spring?\n        How accessible is the spring?",
+            "description_help_text": "While describing a spring, try to answer following questions:\n        Does the spring form a pool or is it like a small stream? What is the bottom substrate of the spring?\n        Are there plants or algae growing inside the spring?\n        What do the surroundings of the spring look like?\n        Are there man-made objects inside the spring or around the spring?\n        How accessible is the spring?",
             "folklore": "Folklore",
             "link_with_other_databases": "Link with other databases",
             "database_name": "Database name",
@@ -2142,7 +2142,7 @@ export default {
                 "news_added": "Новые новости Добавлены.",
                 "news_updated": "Новости успешно обновлены.",
                 "news_deleted": "Новости успешно удалены.",
-                "uploading_photos": "Please wait. Uploading photos."
+                "uploading_photos": "Пожалуйста, подождите. Uploading photos."
             },
             "discharge_measurement_method": "Метод измерения расхода родника",
             "volumetric": "Объемный метод",
@@ -2150,7 +2150,7 @@ export default {
             "weirs": "Переполнение",
             "approximate_estimation": "Приблизительная оценка",
             "current_meter": "С расходомером",
-            "supporters": "Supporters"
+            "supporters": "Cторонники"
         },
         "users": {
             "users": "Пользователи",

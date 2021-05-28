@@ -355,7 +355,7 @@ return [
         'news_added' => 'Новые новости Добавлены.',
         'news_updated' => 'Новости успешно обновлены.',
         'news_deleted' => 'Новости успешно удалены.',
-        'uploading_photos' => 'Please wait. Uploading photos.',
+        'uploading_photos' => 'Пожалуйста, подождите. Uploading photos.',
     ],
 
     'discharge_measurement_method' => 'Метод измерения расхода родника',
@@ -365,6 +365,6 @@ return [
     'approximate_estimation' => 'Приблизительная оценка',
     'current_meter' => 'С расходомером',
 
-    'supporters' => 'Supporters',
+    'supporters' => 'Cторонники',
 
 ];

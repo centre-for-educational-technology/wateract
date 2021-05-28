@@ -362,6 +362,8 @@
 
             logout() {
                 axios.post('/logout').then(response => {
+                    let locale = localStorage.getItem('locale') || 'en';
+                    axios.get('/locale/'+locale);
                     window.location = '/';
                 })
             },
