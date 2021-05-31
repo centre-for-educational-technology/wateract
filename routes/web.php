@@ -78,6 +78,11 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/admin', function () {
 Route::post('/admin/csvfile', [CsvFileController::class, 'update'])
     ->middleware(['auth']);
 
+Route::get('admin/exportSprings', [CsvFileController::class, 'exportSprings'])
+    ->middleware(['auth']);
+Route::get('admin/exportObservations', [CsvFileController::class, 'exportObservations'])
+    ->middleware(['auth']);
+
 Route::resource('admin/users', UserController::class);
 
 Route::post('/admin/updateSpringAddress', [SpringController::class, 'updateSpringAddress'])

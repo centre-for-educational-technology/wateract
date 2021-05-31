@@ -66,6 +66,28 @@
 
             </jet-form-section>
 
+            <jet-section-border />
+
+            <jet-form-section>
+
+                <template #title>
+                    Export Excel Files
+                </template>
+
+                <template #description>
+                    Download springs and observations .xlsx files.
+                </template>
+
+                <template #form>
+
+                    <a target="_blank" href="/admin/exportSprings">Export Springs</a>
+                    <br /><br />
+                    <a target="_blank" href="/admin/exportObservations">Export Observations</a>
+
+                </template>
+
+            </jet-form-section>
+
         </div>
 
     </app-layout>

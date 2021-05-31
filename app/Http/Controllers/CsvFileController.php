@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Exports\ObservationsExport;
+use App\Exports\SpringsExport;
 use App\Models\Country;
 use App\Models\Spring;
 use App\Models\SpringDatabaseLink;
@@ -10,6 +12,7 @@ use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Maatwebsite\Excel\Facades\Excel;
 
 class CsvFileController extends Controller
 {
@@ -132,4 +135,15 @@ class CsvFileController extends Controller
         exit;
 
     }
+
+    public function exportSprings()
+    {
+        return Excel::download(new SpringsExport(), 'springs.xlsx');
+    }
+
+    public function exportObservations()
+    {
+        return Excel::download(new ObservationsExport(), 'observations.xlsx');
+    }
+
 }
