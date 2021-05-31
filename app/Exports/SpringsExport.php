@@ -36,7 +36,8 @@ class SpringsExport implements FromCollection, WithHeadings, WithMapping
             $spring->settlement,
             $spring->description,
             $spring->folklore,
-            $spring->status
+            $spring->status,
+            $spring->not_a_spring ? 'not a spring' : ''
         ];
     }
 
@@ -55,7 +56,8 @@ class SpringsExport implements FromCollection, WithHeadings, WithMapping
             "Settlement",
             "Description",
             "Folklore",
-            "Spring Status"
+            "Spring Status",
+            "Not a spring"
         ];
     }
 }
