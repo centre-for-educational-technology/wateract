@@ -76,17 +76,18 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/admin', function () {
 })->name('admin');
 
 Route::post('/admin/csvfile', [CsvFileController::class, 'update'])
-    ->middleware(['auth']);
+    ->middleware(['can:administrate']);
 
 Route::get('admin/exportSprings', [CsvFileController::class, 'exportSprings'])
-    ->middleware(['auth']);
+    ->middleware(['can:administrate']);
 Route::get('admin/exportObservations', [CsvFileController::class, 'exportObservations'])
-    ->middleware(['auth']);
+    ->middleware(['can:administrate']);
 
-Route::resource('admin/users', UserController::class);
+Route::resource('admin/users', UserController::class)
+    ->middleware(['can:view users']);;
 
 Route::post('/admin/updateSpringAddress', [SpringController::class, 'updateSpringAddress'])
-    ->middleware(['auth']);;
+    ->middleware(['can:administrate']);;
 
 /*Route::group(['middleware' => ['auth']], function() {
     Route::resource('admin/users', UserController::class);
