@@ -48,7 +48,6 @@ import SpringView from './SpringView'
 import JetLabel from "../../Jetstream/Label";
 import NavButton from '../../Components/NavButton';
 import LeafletMaps from './LeafletMaps';
-import LatvianMaps from './LatvianMaps';
 import EstonianMap from "../../Components/Maps/EstonianMap";
 import LatvianMap from "../../Components/Maps/LatvianMap";
 import Tabs from './Tabs';
@@ -62,7 +61,6 @@ export default {
         JetLabel,
         NavButton,
         LeafletMaps,
-        LatvianMaps,
         EstonianMap,
         LatvianMap,
         Tabs,
