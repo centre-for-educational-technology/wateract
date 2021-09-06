@@ -27,7 +27,9 @@
                         <small v-on:click="initializeSearch" class="cursor-pointer underline">{{ $t('springs.see_all_springs') }}</small>
                     </div>
 
-                    <leaflet-maps :key="mapRefresh" :springs="mapSprings" ></leaflet-maps>
+                    <estonian-map v-if="this.country === 'ee'" :key="mapRefresh" :springs="mapSprings" ></estonian-map>
+
+                    <latvian-map v-if="this.country === 'lv'" :key="mapRefresh" :springs="mapSprings" ></latvian-map>
 
                     <tabs :featured_springs="featured_springs" :newest_springs="newest_springs" ></tabs>
 
@@ -46,6 +48,9 @@ import SpringView from './SpringView'
 import JetLabel from "../../Jetstream/Label";
 import NavButton from '../../Components/NavButton';
 import LeafletMaps from './LeafletMaps';
+import LatvianMaps from './LatvianMaps';
+import EstonianMap from "../../Components/Maps/EstonianMap";
+import LatvianMap from "../../Components/Maps/LatvianMap";
 import Tabs from './Tabs';
 
 export default {
@@ -57,43 +62,20 @@ export default {
         JetLabel,
         NavButton,
         LeafletMaps,
+        LatvianMaps,
+        EstonianMap,
+        LatvianMap,
         Tabs,
     },
     props: ['springs', 'featured_springs', 'newest_springs', 'classifications'],
     data() {
         return {
+            country: process.env.MIX_APP_COUNTRY,
             mapSprings: this.springs,
             mapRefresh: 0,
             search_name: '',
             search_classification: '',
         }
-    },
-    mounted() {
-            //set bounds of the map
-            /*this.$refs.map.$mapPromise.then((map) => {
-                map.panTo({lat:58.379, lng:24.554});
-
-            });*/
-            /*console.log('mount');
-            const layers = {
-                'Muinsuskaitsealused allikad' : 'http://allikad.info/kml/Kult_allikad_komb.kmz',
-                'Loodusdirektiivi allikaelupaigad' : 'http://allikad.info/kml/LD_allikad_pind1.kmz',
-                'Parandkultuuriallikad' : 'http://allikad.info/kml/Par_allikad_punkt1.kmz',
-                'Allikate seirejaamad' : 'http://allikad.info/kml/Seire_allikad_punkt1.kmz',
-                'Allikalised vaariselupaigad' : 'http://allikad.info/kml/VEP_allikad_pind1.kmz',
-                'Looduskaitsealused allikad' : 'http://allikad.info/kml/UOB_allikad_komb.kmz',
-                'Urglooduse raamatu allikad' : 'http://allikad.info/kml/Urg_allikad_komb.kmz'
-            };
-            this.$refs.map.$mapPromise.then((map) => {
-                _.forEach(layers, function(layer_file, layer_name) {
-                    console.log(layer_file);
-                    let options = {
-                        map: map,
-                        url: layer_file,
-                    }
-                    let kml = new google.maps.KmlLayer(options)
-                });
-            })*/
     },
     methods: {
         initializeSearch: function() {
@@ -113,7 +95,6 @@ export default {
                 this.mapRefresh++;
             })
         }
-
     }
 }
 </script>
