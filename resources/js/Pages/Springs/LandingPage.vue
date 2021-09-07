@@ -175,11 +175,15 @@
             <div class="flex justify-center">
                 <div class="inline-block mr-5">
                     <a target="_blank" href="https://www.ohtuleht.ee/">
-                        <img src="/images/supporters/ohtuleht.png" /></a>
+                        <img alt="ohtuleht" src="/images/supporters/ohtuleht.png" /></a>
+                </div>
+                <div class="inline-block mr-5">
+                    <a target="_blank" href="https://www.ekool.eu/">
+                        <img alt="ekool" src="/images/supporters/ekool.png" /></a>
                 </div>
                 <div class="inline-block">
-                    <a target="_blank" href="https://www.ekool.eu/">
-                        <img src="/images/supporters/ekool.png" /></a>
+                    <a target="_blank" href="https://developers.kartes.lv/">
+                        <img alt="Jāņa sēta" src="/images/supporters/kijs.png" /></a>
                 </div>
             </div>
         </div>
