@@ -25,12 +25,12 @@
 
                 <!--<l-control-fullscreen />-->
 
-                <l-tile-layer
+                <!--<l-tile-layer
                     :url="layer.url"
                     :attribution="layer.attribution"
-                />
+                />-->
 
-                <!--<l-wms-tile-layer
+                <l-wms-tile-layer
                     :key="wmsLayer.name"
                     :base-url="lvMap"
                     :visible="wmsLayer.visible"
@@ -39,7 +39,7 @@
                     :transparent="false"
                     format="image/png"
                     layer-type="base">
-                </l-wms-tile-layer>-->
+                </l-wms-tile-layer>
 
                 <l-marker
                     :lat-lng="currentPosition"
@@ -56,7 +56,7 @@
                               :key="index"
                               :lat-lng="marker.position">
                         <l-popup>
-                            <div class="pb-2"><a class="underline text-blue-700" :href="'springs/'+marker.id+'/'">{{marker.name || 'Unnamed'}}</a></div>
+                            <div class="pb-2"><a class="underline text-blue-700" :href="'/springs/'+marker.id+'/'">{{marker.name || 'Unnamed'}}</a></div>
                             <div>{{ $t('springs.spring_code') }}: {{marker.id}} <br />{{ $t('springs.status') }}: {{ $t('springs.status_options.'+marker.status) }}</div>
                         </l-popup>
                     </l-marker>
@@ -144,7 +144,7 @@ export default {
             springLocation = {lat: this.spring.latitude, lng: this.spring.longitude}
         }
 
-        let map = 'openstreet';
+        let lv_map_api_key = process.env.MIX_KARTES_LV_API_KEY;
 
         return {
             mapOptions: {
@@ -152,15 +152,14 @@ export default {
                 gestureHandling:true
             },
 
-            ll_map: 'https://wms1.kartes.lv/KVDM_mgpVb/wgs/15/?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&FORMAT=image%2Fpng&SRS=EPSG%3A3857&',
-            lvMap: 'https://wms2.kartes.lv/KVDM_p2eXM/wgs/15/?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&FORMAT=image%2Fpng&SRS=EPSG%3A3857&',
+            lvMap: 'https://wms2.kartes.lv/'+lv_map_api_key+'/wgs/15/?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&FORMAT=image%2Fpng&SRS=EPSG%3A3857&',
 
             wmsLayer: {
-                name: 'Lat Map',
+                name: 'Latvian Map',
                 visible: true,
                 format: 'image/png',
                 transparent: false,
-                attribution: 'lv data &copy; 2012 <a href="https://mesonet.agron.iastate.edu/docs/nexrad_mosaic/">IEM Nexrad</a>',
+                attribution: '<a href="https://www.kartes.lv/">Karšu izdevniecība Jāņa sēta</a> &copy; 2017 — 2021',
             },
 
 
@@ -178,13 +177,9 @@ export default {
             cacheMaaametMapZoom: 3,
             cacheMaaametCenter: latLng(54.379, 34.554),
 
-            openStreetMap: map !== 'maaamet',
+            openStreetMap: true,
             openStreetMapZoom: 7,
             openStreetCenter: latLng(57.179, 24.554),
-
-            maaametMap: map !== 'openstreet',
-            maaametMapZoom: 3,
-            maaametCenter: latLng(50.379, 34.554),
 
             ee_spring: false,
 
