@@ -2,9 +2,9 @@
 
     <div>
 
-        <estonian-map v-if="this.appCountry === 'ee'" class="px-5 lg:px-10" :springs="springs" ></estonian-map>
+        <estonian-map v-if="this.appCountry === 'ee'" class="px-5 lg:px-10" :springs="springs" :spring="spring"></estonian-map>
 
-        <latvian-map v-if="this.appCountry === 'lv'" class="px-5 lg:px-10" :springs="springs" ></latvian-map>
+        <latvian-map v-if="this.appCountry === 'lv'" class="px-5 lg:px-10" :springs="springs" :spring="spring"></latvian-map>
 
     </div>
 
@@ -18,7 +18,7 @@ export default {
       EstonianMap,
       LatvianMap,
     },
-    props: ['springs'],
+    props: ['springs', 'spring'],
     data() {
         return {
             appCountry: process.env.MIX_APP_COUNTRY,

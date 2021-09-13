@@ -2,21 +2,19 @@
 
     <div class="h-500 lg:h-600 2xl:h-700">
 
-        <div class="z-depth-1-half map-container block h-full" v-if="openStreetMap">
-            <l-map ref="openstreetmap" style="width:100%;height:100%;z-index:0;"
-                   :center="openStreetCenter"
-                   @update:zoom="openStreetZoomUpdate"
-                   :zoom="openStreetMapZoom"
-                   :tms="tms"
+        <div class="z-depth-1-half map-container block h-full">
+            <l-map ref="map" style="width:100%;height:100%;z-index:0;"
+                   :center="this.mapCenter"
+                   :zoom="this.mapZoom"
+                   :tms="this.tms"
                    :continuousWorld="true"
-                   @update:center="openStreetCenterUpdate"
-                   :options="mapOptions"
-                   @ready="openStreetOnReady"
-                   @locationfound="openStreetOnLocationFound"
+                   :options="this.mapOptions"
+                   @ready="this.mapOnReady"
+                   @locationfound="this.mapOnLocationFound"
             >
 
                 <l-control>
-                    <svg @click="openStreetShowLocation" class="h-8 w-8 p-1 bg-white border-2 rounded cursor-pointer hover:bg-gray-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <svg @click="this.mapShowLocation" class="h-8 w-8 p-1 bg-white border-2 rounded cursor-pointer hover:bg-gray-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd">
                             <title>{{ $t('springs.pan_to_current_location') }}</title>
                         </path>
@@ -25,34 +23,29 @@
 
                 <!--<l-control-fullscreen />-->
 
-                <!--<l-tile-layer
-                    :url="layer.url"
-                    :attribution="layer.attribution"
-                />-->
-
                 <l-wms-tile-layer
-                    :key="wmsLayer.name"
-                    :base-url="lvMap"
-                    :visible="wmsLayer.visible"
-                    :name="wmsLayer.name"
-                    :attribution="wmsLayer.attribution"
+                    :key="this.wmsLayer.name"
+                    :base-url="this.lvMap"
+                    :visible="this.wmsLayer.visible"
+                    :name="this.wmsLayer.name"
+                    :attribution="this.wmsLayer.attribution"
                     :transparent="false"
                     format="image/png"
                     layer-type="base">
                 </l-wms-tile-layer>
 
                 <l-marker
-                    :lat-lng="currentPosition"
-                    :icon="currentPositionIcon"
+                    :lat-lng="this.currentPosition"
+                    :icon="this.currentPositionIcon"
                 ></l-marker>
 
                 <l-marker v-if="this.spring"
-                          :lat-lng="springLocation"
-                          :icon="springLocationIcon"
+                          :lat-lng="this.springLocation"
+                          :icon="this.springLocationIcon"
                 ></l-marker>
 
-                <l-marker-cluster :options="openStreetClusterOptions">
-                    <l-marker v-for="(marker, index) in leafletmarkers"
+                <l-marker-cluster :options="this.mapClusterOptions">
+                    <l-marker v-for="(marker, index) in this.mapMarkers"
                               :key="index"
                               :lat-lng="marker.position">
                         <l-popup>
@@ -69,11 +62,9 @@
 
 
 </template>
-<script src="https://unpkg.com/leaflet-kmz@latest/dist/leaflet-kmz.js"></script>
 
 <script>
 import { latLngBounds, latLng, icon } from "leaflet";
-import L from 'leaflet';
 import { LMap, LTileLayer, LWMSTileLayer, LMarker, LIcon, LControlZoom, LControl, LPopup, LControlLayers } from 'vue2-leaflet';
 import "proj4leaflet";
 import Vue2LeafletMarkerCluster from 'vue2-leaflet-markercluster'
@@ -82,10 +73,8 @@ import { GestureHandling } from "leaflet-gesture-handling";
 import "leaflet-gesture-handling/dist/leaflet-gesture-handling.css";
 import "leaflet.markercluster/dist/MarkerCluster.css";
 import "leaflet.markercluster/dist/MarkerCluster.Default.css";
-import { relief_shaded_layers, relief_layers, orthophoto_layers, springLocationIcon } from '../../constants.js';
+import { springLocationIcon } from '../../constants.js';
 import LControlFullscreen from 'vue2-leaflet-fullscreen';
-import { KMZLayer }  from 'leaflet-kmz';
-import omnivore from '@mapbox/leaflet-omnivore';
 
 delete Icon.Default.prototype._getIconUrl;
 Icon.Default.mergeOptions({
@@ -94,21 +83,8 @@ Icon.Default.mergeOptions({
     shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
 });
 
-let projection = new L.Proj.CRS('EPSG:3301', '+proj=lcc +lat_1=59.33333333333334 +lat_2=58 +lat_0=57.51755393055556 +lon_0=24 +x_0=500000 +y_0=6375000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs', {
-    resolutions: [4000, 2000, 1000, 500, 250, 125, 62.5, 31.25, 15.625, 7.8125, 3.90625, 1.953125, 0.9765625, 0.48828125, 0.244140625, 0.122070313, 0.061035156, 0.030517578, 0.015258789],
-    origin: [40500, 5993000],
-    bounds: L.bounds([40500, 5993000], [1064500, 7017000])
-});
-
 let redDotSvgString = '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="40" stroke="black" stroke-width="10" fill="red"/></svg>';
 let redDotIconUrl = encodeURI("data:image/svg+xml," + redDotSvgString).replace('#','%23');
-
-let openstreet_layers = [
-    {
-        url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-    }
-];
 
 export default {
     components: {
@@ -125,14 +101,12 @@ export default {
         'l-marker-cluster': Vue2LeafletMarkerCluster,
         GestureHandling,
         LControlFullscreen,
-        KMZLayer,
-        omnivore,
     },
-    props: ['springs', 'spring', 'view'],
+    props: ['springs', 'spring'],
     data() {
-        let leafletmarkers = [];
+        let mapMarkers = [];
         _.forEach(this.springs, function(spring) {
-            leafletmarkers.push({
+            mapMarkers.push({
                 id: spring.code,
                 name: spring.name,
                 status: spring.status,
@@ -162,12 +136,7 @@ export default {
                 attribution: '<a href="https://www.kartes.lv/">Karšu izdevniecība Jāņa sēta</a> &copy; 2017 — 2021',
             },
 
-
-            maaametClusterOptions: {
-                disableClusteringAtZoom: 11,
-                maxClusterRadius: 70,
-            },
-            openStreetClusterOptions: {
+            mapClusterOptions: {
                 disableClusteringAtZoom: 15,
                 maxClusterRadius: 70,
             },
@@ -178,8 +147,8 @@ export default {
             cacheMaaametCenter: latLng(54.379, 34.554),
 
             openStreetMap: true,
-            openStreetMapZoom: 7,
-            openStreetCenter: latLng(57.179, 24.554),
+            mapZoom: 7,
+            mapCenter: latLng(57.179, 24.554),
 
             ee_spring: false,
 
@@ -193,119 +162,30 @@ export default {
             springLocation: springLocation,
             springLocationIcon: springLocationIcon,
 
-            layerIndex: 0,
-            leafletmarkers: leafletmarkers,
-            crs: projection,
+            mapMarkers: mapMarkers,
             tms: true,
-            attribution: "<a href='http://www.maaamet.ee'>Maa-amet</a>",
             bounds: latLngBounds([
                 [60.4349, 29.4338],
                 [56.7458, 20.373]
             ]),
-            layers: openstreet_layers,
-            tilelayers: relief_layers,
             fullscreen: false,
 
         }
     },
     methods: {
-        showReliefMap() {
-            this.tilelayers = relief_layers;
-        },
-        showReliefShadedMap() {
-            this.tilelayers = relief_shaded_layers;
-        },
-        showOrthoPhoto() {
-            this.tilelayers = orthophoto_layers;
-        },
-        showWorldMap() {
-            this.maaametMap = false;
-            this.openStreetMapZoom = this.cacheOpenStreetMapZoom;
-            this.openStreetCenter = this.cacheOpenStreetCenter;
-            this.openStreetMap = true;
-        },
-        showMaaametMap() {
-            this.openStreetMap = false;
-            this.maaametMapZoom = this.cacheMaaametMapZoom;
-            this.maaametCenter = this.cacheMaaametCenter;
-            this.maaametMap = true;
-        },
-        openStreetOnReady(mapObject) {
+        mapOnReady(mapObject) {
             this.openStreetMapObject = mapObject;
-            console.log("openstreet: " + this.openStreetMapObject);
-            this.omnivoreKml();
-            if (this.view === 'show') {
-                let openStreetCenter = latLng(this.spring.latitude, this.spring.longitude);
-                this.openStreetMapObject.setView(openStreetCenter, 15);
+            if (this.spring) {
+                let mapCenter = latLng(this.spring.latitude, this.spring.longitude);
+                this.openStreetMapObject.setView(mapCenter, 15);
             }
         },
-        openStreetShowLocation() {
+        mapShowLocation() {
             this.openStreetMapObject.locate();
         },
-        openStreetOnLocationFound(location) {
+        mapOnLocationFound(location) {
             this.currentPosition= location.latlng;
             this.openStreetMapObject.setView(location.latlng, 9);
-            this.leafletMapObject.setView(location.latlng, 9);
-        },
-        onReady(mapObject) {
-            this.leafletMapObject = mapObject;
-            if (this.view === 'show') {
-                let leafletCenter = latLng(this.spring.latitude, this.spring.longitude);
-                this.leafletMapObject.setView(leafletCenter, 11);
-            }
-        },
-        showLocation() {
-            this.leafletMapObject.locate();
-        },
-        onLocationFound(location) {
-            this.currentPosition= location.latlng;
-            this.leafletMapObject.setView(location.latlng, 9);
-        },
-        maaametZoomUpdate(zoom) {
-            let new_openstreet_zoom = zoom + 4;
-            this.cacheMaaametMapZoom = zoom;
-            if ( this.cacheOpenStreetMapZoom !== new_openstreet_zoom ) {
-                this.cacheOpenStreetMapZoom = new_openstreet_zoom;
-            }
-        },
-        maaametCenterUpdate(center) {
-            let new_center_latitude= center.lat;
-            let new_center_longitude = center.lng;
-            let center_latitude= this.openStreetCenter.lat;
-            let center_longitude = this.openStreetCenter.lng;
-            if (new_center_latitude !== center_latitude || new_center_longitude !== center_longitude) {
-                this.cacheOpenStreetCenter = center;
-            }
-        },
-        openStreetZoomUpdate(zoom) {
-            let new_maaamet_zoom = zoom - 4;
-            this.cacheOpenStreetMapZoom = zoom;
-            if (this.cacheMaaametMapZoom !== new_maaamet_zoom) {
-                this.cacheMaaametMapZoom = new_maaamet_zoom;
-            }
-        },
-        openStreetCenterUpdate(center) {
-            let new_center_latitude= center.lat;
-            let new_center_longitude = center.lng;
-            let center_latitude= this.maaametCenter.lat;
-            let center_longitude = this.maaametCenter.lng;
-            if (new_center_latitude !== center_latitude || new_center_longitude !== center_longitude) {
-                this.cacheMaaametCenter = center;
-            }
-        },
-        maaametFullscreenChanged(fullscreen) {
-            if (this.leafletMapObject.isFullscreen()) {
-                this.fullscreen = true;
-            } else {
-                this.fullscreen = false;
-            }
-        },
-        openStreetFullscreenChanged(fullscreen) {
-            if (this.openStreetMapObject.isFullscreen()) {
-                this.fullscreen = true;
-            } else {
-                this.fullscreen = false;
-            }
         },
         getExistingSprings(spring) {
             let params = {
@@ -322,19 +202,11 @@ export default {
                         position: latLng(spring.latitude, spring.longitude),
                     });
                 });
-                this.leafletmarkers = markers;
+                this.mapMarkers = markers;
             })
         },
-        omnivoreKml() {
-
-        },
     },
-    computed: {
-        layer () {
-            return this.layers[this.layerIndex]
-        }
-    },
-    created: function(){
+    created: function() {
         if (this.spring) {
             this.getExistingSprings(this.spring);
         }
