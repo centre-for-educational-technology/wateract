@@ -210,6 +210,7 @@ export default {
                 'et': 'EST',
                 'lv': 'LAV',
                 'ru': 'RUS',
+                'fr': 'ENG',
             },
         }
     },
