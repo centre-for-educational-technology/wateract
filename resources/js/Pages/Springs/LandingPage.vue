@@ -46,7 +46,8 @@
 
         <div>
             <h1>{{ $t('springs.springs') }}</h1>
-            <leaflet-maps class="px-5 lg:px-10" :springs="springs"></leaflet-maps>
+
+            <main-map class="px-5 lg:px-10" :springs="springs" ></main-map>
 
             <statistics class="mt-5 px-5 lg:px-10" style="max-width:1120px; margin:20px auto"></statistics>
 
@@ -174,11 +175,15 @@
             <div class="flex justify-center">
                 <div class="inline-block mr-5">
                     <a target="_blank" href="https://www.ohtuleht.ee/">
-                        <img src="/images/supporters/ohtuleht.png" /></a>
+                        <img alt="ohtuleht" src="/images/supporters/ohtuleht.png" /></a>
+                </div>
+                <div class="inline-block mr-5">
+                    <a target="_blank" href="https://www.ekool.eu/">
+                        <img alt="ekool" src="/images/supporters/ekool.png" /></a>
                 </div>
                 <div class="inline-block">
-                    <a target="_blank" href="https://www.ekool.eu/">
-                        <img src="/images/supporters/ekool.png" /></a>
+                    <a target="_blank" href="https://developers.kartes.lv/">
+                        <img alt="Jāņa sēta" src="/images/supporters/kijs.png" /></a>
                 </div>
             </div>
         </div>
@@ -188,13 +193,13 @@
 
 <script>
 import AppLayout from './../../Layouts/AppLayout';
-import LeafletMaps from './LeafletMaps';
+import MainMap from './../../Components/Maps/MainMap';
 import Statistics from './Statistics';
 
 export default {
     components: {
         AppLayout,
-        LeafletMaps,
+        MainMap,
         Statistics,
     },
     props: ['springs'],
@@ -205,6 +210,7 @@ export default {
                 'et': 'EST',
                 'lv': 'LAV',
                 'ru': 'RUS',
+                'fr': 'ENG',
             },
         }
     },

@@ -17,7 +17,7 @@
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
 
-                    <leaflet-maps :spring="spring" :view="'show'"></leaflet-maps>
+                    <main-map :spring="spring" :view="'show'"></main-map>
 
                     <div class="sm:flex -mx-2 w-full px-2 py-2">
                         <div class="sm:w-3/4 px-2">
@@ -162,7 +162,7 @@ import SpringNavigation from './SpringNavigation';
 import JetLabel from '../../Jetstream/Label';
 import NavButton from '../../Components/NavButton';
 import SpringFeedback from './../SpringFeedback/Create';
-import LeafletMaps from './LeafletMaps';
+import MainMap from './../../Components/Maps/MainMap';
 
 export default {
     components: {
@@ -171,7 +171,7 @@ export default {
         JetLabel,
         NavButton,
         SpringFeedback,
-        LeafletMaps,
+        MainMap,
     },
     props: ['spring', 'photos', 'can_edit'],
     data() {

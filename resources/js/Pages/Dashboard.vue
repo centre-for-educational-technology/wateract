@@ -15,7 +15,7 @@
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
 
-                    <leaflet-maps :springs="springs"></leaflet-maps>
+                    <main-map :springs="springs"></main-map>
 
                     <springs-for-review v-if="can('confirm spring')" class="m-4" />
 
@@ -33,7 +33,7 @@
 
 <script>
     import AppLayout from './../Layouts/AppLayout'
-    import LeafletMaps from './Springs/LeafletMaps'
+    import MainMap from './../Components/Maps/MainMap';
     import SpringsForReview from "./Springs/SpringsForReview";
     import UserSprings from "./Springs/UserSprings";
     import UserObservations from "./Observations/UserObservations";
@@ -42,7 +42,7 @@
     export default {
         components: {
             AppLayout,
-            LeafletMaps,
+            MainMap,
             SpringsForReview,
             UserSprings,
             UserObservations,
