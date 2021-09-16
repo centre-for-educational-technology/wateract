@@ -11,6 +11,7 @@
                    :options="this.mapOptions"
                    @ready="this.mapOnReady"
                    @locationfound="this.mapOnLocationFound"
+                   @click="updateLocation"
             >
 
                 <l-control>
@@ -39,7 +40,7 @@
                     :icon="this.currentPositionIcon"
                 ></l-marker>
 
-                <l-marker v-if="this.spring"
+                <l-marker v-if="this.springLocation"
                           :lat-lng="this.springLocation"
                           :icon="this.springLocationIcon"
                 ></l-marker>
@@ -102,7 +103,7 @@ export default {
         GestureHandling,
         LControlFullscreen,
     },
-    props: ['springs', 'spring'],
+    props: ['springs', 'spring', 'view'],
     data() {
         let mapMarkers = [];
         _.forEach(this.springs, function(spring) {
@@ -187,9 +188,22 @@ export default {
             this.currentPosition= location.latlng;
             this.openStreetMapObject.setView(location.latlng, 9);
         },
-        getExistingSprings(spring) {
-            let params = {
-                'spring_id': spring.id
+        updateLocation(location) {
+            if (this.view === 'create' || this.view === 'edit') {
+                let latitude = Number(location.latlng.lat);
+                let longitude = Number(location.latlng.lng);
+                if (latitude && longitude) {
+                    this.springLocation = {lat: latitude, lng: longitude};
+                    this.$emit('changeLocation', location);
+                }
+            }
+        },
+        getExistingSprings() {
+            let params = {};
+            if (this.spring) {
+                params = {
+                    'spring_id': this.spring.id
+                }
             }
             axios.get('/getSprings', { params }).then(response => {
                 let springs = response.data;
@@ -207,8 +221,8 @@ export default {
         },
     },
     created: function() {
-        if (this.spring) {
-            this.getExistingSprings(this.spring);
+        if (this.spring || this.view === 'create') {
+            this.getExistingSprings();
         }
     }
 }

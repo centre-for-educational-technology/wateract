@@ -17,7 +17,7 @@
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
 
-                    <main-map :spring="spring"></main-map>
+                    <main-map :spring="spring" :view="'show'"></main-map>
 
                     <div class="sm:flex -mx-2 w-full px-2 py-2">
                         <div class="sm:w-3/4 px-2">
