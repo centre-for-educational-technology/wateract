@@ -134,7 +134,7 @@ export default {
         },
         getNewestObservations(page = 1) {
             let params = {
-                "order_by": "created_at",
+                "order_by": "measurement_time",
                 "page": page,
             }
             axios.get('/getObservations', { params }).then(response => {
@@ -146,7 +146,7 @@ export default {
         },
         getNewestMeasurements(page = 1) {
             let params = {
-                "order_by": "created_at",
+                "order_by": "analysis_time",
                 "page": page,
             }
             axios.get('/getMeasurements', { params }).then(response => {
