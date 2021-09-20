@@ -15,7 +15,8 @@
                     <div class="p-4">
                        <h3 class="text-xl">{{ $t('springs.browse_springs') }}</h3>
                         <div class="flex">
-                            <jet-input class="w-1/3 lg:w-1/4 sm:w-1/3 mr-3" type="text" v-model="search_name" name="searchbox" :placeholder="$t('springs.search_spring_name')" />
+                            <input class="w-1/3 lg:w-1/4 sm:w-1/3 mr-3 form-input rounded-md shadow-sm" type="text" v-model="search_name" name="searchbox" :placeholder="$t('springs.search_spring_name')"
+                                   @keyup.enter="updateMarkers">
                             <select id="classification" v-model="search_classification"
                                     class="w-1/3 lg:w-1/4 sm:w-1/3 block bg-white border border-gray-300 hover:border-gray-500 mr-3 px-2 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
                                 <option value="">{{ $t('springs.classification') }}</option>
