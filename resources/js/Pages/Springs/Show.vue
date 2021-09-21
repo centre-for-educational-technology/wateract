@@ -48,12 +48,12 @@
                                 <strong>{{ $t('springs.link_with_other_databases') }}</strong>
                                 <table class="table-auto text-sm border w-full">
                                     <thead>
-                                    <tr class="bg-gray-300 uppercase text-xs">
-                                        <th scope="col">{{ $t('springs.database_name') }}</th>
-                                        <th scope="col">{{ $t('springs.code') }}</th>
-                                        <th scope="col">{{ $t('springs.spring_name') }}</th>
-                                        <th scope="col">{{ $t('springs.url') }}</th>
-                                    </tr>
+                                        <tr class="bg-gray-300 uppercase text-xs">
+                                            <th scope="col">{{ $t('springs.database_name') }}</th>
+                                            <th scope="col">{{ $t('springs.code') }}</th>
+                                            <th scope="col">{{ $t('springs.spring_name') }}</th>
+                                            <th scope="col">{{ $t('springs.url') }}</th>
+                                        </tr>
                                     </thead>
                                     <tbody>
                                         <tr v-for="(database_link, index) in spring.database_links"
@@ -127,25 +127,26 @@
 
                             <div class="py-2" v-if="photos.length > 0">
                                 <strong>{{ $t('springs.gallery') }}</strong>
-                                <div class="grid grid-cols-2 gap-1">
-                                    <div @click="handlePhotoPreview(photo)" class="border-1 border-white" v-for="photo in photos">
-                                        <img :src="'/'+photo.thumbnail" />
+                                <CoolLightBox
+                                    :items="photoItems"
+                                    :index="index"
+                                    :useZoomBar="true"
+                                    :slideshow="false"
+                                    @close="index = null">
+                                </CoolLightBox>
+
+                                <div class="images-wrapper grid grid-cols-2 gap-1">
+                                    <div
+                                        class="image"
+                                        v-for="(image, imageIndex) in photoItems"
+                                        :key="imageIndex"
+                                        @click="index = imageIndex"
+                                    >
+                                        <img class="cursor-pointer" :src="image.thumbnail" />
                                     </div>
                                 </div>
                             </div>
-                            <el-dialog :visible.sync="dialogVisible">
-                                <img width="100%" :src="dialogPhotoUrl" alt="" />
-                                <span class="text-xs text-left">
-                                    <span v-if="dialogPhotoUserName">
-                                        {{ $t('springs.added_by') }}: {{ dialogPhotoUserName }}
-                                    </span>
-                                    <span v-if="dialogPhotoDate" class="ml-5">
-                                        {{ $t('springs.photo_date') }}: {{ dialogPhotoDate }}
-                                    </span>
-                                </span>
-                            </el-dialog>
                         </div>
-
 
                     </div>
                 </div>
@@ -163,6 +164,8 @@ import JetLabel from '../../Jetstream/Label';
 import NavButton from '../../Components/NavButton';
 import SpringFeedback from './../SpringFeedback/Create';
 import MainMap from './../../Components/Maps/MainMap';
+import CoolLightBox from 'vue-cool-lightbox'
+import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
 
 export default {
     components: {
@@ -172,15 +175,39 @@ export default {
         NavButton,
         SpringFeedback,
         MainMap,
+        CoolLightBox,
     },
     props: ['spring', 'photos', 'can_edit'],
     data() {
+
+        let photoItems = [];
+        let added_by_str = this.$i18n.t('springs.added_by');
+        let photo_date_str = this.$i18n.t('springs.photo_date');
+        _.forEach(this.photos, function(photo) {
+            let taken_by = false;
+            if (photo.user) {
+                taken_by = added_by_str + ': ' + photo.user.name;
+            }
+            let photo_taken = false;
+            if (photo.photo_taken) {
+                photo_taken = photo_date_str + ': ' + moment(photo.photo_taken).format("DD.MM.YYYY H:mm");
+            }
+            photoItems.push({
+                src: '/' + photo.path,
+                thumbnail: '/' + photo.thumbnail,
+                title: photo_taken,
+                description: taken_by,
+            });
+        });
+
         return {
             dialogVisible: false,
             dialogPhotoUrl: '',
             dialogPhotoUserName: false,
             dialogPhotoDate: false,
             spring_creator: this.spring.user ? this.spring.user.id : null,
+            photoItems: photoItems,
+            index: null,
         }
     },
     methods: {
@@ -190,18 +217,6 @@ export default {
                 return stripped;
             }
             return "";
-        },
-        handlePhotoPreview(photo) {
-            this.dialogPhotoUrl = '/' + photo.path;
-            this.dialogPhotoUserName = false;
-            if (photo.user) {
-                this.dialogPhotoUserName = photo.user.name;
-            }
-            this.dialogPhotoDate = false;
-            if (photo.photo_taken) {
-                this.dialogPhotoDate = moment(photo.photo_taken).format("DD.MM.YYYY H:mm");
-            }
-            this.dialogVisible = true;
         },
     },
 }
