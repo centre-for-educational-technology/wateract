@@ -28,11 +28,11 @@ export default {
     data() {
         return {
             locales: {
-                'en': 'ENG',
-                'et': 'EST',
-                'lv': 'LAV',
-                'ru': 'RUS',
-                'fr': 'FRE',
+                'en': 'EN',
+                'et': 'ET',
+                'lv': 'LT',
+                'ru': 'RU',
+                'fr': 'FR',
             },
         }
     },
