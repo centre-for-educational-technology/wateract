@@ -44,6 +44,7 @@
                         <div class="w-1/2 px-2">
                             <jet-label class="inline-block font-bold" for="latitude" :value="$t('springs.latitude')" />
                             <help-button @click.native="showHelpDialog( $t('springs.latitude_help_text') )"></help-button>
+                            <required-field></required-field>
                             <jet-input id="latitude" type="text" class="mt-1 block w-full" v-model="form.latitude" v-on:change.native="updateLocation" />
                             <jet-input-error :message="form.error('latitude')" class="mt-2" />
                         </div>
@@ -51,6 +52,7 @@
                         <div class="w-1/2 px-2">
                             <jet-label class="inline-block font-bold" for="longitude" :value="$t('springs.longitude')" />
                             <help-button @click.native="showHelpDialog( $t('springs.longitude_help_text') )"></help-button>
+                            <required-field></required-field>
                             <jet-input id="longitude" type="text" class="mt-1 block w-full" v-model="form.longitude" v-on:change.native="updateLocation" />
                             <jet-input-error :message="form.error('longitude')" class="mt-2" />
                         </div>
@@ -59,7 +61,8 @@
 
                         <div class="flex -mx-2">
                             <div class="w-1/3 px-2">
-                                <jet-label class="font-bold" for="country" :value="$t('springs.country')" />
+                                <jet-label class=" inline-block font-bold" for="country" :value="$t('springs.country')" />
+                                <required-field></required-field>
                                 <select v-model="form.country"
                                         class="block w-full bg-white border border-gray-400 hover:border-gray-500 px-2 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
                                     <option value=""></option>
@@ -109,6 +112,7 @@
                         <div class="col-span-6 sm:col-span-4">
                             <jet-label class="inline-block font-bold" for="description" :value="$t('springs.description')" />
                             <help-button @click.native="showHelpDialog( $t('springs.description_help_text') )"></help-button>
+                            <required-field></required-field>
                             <textarea id="description" type="textarea" class="px-2 mt-1 block w-full border" rows="5" v-model="form.description" ></textarea>
                             <jet-input-error :message="form.error('description')" class="mt-2" />
                         </div>
@@ -213,6 +217,7 @@ import JetInputError from "../../Jetstream/InputError";
 import JetLabel from "../../Jetstream/Label";
 import JetSecondaryButton from "../../Jetstream/SecondaryButton";
 import HelpButton from '../../Components/HelpButton';
+import RequiredField from '../../Components/RequiredField';
 import { gmapApi } from 'gmap-vue';
 import EstonianMap from "../../Components/Maps/EstonianMap";
 import LatvianMap from "../../Components/Maps/LatvianMap";
@@ -228,6 +233,7 @@ export default {
         JetLabel,
         JetSecondaryButton,
         HelpButton,
+        RequiredField,
         gmapApi,
         EstonianMap,
         LatvianMap,
@@ -343,6 +349,7 @@ export default {
             const geocoder = new google.maps.Geocoder()
             geocoder.geocode({ 'latLng': location }, (result, status) => {
                 if (status === google.maps.GeocoderStatus.OK) {
+                    console.log(result);
                     let address_components = result[0].address_components;
                     let address = getAddressObject(address_components);
                     this.form.country = address.country;
@@ -371,6 +378,7 @@ console.log(`Data: ${res.data}`);
 }
 
 function getAddressObject(address_components) {
+    console.log(address_components);
     let ShouldBeComponent = {
         county: [
             "administrative_area_level_1",

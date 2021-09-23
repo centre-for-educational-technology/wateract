@@ -47,6 +47,7 @@
                         <div class="w-1/2 px-2">
                             <jet-label class="font-bold inline-block" for="latitude" :value="$t('springs.latitude')" />
                             <help-button @click.native="showHelpDialog( $t('springs.latitude_help_text') )"></help-button>
+                            <required-field></required-field>
                             <jet-input id="latitude" type="text" class="mt-1 block w-full" v-model="form.latitude" v-on:change.native="updateLocation" />
                             <jet-input-error :message="form.error('latitude')" class="mt-2" />
                         </div>
@@ -54,6 +55,7 @@
                         <div class="w-1/2 px-2">
                             <jet-label class="font-bold inline-block" for="longitude" :value="$t('springs.longitude')" />
                             <help-button @click.native="showHelpDialog( $t('springs.longitude_help_text') )"></help-button>
+                            <required-field></required-field>
                             <jet-input id="longitude" type="text" class="mt-1 block w-full" v-model="form.longitude" v-on:change.native="updateLocation" />
                             <jet-input-error :message="form.error('longitude')" class="mt-2" />
                         </div>
@@ -62,7 +64,8 @@
 
                     <div class="flex">
                         <div class="w-1/3 px-2">
-                            <jet-label class="font-bold" for="country" :value="$t('springs.country')" />
+                            <jet-label class="font-bold inline-block" for="country" :value="$t('springs.country')" />
+                            <required-field></required-field>
                             <select v-model="form.country"
                                     class="block w-full bg-white border border-gray-400 hover:border-gray-500 px-2 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
                                 <option value=""></option>
@@ -115,6 +118,7 @@
                     <div class="px-2 py-2">
                         <jet-label class="font-bold inline-block" for="description" :value="$t('springs.description')" />
                         <help-button @click.native="showHelpDialog( $t('springs.description_help_text') )"></help-button>
+                        <required-field></required-field>
                         <textarea id="description" type="textarea" class="px-2 mt-1 block w-full border" rows="5" v-model="form.description" ></textarea>
                         <jet-input-error :message="form.error('description')" class="mt-2" />
                     </div>
@@ -240,6 +244,7 @@ import JetLabel from "../../Jetstream/Label";
 import JetButton from "../../Jetstream/Button";
 import JetSecondaryButton from "../../Jetstream/SecondaryButton";
 import HelpButton from '../../Components/HelpButton';
+import RequiredField from '../../Components/RequiredField';
 import DeleteSpring from './DeleteSpring'
 import { gmapApi } from 'gmap-vue';
 import EstonianMap from "../../Components/Maps/EstonianMap";
@@ -256,6 +261,7 @@ export default {
         JetButton,
         JetSecondaryButton,
         HelpButton,
+        RequiredField,
         DeleteSpring,
         gmapApi,
         EstonianMap,
