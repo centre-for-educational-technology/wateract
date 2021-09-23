@@ -26,12 +26,17 @@ Vue.use(VueInternationalization);
 let lang = localStorage.getItem('locale');
 if (!lang) {
     let locale = 'en';
-    let browserLang = navigator.language;
-    if (browserLang) {
-        let userLang = browserLang.split('-')[0];
-        let possibleLanguages = ['et', 'en', 'lv', 'ru'];
-        if (possibleLanguages.includes(userLang)) {
-            locale = userLang;
+    let country = process.env.MIX_APP_COUNTRY;
+    if (country === 'lv') {
+        locale = 'lv';
+    } else {
+        let browserLang = navigator.language;
+        if (browserLang) {
+            let userLang = browserLang.split('-')[0];
+            let possibleLanguages = ['et', 'en', 'lv', 'ru'];
+            if (possibleLanguages.includes(userLang)) {
+                locale = userLang;
+            }
         }
     }
     lang = locale;
