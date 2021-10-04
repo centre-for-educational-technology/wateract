@@ -7,7 +7,7 @@
                 </button>
             </template>
             <template #content>
-            <div v-for="(language, locale) in locales" :key="locale">
+            <div v-for="(language, locale) in locales" :key="locale" class="hover:bg-blue-100">
                 <a class="p-2" href="#" @click.prevent="setLocale(locale)">
                 {{ language }}
             </a></div>
