@@ -6,8 +6,8 @@ use App\Models\Measurement;
 use App\Models\Observation;
 use App\Models\Photo;
 use App\Models\Spring;
+use App\Models\User;
 use Carbon\Carbon;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class StatisticsController extends Controller
@@ -52,10 +52,15 @@ class StatisticsController extends Controller
     }
 
     public function mostActiveSpringUsers() {
+
+        $users_ids_for_statistics = User::whereDoesntHave('roles', function ($query) {
+            $query->whereIn('name', ['super-admin', 'admin', 'editor']);
+        })->with('roles')->pluck('id');;
+
         return DB::table('springs')
             ->select('user_id', 'users.name', DB::raw('count(*) as total'))
             ->join('users', 'springs.user_id', '=', 'users.id')
-            ->where('user_id', '!=', null)
+            ->whereIn('user_id', $users_ids_for_statistics)
             ->groupBy('user_id', 'users.name')
             ->orderBy('total', 'DESC')
             ->limit(5)
@@ -63,9 +68,15 @@ class StatisticsController extends Controller
     }
 
     public function mostActiveObservationUsers() {
+
+        $users_ids_for_statistics = User::whereDoesntHave('roles', function ($query) {
+            $query->whereIn('name', ['super-admin', 'admin', 'editor']);
+        })->with('roles')->pluck('id');;
+
         return DB::table('observations')
             ->select('user_id', 'users.name', DB::raw('count(*) as total'))
             ->join('users', 'observations.user_id', '=', 'users.id')
+            ->whereIn('user_id', $users_ids_for_statistics)
             ->groupBy('user_id', 'users.name')
             ->orderBy('total', 'DESC')
             ->limit(5)
