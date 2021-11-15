@@ -88,6 +88,9 @@
 
                             <div class="py-2">
                                 <div>{{spring.latitude}} {{spring.longitude}}</div>
+                                <a target="_blank" :href="'https://www.google.com/maps/search/?api=1&query='+spring.latitude+'%2C'+spring.longitude">
+                                        <div class="underline">{{ $t('springs.navigate') }}</div>
+                                </a>
                             </div>
 
                             <div class="py-2" v-if="spring.kkr_code">

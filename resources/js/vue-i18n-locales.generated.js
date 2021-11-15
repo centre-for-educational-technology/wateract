@@ -392,7 +392,8 @@ export default {
             "weirs": "Weirs",
             "approximate_estimation": "Approximate estimation",
             "current_meter": "With current-meter",
-            "supporters": "Supporters"
+            "supporters": "Supporters",
+            "navigate": "Navigate"
         },
         "users": {
             "users": "Users",
@@ -1093,7 +1094,8 @@ export default {
             "weirs": "ülevool",
             "approximate_estimation": "silma järgi hinnatud",
             "current_meter": "voolukiiruse mõõteseadmega",
-            "supporters": "Toetajad"
+            "supporters": "Toetajad",
+            "navigate": "Navigeeri"
         },
         "users": {
             "users": "Kasutajad",
@@ -1626,7 +1628,8 @@ export default {
             "weirs": "Déversoirs",
             "approximate_estimation": "Estimation approximative",
             "current_meter": "Avec un courantomètre",
-            "supporters": "Supporters"
+            "supporters": "Supporters",
+            "navigate": "Naviguer"
         },
         "users": {
             "users": "Utilisateurs",
@@ -2183,7 +2186,8 @@ export default {
             "weirs": "Ūdens pārgāznes",
             "approximate_estimation": "Aptuvenais novērtējums",
             "current_meter": "Ar strāvas mērītāju",
-            "supporters": "Atbalstītāji"
+            "supporters": "Atbalstītāji",
+            "navigate": "Pārvietoties"
         },
         "users": {
             "users": "Lietotāji",
@@ -2711,7 +2715,8 @@ export default {
             "weirs": "Переполнение",
             "approximate_estimation": "Приблизительная оценка",
             "current_meter": "С расходомером",
-            "supporters": "Cторонники"
+            "supporters": "Cторонники",
+            "navigate": "Перемещаться"
         },
         "users": {
             "users": "Пользователи",

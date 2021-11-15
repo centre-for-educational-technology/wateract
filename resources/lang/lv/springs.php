@@ -362,5 +362,6 @@ return [
     'current_meter' => 'Ar strāvas mērītāju',
 
     'supporters' => 'Atbalstītāji',
+    'navigate' => 'Pārvietoties',
 
 ];

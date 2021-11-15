@@ -360,5 +360,6 @@ return [
     'current_meter' => 'voolukiiruse mõõteseadmega',
 
     'supporters' => 'Toetajad',
+    'navigate' => 'Navigeeri',
 
 ];

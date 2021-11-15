@@ -366,5 +366,6 @@ return [
     'current_meter' => 'Avec un courantomètre',
 
     'supporters' => 'Supporters',
+    'navigate' => 'Naviguer',
 
 ];

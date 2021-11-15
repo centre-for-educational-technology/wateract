@@ -366,5 +366,6 @@ return [
     'current_meter' => 'With current-meter',
 
     'supporters' => 'Supporters',
+    'navigate' => 'Navigate',
 
 ];

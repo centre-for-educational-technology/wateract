@@ -366,5 +366,6 @@ return [
     'current_meter' => 'С расходомером',
 
     'supporters' => 'Cторонники',
+    'navigate' => 'Перемещаться',
 
 ];
