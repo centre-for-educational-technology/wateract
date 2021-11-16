@@ -4,10 +4,12 @@
             <h1>
                 {{ spring.name ||  $t('springs.unnamed')}}
             </h1>
-            <div class="sm:float-right sm:mt-0 mt-4" v-if="$page.user">
+        </template>
+        <template #header-buttons>
+            <span v-if="$page.user">
                 <nav-button v-if="( can_edit || ( spring.status === 'draft' && $page.user.id === spring_creator ) )" :href="'/springs/'+spring.code+'/edit'">{{ $t('springs.edit') }}</nav-button>
                 <spring-feedback :spring="spring" />
-            </div>
+            </span>
         </template>
 
         <div class="py-6">

@@ -161,22 +161,20 @@
 
                 </div>
 
+                <!-- Page Heading -->
                 <header>
                     <div class="max-w-7xl hidden lg:block mx-auto px-4 sm:px-6 lg:px-8 text-xl sm:text-2xl lg:text-3xl font-semibold text-center lg:pt-20">
                         <slot name="header"></slot>
+                        <div class="sm:float-right lg:mt-0 mt-4">
+                            <nav-button v-if="$page.user" :href="'/springs/create'">{{ $t('springs.create_new_spring') }}</nav-button>
+                            <slot name="header-buttons"></slot>
+                        </div>
                     </div>
                 </header>
 
             </div>
-            <!-- Page Heading -->
-            <!--<header class="border space-x-8 sm:-my-px sm:ml-10 sm:flex">
-            <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-            <slot name="header"></slot>
-            </div>
-            </header>-->
 
         </nav>
-           <!-- </div>-->
 
             <!-- Responsive Navigation Menu -->
             <div :class="{'block': showingNavigationDropdown, 'hidden': ! showingNavigationDropdown}" class="sm:hidden">
@@ -285,16 +283,16 @@
 
                     <div class="border-t border-gray-200"></div>
 
-
-
                 </div>
             </div>
-           <!-- </div>
-        </nav>-->
 
-        <header class="lg:hidden">
-            <div class="max-w-7xl mx-auto font-semibold text-xl pt-6 px-4 sm:px-6 lg:px-8">
+        <header class="lg:hidden py-4 sm:py-0 sm:pb-4">
+            <div class="max-w-7xl mx-auto font-semibold text-xl sm:pt-4 px-4 sm:px-6 lg:px-8">
                 <slot name="header"></slot>
+                <div class="inline-block float-right mt-4">
+                    <nav-button v-if="$page.user" :href="'/springs/create'">{{ $t('springs.create_new_spring') }}</nav-button>
+                    <slot name="header-buttons"></slot>
+                </div>
             </div>
         </header>
 
@@ -309,7 +307,7 @@
         </portal-target>
 
         <footer>
-            <div class="text-center relative mx-10 mt-10 z-30 lg:mt-15 lg:-mb-20 sm:-mb-10 -mb-5">
+            <div class="text-center relative sm:mx-10 mt-5 sm:mt-10 z-30 lg:mt-15 lg:-mb-20 sm:-mb-10 -mb-5">
                 {{ $t('springs.join_springs_fb')}}:
                 <a class="underline" href="https://www.facebook.com/groups/allikainfo/">
                     https://www.facebook.com/groups/allikainfo/</a><br />
@@ -332,6 +330,7 @@
     import JetResponsiveNavLink from './../Jetstream/ResponsiveNavLink'
     import LocaleDropdown from './../Components/LocaleDropdown'
     import FlashMessages from './../Components/FlashMessages'
+    import NavButton from './../Components/NavButton'
 
     export default {
         components: {
@@ -343,6 +342,7 @@
             JetResponsiveNavLink,
             LocaleDropdown,
             FlashMessages,
+            NavButton,
         },
 
         data() {

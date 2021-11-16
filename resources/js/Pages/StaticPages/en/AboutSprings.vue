@@ -1,6 +1,6 @@
 <template>
-    <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
-        <div class="p-10 bg-white overflow-hidden shadow-xl sm:rounded-lg">
+    <div class="max-w-7xl mx-auto lg:py-10 sm:px-6 lg:px-8">
+        <div class="p-5 sm:p-10 bg-white overflow-hidden shadow-xl sm:rounded-lg">
 
             <div>
                 <h2 class="mt-0">Why volunteer monitoring of springs?</h2>
@@ -11,7 +11,7 @@
 
             <div>
                 <div id="why-study-springs" class="h-1"></div>
-                <h2 class="mt-10">Why to study springs?</h2>
+                <h2 class="mt-5 sm:mt-10">Why to study springs?</h2>
                 <div>
                     <div class="mb-3">
                         Clean water is becoming an increasingly scarce resource around the world. We have to consider the fact that the most of the water (~97%) on Earth is saline, and liquid freshwater comprises only about 0.8% of the total amount of water on Earth. Most of the freshwater occurs in the form of groundwater. Springs are natural outflows of groundwater - hence an important part of the water cycle. In Estonia and Latvia, the situation with water resources is still quite good, but climate change and increasingly intensive human activities (for example, using pesticides and fertilizers in agriculture, ditching, mining etc) are leaving their mark on the availability and quality of our water.
@@ -36,7 +36,7 @@
 
             <div>
                 <div id="what-are-springs" class="h-1"></div>
-                <h2 class="mt-10">What is a spring?</h2>
+                <h2 class="mt-5 sm:mt-10">What is a spring?</h2>
                 <div>
                     <div class="mb-3">
                         A spring is a place where groundwater naturally flows out of the ground - sometimes only a trickle, sometimes temporarily after a rain event or as a perennial flow. Groundwater forms aquifers, which are underground water reservoirs. A spring is the result of an aquifer being filled to the point that the water overflows onto the land surface.

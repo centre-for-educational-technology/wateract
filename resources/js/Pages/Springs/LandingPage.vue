@@ -33,7 +33,7 @@
             </div>
         </div>
 
-        <div class="mx-10 lg:mx-28">
+        <div class="mx-5 sm:mx-10 lg:mx-28">
             <h2 class="mb-2 mt-0">{{ $t('springs.about_project') }}</h2>
             <div>
                 {{ $t('springs.about_project_text') }}
@@ -47,9 +47,9 @@
         <div>
             <h1>{{ $t('springs.springs') }}</h1>
 
-            <main-map class="px-5 lg:px-10" :springs="springs" ></main-map>
+            <main-map class="sm:px-5 lg:px-10" :springs="springs" ></main-map>
 
-            <statistics class="mt-5 px-5 lg:px-10" style="max-width:1120px; margin:20px auto"></statistics>
+            <statistics class="mt-5 px-2 sm:px-5 lg:px-10" style="max-width:1120px; margin:20px auto"></statistics>
 
             <div class="text-center">
                 <div class="py-5">
@@ -69,7 +69,7 @@
             <img src="/images/springs-3.png" />
         </div>
 
-        <div class="mx-10 lg:mx-28 lg:-mt-16">
+        <div class="mx-5 sm:mx-10 lg:mx-28 lg:-mt-16">
             <h1>{{ $t('springs.about_springs') }}</h1>
             <div class="py-5">
                 <h2 class="mt-0">{{ $t('springs.why_study_springs') }}</h2>
@@ -95,9 +95,9 @@
             <img src="/images/springs-4.png" />
         </div>
 
-        <div class="mx-10 lg:mx-28 lg:-mt-10">
+        <div class="mx-5 sm:mx-10 lg:mx-28 lg:-mt-10">
             <h1>{{ $t('springs.instructions') }}</h1>
-            <div class="grid grid-cols-2 lg:grid-cols-3 gap-10 mt-5">
+            <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-10 mt-5">
                 <div>
                     <img class="mx-auto w-3/5" src="/images/icons/how-to-find.png" />
                     <h2>{{ $t('springs.how_to.find_springs') }}</h2>
@@ -165,13 +165,13 @@
             <img src="/images/springs-5.png" />
         </div>
 
-        <div class="mx-10 lg:mx-28">
-            <h1 class="mb-5">{{ $t('springs.partners') }}</h1>
+        <div class="sm:mx-10 lg:mx-28">
+            <h1 class="mb-2 sm:mb-5">{{ $t('springs.partners') }}</h1>
             <img src="/images/logos.jpg" />
         </div>
 
-        <div class="mt-10 mx-10 lg:mx-28">
-            <h1 class="mb-5">{{ $t('springs.supporters') }}</h1>
+        <div class="mt-5 sm:mt-10 mx-5 sm:mx-10 lg:mx-28">
+            <h1 class="mb-2 sm:mb-5">{{ $t('springs.supporters') }}</h1>
             <div class="flex justify-center">
                 <div class="inline-block mr-5">
                     <a target="_blank" href="https://www.ohtuleht.ee/">

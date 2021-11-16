@@ -7,14 +7,18 @@
             </h1>
         </template>
 
-        <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
-            <div class="p-10 bg-white overflow-hidden shadow-xl sm:rounded-lg">
+        <div class="max-w-7xl mx-auto lg:py-10 sm:px-6 lg:px-8">
+            <div class="p-5 sm:p-10 bg-white overflow-hidden shadow-xl sm:rounded-lg">
 
                 <about-wateract-et v-if="$i18n.locale == 'et'"></about-wateract-et>
 
                 <about-wateract-en v-if="$i18n.locale == 'en'"></about-wateract-en>
 
                 <about-wateract-lv v-if="$i18n.locale == 'lv'"></about-wateract-lv>
+
+                <about-wateract-en v-if="$i18n.locale == 'ru'"></about-wateract-en>
+
+                <about-wateract-en v-if="$i18n.locale == 'fr'"></about-wateract-en>
 
                 <div class="mt-5 w-1/2">
                     <img src="/images/interreg-est-lat-eu.jpg" />

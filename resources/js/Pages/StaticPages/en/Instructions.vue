@@ -1,12 +1,12 @@
 <template>
-    <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
-        <div class="p-10 bg-white overflow-hidden shadow-xl sm:rounded-lg">
+    <div class="max-w-7xl mx-auto lg:py-10 sm:px-6 lg:px-8">
+        <div class="p-5 sm:p-10 bg-white overflow-hidden shadow-xl sm:rounded-lg">
 
             <div>
                 <div id="why-study-springs" class="h-1"></div>
                 <h2 class="mt-0">How to submit spring monitoring data?</h2>
                 <div>
-                    All obtained monitoring data must be submitted through the web-based map application allikad.info.  In order to use this application for adding new springs or new observations, you have to register and logged in. You can use allikad.info on site, using your smartphone or phablet, or fill the forms later at home with the help of a PC.
+                    All obtained monitoring data must be submitted through the web-based map application allikad.info.  In order to use this application for adding new springs or new observations, you have to register and logged in. You can use allikad.info on site, using your smartphone or tablet, or fill the forms later at home with the help of a PC.
                 </div>
                 <div class="mt-5">
                     <a target="_blank" href="https://allikad.info/manuals/volunteer_monitoring_manual_ENG.pdf">
@@ -16,7 +16,7 @@
             </div>
             <div>
                 <div id="how-to-find-springs" class="h-1"></div>
-                <h2 class="mt-10">How to find springs?</h2>
+                <h2 class="mt-5 sm:mt-10">How to find springs?</h2>
                 <div class="mb-3">
                     Open our map application and look for the markers. Those are possible spring locations which need confirmation. Somebody has to go there, find the spring and mark it on the map.
                 </div>
@@ -32,7 +32,7 @@
             </div>
             <div>
                 <div id="how-to-recognize-springs" class="h-1"></div>
-                <h2 class="mt-10">How to recognise springs?</h2>
+                <h2 class="mt-5 sm:mt-10">How to recognise springs?</h2>
                 <div>
                     Not every natural pool of water is spring and not every stream starts from the spring. To make sure that the source of this water is groundwater, reached on the surface naturally, you have to look for pieces of evidence and try to answer some questions.
                     <ol class="list-decimal ml-5">
@@ -44,7 +44,7 @@
             </div>
             <div>
                 <div id="how-to-describe-springs" class="h-1"></div>
-                <h2 class="mt-10">How to describe a spring?</h2>
+                <h2 class="mt-5 sm:mt-10">How to describe a spring?</h2>
                 <div>
                     While describing a spring, one should pay attention to and describe the the following aspects:
                     <ul class="list-disc ml-5">
@@ -65,7 +65,7 @@
             </div>
             <div>
                 <div id="how-to-take-pictures" class="h-1"></div>
-                <h2 class="mt-10">How to photograph springs?</h2>
+                <h2 class="mt-5 sm:mt-10">How to photograph springs?</h2>
                 <div>
                     <div class="mb-3">
                         Every photograph is a record of a particular site at a particular time. Any picture tells a story, but to get a good monitoring photo you have to consider some important points discussed below.
@@ -103,7 +103,7 @@
             </div>
             <div>
                 <div id="how-to-assess-water" class="h-1"></div>
-                <h2 class="mt-10">How to evaluate spring water properties?</h2>
+                <h2 class="mt-5 sm:mt-10">How to evaluate spring water properties?</h2>
                 <div>
                     <div>
                         <h3 class="font-bold mt-3">How to characterize the spring water quality?</h3>
@@ -162,7 +162,7 @@
             </div>
             <div>
                 <div id="how-to-measure-flow-rate" class="h-1"></div>
-                <h2 class="mt-10">How to measure spring discharge?</h2>
+                <h2 class="mt-5 sm:mt-10">How to measure spring discharge?</h2>
                 <div>
                     <div>
                         Measuring spring discharge (stream flow) is crucial for understanding the functioning of an aquifer and the availability of groundwater resources. Moreover, the continuity of flow is crucial for maintaining a water supply for the human population, or sustaining  groundwater dependent ecosystems. The amount of water discharged from a spring is expected to vary seasonally, thus, in order to get a detailed overview of the dynamics of groundwater flow, it is necessary to carry out measurements in all seasons.

@@ -11,23 +11,22 @@
             {{ $t('springs.my_springs') }}
         </template>
 
-        <div class="py-6">
-            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+        <div class="max-w-7xl mx-auto lg:py-10 sm:px-6 lg:px-8">
+            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
 
-                    <main-map :springs="springs"></main-map>
+                <main-map :springs="springs"></main-map>
 
-                    <springs-for-review v-if="can('confirm spring')" class="m-4" />
+                <springs-for-review v-if="can('confirm spring')" class="m-4" />
 
-                    <user-springs class="m-4" />
+                <user-springs class="m-4" />
 
-                    <user-observations class="m-4" />
+                <user-observations class="m-4" />
 
-                    <user-measurements class="m-4" />
+                <user-measurements class="m-4" />
 
-                </div>
             </div>
         </div>
+
     </app-layout>
 </template>
 

@@ -2,9 +2,9 @@
 
     <div>
 
-        <estonian-map v-if="this.appCountry === 'ee'" class="px-5 lg:px-10" :springs="springs" :spring="spring" :view="view"></estonian-map>
+        <estonian-map v-if="this.appCountry === 'ee'" class="px-2 sm:px-5 lg:px-10" :springs="springs" :spring="spring" :view="view"></estonian-map>
 
-        <latvian-map v-if="this.appCountry === 'lv'" class="px-5 lg:px-10" :springs="springs" :spring="spring" :view="view"></latvian-map>
+        <latvian-map v-if="this.appCountry === 'lv'" class="px-2 sm:px-5 lg:px-10" :springs="springs" :spring="spring" :view="view"></latvian-map>
 
     </div>
 

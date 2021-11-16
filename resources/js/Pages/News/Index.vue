@@ -10,13 +10,15 @@ p.leading-5 {
     <app-layout>
         <template #header>
             <h1>{{ $t('springs.news') }}</h1>
-            <div class="sm:float-right lg:mt-0 mt-4" v-if="$page.user && is('admin')">
+        </template>
+        <template #header-buttons>
+            <span v-if="$page.user && is('admin')">
                 <nav-button :href="'news/create'">{{ $t('springs.add_new_news') }}</nav-button>
-            </div>
+            </span>
         </template>
 
-            <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
-                <div class="p-10 bg-white overflow-hidden shadow-xl sm:rounded-lg">
+            <div class="max-w-7xl mx-auto lg:py-10 sm:px-6 lg:px-8">
+                <div class="p-5 sm:p-10 bg-white overflow-hidden shadow-xl sm:rounded-lg">
 
                     <div v-for="news_item in news.data" :key="news_item.id">
 
@@ -26,7 +28,7 @@ p.leading-5 {
                                 {{ $t('springs.edit') }}</nav-button>
                         </div>
 
-                        <h2>
+                        <h2 class="mt-5 sm:mt-10">
                             {{ news_item.title }}
                         </h2>
 

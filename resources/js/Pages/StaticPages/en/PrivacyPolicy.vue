@@ -1,7 +1,7 @@
 <template>
 
-    <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
-        <div class="p-10 bg-white overflow-hidden shadow-xl sm:rounded-lg">
+    <div class="max-w-7xl mx-auto lg:py-10 sm:px-6 lg:px-8">
+        <div class="p-5 sm:p-10 bg-white overflow-hidden shadow-xl sm:rounded-lg">
 
             <div>
                 <h2>1. Allikad.info STATEMENT ON PRIVACY</h2>

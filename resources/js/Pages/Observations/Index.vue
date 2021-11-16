@@ -4,10 +4,10 @@
             <h1>
                 {{ spring.name ||  $t('springs.unnamed')}}
             </h1>
-            <div class="sm:float-right sm:mt-0 mt-4" v-if="$page.user">
-                <nav-button :href="'/springs/'+spring.code+'/observations/create'">
+        </template>
+        <template #header-buttons>
+            <nav-button v-if="$page.user" :href="'/springs/'+spring.code+'/observations/create'">
                     {{ $t('springs.add_new_observation') }}</nav-button>
-            </div>
         </template>
 
         <div class="py-6">

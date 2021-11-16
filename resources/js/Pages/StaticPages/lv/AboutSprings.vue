@@ -1,6 +1,6 @@
 <template>
-    <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
-        <div class="p-10 bg-white overflow-hidden shadow-xl sm:rounded-lg">
+    <div class="max-w-7xl mx-auto lg:py-10 sm:px-6 lg:px-8">
+        <div class="p-5 sm:p-10 bg-white overflow-hidden shadow-xl sm:rounded-lg">
 
             <div>
                 <h2 class="mt-0">Kāpēc nepieciešams brīvprātīgais avotu monitorings?</h2>
@@ -13,7 +13,7 @@
 
             <div>
                 <div id="why-study-springs" class="h-1"></div>
-                <h2 class="mt-10">Kāpēc nepieciešama avotu izpēte?</h2>
+                <h2 class="mt-5 sm:mt-10">Kāpēc nepieciešama avotu izpēte?</h2>
                 <div>
                     <div class="mb-3">
                         Kvalitatīvs dzeramais ūdens kļūst par arvien grūtāk pieejamu resursu visā pasaulē.
@@ -65,7 +65,7 @@
 
             <div>
                 <div id="what-are-springs" class="h-1"></div>
-                <h2 class="mt-10">Kas ir avots?</h2>
+                <h2 class="mt-5 sm:mt-10">Kas ir avots?</h2>
                 <div>
                     <div class="mb-3">
                         Avots ir vieta, kur pazemes ūdeņi dabiski izplūst virszemē - dažreiz atsevišķu pilienu

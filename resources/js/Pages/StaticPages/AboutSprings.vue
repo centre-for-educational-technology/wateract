@@ -13,6 +13,10 @@
 
         <about-springs-lv v-if="$i18n.locale == 'lv'"></about-springs-lv>
 
+        <about-springs-en v-if="$i18n.locale == 'ru'"></about-springs-en>
+
+        <about-springs-en v-if="$i18n.locale == 'fr'"></about-springs-en>
+
     </app-layout>
 </template>
 

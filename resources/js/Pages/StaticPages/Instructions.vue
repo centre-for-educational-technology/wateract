@@ -13,6 +13,10 @@
 
         <instructions-lv v-if="$i18n.locale == 'lv'"></instructions-lv>
 
+        <instructions-en v-if="$i18n.locale == 'ru'"></instructions-en>
+
+        <instructions-en v-if="$i18n.locale == 'fr'"></instructions-en>
+
     </app-layout>
 </template>
 

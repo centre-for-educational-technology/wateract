@@ -4,7 +4,9 @@
             <h1>
                 {{ spring.name ||  $t('springs.unnamed')}}
             </h1>
-            <div class="sm:float-right sm:mt-0 mt-4" v-if="$page.user">
+        </template>
+        <template #header-buttons>
+            <div class="inline-block" v-if="$page.user">
                 <nav-button v-if="can('add measurement')" :href="'/springs/'+spring.code+'/analyses/create'">
                     {{ $t('springs.add_new_measurement') }}</nav-button>
             </div>

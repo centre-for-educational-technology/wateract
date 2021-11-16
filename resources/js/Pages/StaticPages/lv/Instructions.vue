@@ -1,6 +1,6 @@
 <template>
-    <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
-        <div class="p-10 bg-white overflow-hidden shadow-xl sm:rounded-lg">
+    <div class="max-w-7xl mx-auto lg:py-10 sm:px-6 lg:px-8">
+        <div class="p-5 sm:p-10 bg-white overflow-hidden shadow-xl sm:rounded-lg">
 
             <div>
                 <div id="why-study-springs" class="h-1"></div>
@@ -20,7 +20,7 @@
             </div>
             <div>
                 <div id="how-to-find-springs" class="h-1"></div>
-                <h2 class="mt-10">Kā atrast avotus?</h2>
+                <h2 class="mt-5 sm:mt-10">Kā atrast avotus?</h2>
                 <div class="mb-3">
                     Atveriet mūsu karšu lietojumprogrammu un meklējiet marķierus dzeltenā krāsā.
                     Tās ir iespējamās avotu atrašanās vietas, kuras nepieciešams apstiprināt. Kādam ir
@@ -45,7 +45,7 @@
             </div>
             <div>
                 <div id="how-to-recognize-springs" class="h-1"></div>
-                <h2 class="mt-10">Kā atpazīt avotus?</h2>
+                <h2 class="mt-5 sm:mt-10">Kā atpazīt avotus?</h2>
                 <div>
                     Ne katra dabiska ūdenstilpe ir avots, un ne katra ūdenstece sākas no avota. Lai
                     pārliecinātos, vai atrastā objekta izcelsme ir saistīta ar virszemē izplūstošiem pazemes
@@ -61,7 +61,7 @@
             </div>
             <div>
                 <div id="how-to-describe-springs" class="h-1"></div>
-                <h2 class="mt-10">Kā raksturot avotu?</h2>
+                <h2 class="mt-5 sm:mt-10">Kā raksturot avotu?</h2>
                 <div>
                     Raksturojot avotu, jāpievērš uzmanība un jāapraksta šādi aspekti:
                     <ul class="list-disc ml-5">
@@ -94,7 +94,7 @@
             </div>
             <div>
                 <div id="how-to-take-pictures" class="h-1"></div>
-                <h2 class="mt-10">Kā fotografēt avotu?</h2>
+                <h2 class="mt-5 sm:mt-10">Kā fotografēt avotu?</h2>
                 <div>
                     <div class="mb-3">
                         Katra fotogrāfija ir pierādījums par konkrētas vietas apstākļiem noteiktā laikā. Lai iegūtu labu fotoattēlu monitoringam, Jums jāņem vērā daži aspekti.
@@ -145,7 +145,7 @@
             </div>
             <div>
                 <div id="how-to-assess-water" class="h-1"></div>
-                <h2 class="mt-10">Kā novērtēt avota ūdens īpašības?</h2>
+                <h2 class="mt-5 sm:mt-10">Kā novērtēt avota ūdens īpašības?</h2>
                 <div>
                     <div>
                         <h3 class="font-bold mt-3">Kā raksturot avota ūdens kvalitāti?</h3>
@@ -204,7 +204,7 @@
             </div>
             <div>
                 <div id="how-to-measure-flow-rate" class="h-1"></div>
-                <h2 class="mt-10">Kā nomērīt no avota izplūstošā ūdens daudzumu?</h2>
+                <h2 class="mt-5 sm:mt-10">Kā nomērīt no avota izplūstošā ūdens daudzumu?</h2>
                 <div>
                     <div>
                         Avota izplūdes (straumes plūsmas) mērīšana ir ļoti būtiska, lai izprastu ūdens nesējslāņa darbību un pazemes ūdeņu resursu pieejamību. Turklāt plūsmas nepārtrauktībai ir izšķiroša nozīme, lai nodrošinātu ūdens piegādi iedzīvotājiem un no pazemes ūdeņiem atkarīgo ekosistēmu ilgtspējīgai attīstībai. Paredzams, ka no avota izplūdušā ūdens daudzums sezonāli mainās, tāpēc, lai iegūtu detalizētu pārskatu par pazemes ūdeņu plūsmas dinamiku, mērījumi jāveic visos gadalaikos.

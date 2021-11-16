@@ -1,6 +1,6 @@
 <template>
-    <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
-        <div class="p-10 bg-white overflow-hidden shadow-xl sm:rounded-lg">
+    <div class="max-w-7xl mx-auto lg:py-10 sm:px-6 lg:px-8">
+        <div class="p-5 sm:p-10 bg-white overflow-hidden shadow-xl sm:rounded-lg">
 
             <div>
                 <h2 class="mt-0">Miks allikate vabatahtlik seire?</h2>
@@ -11,7 +11,7 @@
 
             <div>
                 <div id="why-study-springs" class="h-1"></div>
-                <h2 class="mt-10">Miks allikaid uurida?</h2>
+                <h2 class="mt-5 sm:mt-10">Miks allikaid uurida?</h2>
                 <div>
                     <div class="mb-3">
                         Puhas vesi on muutumas kogu maailmas üha napimaks ressursiks. Peame arvestama tõsiasjaga, et suurem osa veest (~97%) Maal on soolane ja magevesi vedelal kujul moodustab vaid umbes 0,8% kogu Maa veevarudest. Peamine osa mageveest esineb põhjaveena. Allikad on põhjavee loomulikud väljavoolud - seega olulisel kohal ka veeringluses. Eestis ja Lätis on olukord veevarudega hetkel veel üsna hea, kuid kliimamuutused ja üha intensiivsem inimtegevus (näiteks pestitsiidide ja väetiste kasutamine põllumajanduses, kraavitamine, kaevandamine jms) muudavad vee kättesaadavust ja kvaliteeti.
@@ -36,7 +36,7 @@
 
             <div>
                 <div id="what-are-springs" class="h-1"></div>
-                <h2 class="mt-10">Mis on allikas?</h2>
+                <h2 class="mt-5 sm:mt-10">Mis on allikas?</h2>
                 <div>
                     <div class="mb-3">
                         Allikas on põhjavee looduslik väljavool maapinnale või veekogu põhja. Vesi võib allikast ainult vaevu immitseda (nn igritsevad allikad), esineda seal ainult ajutiselt pärast vihma või olla läbi aastate pidev ja suuremahuline. Põhjavee puhul eristatakse erinevaid põhjaveekihte, mis on justkui maa-alused veereservuaarid, mida üksteisest eraldavad veepidemed (vettpidavaid kihte). Allikad ilmuvad kohtades, kus põhjaveetase, mis tähistab tinglikult põhjaveekihi veega küllastunud osa pinda, lõikub maapinnaga, ja kerkib selle kohale.
