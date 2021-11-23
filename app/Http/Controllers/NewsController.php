@@ -18,10 +18,7 @@ class NewsController extends Controller
      */
     public function index()
     {
-        $news = News::where('visible', 1)->get();
-        return Inertia::render('News/Index', [
-            'news' => $news,
-        ]);
+        return Inertia::render('News/Index');
     }
 
     /**
