@@ -1,0 +1,342 @@
+<template>
+
+    <l-map ref="leafletMap" style="width:100%;height:100%;z-index:0;"
+           :maxZoom="17"
+           :minZoom="10"
+           :tms="tms"
+           :crs="crs"
+           :continuousWorld="true"
+           :bounds="bounds"
+           @update:zoom="$parent.maaametZoomUpdate"
+           @update:center="$parent.maaametCenterUpdate"
+           :options="mapOptions"
+           @ready="onReady"
+           @locationfound="onLocationFound"
+           @click="updateLocation"
+           @fullscreenchange="maaametFullscreenChanged"
+    >
+        <!-- @fullscreenchange="maaametFullscreenChanged" -->
+        <l-control>
+            <svg @click="showLocation" class="h-8 w-8 p-1 bg-white border-2 rounded cursor-pointer hover:bg-gray-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd">
+                    <title>{{ $t('springs.pan_to_current_location') }}</title>
+                </path>
+            </svg>
+        </l-control>
+
+        <l-control position="bottomright" v-if="!fullscreen">
+            <div class="bg-white p-1 border-2 rounded cursor-pointer hover:bg-gray-100" @click="showWorldMap">{{ $t('springs.world_map') }}</div>
+        </l-control>
+        <l-control  position="bottomright">
+            <div class="bg-white p-1 border-2 rounded cursor-pointer hover:bg-gray-100" @click="showOrthoPhoto">{{ $t('springs.orthophoto') }}</div>
+        </l-control>
+        <l-control position="bottomright">
+            <div class="bg-white p-1 border-2 rounded cursor-pointer hover:bg-gray-100" @click="showReliefShadedMap">{{ $t('springs.relief_shaded_map') }}</div>
+        </l-control>
+        <l-control position="bottomright">
+            <div class="bg-white p-1 border-2 rounded cursor-pointer hover:bg-gray-100" @click="showReliefMap">{{ $t('springs.relief_map') }}</div>
+        </l-control>
+
+        <l-control-fullscreen />
+
+        <!--<l-control-layers></l-control-layers>-->
+
+        <l-wms-tile-layer
+            v-for="layer in wmslayers"
+            :key="layer.name"
+            :base-url="baseUrl"
+            :layers="layer.layers"
+            :name="layer.name"
+            :tms="tms"
+            :zIndex="layer.zindex"
+            :transparent="layer.transparent"
+        />
+
+        <l-marker
+            :lat-lng="currentPosition"
+            :icon="currentPositionIcon"
+        ></l-marker>
+
+        <l-marker v-if="this.springLocation"
+                  :lat-lng="springLocation"
+                  :icon="springLocationIcon"
+        ></l-marker>
+
+        <l-marker-cluster :options="maaametClusterOptions">
+            <l-marker v-for="(marker, index) in leafletmarkers"
+                      :key="index"
+                      :lat-lng="marker.position">
+                <l-popup>
+                    <div class="pb-2"><a class="underline text-blue-700" :href="'/springs/'+marker.id+'/'">{{marker.name || 'Unnamed'}}</a></div>
+                    <div>{{ $t('springs.spring_code') }}: {{marker.id}} <br />{{ $t('springs.status') }}: {{ $t('springs.status_options.'+marker.status) }}</div>
+                </l-popup>
+            </l-marker>
+        </l-marker-cluster>
+
+    </l-map>
+
+</template>
+<script>
+import { latLngBounds, latLng, icon } from "leaflet";
+import L from 'leaflet';
+import { LMap, LTileLayer, LWMSTileLayer,LMarker, LIcon, LControlZoom, LControl, LPopup, LControlLayers } from 'vue2-leaflet';
+import "proj4leaflet";
+import Vue2LeafletMarkerCluster from 'vue2-leaflet-markercluster'
+import { Icon } from 'leaflet';
+import { GestureHandling } from "leaflet-gesture-handling";
+import "leaflet-gesture-handling/dist/leaflet-gesture-handling.css";
+import "leaflet.markercluster/dist/MarkerCluster.css";
+import "leaflet.markercluster/dist/MarkerCluster.Default.css";
+import { relief_shaded_wms_layers, relief_wms_layers, orthophoto_wms_layers, springLocationIcon } from '../../../constants.js';
+import LControlFullscreen from 'vue2-leaflet-fullscreen';
+
+delete Icon.Default.prototype._getIconUrl;
+Icon.Default.mergeOptions({
+    iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
+    iconUrl: require('leaflet/dist/images/marker-icon.png'),
+    shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
+});
+
+let projection = new L.Proj.CRS('EPSG:3301', '+proj=lcc +lat_1=59.33333333333334 +lat_2=58 +lat_0=57.51755393055556 +lon_0=24 +x_0=500000 +y_0=6375000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs', {
+    resolutions: [4000, 2000, 1000, 500, 250, 125, 62.5, 31.25, 15.625, 7.8125, 3.90625, 1.953125, 0.9765625, 0.48828125, 0.244140625, 0.122070313, 0.061035156, 0.030517578, 0.015258789],
+    origin: [40500, 5993000],
+    bounds: L.bounds([40500, 5993000], [1064500, 7017000])
+});
+
+let redDotSvgString = '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="40" stroke="black" stroke-width="10" fill="red"/></svg>';
+let redDotIconUrl = encodeURI("data:image/svg+xml," + redDotSvgString).replace('#','%23');
+
+export default {
+    components: {
+        latLngBounds,
+        LControlLayers,
+        LMap,
+        LTileLayer,
+        "l-wms-tile-layer": LWMSTileLayer,
+        LMarker,
+        LIcon,
+        LControlZoom,
+        LControl,
+        LPopup,
+        'l-marker-cluster': Vue2LeafletMarkerCluster,
+        GestureHandling,
+        LControlFullscreen,
+    },
+    props: ['springs', 'spring', 'view', 'zoom'],
+    data() {
+        let leafletmarkers = [];
+        _.forEach(this.springs, function(spring) {
+            leafletmarkers.push({
+                id: spring.code,
+                name: spring.name,
+                status: spring.status,
+                position: latLng(spring.latitude, spring.longitude),
+            });
+        });
+        let springLocation = {lat: null, lng: null};
+        if (this.spring) {
+            springLocation = {lat: this.spring.latitude, lng: this.spring.longitude}
+        }
+
+        let map = 'maaamet';
+        let ee_spring = true;
+        if (this.spring && this.spring.country !== 'EE') {
+            map = 'openstreet';
+            ee_spring = false;
+        }
+
+
+
+        return {
+
+            baseUrl: 'https://kaart.maaamet.ee/wms/fotokaart', //https://kaart.maaamet.ee/wms/fotokaart
+
+            wmslayers: [
+                {
+                    name: 'Reljeef',
+                    zindex: 1,
+                    visible: true,
+                    format: 'image/png',
+                    layers: 'vreljeef,HYBRID', //pohi_vv, of10000
+                    attribution: "Maa-amet"
+                },
+                /*{
+                    name: 'Reljeefvarjutusega',
+                    visible: false,
+                    format: 'image/png',
+                    layers: 'pohi_vr2', //pohi_vv, of10000
+                    transparent: true,
+                    attribution: "Weather data © 2012 IEM Nexrad"
+                },
+                {
+                    name: 'Ortophoto',
+                    visible: false,
+                    format: 'image/png',
+                    layers: 'of10000', //pohi_vv, of10000
+                    transparent: true,
+                    attribution: "Weather data © 2012 IEM Nexrad"
+                },*/
+
+            ],
+
+
+
+            mapOptions: {
+                zoomSnap: 1,
+                gestureHandling:true
+            },
+            maaametClusterOptions: {
+                disableClusteringAtZoom: 11,
+                maxClusterRadius: 70,
+            },
+
+            cacheOpenStreetMapZoom: 7,
+            cacheOpenStreetCenter: latLng(58.379, 24.554),
+            cacheMaaametMapZoom: 11,
+            cacheMaaametCenter: latLng(58.379, 24.554),
+
+            openStreetMap: map !== 'maaamet',
+            openStreetMapZoom: 7,
+            openStreetCenter: latLng(58.379, 24.554),
+
+            maaametMap: map !== 'openstreet',
+            maaametMapZoom: 11,
+            maaametCenter: latLng(58.379, 24.554),
+
+            ee_spring: ee_spring,
+
+            currentPosition: {lat: null, lng: null},
+            currentPositionIcon: icon({
+                iconUrl: redDotIconUrl,
+                iconSize: [16, 16],
+                iconAnchor: [8, 16]
+            }),
+
+            springLocation: springLocation,
+            springLocationIcon: springLocationIcon,
+
+            layerIndex: 0,
+            leafletmarkers: leafletmarkers,
+            crs: projection,
+            tms: true,
+            attribution: "<a href='http://www.maaamet.ee'>Maa-amet</a>",
+            bounds: latLngBounds([
+                [60.4349, 29.4338],
+                [56.7458, 20.373]
+            ]),
+            fullscreen: false,
+
+        }
+    },
+    methods: {
+        showReliefMap() {
+            this.$parent.maaAmetMapTypeUpdate('relief');
+            this.baseUrl = 'https://kaart.maaamet.ee/wms/fotokaart';
+            this.wmslayers = relief_wms_layers;
+        },
+        showReliefShadedMap() {
+            this.$parent.maaAmetMapTypeUpdate('relief_shaded');
+            this.baseUrl = 'https://kaart.maaamet.ee/wms/fotokaart';
+            this.wmslayers = relief_shaded_wms_layers;
+        },
+        showOrthoPhoto() {
+            this.$parent.maaAmetMapTypeUpdate('orthophoto');
+            this.baseUrl = 'https://kaart.maaamet.ee/wms/fotokaart';
+            this.wmslayers = orthophoto_wms_layers;
+        },
+        showWorldMap() {
+            this.$parent.showWorldMap();
+        },
+        onReady(mapObject) {
+            console.log('WMS kaardi seadistus');
+            if (this.$parent.maaAmetMapType === 'relief_shaded') {
+                this.baseUrl = 'https://kaart.maaamet.ee/wms/fotokaart';
+                this.wmslayers = relief_shaded_wms_layers;
+            } else if (this.$parent.maaAmetMapType === 'orthophoto') {
+                this.baseUrl = 'https://kaart.maaamet.ee/wms/fotokaart';
+                this.wmslayers = orthophoto_wms_layers;
+            } else {
+                this.baseUrl = 'https://kaart.maaamet.ee/wms/fotokaart';
+                this.wmslayers = relief_wms_layers;
+            }
+
+            this.leafletMapObject = mapObject;
+            this.leafletMapObject.setView(this.$parent.mapCenter, this.$parent.maaAmetMapZoom);
+            /*if (this.leafletMapObject.isFullscreen() && this.$parent.fullscreen === false) {
+                this.leafletMapObject.toggleFullscreen();
+            } else if (!(this.leafletMapObject.isFullscreen()) && this.$parent.fullscreen === true) {
+                console.log("wms map fullscreen was: " + this.leafletMapObject.isFullscreen());
+                console.log("toggle to fullscreen");
+                this.leafletMapObject.toggleFullscreen();
+                //this.leafletMapObject.fullscreen = true;
+
+            } else {
+                console.log("fullscreen ok");
+            }
+            console.log("wms map fullscreen: " + this.leafletMapObject.isFullscreen());*/
+
+            if (this.view === 'show' || this.view === 'edit') {
+                let leafletCenter = latLng(this.spring.latitude, this.spring.longitude);
+                this.leafletMapObject.setView(leafletCenter, 11);
+            }
+        },
+        showLocation() {
+            this.leafletMapObject.locate();
+        },
+        onLocationFound(location) {
+            this.currentPosition= location.latlng;
+            this.leafletMapObject.setView(location.latlng, 9);
+        },
+        maaametZoomUpdate(zoom) {
+            this.$parent.maaametZoomUpdate(zoom);
+        },
+        maaametCenterUpdate(center) {
+            this.$parent.mapCenterUpdate(center);
+        },
+        maaametFullscreenChanged(fullscreen) {
+            console.log("wms fullscreen changed: " + this.leafletMapObject.isFullscreen());
+            /*if (this.leafletMapObject.isFullscreen()) {
+                this.fullscreen = true;
+            } else {
+                this.fullscreen = false;
+            }*/
+        },
+        updateLocation(location) {
+            if (this.view === 'create' || this.view === 'edit') {
+                let latitude = Number(location.latlng.lat);
+                let longitude = Number(location.latlng.lng);
+                if (latitude && longitude) {
+                    this.springLocation = {lat: latitude, lng: longitude};
+                    this.$emit('changeLocation', location);
+                }
+            }
+        },
+        getExistingSprings() {
+            let params = {};
+            if (this.spring) {
+                params = {
+                    'spring_id': this.spring.id
+                }
+            }
+            axios.get('/getSprings', { params }).then(response => {
+                let springs = response.data;
+                let markers = [];
+                _.forEach(springs, function(spring) {
+                    markers.push({
+                        id: spring.code,
+                        name: spring.name,
+                        status: spring.status,
+                        position: latLng(spring.latitude, spring.longitude),
+                    });
+                });
+                this.leafletmarkers = markers;
+            })
+        }
+    },
+    created: function(){
+        if (this.spring || this.view === 'create') {
+            this.getExistingSprings();
+        }
+    }
+}
+</script>

@@ -23,7 +23,11 @@
                     <small v-on:click="initializeSearch" class="cursor-pointer underline">{{ $t('springs.see_all_springs') }}</small>
                 </div>
 
-                <estonian-map v-if="this.country === 'ee'" :key="mapRefresh" :springs="mapSprings" ></estonian-map>
+                <!--<estonian-map v-if="this.country === 'ee'" :key="mapRefresh" :springs="mapSprings" ></estonian-map>-->
+
+                <!--<estonian-map-with-layers v-if="this.country === 'ee'" :key="mapRefresh" :springs="[]"></estonian-map-with-layers>-->
+
+                <estonian-maps v-if="this.country === 'ee'" :key="mapRefresh" :springs="mapSprings"></estonian-maps>
 
                 <latvian-map v-if="this.country === 'lv'" :key="mapRefresh" :springs="mapSprings" ></latvian-map>
 
@@ -31,7 +35,6 @@
 
             </div>
         </div>
-
     </app-layout>
 </template>
 <script>
@@ -42,6 +45,8 @@ import SpringView from './SpringView'
 import JetLabel from "../../Jetstream/Label";
 import LeafletMaps from './LeafletMaps';
 import EstonianMap from "../../Components/Maps/EstonianMap";
+import EstonianMaps from "../../Components/Maps/Estonia/EstonianMaps";
+//import EstonianMapWithLayers from '../../Components/Maps/EstonianMapWithLayers';
 import LatvianMap from "../../Components/Maps/LatvianMap";
 import Tabs from './Tabs';
 
@@ -54,6 +59,8 @@ export default {
         JetLabel,
         LeafletMaps,
         EstonianMap,
+        EstonianMaps,
+        //EstonianMapWithLayers,
         LatvianMap,
         Tabs,
     },

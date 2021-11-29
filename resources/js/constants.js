@@ -58,6 +58,39 @@ export const orthophoto_layers = [
     },
 ];
 
+export const relief_wms_layers = [
+    {
+        name: 'Relief',
+        zindex: 1,
+        visible: true,
+        format: 'image/png',
+        layers: 'vreljeef,HYBRID',
+        attribution: "Maa-amet"
+    },
+];
+
+export const relief_shaded_wms_layers = [
+    {
+        name: 'ReljeefShaded',
+        zindex: 1,
+        visible: true,
+        format: 'image/png',
+        layers: 'MA-FOTOKAART', //pohi_vv, of10000
+        attribution: "Maa-amet"
+    },
+];
+
+export const orthophoto_wms_layers = [
+    {
+        name: 'Orthophoto',
+        zindex: 1,
+        visible: true,
+        format: 'image/png',
+        layers: 'EESTIFOTO',
+        attribution: "© Maa-amet"
+    },
+];
+
 export const springLocationIcon = icon({
     iconUrl: '/images/marker-icon-red.png',
     shadowUrl: '/images/marker-shadow.png',
