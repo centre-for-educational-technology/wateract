@@ -18,11 +18,11 @@
 
                 <springs-for-review v-if="can('confirm spring')" class="m-4" />
 
-                <user-springs class="m-4" />
+                <user-springs :user_id="$page.user.id" class="m-4" />
 
-                <user-observations class="m-4" />
+                <user-observations :user_id="$page.user.id" class="m-4" />
 
-                <user-measurements class="m-4" />
+                <user-measurements :user_id="$page.user.id" class="m-4" />
 
             </div>
         </div>

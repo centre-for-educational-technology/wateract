@@ -73,14 +73,25 @@ class UserController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Show user page.
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param User $user
+     * @return \Inertia\Response
+     * @throws \Illuminate\Auth\Access\AuthorizationException
      */
-    public function show($id)
+    public function show(User $user)
     {
+        $this->authorize('view', $user);
 
+        if ($user->id === Auth::id()) {
+            $user_springs = $user->springs()->get();
+        } else {
+            $user_springs = $user->springs()->whereIn('status', ['submitted', 'confirmed'])->get();
+        }
+        return Inertia::render('Users/Show', [
+            'user' => $user,
+            'springs' => $user_springs,
+        ]);
     }
 
     /**
@@ -141,8 +152,6 @@ class UserController extends Controller
                 'user_role' => $user_role,
                 'user_counties' => $user_counties_ids,
                 'selected_user' => $user ]);
-        //}
-        //return Inertia::render('Springs/Show', ['spring' => $spring]);
     }
 
     /**
@@ -217,32 +226,51 @@ class UserController extends Controller
         return redirect()->back();
     }
 
-    public function mySprings(Request $request)
+    public function userSprings(int $user_id, Request $request)
     {
         $length = $request->input('length');
         $orderBy = $request->input('column', 'created_at');
         $orderByDir = $request->input('dir', 'desc');
-        $query = Spring::where('user_id', Auth::id())->with('feedback')->orderBy($orderBy, $orderByDir);
+        if ($user_id === Auth::id()) {
+            $query = Spring::where('user_id', $user_id)
+                ->with('feedback')->orderBy($orderBy, $orderByDir);
+        } else {
+            $query = Spring::where('user_id', $user_id)->whereIn('status', ['submitted', 'confirmed'])
+                ->with('feedback')->orderBy($orderBy, $orderByDir);
+        }
         $data = $query->paginate($length);
         return new DataTableCollectionResource($data);
     }
 
-    public function myObservations(Request $request)
+    public function userObservations(int $user_id, Request $request)
     {
         $length = $request->input('length');
         $orderBy = $request->input('column', 'created_at');
         $orderByDir = $request->input('dir', 'desc');
-        $query = Observation::where('user_id', Auth::id())->with('spring')->orderBy($orderBy, $orderByDir);
+        if ($user_id === Auth::id()) {
+            $query = Observation::where('user_id', $user_id)
+                ->with('spring')->orderBy($orderBy, $orderByDir);
+        } else {
+            $query = Observation::where('user_id', $user_id)->where('status', 'submitted')
+                ->with('spring')->orderBy($orderBy, $orderByDir);
+
+        }
         $data = $query->paginate($length);
         return new DataTableCollectionResource($data);
     }
 
-    public function myMeasurements(Request $request)
+    public function userMeasurements(int $user_id, Request $request)
     {
         $length = $request->input('length');
         $orderBy = $request->input('column', 'created_at');
         $orderByDir = $request->input('dir', 'desc');
-        $query = Measurement::where('user_id', Auth::id())->with('spring')->orderBy($orderBy, $orderByDir);
+        if ($user_id === Auth::id()) {
+            $query = Measurement::where('user_id', $user_id)
+                ->with('spring')->orderBy($orderBy, $orderByDir);
+        } else {
+            $query = Measurement::where('user_id', $user_id)->where('status', 'submitted')
+                ->with('spring')->orderBy($orderBy, $orderByDir);
+        }
         $data = $query->paginate($length);
         return new DataTableCollectionResource($data);
     }

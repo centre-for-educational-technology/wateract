@@ -10,18 +10,12 @@
 
     <div>
 
-        <div class="flex w-full mb-1 ">
-            <h3 class="flex w-3/4 text-xl">{{  $t('springs.my_springs') }}</h3>
-            <div class="flex w-1/4 text-right inline">
-                <div class="w-full">
-                    <nav-button :href="'springs/create'">{{ $t('springs.create_new_spring') }}</nav-button>
-                </div>
-            </div>
-        </div>
+        <h3 class="text-xl">{{ $t('springs.my_springs') }}</h3>
+
         <data-table
             :columns="columns"
             :translate="translate"
-            :url="'/myspringsview'"
+            :url="'/userspringsview/'+user_id"
             framework="tailwind"
             order-by="created_at"
             order-dir="desc"
@@ -41,6 +35,7 @@ export default {
     components: {
         NavButton,
     },
+    props: ['user_id'],
     data() {
         return {
             columns: [

@@ -76,7 +76,10 @@
                             <div class="py-2" v-if="(spring.user && $page.user)">
                                 <div class="group">
                                     <strong>{{ $t('springs.added_by') }}</strong>
-                                    <div>{{ spring.user.name }}</div>
+                                    <div v-if="is('admin') || is('super-admin')">
+                                        <a class="underline" :href="'/admin/users/'+spring.user.id">{{ spring.user.name }}</a>
+                                    </div>
+                                    <div v-else>{{ spring.user.name }}</div>
                                 </div>
                             </div>
 

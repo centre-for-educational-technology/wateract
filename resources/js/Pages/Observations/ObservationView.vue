@@ -51,6 +51,12 @@
             </div>
         </div>
 
+        <div v-if="observation.user && $page.user && (is('admin') || is('super-admin'))">
+            <jet-label :value="$t('springs.added_by')" />
+            <a class="underline" :href="'/admin/users/'+observation.user_id">{{ observation.user.name }}</a>
+        </div>
+
+
     </div>
 
 

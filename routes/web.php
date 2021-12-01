@@ -111,9 +111,9 @@ Route::resource('springs.analyses', MeasurementController::class, [ 'parameters'
 Route::resource('measurements', MeasurementController::class);
 Route::get('/springs/{spring_id}/feedbackview', [SpringFeedbackController::class, 'view']);
 Route::get('/springsforreview', [SpringController::class, 'springsForReview']);
-Route::get('/myspringsview', [UserController::class, 'mySprings']);
-Route::get('/myobservationsview', [UserController::class, 'myObservations']);
-Route::get('/mymeasurementsview', [UserController::class, 'myMeasurements']);
+Route::get('/userspringsview/{user_id}', [UserController::class, 'userSprings']);
+Route::get('/userobservationsview/{user_id}', [UserController::class, 'userObservations']);
+Route::get('/usermeasurementsview/{user_id}', [UserController::class, 'userMeasurements']);
 Route::get('/getSprings', [SpringController::class, 'getSprings']);
 Route::get('/getSpringInfo', [SpringController::class, 'getSpringInfo']);
 Route::get('/getObservations', [ObservationController::class, 'getObservations']);

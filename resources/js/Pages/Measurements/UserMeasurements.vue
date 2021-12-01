@@ -10,7 +10,7 @@
         <h3 class="text-xl">{{ $t('springs.my_measurements') }}</h3>
         <data-table
             :columns="columns"
-            :url="'/mymeasurementsview'"
+            :url="'/usermeasurementsview/'+user_id"
             framework="tailwind"
             order-by="created_at"
             order-dir="desc"
@@ -28,6 +28,7 @@ export default {
     components: {
         MeasurementStatusCell,
     },
+    props: ['user_id'],
     data() {
         return {
             columns: [

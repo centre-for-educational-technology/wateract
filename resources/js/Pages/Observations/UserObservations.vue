@@ -10,7 +10,7 @@
         <h3 class="text-xl">{{ $t('springs.my_observations') }}</h3>
         <data-table
             :columns="columns"
-            :url="'/myobservationsview'"
+            :url="'/userobservationsview/'+user_id"
             framework="tailwind"
             order-by="created_at"
             order-dir="desc"
@@ -28,6 +28,7 @@ export default {
     components: {
         ObservationStatusCell,
     },
+    props: ['user_id'],
     data() {
         return {
             columns: [

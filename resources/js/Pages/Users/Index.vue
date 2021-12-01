@@ -22,7 +22,7 @@
                         </thead>
                         <tbody>
                             <tr v-for="(row, index) in users" :class="{'bg-gray-100': index % 2, 'bg-white': !(index % 2)}">
-                                <td>{{ row.name }}</td>
+                                <td><a :href="'/admin/users/'+row.id">{{ row.name }}</a></td>
                                 <td>{{ row.email }}</td>
                                 <td>
                                     <label v-for="role in row.roles">{{ $t('springs.'+role.name) }}</label>
