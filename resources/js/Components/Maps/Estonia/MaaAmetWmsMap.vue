@@ -8,7 +8,7 @@
            :continuousWorld="true"
            :bounds="bounds"
            @update:zoom="$parent.maaametZoomUpdate"
-           @update:center="$parent.maaametCenterUpdate"
+           @update:center="$parent.mapCenterUpdate"
            :options="mapOptions"
            @ready="onReady"
            @locationfound="onLocationFound"
@@ -284,8 +284,9 @@ export default {
             this.leafletMapObject.locate();
         },
         onLocationFound(location) {
+            this.$parent.mapCenterUpdate(location.latlng);
             this.currentPosition= location.latlng;
-            this.leafletMapObject.setView(location.latlng, 9);
+            this.leafletMapObject.setView(location.latlng, 14);
         },
         maaametZoomUpdate(zoom) {
             this.$parent.maaametZoomUpdate(zoom);
