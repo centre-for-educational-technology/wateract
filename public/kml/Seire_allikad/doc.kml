@@ -1,0 +1,5857 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+<Document id="Seire_allikad_rakendusse_punkt1_1">
+  <name>Seire_allikad_rakendusse_punkt1_1</name>
+  <Snippet></Snippet>
+  <Style id="IconStyle00">
+    <IconStyle>
+      <scale>0.250000</scale>
+      <Icon><href>Layer0_Symbol_4bfd75d8_0.png</href></Icon>
+    </IconStyle>
+    <LabelStyle>
+      <color>00000000</color>
+      <scale>0.000000</scale>
+    </LabelStyle>
+    <PolyStyle>
+      <color>ff000000</color>
+      <outline>0</outline>
+    </PolyStyle>
+  </Style>
+  <Folder id="FeatureLayer0">
+    <name>Seire_allikad_rakendusse_punkt1_1</name>
+    <Snippet></Snippet>
+    <Placemark id="ID_00000">
+      <name>SJB1074000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1074000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1074000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Holstre allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4711700</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.68947654900006,58.30773638800008,66.13899999999558</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00001">
+      <name>SJB1033000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1033000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1033000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Lepiku allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4104600</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.69896280900008,58.26017717500008,42.74400000000605</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00002">
+      <name>SJB1075000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1075000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1075000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Külitse allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4104000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.59742947500007,58.33548138100008,55.14800000000105</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00003">
+      <name>SJA3693000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA3693000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA3693000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PAA27020: Iluski allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4314300</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.61795062400006,59.31850223500004,64.67200000000594</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00004">
+      <name>SJB1037000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1037000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1037000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Illi allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4106000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.43790564800003,58.20913530100006,46.16599999999744</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00005">
+      <name>SJA4718000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA4718000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA4718000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PAA25: Varangu allikas/A25: Varangu allikas (katastri nr 132075)</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4311900</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.09810098300005,59.04182782800007,91.56100000000174</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00006">
+      <name>SJB1045000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1045000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1045000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Talvikese allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4105200</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.82599140600007,58.18161147600006,68.90300000000616</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00007">
+      <name>SJB1063000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1063000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1063000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Uniküla allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4103800</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.89359070100005,58.25979447000003,57.21899999999732</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00008">
+      <name>SJB1072000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1072000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1072000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Tilleoru allikad</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4609900</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.93553233700004,58.03880675200003,77.65899999999988</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00009">
+      <name>SJA8964000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA8964000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA8964000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ora jõe oru allikad</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4607100</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 27.07964452300007,58.09041780600006,41.9320000000007</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00010">
+      <name>SJA5718000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA5718000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA5718000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PAA1009: Kiigumõisa Külmaallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4506400</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.65341167100007,59.04782292500005,73.18799999999487</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00011">
+      <name>SJA2366000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA2366000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA2366000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PAA23: Konnavere allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4107718</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.00376819000007,59.26125837700005,88.35099999999511</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00012">
+      <name>SJA5476000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA5476000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA5476000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Mihka-Jüri allikad</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4508600</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 24.86349273900004,58.91770325800007,55.61400000000208</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00013">
+      <name>SJB1120000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1120000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1120000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Tammiku allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4311800</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.32243367600006,58.98884778400003,102.5320000000065</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00014">
+      <name>SJB1044000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1044000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1044000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Riidaja allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4612900</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.90878273400006,58.08398695600005,81.06500000000233</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00015">
+      <name>SJB1070000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1070000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1070000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Lilastvere allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4401800</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.70888574900005,58.86486719700008,60.17999999999302</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00016">
+      <name>SJA8446000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA8446000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA8446000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Saula Siniallikad</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4503300</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.04241350300003,59.21512738100006,43.75500000000466</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00017">
+      <name>SJB1071000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1071000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1071000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Saverna allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4610000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.71453985100004,58.06858957700007,134.1999999999973</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00018">
+      <name>SJA2437000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA2437000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA2437000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PAA-15: Sämiveski allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4308900</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.59661908800007,59.38375667200006,53.18399999999383</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00019">
+      <name>SJA8976000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA8976000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA8976000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PAA4311500</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4311500</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.86777925800004,59.07720071300008,97.20100000000093</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00020">
+      <name>SJA8182000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA8182000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA8182000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Koila Linnamäe allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4307400</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.71890882400004,59.46028221500006,34.74700000000371</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00021">
+      <name>SJA8435000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA8435000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA8435000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PAA15: Aravete allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4210903</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.75114417000003,59.14899827900007,86.6530000000057</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00022">
+      <name>SJA1411000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA1411000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA1411000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PAA20: Äntu allikas/A20: Äntu allikas (katastri nr 132070)</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4107401</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.27146725400007,59.08027446900007,100.1410000000033</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00023">
+      <name>SJB1050000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1050000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1050000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Tiido allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4300100</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.73819916100007,58.06005730000004,131.1450000000041</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00024">
+      <name>SJA6656000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA6656000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA6656000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>A18: Kihme allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4108900</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.68011580600006,59.07104385500003,76.00100000000384</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00025">
+      <name>SJA8179000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA8179000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA8179000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PAA07: Vetiku Söeoru allikad</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4110100</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.44076988400008,59.31789070000008,76.88700000000267</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00026">
+      <name>SJB1067000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1067000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1067000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Varudi-Vanaküla allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4309000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.58559010800008,59.40489614700004,54.09799999999814</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00027">
+      <name>SJA2763000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA2763000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA2763000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PAA31: Prandi allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4113501, VEE4113504</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.70771002800006,58.84452556500003,63.22400000000198</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00028">
+      <name>SJA3688000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA3688000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA3688000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PAA1004</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4210502</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.89119448100007,59.16629935600008,100.5380000000005</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00029">
+      <name>SJA8551000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA8551000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA8551000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PAA26: Simuna allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4311701</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.40248105100005,59.04236248000007,101.1079999999931</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00030">
+      <name>SJA5970000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA5970000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA5970000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PAA22: Roosna-Alliku allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4507100</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.70501544600006,59.02292384100008,77.43600000000174</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00031">
+      <name>SJA9559000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA9559000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA9559000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Allikas Valgejõe oru lõunanõlvas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4107719</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.00801196100002,59.25707882200004,89.11900000000605</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00032">
+      <name>SJB1036000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1036000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1036000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Tääksi allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4710500</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.62031417700007,58.51539687000007,61.55800000000454</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00033">
+      <name>SJB1032000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1032000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1032000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Meeri allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4104700</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.47172880000005,58.30183548000008,52.46799999999348</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00034">
+      <name>SJA5542000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA5542000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA5542000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Tarakvere allikad</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4404600</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.76463693700003,58.77652434800007,68.11800000000244</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00035">
+      <name>SJA4615000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA4615000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA4615000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>A33: Võlingi allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4403300</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.05328740600004,58.86116544600003,73.7390000000014</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00036">
+      <name>SJA4859000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA4859000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA4859000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PA3767</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4401400</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.79779838900004,58.96568715500007,79.3350000000064</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00037">
+      <name>SJB1051000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1051000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1051000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Aegviidu siniallikad</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4502000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.66184263800005,59.25516958500003,70.35599999999999</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00038">
+      <name>SJA3013000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA3013000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA3013000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>ADA4406000: Neanurme allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4406000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.12550702500005,58.62476782200008,47.63999999999942</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00039">
+      <name>SJA6327000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA6327000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA6327000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PAA1013: Valgma allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4509500</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.64666481100005,58.87072987500005,64.27599999999802</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00040">
+      <name>SJA3851000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA3851000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA3851000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PAA19: Kiltsi allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4802701</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.19364190300007,59.07806932400007,96.51499999999942</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00041">
+      <name>SJA6600000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA6600000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA6600000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Kavilda allikas, Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4605100</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.36223053200007,58.34099114000003,50.85099999999534</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00042">
+      <name>SJA2789000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA2789000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA2789000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>ADA4405000: Ilvese allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4405000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.20772973400005,58.71476891100008,69.75199999999313</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00043">
+      <name>SJB1034000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1034000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1034000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Kolu allikad</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4802200</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.00766160600006,59.35843891100006,82.6169999999986</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00044">
+      <name>SJB1031000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1031000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1031000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Samma (Kullaaru) allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4802500</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.25113697200004,59.36132655600005,75.25800000000186</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00045">
+      <name>SJA9706000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA9706000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA9706000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>ADA30: Sopa allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4402700</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.04212604800006,58.87064534400008,74.56299999999487</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00046">
+      <name>SJA8045000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA8045000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA8045000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PAA09: Rägavere allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4310500</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.47528185600004,59.31944598800004,68.66999999999825</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00047">
+      <name>SJA5489000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA5489000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA5489000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PAA24: Esna allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4401001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.78714912800007,58.98381403100007,79.89200000000733</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00048">
+      <name>SJB1059000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1059000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1059000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Nuudalätte ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4611900</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.20222635100004,58.06945920100003,74.95299999999406</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00049">
+      <name>SJA1955000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA1955000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA1955000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>A34</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4801800</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 22.12764979000008,58.39907487200003,9.573999999993362</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00050">
+      <name>SJB1046000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1046000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1046000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Soontaga allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4612400</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.06800184300005,58.02317934200005,39.35499999999593</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00051">
+      <name>SJB1053000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1053000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1053000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Kassinurme allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.45865679700006,58.68868175000006,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00052">
+      <name>SJB1058000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1058000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1058000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Mõndavere allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.93841995400004,59.41540008000004,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00053">
+      <name>SJA8474000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA8474000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA8474000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Mõra jõeoru allikad</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.84947203700006,58.30629643600008,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00054">
+      <name>SJB1041000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1041000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1041000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Kärstna allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.80434933600003,58.14538940000006,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00055">
+      <name>SJB1043000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1043000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1043000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Loodi allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.58885316900006,58.27202000100004,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00056">
+      <name>SJA8248000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA8248000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA8248000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Kütioru allikad</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 27.16476599200007,57.82052991800003,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00057">
+      <name>SJA2858039</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA2858039</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA2858039</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Saarejärve (nr 128) - Krahviallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Ei</td>
+</tr>
+<tr>
+<td>Link</td>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.77350000800004,58.65950000100003,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00058">
+      <name>SJA0875000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA0875000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA0875000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>A17: Voore allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.53668900800005,59.24403999800006,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00059">
+      <name>SJA9141000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA9141000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA9141000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Kohtla jõgi: allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Ei</td>
+</tr>
+<tr>
+<td>Link</td>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 27.18583341000004,59.36805177300005,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00060">
+      <name>SJA8170000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA8170000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA8170000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PAA28: Vodja allikas/A28: Vodja allikas (katastri nr 132078)</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.65206158200004,58.93668128100006,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00061">
+      <name>SJA7288000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA7288000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA7288000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Haava allikad</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Ei</td>
+</tr>
+<tr>
+<td>Link</td>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.16419736700004,58.87640309200003,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00062">
+      <name>SJA7701000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA7701000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA7701000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>ADA770: Kamari allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.98862222200006,58.61326279900004,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00063">
+      <name>SJA0513000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA0513000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA0513000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PAA05: Jõepere allikas (A-19)/A05: Jõepere allikas (katastri nr 132055)</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.18218766300004,59.28990398300004,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00064">
+      <name>SJA4579000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA4579000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA4579000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PAA16: Rahkla allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.59825468000003,59.35710171000005,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00065">
+      <name>SJA4032000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA4032000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA4032000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PAA016: Porkuni allikas/A16: Porkuni allikas (katastri nr 132066)</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.20183787400003,59.18605175900007,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00066">
+      <name>SJA2449000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA2449000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA2449000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PAA10: Külmaveski allikas (A-17)/A10: Külmaveski allikas (katastri nr 132060)</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.62327329600004,59.33208855100003,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00067">
+      <name>SJA2564000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA2564000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA2564000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Vesiku allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 22.08750420300004,58.32944700600007,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00068">
+      <name>SJA7514000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA7514000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA7514000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Mõra jõeoru, Haaslava allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.83089522700004,58.31500519600007,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00069">
+      <name>SJA0670000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA0670000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA0670000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PA4310700</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.17411177800005,59.29653106100005,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00070">
+      <name>SJA2777000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA2777000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA2777000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PAA1010</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.73704545100003,59.11369032600004,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00071">
+      <name>SJA7266000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA7266000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA7266000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PA24202</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.16367845000008,59.31181938500004,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00072">
+      <name>SJA1847000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA1847000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA1847000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PA4311400</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Ei</td>
+</tr>
+<tr>
+<td>Link</td>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.95597828600006,59.19636623600007,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00073">
+      <name>SJB1048000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1048000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1048000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Viru-Kabala allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.72371091700006,59.34700287100003,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00074">
+      <name>SJA1046000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA1046000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA1046000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PAA1002: Norra allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4802900</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.04040728500007,58.90258300100004,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00075">
+      <name>SJA8199000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA8199000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA8199000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PA4313100: Vahuküla allikad</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4313100</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.10510523800008,58.97267681900007,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00076">
+      <name>SJA9896000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA9896000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA9896000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PAA14: Tõrma allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4110103, VEE4110104, VEE4110105, VEE4110106, VEE4110107, VEE4110108, VEE4110109, VEE4110110, VEE4110111</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.32098741500005,59.31242690200003,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00077">
+      <name>SJA1042000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA1042000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA1042000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PAA18: Imastu allikas (A-18)/A03: Imastu allikas (katastri nr 132053)</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4208800, VEE4208801, VEE4109500</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.00216669300005,59.27107974500007,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00078">
+      <name>SJA7061000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA7061000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA7061000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Jäneda allikad: Väike-Allikajärv (PAA02)</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4209500, VEE4209503, VEE4209504, VEE4209505, VEE4209506, VEE4209507, VEE4209508, VEE4209600, VEE4209700</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.68935367900008,59.24701211900003,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00079">
+      <name>SJA4985000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA4985000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA4985000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Mõdriku allikajärv (PAA08)</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4310801</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.47785687500004,59.32059626300003,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00080">
+      <name>SJA7412000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA7412000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA7412000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PA21301</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4313802, VEE4313803, VEE4313804, VEE4313805, VEE4313806, VEE4313807</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.45241783500006,59.30622610400007,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00081">
+      <name>SJB1066000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1066000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1066000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Neeruti allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4106400</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.52748518700002,58.11062879300005,116.650999999998</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00082">
+      <name>SJB1052000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1052000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1052000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Nõuni allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4608000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.50867844200008,58.11640113800007,108.9799999999962</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00083">
+      <name>SJB0828000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB0828000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB0828000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Kahala allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4511300</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.51949215800005,58.64001537000007,50.71200000000022</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00084">
+      <name>SJA2902000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA2902000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA2902000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Tiirike allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4605800</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.47512562300005,58.25053729800004,46.52099999999336</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00085">
+      <name>SJB1068000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1068000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1068000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Kammeri allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4605700</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.64498992700004,58.18105690300007,117.0050000000049</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00086">
+      <name>SJB1039000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1039000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1039000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Allaste allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4713900</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.50895067700003,58.12516114000005,55.18399999999383</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00087">
+      <name>SJB1042000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1042000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1042000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Seinapalu allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4509800</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.55457930700004,58.81693518400004,60.05599999999686</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00088">
+      <name>SJB1054000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1054000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1054000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Sulaoja allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4607400</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.71318114400003,58.11675862400006,131.6230000000071</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00089">
+      <name>SJA4919000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA4919000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA4919000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Himmaste allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4607100</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Ei</td>
+</tr>
+<tr>
+<td>Link</td>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 27.07964452300007,58.09041780600006,41.9320000000007</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00090">
+      <name>SJB0826000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB0826000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB0826000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Helda allikad</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4507500</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 24.92911110900008,59.02948158600003,63.55899999999383</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00091">
+      <name>SJA1526000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA1526000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA1526000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Olustvere pargi allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4709100</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.56766886200006,58.55265181200008,70.58999999999673</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00092">
+      <name>SJB1055000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1055000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1055000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Kõrma allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4310200</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.67743466800005,59.27128440700005,71.4410000000064</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00093">
+      <name>SJB1073000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1073000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1073000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Möldre allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4613100</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.93028232100005,58.03385523200006,67.21799999999348</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00094">
+      <name>SJB1040000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1040000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1040000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Uhaku allikad</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4314600</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 27.03446285300004,59.36862112900008,35.69999999999709</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00095">
+      <name>SJB1060000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1060000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1060000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Kotinuka allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4308300</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 27.43505851200007,59.37508623400004,45.15899999999965</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00096">
+      <name>SJA2598000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA2598000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA2598000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Tõnumardi</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4313600</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.43265803200006,59.45835547900003,30.11999999999534</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00097">
+      <name>SJB1030000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1030000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1030000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Korba allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4508200</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.63133108000005,58.97166730200007,71.58400000000256</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00098">
+      <name>SJB1064000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1064000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1064000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Koorküla allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4702900</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.86913831800007,57.93309310100005,65.24199999999905</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00099">
+      <name>SJB1062000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1062000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1062000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Nõmmküla allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4313200</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.16550395800004,58.96446671600006,81.59399999999732</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00100">
+      <name>SJA1295000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA1295000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA1295000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Karksi põrguallikad</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4713300</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.56158928400004,58.10587975900006,67.83500000000663</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00101">
+      <name>SJB0827000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB0827000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB0827000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Reti küla allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4608800</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.88749862900005,58.11719129400007,84.56399999999849</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00102">
+      <name>SJA5801000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA5801000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA5801000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Oinamäe allikas ja Keevaläte</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4705200</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.56445097800002,57.87092696200006,86.64900000000512</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00103">
+      <name>SJB1049000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1049000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1049000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Silma allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4309300</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.24258025900008,59.35696456000005,76.70699999999511</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00104">
+      <name>SJB1056000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1056000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1056000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Purtse Silmaallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4308500</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 27.02356185600007,59.40969355100003,35.8500000000065</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00105">
+      <name>SJA9811000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA9811000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA9811000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Lustivere allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4407000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.09632620500003,58.65814415100004,53.90600000000268</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00106">
+      <name>SJB1038000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1038000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1038000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Jõelähtme allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4300200</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.13348551600006,59.44250750700007,30.85099999999511</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00107">
+      <name>SJB1057000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1057000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1057000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ilmjärve allikad</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4604402</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.57634215000007,58.62067574800005,61.16800000000512</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00108">
+      <name>SJB1118000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1118000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1118000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Võle allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4308000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.20755788200006,59.46022078700008,74.09699999999452</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00109">
+      <name>SJB1065000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1065000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1065000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Paasküla allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4317700</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.46461635000003,59.48867345000008,49.9719999999943</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00110">
+      <name>SJB1061000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1061000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1061000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Lohu allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4108000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 24.77642265900005,59.14723053600005,52.88700000000244</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00111">
+      <name>SJA8397000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA8397000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA8397000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PAA1003: Järva-Jaani allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4311502</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.87810641500005,59.03851113500008,91.28599999999301</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00112">
+      <name>SJB1047000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1047000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1047000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Konsu allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4205500</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.81834983800007,58.18063172300003,63.50900000000615</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00113">
+      <name>SJB1076000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1076000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1076000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Kisuvere allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4107500</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.27771529800003,59.42532106200008,69.60499999999615</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00114">
+      <name>SJB1119000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1119000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1119000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Tammiku allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4311300</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.67873052900006,59.17759773800003,78.40399999999499</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00115">
+      <name>SJB1035000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJB1035000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJB1035000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Silmaallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4710801</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 25.95396572500005,58.52244445200006,46.24899999999707</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00116">
+      <name>SJA6066000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA6066000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA6066000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Seli allikad</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 24.82218909300008,59.10545400900003,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00117">
+      <name>SJA6597000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA6597000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA6597000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>PA4310300: Lavi allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4310300</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.63214118700006,59.29192045200006,68.96799999999348</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00118">
+      <name>SJA9303000</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>SJA9303000</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama_kood</td>
+<td>SJA9303000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Kunda jõgi: Lavi allikad</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4310300</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed_KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>kese.envir.ee</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.63214118700006,59.29192045200006,68.96799999999348</coordinates>
+      </Point>
+    </Placemark>
+  </Folder>
+</Document>
+</kml>

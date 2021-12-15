@@ -1,0 +1,3509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+<Document id="Pär_allikad_rakendusse_punkt1_1">
+  <name>Pär_allikad_rakendusse_punkt1_1</name>
+  <Snippet></Snippet>
+  <Style id="IconStyle00">
+    <IconStyle>
+      <scale>0.250000</scale>
+      <Icon><href>Layer0_Symbol_4bfd7d28_0.png</href></Icon>
+    </IconStyle>
+    <LabelStyle>
+      <color>00000000</color>
+      <scale>0.000000</scale>
+    </LabelStyle>
+    <PolyStyle>
+      <color>ff000000</color>
+      <outline>0</outline>
+    </PolyStyle>
+  </Style>
+  <Folder id="FeatureLayer0">
+    <name>Pär_allikad_rakendusse_punkt1_1</name>
+    <Snippet></Snippet>
+    <Placemark id="ID_00000">
+      <name>851:ALL:002</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>851:ALL:002</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>851:ALL:002</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Tõrvajõe allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4316201</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-1963766068">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-1963766068</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 28.12694846100004,59.42971710400008,3.777000000001863</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00001">
+      <name>807:ALL:002</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>807:ALL:002</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>807:ALL:002</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Mõisaküla allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4726701</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-1100931946">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-1100931946</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 22.09123067500008,58.00229118400006,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00002">
+      <name>334:ALL:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>334:ALL:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>334:ALL:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Jürna talu allikas ja küla kaev</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4729600</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-1825101722">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-1825101722</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 24.13723900900004,58.64240340900005,22.56900000000326</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00003">
+      <name>619:ALL:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>619:ALL:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>619:ALL:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Viinakoa silmaläte</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4615200; VEE4615300</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=1764131929">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=1764131929</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 27.10278741500002,58.11614017800008,44.75699999999779</coordinates>
+        </Point>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 27.10243258100007,58.11609463500008,44.13099999999395</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00004">
+      <name>915:ALL:002</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>915:ALL:002</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>915:ALL:002</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Kurista allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4102200</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-963331942">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-963331942</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 27.01262554300007,58.27080757400006,42.60700000000361</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00005">
+      <name>284:ALL:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>284:ALL:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>284:ALL:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4609800</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-1223218646">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-1223218646</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 26.92503091200007,58.02810689400008,77.61900000000605</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00006">
+      <name>619:ALL:003</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>619:ALL:003</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>619:ALL:003</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Silmaallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4609700</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=262131929">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=262131929</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 27.09745234100006,58.00089799500006,58.41300000000047</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00007">
+      <name>619:ALL:004</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>619:ALL:004</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>619:ALL:004</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Silmaallikad</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4607100</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=454031929">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=454031929</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 27.07964452300007,58.09041780600006,41.93200000000161</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00008">
+      <name>473:KON:003</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>473:KON:003</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>473:KON:003</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Õliläte</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4614800</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=946031953">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=946031953</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 27.12281472100005,58.15018707000007,36.94800000000396</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00009">
+      <name>714:ALL:003</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>714:ALL:003</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>714:ALL:003</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Pühajõe läte</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4721200; VEE4721300; VEE4721400</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-936441226">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-936441226</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 22.14587809800003,58.31123567300006,38.22999999999593</coordinates>
+        </Point>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 22.14555789000008,58.31123963600004,38.42900000000441</coordinates>
+        </Point>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 22.14543028000003,58.31096913000005,37.96799999999348</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00010">
+      <name>297:ALL:003</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>297:ALL:003</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>297:ALL:003</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Jutapere allikad</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4505000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=2080926943">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=2080926943</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 24.44307191900003,59.09860248500007,45.55000000000291</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00011">
+      <name>353:ALL:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>353:ALL:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>353:ALL:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Silmaallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4207600; VEE4207700</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=2025071072">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=2025071072</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 25.43490995600007,59.44909829200003,34.6359999999986</coordinates>
+        </Point>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 25.43450456800002,59.44925318300005,34.20200000000477</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00012">
+      <name>140:ALL:002</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>140:ALL:002</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>140:ALL:002</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Allika allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4502100</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=283765328">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=283765328</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 25.43983816400004,59.21179767400008,61.77899999999499</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00013">
+      <name>126:ALL:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>126:ALL:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>126:ALL:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Hundiallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4405300</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=1960331923">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=1960331923</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 27.10993499100005,58.61086556100008,41.55800000000454</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00014">
+      <name>392:KON:016</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>392:KON:016</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>392:KON:016</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Röögu allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4601900</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=1961131940">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=1961131940</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 22.51510091000006,58.97266006100006,1.493000000002326</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00015">
+      <name>660:ALL:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>660:ALL:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>660:ALL:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Tammiku ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4311800</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=252639164">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=252639164</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 26.32243367600006,58.98884778400003,102.5320000000065</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00016">
+      <name>797:KAE:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>797:KAE:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>797:KAE:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Alliku talu allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4609000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-612859566">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-612859566</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 25.81307934100005,58.13057758100007,96.28200000000675</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00017">
+      <name>636:ALL:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>636:ALL:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>636:ALL:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Arula Emaläte</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4611600</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-1340033573">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-1340033573</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 26.34676584900006,58.04212755900005,158.8600000000008</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00018">
+      <name>903:ALL:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>903:ALL:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>903:ALL:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Kunda küla allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4317800</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=1717964430">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=1717964430</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 26.55537909400005,59.48593042100003,51.78100000000268</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00019">
+      <name>304:ALL:003</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>304:ALL:003</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>304:ALL:003</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Kalamäe allikad</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4300903; VEE4300904</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=2049648412">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=2049648412</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 24.83151355600006,59.27310438800004,40.01399999999558</coordinates>
+        </Point>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 24.83125936400006,59.27342193600003,39.30000000000291</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00020">
+      <name>803:ALL:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>803:ALL:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>803:ALL:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Hõbeallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4111600</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-910271356">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-910271356</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 27.53149940900005,59.42210389400003,29.0090000000057</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00021">
+      <name>478:ALL:006</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>478:ALL:006</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>478:ALL:006</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Laiema allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4200701</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=199731955">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=199731955</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 23.33367599400003,58.64806853100004,7.270999999993478</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00022">
+      <name>776:ALL:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>776:ALL:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>776:ALL:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Pikajalamäe allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4600700</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-1247158148">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-1247158148</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 23.90167021600007,58.96677273600005,32.90200000000186</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00023">
+      <name>342:ALL:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>342:ALL:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>342:ALL:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Patsu hiieallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4602800</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-526666757">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-526666757</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 23.95068486100007,58.80488852400003,9.668000000005236</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00024">
+      <name>504:ALL:004</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>504:ALL:004</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>504:ALL:004</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Mustallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4510000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-50386273">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-50386273</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 24.36926347200006,58.86726222700008,26.5</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00025">
+      <name>807:KUL:002</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>807:KUL:002</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>807:KUL:002</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Surma Allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4727100</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=1172331946">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=1172331946</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 22.13466227000004,57.96333229500004,16.71300000000338</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00026">
+      <name>807:ALL:003</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>807:ALL:003</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>807:ALL:003</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Kõrgema võluallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4726300</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=617431946">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=617431946</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 22.16215444600005,58.02869672600008,23.98799999999767</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00027">
+      <name>478:ALL:007</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>478:ALL:007</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>478:ALL:007</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Rannaniidi allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4200702</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=169431955">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=169431955</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 23.34670372100004,58.64657488800003,2.533999999999651</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00028">
+      <name>198:ALL:004</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>198:ALL:004</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>198:ALL:004</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Silmaallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4512200</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=2098303552">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=2098303552</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 24.54452724000004,59.43596334200004,23.20699999999488</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00029">
+      <name>257:ALL:004</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>257:ALL:004</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>257:ALL:004</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Orina allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4311501</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-1579627003">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-1579627003</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 25.88306607100003,59.04473345500003,93.99899999999639</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00030">
+      <name>926:ALL:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>926:ALL:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>926:ALL:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ugurimäe ohvriallikad</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4107401</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-224821872">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-224821872</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 26.27146725400007,59.08027446900007,100.1410000000035</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00031">
+      <name>790:ALL:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>790:ALL:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>790:ALL:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Läste allikad</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4311113; VEE4311111; VEE4311109; VEE4311110; VEE4311107; VEE4311112; VEE4311106; VEE4311103</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=1559452116">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=1559452116</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 25.81787973600007,59.26283503400003,83.88300000000163</coordinates>
+        </Point>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 25.81763949200007,59.26222889700006,83.94000000000233</coordinates>
+        </Point>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 25.81756860200005,59.26254436400006,83.86500000000524</coordinates>
+        </Point>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 25.81745940800005,59.26320880900005,83.92500000000314</coordinates>
+        </Point>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 25.81740632100008,59.26250442700007,83.8669999999986</coordinates>
+        </Point>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 25.81729777200007,59.26267643000006,83.88300000000163</coordinates>
+        </Point>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 25.81701306700006,59.26231996300004,83.88300000000163</coordinates>
+        </Point>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 25.81699382400006,59.26263212700007,83.88300000000163</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00032">
+      <name>293:ALL:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>293:ALL:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>293:ALL:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Kuld- ja Silmaallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4112500</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=2055083418">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=2055083418</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 24.88147366300007,58.91015543900005,57.78699999999662</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00033">
+      <name>697:ALL:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>697:ALL:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>697:ALL:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Saarlase seitse allikat</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4203500</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-2106102915">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-2106102915</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 26.89126331600005,57.68865607100008,125.724000000002</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00034">
+      <name>552:ALL:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>552:ALL:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>552:ALL:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Keedika raviallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4511701</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-354236544">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-354236544</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 23.83049523500006,59.03152034700008,38.29099999999835</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00035">
+      <name>411:ALL:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>411:ALL:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>411:ALL:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Tamme allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4603001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-1007511099">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-1007511099</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 23.71276497600007,58.67313132700008,10.70399999999802</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00036">
+      <name>403:ALL:003</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>403:ALL:003</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>403:ALL:003</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Metsküla silmaallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4717806</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=611831931">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=611831931</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 22.52169445800007,58.57171781400007,10.774000000005</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00037">
+      <name>257:ALL:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>257:ALL:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>257:ALL:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Metsla allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4311902</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-2139500170">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-2139500170</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 25.98858914700003,59.01722363300007,99.36299999999778</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00038">
+      <name>317:ALL:002</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>317:ALL:002</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>317:ALL:002</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Sõmeru Möll-allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4301001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=2043554414">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=2043554414</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 24.88852171100007,59.22476774000006,56.49199999999837</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00039">
+      <name>668:ALL:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>668:ALL:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>668:ALL:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Õrde allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4108300</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-979375484">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-979375484</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 25.04580839300007,59.06041334700006,66.05100000000675</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00040">
+      <name>304:ALL:002</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>304:ALL:002</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>304:ALL:002</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Allikmäe allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4300905</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=2049914756">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=2049914756</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 24.79517122000004,59.27213628900006,42.47999999999593</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00041">
+      <name>134:KAE:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>134:KAE:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>134:KAE:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Soodla jõe alguse allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4210201</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-63407813">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-63407813</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 25.93293033100002,59.18610442300007,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00042">
+      <name>325:ALL:002</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>325:ALL:002</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>325:ALL:002</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Prandi allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4113501</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-1653199352">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-1653199352</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 25.70718907500003,58.84399704600003,63.25699999999779</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00043">
+      <name>257:ALL:003</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>257:ALL:003</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>257:ALL:003</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Järva-Jaani Pargiallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4311502</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-1168888684">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-1168888684</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 25.87810641500005,59.03851113500008,91.28599999999278</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00044">
+      <name>570:ALL:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>570:ALL:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>570:ALL:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Jaama allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4712200</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=829431939">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=829431939</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 25.66810098900004,58.23188482700004,95.92999999999324</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00045">
+      <name>392:KON:013</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>392:KON:013</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>392:KON:013</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Juuksepaela allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4601600</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-1703331940">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-1703331940</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 22.52330362100003,58.97466014400004,1.703999999998018</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00046">
+      <name>562:ALL:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>562:ALL:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>562:ALL:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Alttoa allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4504401</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-662039648">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-662039648</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 24.07691308300002,59.18981046200008,31.2390000000014</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00047">
+      <name>297:ALL:004</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>297:ALL:004</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>297:ALL:004</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Kernu allikad</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4504608</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=2081127732">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=2081127732</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 24.49858093300003,59.15353109300003,42.44899999999325</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00048">
+      <name>547:ALL:002</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>547:ALL:002</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>547:ALL:002</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Päevakese allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4603401</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-623531928">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-623531928</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 27.49632233700004,57.93331860600006,44.61800000000221</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00049">
+      <name>582:ALL:002</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>582:ALL:002</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>582:ALL:002</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ilma ennustamise allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4611701</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=311585293">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=311585293</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 26.32099176000003,58.10435551600006,97.5399999999936</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00050">
+      <name>403:ALL:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>403:ALL:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>403:ALL:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Nuudi allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4717402</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=1667931930">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=1667931930</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 22.80770000400003,58.54939855900005,7.921000000002209</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00051">
+      <name>478:ALL:010</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>478:ALL:010</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>478:ALL:010</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Orbuse allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4716901</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=1329631955">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=1329631955</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 23.20348662000004,58.60433021500006,15.88700000000256</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00052">
+      <name>304:ALL:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>304:ALL:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>304:ALL:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Niiliski allikatiik</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4300909</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=1509838391">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=1509838391</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 24.90979329200007,59.23983403600005,49.32499999999709</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00053">
+      <name>634:ALL:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>634:ALL:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>634:ALL:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Viinuallikas (Viimaallikas)</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4717403</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=178559565">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=178559565</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 23.12265797900005,58.50466654000007,1.111000000004537</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00054">
+      <name>600:ALL:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>600:ALL:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>600:ALL:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Timmu raviallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4715401</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-211431940">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-211431940</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 25.57599381000006,58.01813409000005,97.41999999999848</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00055">
+      <name>277:ALL:003</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>277:ALL:003</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>277:ALL:003</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Tiiu hiieallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4509901</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-984439590">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-984439590</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 25.24545003500003,58.98277424300005,72.87099999999919</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00056">
+      <name>478:ALL:012</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>478:ALL:012</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>478:ALL:012</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Punni allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4716902</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-2094931954">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-2094931954</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 23.25240511200008,58.66576543000008,5.716000000000463</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00057">
+      <name>504:KAE:009</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>504:KAE:009</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>504:KAE:009</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Joosva allikas-arteesiakaev</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4510302</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-144871125">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-144871125</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 24.39076528600003,58.83358748200004,24.2130000000036</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00058">
+      <name>504:KAE:003</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>504:KAE:003</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>504:KAE:003</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Kurisu Jaani allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4112606</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-1770547961">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-1770547961</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 24.38158973000003,58.94547070000004,36.09100000000035</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00059">
+      <name>636:ALL:003</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>636:ALL:003</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>636:ALL:003</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Armuallikas ehk Veriläte</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4610600</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-389269851">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-389269851</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 26.46499859500005,58.02748649700004,119.9210000000026</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00060">
+      <name>619:KON:035</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>619:KON:035</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>619:KON:035</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Emaläte</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4607200</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-339931953">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-339931953</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 27.04608638400003,58.11044822900004,43.13099999999395</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00061">
+      <name>879:KON:002</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>879:KON:002</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>879:KON:002</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Mära läte</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4609200</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-187559566">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-187559566</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 27.25662526200006,57.97577554900005,46.45900000000256</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00062">
+      <name>117:ALL:002</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>117:ALL:002</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>117:ALL:002</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Plaksi läte</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4614900</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=1372831921">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=1372831921</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 27.10872090100003,58.14832928500005,36</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00063">
+      <name>907:ALL:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>907:ALL:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>907:ALL:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Suurallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4801900</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-588369106">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-588369106</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 23.21012028600006,58.99797185700004,2.057000000000812</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00064">
+      <name>504:ALL:003</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>504:ALL:003</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>504:ALL:003</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Pühaallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4802100</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-388718011">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-388718011</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 24.38998220000008,58.87545308600005,28.50999999999487</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00065">
+      <name>504:ALL:005</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>504:ALL:005</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>504:ALL:005</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Punaallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4510200</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=1160230195">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=1160230195</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 24.36071968100003,58.84429549000004,24.62399999999627</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00066">
+      <name>724:ALL:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>724:ALL:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>724:ALL:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Lätteoru allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4205001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-1275431932">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-1275431932</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 26.38584779200005,57.96870073100007,105.0000000000002</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00067">
+      <name>680:ALL:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>680:ALL:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>680:ALL:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Kuijõe ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4505600</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=1029104268">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=1029104268</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 24.02080246100007,59.10238385700006,18.42699999999616</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00068">
+      <name>478:ALL:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>478:ALL:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>478:ALL:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Silmaallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4716903</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=50772100">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=50772100</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 23.23807993900004,58.67183337100005,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00069">
+      <name>325:ALL:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>325:ALL:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>325:ALL:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Keri lepiku allikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4400502</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-565834854">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-565834854</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 25.85494390300005,58.88868464700005,76.87600000000384</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00070">
+      <name>285:ALL:004</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>285:ALL:004</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>285:ALL:004</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Tebe läte</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4700303</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-371131943">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-371131943</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 26.66761971200003,57.95464202200003,113.2590000000057</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00071">
+      <name>714:ALL:004</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>714:ALL:004</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>714:ALL:004</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Odalätsi allikad</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4801800, VEE4801801</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=yrg&amp;obj_id=1328794860">http://www.eelis.ee/?comp=objresult=yrg&amp;obj_id=1328794860</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 22.12764979000008,58.39907487200003,9.573999999993248</coordinates>
+        </Point>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 22.12643710200007,58.39945856500003,14.26399999999558</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00072">
+      <name>291:ALL:001</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>291:ALL:001</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Pärandkultuuriobjekti_kood</td>
+<td>291:ALL:001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Paeläte</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4103200</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-1205765216">http://www.eelis.ee/?comp=objresult=parandobj&amp;obj_id=-1205765216</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>absolute</altitudeMode>
+          <coordinates> 26.85048128100004,58.29968822000006,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+  </Folder>
+</Document>
+</kml>

@@ -1,0 +1,5179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+<Document id="New_Group_Layer">
+  <name>New Group Layer</name>
+  <Snippet></Snippet>
+  <Style id="PolyStyle10">
+    <LabelStyle>
+      <color>00000000</color>
+      <scale>0.000000</scale>
+    </LabelStyle>
+    <LineStyle>
+      <color>ff6e6e6e</color>
+      <width>0.400000</width>
+    </LineStyle>
+    <PolyStyle>
+      <color>ffdef7c6</color>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="IconStyle20">
+    <IconStyle>
+      <scale>0.250000</scale>
+      <Icon><href>Layer2_Symbol_4bfd6fc0_0.png</href></Icon>
+    </IconStyle>
+    <LabelStyle>
+      <color>00000000</color>
+      <scale>0.000000</scale>
+    </LabelStyle>
+    <PolyStyle>
+      <color>ff000000</color>
+      <outline>0</outline>
+    </PolyStyle>
+  </Style>
+  <Folder id="GroupLayer0">
+    <name>New Group Layer</name>
+    <Snippet></Snippet>
+  <Folder id="FeatureLayer1">
+    <name>Kult_allikad_rakendusse_pind1_1</name>
+    <Snippet></Snippet>
+    <Placemark id="ID_10000">
+      <name>Ohvriallikas "Uku allikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Uku allikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>9093</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Uku allikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9093">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9093</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle10</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 27.01562531800005,59.43281915300008,0 27.01561699400003,59.43256910200006,0 27.01658356800004,59.43254344200005,0 27.01670165100006,59.43279798500004,0 27.01562531800005,59.43281915300008,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_10001">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>9091</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9091">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9091</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle10</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 27.02276880900007,59.41008549000003,0 27.02275849700004,59.40996891600008,0 27.02345007500003,59.41001591400004,0 27.02342190000007,59.41029511100004,0 27.02316200800004,59.41034601400003,0 27.02276880900007,59.41008549000003,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_10002">
+      <name>Ohvriallikas "Põrguläte"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Põrguläte"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>13676</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Põrguläte"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13676">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13676</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle10</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 26.50294417100002,57.93663538300007,0 26.50290719600002,57.93661401400004,0 26.50288136900008,57.93659503000003,0 26.50291020500003,57.93658709000005,0 26.50294850500006,57.93659845900004,0 26.50298897400006,57.93659981200005,0 26.50301579100005,57.93661365500003,0 26.50303478600006,57.93663879400003,0 26.50300352600004,57.93664588400003,0 26.50297242100004,57.93664075200007,0 26.50294417100002,57.93663538300007,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_10003">
+      <name>Ohvriallikas "Müräläte"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Müräläte"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>13531</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Müräläte"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13531">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13531</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle10</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 27.44388682400006,57.83547354400008,0 27.44399339800003,57.83525710600003,0 27.44467904100003,57.83529171300006,0 27.44443578000005,57.83559919400005,0 27.44388682400006,57.83547354400008,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+  </Folder>
+  <Folder id="FeatureLayer2">
+    <name>Kult_allikad_rakendusse_punkt1_1</name>
+    <Snippet></Snippet>
+    <Placemark id="ID_20000">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>9897</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4716502</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9897">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9897</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 23.65948941300007,58.55774704800007,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20001">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>11740</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4709900</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11740">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11740</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.39931549300007,58.62834712000006,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20002">
+      <name>Ohvriallikas "Hiieallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Hiieallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>11787</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Hiieallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4710301</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11787">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11787</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.03637181900007,58.62555828900008,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20003">
+      <name>Ohvriallikas "Hiieallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Hiieallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>11786</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Hiieallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4710302</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11786">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11786</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.03623501100003,58.62551226900007,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20004">
+      <name>Ohvriallikas "Hiieallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Hiieallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>11785</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Hiieallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4710303</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11785">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11785</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.03609535400005,58.62544098600006,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20005">
+      <name>Ohvriallikas "Hiieallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Hiieallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>11784</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Hiieallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4710304</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11784">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11784</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.03604398300007,58.62535183800003,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20006">
+      <name>Ohvriallikas "Hiieallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Hiieallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>11769</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Hiieallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4710201</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11769">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11769</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.08803404800005,58.61325953900007,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20007">
+      <name>Ohvriallikas "Hiieallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Hiieallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>9981</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Hiieallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4603002</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9981">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9981</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 23.68137520400006,58.71290260600006,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20008">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>9898</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4716501</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9898">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9898</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 23.65368870200007,58.55171636000006,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20009">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>10370</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4310300</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10370">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10370</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 26.63214118700006,59.29192045200006,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20010">
+      <name>Ohvriallikas "Ristallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Ristallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>17447</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Ristallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4100600</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=17447">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=17447</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.42435239500003,59.36732408900008,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20011">
+      <name>Ohvriallikas "Silmaläte"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Silmaläte"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>12875</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Silmaläte"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4604900</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12875">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12875</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 26.94905596300003,58.30621864500006,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20012">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>17438</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4502100</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=17438">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=17438</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 25.43983816400004,59.21179767400008,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20013">
+      <name>Ohvriallikas "Teetsi, Täitsi allikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Teetsi, Täitsi allikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>11767</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Teetsi, Täitsi allikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4710000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11767">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11767</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.20617318500007,58.61608002900005,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20014">
+      <name>Ohvriallikas "Silmaveeallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Silmaveeallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>13681</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Silmaveeallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4728800</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13681">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13681</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 26.70433782500004,57.69249599500006,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20015">
+      <name>Ohvriallikas "Külmallik", II at.</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Külmallik", II at.</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>8932</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Külmallik", II at.</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4603100</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=8932">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=8932</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 22.22172853900003,58.92849076500005,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20016">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>13396</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4727800</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13396">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13396</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 27.07994729400008,57.68408671100008,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20017">
+      <name>Ohvriallikas "Linnuallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Linnuallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>12400</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Linnuallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4718600</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12400">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12400</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 22.37976539800007,58.29240273500005,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20018">
+      <name>Ohvriallikas "Hiieallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Hiieallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>12442</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Hiieallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4718000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12442">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12442</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 22.96800323300005,58.40812122200003,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20019">
+      <name>Rahvapärimustega seotud allikas "Neitsiallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Rahvapärimustega seotud allikas "Neitsiallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>12728</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Rahvapärimustega seotud allikas "Neitsiallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4717900</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12728">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12728</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 22.89605951400006,58.43764261500007,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20020">
+      <name>Ohvriallikas "Lutsuallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Lutsuallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>12725</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Lutsuallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4717400</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12725">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12725</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 22.84931540700006,58.45959381300003,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20021">
+      <name>Ohvriallikas "Silmaallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Silmaallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>12726</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Silmaallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4717500</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12726">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12726</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 22.84978264100005,58.45922293200005,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20022">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>18042</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4503400</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18042">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18042</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.99959780900008,59.18969259100004,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20023">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>9220</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4402300</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9220">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9220</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 26.34466710900006,58.80709647800006,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20024">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>12060</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4508900</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12060">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12060</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.11625400600008,58.92918863600005,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20025">
+      <name>Ohvriallikas "Sepa allikas", "Silmaallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Sepa allikas", "Silmaallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>18049</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Sepa allikas", "Silmaallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4502200</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18049">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18049</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 25.25082026700005,59.18121669100003,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20026">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>13671</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4700400</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13671">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13671</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 26.56638613300004,57.90017949800006,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20027">
+      <name>Ohvriallikas "Silmaveeallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Silmaveeallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>13672</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Silmaveeallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4700500</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13672">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13672</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 26.56570379000004,57.90172078600006,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20028">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>10122</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4600900</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10122">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10122</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 23.68005641200006,58.94087841000004,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20029">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>10169</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4600800</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10169">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10169</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 23.76557730600007,58.95490186400008,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20030">
+      <name>Ohvriallikas "Hiieallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Hiieallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>9937</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Hiieallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4602800</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9937">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9937</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 23.95068486100007,58.80488852400003,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20031">
+      <name>Ohvriallikas "Silmaallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Silmaallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>9938</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Silmaallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4602000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9938">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9938</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 23.99045484700002,58.83676561000004,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20032">
+      <name>Ohvriallikas "Linnamäe allikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Linnamäe allikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>10739</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Linnamäe allikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4307400</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10739">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10739</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 26.71890882400004,59.46028221500006,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20033">
+      <name>Ohvriallikas "Proomu allikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Proomu allikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>17527</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Proomu allikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4501100</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=17527">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=17527</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.49587218300007,59.44327093700008,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20034">
+      <name>Ohvriallikas "Külmaallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Külmaallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>12088</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Külmaallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4801300</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12088">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12088</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.38110286600005,59.00884686300003,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20035">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>12518</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4801600</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12518">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12518</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 22.46979363500003,58.53982677200003,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20036">
+      <name>Ohvriallikas "Põrguallikad"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Põrguallikad"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>12219</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Põrguallikad"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4508401</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12219">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12219</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.70391845400007,59.02883898000005,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20037">
+      <name>Ohvriallikas "Punane allikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Punane allikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>12768</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Punane allikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4405101</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12768">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12768</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 27.12614831300004,58.60811802900008,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20038">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>12483</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4726001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12483">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12483</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 22.03337467800003,58.25194114500005,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20039">
+      <name>Ohvriallikas "Lähtoru allikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Lähtoru allikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>10740</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Lähtoru allikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4317901</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10740">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10740</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 26.73035468300003,59.46295390400007,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20040">
+      <name>Ohvriallikas "Silmaallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Silmaallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>10071</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Silmaallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4600801</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10071">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10071</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 23.67608330100006,58.96702034900005,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20041">
+      <name>Ohvriallikas "Kuldallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Kuldallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>9445</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Kuldallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4312601</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9445">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9445</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 26.49121517600003,58.90621789600004,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20042">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>10527</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4309000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10527">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10527</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 26.58559010800008,59.40489614700004,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20043">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>10070</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4511701</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10070">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10070</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 23.83049523500006,59.03152034700008,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20044">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>9988</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4603001</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9988">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9988</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 23.71276497600007,58.67313132700008,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20045">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>12264</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4801701</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12264">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12264</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 22.49457688100006,58.45318138800008,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20046">
+      <name>Ohvriallikas "Hiieallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Hiieallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>12469</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Hiieallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4801702</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12469">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12469</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 22.60799907700004,58.46308882200003,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20047">
+      <name>Ohvriallikas "Hiieallikas", "Kuldallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Hiieallikas", "Kuldallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>10504</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Hiieallikas", "Kuldallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4309201</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10504">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10504</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 26.42057828100008,59.39914716600003,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20048">
+      <name>Ohvriallikas "Silmaläte"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Silmaläte"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>11078</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Silmaläte"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4609701</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11078">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11078</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 27.03652498800005,57.98474351300007,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20049">
+      <name>Ohvriallikas "Hiieniidi allikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Hiieniidi allikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>12542</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Hiieniidi allikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4719000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12542">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12542</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 22.21147161800008,58.45365569000006,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20050">
+      <name>Ohvriallikas "Laiuse Siniallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Laiuse Siniallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>9245</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Laiuse Siniallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4404800</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9245">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9245</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 26.48256647300008,58.77690506900007,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20051">
+      <name>Ohvriallikas "Rahaallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Rahaallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>12760</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Rahaallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4718200</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12760">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12760</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 22.81509827600007,58.38576541000003,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20052">
+      <name>Ohvriallikas "Silmaallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Silmaallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>12543</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Silmaallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4719100</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12543">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12543</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 22.21216222200007,58.45514379500003,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20053">
+      <name>Ohvriallikas "Põrguvaluläte"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Põrguvaluläte"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>12876</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Põrguvaluläte"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4604800</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12876">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12876</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 26.95693566100005,58.31202646200006,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20054">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>9918</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4716500</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9918">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9918</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 23.72175505300004,58.55481399500007,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20055">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>11855</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4717300</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11855">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11855</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 23.81690455600005,58.51221888700007,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20056">
+      <name>Ohvriallikas "Siniallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Siniallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>12021</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Siniallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4503600</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12021">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12021</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.84402767400007,59.17842008900004,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20057">
+      <name>Ohvriallikas "Kurrika-allikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Kurrika-allikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>12019</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Kurrika-allikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4503700</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12019">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12019</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.84325243000006,59.17852080600005,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20058">
+      <name>Ohvriallikas "Silmaallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Silmaallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>12020</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Silmaallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4101500</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12020">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12020</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.84369737900005,59.17833409600007,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20059">
+      <name>Ohvriallikas "Kave läte"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Kave läte"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>12922</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Kave läte"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4605100</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12922">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12922</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 26.36223053200007,58.34099114000003,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20060">
+      <name>Ohvriallikas "Ordeallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Ordeallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>11925</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Ordeallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4507400</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11925">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11925</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 25.04027633100003,59.05951699300005,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20061">
+      <name>Ohvriallikas "Püha allikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Püha allikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>9809</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Püha allikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4716302</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9809">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9809</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 23.64621522700003,58.59857770900004,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20062">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>13263</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4710400</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13263">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13263</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 25.64277336600003,58.50729774900003,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20063">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>17913</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4503900</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=17913">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=17913</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.42206811100004,59.20454148100004,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20064">
+      <name>Ohvriallikas "Silmaallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Silmaallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>18932</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Silmaallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4501400</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18932">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18932</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.73920861000005,59.27276253900004,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20065">
+      <name>Ohvriallikas "Arstiallik"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Arstiallik"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>13053</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Arstiallik"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4613300</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13053">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13053</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 25.88432393200003,58.01729624900008,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20066">
+      <name>Ohvriallikas "Pärliallik"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Pärliallik"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>13054</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Pärliallik"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4613400</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13054">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13054</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 25.88000621400005,58.01631279900005,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20067">
+      <name>Ohvriallikas "Silmaallikas", "Parandusveeallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Silmaallikas", "Parandusveeallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>10844</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Silmaallikas", "Parandusveeallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4308600</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10844">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10844</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 26.70132951900007,59.41535263300005,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20068">
+      <name>Ohvriallikas "Punaallikas", "Paunaallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Punaallikas", "Paunaallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>12103</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Punaallikas", "Paunaallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4510200</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12103">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12103</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.36071968100003,58.84429549000004,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20069">
+      <name>Ohvriallikas "Valgeallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Valgeallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>12104</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Valgeallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4510300</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12104">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12104</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.38864551600005,58.84120652000007,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20070">
+      <name>Ohvriallikas "Karuallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Karuallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>12115</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Karuallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4510100</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12115">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12115</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.35175803500005,58.89603722400005,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20071">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>12140</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4508700</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12140">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12140</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.62316214300006,58.96739567100008,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20072">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>10682</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4317801</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10682">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10682</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 26.65383763300002,59.49076229500008,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20073">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>11771</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4715901</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11771">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11771</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 23.97461371500003,58.58399052700008,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20074">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>11854</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4107201</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11854">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11854</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 23.82138767000004,58.47299324900007,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20075">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>10046</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4602100</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10046">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10046</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 23.80026507400004,58.82463892500004,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20076">
+      <name>Ohvriallikas "Sõeru allikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Sõeru allikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>18979</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Sõeru allikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4501600</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18979">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18979</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.53965941000007,59.33844615200007,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20077">
+      <name>Ohvriallikas "Seaalllikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Seaalllikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>11788</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Seaalllikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4715900</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11788">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11788</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 23.90607082800005,58.60109866800008,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20078">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>11853</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4717200</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11853">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11853</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 23.83072229900006,58.53406036200005,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20079">
+      <name>Ohvriallikas "Nuudaläte"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Nuudaläte"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>13117</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Nuudaläte"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4611900</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13117">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13117</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 26.20222635100004,58.06945920100003,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20080">
+      <name>Ohvriallikas "Kaie kaev"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Kaie kaev"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>9881</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Kaie kaev"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4716301</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9881">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9881</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 23.73309275600008,58.59549002400007,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20081">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>10134</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4505600</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10134">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10134</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.02080246100007,59.10238385700006,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20082">
+      <name>Ohvriallikas "Põhjatu allikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Põhjatu allikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>12397</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Põhjatu allikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4718500</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12397">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12397</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 22.48837932400005,58.30357675100004,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20083">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>18593</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18593">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18593</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.32489179400005,59.13573119000006,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20084">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>18813</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18813">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18813</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.99774860800005,59.35238696100004,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20085">
+      <name>Ohvriallikas "Püha allikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Püha allikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>17902</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Püha allikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=17902">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=17902</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.35943122200007,59.27835257800007,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20086">
+      <name>Ohvriallikas "Silamaallikas", "Kärsa allikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Silamaallikas", "Kärsa allikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>9301</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Silamaallikas", "Kärsa allikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9301">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9301</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 26.66299748600005,58.65736370100007,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20087">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>12059</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12059">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12059</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.11545982500007,58.92675902400003,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20088">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>12061</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12061">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12061</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.11634108200008,58.92906280700004,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20089">
+      <name>Ohvriallikas "Silmaallikas", "Soome allikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Silmaallikas", "Soome allikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>9414</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Silmaallikas", "Soome allikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9414">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9414</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 26.71197724200005,58.61774775900005,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20090">
+      <name>Ohvriallikas "Kõrveläte", "Kõrbeläte"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Kõrveläte", "Kõrbeläte"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>11025</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Kõrveläte", "Kõrbeläte"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4607300</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11025">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11025</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 26.88048206200006,58.07543324200003,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20091">
+      <name>Ohvriallikas "Silmaläte"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Silmaläte"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>13801</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Silmaläte"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4704800</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13801">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13801</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 26.95916085900006,57.87811250100003,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20092">
+      <name>Ohvriallikas "Kiivläte"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Kiivläte"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>13636</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Kiivläte"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4706700</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13636">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13636</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 26.91109669200006,57.78306178800005,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20093">
+      <name>Ohvriallikas "Silmaallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Silmaallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>9092</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Silmaallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4308500</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9092">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9092</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 27.02356185600007,59.40969355100003,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20094">
+      <name>Ohvriallikas "Mustallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Mustallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>12102</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Mustallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4510000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12102">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12102</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.36926347200006,58.86726222700008,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20095">
+      <name>Ohvriallikas "Silmaläte"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Silmaläte"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>13594</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Silmaläte"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4604100</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13594">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13594</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 27.47723679300003,57.75792585400006,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20096">
+      <name>Ohvriallikas "Püha allikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Püha allikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>8981</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Püha allikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4307201</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=8981">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=8981</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 27.52769310800005,59.20293171000003,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20097">
+      <name>Ohvriallikas</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>13229</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4511100</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13229">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13229</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 25.67700595300005,58.66627413700007,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20098">
+      <name>Kultuseallikas "Silmaallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Kultuseallikas "Silmaallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>13218</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Kultuseallikas "Silmaallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4710801</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13218">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13218</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 25.95396572500005,58.52244445200006,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20099">
+      <name>Ohvriallikas "Ilmamäe allikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Ilmamäe allikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>13401</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Ilmamäe allikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4704700</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13401">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13401</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 27.17002463600005,57.79212725500008,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20100">
+      <name>Ohvriallikas "Silmaläte"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Silmaläte"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>13677</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Silmaläte"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4701000</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13677">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13677</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 26.50605859300003,57.93797661000008,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20101">
+      <name>Ohvriallikas "Siniallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Siniallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>13306</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Siniallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4803400</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13306">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13306</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 25.56060857500006,58.30246339700005,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20102">
+      <name>Ohvriallikad "Saula Siniallikad"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikad "Saula Siniallikad"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>18053</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikad "Saula Siniallikad"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4503300, VEE4503301, VEE4503302</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18053">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18053</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 25.04316245000007,59.21456804000007,0</coordinates>
+        </Point>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 25.04296055700007,59.21475399600007,0</coordinates>
+        </Point>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 25.04241350300003,59.21512738100006,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20103">
+      <name>Ohvriallikas "Ohu allikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Ohu allikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>18616</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Ohu allikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4504401</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18616">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18616</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.07691308300002,59.18981046200008,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20104">
+      <name>Ohvriallikas "Silmaveeallikas"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Silmaveeallikas"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise_kood</td>
+<td>13680</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Silmaveeallikas"</td>
+</tr>
+<tr>
+<td>Allika_KKR_kood</td>
+<td>VEE4728700</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13680">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13680</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 26.70457544500005,57.69259644200008,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+  </Folder>
+  </Folder>
+</Document>
+</kml>
