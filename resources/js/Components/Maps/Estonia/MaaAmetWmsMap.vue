@@ -37,7 +37,7 @@
             <div class="bg-white p-1 border-2 rounded cursor-pointer hover:bg-gray-100" @click="showReliefMap">{{ $t('springs.relief_map') }}</div>
         </l-control>
 
-        <l-control-fullscreen />
+        <!--<l-control-fullscreen />-->
 
         <!--<l-control-layers></l-control-layers>-->
 
@@ -89,6 +89,7 @@ import "leaflet.markercluster/dist/MarkerCluster.css";
 import "leaflet.markercluster/dist/MarkerCluster.Default.css";
 import { relief_shaded_wms_layers, relief_wms_layers, orthophoto_wms_layers, springLocationIcon } from '../../../constants.js';
 import LControlFullscreen from 'vue2-leaflet-fullscreen';
+import omnivore from '@mapbox/leaflet-omnivore';
 
 delete Icon.Default.prototype._getIconUrl;
 Icon.Default.mergeOptions({
@@ -121,6 +122,7 @@ export default {
         'l-marker-cluster': Vue2LeafletMarkerCluster,
         GestureHandling,
         LControlFullscreen,
+        omnivore,
     },
     props: ['springs', 'spring', 'view', 'zoom'],
     data() {
@@ -261,6 +263,7 @@ export default {
             }
 
             this.leafletMapObject = mapObject;
+            this.createLayers();
             this.leafletMapObject.setView(this.$parent.mapCenter, this.$parent.maaAmetMapZoom);
             /*if (this.leafletMapObject.isFullscreen() && this.$parent.fullscreen === false) {
                 this.leafletMapObject.toggleFullscreen();
@@ -312,6 +315,37 @@ export default {
                 }
             }
         },
+    createLayers() {
+        var overlays = {
+            "Muinsuskaitsealused allikad": this.kmlSpringsLayer('Kult_allikad'),
+            "Loodusdirektiivi allikaelupaigad": this.kmlSpringsLayer('LD_allikad'),
+            "Pärandkultuuriallikad": this.kmlSpringsLayer('Par_allikad'),
+            "Allikate seirejaamad": this.kmlSpringsLayer('Seire_allikad'),
+            "Allikalised vääriselupaigad": this.kmlSpringsLayer('VEP_allikad'),
+            "Looduskaitsealused allikad": this.kmlSpringsLayer('UOB_allikad'),
+            "Ürglooduse raamatu allikad": this.kmlSpringsLayer('Urg_allikad'),
+        };
+        L.control.layers(null,overlays,{collapsed:true}).addTo(this.leafletMapObject);
+    },
+    kmlSpringsLayer(springsType) {
+        let springIcon = new L.Icon({
+            iconUrl: '/kml/'+ springsType +'/symbol.png',
+        });
+        let layer = L.geoJson(null, {
+            pointToLayer: function (feature, latlng) {
+                return L.marker(latlng, {icon: springIcon});
+            },
+            onEachFeature: function(feature, featureLayer) {
+                featureLayer.bindPopup(feature.properties.description);
+            },
+            style: {
+                color: "blue",
+            }
+        });
+        let kmlLayer = omnivore.kml('/kml/'+ springsType +'/doc.kml', null, layer);
+        //kmlLayer.addTo(this.leafletMapObject); // should layer be displayed by default or not?
+        return kmlLayer;
+    },
         getExistingSprings() {
             let params = {};
             if (this.spring) {

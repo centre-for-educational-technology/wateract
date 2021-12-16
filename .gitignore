@@ -7,3 +7,4 @@ public/css
 composer.lock
 config/filesystems.php
 public/storage
+.DS_Store
