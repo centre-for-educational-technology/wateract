@@ -268,17 +268,19 @@ export default {
         },
         createLayers() {
             var overlays = {
-                "Muinsuskaitsealused allikad": this.kmlSpringsLayer('Kult_allikad'),
-                "Loodusdirektiivi allikaelupaigad": this.kmlSpringsLayer('LD_allikad'),
-                "Pärandkultuuriallikad": this.kmlSpringsLayer('Par_allikad'),
-                "Allikate seirejaamad": this.kmlSpringsLayer('Seire_allikad'),
-                "Allikalised vääriselupaigad": this.kmlSpringsLayer('VEP_allikad'),
-                "Looduskaitsealused allikad": this.kmlSpringsLayer('UOB_allikad'),
-                "Ürglooduse raamatu allikad": this.kmlSpringsLayer('Urg_allikad'),
+                "Muinsuskaitsealused allikad": this.kmlSpringsLayer('Kult_allikad', "#faac04"),
+                "Loodusdirektiivi allikaelupaigad": this.kmlSpringsLayer('LD_allikad', "#ff007326"),
+                "Pärandkultuuriallikad": this.kmlSpringsLayer('Par_allikad', "#c404f8"),
+                "Allikate seirejaamad": this.kmlSpringsLayer('Seire_allikad', '#fcfc05'),
+                "Allikalised vääriselupaigad": this.kmlSpringsLayer('VEP_allikad', '#ff00ff55'),
+                "Looduskaitsealused allikad": this.kmlSpringsLayer('UOB_allikad', '#04fcfa'),
+                "Ürglooduse raamatu allikad": this.kmlSpringsLayer('Urg_allikad', '#0454e8'),
+                "Looduslike pühapaikade allikad": this.kmlSpringsLayer('Lood_puha_allikad', '#ec0404'),
+                "Kohapärimuse allikad": this.kmlSpringsLayer('Koha_allikad', '#04fa05'),
             };
             L.control.layers(null,overlays,{collapsed:true}).addTo(this.leafletMapObject);
         },
-        kmlSpringsLayer(springsType) {
+        kmlSpringsLayer(springsType, color) {
             let springIcon = new L.Icon({
                 iconUrl: '/kml/'+ springsType +'/symbol.png',
             });
@@ -290,7 +292,7 @@ export default {
                     featureLayer.bindPopup(feature.properties.description);
                 },
                 style: {
-                    color: "blue",
+                    color: color,
                 }
             });
             let kmlLayer = omnivore.kml('/kml/'+ springsType +'/doc.kml', null, layer);

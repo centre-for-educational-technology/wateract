@@ -14,14 +14,14 @@
       <width>0.400000</width>
     </LineStyle>
     <PolyStyle>
-      <color>ffc2fcc4</color>
+      <color>fffff829</color>
       <outline>1</outline>
     </PolyStyle>
   </Style>
   <Style id="IconStyle20">
     <IconStyle>
-      <scale>0.250000</scale>
-      <Icon><href>Layer2_Symbol_931cfdc0_0.png</href></Icon>
+      <scale>0.625000</scale>
+      <Icon><href>Layer2_Symbol_9ef019c8_0.png</href></Icon>
     </IconStyle>
     <LabelStyle>
       <color>00000000</color>
@@ -39,7 +39,7 @@
     <name>ÜOB_allikad_rakendusse_pind1_1</name>
     <Snippet></Snippet>
     <Placemark id="ID_10000">
-      <name>KLO4001062</name>
+      <name>Kiigeoru hiiesalu; (Kiigeoru Hiiesalu ja ohvriallikas)</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -49,13 +49,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4001062</td>
+<td>Kiigeoru hiiesalu; (Kiigeoru Hiiesalu ja ohvriallikas)</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4001062</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -63,7 +63,7 @@
 <td>Kiigeoru hiiesalu; (Kiigeoru Hiiesalu ja ohvriallikas)</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -86,7 +86,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_10001">
-      <name>KLO1000439</name>
+      <name>Vetiku allikad; Vetiku Söeoru allikad e. Vanajärve allikad</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -96,13 +96,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO1000439</td>
+<td>Vetiku allikad; Vetiku Söeoru allikad e. Vanajärve allikad</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO1000439</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -110,7 +110,7 @@
 <td>Vetiku allikad; Vetiku Söeoru allikad e. Vanajärve allikad</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4110101; VEE4110102</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -133,7 +133,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_10002">
-      <name>KLO1000475</name>
+      <name>Jõepere veskiallikad; (Kalevipoja allikad)</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -143,13 +143,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO1000475</td>
+<td>Jõepere veskiallikad; (Kalevipoja allikad)</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO1000475</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -157,7 +157,7 @@
 <td>Jõepere veskiallikad; (Kalevipoja allikad)</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -180,7 +180,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_10003">
-      <name>KLO4001074</name>
+      <name>Külmaveski allikad ja allikajärv</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -190,13 +190,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4001074</td>
+<td>Külmaveski allikad ja allikajärv</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4001074</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -204,7 +204,7 @@
 <td>Külmaveski allikad ja allikajärv</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -227,7 +227,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_10004">
-      <name>KLO4001082</name>
+      <name>Purila allikad</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -237,13 +237,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4001082</td>
+<td>Purila allikad</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4001082</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -251,7 +251,7 @@
 <td>Purila allikad</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4802000; VEE4802001; VEE4802002; VEE4802003</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -274,7 +274,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_10005">
-      <name>KLO4000555</name>
+      <name>Mustallika allikate rühm; (Üüste allikate rühm; Pühajõe allikad)</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -284,13 +284,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4000555</td>
+<td>Mustallika allikate rühm; (Üüste allikate rühm; Pühajõe allikad)</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4000555</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -298,7 +298,7 @@
 <td>Mustallika allikate rühm; (Üüste allikate rühm; Pühajõe allikad)</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4510000</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -321,7 +321,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_10006">
-      <name>KLO4000557</name>
+      <name>Rangu allikas koos Rangu rankadega</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -331,13 +331,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4000557</td>
+<td>Rangu allikas koos Rangu rankadega</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4000557</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -345,7 +345,7 @@
 <td>Rangu allikas koos Rangu rankadega</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -368,7 +368,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_10007">
-      <name>KLO4001083</name>
+      <name>Neitsipere allikad; Neitsijärve allikad</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -378,13 +378,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4001083</td>
+<td>Neitsipere allikad; Neitsijärve allikad</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4001083</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -392,7 +392,7 @@
 <td>Neitsipere allikad; Neitsijärve allikad</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -415,7 +415,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_10008">
-      <name>KLO4000558</name>
+      <name>Lohu allikad</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -425,13 +425,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4000558</td>
+<td>Lohu allikad</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4000558</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -439,7 +439,7 @@
 <td>Lohu allikad</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4108000</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -462,7 +462,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_10009">
-      <name>KLO4000559</name>
+      <name>Mihka-Jüri allikad</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -472,13 +472,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4000559</td>
+<td>Mihka-Jüri allikad</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4000559</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -486,7 +486,7 @@
 <td>Mihka-Jüri allikad</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4508600</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -509,7 +509,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_10010">
-      <name>KLO4001084</name>
+      <name>Örde allikas; Õrde allikas</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -519,13 +519,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4001084</td>
+<td>Örde allikas; Õrde allikas</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4001084</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -533,7 +533,7 @@
 <td>Örde allikas; Õrde allikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4108300; VEE4507400</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -556,7 +556,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_10011">
-      <name>KLO4000017</name>
+      <name>Glehni pargi allikad sh. Rõõmuallikas</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -566,13 +566,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4000017</td>
+<td>Glehni pargi allikad sh. Rõõmuallikas</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4000017</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -580,7 +580,7 @@
 <td>Glehni pargi allikad sh. Rõõmuallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4501000</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -603,7 +603,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_10012">
-      <name>KLO4000094</name>
+      <name>Lepasalu allikad</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -613,13 +613,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4000094</td>
+<td>Lepasalu allikad</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4000094</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -627,7 +627,7 @@
 <td>Lepasalu allikad</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -650,7 +650,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_10013">
-      <name>KLO4000172</name>
+      <name>Varsaallikad</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -660,13 +660,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4000172</td>
+<td>Varsaallikad</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4000172</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -674,7 +674,7 @@
 <td>Varsaallikad</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4406800</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -697,7 +697,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_10014">
-      <name>KLO1000032</name>
+      <name>Jäneda allikad</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -707,13 +707,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO1000032</td>
+<td>Jäneda allikad</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO1000032</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -721,7 +721,7 @@
 <td>Jäneda allikad</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4209500; VEE4209502; VEE4209503; VEE4209504; VEE4209505; VEE4209506; VEE4209507; VEE4209508; VEE4209509; VEE4209600; VEE4209700</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -744,7 +744,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_10015">
-      <name>KLO4001266</name>
+      <name>Himmaste allikad</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -754,13 +754,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4001266</td>
+<td>Himmaste allikad</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4001266</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -768,7 +768,7 @@
 <td>Himmaste allikad</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4607100</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -795,7 +795,7 @@
     <name>ÜOB_allikad_rakendusse_punkt1_1</name>
     <Snippet></Snippet>
     <Placemark id="ID_20000">
-      <name>KLO4001054</name>
+      <name>Maimu koobas e. Mäkiste põrguhaud allikaga</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -805,13 +805,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4001054</td>
+<td>Maimu koobas e. Mäkiste põrguhaud allikaga</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4001054</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -819,12 +819,20 @@
 <td>Maimu koobas e. Mäkiste põrguhaud allikaga</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1219">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1219</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>58.133505</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>25.485103</td>
 </tr>
 </table>
 </td>
@@ -842,7 +850,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20001">
-      <name>KLO4000556</name>
+      <name>Vetla Pühaallikas; Vetla Pihaallikas</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -852,13 +860,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4000556</td>
+<td>Vetla Pühaallikas; Vetla Pihaallikas</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4000556</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -866,12 +874,20 @@
 <td>Vetla Pühaallikas; Vetla Pihaallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1383">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1383</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>59.01591</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>24.497934</td>
 </tr>
 </table>
 </td>
@@ -889,7 +905,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20002">
-      <name>KLO4000549</name>
+      <name>Imastu siniallikad</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -899,13 +915,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4000549</td>
+<td>Imastu siniallikad</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4000549</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -913,12 +929,20 @@
 <td>Imastu siniallikad</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4109500, VEE4208800, VEE4208801</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1364">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1364</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>59.270914</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>26.000909</td>
 </tr>
 </table>
 </td>
@@ -944,7 +968,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20003">
-      <name>KLO4001063</name>
+      <name>Palade Silmaallikas; (Kukemäe allikas)</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -954,13 +978,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4001063</td>
+<td>Palade Silmaallikas; (Kukemäe allikas)</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4001063</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -968,12 +992,20 @@
 <td>Palade Silmaallikas; (Kukemäe allikas)</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4601000</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1324">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1324</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>58.96182</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>22.862284</td>
 </tr>
 </table>
 </td>
@@ -991,7 +1023,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20004">
-      <name>KLO4000005</name>
+      <name>Aiataguse allikad</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -1001,13 +1033,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4000005</td>
+<td>Aiataguse allikad</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4000005</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1015,12 +1047,20 @@
 <td>Aiataguse allikad</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4500600, VEE4500700, VEE4100200</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=2167">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=2167</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>59.364697</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>24.704471</td>
 </tr>
 </table>
 </td>
@@ -1046,7 +1086,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20005">
-      <name>KLO4001237</name>
+      <name>Sadama- e. Kihme allikad</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -1056,13 +1096,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4001237</td>
+<td>Sadama- e. Kihme allikad</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4001237</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1070,12 +1110,20 @@
 <td>Sadama- e. Kihme allikad</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4108900</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1403">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1403</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>59.071044</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>25.680116</td>
 </tr>
 </table>
 </td>
@@ -1093,7 +1141,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20006">
-      <name>KLO4001061</name>
+      <name>Allikas Uue-Antsla kalatiigi lätted (Kaks devoni paljandiga allikat)</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -1103,13 +1151,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4001061</td>
+<td>Allikas Uue-Antsla kalatiigi lätted (Kaks devoni paljandiga allikat)</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4001061</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1117,12 +1165,20 @@
 <td>Allikas Uue-Antsla kalatiigi lätted (Kaks devoni paljandiga allikat)</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4705201, VEE4705202</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1291">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1291</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>57.871851</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>26.543332</td>
 </tr>
 </table>
 </td>
@@ -1144,7 +1200,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20007">
-      <name>KLO4000551</name>
+      <name>Lindrehti allikad</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -1154,13 +1210,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4000551</td>
+<td>Lindrehti allikad</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4000551</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1168,12 +1224,20 @@
 <td>Lindrehti allikad</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4107402, VEE4107403</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1366">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1366</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>59.067998</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>26.279807</td>
 </tr>
 </table>
 </td>
@@ -1186,16 +1250,16 @@
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 26.27982003600005,59.06782803600004,0</coordinates>
+          <coordinates> 26.27980909400003,59.06781841800006,0</coordinates>
         </Point>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 26.27981671400005,59.06818641600006,0</coordinates>
+          <coordinates> 26.27980577100004,59.06817679800008,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20008">
-      <name>KLO4000550</name>
+      <name>Simuna katkuallikas</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -1205,13 +1269,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4000550</td>
+<td>Simuna katkuallikas</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4000550</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1219,12 +1283,20 @@
 <td>Simuna katkuallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4311701</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1365">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1365</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>59.042362</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>26.402481</td>
 </tr>
 </table>
 </td>
@@ -1242,7 +1314,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20009">
-      <name>KLO4001089</name>
+      <name>Rutu allikas</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -1252,13 +1324,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4001089</td>
+<td>Rutu allikas</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4001089</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1266,12 +1338,20 @@
 <td>Rutu allikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4715300</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1410">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1410</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>58.038314</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>25.636476</td>
 </tr>
 </table>
 </td>
@@ -1284,12 +1364,12 @@
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 25.63664698700006,58.03841272200003,0</coordinates>
+          <coordinates> 25.63647594400004,58.03831359400004,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20010">
-      <name>KLO4001088</name>
+      <name>Jaama allikas</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -1299,13 +1379,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4001088</td>
+<td>Jaama allikas</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4001088</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1313,12 +1393,20 @@
 <td>Jaama allikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4712200</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1409">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1409</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>58.231885</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>25.668101</td>
 </tr>
 </table>
 </td>
@@ -1336,7 +1424,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20011">
-      <name>KLO4001057</name>
+      <name>Laiuse siniallikas</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -1346,13 +1434,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4001057</td>
+<td>Laiuse siniallikas</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4001057</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1360,12 +1448,20 @@
 <td>Laiuse siniallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4404800</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1244">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1244</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>58.776905</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>26.482566</td>
 </tr>
 </table>
 </td>
@@ -1383,7 +1479,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20012">
-      <name>KLO4000548</name>
+      <name>Mõisamaa allikad</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -1393,13 +1489,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4000548</td>
+<td>Mõisamaa allikad</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4000548</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1407,12 +1503,20 @@
 <td>Mõisamaa allikad</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4312600</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1361">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1361</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>58.955102</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>26.286634</td>
 </tr>
 </table>
 </td>
@@ -1430,7 +1534,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20013">
-      <name>KLO4001076</name>
+      <name>Väljaotsa allikad; Väljaaluse allikad</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -1440,13 +1544,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4001076</td>
+<td>Väljaotsa allikad; Väljaaluse allikad</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4001076</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1454,12 +1558,20 @@
 <td>Väljaotsa allikad; Väljaaluse allikad</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4107421</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1372">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1372</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>59.033408</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>26.198397</td>
 </tr>
 </table>
 </td>
@@ -1477,7 +1589,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20014">
-      <name>KLO4001072</name>
+      <name>Kolu allikad</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -1487,13 +1599,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4001072</td>
+<td>Kolu allikad</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4001072</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1501,12 +1613,20 @@
 <td>Kolu allikad</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4802200, VEE4802300</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1359">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1359</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>59.358498</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>26.006826</td>
 </tr>
 </table>
 </td>
@@ -1528,7 +1648,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20015">
-      <name>KLO4001153</name>
+      <name>Suurallikas</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -1538,13 +1658,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4001153</td>
+<td>Suurallikas</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4001153</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1552,12 +1672,20 @@
 <td>Suurallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4801900</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=8364">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=8364</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>58.997972</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>23.21012</td>
 </tr>
 </table>
 </td>
@@ -1575,7 +1703,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20016">
-      <name>KLO4001073</name>
+      <name>Samma allikad</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -1585,13 +1713,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4001073</td>
+<td>Samma allikad</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4001073</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1599,12 +1727,20 @@
 <td>Samma allikad</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4802500</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1362">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1362</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>59.361327</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>26.251137</td>
 </tr>
 </table>
 </td>
@@ -1622,7 +1758,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20017">
-      <name>KLO4001070</name>
+      <name>Rahkla allikad</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -1632,13 +1768,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4001070</td>
+<td>Rahkla allikad</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4001070</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1646,12 +1782,20 @@
 <td>Rahkla allikad</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4308901</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1354">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1354</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>59.354905</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>26.587544</td>
 </tr>
 </table>
 </td>
@@ -1669,7 +1813,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20018">
-      <name>KLO4001071</name>
+      <name>Allika allikas</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -1679,13 +1823,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4001071</td>
+<td>Allika allikas</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4001071</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1693,12 +1837,20 @@
 <td>Allika allikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4109400</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1357">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1357</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>59.255604</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>26.527136</td>
 </tr>
 </table>
 </td>
@@ -1716,7 +1868,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20019">
-      <name>KLO4001232</name>
+      <name>Rebasmäe allikas; Ilumetsa ürgmets allikaga</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -1726,13 +1878,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4001232</td>
+<td>Rebasmäe allikas; Ilumetsa ürgmets allikaga</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4001232</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1740,12 +1892,20 @@
 <td>Rebasmäe allikas; Ilumetsa ürgmets allikaga</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4603400</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1137">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1137</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>57.941882</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>27.405162</td>
 </tr>
 </table>
 </td>
@@ -1763,7 +1923,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20020">
-      <name>KLO4001064</name>
+      <name>Pühatu allikas</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -1773,13 +1933,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4001064</td>
+<td>Pühatu allikas</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4001064</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1787,12 +1947,20 @@
 <td>Pühatu allikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4718500</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1326">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1326</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>58.303577</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>22.488379</td>
 </tr>
 </table>
 </td>
@@ -1810,7 +1978,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20021">
-      <name>KLO4001075</name>
+      <name>Varangu Siniallikad</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -1820,13 +1988,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4001075</td>
+<td>Varangu Siniallikad</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4001075</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1834,12 +2002,20 @@
 <td>Varangu Siniallikad</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4311900, VEE4311901, VEE4311904, VEE4311905, VEE4311906, VEE4311907, VEE4311908, VEE4311909, VEE4311910</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1371">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1371</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>59.041868</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>26.095756</td>
 </tr>
 </table>
 </td>
@@ -1889,7 +2065,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20022">
-      <name>KLO4001080</name>
+      <name>Kose allikad</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -1899,13 +2075,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4001080</td>
+<td>Kose allikad</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4001080</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1913,12 +2089,20 @@
 <td>Kose allikad</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1376">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1376</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>59.189875</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>25.166533</td>
 </tr>
 </table>
 </td>
@@ -1944,7 +2128,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20023">
-      <name>KLO4000547</name>
+      <name>Mõdriku veskijärve allikad; (Mõdriku mineraalveeallikas; Mõdriku Vanaküla a</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -1954,13 +2138,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4000547</td>
+<td>Mõdriku veskijärve allikad; (Mõdriku mineraalveeallikas; Mõdriku Vanaküla a</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4000547</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1968,12 +2152,20 @@
 <td>Mõdriku veskijärve allikad; (Mõdriku mineraalveeallikas; Mõdriku Vanaküla a</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4310500, VEE4314000, VEE4314001, VEE4314100, VEE4314101, VEE4314102, VEE4314103</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1355">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1355</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>59.319203</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>26.475349</td>
 </tr>
 </table>
 </td>
@@ -2015,7 +2207,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20024">
-      <name>KLO4000552</name>
+      <name>Konnavere allikad</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -2025,13 +2217,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4000552</td>
+<td>Konnavere allikad</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4000552</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -2039,12 +2231,20 @@
 <td>Konnavere allikad</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4107700, VEE4107701, VEE4107718, VEE4107756, VEE4107757, VEE4107758, VEE4107759, VEE4107760, VEE4107761</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1367">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1367</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>59.261693</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>26.004317</td>
 </tr>
 </table>
 </td>
@@ -2094,7 +2294,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20025">
-      <name>KLO4001079</name>
+      <name>Tomingmäe allikad</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -2104,13 +2304,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4001079</td>
+<td>Tomingmäe allikad</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4001079</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -2118,12 +2318,20 @@
 <td>Tomingmäe allikad</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4502400, VEE4502500</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1375">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1375</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>59.182091</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>25.199382</td>
 </tr>
 </table>
 </td>
@@ -2145,7 +2353,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20026">
-      <name>KLO4001077</name>
+      <name>Krei allikad</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -2155,13 +2363,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4001077</td>
+<td>Krei allikad</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4001077</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -2169,12 +2377,20 @@
 <td>Krei allikad</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4502600, VEE4502700, VEE4502800, VEE4502900, VEE4503000</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1373">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1373</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>59.194428</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>25.139672</td>
 </tr>
 </table>
 </td>
@@ -2212,7 +2428,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20027">
-      <name>KLO4001234</name>
+      <name>Saula Siniallikad</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -2222,13 +2438,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4001234</td>
+<td>Saula Siniallikad</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4001234</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -2236,12 +2452,20 @@
 <td>Saula Siniallikad</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4503300, VEE4503301, VEE4503302</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1229">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1229</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>59.214848</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>25.042788</td>
 </tr>
 </table>
 </td>
@@ -2267,7 +2491,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20028">
-      <name>KLO4001236</name>
+      <name>Aravete allikad</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -2277,13 +2501,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4001236</td>
+<td>Aravete allikad</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4001236</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -2291,12 +2515,20 @@
 <td>Aravete allikad</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4210902, VEE4210903</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1400">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1400</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>59.1491</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>25.751093</td>
 </tr>
 </table>
 </td>
@@ -2318,7 +2550,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20029">
-      <name>KLO4000545</name>
+      <name>Kisuvere allikad</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -2328,13 +2560,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4000545</td>
+<td>Kisuvere allikad</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4000545</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -2342,12 +2574,20 @@
 <td>Kisuvere allikad</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4107500</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1352">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1352</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>59.425183</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>26.277942</td>
 </tr>
 </table>
 </td>
@@ -2373,7 +2613,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20030">
-      <name>KLO4000553</name>
+      <name>Kurisu Jaani allikas</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -2383,13 +2623,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4000553</td>
+<td>Kurisu Jaani allikas</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4000553</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -2397,12 +2637,20 @@
 <td>Kurisu Jaani allikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4112606</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1380">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1380</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>58.945471</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>24.38159</td>
 </tr>
 </table>
 </td>
@@ -2420,7 +2668,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20031">
-      <name>KLO4000157</name>
+      <name>Tarakvere allikad</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -2430,13 +2678,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4000157</td>
+<td>Tarakvere allikad</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4000157</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -2444,12 +2692,20 @@
 <td>Tarakvere allikad</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4404600, VEE4404601, VEE4404602, VEE4404603, VEE4404604, VEE4404605, VEE4404606</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=-719789824">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=-719789824</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>58.776982</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>26.764398</td>
 </tr>
 </table>
 </td>
@@ -2491,7 +2747,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20032">
-      <name>KLO4000546  </name>
+      <name>Sämiveski allikad</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -2501,14 +2757,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4000546
-</td>
+<td>Sämiveski allikad</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4000546
 </td>
 </tr>
@@ -2517,12 +2772,20 @@
 <td>Sämiveski allikad</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4308900</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1353">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=1353</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>59.383958</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>26.596672</td>
 </tr>
 </table>
 </td>
@@ -2548,7 +2811,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20033">
-      <name>KLO4000066</name>
+      <name>Kasetuka allikad</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -2558,13 +2821,13 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>KLO4000066</td>
+<td>Kasetuka allikad</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kaitseala_kood</td>
+<td>Kaitseala kood</td>
 <td>KLO4000066</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -2572,12 +2835,20 @@
 <td>Kasetuka allikad</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4500800, VEE4500900</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=2182">https://www.eelis.ee/?comp=objresult=ala.tyyp.Y&amp;obj_id=2182</a></td>
+</tr>
+<tr>
+<td>N</td>
+<td>59.363035</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>E</td>
+<td>24.699846</td>
 </tr>
 </table>
 </td>

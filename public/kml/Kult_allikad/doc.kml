@@ -14,14 +14,14 @@
       <width>0.400000</width>
     </LineStyle>
     <PolyStyle>
-      <color>ffdef7c6</color>
+      <color>ff00aaff</color>
       <outline>1</outline>
     </PolyStyle>
   </Style>
   <Style id="IconStyle20">
     <IconStyle>
-      <scale>0.250000</scale>
-      <Icon><href>Layer2_Symbol_4bfd6fc0_0.png</href></Icon>
+      <scale>0.625000</scale>
+      <Icon><href>Layer2_Symbol_9ef019c8_0.png</href></Icon>
     </IconStyle>
     <LabelStyle>
       <color>00000000</color>
@@ -55,7 +55,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>9093</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -63,12 +63,16 @@
 <td>Ohvriallikas "Uku allikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9093">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9093</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>Kuivanud</td>
 </tr>
 </table>
 </td>
@@ -102,7 +106,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>9091</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -110,12 +114,16 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9091">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9091</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
 </tr>
 </table>
 </td>
@@ -149,7 +157,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>13676</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -157,12 +165,16 @@
 <td>Ohvriallikas "Põrguläte"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13676">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13676</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
 </tr>
 </table>
 </td>
@@ -179,56 +191,9 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_10003">
-      <name>Ohvriallikas "Müräläte"</name>
-      <Snippet></Snippet>
-      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-<head>
-<META http-equiv="Content-Type" content="text/html">
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-</head>
-<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
-<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
-<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>Ohvriallikas "Müräläte"</td>
-</tr>
-<tr>
-<td>
-<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
-<tr>
-<td>Kultuurimälestise_kood</td>
-<td>13531</td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>Nimi</td>
-<td>Ohvriallikas "Müräläte"</td>
-</tr>
-<tr>
-<td>Allika_KKR_kood</td>
-<td></td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>Link</td>
-<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13531">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13531</a></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</body>
-</html>
-]]></description>
-      <styleUrl>#PolyStyle10</styleUrl>
-      <MultiGeometry>
-        <Polygon>
-          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <outerBoundaryIs><LinearRing><coordinates> 27.44388682400006,57.83547354400008,0 27.44399339800003,57.83525710600003,0 27.44467904100003,57.83529171300006,0 27.44443578000005,57.83559919400005,0 27.44388682400006,57.83547354400008,0</coordinates></LinearRing></outerBoundaryIs>
-        </Polygon>
-      </MultiGeometry>
-    </Placemark>
   </Folder>
   <Folder id="FeatureLayer2">
-    <name>Kult_allikad_rakendusse_punkt1_1</name>
+    <name>Kult_allikad_rakendusse_punkt</name>
     <Snippet></Snippet>
     <Placemark id="ID_20000">
       <name>Ohvriallikas</name>
@@ -247,7 +212,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>9897</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -255,12 +220,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4716502</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9897">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9897</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.557747</td>
+</tr>
+<tr>
+<td>E</td>
+<td>23.659489</td>
 </tr>
 </table>
 </td>
@@ -294,7 +271,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>11740</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -302,12 +279,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4709900</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11740">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11740</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.628347</td>
+</tr>
+<tr>
+<td>E</td>
+<td>24.399315</td>
 </tr>
 </table>
 </td>
@@ -341,7 +330,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>11787</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -349,12 +338,24 @@
 <td>Ohvriallikas "Hiieallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4710301</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11787">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11787</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.625558</td>
+</tr>
+<tr>
+<td>E</td>
+<td>24.036372</td>
 </tr>
 </table>
 </td>
@@ -388,7 +389,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>11786</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -396,12 +397,24 @@
 <td>Ohvriallikas "Hiieallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4710302</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11786">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11786</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.625512</td>
+</tr>
+<tr>
+<td>E</td>
+<td>24.036235</td>
 </tr>
 </table>
 </td>
@@ -435,7 +448,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>11785</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -443,12 +456,24 @@
 <td>Ohvriallikas "Hiieallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4710303</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11785">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11785</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.625441</td>
+</tr>
+<tr>
+<td>E</td>
+<td>24.036095</td>
 </tr>
 </table>
 </td>
@@ -482,7 +507,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>11784</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -490,12 +515,24 @@
 <td>Ohvriallikas "Hiieallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4710304</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11784">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11784</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.625352</td>
+</tr>
+<tr>
+<td>E</td>
+<td>24.036044</td>
 </tr>
 </table>
 </td>
@@ -529,7 +566,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>11769</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -537,12 +574,24 @@
 <td>Ohvriallikas "Hiieallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4710201</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11769">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11769</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.61326</td>
+</tr>
+<tr>
+<td>E</td>
+<td>24.088034</td>
 </tr>
 </table>
 </td>
@@ -576,7 +625,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>9981</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -584,12 +633,24 @@
 <td>Ohvriallikas "Hiieallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4603002</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9981">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9981</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.712903</td>
+</tr>
+<tr>
+<td>E</td>
+<td>23.681375</td>
 </tr>
 </table>
 </td>
@@ -623,7 +684,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>9898</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -631,12 +692,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4716501</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9898">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9898</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.551716</td>
+</tr>
+<tr>
+<td>E</td>
+<td>23.653689</td>
 </tr>
 </table>
 </td>
@@ -670,7 +743,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>10370</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -678,12 +751,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4310300</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10370">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10370</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>59.29192</td>
+</tr>
+<tr>
+<td>E</td>
+<td>26.632141</td>
 </tr>
 </table>
 </td>
@@ -717,7 +802,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>17447</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -725,12 +810,24 @@
 <td>Ohvriallikas "Ristallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4100600</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=17447">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=17447</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>59.367324</td>
+</tr>
+<tr>
+<td>E</td>
+<td>24.424352</td>
 </tr>
 </table>
 </td>
@@ -764,7 +861,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>12875</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -772,12 +869,24 @@
 <td>Ohvriallikas "Silmaläte"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4604900</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12875">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12875</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.306219</td>
+</tr>
+<tr>
+<td>E</td>
+<td>26.949056</td>
 </tr>
 </table>
 </td>
@@ -811,7 +920,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>17438</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -819,12 +928,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4502100</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=17438">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=17438</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>59.211798</td>
+</tr>
+<tr>
+<td>E</td>
+<td>25.439838</td>
 </tr>
 </table>
 </td>
@@ -858,7 +979,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>11767</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -866,12 +987,24 @@
 <td>Ohvriallikas "Teetsi, Täitsi allikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4710000</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11767">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11767</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.61608</td>
+</tr>
+<tr>
+<td>E</td>
+<td>24.206173</td>
 </tr>
 </table>
 </td>
@@ -905,7 +1038,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>13681</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -913,12 +1046,24 @@
 <td>Ohvriallikas "Silmaveeallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4728800</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13681">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13681</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>57.692496</td>
+</tr>
+<tr>
+<td>E</td>
+<td>26.704338</td>
 </tr>
 </table>
 </td>
@@ -952,7 +1097,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>8932</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -960,12 +1105,24 @@
 <td>Ohvriallikas "Külmallik", II at.</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4603100</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=8932">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=8932</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.928491</td>
+</tr>
+<tr>
+<td>E</td>
+<td>22.221729</td>
 </tr>
 </table>
 </td>
@@ -999,7 +1156,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>13396</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1007,12 +1164,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4727800</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13396">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13396</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>57.684087</td>
+</tr>
+<tr>
+<td>E</td>
+<td>27.079947</td>
 </tr>
 </table>
 </td>
@@ -1046,7 +1215,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>12400</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1054,12 +1223,24 @@
 <td>Ohvriallikas "Linnuallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4718600</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12400">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12400</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.292403</td>
+</tr>
+<tr>
+<td>E</td>
+<td>22.379765</td>
 </tr>
 </table>
 </td>
@@ -1093,7 +1274,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>12442</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1101,12 +1282,24 @@
 <td>Ohvriallikas "Hiieallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4718000</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12442">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12442</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.40807</td>
+</tr>
+<tr>
+<td>E</td>
+<td>22.967737</td>
 </tr>
 </table>
 </td>
@@ -1119,7 +1312,7 @@
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 22.96800323300005,58.40812122200003,0</coordinates>
+          <coordinates> 22.96773676500004,58.40806965700006,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
@@ -1140,7 +1333,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>12728</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1148,12 +1341,24 @@
 <td>Rahvapärimustega seotud allikas "Neitsiallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4717900</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12728">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12728</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.437643</td>
+</tr>
+<tr>
+<td>E</td>
+<td>22.89606</td>
 </tr>
 </table>
 </td>
@@ -1187,7 +1392,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>12725</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1195,12 +1400,24 @@
 <td>Ohvriallikas "Lutsuallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4717400</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12725">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12725</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.459594</td>
+</tr>
+<tr>
+<td>E</td>
+<td>22.849315</td>
 </tr>
 </table>
 </td>
@@ -1234,7 +1451,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>12726</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1242,12 +1459,24 @@
 <td>Ohvriallikas "Silmaallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4717500</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12726">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12726</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.459223</td>
+</tr>
+<tr>
+<td>E</td>
+<td>22.849783</td>
 </tr>
 </table>
 </td>
@@ -1281,7 +1510,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>18042</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1289,12 +1518,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4503400</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18042">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18042</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>59.189693</td>
+</tr>
+<tr>
+<td>E</td>
+<td>24.999598</td>
 </tr>
 </table>
 </td>
@@ -1328,7 +1569,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>9220</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1336,12 +1577,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4402300</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9220">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9220</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.807096</td>
+</tr>
+<tr>
+<td>E</td>
+<td>26.344667</td>
 </tr>
 </table>
 </td>
@@ -1375,7 +1628,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>12060</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1383,12 +1636,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4508900</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12060">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12060</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.929189</td>
+</tr>
+<tr>
+<td>E</td>
+<td>24.116254</td>
 </tr>
 </table>
 </td>
@@ -1422,7 +1687,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>18049</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1430,12 +1695,24 @@
 <td>Ohvriallikas "Sepa allikas", "Silmaallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4502200</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18049">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18049</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>59.181226</td>
+</tr>
+<tr>
+<td>E</td>
+<td>25.250838</td>
 </tr>
 </table>
 </td>
@@ -1448,12 +1725,12 @@
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 25.25082026700005,59.18121669100003,0</coordinates>
+          <coordinates> 25.25083752300003,59.18122552300008,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20026">
-      <name>Ohvriallikas</name>
+      <name>Ohvriallikas "Silmaveeallikas"</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -1463,26 +1740,38 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>Ohvriallikas</td>
+<td>Ohvriallikas "Silmaveeallikas"</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
-<td>13671</td>
+<td>Kultuurimälestise kood</td>
+<td>13672</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Nimi</td>
-<td>Ohvriallikas</td>
+<td>Ohvriallikas "Silmaveeallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4700400</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13671">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13671</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>57.900179</td>
+</tr>
+<tr>
+<td>E</td>
+<td>26.566386</td>
 </tr>
 </table>
 </td>
@@ -1500,7 +1789,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20027">
-      <name>Ohvriallikas "Silmaveeallikas"</name>
+      <name>Ohvriallikas</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -1510,26 +1799,38 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>Ohvriallikas "Silmaveeallikas"</td>
+<td>Ohvriallikas</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
-<td>13672</td>
+<td>Kultuurimälestise kood</td>
+<td>13671</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Nimi</td>
-<td>Ohvriallikas "Silmaveeallikas"</td>
+<td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4700500</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13672">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13672</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>57.901721</td>
+</tr>
+<tr>
+<td>E</td>
+<td>26.565704</td>
 </tr>
 </table>
 </td>
@@ -1563,7 +1864,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>10122</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1571,12 +1872,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4600900</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10122">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10122</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.940878</td>
+</tr>
+<tr>
+<td>E</td>
+<td>23.680056</td>
 </tr>
 </table>
 </td>
@@ -1610,7 +1923,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>10169</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1618,12 +1931,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4600800</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10169">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10169</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.954912</td>
+</tr>
+<tr>
+<td>E</td>
+<td>23.765582</td>
 </tr>
 </table>
 </td>
@@ -1636,7 +1961,7 @@
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 23.76557730600007,58.95490186400008,0</coordinates>
+          <coordinates> 23.76558154500003,58.95491232200004,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
@@ -1657,7 +1982,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>9937</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1665,12 +1990,24 @@
 <td>Ohvriallikas "Hiieallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4602800</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9937">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9937</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.804889</td>
+</tr>
+<tr>
+<td>E</td>
+<td>23.950685</td>
 </tr>
 </table>
 </td>
@@ -1704,7 +2041,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>9938</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1712,12 +2049,24 @@
 <td>Ohvriallikas "Silmaallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4602000</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9938">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9938</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.836766</td>
+</tr>
+<tr>
+<td>E</td>
+<td>23.990455</td>
 </tr>
 </table>
 </td>
@@ -1751,7 +2100,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>10739</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1759,12 +2108,24 @@
 <td>Ohvriallikas "Linnamäe allikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4307400</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10739">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10739</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>59.460282</td>
+</tr>
+<tr>
+<td>E</td>
+<td>26.718909</td>
 </tr>
 </table>
 </td>
@@ -1798,7 +2159,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>17527</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1806,12 +2167,24 @@
 <td>Ohvriallikas "Proomu allikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4501100</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=17527">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=17527</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>59.443271</td>
+</tr>
+<tr>
+<td>E</td>
+<td>24.495872</td>
 </tr>
 </table>
 </td>
@@ -1845,7 +2218,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>12088</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1853,12 +2226,24 @@
 <td>Ohvriallikas "Külmaallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4801300</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12088">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12088</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>59.008847</td>
+</tr>
+<tr>
+<td>E</td>
+<td>24.381103</td>
 </tr>
 </table>
 </td>
@@ -1892,7 +2277,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>12518</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1900,12 +2285,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4801600</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12518">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12518</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.539827</td>
+</tr>
+<tr>
+<td>E</td>
+<td>22.469794</td>
 </tr>
 </table>
 </td>
@@ -1939,7 +2336,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>12219</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1947,12 +2344,24 @@
 <td>Ohvriallikas "Põrguallikad"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4508401</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12219">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12219</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>59.028839</td>
+</tr>
+<tr>
+<td>E</td>
+<td>24.703918</td>
 </tr>
 </table>
 </td>
@@ -1986,7 +2395,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>12768</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -1994,12 +2403,24 @@
 <td>Ohvriallikas "Punane allikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4405101</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12768">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12768</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.608118</td>
+</tr>
+<tr>
+<td>E</td>
+<td>27.126148</td>
 </tr>
 </table>
 </td>
@@ -2033,7 +2454,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>12483</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -2041,12 +2462,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4726001</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12483">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12483</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.251941</td>
+</tr>
+<tr>
+<td>E</td>
+<td>22.033375</td>
 </tr>
 </table>
 </td>
@@ -2080,7 +2513,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>10740</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -2088,12 +2521,24 @@
 <td>Ohvriallikas "Lähtoru allikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4317901</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10740">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10740</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>59.462954</td>
+</tr>
+<tr>
+<td>E</td>
+<td>26.730355</td>
 </tr>
 </table>
 </td>
@@ -2127,7 +2572,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>10071</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -2135,12 +2580,24 @@
 <td>Ohvriallikas "Silmaallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4600801</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10071">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10071</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.96702</td>
+</tr>
+<tr>
+<td>E</td>
+<td>23.676083</td>
 </tr>
 </table>
 </td>
@@ -2174,7 +2631,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>9445</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -2182,12 +2639,24 @@
 <td>Ohvriallikas "Kuldallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4312601</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9445">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9445</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.906218</td>
+</tr>
+<tr>
+<td>E</td>
+<td>26.491215</td>
 </tr>
 </table>
 </td>
@@ -2221,7 +2690,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>10527</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -2229,12 +2698,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4309000</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10527">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10527</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>59.404896</td>
+</tr>
+<tr>
+<td>E</td>
+<td>26.58559</td>
 </tr>
 </table>
 </td>
@@ -2268,7 +2749,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>10070</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -2276,12 +2757,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4511701</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10070">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10070</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>59.03152</td>
+</tr>
+<tr>
+<td>E</td>
+<td>23.830495</td>
 </tr>
 </table>
 </td>
@@ -2315,7 +2808,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>9988</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -2323,12 +2816,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4603001</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9988">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9988</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.673131</td>
+</tr>
+<tr>
+<td>E</td>
+<td>23.712765</td>
 </tr>
 </table>
 </td>
@@ -2362,7 +2867,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>12264</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -2370,12 +2875,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4801701</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12264">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12264</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.453181</td>
+</tr>
+<tr>
+<td>E</td>
+<td>22.494577</td>
 </tr>
 </table>
 </td>
@@ -2409,7 +2926,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>12469</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -2417,12 +2934,24 @@
 <td>Ohvriallikas "Hiieallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4801702</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12469">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12469</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.463089</td>
+</tr>
+<tr>
+<td>E</td>
+<td>22.607999</td>
 </tr>
 </table>
 </td>
@@ -2456,7 +2985,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>10504</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -2464,12 +2993,24 @@
 <td>Ohvriallikas "Hiieallikas", "Kuldallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4309201</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10504">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10504</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>59.399147</td>
+</tr>
+<tr>
+<td>E</td>
+<td>26.420578</td>
 </tr>
 </table>
 </td>
@@ -2503,7 +3044,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>11078</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -2511,12 +3052,24 @@
 <td>Ohvriallikas "Silmaläte"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4609701</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11078">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11078</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>57.984744</td>
+</tr>
+<tr>
+<td>E</td>
+<td>27.036525</td>
 </tr>
 </table>
 </td>
@@ -2550,7 +3103,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>12542</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -2558,12 +3111,24 @@
 <td>Ohvriallikas "Hiieniidi allikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4719000</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12542">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12542</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.453656</td>
+</tr>
+<tr>
+<td>E</td>
+<td>22.211472</td>
 </tr>
 </table>
 </td>
@@ -2597,7 +3162,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>9245</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -2605,12 +3170,24 @@
 <td>Ohvriallikas "Laiuse Siniallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4404800</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9245">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9245</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.776905</td>
+</tr>
+<tr>
+<td>E</td>
+<td>26.482566</td>
 </tr>
 </table>
 </td>
@@ -2644,7 +3221,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>12760</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -2652,12 +3229,24 @@
 <td>Ohvriallikas "Rahaallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4718200</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12760">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12760</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.385765</td>
+</tr>
+<tr>
+<td>E</td>
+<td>22.815098</td>
 </tr>
 </table>
 </td>
@@ -2691,7 +3280,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>12543</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -2699,12 +3288,24 @@
 <td>Ohvriallikas "Silmaallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4719100</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12543">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12543</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.455144</td>
+</tr>
+<tr>
+<td>E</td>
+<td>22.212162</td>
 </tr>
 </table>
 </td>
@@ -2738,7 +3339,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>12876</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -2746,12 +3347,24 @@
 <td>Ohvriallikas "Põrguvaluläte"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4604800</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12876">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12876</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.312026</td>
+</tr>
+<tr>
+<td>E</td>
+<td>26.956936</td>
 </tr>
 </table>
 </td>
@@ -2785,7 +3398,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>9918</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -2793,12 +3406,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4716500</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9918">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9918</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.554814</td>
+</tr>
+<tr>
+<td>E</td>
+<td>23.721755</td>
 </tr>
 </table>
 </td>
@@ -2832,7 +3457,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>11855</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -2840,12 +3465,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
-<td>VEE4717300</td>
+<td>Allika KKR kood</td>
+<td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11855">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11855</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.509099</td>
+</tr>
+<tr>
+<td>E</td>
+<td>23.816635</td>
 </tr>
 </table>
 </td>
@@ -2858,7 +3495,7 @@
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 23.81690455600005,58.51221888700007,0</coordinates>
+          <coordinates> 23.81663534800003,58.50909878000004,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
@@ -2879,7 +3516,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>12021</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -2887,12 +3524,24 @@
 <td>Ohvriallikas "Siniallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4503600</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12021">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12021</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>59.17842</td>
+</tr>
+<tr>
+<td>E</td>
+<td>24.844028</td>
 </tr>
 </table>
 </td>
@@ -2926,7 +3575,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>12019</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -2934,12 +3583,24 @@
 <td>Ohvriallikas "Kurrika-allikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4503700</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12019">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12019</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>59.178521</td>
+</tr>
+<tr>
+<td>E</td>
+<td>24.843252</td>
 </tr>
 </table>
 </td>
@@ -2973,7 +3634,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>12020</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -2981,12 +3642,24 @@
 <td>Ohvriallikas "Silmaallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4101500</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12020">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12020</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>59.178334</td>
+</tr>
+<tr>
+<td>E</td>
+<td>24.843697</td>
 </tr>
 </table>
 </td>
@@ -3020,7 +3693,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>12922</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -3028,12 +3701,24 @@
 <td>Ohvriallikas "Kave läte"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4605100</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12922">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12922</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.341005</td>
+</tr>
+<tr>
+<td>E</td>
+<td>26.362239</td>
 </tr>
 </table>
 </td>
@@ -3046,7 +3731,7 @@
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 26.36223053200007,58.34099114000003,0</coordinates>
+          <coordinates> 26.36223939400003,58.34100457000005,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
@@ -3067,7 +3752,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>11925</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -3075,12 +3760,24 @@
 <td>Ohvriallikas "Ordeallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4507400</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11925">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11925</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>59.059517</td>
+</tr>
+<tr>
+<td>E</td>
+<td>25.040276</td>
 </tr>
 </table>
 </td>
@@ -3114,7 +3811,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>9809</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -3122,12 +3819,24 @@
 <td>Ohvriallikas "Püha allikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4716302</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9809">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9809</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.598578</td>
+</tr>
+<tr>
+<td>E</td>
+<td>23.646215</td>
 </tr>
 </table>
 </td>
@@ -3161,7 +3870,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>13263</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -3169,12 +3878,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4710400</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13263">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13263</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.507298</td>
+</tr>
+<tr>
+<td>E</td>
+<td>25.642773</td>
 </tr>
 </table>
 </td>
@@ -3208,7 +3929,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>17913</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -3216,12 +3937,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4503900</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=17913">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=17913</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>59.204541</td>
+</tr>
+<tr>
+<td>E</td>
+<td>24.422068</td>
 </tr>
 </table>
 </td>
@@ -3255,7 +3988,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>18932</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -3263,12 +3996,24 @@
 <td>Ohvriallikas "Silmaallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4501400</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18932">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18932</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>59.272763</td>
+</tr>
+<tr>
+<td>E</td>
+<td>24.739209</td>
 </tr>
 </table>
 </td>
@@ -3302,7 +4047,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>13053</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -3310,12 +4055,24 @@
 <td>Ohvriallikas "Arstiallik"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4613300</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13053">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13053</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.017296</td>
+</tr>
+<tr>
+<td>E</td>
+<td>25.884324</td>
 </tr>
 </table>
 </td>
@@ -3349,7 +4106,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>13054</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -3357,12 +4114,24 @@
 <td>Ohvriallikas "Pärliallik"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4613400</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13054">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13054</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.016313</td>
+</tr>
+<tr>
+<td>E</td>
+<td>25.880006</td>
 </tr>
 </table>
 </td>
@@ -3396,7 +4165,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>10844</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -3404,12 +4173,24 @@
 <td>Ohvriallikas "Silmaallikas", "Parandusveeallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4308600</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10844">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10844</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>59.415353</td>
+</tr>
+<tr>
+<td>E</td>
+<td>26.70133</td>
 </tr>
 </table>
 </td>
@@ -3443,7 +4224,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>12103</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -3451,12 +4232,24 @@
 <td>Ohvriallikas "Punaallikas", "Paunaallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4510200</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12103">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12103</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.844295</td>
+</tr>
+<tr>
+<td>E</td>
+<td>24.36072</td>
 </tr>
 </table>
 </td>
@@ -3490,7 +4283,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>12104</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -3498,12 +4291,24 @@
 <td>Ohvriallikas "Valgeallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4510300</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12104">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12104</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.841207</td>
+</tr>
+<tr>
+<td>E</td>
+<td>24.388646</td>
 </tr>
 </table>
 </td>
@@ -3537,7 +4342,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>12115</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -3545,12 +4350,24 @@
 <td>Ohvriallikas "Karuallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4510100</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12115">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12115</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.896037</td>
+</tr>
+<tr>
+<td>E</td>
+<td>24.351758</td>
 </tr>
 </table>
 </td>
@@ -3584,7 +4401,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>12140</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -3592,12 +4409,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4508700</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12140">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12140</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.967396</td>
+</tr>
+<tr>
+<td>E</td>
+<td>24.623162</td>
 </tr>
 </table>
 </td>
@@ -3631,7 +4460,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>10682</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -3639,12 +4468,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4317801</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10682">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10682</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>59.490762</td>
+</tr>
+<tr>
+<td>E</td>
+<td>26.653838</td>
 </tr>
 </table>
 </td>
@@ -3678,7 +4519,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>11771</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -3686,12 +4527,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4715901</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11771">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11771</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.583991</td>
+</tr>
+<tr>
+<td>E</td>
+<td>23.974614</td>
 </tr>
 </table>
 </td>
@@ -3725,7 +4578,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>11854</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -3733,12 +4586,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4107201</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11854">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11854</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.472993</td>
+</tr>
+<tr>
+<td>E</td>
+<td>23.821388</td>
 </tr>
 </table>
 </td>
@@ -3772,7 +4637,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>10046</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -3780,12 +4645,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4602100</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10046">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10046</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.824639</td>
+</tr>
+<tr>
+<td>E</td>
+<td>23.800265</td>
 </tr>
 </table>
 </td>
@@ -3819,7 +4696,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>18979</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -3827,12 +4704,24 @@
 <td>Ohvriallikas "Sõeru allikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4501600</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18979">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18979</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>59.338446</td>
+</tr>
+<tr>
+<td>E</td>
+<td>24.539659</td>
 </tr>
 </table>
 </td>
@@ -3866,7 +4755,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>11788</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -3874,12 +4763,24 @@
 <td>Ohvriallikas "Seaalllikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4715900</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11788">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11788</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.601099</td>
+</tr>
+<tr>
+<td>E</td>
+<td>23.906071</td>
 </tr>
 </table>
 </td>
@@ -3913,7 +4814,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>11853</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -3921,12 +4822,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4717200</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11853">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11853</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.53406</td>
+</tr>
+<tr>
+<td>E</td>
+<td>23.830722</td>
 </tr>
 </table>
 </td>
@@ -3960,7 +4873,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>13117</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -3968,12 +4881,24 @@
 <td>Ohvriallikas "Nuudaläte"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4611900</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13117">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13117</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.069459</td>
+</tr>
+<tr>
+<td>E</td>
+<td>26.202226</td>
 </tr>
 </table>
 </td>
@@ -4007,7 +4932,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>9881</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -4015,12 +4940,24 @@
 <td>Ohvriallikas "Kaie kaev"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4716301</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9881">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9881</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.59549</td>
+</tr>
+<tr>
+<td>E</td>
+<td>23.733093</td>
 </tr>
 </table>
 </td>
@@ -4054,7 +4991,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>10134</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -4062,12 +4999,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4505600</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10134">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=10134</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>59.102384</td>
+</tr>
+<tr>
+<td>E</td>
+<td>24.020802</td>
 </tr>
 </table>
 </td>
@@ -4101,7 +5050,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>12397</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -4109,12 +5058,24 @@
 <td>Ohvriallikas "Põhjatu allikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4718500</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12397">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12397</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.303577</td>
+</tr>
+<tr>
+<td>E</td>
+<td>22.488379</td>
 </tr>
 </table>
 </td>
@@ -4148,7 +5109,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>18593</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -4156,12 +5117,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
-<td></td>
+<td>Allika KKR kood</td>
+<td>VEE4505200</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18593">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18593</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>59.135754</td>
+</tr>
+<tr>
+<td>E</td>
+<td>24.324897</td>
 </tr>
 </table>
 </td>
@@ -4174,7 +5147,7 @@
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.32489179400005,59.13573119000006,0</coordinates>
+          <coordinates> 24.32489700400004,59.13575395400005,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
@@ -4195,7 +5168,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>18813</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -4203,12 +5176,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18813">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18813</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>59.352387</td>
+</tr>
+<tr>
+<td>E</td>
+<td>24.997749</td>
 </tr>
 </table>
 </td>
@@ -4242,7 +5227,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>17902</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -4250,12 +5235,24 @@
 <td>Ohvriallikas "Püha allikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
-<td></td>
+<td>Allika KKR kood</td>
+<td>VEE4101200</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=17902">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=17902</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>59.278353</td>
+</tr>
+<tr>
+<td>E</td>
+<td>24.359431</td>
 </tr>
 </table>
 </td>
@@ -4273,7 +5270,7 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20086">
-      <name>Ohvriallikas "Silamaallikas", "Kärsa allikas"</name>
+      <name>Ohvriallikas "Silmaallikas", "Kärsa allikas"</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
@@ -4283,26 +5280,38 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>Ohvriallikas "Silamaallikas", "Kärsa allikas"</td>
+<td>Ohvriallikas "Silmaallikas", "Kärsa allikas"</td>
 </tr>
 <tr>
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>9301</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Nimi</td>
-<td>Ohvriallikas "Silamaallikas", "Kärsa allikas"</td>
+<td>Ohvriallikas "Silmaallikas", "Kärsa allikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9301">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9301</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.657364</td>
+</tr>
+<tr>
+<td>E</td>
+<td>26.662997</td>
 </tr>
 </table>
 </td>
@@ -4336,7 +5345,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>12059</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -4344,12 +5353,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12059">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12059</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.926759</td>
+</tr>
+<tr>
+<td>E</td>
+<td>24.11546</td>
 </tr>
 </table>
 </td>
@@ -4383,7 +5404,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>12061</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -4391,12 +5412,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12061">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12061</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.929063</td>
+</tr>
+<tr>
+<td>E</td>
+<td>24.116341</td>
 </tr>
 </table>
 </td>
@@ -4430,7 +5463,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>9414</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -4438,12 +5471,24 @@
 <td>Ohvriallikas "Silmaallikas", "Soome allikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9414">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9414</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>Kuivanud</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.617748</td>
+</tr>
+<tr>
+<td>E</td>
+<td>26.711977</td>
 </tr>
 </table>
 </td>
@@ -4477,7 +5522,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>11025</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -4485,12 +5530,24 @@
 <td>Ohvriallikas "Kõrveläte", "Kõrbeläte"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4607300</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11025">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=11025</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.075433</td>
+</tr>
+<tr>
+<td>E</td>
+<td>26.880482</td>
 </tr>
 </table>
 </td>
@@ -4524,7 +5581,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>13801</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -4532,12 +5589,24 @@
 <td>Ohvriallikas "Silmaläte"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4704800</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13801">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13801</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>57.878113</td>
+</tr>
+<tr>
+<td>E</td>
+<td>26.959161</td>
 </tr>
 </table>
 </td>
@@ -4571,7 +5640,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>13636</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -4579,12 +5648,24 @@
 <td>Ohvriallikas "Kiivläte"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4706700</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13636">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13636</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>57.783062</td>
+</tr>
+<tr>
+<td>E</td>
+<td>26.911097</td>
 </tr>
 </table>
 </td>
@@ -4618,7 +5699,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>9092</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -4626,12 +5707,24 @@
 <td>Ohvriallikas "Silmaallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4308500</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9092">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=9092</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>59.409694</td>
+</tr>
+<tr>
+<td>E</td>
+<td>27.023562</td>
 </tr>
 </table>
 </td>
@@ -4665,7 +5758,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>12102</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -4673,12 +5766,24 @@
 <td>Ohvriallikas "Mustallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4510000</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12102">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=12102</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.867262</td>
+</tr>
+<tr>
+<td>E</td>
+<td>24.369263</td>
 </tr>
 </table>
 </td>
@@ -4712,7 +5817,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>13594</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -4720,12 +5825,24 @@
 <td>Ohvriallikas "Silmaläte"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4604100</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13594">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13594</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>57.757913</td>
+</tr>
+<tr>
+<td>E</td>
+<td>27.477277</td>
 </tr>
 </table>
 </td>
@@ -4738,7 +5855,7 @@
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 27.47723679300003,57.75792585400006,0</coordinates>
+          <coordinates> 27.47727713600005,57.75791278800006,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
@@ -4759,7 +5876,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>8981</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -4767,12 +5884,24 @@
 <td>Ohvriallikas "Püha allikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4307201</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=8981">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=8981</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>59.202932</td>
+</tr>
+<tr>
+<td>E</td>
+<td>27.527693</td>
 </tr>
 </table>
 </td>
@@ -4806,7 +5935,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>13229</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -4814,12 +5943,24 @@
 <td>Ohvriallikas</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4511100</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13229">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13229</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.666274</td>
+</tr>
+<tr>
+<td>E</td>
+<td>25.677006</td>
 </tr>
 </table>
 </td>
@@ -4853,7 +5994,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>13218</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -4861,12 +6002,24 @@
 <td>Kultuseallikas "Silmaallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4710801</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13218">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13218</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.522444</td>
+</tr>
+<tr>
+<td>E</td>
+<td>25.953966</td>
 </tr>
 </table>
 </td>
@@ -4900,7 +6053,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>13401</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -4908,12 +6061,24 @@
 <td>Ohvriallikas "Ilmamäe allikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4704700</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13401">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13401</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>57.792127</td>
+</tr>
+<tr>
+<td>E</td>
+<td>27.170025</td>
 </tr>
 </table>
 </td>
@@ -4947,7 +6112,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>13677</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -4955,12 +6120,24 @@
 <td>Ohvriallikas "Silmaläte"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4701000</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13677">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13677</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>57.937977</td>
+</tr>
+<tr>
+<td>E</td>
+<td>26.506059</td>
 </tr>
 </table>
 </td>
@@ -4994,7 +6171,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>13306</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -5002,12 +6179,24 @@
 <td>Ohvriallikas "Siniallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4803400</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13306">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13306</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>58.302463</td>
+</tr>
+<tr>
+<td>E</td>
+<td>25.560609</td>
 </tr>
 </table>
 </td>
@@ -5041,7 +6230,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>18053</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -5049,12 +6238,24 @@
 <td>Ohvriallikad "Saula Siniallikad"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4503300, VEE4503301, VEE4503302</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18053">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18053</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>59.214848</td>
+</tr>
+<tr>
+<td>E</td>
+<td>25.042788</td>
 </tr>
 </table>
 </td>
@@ -5096,7 +6297,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>18616</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -5104,12 +6305,24 @@
 <td>Ohvriallikas "Ohu allikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4504401</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18616">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=18616</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>59.18981</td>
+</tr>
+<tr>
+<td>E</td>
+<td>24.076913</td>
 </tr>
 </table>
 </td>
@@ -5143,7 +6356,7 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>Kultuurimälestise_kood</td>
+<td>Kultuurimälestise kood</td>
 <td>13680</td>
 </tr>
 <tr bgcolor="#D4E4F3">
@@ -5151,12 +6364,24 @@
 <td>Ohvriallikas "Silmaveeallikas"</td>
 </tr>
 <tr>
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4728700</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
 <td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13680">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13680</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>57.692596</td>
+</tr>
+<tr>
+<td>E</td>
+<td>26.704575</td>
 </tr>
 </table>
 </td>
@@ -5170,6 +6395,65 @@
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
           <coordinates> 26.70457544500005,57.69259644200008,0</coordinates>
+        </Point>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_20105">
+      <name>Ohvriallikas "Müräläte"</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Ohvriallikas "Müräläte"</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Kultuurimälestise kood</td>
+<td>13531</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Ohvriallikas "Müräläte"</td>
+</tr>
+<tr>
+<td>Allika KKR kood</td>
+<td>VEE4603500</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Link</td>
+<td><a target="_blank" href="https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13531">https://register.muinas.ee/public.php?menuID=monument&amp;action=view&amp;id=13531</a></td>
+</tr>
+<tr>
+<td>Kommentaar</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>N</td>
+<td>57.835241</td>
+</tr>
+<tr>
+<td>E</td>
+<td>27.442313</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle20</styleUrl>
+      <MultiGeometry>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 27.44231324600003,57.83524129400007,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>

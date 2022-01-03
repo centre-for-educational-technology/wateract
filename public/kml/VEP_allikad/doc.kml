@@ -14,7 +14,7 @@
       <width>0.400000</width>
     </LineStyle>
     <PolyStyle>
-      <color>fff7bcd3</color>
+      <color>ff00ff55</color>
       <outline>1</outline>
     </PolyStyle>
   </Style>
@@ -38,19 +38,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP110066</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>C2</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -85,20 +85,20 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP143242</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
-<td>VEE4107410, VEE4107427</td>
+<td>Allika KKR kood</td>
+<td>VEE4107427</td>
 </tr>
 </table>
 </td>
@@ -132,19 +132,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP206829</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -179,19 +179,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP204263</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>C1</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -226,19 +226,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP128108</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>34,22</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4401800, VEE4401801, VEE4401802</td>
 </tr>
 </table>
@@ -257,53 +257,6 @@
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_00005">
-      <name>VEP158162</name>
-      <Snippet></Snippet>
-      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-<head>
-<META http-equiv="Content-Type" content="text/html">
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-</head>
-<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
-<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
-<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>VEP158162</td>
-</tr>
-<tr>
-<td>
-<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
-<tr>
-<td>VEP_kood</td>
-<td>VEP158162</td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
-<td>32. Allika-alad</td>
-</tr>
-<tr>
-<td>Kaasnev_VEP_tüüp</td>
-<td></td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
-<td></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</body>
-</html>
-]]></description>
-      <styleUrl>#PolyStyle00</styleUrl>
-      <MultiGeometry>
-        <Polygon>
-          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <outerBoundaryIs><LinearRing><coordinates> 24.93762592900003,59.21836241400007,0 24.93805161000006,59.21622417400005,0 24.93815379300003,59.21561423600008,0 24.93811584200006,59.21496667100007,0 24.93798223800007,59.21431830500006,0 24.93774212300008,59.21412092000003,0 24.93730707800006,59.21389521500004,0 24.93734464300007,59.21378499100007,0 24.93755685900004,59.21370323400004,0 24.93782949100006,59.21371168000007,0 24.93820045000007,59.21381897500004,0 24.93857593100006,59.21398567000006,0 24.93924959000003,59.21445928400004,0 24.93985415500003,59.21452477700007,0 24.94034335500004,59.21461041400005,0 24.94083288000007,59.21470793300006,0 24.94102672200006,59.21469613800008,0 24.94120155200005,59.21462504400006,0 24.94120236500004,59.21465475600007,0 24.94140059900008,59.21480340200003,0 24.94203147900004,59.21508860500006,0 24.94228762600005,59.21523534700003,0 24.94259822200007,59.21525391100005,0 24.94277439800004,59.21523184000006,0 24.94292870100003,59.21515197700006,0 24.94320077600003,59.21513961400007,0 24.94332018900008,59.21600650000005,0 24.94057815100007,59.21609607900007,0 24.94025044500006,59.21831386100007,0 24.93762592900003,59.21836241400007,0</coordinates></LinearRing></outerBoundaryIs>
-        </Polygon>
-      </MultiGeometry>
-    </Placemark>
-    <Placemark id="ID_00006">
       <name>VEP143060</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -320,19 +273,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP143060</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>A2</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4111000, VEE4111001</td>
 </tr>
 </table>
@@ -350,7 +303,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00007">
+    <Placemark id="ID_00006">
       <name>VEP107097</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -367,19 +320,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP107097</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4307800</td>
 </tr>
 </table>
@@ -397,7 +350,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00008">
+    <Placemark id="ID_00007">
       <name>VEPL01942</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -414,19 +367,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEPL01942</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -444,7 +397,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00009">
+    <Placemark id="ID_00008">
       <name>VEPL00068</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -461,19 +414,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEPL00068</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>13</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -491,7 +444,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00010">
+    <Placemark id="ID_00009">
       <name>VEP154048</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -508,19 +461,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP154048</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>C2</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -538,7 +491,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00011">
+    <Placemark id="ID_00010">
       <name>VEP130105</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -555,19 +508,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP130105</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>C1,71</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -585,7 +538,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00012">
+    <Placemark id="ID_00011">
       <name>VEP110102</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -602,19 +555,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP110102</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>22</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -632,7 +585,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00013">
+    <Placemark id="ID_00012">
       <name>VEP000214</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -649,19 +602,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP000214</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -679,7 +632,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00014">
+    <Placemark id="ID_00013">
       <name>VEP000316</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -696,19 +649,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP000316</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -726,7 +679,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00015">
+    <Placemark id="ID_00014">
       <name>VEP204183</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -743,19 +696,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP204183</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>34,C3</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -773,7 +726,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00016">
+    <Placemark id="ID_00015">
       <name>VEP153028</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -790,19 +743,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP153028</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -820,7 +773,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00017">
+    <Placemark id="ID_00016">
       <name>VEP120031</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -837,19 +790,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP120031</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -867,7 +820,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00018">
+    <Placemark id="ID_00017">
       <name>VEP000178</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -884,19 +837,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP000178</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>A2,C1</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4406000</td>
 </tr>
 </table>
@@ -914,7 +867,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00019">
+    <Placemark id="ID_00018">
       <name>VEP107090</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -931,19 +884,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP107090</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4307700</td>
 </tr>
 </table>
@@ -961,7 +914,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00020">
+    <Placemark id="ID_00019">
       <name>VEP139004</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -978,19 +931,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP139004</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>A2</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -1008,7 +961,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00021">
+    <Placemark id="ID_00020">
       <name>VEP107199</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -1025,19 +978,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP107199</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -1055,7 +1008,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00022">
+    <Placemark id="ID_00021">
       <name>VEP153069</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -1072,19 +1025,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP153069</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4112600</td>
 </tr>
 </table>
@@ -1102,7 +1055,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00023">
+    <Placemark id="ID_00022">
       <name>VEP139015</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -1119,19 +1072,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP139015</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>C3</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -1149,7 +1102,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00024">
+    <Placemark id="ID_00023">
       <name>VEP204184</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -1166,19 +1119,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP204184</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>34,C3</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -1196,7 +1149,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00025">
+    <Placemark id="ID_00024">
       <name>VEP107156</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -1213,19 +1166,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP107156</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -1243,7 +1196,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00026">
+    <Placemark id="ID_00025">
       <name>VEP153083</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -1260,19 +1213,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP153083</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -1290,7 +1243,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00027">
+    <Placemark id="ID_00026">
       <name>VEPL01676</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -1307,20 +1260,20 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEPL01676</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
-<td>VEE4107401, VEE4107423</td>
+<td>Allika KKR kood</td>
+<td>VEE4107401</td>
 </tr>
 </table>
 </td>
@@ -1337,7 +1290,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00028">
+    <Placemark id="ID_00027">
       <name>VEP000329</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -1354,19 +1307,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP000329</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -1384,7 +1337,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00029">
+    <Placemark id="ID_00028">
       <name>VEP137024</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -1401,19 +1354,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP137024</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>33</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4600700</td>
 </tr>
 </table>
@@ -1431,54 +1384,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00030">
-      <name>VEP158148</name>
-      <Snippet></Snippet>
-      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-<head>
-<META http-equiv="Content-Type" content="text/html">
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-</head>
-<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
-<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
-<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>VEP158148</td>
-</tr>
-<tr>
-<td>
-<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
-<tr>
-<td>VEP_kood</td>
-<td>VEP158148</td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
-<td>32. Allika-alad</td>
-</tr>
-<tr>
-<td>Kaasnev_VEP_tüüp</td>
-<td></td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
-<td>VEE4101300</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</body>
-</html>
-]]></description>
-      <styleUrl>#PolyStyle00</styleUrl>
-      <MultiGeometry>
-        <Polygon>
-          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <outerBoundaryIs><LinearRing><coordinates> 25.26853760900008,59.22776764700006,0 25.26866332000003,59.22708882100005,0 25.26867132000007,59.22667712700007,0 25.26890409200007,59.22654261700006,0 25.26923071500005,59.22659443100008,0 25.26954242900007,59.22679201500006,0 25.27003902700005,59.22736375700003,0 25.27041475900006,59.22811647400005,0 25.27043776200003,59.22873887700007,0 25.27017835800007,59.22932984300007,0 25.26943193100004,59.23023759100005,0 25.26845513600006,59.23142544300003,0 25.26821476200007,59.23198352900005,0 25.26814457400008,59.23243891900006,0 25.26798341800003,59.23270795600007,0 25.26725506900004,59.23355904500005,0 25.26693780100004,59.23376272400003,0 25.26656965600006,59.23376628700004,0 25.26621769700006,59.23365824500007,0 25.26609933500004,59.23343649300006,0 25.26619230400007,59.23296899600007,0 25.26666712400004,59.23231948800003,0 25.26700661500007,59.23153903500008,0 25.26704990400003,59.23098286000004,0 25.26725458900006,59.23063613100004,0 25.26814324500003,59.22941644900004,0 25.26852735400007,59.22866825100004,0 25.26853760900008,59.22776764700006,0</coordinates></LinearRing></outerBoundaryIs>
-        </Polygon>
-      </MultiGeometry>
-    </Placemark>
-    <Placemark id="ID_00031">
+    <Placemark id="ID_00029">
       <name>VEP135002</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -1495,19 +1401,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP135002</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4406100</td>
 </tr>
 </table>
@@ -1525,7 +1431,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00032">
+    <Placemark id="ID_00030">
       <name>VEP110058</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -1542,19 +1448,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP110058</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>C1</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -1572,7 +1478,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00033">
+    <Placemark id="ID_00031">
       <name>VEP107200</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -1589,19 +1495,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP107200</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -1619,7 +1525,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00034">
+    <Placemark id="ID_00032">
       <name>VEP000354</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -1636,19 +1542,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP000354</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -1666,7 +1572,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00035">
+    <Placemark id="ID_00033">
       <name>VEPL00928</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -1683,19 +1589,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEPL00928</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -1713,7 +1619,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00036">
+    <Placemark id="ID_00034">
       <name>VEP154049</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -1730,19 +1636,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP154049</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>C2</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -1760,7 +1666,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00037">
+    <Placemark id="ID_00035">
       <name>VEP154144</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -1777,19 +1683,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP154144</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>A2</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -1807,7 +1713,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00038">
+    <Placemark id="ID_00036">
       <name>VEP110020</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -1824,19 +1730,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP110020</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>C1</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4207100, VEE4207200</td>
 </tr>
 </table>
@@ -1854,7 +1760,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00039">
+    <Placemark id="ID_00037">
       <name>VEP153003</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -1871,19 +1777,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP153003</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -1901,7 +1807,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00040">
+    <Placemark id="ID_00038">
       <name>VEPL00927</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -1918,19 +1824,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEPL00927</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -1948,7 +1854,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00041">
+    <Placemark id="ID_00039">
       <name>VEP153029</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -1965,19 +1871,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP153029</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -1995,7 +1901,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00042">
+    <Placemark id="ID_00040">
       <name>VEPL01967</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -2012,19 +1918,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEPL01967</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>32. Allika-alad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>13</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4503300, VEE4503301, VEE4503302</td>
 </tr>
 </table>
@@ -2042,7 +1948,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00043">
+    <Placemark id="ID_00041">
       <name>VEP110098</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -2059,19 +1965,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP110098</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>C. Märgalade metsad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>13, 32, A1</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -2089,54 +1995,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00044">
-      <name>VEP112029</name>
-      <Snippet></Snippet>
-      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-<head>
-<META http-equiv="Content-Type" content="text/html">
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-</head>
-<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
-<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
-<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>VEP112029</td>
-</tr>
-<tr>
-<td>
-<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
-<tr>
-<td>VEP_kood</td>
-<td>VEP112029</td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
-<td>C. Märgalade metsad</td>
-</tr>
-<tr>
-<td>Kaasnev_VEP_tüüp</td>
-<td>B2, 32</td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
-<td></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</body>
-</html>
-]]></description>
-      <styleUrl>#PolyStyle00</styleUrl>
-      <MultiGeometry>
-        <Polygon>
-          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <outerBoundaryIs><LinearRing><coordinates> 25.99001559200008,58.01571175700008,0 25.98754712000004,58.01660541800004,0 25.98743137000002,58.01658939900005,0 25.98717697800004,58.01654880200005,0 25.98601182000004,58.01640210400006,0 25.98599511000003,58.01640385300004,0 25.98617590300006,58.01623005000005,0 25.98642309900004,58.01619197200006,0 25.98638292100003,58.01597407000003,0 25.98670947900007,58.01575188900006,0 25.98673141300003,58.01564302000003,0 25.98740950400003,58.01569628200008,0 25.98755875600006,58.01571028700005,0 25.98931569700005,58.01516826600005,0 25.98944738300003,58.01511862100006,0 25.98966456600004,58.01534562800003,0 25.99001559200008,58.01571175700008,0</coordinates></LinearRing></outerBoundaryIs>
-        </Polygon>
-      </MultiGeometry>
-    </Placemark>
-    <Placemark id="ID_00045">
+    <Placemark id="ID_00042">
       <name>VEP158178</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -2153,19 +2012,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP158178</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>C1. Lepikud</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>32</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4113503</td>
 </tr>
 </table>
@@ -2184,7 +2043,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00046">
+    <Placemark id="ID_00043">
       <name>VEP162049</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -2201,19 +2060,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP162049</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>C1. Lepikud</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>32,52</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -2231,7 +2090,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00047">
+    <Placemark id="ID_00044">
       <name>VEP134127</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -2248,19 +2107,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP134127</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>C2. Märgalade kuusikud ja kuusesegametsad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>C3,32</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -2278,7 +2137,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00048">
+    <Placemark id="ID_00045">
       <name>VEP112026</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -2295,19 +2154,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP112026</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>C2. Märgalade kuusikud ja kuusesegametsad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>32</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -2325,7 +2184,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00049">
+    <Placemark id="ID_00046">
       <name>VEP134121</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -2342,19 +2201,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP134121</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>B2. Haavikud</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>31,32</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -2372,7 +2231,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00050">
+    <Placemark id="ID_00047">
       <name>VEP142013</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -2389,19 +2248,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP142013</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>A2. Männikud ja männisegametsad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>32</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -2419,7 +2278,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00051">
+    <Placemark id="ID_00048">
       <name>VEP204120</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -2436,19 +2295,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP204120</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>B. Lehtmetsad arumaadel</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>32</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -2466,7 +2325,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00052">
+    <Placemark id="ID_00049">
       <name>VEP206309</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -2483,19 +2342,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP206309</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>C1. Lepikud</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>32</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -2513,7 +2372,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00053">
+    <Placemark id="ID_00050">
       <name>VEP000591</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -2530,19 +2389,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP000591</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>31. Ajutised veekogud</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>32</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -2560,7 +2419,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00054">
+    <Placemark id="ID_00051">
       <name>VEP107135</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -2577,20 +2436,20 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP107135</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>21. Madalad jõekaldad ja jõelammid</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>32,33</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
-<td>VEE4107702-VEE4107714, VEE4107725, VEE4107731-VEE4107755</td>
+<td>Allika KKR kood</td>
+<td>VEE4107702-VEE4107704, VEE4107706-VEE4107714, VEE4107725, VEE4107731-VEE4107755</td>
 </tr>
 </table>
 </td>
@@ -2607,7 +2466,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00055">
+    <Placemark id="ID_00052">
       <name>VEP160014</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -2624,19 +2483,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP160014</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>C4. Märgalade laialehised metsad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>32</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -2654,7 +2513,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00056">
+    <Placemark id="ID_00053">
       <name>VEP134075</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -2671,19 +2530,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP134075</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>A1. Kuusikud ja kuusesegametsad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>C2,32</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -2701,54 +2560,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00057">
-      <name>VEP001086</name>
-      <Snippet></Snippet>
-      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-<head>
-<META http-equiv="Content-Type" content="text/html">
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-</head>
-<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
-<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
-<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>VEP001086</td>
-</tr>
-<tr>
-<td>
-<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
-<tr>
-<td>VEP_kood</td>
-<td>VEP001086</td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
-<td>C1. Lepikud</td>
-</tr>
-<tr>
-<td>Kaasnev_VEP_tüüp</td>
-<td>32</td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
-<td></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</body>
-</html>
-]]></description>
-      <styleUrl>#PolyStyle00</styleUrl>
-      <MultiGeometry>
-        <Polygon>
-          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <outerBoundaryIs><LinearRing><coordinates> 27.50413059300007,57.91706527300005,0 27.50387654400004,57.91651293200005,0 27.50360697500003,57.91601748500005,0 27.50347976700004,57.91597490200007,0 27.50332224100003,57.91605070600008,0 27.50307066400006,57.91610829500007,0 27.50298407500003,57.91611786900006,0 27.50297209000007,57.91609578000003,0 27.50277633200005,57.91597913200007,0 27.50252056100004,57.91576556100006,0 27.50260828500006,57.91568067600008,0 27.50248451900006,57.91547855600004,0 27.50214606600002,57.91544623400006,0 27.50213614700004,57.91506564800005,0 27.50242859900004,57.91503694300008,0 27.50308178200004,57.91505448500004,0 27.50348026200004,57.91521154300005,0 27.50380878900006,57.91553869000006,0 27.50406539100004,57.91610145200008,0 27.50430202500007,57.91646091400003,0 27.50454638200006,57.91692729400006,0 27.50467752400004,57.91705370400007,0 27.50413059300007,57.91706527300005,0</coordinates></LinearRing></outerBoundaryIs>
-        </Polygon>
-      </MultiGeometry>
-    </Placemark>
-    <Placemark id="ID_00058">
+    <Placemark id="ID_00054">
       <name>VEP110138</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -2765,19 +2577,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP110138</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>11. Jõgede ja järvede järsud kaldanõlvad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>32</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -2795,7 +2607,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00059">
+    <Placemark id="ID_00055">
       <name>VEP205487</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -2812,19 +2624,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP205487</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>A1. Kuusikud ja kuusesegametsad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>32,A2</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td>VEE4705701</td>
 </tr>
 </table>
@@ -2842,7 +2654,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00060">
+    <Placemark id="ID_00056">
       <name>VEP162028</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -2859,19 +2671,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP162028</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>8. Sarapikud</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>32</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -2889,7 +2701,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00061">
+    <Placemark id="ID_00057">
       <name>VEP107134</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -2906,20 +2718,20 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP107134</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>21. Madalad jõekaldad ja jõelammid</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>32,33</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
-<td>VEE4107726, VEE4107727, VEE4107728, VEE4107730</td>
+<td>Allika KKR kood</td>
+<td>VEE4107730</td>
 </tr>
 </table>
 </td>
@@ -2936,7 +2748,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00062">
+    <Placemark id="ID_00058">
       <name>VEP204982</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -2953,19 +2765,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP204982</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>C1. Lepikud</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>32</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -2983,7 +2795,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00063">
+    <Placemark id="ID_00059">
       <name>VEP110120</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -3000,19 +2812,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP110120</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>11. Jõgede ja järvede järsud kaldanõlvad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>32</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -3030,7 +2842,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00064">
+    <Placemark id="ID_00060">
       <name>VEP134076</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -3047,19 +2859,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP134076</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>A1. Kuusikud ja kuusesegametsad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>A2,32</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -3077,7 +2889,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00065">
+    <Placemark id="ID_00061">
       <name>VEP125015</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -3094,19 +2906,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP125015</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>C1. Lepikud</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>32</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -3124,7 +2936,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00066">
+    <Placemark id="ID_00062">
       <name>VEP202012</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -3141,19 +2953,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP202012</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>C. Märgalade metsad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>B3, 12, 32</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -3171,7 +2983,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00067">
+    <Placemark id="ID_00063">
       <name>VEP204031</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -3188,20 +3000,20 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP204031</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>A2. Männikud ja männisegametsad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>32</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
-<td>VEE4704300, VEE4704400</td>
+<td>Allika KKR kood</td>
+<td></td>
 </tr>
 </table>
 </td>
@@ -3218,7 +3030,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00068">
+    <Placemark id="ID_00064">
       <name>VEP107136</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -3235,19 +3047,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP107136</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>21. Madalad jõekaldad ja jõelammid</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>32,33</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -3265,54 +3077,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00069">
-      <name>VEP131008</name>
-      <Snippet></Snippet>
-      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-<head>
-<META http-equiv="Content-Type" content="text/html">
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-</head>
-<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
-<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
-<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>VEP131008</td>
-</tr>
-<tr>
-<td>
-<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
-<tr>
-<td>VEP_kood</td>
-<td>VEP131008</td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
-<td>A2. Männikud ja männisegametsad</td>
-</tr>
-<tr>
-<td>Kaasnev_VEP_tüüp</td>
-<td>32</td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
-<td>VEE4726300</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</body>
-</html>
-]]></description>
-      <styleUrl>#PolyStyle00</styleUrl>
-      <MultiGeometry>
-        <Polygon>
-          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <outerBoundaryIs><LinearRing><coordinates> 22.16250536100006,58.02857934300005,0 22.16249191800006,58.02864391600008,0 22.16247500900005,58.02872510800006,0 22.16238209000005,58.02875461900004,0 22.16226302500007,58.02879243500007,0 22.16211652000004,58.02883896900005,0 22.16198767600002,58.02887988500004,0 22.16189406800004,58.02890961900005,0 22.16180058500004,58.02890580800005,0 22.16171150200006,58.02893841000008,0 22.16151223800006,58.02899181900005,0 22.16124948500004,58.02905926000005,0 22.16096511000006,58.02913225900005,0 22.16041947000002,58.02927231400008,0 22.15990073100005,58.02940547400004,0 22.15921701800005,58.02958095900004,0 22.15867783300007,58.02971934000004,0 22.15864654100005,58.02970991100005,0 22.15819689800003,58.02957467800007,0 22.15820481900005,58.02942463500005,0 22.15833017900007,58.02925292300006,0 22.15848789800003,58.02910075900007,0 22.15864440400003,58.02894977300008,0 22.15891678400004,58.02890643300003,0 22.15927136400006,58.02885001700008,0 22.15942940100007,58.02873611100006,0 22.15952927100005,58.02843744500007,0 22.15956649000003,58.02843964000004,0 22.15959457600007,58.02844100100003,0 22.16004850600007,58.02845223400004,0 22.16108315400004,58.02850142100004,0 22.16250536100006,58.02857934300005,0</coordinates></LinearRing></outerBoundaryIs>
-        </Polygon>
-      </MultiGeometry>
-    </Placemark>
-    <Placemark id="ID_00070">
+    <Placemark id="ID_00065">
       <name>VEP107080</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -3329,19 +3094,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP107080</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>51. Pangajärsakud</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>32</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -3359,7 +3124,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00071">
+    <Placemark id="ID_00066">
       <name>VEP204122</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -3376,19 +3141,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP204122</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>B. Lehtmetsad arumaadel</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>13,32</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -3406,7 +3171,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00072">
+    <Placemark id="ID_00067">
       <name>VEP205549</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -3423,19 +3188,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP205549</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>A1. Kuusikud ja kuusesegametsad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>32</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -3453,7 +3218,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00073">
+    <Placemark id="ID_00068">
       <name>VEP161081</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -3470,19 +3235,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP161081</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>C1. Lepikud</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>32</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -3500,7 +3265,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00074">
+    <Placemark id="ID_00069">
       <name>VEP204121</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -3517,19 +3282,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP204121</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>B. Lehtmetsad arumaadel</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>32,A1</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -3547,7 +3312,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00075">
+    <Placemark id="ID_00070">
       <name>VEP139069</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -3564,19 +3329,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP139069</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>A2. Männikud ja männisegametsad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>32</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -3594,7 +3359,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00076">
+    <Placemark id="ID_00071">
       <name>VEP128099</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -3611,19 +3376,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP128099</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>B2. Haavikud</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>32, C1</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -3641,7 +3406,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00077">
+    <Placemark id="ID_00072">
       <name>VEP154129</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -3658,19 +3423,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP154129</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>52. Pinnakattejärsakud</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>B1,32</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -3688,7 +3453,7 @@
         </Polygon>
       </MultiGeometry>
     </Placemark>
-    <Placemark id="ID_00078">
+    <Placemark id="ID_00073">
       <name>VEP000706</name>
       <Snippet></Snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
@@ -3705,19 +3470,19 @@
 <td>
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
-<td>VEP_kood</td>
+<td>VEP kood</td>
 <td>VEP000706</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>VEP_tüüp</td>
+<td>VEP tüüp</td>
 <td>C2. Märgalade kuusikud ja kuusesegametsad</td>
 </tr>
 <tr>
-<td>Kaasnev_VEP_tüüp</td>
+<td>Kaasnev VEP tüüp</td>
 <td>32, C1</td>
 </tr>
 <tr bgcolor="#D4E4F3">
-<td>Allika_KKR_kood</td>
+<td>Allika KKR kood</td>
 <td></td>
 </tr>
 </table>
@@ -3732,6 +3497,288 @@
         <Polygon>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs><LinearRing><coordinates> 25.95129593700005,58.04840540000004,0 25.95250471400004,58.04790062600006,0 25.95320537000003,58.04840565900008,0 25.95418112900006,58.04947729400004,0 25.95270337400007,58.04967999700006,0 25.95262069500006,58.04914460900005,0 25.95255213400003,58.04871306600006,0 25.95129593700005,58.04840540000004,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00074">
+      <name>VEP158162</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>VEP158162</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>VEP kood</td>
+<td>VEP158162</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>VEP tüüp</td>
+<td>32. Allika-alad</td>
+</tr>
+<tr>
+<td>Kaasnev VEP tüüp</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Allika KKR kood</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 24.94052733700005,59.21609244600006,0 24.94033293900003,59.21722419700006,0 24.94029722700003,59.21743211100005,0 24.94013563000004,59.21833260800008,0 24.93766987100003,59.21838064800005,0 24.93781474200006,59.21716239700004,0 24.93790270500006,59.21670478600004,0 24.93801288900005,59.21613166900005,0 24.93827091700007,59.21478934800007,0 24.93788939900003,59.21463681200004,0 24.93791704000006,59.21448055300004,0 24.93772155700003,59.21429742400005,0 24.93745576900005,59.21412822900004,0 24.93712277500003,59.21410982200007,0 24.93754904800005,59.21373982600005,0 24.93774895900003,59.21371628100007,0 24.93815124400004,59.21363618700008,0 24.93928243400006,59.21445968600005,0 24.93994615700007,59.21447611600007,0 24.94012463400003,59.21462981700006,0 24.94096720100003,59.21466839700008,0 24.94150902500007,59.21485047500005,0 24.94196566200003,59.21510012000005,0 24.94256284800002,59.21518509400005,0 24.94303626800007,59.21498826400006,0 24.94321423400004,59.21603438000005,0 24.94262981500003,59.21604011800008,0 24.94083883300004,59.21608469400007,0 24.94052733700005,59.21609244600006,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00075">
+      <name>VEP208556</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>VEP208556</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>VEP kood</td>
+<td>VEP208556</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>VEP tüüp</td>
+<td>A1. Kuusikud ja kuusesegametsad</td>
+</tr>
+<tr>
+<td>Kaasnev VEP tüüp</td>
+<td>13, 32, 34</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Allika KKR kood</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 26.06285632800007,57.95815164700008,0 26.06298980500003,57.95770738100003,0 26.06488101800005,57.95788609500005,0 26.06352141200006,57.96014705400006,0 26.06321701400003,57.96031884100006,0 26.06201364400005,57.96099821300004,0 26.06206407000008,57.96081817500004,0 26.06210352000005,57.96067659200003,0 26.06221821300005,57.96026632800005,0 26.06228628000002,57.96004072900007,0 26.06285632800007,57.95815164700008,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00076">
+      <name>VEP001086</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>VEP001086</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>VEP kood</td>
+<td>VEP001086</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>VEP tüüp</td>
+<td>C1. Lepikud</td>
+</tr>
+<tr>
+<td>Kaasnev VEP tüüp</td>
+<td>32</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Allika KKR kood</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 27.50413059300007,57.91706527300005,0 27.50387654400004,57.91651293200005,0 27.50360697500003,57.91601748500005,0 27.50347976700004,57.91597490200007,0 27.50332224100003,57.91605070600008,0 27.50307066400006,57.91610829500007,0 27.50298407500003,57.91611786900006,0 27.50297209000007,57.91609578000003,0 27.50277633200005,57.91597913200007,0 27.50252056100004,57.91576556100006,0 27.50260828500006,57.91568067600008,0 27.50248451900006,57.91547855600004,0 27.50214606600002,57.91544623400006,0 27.50213614700004,57.91506564800005,0 27.50242859900004,57.91503694300008,0 27.50308178200004,57.91505448500004,0 27.50348026200004,57.91521154300005,0 27.50379331400006,57.91552131900005,0 27.50380870500004,57.91553869300003,0 27.50406520700005,57.91610147500006,0 27.50430224200005,57.91646089000005,0 27.50454625000003,57.91692732500007,0 27.50462075800004,57.91699955900003,0 27.50467752400004,57.91705370400007,0 27.50413059300007,57.91706527300005,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00077">
+      <name>VEP112029</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>VEP112029</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>VEP kood</td>
+<td>VEP112029</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>VEP tüüp</td>
+<td>B2. Haavikud</td>
+</tr>
+<tr>
+<td>Kaasnev VEP tüüp</td>
+<td>32</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Allika KKR kood</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 25.98940188700004,58.01514228300005,0 25.98944070600004,58.01512819800007,0 25.98966012800003,58.01534732800008,0 25.99001648300003,58.01571174700007,0 25.98998379800003,58.01572353400007,0 25.98970657300003,58.01582383200008,0 25.98754796000003,58.01660505100006,0 25.98745586300004,58.01659262200008,0 25.98743179200005,58.01658895800006,0 25.98717666800007,58.01654877700008,0 25.98601121700005,58.01640191300004,0 25.98599503500003,58.01640311900007,0 25.98617478400007,58.01623011400005,0 25.98642400900007,58.01619197300005,0 25.98638392500004,58.01597419600006,0 25.98670973400004,58.01575255300003,0 25.98673288400005,58.01563968400006,0 25.98740932800007,58.01569574100006,0 25.98755840900003,58.01571023800005,0 25.98758886000007,58.01570086700008,0 25.98931603500006,58.01516883000005,0 25.98940188700004,58.01514228300005,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00078">
+      <name>VEP208878</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>VEP208878</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>VEP kood</td>
+<td>VEP208878</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>VEP tüüp</td>
+<td>C1. Lepikud</td>
+</tr>
+<tr>
+<td>Kaasnev VEP tüüp</td>
+<td>32, 51</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Allika KKR kood</td>
+<td>&lt;Null&gt;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 25.07826044900003,59.48941521400008,0 25.07845301300006,59.48940919600005,0 25.07941725500007,59.48940723200008,0 25.08089916600005,59.48953177300007,0 25.08166425000007,59.48961169000006,0 25.08199469700003,59.48961194200007,0 25.08067052900003,59.48976983700004,0 25.07971343700007,59.48991435400006,0 25.07967829400008,59.48999193600008,0 25.07990579000005,59.49006884800008,0 25.07996046900007,59.49032398200006,0 25.07781826400003,59.49077228700003,0 25.07763749500003,59.49023000500006,0 25.07765869100007,59.49014661400008,0 25.07852070200005,59.49024365800005,0 25.07965904600007,59.48966824000007,0 25.07951398700004,59.48960250300007,0 25.07911272300004,59.48975741200007,0 25.07838530700008,59.48976336200008,0 25.07826044900003,59.48941521400008,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00079">
+      <name>VEP131008</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>VEP131008</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>VEP kood</td>
+<td>VEP131008</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>VEP tüüp</td>
+<td>A2. Männikud ja männisegametsad</td>
+</tr>
+<tr>
+<td>Kaasnev VEP tüüp</td>
+<td>32</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Allika KKR kood</td>
+<td>VEE4726300</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 22.15864654100005,58.02970991100005,0 22.15860908500002,58.02971978500005,0 22.15798255100003,58.02943853400006,0 22.15820320600005,58.02928213200005,0 22.15868085200003,58.02894398900003,0 22.15923152500005,58.02880781500005,0 22.15937900200004,58.02851839300007,0 22.15942049700004,58.02843435200003,0 22.15952927100005,58.02843744500007,0 22.15959457600007,58.02844100100003,0 22.16004850600007,58.02845223400004,0 22.16111450600005,58.02850313400006,0 22.16250536100006,58.02857934300005,0 22.16245488600003,58.02873149800007,0 22.16158531300005,58.02896037700003,0 22.15864654100005,58.02970991100005,0</coordinates></LinearRing></outerBoundaryIs>
         </Polygon>
       </MultiGeometry>
     </Placemark>
