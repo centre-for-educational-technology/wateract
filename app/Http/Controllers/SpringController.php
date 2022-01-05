@@ -182,14 +182,28 @@ class SpringController extends Controller
     public function saveReferences($spring, $references_info) {
         if (!empty($references_info)) {
             foreach ($references_info as $reference_info) {
-                $spring_reference = new SpringReference();
-                if (isset($reference_info['url'])) {
-                    $spring_reference->spring_id = $spring['id'];
-                    $spring_reference->url = $reference_info['url'];
-                    if (isset($reference_info['url_title'])) {
-                        $spring_reference->url_title = $reference_info['url_title'];
+                if (isset($reference_info['id'])) {
+                    $spring_reference = SpringReference::find($reference_info['id']);
+                    if (empty($reference_info['url']) && empty($reference_info['url_title'])) {
+                        $spring_reference->delete();
                     }
-                    $spring_reference->save();
+                    if (isset($reference_info['url'])) {
+                        $spring_reference->url = $reference_info['url'];
+                        if (isset($reference_info['url_title'])) {
+                            $spring_reference->url_title = $reference_info['url_title'];
+                        }
+                        $spring_reference->save();
+                    }
+                } else {
+                    $spring_reference = new SpringReference();
+                    if (isset($reference_info['url'])) {
+                        $spring_reference->spring_id = $spring['id'];
+                        $spring_reference->url = $reference_info['url'];
+                        if (isset($reference_info['url_title'])) {
+                            $spring_reference->url_title = $reference_info['url_title'];
+                        }
+                        $spring_reference->save();
+                    }
                 }
             }
         }
@@ -347,32 +361,7 @@ class SpringController extends Controller
 
         $spring->update($request->all());
 
-        foreach ($request['references'] as $reference_info) {
-            if (isset($reference_info['id'])) {
-                //$spring_reference = SpringReference::where('id' , '=' , $reference_info['id'] )->get();
-                $spring_reference = SpringReference::find($reference_info['id']);
-                if (isset($reference_info['url'])) {
-                    $spring_reference->url = $reference_info['url'];
-                    if (isset($reference_info['url_title'])) {
-                        $spring_reference->url_title = $reference_info['url_title'];
-                    }
-                    $spring_reference->save();
-                }
-            } else {
-                //var_dump($reference_info);exit;
-                $spring_reference = new SpringReference();
-                if (isset($reference_info['url'])) {
-                    $spring_reference->spring_id = $spring->id;
-                    $spring_reference->url = $reference_info['url'];
-                    if (isset($reference_info['url_title'])) {
-                        $spring_reference->url_title = $reference_info['url_title'];
-                    }
-                    $spring_reference->save();
-                }
-            }
-
-        }
-
+        SpringController::saveReferences($spring, $request['references']);
         SpringController::saveDatabaseLinks($spring, $request['database_links']);
 
         if (!empty($request['photos_to_add'])) {
