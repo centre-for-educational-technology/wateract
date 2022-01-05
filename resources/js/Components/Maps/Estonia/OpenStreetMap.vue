@@ -37,8 +37,8 @@
             :icon="currentPositionIcon"
         ></l-marker>
 
-        <l-marker v-if="this.springLocation"
-                  :lat-lng="springLocation"
+        <l-marker v-if="this.$parent.springLocation"
+                  :lat-lng="$parent.springLocation"
                   :icon="springLocationIcon"
         ></l-marker>
 
@@ -172,7 +172,7 @@ export default {
         },
         openStreetOnLocationFound(location) {
             this.$parent.mapCenterUpdate(location.latlng);
-            this.currentPosition= location.latlng;
+            this.currentPosition = location.latlng;
             //this.openStreetMapObject.setView(location.latlng, 9);
             //this.leafletMapObject.setView(location.latlng, 9);
         },
@@ -190,14 +190,7 @@ export default {
             }
         },
         updateLocation(location) {
-            if (this.view === 'create' || this.view === 'edit') {
-                let latitude = Number(location.latlng.lat);
-                let longitude = Number(location.latlng.lng);
-                if (latitude && longitude) {
-                    this.springLocation = {lat: latitude, lng: longitude};
-                    this.$emit('changeLocation', location);
-                }
-            }
+            this.$parent.updateLocation(location);
         },
         getExistingSprings() {
             let params = {};
@@ -206,10 +199,10 @@ export default {
                     'spring_id': this.spring.id
                 }
             }
-            axios.get('/getSprings', { params }).then(response => {
+            axios.get('/getSprings', {params}).then(response => {
                 let springs = response.data;
                 let markers = [];
-                _.forEach(springs, function(spring) {
+                _.forEach(springs, function (spring) {
                     markers.push({
                         id: spring.code,
                         name: spring.name,

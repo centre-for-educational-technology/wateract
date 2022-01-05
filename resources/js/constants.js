@@ -19,6 +19,7 @@ export const relief_shaded_layers = [
         url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/epk_vv/{z}/{x}/{y}.png&ASUTUS=TLU&KESKKOND=ALLIKAD',
         zindex: 2,
         maxzoom: 14,
+        attribution: "Reljeefvarjutusega põhikaart, <a href='http://www.maaamet.ee'>Maa-amet</a>"
     },
 ];
 
@@ -28,18 +29,13 @@ export const relief_layers = [
         url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/vreljeef/{z}/{x}/{y}.png&ASUTUS=TLU&KESKKOND=ALLIKAD',
         zindex: 2,
         maxzoom: 13,
+        attribution: "Värviline reljeefvarjutus, <a href='http://www.maaamet.ee'>Maa-amet</a>"
     },
     {
         name: 'hybrid',
         url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/hybriid/{z}/{x}/{y}.png&ASUTUS=TLU&KESKKOND=ALLIKAD',
         zindex: 3,
-        maxzoom: 14,
-    },
-    {
-        name: 'pohi',
-        url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/epk_v/{z}/{x}/{y}.png&ASUTUS=TLU&KESKKOND=ALLIKAD',
-        zindex: 1,
-        maxzoom: 14,
+        maxzoom: 13,
     },
 ];
 
@@ -55,6 +51,7 @@ export const orthophoto_layers = [
         url: 'https://tiles.maaamet.ee/tm/tms/1.0.0/foto/{z}/{x}/{y}.png&ASUTUS=TLU&KESKKOND=ALLIKAD',
         zindex: 1,
         maxzoom: 14,
+        attribution: "Ortofoto, <a href='http://www.maaamet.ee'>Maa-amet</a>"
     },
 ];
 
@@ -65,7 +62,7 @@ export const relief_wms_layers = [
         visible: true,
         format: 'image/png',
         layers: 'vreljeef,HYBRID',
-        attribution: "Maa-amet"
+        attribution: "Värviline reljeefvarjutus, <a href='http://www.maaamet.ee'>Maa-amet</a>"
     },
 ];
 
@@ -75,8 +72,8 @@ export const relief_shaded_wms_layers = [
         zindex: 1,
         visible: true,
         format: 'image/png',
-        layers: 'MA-FOTOKAART', //pohi_vv, of10000
-        attribution: "Maa-amet"
+        layers: 'pohi_vv',
+        attribution: "Reljeefvarjutusega põhikaart, <a href='http://www.maaamet.ee'>Maa-amet</a>"
     },
 ];
 
@@ -87,7 +84,7 @@ export const orthophoto_wms_layers = [
         visible: true,
         format: 'image/png',
         layers: 'EESTIFOTO',
-        attribution: "© Maa-amet"
+        attribution: "Ortofoto, <a href='http://www.maaamet.ee'>Maa-amet</a>"
     },
 ];
 

@@ -44,7 +44,7 @@
             :key="layer.name"
             :url="layer.url"
             :zIndex="layer.zindex"
-            :attribution="attribution"
+            :attribution="layer.attribution"
             :tms="tms"
             :worldCopyJump="true"
             :options="{ maxNativeZoom: layer.maxzoom, maxZoom: layer.maxzoom }"
@@ -55,11 +55,10 @@
             :icon="currentPositionIcon"
         ></l-marker>
 
-        <l-marker v-if="this.springLocation"
-                  :lat-lng="springLocation"
-                  :icon="springLocationIcon"
+        <l-marker v-if="this.$parent.springLocation"
+                  :lat-lng="$parent.springLocation"
+                  :icon="$parent.springLocationIcon"
         ></l-marker>
-
 
         <l-marker-cluster :options="maaametClusterOptions">
             <l-marker v-for="(marker, index) in leafletmarkers"
@@ -232,7 +231,10 @@ export default {
             if (this.view === 'show' || this.view === 'edit') {
                 let leafletCenter = latLng(this.spring.latitude, this.spring.longitude);
                 this.leafletMapObject.setView(leafletCenter, 11);
+                this.$parent.mapCenterUpdate(leafletCenter);
             }
+            this.leafletMapObject.on('overlayadd', this.onOverlayAdd);
+            this.leafletMapObject.on('overlayremove', this.onOverlayRemove);
         },
         showLocation() {
             this.leafletMapObject.locate();
@@ -257,14 +259,15 @@ export default {
             }
         },
         updateLocation(location) {
-            if (this.view === 'create' || this.view === 'edit') {
+            this.$parent.updateLocation(location);
+            /*if (this.view === 'create' || this.view === 'edit') {
                 let latitude = Number(location.latlng.lat);
                 let longitude = Number(location.latlng.lng);
                 if (latitude && longitude) {
                     this.springLocation = {lat: latitude, lng: longitude};
-                    this.$emit('changeLocation', location);
+                    //this.$emit('changeLocation', location);
                 }
-            }
+            }*/
         },
         createLayers() {
             var overlays = {
@@ -296,9 +299,38 @@ export default {
                 }
             });
             let kmlLayer = omnivore.kml('/kml/'+ springsType +'/doc.kml', null, layer);
-            //kmlLayer.addTo(this.leafletMapObject); // should layer be displayed by default or not?
+            if (this.$parent.mapLayers.includes(springsType)) { // should layer be displayed by default or not?
+                kmlLayer.addTo(this.leafletMapObject);
+            }
             return kmlLayer;
         },
+        onOverlayAdd(e) {
+            this.$parent.mapLayersAdd(e.name);
+        },
+        onOverlayRemove(e) {
+            this.$parent.mapLayersRemove(e.name);
+        },
+        getExistingSprings() {
+            let params = {};
+            if (this.spring) {
+                params = {
+                    'spring_id': this.spring.id
+                }
+            }
+            axios.get('/getSprings', { params }).then(response => {
+                let springs = response.data;
+                let markers = [];
+                _.forEach(springs, function(spring) {
+                    markers.push({
+                        id: spring.code,
+                        name: spring.name,
+                        status: spring.status,
+                        position: latLng(spring.latitude, spring.longitude),
+                    });
+                });
+                this.leafletmarkers = markers;
+            })
+        }
     },
     computed: {
         layer () {

@@ -12,7 +12,7 @@
            :options="mapOptions"
            @ready="onReady"
            @locationfound="onLocationFound"
-           @click="updateLocation"
+           @click="$parent.updateLocation"
            @fullscreenchange="maaametFullscreenChanged"
     >
         <!-- @fullscreenchange="maaametFullscreenChanged" -->
@@ -50,6 +50,7 @@
             :tms="tms"
             :zIndex="layer.zindex"
             :transparent="layer.transparent"
+            :attribution="layer.attribution"
         />
 
         <l-marker
@@ -57,8 +58,8 @@
             :icon="currentPositionIcon"
         ></l-marker>
 
-        <l-marker v-if="this.springLocation"
-                  :lat-lng="springLocation"
+        <l-marker v-if="this.$parent.springLocation"
+                  :lat-lng="$parent.springLocation"
                   :icon="springLocationIcon"
         ></l-marker>
 
@@ -238,7 +239,7 @@ export default {
         },
         showReliefShadedMap() {
             this.$parent.maaAmetMapTypeUpdate('relief_shaded');
-            this.baseUrl = 'https://kaart.maaamet.ee/wms/fotokaart';
+            this.baseUrl = 'https://kaart.maaamet.ee/wms/alus';
             this.wmslayers = relief_shaded_wms_layers;
         },
         showOrthoPhoto() {
@@ -252,7 +253,7 @@ export default {
         onReady(mapObject) {
             console.log('WMS kaardi seadistus');
             if (this.$parent.maaAmetMapType === 'relief_shaded') {
-                this.baseUrl = 'https://kaart.maaamet.ee/wms/fotokaart';
+                this.baseUrl = 'https://kaart.maaamet.ee/wms/alus';
                 this.wmslayers = relief_shaded_wms_layers;
             } else if (this.$parent.maaAmetMapType === 'orthophoto') {
                 this.baseUrl = 'https://kaart.maaamet.ee/wms/fotokaart';
@@ -278,10 +279,8 @@ export default {
             }
             console.log("wms map fullscreen: " + this.leafletMapObject.isFullscreen());*/
 
-            if (this.view === 'show' || this.view === 'edit') {
-                let leafletCenter = latLng(this.spring.latitude, this.spring.longitude);
-                this.leafletMapObject.setView(leafletCenter, 11);
-            }
+            this.leafletMapObject.on('overlayadd', this.onOverlayAdd);
+            this.leafletMapObject.on('overlayremove', this.onOverlayRemove);
         },
         showLocation() {
             this.leafletMapObject.locate();
@@ -291,12 +290,6 @@ export default {
             this.currentPosition= location.latlng;
             this.leafletMapObject.setView(location.latlng, 14);
         },
-        maaametZoomUpdate(zoom) {
-            this.$parent.maaametZoomUpdate(zoom);
-        },
-        maaametCenterUpdate(center) {
-            this.$parent.mapCenterUpdate(center);
-        },
         maaametFullscreenChanged(fullscreen) {
             console.log("wms fullscreen changed: " + this.leafletMapObject.isFullscreen());
             /*if (this.leafletMapObject.isFullscreen()) {
@@ -305,29 +298,21 @@ export default {
                 this.fullscreen = false;
             }*/
         },
-        updateLocation(location) {
-            if (this.view === 'create' || this.view === 'edit') {
-                let latitude = Number(location.latlng.lat);
-                let longitude = Number(location.latlng.lng);
-                if (latitude && longitude) {
-                    this.springLocation = {lat: latitude, lng: longitude};
-                    this.$emit('changeLocation', location);
-                }
-            }
-        },
     createLayers() {
         var overlays = {
-            "Muinsuskaitsealused allikad": this.kmlSpringsLayer('Kult_allikad'),
-            "Loodusdirektiivi allikaelupaigad": this.kmlSpringsLayer('LD_allikad'),
-            "Pärandkultuuriallikad": this.kmlSpringsLayer('Par_allikad'),
-            "Allikate seirejaamad": this.kmlSpringsLayer('Seire_allikad'),
-            "Allikalised vääriselupaigad": this.kmlSpringsLayer('VEP_allikad'),
-            "Looduskaitsealused allikad": this.kmlSpringsLayer('UOB_allikad'),
-            "Ürglooduse raamatu allikad": this.kmlSpringsLayer('Urg_allikad'),
+            "Muinsuskaitsealused allikad": this.kmlSpringsLayer('Kult_allikad', "#faac04"),
+            "Loodusdirektiivi allikaelupaigad": this.kmlSpringsLayer('LD_allikad', "#ff007326"),
+            "Pärandkultuuriallikad": this.kmlSpringsLayer('Par_allikad', "#c404f8"),
+            "Allikate seirejaamad": this.kmlSpringsLayer('Seire_allikad', '#fcfc05'),
+            "Allikalised vääriselupaigad": this.kmlSpringsLayer('VEP_allikad', '#ff00ff55'),
+            "Looduskaitsealused allikad": this.kmlSpringsLayer('UOB_allikad', '#04fcfa'),
+            "Ürglooduse raamatu allikad": this.kmlSpringsLayer('Urg_allikad', '#0454e8'),
+            "Looduslike pühapaikade allikad": this.kmlSpringsLayer('Lood_puha_allikad', '#ec0404'),
+            "Kohapärimuse allikad": this.kmlSpringsLayer('Koha_allikad', '#04fa05'),
         };
         L.control.layers(null,overlays,{collapsed:true}).addTo(this.leafletMapObject);
     },
-    kmlSpringsLayer(springsType) {
+    kmlSpringsLayer(springsType, color) {
         let springIcon = new L.Icon({
             iconUrl: '/kml/'+ springsType +'/symbol.png',
         });
@@ -339,13 +324,21 @@ export default {
                 featureLayer.bindPopup(feature.properties.description);
             },
             style: {
-                color: "blue",
+                color: color,
             }
         });
         let kmlLayer = omnivore.kml('/kml/'+ springsType +'/doc.kml', null, layer);
-        //kmlLayer.addTo(this.leafletMapObject); // should layer be displayed by default or not?
+        if (this.$parent.mapLayers.includes(springsType)) { // should layer be displayed by default or not?
+            kmlLayer.addTo(this.leafletMapObject);
+        }
         return kmlLayer;
     },
+        onOverlayAdd(e) {
+            this.$parent.mapLayersAdd(e.name);
+        },
+        onOverlayRemove(e) {
+            this.$parent.mapLayersRemove(e.name);
+        },
         getExistingSprings() {
             let params = {};
             if (this.spring) {

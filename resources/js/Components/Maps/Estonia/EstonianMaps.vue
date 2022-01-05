@@ -4,11 +4,11 @@
 
         <div class="z-depth-1-half map-container block h-full" >
 
-            <OpenStreetMap v-if="openStreetMap" :springs="springs" :spring="spring"></OpenStreetMap>
+            <OpenStreetMap v-if="openStreetMap" :view="view" :springs="springs" :spring="spring"></OpenStreetMap>
 
-            <MaaAmetTileMap v-if="maaAmetTileMap" :springs="springs" :spring="spring"></MaaAmetTileMap>
+            <MaaAmetTileMap v-if="maaAmetTileMap" :view="view" :springs="springs" :spring="spring"></MaaAmetTileMap>
 
-            <MaaAmetWmsMap v-if="maaAmetWmsMap" :springs="springs" :spring="spring"></MaaAmetWmsMap>
+            <MaaAmetWmsMap v-if="maaAmetWmsMap" :view="view" :springs="springs" :spring="spring"></MaaAmetWmsMap>
 
         </div>
 
@@ -51,9 +51,9 @@ export default {
     },
     props: ['springs', 'spring', 'view'],
     data() {
-        let leafletmarkers = [];
+        let markers = [];
         _.forEach(this.springs, function(spring) {
-            leafletmarkers.push({
+            markers.push({
                 id: spring.code,
                 name: spring.name,
                 status: spring.status,
@@ -72,20 +72,29 @@ export default {
             ee_spring = false;
         }
 
+        let mapLayersMapping = {
+            "Muinsuskaitsealused allikad": 'Kult_allikad',
+            "Loodusdirektiivi allikaelupaigad": 'LD_allikad',
+            "Pärandkultuuriallikad": 'Par_allikad',
+            "Allikate seirejaamad": 'Seire_allikad',
+            "Allikalised vääriselupaigad": 'VEP_allikad',
+            "Looduskaitsealused allikad": 'UOB_allikad',
+            "Ürglooduse raamatu allikad": 'Urg_allikad',
+            "Looduslike pühapaikade allikad": 'Lood_puha_allikad',
+            "Kohapärimuse allikad": 'Koha_allikad',
+        };
+
         return {
 
             cacheOpenStreetMapZoom: 7,
-            cacheOpenStreetMapCenter: latLng(58.379, 24.554),
             cacheMaaAmetMapZoom: 3,
-            cacheMaaAmetCenter: latLng(58.379, 24.554),
+
+            openStreetMapZoom: 7,
+            maaAmetMapZoom: 3,
 
             openStreetMap: map !== 'maaamet',
-            openStreetMapZoom: 7,
-            openStreetMapCenter: latLng(58.379, 24.554),
-
             maaAmetMap: map !== 'openstreet',
-            maaAmetMapZoom: 3,
-            maaAmetMapCenter: latLng(58.379, 24.554),
+
             mapCenter: latLng(58.379, 24.554),
 
             maaAmetTileMap: true,
@@ -99,16 +108,10 @@ export default {
             springLocation: springLocation,
             springLocationIcon: springLocationIcon,
 
-            layerIndex: 0,
-            leafletmarkers: leafletmarkers,
-            tms: true,
-            attribution: "<a href='http://www.maaamet.ee'>Maa-amet</a>",
-            bounds: latLngBounds([
-                [60.4349, 29.4338],
-                [56.7458, 20.373]
-            ]),
             fullscreen: false,
-
+            mapMarkers: markers,
+            mapLayers: [],
+            mapLayersMapping: mapLayersMapping,
         }
     },
     methods: {
@@ -117,7 +120,6 @@ export default {
             this.maaAmetWmsMap = false;
             this.openStreetMap = true;
             this.openStreetMapZoom = this.cacheOpenStreetMapZoom;
-            this.openStreetMapCenter = this.cacheOpenStreetMapCenter;
         },
         showMaaAmetMap() {
             this.openStreetMap = false;
@@ -129,7 +131,6 @@ export default {
                 this.maaAmetWmsMap = false;
             }
             this.maaAmetMapZoom = this.cacheMaaAmetMapZoom;
-            this.maaAmetMapCenter = this.cacheMaaAmetMapCenter;
         },
         openStreetShowLocation() {
             this.openStreetMapObject.locate();
@@ -150,7 +151,6 @@ export default {
             this.maaAmetMapType = type;
         },
         maaametZoomUpdate(zoom) {
-            console.log('update maaamet zoom: '+zoom);
             this.maaAmetMapZoom = zoom;
             if (zoom > 13) {
                 this.maaAmetTileMap = false;
@@ -176,8 +176,8 @@ export default {
             this.mapCenter = center;
         },
         maaametFullscreenChanged(fullscreen) {
-            console.log(fullscreen);
-            console.log("muudatus");
+            //console.log(fullscreen);
+            //console.log("muudatus");
             /*if (this.leafletMapObject.isFullscreen()) {
                 this.fullscreen = true;
             } else {
@@ -185,13 +185,19 @@ export default {
             }*/
         },
         fullscreenUpdate(map) {
-            console.log(map.isFullscreen());
-            console.log("muudatus");
+            //console.log(map.isFullscreen());
+            //console.log("muudatus");
             /*if (this.openStreetMapObject.isFullscreen()) {
                 this.fullscreen = true;
             } else {
                 this.fullscreen = false;
             }*/
+        },
+        mapLayersAdd(layer) {
+            this.mapLayers.push(this.mapLayersMapping[layer]);
+        },
+        mapLayersRemove(layer) {
+            this.mapLayers.pop(this.mapLayersMapping[layer]);
         },
         updateLocation(location) {
             if (this.view === 'create' || this.view === 'edit') {
@@ -221,13 +227,8 @@ export default {
                         position: latLng(spring.latitude, spring.longitude),
                     });
                 });
-                this.leafletmarkers = markers;
+                this.mapMarkers = markers;
             })
-        }
-    },
-    computed: {
-        layer () {
-            return this.layers[this.layerIndex]
         }
     },
     created: function(){

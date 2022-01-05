@@ -34,7 +34,7 @@
                         <div class="w-full px-2">
                             <jet-label class="font-bold" :value="$t('springs.location')" />
 
-                            <estonian-map v-if="appCountry === 'ee'" :view="'edit'" :spring="spring" @changeLocation="updateLocationForMap($event)"></estonian-map>
+                            <estonian-maps v-if="appCountry === 'ee'" :view="'edit'" :spring="spring" @changeLocation="updateLocationForMap($event)"></estonian-maps>
 
                             <latvian-map v-if="appCountry === 'lv'" :view="'edit'" :spring="spring" @changeLocation="updateLocationForMap($event)"></latvian-map>
 
@@ -247,7 +247,7 @@ import HelpButton from '../../Components/HelpButton';
 import RequiredField from '../../Components/RequiredField';
 import DeleteSpring from './DeleteSpring'
 import { gmapApi } from 'gmap-vue';
-import EstonianMap from "../../Components/Maps/EstonianMap";
+import EstonianMaps from "../../Components/Maps/Estonia/EstonianMaps";
 import LatvianMap from "../../Components/Maps/LatvianMap";
 
 export default {
@@ -264,7 +264,7 @@ export default {
         RequiredField,
         DeleteSpring,
         gmapApi,
-        EstonianMap,
+        EstonianMaps,
         LatvianMap,
     },
     props: ['spring', 'countries', 'classifications', 'ownerships'],

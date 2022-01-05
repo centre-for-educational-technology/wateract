@@ -2,7 +2,7 @@
 
     <div>
 
-        <estonian-map v-if="this.appCountry === 'ee'" class="px-2 sm:px-5 lg:px-10" :springs="springs" :spring="spring" :view="view"></estonian-map>
+        <estonian-maps v-if="this.appCountry === 'ee'" class="px-2 sm:px-5 lg:px-10" :springs="springs" :spring="spring" :view="view"></estonian-maps>
 
         <latvian-map v-if="this.appCountry === 'lv'" class="px-2 sm:px-5 lg:px-10" :springs="springs" :spring="spring" :view="view"></latvian-map>
 
@@ -10,12 +10,12 @@
 
 </template>
 <script>
-import EstonianMap from "./EstonianMap";
+import EstonianMaps from "./Estonia/EstonianMaps";
 import LatvianMap from "./LatvianMap";
 
 export default {
     components: {
-      EstonianMap,
+      EstonianMaps,
       LatvianMap,
     },
     props: ['springs', 'spring', 'view'],
