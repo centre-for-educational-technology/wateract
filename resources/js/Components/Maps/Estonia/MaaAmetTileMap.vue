@@ -286,6 +286,8 @@ export default {
         kmlSpringsLayer(springsType, color) {
             let springIcon = new L.Icon({
                 iconUrl: '/kml/'+ springsType +'/symbol.png',
+                iconSize: [20, 20],
+                iconAnchor: [10, 16]
             });
             let layer = L.geoJson(null, {
                 pointToLayer: function (feature, latlng) {

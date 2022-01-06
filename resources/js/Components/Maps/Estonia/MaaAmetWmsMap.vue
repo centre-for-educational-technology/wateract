@@ -63,16 +63,14 @@
                   :icon="springLocationIcon"
         ></l-marker>
 
-        <l-marker-cluster :options="maaametClusterOptions">
-            <l-marker v-for="(marker, index) in leafletmarkers"
-                      :key="index"
-                      :lat-lng="marker.position">
-                <l-popup>
-                    <div class="pb-2"><a class="underline text-blue-700" :href="'/springs/'+marker.id+'/'">{{marker.name || 'Unnamed'}}</a></div>
-                    <div>{{ $t('springs.spring_code') }}: {{marker.id}} <br />{{ $t('springs.status') }}: {{ $t('springs.status_options.'+marker.status) }}</div>
-                </l-popup>
-            </l-marker>
-        </l-marker-cluster>
+        <l-marker v-for="(marker, index) in leafletmarkers"
+                  :key="index"
+                  :lat-lng="marker.position">
+            <l-popup>
+                <div class="pb-2"><a class="underline text-blue-700" :href="'/springs/'+marker.id+'/'">{{marker.name || 'Unnamed'}}</a></div>
+                <div>{{ $t('springs.spring_code') }}: {{marker.id}} <br />{{ $t('springs.status') }}: {{ $t('springs.status_options.'+marker.status) }}</div>
+            </l-popup>
+        </l-marker>
 
     </l-map>
 
@@ -82,7 +80,6 @@ import { latLngBounds, latLng, icon } from "leaflet";
 import L from 'leaflet';
 import { LMap, LTileLayer, LWMSTileLayer,LMarker, LIcon, LControlZoom, LControl, LPopup, LControlLayers } from 'vue2-leaflet';
 import "proj4leaflet";
-import Vue2LeafletMarkerCluster from 'vue2-leaflet-markercluster'
 import { Icon } from 'leaflet';
 import { GestureHandling } from "leaflet-gesture-handling";
 import "leaflet-gesture-handling/dist/leaflet-gesture-handling.css";
@@ -120,7 +117,6 @@ export default {
         LControlZoom,
         LControl,
         LPopup,
-        'l-marker-cluster': Vue2LeafletMarkerCluster,
         GestureHandling,
         LControlFullscreen,
         omnivore,
@@ -188,10 +184,6 @@ export default {
                 zoomSnap: 1,
                 gestureHandling:true
             },
-            maaametClusterOptions: {
-                disableClusteringAtZoom: 11,
-                maxClusterRadius: 70,
-            },
 
             cacheOpenStreetMapZoom: 7,
             cacheOpenStreetCenter: latLng(58.379, 24.554),
@@ -251,7 +243,6 @@ export default {
             this.$parent.showWorldMap();
         },
         onReady(mapObject) {
-            console.log('WMS kaardi seadistus');
             if (this.$parent.maaAmetMapType === 'relief_shaded') {
                 this.baseUrl = 'https://kaart.maaamet.ee/wms/alus';
                 this.wmslayers = relief_shaded_wms_layers;
@@ -315,6 +306,8 @@ export default {
     kmlSpringsLayer(springsType, color) {
         let springIcon = new L.Icon({
             iconUrl: '/kml/'+ springsType +'/symbol.png',
+            iconSize: [20, 20],
+            iconAnchor: [10, 16]
         });
         let layer = L.geoJson(null, {
             pointToLayer: function (feature, latlng) {
