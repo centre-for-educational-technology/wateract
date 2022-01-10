@@ -121,6 +121,7 @@ return [
         'draft' => 'Melnraksts',
         'submitted' => 'Iesniegts',
         'confirmed' => 'Apstiprināts',
+        'not_a_spring' => 'Nav avots',
     ],
     'needs_attention' => 'Nepieciešama īpaša uzmanība',
     'featured' => 'Piedāvāts',

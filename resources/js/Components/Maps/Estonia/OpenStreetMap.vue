@@ -37,15 +37,17 @@
             :icon="currentPositionIcon"
         ></l-marker>
 
-        <l-marker v-if="this.$parent.springLocation"
+        <l-marker v-if="this.$parent.spring"
                   :lat-lng="$parent.springLocation"
                   :icon="springLocationIcon"
         ></l-marker>
 
         <l-marker-cluster :options="openStreetClusterOptions">
-            <l-marker v-for="(marker, index) in leafletmarkers"
+            <l-marker v-for="(marker, index) in $parent.mapMarkers"
                       :key="index"
-                      :lat-lng="marker.position">
+                      :lat-lng="marker.position"
+                      :icon="marker.icon"
+            >
                 <l-popup>
                     <div class="pb-2"><a class="underline text-blue-700" :href="'/springs/'+marker.id+'/'">{{marker.name || 'Unnamed'}}</a></div>
                     <div>{{ $t('springs.spring_code') }}: {{marker.id}} <br />{{ $t('springs.status') }}: {{ $t('springs.status_options.'+marker.status) }}</div>
@@ -104,15 +106,6 @@ export default {
     },
     props: ['springs', 'spring', 'view'],
     data() {
-        let leafletmarkers = [];
-        _.forEach(this.springs, function(spring) {
-            leafletmarkers.push({
-                id: spring.code,
-                name: spring.name,
-                status: spring.status,
-                position: latLng(spring.latitude, spring.longitude),
-            });
-        });
         let springLocation = {lat: null, lng: null};
         if (this.spring) {
             springLocation = {lat: this.spring.latitude, lng: this.spring.longitude}
@@ -127,7 +120,7 @@ export default {
                 gestureHandling:true
             },
             openStreetClusterOptions: {
-                disableClusteringAtZoom: 15,
+                disableClusteringAtZoom: 6,
                 maxClusterRadius: 70,
             },
 
@@ -146,7 +139,6 @@ export default {
             springLocationIcon: springLocationIcon,
 
             layerIndex: 0,
-            leafletmarkers: leafletmarkers,
             layers: openstreet_layers,
             fullscreen: false,
 
@@ -192,37 +184,11 @@ export default {
         updateLocation(location) {
             this.$parent.updateLocation(location);
         },
-        getExistingSprings() {
-            let params = {};
-            if (this.spring) {
-                params = {
-                    'spring_id': this.spring.id
-                }
-            }
-            axios.get('/getSprings', {params}).then(response => {
-                let springs = response.data;
-                let markers = [];
-                _.forEach(springs, function (spring) {
-                    markers.push({
-                        id: spring.code,
-                        name: spring.name,
-                        status: spring.status,
-                        position: latLng(spring.latitude, spring.longitude),
-                    });
-                });
-                this.leafletmarkers = markers;
-            })
-        }
     },
     computed: {
         layer () {
             return this.layers[this.layerIndex]
         }
     },
-    created: function(){
-        if (this.spring || this.view === 'create') {
-            this.getExistingSprings();
-        }
-    }
 }
 </script>

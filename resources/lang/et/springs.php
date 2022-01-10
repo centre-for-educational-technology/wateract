@@ -116,6 +116,7 @@ return [
         'draft' => 'mustand',
         'submitted' => 'kinnitamata, ülekontrolli vajav allikas',
         'confirmed' => 'kinnitatud, teadaolev allikas',
+        'not_a_spring' => 'Ei ole allikas',
     ],
     'needs_attention' => 'Erakorralist ülekontrolli vajav allikas',
     'featured' => 'Esiletoodud',

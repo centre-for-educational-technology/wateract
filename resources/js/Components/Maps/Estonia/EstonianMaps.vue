@@ -20,58 +20,29 @@
 import OpenStreetMap from "./OpenStreetMap";
 import MaaAmetTileMap from "./MaaAmetTileMap";
 import MaaAmetWmsMap from "./MaaAmetWmsMap";
-import { latLngBounds, latLng, icon } from "leaflet";
-import { LMap, LTileLayer, LMarker, LIcon, LControlZoom, LControl, LPopup, LControlLayers } from 'vue2-leaflet';
-import "proj4leaflet";
-import Vue2LeafletMarkerCluster from 'vue2-leaflet-markercluster'
-import { GestureHandling } from "leaflet-gesture-handling";
-import "leaflet-gesture-handling/dist/leaflet-gesture-handling.css";
-import "leaflet.markercluster/dist/MarkerCluster.css";
-import "leaflet.markercluster/dist/MarkerCluster.Default.css";
-import { relief_shaded_layers, relief_layers, orthophoto_layers, springLocationIcon } from '../../../constants.js';
-import LControlFullscreen from 'vue2-leaflet-fullscreen';
+import { latLng } from "leaflet";
+import { springLocationIcon, confirmedSpringIcon, submittedSpringIcon, notASpringIcon, needsAttentionSpringIcon } from '../../../constants.js';
 
 export default {
     components: {
         OpenStreetMap,
         MaaAmetTileMap,
         MaaAmetWmsMap,
-        latLngBounds,
-        LControlLayers,
-        LMap,
-        LTileLayer,
-        LMarker,
-        LIcon,
-        LControlZoom,
-        LControl,
-        LPopup,
-        'l-marker-cluster': Vue2LeafletMarkerCluster,
-        GestureHandling,
-        LControlFullscreen,
     },
     props: ['springs', 'spring', 'view'],
     data() {
-        let markers = [];
-        _.forEach(this.springs, function(spring) {
-            markers.push({
-                id: spring.code,
-                name: spring.name,
-                status: spring.status,
-                position: latLng(spring.latitude, spring.longitude),
-            });
-        });
+
+        let markers = this.getMapMarkers(this.springs);
         let springLocation = {lat: null, lng: null};
         if (this.spring) {
             springLocation = {lat: this.spring.latitude, lng: this.spring.longitude}
         }
-
         let map = 'maaamet';
         let ee_spring = true;
         if (this.spring && this.spring.country !== 'EE') {
             map = 'openstreet';
             ee_spring = false;
         }
-
         let mapLayersMapping = {
             "Muinsuskaitsealused allikad": 'Kult_allikad',
             "Loodusdirektiivi allikaelupaigad": 'LD_allikad',
@@ -143,9 +114,8 @@ export default {
         showLocation() {
             this.leafletMapObject.locate();
         },
-        onLocationFound(location) {
+        setCurrentPosition(location) {
             this.currentPosition= location.latlng;
-            this.leafletMapObject.setView(location.latlng, 9);
         },
         maaAmetMapTypeUpdate(type) {
             this.maaAmetMapType = type;
@@ -209,6 +179,29 @@ export default {
                 }
             }
         },
+        getMapMarkers(springs) {
+            let markers = [];
+            _.forEach(springs, function(spring) {
+                let springIcon = confirmedSpringIcon;
+                let springStatus = spring.status;
+                if (spring.not_a_spring) {
+                    springIcon = notASpringIcon;
+                    springStatus = "not_a_spring";
+                } else if (spring.needs_attention) {
+                    springIcon = needsAttentionSpringIcon;
+                } else if (spring.status === 'submitted') {
+                    springIcon = submittedSpringIcon;
+                }
+                markers.push({
+                    id: spring.code,
+                    name: spring.name,
+                    status: springStatus,
+                    position: latLng(spring.latitude, spring.longitude),
+                    icon: springIcon,
+                });
+            });
+            return markers;
+        },
         getExistingSprings() {
             let params = {};
             if (this.spring) {
@@ -218,16 +211,7 @@ export default {
             }
             axios.get('/getSprings', { params }).then(response => {
                 let springs = response.data;
-                let markers = [];
-                _.forEach(springs, function(spring) {
-                    markers.push({
-                        id: spring.code,
-                        name: spring.name,
-                        status: spring.status,
-                        position: latLng(spring.latitude, spring.longitude),
-                    });
-                });
-                this.mapMarkers = markers;
+                this.mapMarkers = this.getMapMarkers(springs);
             })
         }
     },

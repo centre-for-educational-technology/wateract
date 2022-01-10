@@ -54,7 +54,7 @@
         />
 
         <l-marker
-            :lat-lng="currentPosition"
+            :lat-lng="$parent.currentPosition"
             :icon="currentPositionIcon"
         ></l-marker>
 
@@ -63,9 +63,11 @@
                   :icon="springLocationIcon"
         ></l-marker>
 
-        <l-marker v-for="(marker, index) in leafletmarkers"
+        <l-marker v-for="(marker, index) in $parent.mapMarkers"
                   :key="index"
-                  :lat-lng="marker.position">
+                  :lat-lng="marker.position"
+                  :icon="marker.icon"
+        >
             <l-popup>
                 <div class="pb-2"><a class="underline text-blue-700" :href="'/springs/'+marker.id+'/'">{{marker.name || 'Unnamed'}}</a></div>
                 <div>{{ $t('springs.spring_code') }}: {{marker.id}} <br />{{ $t('springs.status') }}: {{ $t('springs.status_options.'+marker.status) }}</div>
@@ -85,7 +87,7 @@ import { GestureHandling } from "leaflet-gesture-handling";
 import "leaflet-gesture-handling/dist/leaflet-gesture-handling.css";
 import "leaflet.markercluster/dist/MarkerCluster.css";
 import "leaflet.markercluster/dist/MarkerCluster.Default.css";
-import { relief_shaded_wms_layers, relief_wms_layers, orthophoto_wms_layers, springLocationIcon } from '../../../constants.js';
+import { relief_shaded_wms_layers, relief_wms_layers, orthophoto_wms_layers, springLocationIcon, currentPositionIcon } from '../../../constants.js';
 import LControlFullscreen from 'vue2-leaflet-fullscreen';
 import omnivore from '@mapbox/leaflet-omnivore';
 
@@ -101,9 +103,6 @@ let projection = new L.Proj.CRS('EPSG:3301', '+proj=lcc +lat_1=59.33333333333334
     origin: [40500, 5993000],
     bounds: L.bounds([40500, 5993000], [1064500, 7017000])
 });
-
-let redDotSvgString = '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="40" stroke="black" stroke-width="10" fill="red"/></svg>';
-let redDotIconUrl = encodeURI("data:image/svg+xml," + redDotSvgString).replace('#','%23');
 
 export default {
     components: {
@@ -123,15 +122,7 @@ export default {
     },
     props: ['springs', 'spring', 'view', 'zoom'],
     data() {
-        let leafletmarkers = [];
-        _.forEach(this.springs, function(spring) {
-            leafletmarkers.push({
-                id: spring.code,
-                name: spring.name,
-                status: spring.status,
-                position: latLng(spring.latitude, spring.longitude),
-            });
-        });
+
         let springLocation = {lat: null, lng: null};
         if (this.spring) {
             springLocation = {lat: this.spring.latitude, lng: this.spring.longitude}
@@ -143,8 +134,6 @@ export default {
             map = 'openstreet';
             ee_spring = false;
         }
-
-
 
         return {
 
@@ -201,17 +190,12 @@ export default {
             ee_spring: ee_spring,
 
             currentPosition: {lat: null, lng: null},
-            currentPositionIcon: icon({
-                iconUrl: redDotIconUrl,
-                iconSize: [16, 16],
-                iconAnchor: [8, 16]
-            }),
+            currentPositionIcon: currentPositionIcon,
 
             springLocation: springLocation,
             springLocationIcon: springLocationIcon,
 
             layerIndex: 0,
-            leafletmarkers: leafletmarkers,
             crs: projection,
             tms: true,
             attribution: "<a href='http://www.maaamet.ee'>Maa-amet</a>",
@@ -278,8 +262,8 @@ export default {
         },
         onLocationFound(location) {
             this.$parent.mapCenterUpdate(location.latlng);
-            this.currentPosition= location.latlng;
-            this.leafletMapObject.setView(location.latlng, 14);
+            this.$parent.setCurrentPosition(location);
+            this.leafletMapObject.setView(location.latlng);
         },
         maaametFullscreenChanged(fullscreen) {
             console.log("wms fullscreen changed: " + this.leafletMapObject.isFullscreen());
@@ -332,32 +316,6 @@ export default {
         onOverlayRemove(e) {
             this.$parent.mapLayersRemove(e.name);
         },
-        getExistingSprings() {
-            let params = {};
-            if (this.spring) {
-                params = {
-                    'spring_id': this.spring.id
-                }
-            }
-            axios.get('/getSprings', { params }).then(response => {
-                let springs = response.data;
-                let markers = [];
-                _.forEach(springs, function(spring) {
-                    markers.push({
-                        id: spring.code,
-                        name: spring.name,
-                        status: spring.status,
-                        position: latLng(spring.latitude, spring.longitude),
-                    });
-                });
-                this.leafletmarkers = markers;
-            })
-        }
     },
-    created: function(){
-        if (this.spring || this.view === 'create') {
-            this.getExistingSprings();
-        }
-    }
 }
 </script>

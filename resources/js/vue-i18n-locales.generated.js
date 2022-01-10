@@ -163,7 +163,8 @@ export default {
             "status_options": {
                 "draft": "Draft",
                 "submitted": "Submitted",
-                "confirmed": "Confirmed"
+                "confirmed": "Confirmed",
+                "not_a_spring": "Not a spring"
             },
             "needs_attention": "Needs special attention",
             "featured": "Featured",
@@ -866,7 +867,8 @@ export default {
             "status_options": {
                 "draft": "mustand",
                 "submitted": "kinnitamata, ülekontrolli vajav allikas",
-                "confirmed": "kinnitatud, teadaolev allikas"
+                "confirmed": "kinnitatud, teadaolev allikas",
+                "not_a_spring": "Ei ole allikas"
             },
             "needs_attention": "Erakorralist ülekontrolli vajav allikas",
             "featured": "Esiletoodud",
@@ -1399,7 +1401,8 @@ export default {
             "status_options": {
                 "draft": "En cours",
                 "submitted": "Soumise",
-                "confirmed": "Confirmée"
+                "confirmed": "Confirmée",
+                "not_a_spring": "Pas une source"
             },
             "needs_attention": "A besoin d'une attention particulière",
             "featured": "Représentée",
@@ -1961,7 +1964,8 @@ export default {
             "status_options": {
                 "draft": "Melnraksts",
                 "submitted": "Iesniegts",
-                "confirmed": "Apstiprināts"
+                "confirmed": "Apstiprināts",
+                "not_a_spring": "Nav avots"
             },
             "needs_attention": "Nepieciešama īpaša uzmanība",
             "featured": "Piedāvāts",
@@ -2486,7 +2490,8 @@ export default {
             "status_options": {
                 "draft": "Черновик",
                 "submitted": "Представленный",
-                "confirmed": "Подтвержденный"
+                "confirmed": "Подтвержденный",
+                "not_a_spring": "Не родник"
             },
             "needs_attention": "Требует особого внимания",
             "featured": "Обработанный",

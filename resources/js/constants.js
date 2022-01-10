@@ -89,6 +89,46 @@ export const orthophoto_wms_layers = [
 ];
 
 export const springLocationIcon = icon({
+    iconUrl: '/images/marker-icon-green.png',
+    shadowUrl: '/images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    shadowSize: [41, 41]
+});
+
+let redDotSvgString = '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="40" stroke="black" stroke-width="10" fill="red"/></svg>';
+let redDotIconUrl = encodeURI("data:image/svg+xml," + redDotSvgString).replace('#','%23');
+export const currentPositionIcon = icon({
+    iconUrl: redDotIconUrl,
+    iconSize: [16, 16],
+    iconAnchor: [8, 16]
+});
+
+export const confirmedSpringIcon = icon({
+    iconUrl: '/images/marker-icon-blue.png',
+    shadowUrl: '/images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    shadowSize: [41, 41]
+});
+
+export const submittedSpringIcon = icon({
+    iconUrl: '/images/marker-icon-orange.png',
+    shadowUrl: '/images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    shadowSize: [41, 41]
+});
+
+export const notASpringIcon = icon({
+    iconUrl: '/images/marker-icon-grey.png',
+    shadowUrl: '/images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    shadowSize: [41, 41]
+});
+
+export const needsAttentionSpringIcon = icon({
     iconUrl: '/images/marker-icon-red.png',
     shadowUrl: '/images/marker-shadow.png',
     iconSize: [25, 41],
