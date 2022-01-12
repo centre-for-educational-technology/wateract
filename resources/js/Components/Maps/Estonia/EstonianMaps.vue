@@ -74,6 +74,7 @@ export default {
 
             ee_spring: ee_spring,
 
+            liveLocation: false,
             currentPosition: {lat: null, lng: null},
 
             springLocation: springLocation,
@@ -115,6 +116,7 @@ export default {
             this.leafletMapObject.locate();
         },
         setCurrentPosition(location) {
+            this.liveLocation = true;
             this.currentPosition= location.latlng;
         },
         maaAmetMapTypeUpdate(type) {

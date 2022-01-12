@@ -17,10 +17,15 @@
     >
         <!-- @fullscreenchange="maaametFullscreenChanged" -->
         <l-control>
-            <svg @click="showLocation" class="h-8 w-8 p-1 bg-white border-2 rounded cursor-pointer hover:bg-gray-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <svg v-if="!$parent.liveLocation" @click="showLocation" class="h-8 w-8 p-1 bg-white border-2 rounded cursor-pointer hover:bg-gray-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd">
                     <title>{{ $t('springs.pan_to_current_location') }}</title>
                 </path>
+            </svg>
+            <svg v-if="$parent.liveLocation" @click="stopLocation" class="h-8 w-8 p-1 bg-white border-2 rounded cursor-pointer hover:bg-gray-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd">
+                </path>
+                <line x1='1' y1='20' x2='20' y2='1' stroke-width='1' stroke='#0B2437'/>
             </svg>
         </l-control>
 
@@ -53,7 +58,7 @@
             :attribution="layer.attribution"
         />
 
-        <l-marker
+        <l-marker v-if="$parent.liveLocation"
             :lat-lng="$parent.currentPosition"
             :icon="currentPositionIcon"
         ></l-marker>
@@ -241,6 +246,9 @@ export default {
             this.leafletMapObject = mapObject;
             this.createLayers();
             this.leafletMapObject.setView(this.$parent.mapCenter, this.$parent.maaAmetMapZoom);
+            if (this.$parent.liveLocation) {
+                this.showLocation();
+            }
             /*if (this.leafletMapObject.isFullscreen() && this.$parent.fullscreen === false) {
                 this.leafletMapObject.toggleFullscreen();
             } else if (!(this.leafletMapObject.isFullscreen()) && this.$parent.fullscreen === true) {
@@ -258,12 +266,15 @@ export default {
             this.leafletMapObject.on('overlayremove', this.onOverlayRemove);
         },
         showLocation() {
-            this.leafletMapObject.locate();
+            this.leafletMapObject.locate({setView: false, watch: true, enableHighAccuracy: true, maxZoom: 17});
+        },
+        stopLocation() {
+            this.leafletMapObject.stopLocate();
+            this.$parent.liveLocation = false;
         },
         onLocationFound(location) {
             this.$parent.mapCenterUpdate(location.latlng);
             this.$parent.setCurrentPosition(location);
-            this.leafletMapObject.setView(location.latlng);
         },
         maaametFullscreenChanged(fullscreen) {
             console.log("wms fullscreen changed: " + this.leafletMapObject.isFullscreen());
