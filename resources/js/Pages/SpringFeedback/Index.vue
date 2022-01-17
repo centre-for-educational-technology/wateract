@@ -28,6 +28,7 @@
                         <div v-if="spring.feedback.length === 0">{{ $t('springs.no_feedback_added') }}</div>
 
                         <data-table v-if="spring.feedback.length > 0"
+                            :key="tableRefresh"
                             :columns="columns"
                             :url="'/springs/'+spring.id+'/feedbackview'"
                             framework="tailwind"
@@ -50,7 +51,8 @@
 <script>
 import AppLayout from './../../Layouts/AppLayout'
 import SpringNavigation from '../Springs/SpringNavigation'
-import JetLabel from "../../Jetstream/Label";
+import JetLabel from "../../Jetstream/Label"
+import DeleteButton from "../../Components/DataTable/DeleteButton"
 
 export default {
     components: {
@@ -61,6 +63,7 @@ export default {
     props: ['spring'],
     data() {
         return {
+            tableRefresh: 0,
             columns: [
                 {
                     label: this.$i18n.t('springs.date_time'),
@@ -91,6 +94,18 @@ export default {
                     orderable: false,
                     transform: ({data}) => `${data['latitude']}, ${data['longitude']}`,
                 },
+                {
+                    label: '',
+                    name: 'Delete',
+                    orderable: false,
+                    classes: {
+                        'btn': true,
+                        'btn-sm': true,
+                    },
+                    event: "click",
+                    handler: this.deleteRow,
+                    component: DeleteButton,
+                },
             ],
             pagination: {
                 'size': 'small',
@@ -119,6 +134,23 @@ export default {
                 },
             }
         }
-    }
+    },
+    methods: {
+        deleteRow(data) {
+            if (confirm(this.$i18n.t('springs.delete_feedback_confirmation'))) {
+                let form = this.$inertia.form({
+                    '_method': 'DELETE',
+                    feedback_id: data.id,
+                }, {
+                    bag: 'deleteFeedback'
+                });
+                form.post('/spring_feedback/' + data.id, {
+                    preserveScroll: false
+                }).then(response => {
+                    this.tableRefresh++;
+                })
+            }
+        },
+    },
 }
 </script>

@@ -289,6 +289,8 @@ return [
     'delete_spring_confirmation' => 'Vai esat drošs, ka vēlaties dzēst šo avotu?',
     'nevermind' => 'Atcelt',
 
+    'delete_feedback_confirmation' => 'Vai esat drošs, ka vēlaties dzēst šo atsauksmes?',
+
     'delete_observation' => 'Dzēst novērojumu',
     'delete_observation_notification' => 'Novērojums un novērojumu fotogrāfijas un dati tiks dzēst neatgriezeniski.',
     'permanently_delete_observation' => 'Neatgriezeniski dzēst novērojumu',
@@ -337,6 +339,7 @@ return [
         'spring_updated' => 'Avots veiksmīgi atjaunots.',
         'spring_deleted' => 'Avots veiksmīgi izdzēsts.',
         'spring_feedback_added' => 'Pievienota atsauksme.',
+        'spring_feedback_deleted' => 'Spring feedback deleted.',
         'observation_added' => 'Pievienots jauns novērojums.',
         'observation_updated' => 'Novērojums veiksmīgi atjaunots.',
         'observation_deleted' => 'Novērojums veiksmīgi izdzēsts.',

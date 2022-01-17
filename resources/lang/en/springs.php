@@ -290,6 +290,8 @@ return [
     'delete_spring_confirmation' => 'Are you sure you want to delete this spring?',
     'nevermind' => 'Nevermind',
 
+    'delete_feedback_confirmation' => 'Are you sure you want to delete this feedback?',
+
     'delete_observation' => 'Delete observation',
     'delete_observation_notification' => 'Observation and observation photos and data will be deleted permanently.',
     'permanently_delete_observation' => 'Permanently delete observation',
@@ -347,6 +349,7 @@ return [
         'spring_updated' => 'Spring successfully updated.',
         'spring_deleted' => 'Spring successfully deleted.',
         'spring_feedback_added' => 'New feedback added.',
+        'spring_feedback_deleted' => 'Spring feedback deleted.',
         'observation_added' => 'New observation added.',
         'observation_updated' => 'Observation successfully updated.',
         'observation_deleted' => 'Observation successfully deleted.',

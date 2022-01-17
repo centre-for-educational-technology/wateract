@@ -290,6 +290,8 @@ return [
     'delete_spring_confirmation' => 'Вы уверены, что хотите удалить этот родник?',
     'nevermind' => 'Неважно',
 
+    'delete_feedback_confirmation' => 'Вы уверены, что хотите удалить этот отзыв?',
+
     'delete_observation' => 'Удалить наблюдение',
     'delete_observation_notification' => 'Данные наблюдений и фотографии будут удалены без возможности восстановления.',
     'permanently_delete_observation' => 'Удалить наблюдение навсегда',
@@ -347,6 +349,7 @@ return [
         'spring_updated' => 'Родник успешно обновлен.',
         'spring_deleted' => 'Родник успешно удален.',
         'spring_feedback_added' => 'Новый отзыв добавлен.',
+        'spring_feedback_deleted' => 'Новый отзыв удален.',
         'observation_added' => 'Новое наблюдение добавлено.',
         'observation_updated' => 'Наблюдение успешно обновлено.',
         'observation_deleted' => 'Наблюдение успешно удалено.',

@@ -105,7 +105,12 @@ class SpringFeedbackController extends Controller
      */
     public function destroy(SpringFeedback $springFeedback)
     {
-        //
+        $this->authorize('delete', $springFeedback);
+        
+        $springFeedback->delete();
+
+        return redirect()->back()
+            ->with('success', __('springs.messages.spring_feedback_deleted'));
     }
 
     public function view(int $spring_id, Request $request)

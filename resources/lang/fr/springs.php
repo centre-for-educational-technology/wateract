@@ -287,8 +287,10 @@ return [
     'delete_spring' => 'Effacer la source',
     'delete_spring_notification' => 'La source, les observations et les mesures vont être effacées de façon permanente.',
     'permanently_delete_spring' => 'Effacer la source de façon permanente',
-    'delete_spring_confirmation' => 'Etes-vous sûr de vouloir effacer cette source ?',
+    'delete_spring_confirmation' => 'Etes-vous sûr de vouloir effacer cette source?',
     'nevermind' => 'Continuer',
+
+    'delete_feedback_confirmation' => 'Are you sure you want to delete this feedback?',
 
     'delete_observation' => 'Effacer l\'observation',
     'delete_measurement_notification' => 'L\'observation, les photos d\'observation et les données vont être supprimées de manière permanente.',
@@ -347,6 +349,7 @@ return [
         'spring_updated' => 'La source a été mise à jour avec succès.',
         'spring_deleted' => 'La source a été supprimée avec succès.',
         'spring_feedback_added' => 'Nouveaux retours d\'expérience ajoutés.',
+        'spring_feedback_deleted' => 'Spring feedback deleted.',
         'observation_added' => 'Nouvelle observation ajoutée.',
         'observation_updated' => 'L\'observation a été mise à jour avec succès.',
         'observation_deleted' => 'L\'observation a été effacée avec succès.',

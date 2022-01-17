@@ -284,6 +284,8 @@ return [
     'delete_spring_confirmation' => 'Oled sa kindel, et soovid selle allika kustutada?',
     'nevermind' => 'Katkesta',
 
+    'delete_feedback_confirmation' => 'Oled sa kindel, et soovid selle tagasiside kustutada?',
+
     'delete_observation' => 'Kustuta vaatlus',
     'delete_observation_notification' => 'Vaatlus ja vaatluse fotod ning andmed kustutatakse jäädavalt.',
     'permanently_delete_observation' => 'Kustuta vaatlus jäädavalt',
@@ -341,6 +343,7 @@ return [
         'spring_updated' => 'Allikas edukalt uuendatud.',
         'spring_deleted' => 'Allikas edukalt kustutatud.',
         'spring_feedback_added' => 'Allikale tagasiside lisatud.',
+        'spring_feedback_deleted' => 'Allika tagasiside kustutatud.',
         'observation_added' => 'Uus vaatlus lisatud.',
         'observation_updated' => 'Vaatlus edukalt uuendatud.',
         'observation_deleted' => 'Vaatlus edukalt kustutatud.',
