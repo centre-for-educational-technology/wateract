@@ -60,7 +60,7 @@ export default {
         SpringNavigation,
         JetLabel,
     },
-    props: ['spring'],
+    props: ['spring', 'can_edit'],
     data() {
         return {
             tableRefresh: 0,
@@ -96,7 +96,9 @@ export default {
                 },
                 {
                     label: '',
-                    name: 'Delete',
+                    meta: {
+                        can_edit: this.can_edit
+                    },
                     orderable: false,
                     classes: {
                         'btn': true,

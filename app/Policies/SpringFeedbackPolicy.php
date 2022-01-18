@@ -2,6 +2,7 @@
 
 namespace App\Policies;
 
+use App\Models\Spring;
 use App\Models\SpringFeedback;
 use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
@@ -65,7 +66,8 @@ class SpringFeedbackPolicy
      */
     public function delete(User $user, SpringFeedback $springFeedback)
     {
-        if ($user->hasRole(['admin', 'super-admin'])) {
+        $spring = $springFeedback->spring();
+        if ( $spring->canEdit() ) {
             return true;
         }
         return false;

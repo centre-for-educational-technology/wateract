@@ -23,7 +23,7 @@ class SpringFeedbackController extends Controller
     public function index(string $spring_code)
     {
         $spring = Spring::where('code', $spring_code)->with('feedback')->first();
-        return Inertia::render('SpringFeedback/Index', ['spring' => $spring]);
+        return Inertia::render('SpringFeedback/Index', ['spring' => $spring, 'can_edit' => $spring->canEdit()]);
     }
 
     /**
@@ -106,7 +106,7 @@ class SpringFeedbackController extends Controller
     public function destroy(SpringFeedback $springFeedback)
     {
         $this->authorize('delete', $springFeedback);
-        
+
         $springFeedback->delete();
 
         return redirect()->back()
