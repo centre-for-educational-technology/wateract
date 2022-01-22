@@ -68,7 +68,7 @@ export default {
 
             mapCenter: latLng(58.379, 24.554),
 
-            maaAmetTileMap: true,
+            maaAmetTileMap: map !== 'openstreet',
             maaAmetWmsMap: false,
             maaAmetMapType: 'relief',       // relief, relief_shaded, orthophoto
 
