@@ -47,7 +47,7 @@
         <div>
             <h1>{{ $t('springs.springs') }}</h1>
 
-            <main-map class="sm:px-5 lg:px-10" :springs="springs" ></main-map>
+            <main-map class="sm:px-5 lg:px-10" :springs="springs" :cluster="true"></main-map>
 
             <statistics class="mt-5 px-2 sm:px-5 lg:px-10" style="max-width:1120px; margin:20px auto"></statistics>
 

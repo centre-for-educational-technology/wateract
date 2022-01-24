@@ -4,9 +4,9 @@
 
         <div class="z-depth-1-half map-container block h-full" >
 
-            <OpenStreetMap v-if="openStreetMap" :view="view" :springs="springs" :spring="spring"></OpenStreetMap>
+            <OpenStreetMap v-if="openStreetMap" :view="view" :springs="springs" :spring="spring" :cluster="cluster"></OpenStreetMap>
 
-            <MaaAmetTileMap v-if="maaAmetTileMap" :view="view" :springs="springs" :spring="spring"></MaaAmetTileMap>
+            <MaaAmetTileMap v-if="maaAmetTileMap" :view="view" :springs="springs" :spring="spring" :cluster="cluster"></MaaAmetTileMap>
 
             <MaaAmetWmsMap v-if="maaAmetWmsMap" :view="view" :springs="springs" :spring="spring"></MaaAmetWmsMap>
 
@@ -29,7 +29,7 @@ export default {
         MaaAmetTileMap,
         MaaAmetWmsMap,
     },
-    props: ['springs', 'spring', 'view'],
+    props: ['springs', 'spring', 'view', 'cluster'],
     data() {
 
         let markers = this.getMapMarkers(this.springs);

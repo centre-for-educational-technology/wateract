@@ -109,7 +109,7 @@ export default {
         GestureHandling,
         LControlFullscreen,
     },
-    props: ['springs', 'spring', 'view'],
+    props: ['springs', 'spring', 'view', 'cluster'],
     data() {
         let springLocation = {lat: null, lng: null};
         if (this.spring) {
@@ -119,15 +119,23 @@ export default {
         if (this.spring && this.spring.country !== 'EE') {
             ee_spring = false;
         }
+        let openStreetClusterOptions = {
+            disableClusteringAtZoom: 6,
+            maxClusterRadius: 70,
+        };
+        if (this.cluster === true) {
+            openStreetClusterOptions = {
+                disableClusteringAtZoom: 10,
+                maxClusterRadius: 70,
+            };
+        }
+
         return {
             mapOptions: {
                 zoomSnap: 1,
                 gestureHandling:true
             },
-            openStreetClusterOptions: {
-                disableClusteringAtZoom: 6,
-                maxClusterRadius: 70,
-            },
+            openStreetClusterOptions: openStreetClusterOptions,
 
             openStreetMapZoom: 7,
             openStreetMapCenter: latLng(58.379, 24.554),
