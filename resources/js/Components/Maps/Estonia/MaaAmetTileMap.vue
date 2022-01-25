@@ -74,6 +74,8 @@
                 <l-popup>
                     <div class="pb-2"><a class="underline text-blue-700" :href="'/springs/'+marker.id+'/'">{{marker.name || 'Unnamed'}}</a></div>
                     <div>{{ $t('springs.spring_code') }}: {{marker.id}} <br />{{ $t('springs.status') }}: {{ $t('springs.status_options.'+marker.status) }}</div>
+                    <div class="underline"><a target="_blank" :href="'https://www.google.com/maps/search/?api=1&query='+marker.position.lat+'%2C'+marker.position.lng">
+                        {{ $t('springs.navigate') }}</a></div>
                 </l-popup>
             </l-marker>
         </l-marker-cluster>
