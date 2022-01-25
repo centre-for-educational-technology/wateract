@@ -4,9 +4,9 @@
 
         <div class="z-depth-1-half map-container block h-full" >
 
-            <OpenStreetMap v-if="openStreetMap" :view="view" :springs="springs" :spring="spring" :cluster="cluster"></OpenStreetMap>
+            <OpenStreetMap v-if="openStreetMap" :view="view" :springs="springs" :spring="spring" :cluster="true"></OpenStreetMap>
 
-            <MaaAmetTileMap v-if="maaAmetTileMap" :view="view" :springs="springs" :spring="spring" :cluster="cluster"></MaaAmetTileMap>
+            <MaaAmetTileMap v-if="maaAmetTileMap" :view="view" :springs="springs" :spring="spring" :cluster="true"></MaaAmetTileMap>
 
             <MaaAmetWmsMap v-if="maaAmetWmsMap" :view="view" :springs="springs" :spring="spring"></MaaAmetWmsMap>
 
