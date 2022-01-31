@@ -10,7 +10,7 @@ class Photo extends Model
     use HasFactory;
 
     protected $fillable = [
-        'spring_id', 'observation_id', 'user_id', 'path', 'thumbnail', 'photo_taken', 'caption'
+        'spring_id', 'observation_id', 'user_id', 'path', 'thumbnail', 'photo_taken', 'caption', 'featured'
     ];
 
     public function spring()

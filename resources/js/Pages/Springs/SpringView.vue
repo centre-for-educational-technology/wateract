@@ -2,12 +2,17 @@
 
     <div>
 
-        <div v-if="spring.all_photos.length > 0">
+        <div v-if="spring.featured_photos.length > 0">
+            <a :href="'/springs/'+spring.code">
+                <img :src="'/'+spring.featured_photos[0].thumbnail" /></a>
+        </div>
+
+        <div v-else-if="spring.all_photos.length > 0">
             <a :href="'/springs/'+spring.code">
                 <img :src="'/'+spring.all_photos[0].thumbnail" /></a>
         </div>
 
-        <div v-if="spring.all_photos.length == 0">
+        <div v-else>
             <a :href="'/springs/'+spring.code">
                 <img src="/images/spring-default-image.jpg" /></a>
         </div>
@@ -35,7 +40,6 @@
 
     </div>
 
-
 </template>
 <script>
 import JetLabel from "../../Jetstream/Label";
@@ -44,20 +48,5 @@ export default {
         JetLabel,
     },
     props: ['spring'],
-    data() {
-        return {
-            observation_fields: [],
-        }
-    },
-    /*methods: {
-        getObservationInfo(spring, observation) {
-            axios.get('/springs/'+spring.code+'/observations/'+observation.id).then(response => {
-                this.observation_fields = response.data;
-            })
-        },
-    },
-    created: function(){
-        this.getObservationInfo(this.spring, this.observation);
-    }*/
 }
 </script>

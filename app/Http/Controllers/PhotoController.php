@@ -161,11 +161,12 @@ class PhotoController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\Photo  $photo
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function update(Request $request, Photo $photo)
     {
-        //
+        $photo->update($request->all());
+        return response()->json(['error'=>false, 'photo_id'=>$photo->id]);
     }
 
     /**

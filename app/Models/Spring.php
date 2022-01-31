@@ -34,8 +34,14 @@ class Spring extends Model
         return $this->hasMany('App\Models\Photo');
     }
 
-    public function photos() {
+    public function photos()
+    {
         return $this->all_photos()->where('observation_id', null);
+    }
+
+    public function featured_photos()
+    {
+        return $this->all_photos()->where('featured', '1')->inRandomOrder();
     }
 
     public function database_links()
