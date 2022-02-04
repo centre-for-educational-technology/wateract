@@ -106,6 +106,10 @@
                             </el-upload>
                             <el-dialog :visible.sync="dialogVisible">
                                 <img width="100%" :src="dialogPhotoUrl" alt="" />
+                                <div v-if="is('admin') || is('super-admin')">
+                                    <el-checkbox @change="photoFeaturedChange(dialogPhotoId, $event)" v-model="dialogPhotoFeatured" />
+                                    {{ $t('springs.featured') }}
+                                </div>
                             </el-dialog>
                         </div>
 
@@ -248,7 +252,10 @@ export default {
             helpDialogVisible: false,
             helptext: '',
             dialogVisible: false,
+            dialogPhoto: null,
             dialogPhotoUrl: '',
+            dialogPhotoId: null,
+            dialogPhotoFeatured: false,
             map: null,
             processingPhotos: false,
             form: this.$inertia.form({
@@ -319,6 +326,7 @@ export default {
             axios.post('/photos', data).then(response => {
                 photo_id = response.data.photo_id;
                 this.form.photo_ids.push(photo_id);
+                photo.id = photo_id;
                 this.processingPhotos = false;
             })
                 .catch(function (error) {
@@ -336,8 +344,29 @@ export default {
             this.helpDialogVisible = true;
         },
         handlePhotoCardPreview(photo) {
+            this.dialogPhoto = photo;
             this.dialogPhotoUrl = photo.url;
+            this.dialogPhotoId = photo.id;
+            this.dialogPhotoFeatured = false;
+            if (photo.featured) {
+                this.dialogPhotoFeatured = true;
+            }
             this.dialogVisible = true;
+        },
+        photoFeaturedChange(photo_id, featured) {
+            let data = {
+                'featured': featured
+            }
+            axios.put('/photos/'+photo_id, data).then(response => {
+                this.dialogPhoto.featured = featured;
+            })
+            .catch(function (error) {
+                // handle error
+                console.log(error);
+            })
+            .then(function () {
+                // always executed
+            });
         },
         updateLocationForMap(location) {
             this.springLocation = location.latlng;
