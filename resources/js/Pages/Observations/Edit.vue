@@ -81,7 +81,7 @@
                     </div>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div v-for="(field, index) in observation_fields" :key="field.id">
+                        <div v-for="(field, index) in form.observation_values" :key="field.id">
                             <div :class="{'pull-right': index % 2 === 0, 'pull-left': index % 2 !== 0 }">
                                 <jet-label class="font-bold inline-block" :for="field.name" :value="$t('springs.'+field.name)" />
                                 <span v-if="field.unit">({{ field.unit}})</span>
@@ -201,11 +201,21 @@ export default {
             this.helpText = helptext;
             this.helpDialogVisible = true;
         },
+        clearLocalStorage() {
+            localStorage.removeItem('edit_observation_form_measurement_time');
+            localStorage.removeItem('edit_observation_form_odor');
+            localStorage.removeItem('edit_observation_form_taste');
+            localStorage.removeItem('edit_observation_form_color');
+            localStorage.removeItem('edit_observation_form_description');
+            localStorage.removeItem('edit_observation_form_observation_values');
+        },
         save: function (data) {
+            this.clearLocalStorage();
             this.$inertia.post('/observations/' + data.id, data)
         },
         submit: function (data) {
             data.status = 'submitted';
+            this.clearLocalStorage();
             this.$inertia.post('/observations/' + data.id, data)
         },
         updatePhotos(photo) {
@@ -235,6 +245,49 @@ export default {
             this.dialogPhotoUrl = photo.url;
             this.dialogVisible = true;
         },
-    }
+    },
+    created() {
+        if (localStorage.edit_observation_form_measurement_time) {
+            this.form.measurement_time = localStorage.edit_observation_form_measurement_time;
+        }
+        if (localStorage.edit_observation_form_odor) {
+            this.form.odor = localStorage.edit_observation_form_odor;
+        }
+        if (localStorage.edit_observation_form_taste) {
+            this.form.taste = localStorage.edit_observation_form_taste;
+        }
+        if (localStorage.edit_observation_form_color) {
+            this.form.color = localStorage.edit_observation_form_color;
+        }
+        if (localStorage.edit_observation_form_description) {
+            this.form.description = localStorage.edit_observation_form_description;
+        }
+        if (localStorage.edit_observation_form_observation_values) {
+            this.form.observation_values = JSON.parse(localStorage.edit_observation_form_observation_values);
+        }
+    },
+    watch: {
+        'form.measurement_time': function(newValue) {
+            localStorage.setItem('edit_observation_form_measurement_time', newValue);
+        },
+        'form.odor': function (newValue) {
+            localStorage.setItem('edit_observation_form_odor', newValue);
+        },
+        'form.taste': function(newValue) {
+            localStorage.setItem('edit_observation_form_taste', newValue);
+        },
+        'form.color': function(newValue) {
+            localStorage.setItem('edit_observation_form_color', newValue);
+        },
+        'form.description': function(newValue) {
+            localStorage.setItem('edit_observation_form_description', newValue);
+        },
+        'form.observation_values': {
+            handler:function(newValue) {
+                localStorage.setItem('edit_observation_form_observation_values', JSON.stringify(newValue));
+            },
+            deep:true
+        },
+    },
 }
 </script>
