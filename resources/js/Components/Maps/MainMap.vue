@@ -2,9 +2,9 @@
 
     <div>
 
-        <estonian-maps v-if="this.appCountry === 'ee'" class="px-2 sm:px-5 lg:px-10" :springs="springs" :spring="spring" :view="view" :cluster="cluster"></estonian-maps>
+        <estonian-maps v-if="this.appCountry === 'ee'" class="px-2 sm:px-5 lg:px-10" :springs="springs" :spring="spring" :view="view" :cluster="cluster" :spring_location="spring_location"></estonian-maps>
 
-        <latvian-map v-if="this.appCountry === 'lv'" class="px-2 sm:px-5 lg:px-10" :springs="springs" :spring="spring" :view="view"></latvian-map>
+        <latvian-map v-if="this.appCountry === 'lv'" class="px-2 sm:px-5 lg:px-10" :springs="springs" :spring="spring" :view="view" :spring_location="spring_location"></latvian-map>
 
     </div>
 
@@ -18,7 +18,7 @@ export default {
       EstonianMaps,
       LatvianMap,
     },
-    props: ['springs', 'spring', 'view', 'cluster'],
+    props: ['springs', 'spring', 'view', 'cluster', 'spring_location'],
     data() {
         return {
             appCountry: process.env.MIX_APP_COUNTRY,

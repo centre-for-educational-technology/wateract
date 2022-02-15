@@ -31,9 +31,9 @@
                             <div class="w-full px-2">
                                 <jet-label class="font-bold" :value="$t('springs.location')" />
 
-                                <estonian-maps v-if="appCountry === 'ee'" :view="'create'" @changeLocation="updateLocationForMap($event)"></estonian-maps>
+                                <estonian-maps v-if="appCountry === 'ee'" :view="'create'" :spring_location="springLocation" @changeLocation="updateLocationForMap($event)"></estonian-maps>
 
-                                <latvian-map v-if="appCountry === 'lv'" :view="'create'" @changeLocation="updateLocationForMap($event)"></latvian-map>
+                                <latvian-map v-if="appCountry === 'lv'" :view="'create'" :spring_location="springLocation" @changeLocation="updateLocationForMap($event)"></latvian-map>
 
                                 <GmapMap :center="{lat:54, lng:54}"></GmapMap>
 
@@ -225,6 +225,7 @@ import RequiredField from '../../Components/RequiredField';
 import { gmapApi } from 'gmap-vue';
 import EstonianMaps from "../../Components/Maps/Estonia/EstonianMaps";
 import LatvianMap from "../../Components/Maps/LatvianMap";
+import { latLng } from "leaflet";
 
 export default {
     components: {
@@ -258,6 +259,7 @@ export default {
             dialogPhotoFeatured: false,
             map: null,
             processingPhotos: false,
+            springLocation: null,
             form: this.$inertia.form({
                 '_method': 'POST',
                 name: this.name,
@@ -418,6 +420,7 @@ export default {
         if (localStorage.create_spring_form_latitude && localStorage.create_spring_form_longitude) {
             this.form.latitude = localStorage.create_spring_form_latitude;
             this.form.longitude = localStorage.create_spring_form_longitude;
+            this.springLocation = latLng(this.form.latitude, this.form.longitude);
         }
         if (localStorage.create_spring_form_country) {
             this.form.country = localStorage.create_spring_form_country;
@@ -475,8 +478,11 @@ export default {
         'form.settlement': function (newValue) {
             localStorage.setItem('create_spring_form_settlement', newValue);
         },
-        'form.references': function(newValue) {
-            localStorage.setItem('create_spring_form_references', JSON.stringify(newValue));
+        'form.references': {
+            handler:function(newValue) {
+                localStorage.setItem('create_spring_form_references', JSON.stringify(newValue));
+            },
+            deep:true
         },
         'form.description': function(newValue) {
             localStorage.setItem('create_spring_form_description', newValue);
@@ -487,8 +493,11 @@ export default {
         'form.kkr_code': function(newValue) {
             localStorage.setItem('create_spring_form_kkr_code', newValue);
         },
-        'form.database_links': function(newValue) {
-            localStorage.setItem('create_spring_form_database_links', JSON.stringify(newValue));
+        'form.database_links': {
+            handler:function(newValue) {
+                localStorage.setItem('create_spring_form_database_links', JSON.stringify(newValue));
+            },
+            deep:true
         },
         'form.classification': function(newValue) {
             localStorage.setItem('create_spring_form_classification', newValue);

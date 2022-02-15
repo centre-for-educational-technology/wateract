@@ -247,23 +247,30 @@ export default {
         },
     },
     created() {
-        if (localStorage.edit_observation_form_measurement_time) {
-            this.form.measurement_time = localStorage.edit_observation_form_measurement_time;
+        let id = null;
+        if (localStorage.edit_observation_form_id) {
+            id = localStorage.edit_spring_form_id;
         }
-        if (localStorage.edit_observation_form_odor) {
-            this.form.odor = localStorage.edit_observation_form_odor;
-        }
-        if (localStorage.edit_observation_form_taste) {
-            this.form.taste = localStorage.edit_observation_form_taste;
-        }
-        if (localStorage.edit_observation_form_color) {
-            this.form.color = localStorage.edit_observation_form_color;
-        }
-        if (localStorage.edit_observation_form_description) {
-            this.form.description = localStorage.edit_observation_form_description;
-        }
-        if (localStorage.edit_observation_form_observation_values) {
-            this.form.observation_values = JSON.parse(localStorage.edit_observation_form_observation_values);
+        localStorage.setItem('edit_spring_form_id', this.spring.id);
+        if (id === this.observation.id) {
+            if (localStorage.edit_observation_form_measurement_time) {
+                this.form.measurement_time = localStorage.edit_observation_form_measurement_time;
+            }
+            if (localStorage.edit_observation_form_odor) {
+                this.form.odor = localStorage.edit_observation_form_odor;
+            }
+            if (localStorage.edit_observation_form_taste) {
+                this.form.taste = localStorage.edit_observation_form_taste;
+            }
+            if (localStorage.edit_observation_form_color) {
+                this.form.color = localStorage.edit_observation_form_color;
+            }
+            if (localStorage.edit_observation_form_description) {
+                this.form.description = localStorage.edit_observation_form_description;
+            }
+            if (localStorage.edit_observation_form_observation_values) {
+                this.form.observation_values = JSON.parse(localStorage.edit_observation_form_observation_values);
+            }
         }
     },
     watch: {

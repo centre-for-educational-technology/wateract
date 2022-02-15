@@ -34,9 +34,9 @@
                         <div class="w-full px-2">
                             <jet-label class="font-bold" :value="$t('springs.location')" />
 
-                            <estonian-maps v-if="appCountry === 'ee'" :view="'edit'" :spring="spring" @changeLocation="updateLocationForMap($event)"></estonian-maps>
+                            <estonian-maps v-if="appCountry === 'ee'" :view="'edit'" :spring="spring" :spring_location="springLocation" @changeLocation="updateLocationForMap($event)"></estonian-maps>
 
-                            <latvian-map v-if="appCountry === 'lv'" :view="'edit'" :spring="spring" @changeLocation="updateLocationForMap($event)"></latvian-map>
+                            <latvian-map v-if="appCountry === 'lv'" :view="'edit'" :spring="spring" :spring_location="springLocation" @changeLocation="updateLocationForMap($event)"></latvian-map>
 
                             <GmapMap :center="{lat:54, lng:54}" ></GmapMap>
 
@@ -253,6 +253,7 @@ import DeleteSpring from './DeleteSpring'
 import { gmapApi } from 'gmap-vue';
 import EstonianMaps from "../../Components/Maps/Estonia/EstonianMaps";
 import LatvianMap from "../../Components/Maps/LatvianMap";
+import { latLng } from "leaflet";
 
 export default {
     components: {
@@ -301,6 +302,7 @@ export default {
             map: null,
             photos: photos,
             processingPhotos: false,
+            springLocation: null,
             form: this.$inertia.form({
                 '_method': 'PUT',
                 id: this.spring.id,
@@ -447,6 +449,134 @@ export default {
             this.form.latitude= parseFloat(location.latlng.lat).toFixed(6);
             this.form.longitude = parseFloat(location.latlng.lng).toFixed(6);
             this.updateAddressFields( location.latlng )
+        },
+        clearLocalStorage() {
+            let keysToRemove = [
+                "edit_spring_form_name",
+                "edit_spring_form_latitude",
+                "edit_spring_form_longitude",
+                "edit_spring_form_country",
+                "edit_spring_form_county",
+                "edit_spring_form_settlement",
+                "edit_spring_form_references",
+                "edit_spring_form_description",
+                "edit_spring_form_folklore",
+                "edit_spring_form_kkr_code",
+                "edit_spring_form_database_links",
+                "edit_spring_form_classification",
+                "edit_spring_form_groundwater_body",
+                "edit_spring_form_geology",
+                "edit_spring_form_ownership"
+            ];
+            _.forEach(keysToRemove, function(key) {
+                localStorage.removeItem(key);
+            });
+        },
+    },
+    created() {
+        let code = null;
+        if (localStorage.edit_spring_form_code) {
+            code = localStorage.edit_spring_form_code;
+        }
+        localStorage.setItem('edit_spring_form_code', this.spring.code);
+        if (code === this.spring.code) {
+            if (localStorage.edit_spring_form_name) {
+                this.form.name = localStorage.edit_spring_form_name;
+            }
+            if (localStorage.edit_spring_form_latitude && localStorage.edit_spring_form_longitude) {
+                this.form.latitude = localStorage.edit_spring_form_latitude;
+                this.form.longitude = localStorage.edit_spring_form_longitude;
+                this.springLocation = latLng(this.form.latitude, this.form.longitude);
+            }
+            if (localStorage.edit_spring_form_country) {
+                this.form.country = localStorage.edit_spring_form_country;
+            }
+            if (localStorage.edit_spring_form_county) {
+                this.form.county = localStorage.edit_spring_form_county;
+            }
+            if (localStorage.edit_spring_form_settlement) {
+                this.form.settlement = localStorage.edit_spring_form_settlement;
+            }
+            if (localStorage.edit_spring_form_description) {
+                this.form.description = localStorage.edit_spring_form_description;
+            }
+            if (localStorage.edit_spring_form_folklore) {
+                this.form.folklore = localStorage.edit_spring_form_folklore;
+            }
+            if (localStorage.edit_spring_form_kkr_code) {
+                this.form.kkr_code = localStorage.edit_spring_form_kkr_code;
+            }
+            if (localStorage.edit_spring_form_references) {
+                this.form.references = JSON.parse(localStorage.edit_spring_form_references);
+            }
+            if (localStorage.edit_spring_form_database_links) {
+                this.form.database_links = JSON.parse(localStorage.edit_spring_form_database_links);
+            }
+            if (localStorage.edit_spring_form_classification) {
+                this.form.classification = localStorage.edit_spring_form_classification;
+            }
+            if (localStorage.edit_spring_form_groundwater_body) {
+                this.form.groundwater_body = localStorage.edit_spring_form_groundwater_body;
+            }
+            if (localStorage.edit_spring_form_geology) {
+                this.form.geology = localStorage.edit_spring_form_geology;
+            }
+            if (localStorage.edit_spring_form_ownership) {
+                this.form.ownership = localStorage.edit_spring_form_ownership;
+            }
+        }
+    },
+    watch: {
+        'form.name': function (newValue) {
+            localStorage.setItem('edit_spring_form_name', newValue);
+        },
+        'form.latitude': function (newValue) {
+            localStorage.setItem('edit_spring_form_latitude', newValue);
+        },
+        'form.longitude': function (newValue) {
+            localStorage.setItem('edit_spring_form_longitude', newValue);
+        },
+        'form.country': function (newValue) {
+            localStorage.setItem('edit_spring_form_country', newValue);
+        },
+        'form.county': function (newValue) {
+            localStorage.setItem('edit_spring_form_county', newValue);
+        },
+        'form.settlement': function (newValue) {
+            localStorage.setItem('edit_spring_form_settlement', newValue);
+        },
+        'form.references': {
+            handler:function(newValue) {
+                localStorage.setItem('edit_spring_form_references', JSON.stringify(newValue));
+            },
+            deep:true
+        },
+        'form.description': function(newValue) {
+            localStorage.setItem('edit_spring_form_description', newValue);
+        },
+        'form.folklore': function(newValue) {
+            localStorage.setItem('edit_spring_form_folklore', newValue);
+        },
+        'form.kkr_code': function(newValue) {
+            localStorage.setItem('edit_spring_form_kkr_code', newValue);
+        },
+        'form.database_links': {
+            handler:function(newValue) {
+                localStorage.setItem('edit_spring_form_database_links', JSON.stringify(newValue));
+            },
+            deep:true
+        },
+        'form.classification': function(newValue) {
+            localStorage.setItem('edit_spring_form_classification', newValue);
+        },
+        'form.groundwater_body': function(newValue) {
+            localStorage.setItem('edit_spring_form_groundwater_body', newValue);
+        },
+        'form.geology': function(newValue) {
+            localStorage.setItem('edit_spring_form_geology', newValue);
+        },
+        'form.ownership': function(newValue) {
+            localStorage.setItem('edit_spring_form_ownership', newValue);
         },
     },
 }

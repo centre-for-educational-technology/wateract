@@ -10,7 +10,7 @@
            :bounds="bounds"
            @update:zoom="maaametZoomUpdate"
            @update:center="maaametCenterUpdate"
-           :options="mapOptions"
+           :options="$parent.mapOptions"
            @ready="onReady"
            @locationfound="onLocationFound"
            @click="updateLocation"

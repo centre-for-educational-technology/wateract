@@ -29,13 +29,16 @@ export default {
         MaaAmetTileMap,
         MaaAmetWmsMap,
     },
-    props: ['springs', 'spring', 'view', 'cluster'],
+    props: ['springs', 'spring', 'view', 'cluster', 'spring_location'],
     data() {
 
         let markers = this.getMapMarkers(this.springs);
         let springLocation = {lat: null, lng: null};
         if (this.spring) {
             springLocation = {lat: this.spring.latitude, lng: this.spring.longitude}
+        }
+        if (this.spring_location) {
+            springLocation = this.spring_location;
         }
         let map = 'maaamet';
         let ee_spring = true;
@@ -56,6 +59,10 @@ export default {
         };
 
         return {
+            mapOptions: {
+                tap: this.mapTap(),
+                zoomSnap: 1,
+            },
 
             cacheOpenStreetMapZoom: 7,
             cacheMaaAmetMapZoom: 3,
@@ -87,6 +94,12 @@ export default {
         }
     },
     methods: {
+        mapTap() {
+            if ( L.Browser.safari && !L.Browser.mobile) {
+                return false;
+            }
+            return true;
+        },
         showWorldMap() {
             this.maaAmetTileMap = false;
             this.maaAmetWmsMap = false;

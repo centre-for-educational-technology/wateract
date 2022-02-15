@@ -7,7 +7,7 @@
            :tms="true"
            :continuousWorld="true"
            @update:center="$parent.mapCenterUpdate"
-           :options="mapOptions"
+           :options="$parent.mapOptions"
            @ready="openStreetOnReady"
            @locationfound="openStreetOnLocationFound"
            @click="updateLocation"

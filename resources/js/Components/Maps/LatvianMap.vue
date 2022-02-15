@@ -103,7 +103,7 @@ export default {
         GestureHandling,
         LControlFullscreen,
     },
-    props: ['springs', 'spring', 'view'],
+    props: ['springs', 'spring', 'view', 'spring_location'],
     data() {
         let mapMarkers = [];
         _.forEach(this.springs, function(spring) {
@@ -118,13 +118,16 @@ export default {
         if (this.spring) {
             springLocation = {lat: this.spring.latitude, lng: this.spring.longitude}
         }
+        if (this.spring_location) {
+            springLocation = this.spring_location;
+        }
 
         let lv_map_api_key = process.env.MIX_KARTES_LV_API_KEY;
 
         return {
             mapOptions: {
+                tap: this.mapTap(),
                 zoomSnap: 1,
-                gestureHandling:true
             },
 
             lvMap: 'https://wms2.kartes.lv/'+lv_map_api_key+'/wgs/15/?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&FORMAT=image%2Fpng&SRS=EPSG%3A3857&',
@@ -174,6 +177,12 @@ export default {
         }
     },
     methods: {
+        mapTap() {
+            if ( L.Browser.safari && !L.Browser.mobile) {
+                return false;
+            }
+            return true;
+        },
         mapOnReady(mapObject) {
             this.openStreetMapObject = mapObject;
             if (this.spring) {
