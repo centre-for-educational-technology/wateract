@@ -32,11 +32,11 @@ class SpringController extends Controller
     {
         $user = Auth::user();
         if ($user && $user->hasRole(['editor', 'admin', 'super-admin'])) {
-            $springs = Spring::whereIn('status', ['submitted', 'confirmed'])->get();
+            $springs = Spring::whereIn('status', ['submitted', 'confirmed'])->select(['id','code','name','latitude','longitude','status','not_a_spring'])->get();
             $featured_springs = Spring::where('featured', '1')->with('all_photos')->with('featured_photos')->with('country_info')->inRandomOrder()->limit(4)->get();
             $newest_springs = Spring::whereIn('status', ['submitted', 'confirmed'])->with('all_photos')->with('featured_photos')->with('country_info')->orderBy('created_at', 'desc')->limit(4)->get();
         } else {
-            $springs = Spring::whereIn('status', ['submitted', 'confirmed'])->where('unlisted', 0)->get();
+            $springs = Spring::whereIn('status', ['submitted', 'confirmed'])->where('unlisted', 0)->select(['id','code','name','latitude','longitude','status','not_a_spring'])->get();
             $featured_springs = Spring::where('featured', '1')->where('unlisted', 0)->with('all_photos')->with('featured_photos')->with('country_info')->inRandomOrder()->limit(4)->get();
             $newest_springs = Spring::whereIn('status', ['submitted', 'confirmed'])->where('unlisted', 0)->with('all_photos')->with('featured_photos')->with('country_info')->orderBy('created_at', 'desc')->limit(4)->get();
         }
@@ -432,11 +432,13 @@ class SpringController extends Controller
             if ($user && $user->hasRole(['editor', 'admin', 'super-admin'])) {
                 $springs = Spring::where('id', '!=', $spring_id)
                     ->whereIn('status', ['submitted', 'confirmed'])
+                    ->select(['id','code','name','latitude','longitude','status','not_a_spring'])
                     ->get();
             } else {
                 $springs = Spring::where('unlisted', 0)
                     ->where('id', '!=', $spring_id)
                     ->whereIn('status', ['submitted', 'confirmed'])
+                    ->select(['id','code','name','latitude','longitude','status','not_a_spring'])
                     ->get();
             }
             return response()->json($springs);
@@ -449,10 +451,12 @@ class SpringController extends Controller
                 $springs = Spring::where('name', 'LIKE', '%' . $name . '%')
                     ->where('classification', $classification)
                     ->whereIn('status', ['submitted', 'confirmed'])
+                    ->select(['id','code','name','latitude','longitude','status','not_a_spring'])
                     ->get();
             } else {
                 $springs = Spring::where('name', 'LIKE', '%' . $name . '%')
                     ->whereIn('status', ['submitted', 'confirmed'])
+                    ->select(['id','code','name','latitude','longitude','status','not_a_spring'])
                     ->get();
             }
         } else {
@@ -461,11 +465,13 @@ class SpringController extends Controller
                     ->where('classification', $classification)
                     ->where('unlisted', 0)
                     ->whereIn('status', ['submitted', 'confirmed'])
+                    ->select(['id','code','name','latitude','longitude','status','not_a_spring'])
                     ->get();
             } else {
                 $springs = Spring::where('name', 'LIKE', '%' . $name . '%')
                     ->where('unlisted', 0)
                     ->whereIn('status', ['submitted', 'confirmed'])
+                    ->select(['id','code','name','latitude','longitude','status','not_a_spring'])
                     ->get();
             }
         }
