@@ -231,7 +231,7 @@ export default {
         }
     },
     created: function(){
-        if (this.spring || this.view === 'create') {
+        if (this.spring || this.view === 'create' || this.view === 'landing_page') {
             this.getExistingSprings();
         }
     }

@@ -27,14 +27,8 @@ use App\Http\Controllers\MeasurementController;
 
 // main menu routes
 Route::get('/', function () {
-    $user = Auth::user();
-    if ($user && $user->hasRole(['editor', 'admin', 'super-admin'])) {
-        $springs = Spring::whereIn('status', ['submitted', 'confirmed'])->get();
-    } else {
-        $springs = Spring::whereIn('status', ['submitted', 'confirmed'])->where('unlisted', 0)->get();
-    }
     $base_url = env('APP_URL', '');
-    return Inertia\Inertia::render('Springs/LandingPage', ['springs' => $springs])
+    return Inertia\Inertia::render('Springs/LandingPage')
         ->withViewData([
         'og_title' => env( 'APP_NAME', ''),
         'og_image' => $base_url . '/images/springs-slogan.jpg',
