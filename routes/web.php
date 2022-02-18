@@ -73,9 +73,9 @@ Route::post('/admin/csvfile', [CsvFileController::class, 'update'])
     ->middleware(['can:administrate']);
 
 Route::get('admin/exportSprings', [CsvFileController::class, 'exportSprings'])
-    ->middleware(['can:administrate']);
+    ->middleware(['can:view users']);
 Route::get('admin/exportObservations', [CsvFileController::class, 'exportObservations'])
-    ->middleware(['can:administrate']);
+    ->middleware(['can:view users']);
 
 Route::resource('admin/users', UserController::class)
     ->middleware(['can:view users']);;

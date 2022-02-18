@@ -24,6 +24,28 @@
 
                 <user-measurements :user_id="$page.user.id" class="m-4" />
 
+                <jet-section-border />
+
+                <jet-action-section class="sm:px-6 lg:px-8 py-4" v-if="can('view users')">
+
+                    <template #title>
+                        Export Excel Files
+                    </template>
+
+                    <template #description>
+                        Download springs and observations .xlsx files.
+                    </template>
+
+                    <template #content>
+
+                        <a target="_blank" class="underline" href="/admin/exportSprings">Export Springs</a>
+                        <br /><br />
+                        <a target="_blank" class="underline" href="/admin/exportObservations">Export Observations</a>
+
+                    </template>
+
+                </jet-action-section>
+
             </div>
         </div>
 
@@ -37,6 +59,8 @@
     import UserSprings from "./Springs/UserSprings";
     import UserObservations from "./Observations/UserObservations";
     import UserMeasurements from "./Measurements/UserMeasurements";
+    import JetSectionBorder from './../Jetstream/SectionBorder';
+    import JetActionSection from './../Jetstream/ActionSection';
 
     export default {
         components: {
@@ -46,6 +70,8 @@
             UserSprings,
             UserObservations,
             UserMeasurements,
+            JetSectionBorder,
+            JetActionSection,
         },
         props: ['springs'],
     }
