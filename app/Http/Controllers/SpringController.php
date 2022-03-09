@@ -106,10 +106,12 @@ class SpringController extends Controller
 
         $country_code = $request['country'];
 
+        $request['latitude'] = str_replace(',','.',$request['latitude']);
+        $request['longitude'] = str_replace(',','.',$request['longitude']);
         Validator::make($request->all(), [
             'description' => 'required',
-            'latitude' => 'required',
-            'longitude' => 'required',
+            'latitude' => 'required|numeric',
+            'longitude' => 'required|numeric',
             'country' => 'required',
             "references.*.url" => "nullable|url",
         ])->after(function ($validator) use ($country_code)  {
@@ -328,10 +330,12 @@ class SpringController extends Controller
 
         $country_code = $request['country'];
 
+        $request['latitude'] = str_replace(',','.',$request['latitude']);
+        $request['longitude'] = str_replace(',','.',$request['longitude']);
         Validator::make($request->all(), [
             'description' => 'required',
-            'latitude' => 'required',
-            'longitude' => 'required',
+            'latitude' => 'required|numeric',
+            'longitude' => 'required|numeric',
             'country' => 'required',
             "references.*.url"  => "nullable|url",
         ])->after(function ($validator) use ($country_code)  {
