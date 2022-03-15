@@ -66,7 +66,7 @@ class SpringFeedbackPolicy
      */
     public function delete(User $user, SpringFeedback $springFeedback)
     {
-        $spring = $springFeedback->spring();
+        $spring = Spring::find($springFeedback->spring_id);
         if ( $spring->canEdit() ) {
             return true;
         }
