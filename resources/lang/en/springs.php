@@ -122,6 +122,7 @@ return [
         'submitted' => 'Submitted',
         'confirmed' => 'Confirmed',
         'not_a_spring' => 'Not a spring',
+        'needs_attention' => 'Needs special attention',
     ],
     'needs_attention' => 'Needs special attention',
     'featured' => 'Featured',

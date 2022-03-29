@@ -122,6 +122,7 @@ return [
         'submitted' => 'Iesniegts',
         'confirmed' => 'Apstiprināts',
         'not_a_spring' => 'Nav avots',
+        'needs_attention' => 'Nepieciešama īpaša uzmanība',
     ],
     'needs_attention' => 'Nepieciešama īpaša uzmanība',
     'featured' => 'Piedāvāts',

@@ -204,6 +204,7 @@ export default {
                     springStatus = "not_a_spring";
                 } else if (spring.needs_attention) {
                     springIcon = needsAttentionSpringIcon;
+                    springStatus = "needs_attention";
                 } else if (spring.status === 'submitted') {
                     springIcon = submittedSpringIcon;
                 }

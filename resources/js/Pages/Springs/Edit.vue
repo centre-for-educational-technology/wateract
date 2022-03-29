@@ -407,20 +407,24 @@ export default {
         },
         saveDraft: function (data) {
             data._method = 'PUT';
+            this.clearLocalStorage();
             this.$inertia.post('/springs/' + data.code, data)
         },
         submit: function (data) {
             data.status = 'submitted';
             data._method = 'PUT';
+            this.clearLocalStorage();
             this.$inertia.post('/springs/' + data.code , data)
         },
         save: function (data) {
             data._method = 'PUT';
+            this.clearLocalStorage();
             this.$inertia.post('/springs/' + data.code, data)
         },
         confirm: function (data) {
             data.status = 'confirmed';
             data._method = 'PUT';
+            this.clearLocalStorage();
             this.$inertia.post('/springs/' + data.code, data)
         },
         updateLocation() {
@@ -524,6 +528,8 @@ export default {
             if (localStorage.edit_spring_form_ownership) {
                 this.form.ownership = localStorage.edit_spring_form_ownership;
             }
+        } else {
+            this.clearLocalStorage();
         }
     },
     watch: {

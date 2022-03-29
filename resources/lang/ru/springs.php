@@ -122,6 +122,7 @@ return [
         'submitted' => 'Представленный',
         'confirmed' => 'Подтвержденный',
         'not_a_spring' => 'Не родник',
+        'needs_attention' => 'Требует особого внимания',
     ],
     'needs_attention' => 'Требует особого внимания',
     'featured' => 'Обработанный',

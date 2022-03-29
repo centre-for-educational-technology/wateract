@@ -133,8 +133,9 @@
 
                             <div class="py-2" v-if="spring.status">
                                 <strong>{{ $t('springs.status') }}</strong>
-                                <div v-if="!spring.not_a_spring">{{ $t('springs.status_options.'+spring.status) }}</div>
                                 <div v-if="spring.not_a_spring">{{ $t('springs.not_a_spring') }}</div>
+                                <div v-else-if="spring.needs_attention">{{ $t('springs.needs_attention') }}</div>
+                                <div v-else>{{ $t('springs.status_options.'+spring.status) }}</div>
                             </div>
 
                             <div class="py-2" v-if="photos.length > 0">

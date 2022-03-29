@@ -122,6 +122,7 @@ return [
         'submitted' => 'Soumise',
         'confirmed' => 'Confirmée',
         'not_a_spring' => 'Pas une source',
+        'needs_attention' => 'A besoin d\'une attention particulière',
     ],
     'needs_attention' => 'A besoin d\'une attention particulière',
     'featured' => 'Représentée',
