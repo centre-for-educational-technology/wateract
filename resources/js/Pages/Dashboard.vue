@@ -41,6 +41,8 @@
                         <a target="_blank" class="underline" href="/admin/exportSprings">Export Springs</a>
                         <br /><br />
                         <a target="_blank" class="underline" href="/admin/exportObservations">Export Observations</a>
+                        <br /><br />
+                        <a target="_blank" class="underline" href="/admin/exportMeasurements">Export Measurements</a>
 
                     </template>
 

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Exports\MeasurementsExport;
 use App\Exports\ObservationsExport;
 use App\Exports\SpringsExport;
 use App\Models\Country;
@@ -144,6 +145,11 @@ class CsvFileController extends Controller
     public function exportObservations()
     {
         return Excel::download(new ObservationsExport(), 'observations.xlsx');
+    }
+
+    public function exportMeasurements()
+    {
+        return Excel::download(new MeasurementsExport(), 'measurements.xlsx');
     }
 
 }
