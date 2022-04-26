@@ -269,7 +269,7 @@ export default {
         createLayers() {
             var overlays = {
                 "Muinsuskaitsealused allikad": this.kmlSpringsLayer('Kult_allikad', "#faac04"),
-                "Loodusdirektiivi allikaelupaigad": this.kmlSpringsLayer('LD_allikad', "#ff007326"),
+                "Loodusdirektiivi allikaelupaigad": this.kmlSpringsLayer('LD_allikad', "#006b01"),
                 "Pärandkultuuriallikad": this.kmlSpringsLayer('Par_allikad', "#c404f8"),
                 "Allikate seirejaamad": this.kmlSpringsLayer('Seire_allikad', '#fcfc05'),
                 "Allikalised vääriselupaigad": this.kmlSpringsLayer('VEP_allikad', '#ff00ff55'),
