@@ -372,6 +372,9 @@ export default {
                 // always executed
             });
         },
+        updateLocation() {
+            this.springLocation = {lat: this.form.latitude, lng: this.form.longitude};
+        },
         updateLocationForMap(location) {
             this.springLocation = location.latlng;
             this.form.latitude= parseFloat(location.latlng.lat).toFixed(6);

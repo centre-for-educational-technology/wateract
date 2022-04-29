@@ -42,9 +42,9 @@
             :icon="currentPositionIcon"
         ></l-marker>
 
-        <l-marker v-if="this.$parent.spring"
+        <l-marker v-if="this.$parent.springLocation"
                   :lat-lng="$parent.springLocation"
-                  :icon="springLocationIcon"
+                  :icon="$parent.springLocationIcon"
         ></l-marker>
 
         <l-marker-cluster :options="openStreetClusterOptions">
