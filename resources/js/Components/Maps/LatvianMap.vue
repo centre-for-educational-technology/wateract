@@ -111,15 +111,7 @@ export default {
     },
     props: ['springs', 'spring', 'view', 'spring_location'],
     data() {
-        let mapMarkers = [];
-        _.forEach(this.springs, function(spring) {
-            mapMarkers.push({
-                id: spring.code,
-                name: spring.name,
-                status: spring.status,
-                position: latLng(spring.latitude, spring.longitude),
-            });
-        });
+        let mapMarkers = this.getMapMarkers(this.springs);
         let springLocation = {lat: null, lng: null};
         if (this.spring) {
             springLocation = {lat: this.spring.latitude, lng: this.spring.longitude}
@@ -219,6 +211,30 @@ export default {
                 }
             }
         },
+        getMapMarkers(springs) {
+            let markers = [];
+            _.forEach(springs, function(spring) {
+                let springIcon = confirmedSpringIcon;
+                let springStatus = spring.status;
+                if (spring.not_a_spring) {
+                    springIcon = notASpringIcon;
+                    springStatus = "not_a_spring";
+                } else if (spring.needs_attention) {
+                    springIcon = needsAttentionSpringIcon;
+                    springStatus = "needs_attention";
+                } else if (spring.status === 'submitted') {
+                    springIcon = submittedSpringIcon;
+                }
+                markers.push({
+                    id: spring.code,
+                    name: spring.name,
+                    status: springStatus,
+                    position: latLng(spring.latitude, spring.longitude),
+                    icon: springIcon,
+                });
+            });
+            return markers;
+        },
         getExistingSprings() {
             let params = {};
             if (this.spring) {
@@ -228,28 +244,7 @@ export default {
             }
             axios.get('/getSprings', { params }).then(response => {
                 let springs = response.data;
-                let markers = [];
-                _.forEach(springs, function(spring) {
-                    let springIcon = confirmedSpringIcon;
-                    let springStatus = spring.status;
-                    if (spring.not_a_spring) {
-                        springIcon = notASpringIcon;
-                        springStatus = "not_a_spring";
-                    } else if (spring.needs_attention) {
-                        springIcon = needsAttentionSpringIcon;
-                        springStatus = "needs_attention";
-                    } else if (spring.status === 'submitted') {
-                        springIcon = submittedSpringIcon;
-                    }
-                    markers.push({
-                        id: spring.code,
-                        name: spring.name,
-                        status: springStatus,
-                        position: latLng(spring.latitude, spring.longitude),
-                        icon: springIcon,
-                    });
-                });
-                this.mapMarkers = markers;
+                this.mapMarkers = this.getMapMarkers(springs);
             })
         },
     },
