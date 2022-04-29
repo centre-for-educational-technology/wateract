@@ -15,10 +15,15 @@
             >
 
                 <l-control>
-                    <svg @click="this.mapShowLocation" class="h-8 w-8 p-1 bg-white border-2 rounded cursor-pointer hover:bg-gray-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <svg v-if="!this.liveLocation" @click="this.showLocation" class="h-8 w-8 p-1 bg-white border-2 rounded cursor-pointer hover:bg-gray-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd">
                             <title>{{ $t('springs.pan_to_current_location') }}</title>
                         </path>
+                    </svg>
+                    <svg v-if="this.liveLocation" @click="this.stopLocation" class="h-8 w-8 p-1 bg-white border-2 rounded cursor-pointer hover:bg-gray-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd">
+                        </path>
+                        <line x1='1' y1='20' x2='20' y2='1' stroke-width='1' stroke='#0B2437'/>
                     </svg>
                 </l-control>
 
@@ -48,7 +53,8 @@
                 <l-marker-cluster :options="this.mapClusterOptions">
                     <l-marker v-for="(marker, index) in this.mapMarkers"
                               :key="index"
-                              :lat-lng="marker.position">
+                              :lat-lng="marker.position"
+                              :icon="marker.icon">
                         <l-popup>
                             <div class="pb-2"><a class="underline text-blue-700" :href="'/springs/'+marker.id+'/'">{{marker.name || 'Unnamed'}}</a></div>
                             <div>{{ $t('springs.spring_code') }}: {{marker.id}} <br />{{ $t('springs.status') }}: {{ $t('springs.status_options.'+marker.status) }}</div>
@@ -74,7 +80,7 @@ import { GestureHandling } from "leaflet-gesture-handling";
 import "leaflet-gesture-handling/dist/leaflet-gesture-handling.css";
 import "leaflet.markercluster/dist/MarkerCluster.css";
 import "leaflet.markercluster/dist/MarkerCluster.Default.css";
-import { springLocationIcon } from '../../constants.js';
+import { springLocationIcon, confirmedSpringIcon, submittedSpringIcon, notASpringIcon, needsAttentionSpringIcon } from '../../constants.js';
 import LControlFullscreen from 'vue2-leaflet-fullscreen';
 
 delete Icon.Default.prototype._getIconUrl;
@@ -141,7 +147,7 @@ export default {
             },
 
             mapClusterOptions: {
-                disableClusteringAtZoom: 15,
+                disableClusteringAtZoom: 10,
                 maxClusterRadius: 70,
             },
 
@@ -156,6 +162,7 @@ export default {
 
             ee_spring: false,
 
+            liveLocation: false,
             currentPosition: {lat: null, lng: null},
             currentPositionIcon: icon({
                 iconUrl: redDotIconUrl,
@@ -190,8 +197,13 @@ export default {
                 this.openStreetMapObject.setView(mapCenter, 15);
             }
         },
-        mapShowLocation() {
-            this.openStreetMapObject.locate();
+        showLocation() {
+            this.openStreetMapObject.locate({setView: true, watch: true, enableHighAccuracy:true, maxZoom: 13});
+            this.liveLocation = true;
+        },
+        stopLocation() {
+            this.openStreetMapObject.stopLocate();
+            this.liveLocation = false;
         },
         mapOnLocationFound(location) {
             this.currentPosition= location.latlng;
@@ -218,11 +230,23 @@ export default {
                 let springs = response.data;
                 let markers = [];
                 _.forEach(springs, function(spring) {
+                    let springIcon = confirmedSpringIcon;
+                    let springStatus = spring.status;
+                    if (spring.not_a_spring) {
+                        springIcon = notASpringIcon;
+                        springStatus = "not_a_spring";
+                    } else if (spring.needs_attention) {
+                        springIcon = needsAttentionSpringIcon;
+                        springStatus = "needs_attention";
+                    } else if (spring.status === 'submitted') {
+                        springIcon = submittedSpringIcon;
+                    }
                     markers.push({
                         id: spring.code,
                         name: spring.name,
-                        status: spring.status,
+                        status: springStatus,
                         position: latLng(spring.latitude, spring.longitude),
+                        icon: springIcon,
                     });
                 });
                 this.mapMarkers = markers;
