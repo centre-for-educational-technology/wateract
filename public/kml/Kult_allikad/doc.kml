@@ -1,46 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
-<Document id="New_Group_Layer">
-  <name>New Group Layer</name>
-  <Snippet></Snippet>
-  <Style id="PolyStyle10">
-    <LabelStyle>
-      <color>00000000</color>
-      <scale>0.000000</scale>
-    </LabelStyle>
-    <LineStyle>
-      <color>ff6e6e6e</color>
-      <width>0.400000</width>
-    </LineStyle>
-    <PolyStyle>
-      <color>ff00aaff</color>
-      <outline>1</outline>
-    </PolyStyle>
-  </Style>
-  <Style id="IconStyle20">
-    <IconStyle>
-      <scale>0.625000</scale>
-      <Icon><href>Layer2_Symbol_9ef019c8_0.png</href></Icon>
-    </IconStyle>
-    <LabelStyle>
-      <color>00000000</color>
-      <scale>0.000000</scale>
-    </LabelStyle>
-    <PolyStyle>
-      <color>ff000000</color>
-      <outline>0</outline>
-    </PolyStyle>
-  </Style>
+<Document id="Kult_allikad">
+  <name>Kult_allikad</name>
+  <snippet></snippet>
+  <description><![CDATA[]]></description>
   <Folder id="GroupLayer0">
-    <name>New Group Layer</name>
-    <Snippet></Snippet>
+    <name>Kult_allikad</name>
+    <snippet></snippet>
+    <description><![CDATA[]]></description>
   <Folder id="FeatureLayer1">
     <name>Kult_allikad_rakendusse_pind1_1</name>
-    <Snippet></Snippet>
+    <snippet></snippet>
+    <description><![CDATA[]]></description>
     <Placemark id="ID_10000">
       <name>Ohvriallikas "Uku allikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -78,20 +53,23 @@
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#PolyStyle10</styleUrl>
       <MultiGeometry>
         <Polygon>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <outerBoundaryIs><LinearRing><coordinates> 27.01562531800005,59.43281915300008,0 27.01561699400003,59.43256910200006,0 27.01658356800004,59.43254344200005,0 27.01670165100006,59.43279798500004,0 27.01562531800005,59.43281915300008,0</coordinates></LinearRing></outerBoundaryIs>
+          <outerBoundaryIs><LinearRing><coordinates> 27.01562531800005,59.43281915217472,0 27.01561699400003,59.43256910117468,0 27.01658356800005,59.43254344117469,0 27.01670165100006,59.43279798417466,0 27.01562531800005,59.43281915217472,0</coordinates></LinearRing></outerBoundaryIs>
         </Polygon>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_10001">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -129,20 +107,23 @@
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#PolyStyle10</styleUrl>
       <MultiGeometry>
         <Polygon>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <outerBoundaryIs><LinearRing><coordinates> 27.02276880900007,59.41008549000003,0 27.02275849700004,59.40996891600008,0 27.02345007500003,59.41001591400004,0 27.02342190000007,59.41029511100004,0 27.02316200800004,59.41034601400003,0 27.02276880900007,59.41008549000003,0</coordinates></LinearRing></outerBoundaryIs>
+          <outerBoundaryIs><LinearRing><coordinates> 27.02276880900007,59.41008548917429,0 27.02275849700004,59.40996891517436,0 27.02345007500003,59.41001591317431,0 27.02342190000007,59.41029511017432,0 27.02316200800005,59.4103460131743,0 27.02276880900007,59.41008548917429,0</coordinates></LinearRing></outerBoundaryIs>
         </Polygon>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_10002">
       <name>Ohvriallikas "Põrguläte"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -180,24 +161,28 @@
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#PolyStyle10</styleUrl>
       <MultiGeometry>
         <Polygon>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <outerBoundaryIs><LinearRing><coordinates> 26.50294417100002,57.93663538300007,0 26.50290719600002,57.93661401400004,0 26.50288136900008,57.93659503000003,0 26.50291020500003,57.93658709000005,0 26.50294850500006,57.93659845900004,0 26.50298897400006,57.93659981200005,0 26.50301579100005,57.93661365500003,0 26.50303478600006,57.93663879400003,0 26.50300352600004,57.93664588400003,0 26.50297242100004,57.93664075200007,0 26.50294417100002,57.93663538300007,0</coordinates></LinearRing></outerBoundaryIs>
+          <outerBoundaryIs><LinearRing><coordinates> 26.50294417100002,57.936635382152,0 26.50290719600002,57.93661401315197,0 26.50288136900008,57.93659502915197,0 26.50291020500003,57.93658708915198,0 26.50294850500006,57.93659845815196,0 26.50298897400006,57.93659981115199,0 26.50301579100006,57.93661365415197,0 26.50303478600006,57.93663879315196,0 26.50300352600004,57.93664588315197,0 26.50297242100004,57.93664075115201,0 26.50294417100002,57.936635382152,0</coordinates></LinearRing></outerBoundaryIs>
         </Polygon>
       </MultiGeometry>
     </Placemark>
   </Folder>
   <Folder id="FeatureLayer2">
     <name>Kult_allikad_rakendusse_punkt</name>
-    <Snippet></Snippet>
+    <snippet></snippet>
+    <description><![CDATA[]]></description>
     <Placemark id="ID_20000">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -231,32 +216,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.557747</td>
-</tr>
-<tr>
-<td>E</td>
-<td>23.659489</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 23.65948941300007,58.55774704800007,0</coordinates>
+          <coordinates> 23.65948941300007,58.55774704716116,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20001">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -290,32 +270,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.628347</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.399315</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.39931549300007,58.62834712000006,0</coordinates>
+          <coordinates> 24.39931549300008,58.6283471191622,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20002">
       <name>Ohvriallikas "Hiieallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -349,32 +324,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.625558</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.036372</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.03637181900007,58.62555828900008,0</coordinates>
+          <coordinates> 24.03558412800004,58.62558834316214,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20003">
       <name>Ohvriallikas "Hiieallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -408,32 +378,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.625512</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.036235</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.03623501100003,58.62551226900007,0</coordinates>
+          <coordinates> 24.03557400000005,58.62556399916216,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20004">
       <name>Ohvriallikas "Hiieallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -467,32 +432,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.625441</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.036095</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.03609535400005,58.62544098600006,0</coordinates>
+          <coordinates> 24.03558000000004,58.62553699916216,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20005">
       <name>Ohvriallikas "Hiieallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -526,32 +486,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.625352</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.036044</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.03604398300007,58.62535183800003,0</coordinates>
+          <coordinates> 24.03556600000007,58.62550499916213,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20006">
       <name>Ohvriallikas "Hiieallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -585,32 +540,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.61326</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.088034</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.08803404800005,58.61325953900007,0</coordinates>
+          <coordinates> 24.08803404800005,58.61325953816199,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20007">
       <name>Ohvriallikas "Hiieallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -644,32 +594,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.712903</td>
-</tr>
-<tr>
-<td>E</td>
-<td>23.681375</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 23.68137520400006,58.71290260600006,0</coordinates>
+          <coordinates> 23.68137520400007,58.71290260516349,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20008">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -703,32 +648,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.551716</td>
-</tr>
-<tr>
-<td>E</td>
-<td>23.653689</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 23.65368870200007,58.55171636000006,0</coordinates>
+          <coordinates> 23.65368870200007,58.55171635916105,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20009">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -762,32 +702,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.29192</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.632141</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 26.63214118700006,59.29192045200006,0</coordinates>
+          <coordinates> 26.63214118700006,59.29192045117245,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20010">
       <name>Ohvriallikas "Ristallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -821,32 +756,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.367324</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.424352</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.42435239500003,59.36732408900008,0</coordinates>
+          <coordinates> 24.42435239500003,59.36732408817365,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20011">
       <name>Ohvriallikas "Silmaläte"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -880,32 +810,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.306219</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.949056</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 26.94905596300003,58.30621864500006,0</coordinates>
+          <coordinates> 26.94905596300003,58.30621864415738,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20012">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -939,32 +864,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.211798</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.439838</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 25.43983816400004,59.21179767400008,0</coordinates>
+          <coordinates> 25.43983200000002,59.2118089991712,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20013">
       <name>Ohvriallikas "Teetsi, Täitsi allikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -998,32 +918,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.61608</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.206173</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.20617318500007,58.61608002900005,0</coordinates>
+          <coordinates> 24.20617318500007,58.61608002816202,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20014">
       <name>Ohvriallikas "Silmaveeallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1057,32 +972,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>57.692496</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.704338</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 26.70433782500004,57.69249599500006,0</coordinates>
+          <coordinates> 26.70452198000004,57.69247750114848,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20015">
       <name>Ohvriallikas "Külmallik", II at.</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1116,32 +1026,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.928491</td>
-</tr>
-<tr>
-<td>E</td>
-<td>22.221729</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 22.22172853900003,58.92849076500005,0</coordinates>
+          <coordinates> 22.22172853900003,58.92849076416677,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20016">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1175,32 +1080,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>57.684087</td>
-</tr>
-<tr>
-<td>E</td>
-<td>27.079947</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 27.07994729400008,57.68408671100008,0</coordinates>
+          <coordinates> 27.07994729400007,57.68408671014839,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20017">
       <name>Ohvriallikas "Linnuallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1234,32 +1134,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.292403</td>
-</tr>
-<tr>
-<td>E</td>
-<td>22.379765</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 22.37976539800007,58.29240273500005,0</coordinates>
+          <coordinates> 22.37976539800007,58.29240273415718,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20018">
       <name>Ohvriallikas "Hiieallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1293,32 +1188,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.40807</td>
-</tr>
-<tr>
-<td>E</td>
-<td>22.967737</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 22.96773676500004,58.40806965700006,0</coordinates>
+          <coordinates> 22.96773676500004,58.4080696561589,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20019">
       <name>Rahvapärimustega seotud allikas "Neitsiallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1352,32 +1242,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.437643</td>
-</tr>
-<tr>
-<td>E</td>
-<td>22.89606</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 22.89605951400006,58.43764261500007,0</coordinates>
+          <coordinates> 22.89605951400005,58.43764261415935,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20020">
       <name>Ohvriallikas "Lutsuallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1411,32 +1296,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.459594</td>
-</tr>
-<tr>
-<td>E</td>
-<td>22.849315</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 22.84931540700006,58.45959381300003,0</coordinates>
+          <coordinates> 22.84931540700007,58.45959381215963,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20021">
       <name>Ohvriallikas "Silmaallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1470,32 +1350,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.459223</td>
-</tr>
-<tr>
-<td>E</td>
-<td>22.849783</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 22.84978264100005,58.45922293200005,0</coordinates>
+          <coordinates> 22.84978264100005,58.45922293115964,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20022">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1529,32 +1404,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.189693</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.999598</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.99959780900008,59.18969259100004,0</coordinates>
+          <coordinates> 24.99967688600003,59.18965424317084,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20023">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1588,32 +1458,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.807096</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.344667</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 26.34466710900006,58.80709647800006,0</coordinates>
+          <coordinates> 26.34466710900006,58.8070964771649,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20024">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1647,32 +1512,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.929189</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.116254</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.11625400600008,58.92918863600005,0</coordinates>
+          <coordinates> 24.11625400600008,58.92918863516679,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20025">
       <name>Ohvriallikas "Sepa allikas", "Silmaallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1706,32 +1566,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.181226</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.250838</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 25.25083752300003,59.18122552300008,0</coordinates>
+          <coordinates> 25.25083752300003,59.18122552217073,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20026">
       <name>Ohvriallikas "Silmaveeallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1765,32 +1620,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>57.900179</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.566386</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 26.56638613300004,57.90017949800006,0</coordinates>
+          <coordinates> 26.56631300000004,57.90022499915145,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20027">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1824,32 +1674,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>57.901721</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.565704</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 26.56570379000004,57.90172078600006,0</coordinates>
+          <coordinates> 26.56570379000004,57.90172078515148,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20028">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1883,32 +1728,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.940878</td>
-</tr>
-<tr>
-<td>E</td>
-<td>23.680056</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 23.68005641200006,58.94087841000004,0</coordinates>
+          <coordinates> 23.68005641200006,58.94087840916696,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20029">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1942,32 +1782,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.954912</td>
-</tr>
-<tr>
-<td>E</td>
-<td>23.765582</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 23.76558154500003,58.95491232200004,0</coordinates>
+          <coordinates> 23.76558154500003,58.95491232116717,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20030">
       <name>Ohvriallikas "Hiieallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2001,32 +1836,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.804889</td>
-</tr>
-<tr>
-<td>E</td>
-<td>23.950685</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 23.95068486100007,58.80488852400003,0</coordinates>
+          <coordinates> 23.95068486100007,58.80488852316486,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20031">
       <name>Ohvriallikas "Silmaallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2060,32 +1890,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.836766</td>
-</tr>
-<tr>
-<td>E</td>
-<td>23.990455</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 23.99045484700002,58.83676561000004,0</coordinates>
+          <coordinates> 23.99045484700002,58.83676560916536,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20032">
       <name>Ohvriallikas "Linnamäe allikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2119,32 +1944,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.460282</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.718909</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 26.71890882400004,59.46028221500006,0</coordinates>
+          <coordinates> 26.71890882400004,59.46028221417513,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20033">
       <name>Ohvriallikas "Proomu allikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2168,7 +1988,7 @@
 </tr>
 <tr>
 <td>Allika KKR kood</td>
-<td>VEE4501100</td>
+<td>VEE4501100; VEE4501201; VEE4501203</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
@@ -2178,32 +1998,35 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.443271</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.495872</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.49587218300007,59.44327093700008,0</coordinates>
+          <coordinates> 24.49591901600007,59.44325156017486,0</coordinates>
+        </Point>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.49585409500002,59.44321237917482,0</coordinates>
+        </Point>
+        <Point>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 24.49576654900005,59.44328538217484,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20034">
       <name>Ohvriallikas "Külmaallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2237,32 +2060,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.008847</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.381103</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.38110286600005,59.00884686300003,0</coordinates>
+          <coordinates> 24.38110286600005,59.00884686216799,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20035">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2296,32 +2114,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.539827</td>
-</tr>
-<tr>
-<td>E</td>
-<td>22.469794</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 22.46979363500003,58.53982677200003,0</coordinates>
+          <coordinates> 22.46979363500003,58.53982677116083,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20036">
       <name>Ohvriallikas "Põrguallikad"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2355,32 +2168,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.028839</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.703918</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.70391845400007,59.02883898000005,0</coordinates>
+          <coordinates> 24.70391845400007,59.02883897916831,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20037">
       <name>Ohvriallikas "Punane allikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2414,32 +2222,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.608118</td>
-</tr>
-<tr>
-<td>E</td>
-<td>27.126148</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 27.12614831300004,58.60811802900008,0</coordinates>
+          <coordinates> 27.12448600000004,58.60830299916187,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20038">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2463,7 +2266,7 @@
 </tr>
 <tr>
 <td>Allika KKR kood</td>
-<td>VEE4726001</td>
+<td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
@@ -2473,32 +2276,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.251941</td>
-</tr>
-<tr>
-<td>E</td>
-<td>22.033375</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 22.03337467800003,58.25194114500005,0</coordinates>
+          <coordinates> 22.03388853400003,58.2526095101566,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20039">
       <name>Ohvriallikas "Lähtoru allikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2532,32 +2330,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.462954</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.730355</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 26.73035468300003,59.46295390400007,0</coordinates>
+          <coordinates> 26.73035468300003,59.46295390317518,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20040">
       <name>Ohvriallikas "Silmaallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2591,32 +2384,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.96702</td>
-</tr>
-<tr>
-<td>E</td>
-<td>23.676083</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 23.67608330100006,58.96702034900005,0</coordinates>
+          <coordinates> 23.67608330100006,58.96702034816737,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20041">
       <name>Ohvriallikas "Kuldallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2650,32 +2438,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.906218</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.491215</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 26.49121517600003,58.90621789600004,0</coordinates>
+          <coordinates> 26.49578022000003,58.89966666316633,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20042">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2709,32 +2492,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.404896</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.58559</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 26.58559010800008,59.40489614700004,0</coordinates>
+          <coordinates> 26.58559010800008,59.40489614617422,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20043">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2768,32 +2546,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.03152</td>
-</tr>
-<tr>
-<td>E</td>
-<td>23.830495</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 23.83049523500006,59.03152034700008,0</coordinates>
+          <coordinates> 23.83049523500006,59.03152034616839,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20044">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2827,32 +2600,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.673131</td>
-</tr>
-<tr>
-<td>E</td>
-<td>23.712765</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 23.71276497600007,58.67313132700008,0</coordinates>
+          <coordinates> 23.71276497600008,58.6731313261629,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20045">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2886,32 +2654,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.453181</td>
-</tr>
-<tr>
-<td>E</td>
-<td>22.494577</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 22.49457688100006,58.45318138800008,0</coordinates>
+          <coordinates> 22.49457688100006,58.45318138715958,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20046">
       <name>Ohvriallikas "Hiieallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2945,32 +2708,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.463089</td>
-</tr>
-<tr>
-<td>E</td>
-<td>22.607999</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 22.60799907700004,58.46308882200003,0</coordinates>
+          <coordinates> 22.60798808600003,58.46306126715972,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20047">
       <name>Ohvriallikas "Hiieallikas", "Kuldallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3004,32 +2762,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.399147</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.420578</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 26.42057828100008,59.39914716600003,0</coordinates>
+          <coordinates> 26.42057828100008,59.39914716517413,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20048">
       <name>Ohvriallikas "Silmaläte"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3063,32 +2816,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>57.984744</td>
-</tr>
-<tr>
-<td>E</td>
-<td>27.036525</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 27.03652498800005,57.98474351300007,0</coordinates>
+          <coordinates> 27.03652498800005,57.9847435121527,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20049">
       <name>Ohvriallikas "Hiieniidi allikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3122,32 +2870,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.453656</td>
-</tr>
-<tr>
-<td>E</td>
-<td>22.211472</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 22.21147161800008,58.45365569000006,0</coordinates>
+          <coordinates> 22.21147161800007,58.45365568915959,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20050">
       <name>Ohvriallikas "Laiuse Siniallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3181,32 +2924,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.776905</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.482566</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 26.48256647300008,58.77690506900007,0</coordinates>
+          <coordinates> 26.48256647300007,58.77690506816447,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20051">
       <name>Ohvriallikas "Rahaallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3240,32 +2978,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.385765</td>
-</tr>
-<tr>
-<td>E</td>
-<td>22.815098</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 22.81509827600007,58.38576541000003,0</coordinates>
+          <coordinates> 22.81509827600007,58.38576540915853,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20052">
       <name>Ohvriallikas "Silmaallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3299,32 +3032,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.455144</td>
-</tr>
-<tr>
-<td>E</td>
-<td>22.212162</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 22.21216222200007,58.45514379500003,0</coordinates>
+          <coordinates> 22.21216222200007,58.45514379415956,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20053">
       <name>Ohvriallikas "Põrguvaluläte"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3358,32 +3086,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.312026</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.956936</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 26.95693566100005,58.31202646200006,0</coordinates>
+          <coordinates> 26.95693566100005,58.31202646115747,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20054">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3417,32 +3140,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.554814</td>
-</tr>
-<tr>
-<td>E</td>
-<td>23.721755</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 23.72175505300004,58.55481399500007,0</coordinates>
+          <coordinates> 23.72175505300004,58.55481399416111,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20055">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3466,7 +3184,7 @@
 </tr>
 <tr>
 <td>Allika KKR kood</td>
-<td></td>
+<td>VEE4717300</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
@@ -3476,32 +3194,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.509099</td>
-</tr>
-<tr>
-<td>E</td>
-<td>23.816635</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 23.81663534800003,58.50909878000004,0</coordinates>
+          <coordinates> 23.81690455600006,58.51221888716046,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20056">
       <name>Ohvriallikas "Siniallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3535,32 +3248,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.17842</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.844028</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.84402767400007,59.17842008900004,0</coordinates>
+          <coordinates> 24.84402767400007,59.17842008817065,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20057">
       <name>Ohvriallikas "Kurrika-allikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3594,32 +3302,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.178521</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.843252</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.84325243000006,59.17852080600005,0</coordinates>
+          <coordinates> 24.84325243000007,59.17852080517067,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20058">
       <name>Ohvriallikas "Silmaallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3653,32 +3356,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.178334</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.843697</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.84369737900005,59.17833409600007,0</coordinates>
+          <coordinates> 24.84369737900005,59.17833409517067,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20059">
       <name>Ohvriallikas "Kave läte"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3712,32 +3410,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.341005</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.362239</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 26.36223939400003,58.34100457000005,0</coordinates>
+          <coordinates> 26.36223939400003,58.3410045691579,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20060">
       <name>Ohvriallikas "Ordeallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3771,32 +3464,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.059517</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.040276</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 25.04027633100003,59.05951699300005,0</coordinates>
+          <coordinates> 25.04027633100003,59.0595169921688,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20061">
       <name>Ohvriallikas "Püha allikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3830,32 +3518,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.598578</td>
-</tr>
-<tr>
-<td>E</td>
-<td>23.646215</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 23.64621522700003,58.59857770900004,0</coordinates>
+          <coordinates> 23.64621522700003,58.59857770816173,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20062">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3889,32 +3572,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.507298</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.642773</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 25.64277336600003,58.50729774900003,0</coordinates>
+          <coordinates> 25.64277336600003,58.50729774816035,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20063">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3948,32 +3626,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.204541</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.422068</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.42206811100004,59.20454148100004,0</coordinates>
+          <coordinates> 24.42206078400005,59.20455340817104,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20064">
       <name>Ohvriallikas "Silmaallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4007,32 +3680,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.272763</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.739209</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.73920861000005,59.27276253900004,0</coordinates>
+          <coordinates> 24.73920861000005,59.27276253817214,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20065">
       <name>Ohvriallikas "Arstiallik"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4066,32 +3734,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.017296</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.884324</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 25.88432393200003,58.01729624900008,0</coordinates>
+          <coordinates> 25.88432393200003,58.01729624815317,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20066">
       <name>Ohvriallikas "Pärliallik"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4125,32 +3788,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.016313</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.880006</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 25.88000621400005,58.01631279900005,0</coordinates>
+          <coordinates> 25.88000621400004,58.01631279815312,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20067">
       <name>Ohvriallikas "Silmaallikas", "Parandusveeallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4184,32 +3842,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.415353</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.70133</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 26.70132951900007,59.41535263300005,0</coordinates>
+          <coordinates> 26.70132951900007,59.41535263217441,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20068">
       <name>Ohvriallikas "Punaallikas", "Paunaallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4243,32 +3896,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.844295</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.36072</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.36071968100003,58.84429549000004,0</coordinates>
+          <coordinates> 24.36071968100004,58.84429548916547,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20069">
       <name>Ohvriallikas "Valgeallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4302,32 +3950,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.841207</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.388646</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.38864551600005,58.84120652000007,0</coordinates>
+          <coordinates> 24.38878959500005,58.84114052016544,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20070">
       <name>Ohvriallikas "Karuallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4361,32 +4004,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.896037</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.351758</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.35175803500005,58.89603722400005,0</coordinates>
+          <coordinates> 24.35175803500005,58.89603722316628,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20071">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4420,32 +4058,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.967396</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.623162</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.62316214300006,58.96739567100008,0</coordinates>
+          <coordinates> 24.62316214300006,58.9673956701674,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20072">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4479,32 +4112,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.490762</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.653838</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 26.65383763300002,59.49076229500008,0</coordinates>
+          <coordinates> 26.65383763300002,59.49076229417563,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20073">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4538,32 +4166,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.583991</td>
-</tr>
-<tr>
-<td>E</td>
-<td>23.974614</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 23.97461371500003,58.58399052700008,0</coordinates>
+          <coordinates> 23.97461371500003,58.58399052616156,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20074">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4597,32 +4220,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.472993</td>
-</tr>
-<tr>
-<td>E</td>
-<td>23.821388</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 23.82138767000004,58.47299324900007,0</coordinates>
+          <coordinates> 23.82138767000004,58.47299324815988,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20075">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4646,7 +4264,7 @@
 </tr>
 <tr>
 <td>Allika KKR kood</td>
-<td>VEE4602100</td>
+<td></td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
@@ -4656,32 +4274,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.824639</td>
-</tr>
-<tr>
-<td>E</td>
-<td>23.800265</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 23.80026507400004,58.82463892500004,0</coordinates>
+          <coordinates> 23.80067813200003,58.82410333316515,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20076">
       <name>Ohvriallikas "Sõeru allikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4715,32 +4328,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.338446</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.539659</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.53965941000007,59.33844615200007,0</coordinates>
+          <coordinates> 24.53965941000007,59.33844615117322,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20077">
       <name>Ohvriallikas "Seaalllikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4774,32 +4382,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.601099</td>
-</tr>
-<tr>
-<td>E</td>
-<td>23.906071</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 23.90607082800005,58.60109866800008,0</coordinates>
+          <coordinates> 23.90607082800006,58.60109866716181,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20078">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4833,32 +4436,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.53406</td>
-</tr>
-<tr>
-<td>E</td>
-<td>23.830722</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 23.83072229900006,58.53406036200005,0</coordinates>
+          <coordinates> 23.83072229900006,58.53406036116077,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20079">
       <name>Ohvriallikas "Nuudaläte"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4892,32 +4490,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.069459</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.202226</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 26.20222635100004,58.06945920100003,0</coordinates>
+          <coordinates> 26.20222635100003,58.06945920015388,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20080">
       <name>Ohvriallikas "Kaie kaev"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4951,32 +4544,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.59549</td>
-</tr>
-<tr>
-<td>E</td>
-<td>23.733093</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 23.73309275600008,58.59549002400007,0</coordinates>
+          <coordinates> 23.73309275600007,58.59549002316171,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20081">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5010,32 +4598,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.102384</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.020802</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.02080246100007,59.10238385700006,0</coordinates>
+          <coordinates> 24.02080246100007,59.10238385616947,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20082">
       <name>Ohvriallikas "Põhjatu allikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5069,32 +4652,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.303577</td>
-</tr>
-<tr>
-<td>E</td>
-<td>22.488379</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 22.48837932400005,58.30357675100004,0</coordinates>
+          <coordinates> 22.48837932400005,58.30357675015733,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20083">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5128,32 +4706,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.135754</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.324897</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.32489700400004,59.13575395400005,0</coordinates>
+          <coordinates> 24.32489700400004,59.13575395316999,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20084">
-      <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <name>Ohvriallikas Hiieallikas</name>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5162,7 +4735,7 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>Ohvriallikas</td>
+<td>Ohvriallikas Hiieallikas</td>
 </tr>
 <tr>
 <td>
@@ -5173,7 +4746,7 @@
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Nimi</td>
-<td>Ohvriallikas</td>
+<td>Ohvriallikas Hiieallikas</td>
 </tr>
 <tr>
 <td>Allika KKR kood</td>
@@ -5187,32 +4760,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.352387</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.997749</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.99774860800005,59.35238696100004,0</coordinates>
+          <coordinates> 24.99774860800005,59.35238696017338,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20085">
       <name>Ohvriallikas "Püha allikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5246,32 +4814,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.278353</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.359431</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.35943122200007,59.27835257800007,0</coordinates>
+          <coordinates> 24.35943100000003,59.27833899917226,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20086">
       <name>Ohvriallikas "Silmaallikas", "Kärsa allikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5295,7 +4858,7 @@
 </tr>
 <tr>
 <td>Allika KKR kood</td>
-<td></td>
+<td>VEE4616701</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
@@ -5305,32 +4868,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.657364</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.662997</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 26.66299748600005,58.65736370100007,0</coordinates>
+          <coordinates> 26.66223248900007,58.65762924116262,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20087">
-      <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <name>Ohvriallikas Koonusmaa allikas</name>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5339,7 +4897,7 @@
 <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
 <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>Ohvriallikas</td>
+<td>Ohvriallikas Koonusmaa allikas</td>
 </tr>
 <tr>
 <td>
@@ -5350,11 +4908,11 @@
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Nimi</td>
-<td>Ohvriallikas</td>
+<td>Ohvriallikas Koonusmaa allikas</td>
 </tr>
 <tr>
 <td>Allika KKR kood</td>
-<td></td>
+<td>VEE4509000</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Link</td>
@@ -5364,32 +4922,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.926759</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.11546</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.11545982500007,58.92675902400003,0</coordinates>
+          <coordinates> 24.11521582700004,58.92611727316672,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20088">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5423,32 +4976,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.929063</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.116341</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.11634108200008,58.92906280700004,0</coordinates>
+          <coordinates> 24.11634108200008,58.92906280616676,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20089">
       <name>Ohvriallikas "Silmaallikas", "Soome allikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5482,32 +5030,27 @@
 <td>Kommentaar</td>
 <td>Kuivanud</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.617748</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.711977</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 26.71197724200005,58.61774775900005,0</coordinates>
+          <coordinates> 26.70986717400007,58.61792253916204,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20090">
       <name>Ohvriallikas "Kõrveläte", "Kõrbeläte"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5541,32 +5084,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.075433</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.880482</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 26.88048206200006,58.07543324200003,0</coordinates>
+          <coordinates> 26.88048206200005,58.07543324115397,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20091">
       <name>Ohvriallikas "Silmaläte"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5600,32 +5138,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>57.878113</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.959161</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 26.95916085900006,57.87811250100003,0</coordinates>
+          <coordinates> 26.95916085900006,57.87811250015112,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20092">
       <name>Ohvriallikas "Kiivläte"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5659,32 +5192,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>57.783062</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.911097</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 26.91109669200006,57.78306178800005,0</coordinates>
+          <coordinates> 26.91109669200006,57.78306178714979,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20093">
       <name>Ohvriallikas "Silmaallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5718,32 +5246,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.409694</td>
-</tr>
-<tr>
-<td>E</td>
-<td>27.023562</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 27.02356185600007,59.40969355100003,0</coordinates>
+          <coordinates> 27.02356185600007,59.40969355017428,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20094">
       <name>Ohvriallikas "Mustallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5777,32 +5300,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.867262</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.369263</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.36926347200006,58.86726222700008,0</coordinates>
+          <coordinates> 24.36926347200006,58.86726222616586,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20095">
       <name>Ohvriallikas "Silmaläte"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5836,32 +5354,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>57.757913</td>
-</tr>
-<tr>
-<td>E</td>
-<td>27.477277</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 27.47727713600005,57.75791278800006,0</coordinates>
+          <coordinates> 27.47727713600005,57.75791278714943,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20096">
       <name>Ohvriallikas "Püha allikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5895,32 +5408,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.202932</td>
-</tr>
-<tr>
-<td>E</td>
-<td>27.527693</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 27.52769310800005,59.20293171000003,0</coordinates>
+          <coordinates> 27.52769310800005,59.20293170917102,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20097">
       <name>Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5954,32 +5462,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.666274</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.677006</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 25.67700595300005,58.66627413700007,0</coordinates>
+          <coordinates> 25.67700595300004,58.66627413616281,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20098">
       <name>Kultuseallikas "Silmaallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -6013,32 +5516,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.522444</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.953966</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 25.95396572500005,58.52244445200006,0</coordinates>
+          <coordinates> 25.95396572500005,58.5224444511606,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20099">
       <name>Ohvriallikas "Ilmamäe allikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -6072,32 +5570,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>57.792127</td>
-</tr>
-<tr>
-<td>E</td>
-<td>27.170025</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 27.17002463600005,57.79212725500008,0</coordinates>
+          <coordinates> 27.17002463600005,57.79212725414995,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20100">
       <name>Ohvriallikas "Silmaläte"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -6131,32 +5624,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>57.937977</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.506059</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 26.50605859300003,57.93797661000008,0</coordinates>
+          <coordinates> 26.50605859300003,57.93797660915202,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20101">
       <name>Ohvriallikas "Siniallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -6190,32 +5678,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.302463</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.560609</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 25.56060857500006,58.30246339700005,0</coordinates>
+          <coordinates> 25.56060857500006,58.30246339615734,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20102">
       <name>Ohvriallikad "Saula Siniallikad"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -6249,40 +5732,35 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.214848</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.042788</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 25.04316245000007,59.21456804000007,0</coordinates>
+          <coordinates> 25.04316245000007,59.21456803917124,0</coordinates>
         </Point>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 25.04296055700007,59.21475399600007,0</coordinates>
+          <coordinates> 25.04296055700007,59.21475399517124,0</coordinates>
         </Point>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 25.04241350300003,59.21512738100006,0</coordinates>
+          <coordinates> 25.04241350300004,59.21512738017124,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20103">
       <name>Ohvriallikas "Ohu allikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -6316,32 +5794,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.18981</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.076913</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 24.07691308300002,59.18981046200008,0</coordinates>
+          <coordinates> 24.07697239900006,59.18982084917084,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20104">
       <name>Ohvriallikas "Silmaveeallikas"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -6375,32 +5848,27 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>57.692596</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.704575</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 26.70457544500005,57.69259644200008,0</coordinates>
+          <coordinates> 26.70454887100004,57.69252541114852,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
     <Placemark id="ID_20105">
       <name>Ohvriallikas "Müräläte"</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -6434,30 +5902,53 @@
 <td>Kommentaar</td>
 <td>&lt;Null&gt;</td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>57.835241</td>
-</tr>
-<tr>
-<td>E</td>
-<td>27.442313</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle20</styleUrl>
       <MultiGeometry>
         <Point>
           <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-          <coordinates> 27.44231324600003,57.83524129400007,0</coordinates>
+          <coordinates> 27.44231324600003,57.83524129315055,0</coordinates>
         </Point>
       </MultiGeometry>
     </Placemark>
   </Folder>
   </Folder>
+  <Style id="PolyStyle10">
+    <LabelStyle>
+      <color>00000000</color>
+      <scale>0.000000</scale>
+    </LabelStyle>
+    <LineStyle>
+      <color>ff6e6e6e</color>
+      <width>0.400000</width>
+    </LineStyle>
+    <PolyStyle>
+      <color>ff00aaff</color>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="IconStyle20">
+    <IconStyle>
+      <scale>1.000000</scale>
+      <Icon><href>Layer2_Symbol_d949eb00_0.png</href></Icon>
+    </IconStyle>
+    <LabelStyle>
+      <color>00000000</color>
+      <scale>0.000000</scale>
+    </LabelStyle>
+    <PolyStyle>
+      <color>ff000000</color>
+      <outline>0</outline>
+    </PolyStyle>
+  </Style>
 </Document>
 </kml>

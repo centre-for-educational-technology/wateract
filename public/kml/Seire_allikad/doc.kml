@@ -3,27 +3,15 @@
  xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
 <Document id="Seire_allikad_rakendusse_punkt1_1">
   <name>Seire_allikad_rakendusse_punkt1_1</name>
-  <Snippet></Snippet>
-  <Style id="IconStyle00">
-    <IconStyle>
-      <scale>0.625000</scale>
-      <Icon><href>Layer0_Symbol_9ef016d8_0.png</href></Icon>
-    </IconStyle>
-    <LabelStyle>
-      <color>00000000</color>
-      <scale>0.000000</scale>
-    </LabelStyle>
-    <PolyStyle>
-      <color>ff000000</color>
-      <outline>0</outline>
-    </PolyStyle>
-  </Style>
+  <snippet></snippet>
+  <description><![CDATA[]]></description>
   <Folder id="FeatureLayer0">
     <name>Seire_allikad_rakendusse_punkt1_1</name>
-    <Snippet></Snippet>
+    <snippet></snippet>
+    <description><![CDATA[]]></description>
     <Placemark id="ID_00000">
       <name>Holstre allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -57,30 +45,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.307736</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.689477</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.68947654900006,58.30773638800008,66.13899999999558</coordinates>
+        <coordinates> 25.68947654900007,58.30773638715743,66.13899999999558</coordinates>
       </Point>
     </Placemark>
     <Placemark id="ID_00001">
       <name>Lepiku allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -114,30 +97,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.260177</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.698963</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.69896280900008,58.26017717500008,42.74400000000605</coordinates>
+        <coordinates> 26.69896280900008,58.26017717415673,42.74400000000605</coordinates>
       </Point>
     </Placemark>
     <Placemark id="ID_00002">
       <name>Külitse allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -171,30 +149,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.335481</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.597429</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.59742947500007,58.33548138100008,55.14800000000105</coordinates>
+        <coordinates> 26.59752600400003,58.33556000215784,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
     <Placemark id="ID_00003">
       <name>PAA27020: Iluski allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -228,30 +201,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.318502</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.617951</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.61795062400006,59.31850223500004,64.67200000000594</coordinates>
+        <coordinates> 26.61795062400006,59.31850223417287,64.67200000000594</coordinates>
       </Point>
     </Placemark>
     <Placemark id="ID_00004">
       <name>Illi allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -285,30 +253,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.209135</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.437906</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.43790564800003,58.20913530100006,46.16599999999744</coordinates>
+        <coordinates> 26.43790564800003,58.20913530015595,46.16599999999744</coordinates>
       </Point>
     </Placemark>
     <Placemark id="ID_00005">
       <name>PAA25: Varangu allikas/A25: Varangu allikas (katastri nr 132075)</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -342,30 +305,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.041828</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.098101</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.09810098300005,59.04182782800007,91.56100000000174</coordinates>
+        <coordinates> 26.09810098300005,59.04182782716853,91.56100000000174</coordinates>
       </Point>
     </Placemark>
     <Placemark id="ID_00006">
       <name>Talvikese allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -399,30 +357,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.181611</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.825991</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.82599140600007,58.18161147600006,68.90300000000616</coordinates>
+        <coordinates> 26.82599140600007,58.18161147515555,68.90300000000616</coordinates>
       </Point>
     </Placemark>
     <Placemark id="ID_00007">
       <name>Uniküla allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -456,30 +409,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.259794</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.893591</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.89359070100005,58.25979447000003,57.21899999999732</coordinates>
+        <coordinates> 26.89359070100005,58.25979446915667,57.21899999999732</coordinates>
       </Point>
     </Placemark>
     <Placemark id="ID_00008">
       <name>Tilleoru allikad</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -513,87 +461,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.038807</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.935532</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.93553233700004,58.03880675200003,77.65899999999988</coordinates>
+        <coordinates> 26.93553233700004,58.03880675115344,77.65899999999988</coordinates>
       </Point>
     </Placemark>
     <Placemark id="ID_00009">
-      <name>Ora jõe oru allikad</name>
-      <Snippet></Snippet>
-      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-<head>
-<META http-equiv="Content-Type" content="text/html">
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-</head>
-<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
-<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
-<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>Ora jõe oru allikad</td>
-</tr>
-<tr>
-<td>
-<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
-<tr>
-<td>Seirejaama kood</td>
-<td>SJA8964000</td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>Nimi</td>
-<td>Ora jõe oru allikad</td>
-</tr>
-<tr>
-<td>Allika KKR kood</td>
-<td>VEE4607100</td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>Andmed KESEs</td>
-<td>Jah</td>
-</tr>
-<tr>
-<td>Link</td>
-<td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.090418</td>
-</tr>
-<tr>
-<td>E</td>
-<td>27.079645</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</body>
-</html>
-]]></description>
-      <styleUrl>#IconStyle00</styleUrl>
-      <Point>
-        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 27.07964452300007,58.09041780600006,41.9320000000007</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark id="ID_00010">
       <name>PAA1009: Kiigumõisa Külmaallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -627,30 +513,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.047823</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.653412</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.65341167100007,59.04782292500005,73.18799999999487</coordinates>
+        <coordinates> 25.65341167100007,59.04782292416861,73.18799999999487</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00011">
+    <Placemark id="ID_00010">
       <name>PAA23: Konnavere allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -684,30 +565,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.261258</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.003768</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.00376819000007,59.26125837700005,88.35099999999511</coordinates>
+        <coordinates> 26.00376819000007,59.26125837617195,88.35099999999511</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00012">
+    <Placemark id="ID_00011">
       <name>Mihka-Jüri allikad</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -741,30 +617,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.917703</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.863493</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 24.86349273900004,58.91770325800007,55.61400000000208</coordinates>
+        <coordinates> 24.86349273900004,58.91770325716662,55.61400000000208</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00013">
+    <Placemark id="ID_00012">
       <name>Tammiku allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -798,30 +669,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.988848</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.322434</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.32243367600006,58.98884778400003,102.5320000000065</coordinates>
+        <coordinates> 26.32243367600006,58.98884778316769,102.5320000000065</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00014">
+    <Placemark id="ID_00013">
       <name>Riidaja allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -855,30 +721,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.083987</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.908783</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.90878273400006,58.08398695600005,81.06500000000233</coordinates>
+        <coordinates> 25.90878273400006,58.08398695515412,81.06500000000233</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00015">
+    <Placemark id="ID_00014">
       <name>Lilastvere allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -912,30 +773,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.864867</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.708886</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.70888574900005,58.86486719700008,60.17999999999302</coordinates>
+        <coordinates> 26.70888574900005,58.86486719616582,60.17999999999302</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00016">
+    <Placemark id="ID_00015">
       <name>Saula Siniallikad</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -969,30 +825,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.215127</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.042414</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.04241350300003,59.21512738100006,43.75500000000466</coordinates>
+        <coordinates> 25.04241350300004,59.21512738017124,43.75500000000466</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00017">
+    <Placemark id="ID_00016">
       <name>Saverna allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1026,30 +877,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.06859</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.71454</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.71453985100004,58.06858957700007,134.1999999999973</coordinates>
+        <coordinates> 26.71453985100004,58.0685895761539,134.1999999999973</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00018">
+    <Placemark id="ID_00017">
       <name>PAA-15: Sämiveski allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1083,30 +929,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.383757</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.596619</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.59661908800007,59.38375667200006,53.18399999999383</coordinates>
+        <coordinates> 26.59661908800007,59.38375667117391,53.18399999999383</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00019">
+    <Placemark id="ID_00018">
       <name>PAA4311500: Kukemõisa allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1140,30 +981,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.077201</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.867779</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.86777925800004,59.07720071300008,97.20100000000093</coordinates>
+        <coordinates> 25.86777925800004,59.07720071216912,97.20100000000093</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00020">
+    <Placemark id="ID_00019">
       <name>Koila Linnamäe allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1197,30 +1033,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.460282</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.718909</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.71890882400004,59.46028221500006,34.74700000000371</coordinates>
+        <coordinates> 26.71890882400004,59.46028221417513,34.74700000000371</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00021">
+    <Placemark id="ID_00020">
       <name>PAA15: Aravete allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1254,30 +1085,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.148998</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.751144</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.75114417000003,59.14899827900007,86.6530000000057</coordinates>
+        <coordinates> 25.75114417000003,59.14899827817021,86.6530000000057</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00022">
+    <Placemark id="ID_00021">
       <name>PAA20: Äntu allikas/A20: Äntu allikas (katastri nr 132070)</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1311,30 +1137,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.080274</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.271467</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.27146725400007,59.08027446900007,100.1410000000033</coordinates>
+        <coordinates> 26.27146725400007,59.08027446816915,100.1410000000033</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00023">
+    <Placemark id="ID_00022">
       <name>Tiido allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1368,30 +1189,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.060057</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.738199</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.73819916100007,58.06005730000004,131.1450000000041</coordinates>
+        <coordinates> 26.73819916100007,58.06005729915376,131.1450000000041</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00024">
+    <Placemark id="ID_00023">
       <name>A18: Kihme allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1425,30 +1241,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.071044</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.680116</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.68011580600006,59.07104385500003,76.00100000000384</coordinates>
+        <coordinates> 25.68011580600006,59.07104385416897,76.00100000000384</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00025">
+    <Placemark id="ID_00024">
       <name>PAA07: Vetiku Söeoru allikad</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1482,30 +1293,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.317891</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.44077</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.44076988400008,59.31789070000008,76.88700000000267</coordinates>
+        <coordinates> 26.44013899200007,59.31782800017287,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00026">
+    <Placemark id="ID_00025">
       <name>Varudi-Vanaküla allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1539,30 +1345,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.404896</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.58559</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.58559010800008,59.40489614700004,54.09799999999814</coordinates>
+        <coordinates> 26.58559010800008,59.40489614617422,54.09799999999814</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00027">
+    <Placemark id="ID_00026">
       <name>PAA31: Prandi allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1596,30 +1397,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.844526</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.70771</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.70771002800006,58.84452556500003,63.22400000000198</coordinates>
+        <coordinates> 25.70771002800006,58.84452556416545,63.22400000000198</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00028">
+    <Placemark id="ID_00027">
       <name>PAA1004: Lüsingu allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1653,30 +1449,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.166299</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.891194</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.89119448100007,59.16629935600008,100.5380000000005</coordinates>
+        <coordinates> 25.89119448100007,59.16629935517049,100.5380000000005</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00029">
+    <Placemark id="ID_00028">
       <name>PAA26: Simuna allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1710,30 +1501,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.042362</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.402481</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.40248105100005,59.04236248000007,101.1079999999931</coordinates>
+        <coordinates> 26.40248105100005,59.04236247916855,101.1079999999931</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00030">
+    <Placemark id="ID_00029">
       <name>PAA22: Roosna-Alliku allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1767,30 +1553,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.022924</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.705015</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.70501544600006,59.02292384100008,77.43600000000174</coordinates>
+        <coordinates> 25.70501544600006,59.02292384016826,77.43600000000174</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00031">
+    <Placemark id="ID_00030">
       <name>Allikas Valgejõe oru lõunanõlvas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1824,30 +1605,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.257079</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.008012</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.00801196100002,59.25707882200004,89.11900000000605</coordinates>
+        <coordinates> 26.00801196100002,59.25707882117189,89.11900000000605</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00032">
+    <Placemark id="ID_00031">
       <name>Tääksi allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1881,30 +1657,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.515397</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.620314</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.62031417700007,58.51539687000007,61.55800000000454</coordinates>
+        <coordinates> 25.62031417700007,58.5153968691605,61.55800000000454</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00033">
+    <Placemark id="ID_00032">
       <name>Meeri allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1938,30 +1709,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.301835</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.471729</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.47172880000005,58.30183548000008,52.46799999999348</coordinates>
+        <coordinates> 26.47190400500006,58.3017919991573,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00034">
+    <Placemark id="ID_00033">
       <name>Tarakvere allikad</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -1995,30 +1761,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.776811</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.76448</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.76447996800005,58.77681090900006,1.13686837721616e-13</coordinates>
+        <coordinates> 26.76447996800005,58.77681090816445,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00035">
+    <Placemark id="ID_00034">
       <name>A33: Võlingi allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2052,30 +1813,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.861165</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.053287</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.05328740600004,58.86116544600003,73.7390000000014</coordinates>
+        <coordinates> 26.05328740600004,58.86116544516572,73.7390000000014</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00036">
+    <Placemark id="ID_00035">
       <name>PA3767: Kareda allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2109,30 +1865,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.965687</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.797798</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.79779838900004,58.96568715500007,79.3350000000064</coordinates>
+        <coordinates> 25.79779838900004,58.96568715416736,79.3350000000064</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00037">
+    <Placemark id="ID_00036">
       <name>Aegviidu siniallikad</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2166,30 +1917,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.25517</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.661843</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.66184263800005,59.25516958500003,70.35599999999999</coordinates>
+        <coordinates> 25.66184263800005,59.25516958417184,70.35599999999999</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00038">
+    <Placemark id="ID_00037">
       <name>ADA4406000: Neanurme allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2223,30 +1969,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.624768</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.125507</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.12550702500005,58.62476782200008,47.63999999999942</coordinates>
+        <coordinates> 26.12550702500005,58.62476782116216,47.63999999999942</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00039">
+    <Placemark id="ID_00038">
       <name>PAA1013: Valgma allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2280,30 +2021,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.87073</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.646665</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.64666481100005,58.87072987500005,64.27599999999802</coordinates>
+        <coordinates> 25.64666481100005,58.8707298741659,64.27599999999802</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00040">
+    <Placemark id="ID_00039">
       <name>PAA19: Kiltsi allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2337,30 +2073,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.078069</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.193642</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.19364190300007,59.07806932400007,96.51499999999942</coordinates>
+        <coordinates> 26.19364190300007,59.0780693231691,96.51499999999942</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00041">
+    <Placemark id="ID_00040">
       <name>Kavilda allikas, Ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2394,30 +2125,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.341005</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.362239</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.36223939400003,58.34100457000005,1.13686837721616e-13</coordinates>
+        <coordinates> 26.36223939400003,58.3410045691579,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00042">
+    <Placemark id="ID_00041">
       <name>ADA4405000: Ilvese allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2451,30 +2177,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.714769</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.20773</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.20772973400005,58.71476891100008,69.75199999999313</coordinates>
+        <coordinates> 26.20772973400005,58.71476891016353,69.75199999999313</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00043">
+    <Placemark id="ID_00042">
       <name>Kolu allikad</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2508,30 +2229,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.358439</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.007662</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.00766160600006,59.35843891100006,82.6169999999986</coordinates>
+        <coordinates> 26.00766160600005,59.35843891017351,82.6169999999986</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00044">
+    <Placemark id="ID_00043">
       <name>Samma (Kullaaru) allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2565,30 +2281,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.361327</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.251137</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.25113697200004,59.36132655600005,75.25800000000186</coordinates>
+        <coordinates> 26.25113697200004,59.36132655517354,75.25800000000186</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00045">
+    <Placemark id="ID_00044">
       <name>ADA30: Sopa allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2622,30 +2333,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.870645</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.042126</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.04212604800006,58.87064534400008,74.56299999999487</coordinates>
+        <coordinates> 26.04212604800006,58.87064534316592,74.56299999999487</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00046">
+    <Placemark id="ID_00045">
       <name>PAA09: Rägavere allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2679,30 +2385,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.319446</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.475282</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.47528185600004,59.31944598800004,68.66999999999825</coordinates>
+        <coordinates> 26.47528185600004,59.31944598717287,68.66999999999825</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00047">
+    <Placemark id="ID_00046">
       <name>PAA24: Esna allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2736,30 +2437,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.983814</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.787149</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.78714912800007,58.98381403100007,79.89200000000733</coordinates>
+        <coordinates> 25.78712800000005,58.98385399816765,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00048">
+    <Placemark id="ID_00047">
       <name>Nuudalätte ohvriallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2793,30 +2489,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.069459</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.202226</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.20222635100004,58.06945920100003,74.95299999999406</coordinates>
+        <coordinates> 26.20222635100003,58.06945920015388,74.95299999999406</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00049">
+    <Placemark id="ID_00048">
       <name>A34: Odalätsi allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2850,30 +2541,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.399075</td>
-</tr>
-<tr>
-<td>E</td>
-<td>22.12765</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 22.12764979000008,58.39907487200003,9.573999999993362</coordinates>
+        <coordinates> 22.12764979000007,58.39907487115873,9.573999999993362</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00050">
+    <Placemark id="ID_00049">
       <name>Soontaga allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2907,30 +2593,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.023179</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.068002</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.06800184300005,58.02317934200005,39.35499999999593</coordinates>
+        <coordinates> 26.06800184300005,58.02317934115323,39.35499999999593</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00051">
+    <Placemark id="ID_00050">
       <name>Kassinurme allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -2964,30 +2645,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.688682</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.458657</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.45865679700006,58.68868175000006,1.13686837721616e-13</coordinates>
+        <coordinates> 26.45865679700006,58.68868174916312,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00052">
+    <Placemark id="ID_00051">
       <name>Mõra jõeoru allikad</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3021,30 +2697,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.306296</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.849472</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.84947203700006,58.30629643600008,1.13686837721616e-13</coordinates>
+        <coordinates> 26.84947203700006,58.30629643515743,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00053">
+    <Placemark id="ID_00052">
       <name>Kärstna allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3078,30 +2749,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.145389</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.804349</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.80434933600003,58.14538940000006,1.13686837721616e-13</coordinates>
+        <coordinates> 25.80434933600003,58.14538939915503,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00054">
+    <Placemark id="ID_00053">
       <name>Loodi allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3135,30 +2801,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.27202</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.588853</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.58885316900006,58.27202000100004,1.13686837721616e-13</coordinates>
+        <coordinates> 25.58885316900006,58.27202000015686,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00055">
+    <Placemark id="ID_00054">
       <name>Kütioru allikad</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3192,87 +2853,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>57.82053</td>
-</tr>
-<tr>
-<td>E</td>
-<td>27.164766</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 27.16476599200007,57.82052991800003,1.13686837721616e-13</coordinates>
+        <coordinates> 27.16476599200007,57.8205299171503,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00056">
-      <name>Saarejärve (nr 128) - Krahviallikas</name>
-      <Snippet></Snippet>
-      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-<head>
-<META http-equiv="Content-Type" content="text/html">
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-</head>
-<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
-<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
-<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>Saarejärve (nr 128) - Krahviallikas</td>
-</tr>
-<tr>
-<td>
-<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
-<tr>
-<td>Seirejaama kood</td>
-<td>SJA2858039</td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>Nimi</td>
-<td>Saarejärve (nr 128) - Krahviallikas</td>
-</tr>
-<tr>
-<td>Allika KKR kood</td>
-<td></td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>Andmed KESEs</td>
-<td>Ei</td>
-</tr>
-<tr>
-<td>Link</td>
-<td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.6595</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.7735</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</body>
-</html>
-]]></description>
-      <styleUrl>#IconStyle00</styleUrl>
-      <Point>
-        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.77350000800004,58.65950000100003,1.13686837721616e-13</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark id="ID_00057">
+    <Placemark id="ID_00055">
       <name>A17: Voore allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3306,30 +2905,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.24404</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.536689</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.53668900800005,59.24403999800006,1.13686837721616e-13</coordinates>
+        <coordinates> 26.53668900800005,59.2440399971717,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00058">
+    <Placemark id="ID_00056">
       <name>Kohtla jõgi: allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3361,32 +2955,27 @@
 </tr>
 <tr>
 <td>Link</td>
-<td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.368052</td>
-</tr>
-<tr>
-<td>E</td>
-<td>27.185833</td>
+<td></td>
 </tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 27.18583341000004,59.36805177300005,1.13686837721616e-13</coordinates>
+        <coordinates> 27.18583341000004,59.36805177217365,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00059">
+    <Placemark id="ID_00057">
       <name>PAA28: Vodja allikas/A28: Vodja allikas (katastri nr 132078)</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3420,30 +3009,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.936681</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.652062</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.65206158200004,58.93668128100006,1.13686837721616e-13</coordinates>
+        <coordinates> 25.65206158200004,58.93668128016691,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00060">
+    <Placemark id="ID_00058">
       <name>Haava allikad</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3475,32 +3059,27 @@
 </tr>
 <tr>
 <td>Link</td>
-<td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.876403</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.164197</td>
+<td></td>
 </tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.16419736700004,58.87640309200003,1.13686837721616e-13</coordinates>
+        <coordinates> 26.16419736700004,58.87640309116595,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00061">
+    <Placemark id="ID_00059">
       <name>ADA770: Kamari allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3534,30 +3113,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.613263</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.988622</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.98862222200006,58.61326279900004,1.13686837721616e-13</coordinates>
+        <coordinates> 25.98862222200006,58.61326279816197,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00062">
+    <Placemark id="ID_00060">
       <name>PAA05: Jõepere allikas (A-19)/A05: Jõepere allikas (katastri nr 132055)</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3591,30 +3165,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.289904</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.182188</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.18218766300004,59.28990398300004,1.13686837721616e-13</coordinates>
+        <coordinates> 26.18218766300004,59.2899039821724,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00063">
+    <Placemark id="ID_00061">
       <name>PAA16: Rahkla allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3648,30 +3217,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.357102</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.598255</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.59825468000003,59.35710171000005,1.13686837721616e-13</coordinates>
+        <coordinates> 26.59825468000003,59.35710170917348,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00064">
+    <Placemark id="ID_00062">
       <name>PAA016: Porkuni allikas/A16: Porkuni allikas (katastri nr 132066)</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3705,30 +3269,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.186052</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.201838</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.20183787400003,59.18605175900007,1.13686837721616e-13</coordinates>
+        <coordinates> 26.20183787400003,59.18605175817079,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00065">
+    <Placemark id="ID_00063">
       <name>PAA10: Külmaveski allikas (A-17)/A10: Külmaveski allikas (katastri nr 132060)</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3762,30 +3321,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.332089</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.623273</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.62327329600004,59.33208855100003,1.13686837721616e-13</coordinates>
+        <coordinates> 26.62327329600004,59.33208855017306,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00066">
+    <Placemark id="ID_00064">
       <name>Vesiku allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3819,30 +3373,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.329447</td>
-</tr>
-<tr>
-<td>E</td>
-<td>22.087504</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 22.08750420300004,58.32944700600007,1.13686837721616e-13</coordinates>
+        <coordinates> 22.08750420300003,58.32944700515774,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00067">
+    <Placemark id="ID_00065">
       <name>Mõra jõeoru, Haaslava allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3876,30 +3425,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.314953</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.830852</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.83085206200008,58.31495271400007,1.13686837721616e-13</coordinates>
+        <coordinates> 26.83085206200008,58.31495271315752,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00068">
+    <Placemark id="ID_00066">
       <name>PA4310700: Pundi allikad</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3933,30 +3477,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.296531</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.174112</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.17411177800005,59.29653106100005,1.13686837721616e-13</coordinates>
+        <coordinates> 26.17411177800005,59.29653106017251,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00069">
+    <Placemark id="ID_00067">
       <name>PAA1010: Ahula allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -3990,30 +3529,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.11369</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.737045</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.73704545100003,59.11369032600004,1.13686837721616e-13</coordinates>
+        <coordinates> 25.73704545100003,59.11369032516964,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00070">
+    <Placemark id="ID_00068">
       <name>PA24202: Neeruti allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4047,30 +3581,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.311819</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.163678</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.16367845000008,59.31181938500004,1.13686837721616e-13</coordinates>
+        <coordinates> 26.16367845000008,59.31181938417275,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00071">
+    <Placemark id="ID_00069">
       <name>PA4311400: nimetu allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4102,32 +3631,27 @@
 </tr>
 <tr>
 <td>Link</td>
-<td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.196366</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.955978</td>
+<td></td>
 </tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.95597828600006,59.19636623600007,1.13686837721616e-13</coordinates>
+        <coordinates> 25.95597828600006,59.19636623517096,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00072">
+    <Placemark id="ID_00070">
       <name>Viru-Kabala allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4161,30 +3685,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.347003</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.723711</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.72371091700006,59.34700287100003,1.13686837721616e-13</coordinates>
+        <coordinates> 26.72371091700007,59.34700287017328,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00073">
+    <Placemark id="ID_00071">
       <name>PAA1002: Norra allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4218,30 +3737,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.902583</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.040407</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.04040728500007,58.90258300100004,1.13686837721616e-13</coordinates>
+        <coordinates> 26.04095395800005,58.90267598416636,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00074">
+    <Placemark id="ID_00072">
       <name>PA4313100: Vahuküla allikad</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4275,30 +3789,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.972677</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.105105</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.10510523800008,58.97267681900007,1.13686837721616e-13</coordinates>
+        <coordinates> 26.10510523800008,58.97267681816746,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00075">
+    <Placemark id="ID_00073">
       <name>PAA14: Tõrma allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4332,30 +3841,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.312427</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.320987</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.32098741500005,59.31242690200003,1.13686837721616e-13</coordinates>
+        <coordinates> 26.32098741500005,59.31242690117275,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00076">
+    <Placemark id="ID_00074">
       <name>PAA18: Imastu allikas (A-18)/A03: Imastu allikas (katastri nr 132053)</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4389,30 +3893,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.27108</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.002167</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.00216669300005,59.27107974500007,1.13686837721616e-13</coordinates>
+        <coordinates> 26.00216669300005,59.27107974417213,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00077">
+    <Placemark id="ID_00075">
       <name>Jäneda allikad: Väike-Allikajärv (PAA02)</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4446,30 +3945,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.247012</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.689354</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.68935367900008,59.24701211900003,1.13686837721616e-13</coordinates>
+        <coordinates> 25.68935367900008,59.24701211817171,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00078">
+    <Placemark id="ID_00076">
       <name>Mõdriku allikajärv (PAA08)</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4503,30 +3997,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.320596</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.477857</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.47785687500004,59.32059626300003,1.13686837721616e-13</coordinates>
+        <coordinates> 26.47785687500004,59.32059626217288,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00079">
+    <Placemark id="ID_00077">
       <name>PA21301: Mõdriku mõisa allikad</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4550,7 +4039,7 @@
 </tr>
 <tr>
 <td>Allika KKR kood</td>
-<td>VEE4313802, VEE4313803, VEE4313804, VEE4313805, VEE4313806, VEE4313807</td>
+<td>VEE4313803, VEE4313804, VEE4313805, VEE4313806, VEE4313807</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Andmed KESEs</td>
@@ -4560,30 +4049,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.306226</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.452418</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.45241783500006,59.30622610400007,1.13686837721616e-13</coordinates>
+        <coordinates> 26.45241783500007,59.30622610317272,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00080">
+    <Placemark id="ID_00078">
       <name>Neeruti allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4617,30 +4101,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.110629</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.527485</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.52748518700002,58.11062879300005,116.650999999998</coordinates>
+        <coordinates> 26.52742200000006,58.11073099915449,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00081">
+    <Placemark id="ID_00079">
       <name>Nõuni allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4674,30 +4153,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.116401</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.508678</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.50867844200008,58.11640113800007,108.9799999999962</coordinates>
+        <coordinates> 26.50867844200008,58.11640113715462,108.9799999999962</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00082">
+    <Placemark id="ID_00080">
       <name>Kahala allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4731,30 +4205,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.640015</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.519492</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.51949215800005,58.64001537000007,50.71200000000022</coordinates>
+        <coordinates> 25.51949215800005,58.64001536916238,50.71200000000022</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00083">
+    <Placemark id="ID_00081">
       <name>Tiirike allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4788,30 +4257,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.250537</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.475126</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.47512562300005,58.25053729800004,46.52099999999336</coordinates>
+        <coordinates> 26.47523800300007,58.25054900115657,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00084">
+    <Placemark id="ID_00082">
       <name>Kammeri allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4845,30 +4309,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.181057</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.64499</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.64498992700004,58.18105690300007,117.0050000000049</coordinates>
+        <coordinates> 26.64498992700004,58.18105690215555,117.0050000000049</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00085">
+    <Placemark id="ID_00083">
       <name>Allaste allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4902,30 +4361,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.125161</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.508951</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.50895067700003,58.12516114000005,55.18399999999383</coordinates>
+        <coordinates> 25.50895067700003,58.12516113915472,55.18399999999383</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00086">
+    <Placemark id="ID_00084">
       <name>Seinapalu allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -4959,30 +4413,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.816935</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.554579</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.55457930700004,58.81693518400004,60.05599999999686</coordinates>
+        <coordinates> 25.55457930700004,58.81693518316505,60.05599999999686</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00087">
+    <Placemark id="ID_00085">
       <name>Sulaoja allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5016,87 +4465,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.116759</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.713181</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.71318114400003,58.11675862400006,131.6230000000071</coordinates>
+        <coordinates> 26.71318114400003,58.1167586231546,131.6230000000071</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00088">
-      <name>Himmaste allikas</name>
-      <Snippet></Snippet>
-      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-<head>
-<META http-equiv="Content-Type" content="text/html">
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-</head>
-<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
-<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
-<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>Himmaste allikas</td>
-</tr>
-<tr>
-<td>
-<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
-<tr>
-<td>Seirejaama kood</td>
-<td>SJA4919000</td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>Nimi</td>
-<td>Himmaste allikas</td>
-</tr>
-<tr>
-<td>Allika KKR kood</td>
-<td>VEE4607100</td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>Andmed KESEs</td>
-<td>Ei</td>
-</tr>
-<tr>
-<td>Link</td>
-<td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.090418</td>
-</tr>
-<tr>
-<td>E</td>
-<td>27.079645</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</body>
-</html>
-]]></description>
-      <styleUrl>#IconStyle00</styleUrl>
-      <Point>
-        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 27.07964452300007,58.09041780600006,41.9320000000007</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark id="ID_00089">
+    <Placemark id="ID_00086">
       <name>Helda allikad</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5130,30 +4517,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.029482</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.929111</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 24.92911110900008,59.02948158600003,63.55899999999383</coordinates>
+        <coordinates> 24.92911110900008,59.02948158516831,63.55899999999383</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00090">
+    <Placemark id="ID_00087">
       <name>Olustvere pargi allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5187,30 +4569,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.552711</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.567632</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.56763152300005,58.55271055400004,1.13686837721616e-13</coordinates>
+        <coordinates> 25.56763152300005,58.55271055316105,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00091">
+    <Placemark id="ID_00088">
       <name>Kõrma allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5244,30 +4621,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.271284</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.677435</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.67743466800005,59.27128440700005,71.4410000000064</coordinates>
+        <coordinates> 26.67743466800005,59.27128440617211,71.4410000000064</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00092">
+    <Placemark id="ID_00089">
       <name>Möldre allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5301,30 +4673,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.033855</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.930282</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.93028232100005,58.03385523200006,67.21799999999348</coordinates>
+        <coordinates> 25.93028232100005,58.03385523115342,67.21799999999348</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00093">
+    <Placemark id="ID_00090">
       <name>Uhaku allikad</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5358,30 +4725,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.368621</td>
-</tr>
-<tr>
-<td>E</td>
-<td>27.034463</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 27.03446285300004,59.36862112900008,35.69999999999709</coordinates>
+        <coordinates> 27.03446461900006,59.36859895617368,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00094">
+    <Placemark id="ID_00091">
       <name>Kotinuka allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5415,30 +4777,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.375086</td>
-</tr>
-<tr>
-<td>E</td>
-<td>27.435059</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 27.43505851200007,59.37508623400004,45.15899999999965</coordinates>
+        <coordinates> 27.43505851200007,59.37508623317375,45.15899999999965</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00095">
+    <Placemark id="ID_00092">
       <name>Tõnumardi</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5472,30 +4829,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.458355</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.432658</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.43265803200006,59.45835547900003,30.11999999999534</coordinates>
+        <coordinates> 25.43262899800004,59.45832599517507,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00096">
+    <Placemark id="ID_00093">
       <name>Korba allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5529,30 +4881,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.971667</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.631331</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.63133108000005,58.97166730200007,71.58400000000256</coordinates>
+        <coordinates> 25.63133108000005,58.97166730116746,71.58400000000256</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00097">
+    <Placemark id="ID_00094">
       <name>Koorküla allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5586,30 +4933,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>57.933093</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.869138</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.86913831800007,57.93309310100005,65.24199999999905</coordinates>
+        <coordinates> 25.86913831800007,57.93309310015194,65.24199999999905</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00098">
+    <Placemark id="ID_00095">
       <name>Nõmmküla allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5643,30 +4985,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.964467</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.165504</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.16550395800004,58.96446671600006,81.59399999999732</coordinates>
+        <coordinates> 26.16550395800004,58.96446671516735,81.59399999999732</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00099">
+    <Placemark id="ID_00096">
       <name>Karksi põrguallikad</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5700,30 +5037,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.10588</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.561589</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.56158928400004,58.10587975900006,67.83500000000663</coordinates>
+        <coordinates> 25.56158928400003,58.10587975815446,67.83500000000663</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00100">
+    <Placemark id="ID_00097">
       <name>Reti küla allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5757,30 +5089,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.117191</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.887499</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.88749862900005,58.11719129400007,84.56399999999849</coordinates>
+        <coordinates> 25.88746991400006,58.11717924615463,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00101">
+    <Placemark id="ID_00098">
       <name>Oinamäe allikas ja Keevaläte</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5814,30 +5141,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>57.870927</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.564451</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.56445097800002,57.87092696200006,86.64900000000512</coordinates>
+        <coordinates> 26.56456391900003,57.87101101515105,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00102">
+    <Placemark id="ID_00099">
       <name>Silma allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5871,30 +5193,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.356965</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.24258</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.24258025900008,59.35696456000005,76.70699999999511</coordinates>
+        <coordinates> 26.24186108100002,59.35690958517345,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00103">
+    <Placemark id="ID_00100">
       <name>Purtse Silmaallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5928,30 +5245,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.409694</td>
-</tr>
-<tr>
-<td>E</td>
-<td>27.023562</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 27.02356185600007,59.40969355100003,35.8500000000065</coordinates>
+        <coordinates> 27.02356185600007,59.40969355017428,35.8500000000065</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00104">
+    <Placemark id="ID_00101">
       <name>Lustivere allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -5985,30 +5297,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.658144</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.096326</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.09632620500003,58.65814415100004,53.90600000000268</coordinates>
+        <coordinates> 26.09632620500003,58.65814415016263,53.90600000000268</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00105">
+    <Placemark id="ID_00102">
       <name>Jõelähtme allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -6042,30 +5349,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.442508</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.133486</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.13348551600006,59.44250750700007,30.85099999999511</coordinates>
+        <coordinates> 25.13333336200003,59.44264531117486,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00106">
+    <Placemark id="ID_00103">
       <name>Ilmjärve allikad</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -6099,30 +5401,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.620676</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.576342</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.57634215000007,58.62067574800005,61.16800000000512</coordinates>
+        <coordinates> 26.57634215000007,58.62067574716207,61.16800000000512</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00107">
+    <Placemark id="ID_00104">
       <name>Võle allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -6156,30 +5453,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.460221</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.207558</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.20755788200006,59.46022078700008,74.09699999999452</coordinates>
+        <coordinates> 26.20755788200006,59.46022078617515,74.09699999999452</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00108">
+    <Placemark id="ID_00105">
       <name>Paasküla allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -6213,30 +5505,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.488673</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.464616</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.46461635000003,59.48867345000008,49.9719999999943</coordinates>
+        <coordinates> 26.46461635000003,59.48867344917559,49.9719999999943</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00109">
+    <Placemark id="ID_00106">
       <name>Lohu allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -6270,30 +5557,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.147231</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.776423</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 24.77642265900005,59.14723053600005,52.88700000000244</coordinates>
+        <coordinates> 24.77563900600006,59.14693800317016,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00110">
+    <Placemark id="ID_00107">
       <name>PAA1003: Järva-Jaani allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -6327,30 +5609,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.038511</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.878106</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.87810641500005,59.03851113500008,91.28599999999301</coordinates>
+        <coordinates> 25.87810641500005,59.0385111341685,91.28599999999301</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00111">
+    <Placemark id="ID_00108">
       <name>Konsu allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -6384,30 +5661,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.180632</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.81835</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.81834983800007,58.18063172300003,63.50900000000615</coordinates>
+        <coordinates> 26.81834983800008,58.18063172215552,63.50900000000615</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00112">
+    <Placemark id="ID_00109">
       <name>Kisuvere allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -6441,30 +5713,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.425321</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.277715</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.27771529800003,59.42532106200008,69.60499999999615</coordinates>
+        <coordinates> 26.27771529800003,59.42532106117459,69.60499999999615</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00113">
+    <Placemark id="ID_00110">
       <name>Tammiku allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -6498,30 +5765,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.177598</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.678731</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.67873052900006,59.17759773800003,78.40399999999499</coordinates>
+        <coordinates> 26.67873052900006,59.17759773717061,78.40399999999499</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00114">
+    <Placemark id="ID_00111">
       <name>Silmaallikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -6555,30 +5817,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.522444</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.953966</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.95396572500005,58.52244445200006,46.24899999999707</coordinates>
+        <coordinates> 25.95396572500005,58.5224444511606,46.24899999999707</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00115">
+    <Placemark id="ID_00112">
       <name>Seli allikad</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -6612,30 +5869,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.105454</td>
-</tr>
-<tr>
-<td>E</td>
-<td>24.822189</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 24.82218909300008,59.10545400900003,1.13686837721616e-13</coordinates>
+        <coordinates> 24.82218909300008,59.1054540081695,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00116">
+    <Placemark id="ID_00113">
       <name>PA4310300: Lavi allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -6669,30 +5921,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.29192</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.632141</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.63214118700006,59.29192045200006,68.96799999999348</coordinates>
+        <coordinates> 26.63214118700006,59.29192045117245,68.96799999999348</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00117">
+    <Placemark id="ID_00114">
       <name>Kunda jõgi: Lavi allikad</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -6726,30 +5973,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.29192</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.632141</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.63214118700006,59.29192045200006,68.96799999999348</coordinates>
+        <coordinates> 26.63214118700006,59.29192045117245,68.96799999999348</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00118">
+    <Placemark id="ID_00115">
       <name>ADA4406200: Neanurme, Piiroja allikatiik</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -6783,201 +6025,181 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>58.63541</td>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.10617662800007,58.63540952316231,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00116">
+      <name>Aidu kaldaallikas proovipunkt nr 29</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Aidu kaldaallikas proovipunkt nr 29</td>
 </tr>
 <tr>
-<td>E</td>
-<td>26.106177</td>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama kood</td>
+<td>-525429236</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Aidu kaldaallikas proovipunkt nr 29</td>
+</tr>
+<tr>
+<td>Allika KKR kood</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.10617662800007,58.63540952400007,1.13686837721616e-13</coordinates>
+        <coordinates> 27.15436240700006,59.325766319173,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00117">
+      <name>Soolikaoja: Kirikuaia tiigid: Allikas 1</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Soolikaoja: Kirikuaia tiigid: Allikas 1</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama kood</td>
+<td>472342202</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Soolikaoja: Kirikuaia tiigid: Allikas 1</td>
+</tr>
+<tr>
+<td>Allika KKR kood</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.31993425100006,59.31168899217278,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00118">
+      <name>Soolikaoja: Kirikuaia tiigid: Allikas 2</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Soolikaoja: Kirikuaia tiigid: Allikas 2</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama kood</td>
+<td>1211167374</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Soolikaoja: Kirikuaia tiigid: Allikas 2</td>
+</tr>
+<tr>
+<td>Allika KKR kood</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.35653419500005,59.34676019217333,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
     <Placemark id="ID_00119">
-      <name>Aidu kaldaallikas proovipunkt nr 29</name>
-      <Snippet></Snippet>
-      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-<head>
-<META http-equiv="Content-Type" content="text/html">
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-</head>
-<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
-<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
-<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>Aidu kaldaallikas proovipunkt nr 29</td>
-</tr>
-<tr>
-<td>
-<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
-<tr>
-<td>Seirejaama kood</td>
-<td>&lt;Null&gt;</td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>Nimi</td>
-<td>Aidu kaldaallikas proovipunkt nr 29</td>
-</tr>
-<tr>
-<td>Allika KKR kood</td>
-<td>&lt;Null&gt;</td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>Andmed KESEs</td>
-<td>Jah</td>
-</tr>
-<tr>
-<td>Link</td>
-<td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.325766</td>
-</tr>
-<tr>
-<td>E</td>
-<td>27.154362</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</body>
-</html>
-]]></description>
-      <styleUrl>#IconStyle00</styleUrl>
-      <Point>
-        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 27.15436240700006,59.32576632000007,1.13686837721616e-13</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark id="ID_00120">
-      <name>Soolikaoja: Kirikuaia tiigid: Allikas 1</name>
-      <Snippet></Snippet>
-      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-<head>
-<META http-equiv="Content-Type" content="text/html">
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-</head>
-<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
-<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
-<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>Soolikaoja: Kirikuaia tiigid: Allikas 1</td>
-</tr>
-<tr>
-<td>
-<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
-<tr>
-<td>Seirejaama kood</td>
-<td>&lt;Null&gt;</td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>Nimi</td>
-<td>Soolikaoja: Kirikuaia tiigid: Allikas 1</td>
-</tr>
-<tr>
-<td>Allika KKR kood</td>
-<td>&lt;Null&gt;</td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>Andmed KESEs</td>
-<td>Jah</td>
-</tr>
-<tr>
-<td>Link</td>
-<td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.346412</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.356405</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</body>
-</html>
-]]></description>
-      <styleUrl>#IconStyle00</styleUrl>
-      <Point>
-        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.35640473100005,59.34641221500004,1.13686837721616e-13</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark id="ID_00121">
-      <name>Soolikaoja: Kirikuaia tiigid: Allikas 2</name>
-      <Snippet></Snippet>
-      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-<head>
-<META http-equiv="Content-Type" content="text/html">
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-</head>
-<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
-<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
-<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-<td>Soolikaoja: Kirikuaia tiigid: Allikas 2</td>
-</tr>
-<tr>
-<td>
-<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
-<tr>
-<td>Seirejaama kood</td>
-<td>&lt;Null&gt;</td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>Nimi</td>
-<td>Soolikaoja: Kirikuaia tiigid: Allikas 2</td>
-</tr>
-<tr>
-<td>Allika KKR kood</td>
-<td>&lt;Null&gt;</td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>Andmed KESEs</td>
-<td>Ei</td>
-</tr>
-<tr>
-<td>Link</td>
-<td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
-</tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.34676</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.356534</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</body>
-</html>
-]]></description>
-      <styleUrl>#IconStyle00</styleUrl>
-      <Point>
-        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.35653419500005,59.34676019300008,1.13686837721616e-13</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark id="ID_00122">
       <name>Mõndavere allikas</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -7011,30 +6233,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.4154</td>
-</tr>
-<tr>
-<td>E</td>
-<td>25.93842</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 25.93841995400004,59.41540008000004,1.13686837721616e-13</coordinates>
+        <coordinates> 25.93841995400004,59.4154000791744,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00123">
+    <Placemark id="ID_00120">
       <name>Silmaallikas (Samma Silmaallikas)</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -7050,7 +6267,7 @@
 <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
 <tr>
 <td>Seirejaama kood</td>
-<td>&lt;Null&gt;</td>
+<td>1646174140</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Nimi</td>
@@ -7068,30 +6285,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.415353</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.70133</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.70132951900007,59.41535263400004,1.13686837721616e-13</coordinates>
+        <coordinates> 26.70132951900007,59.41535263317439,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00124">
+    <Placemark id="ID_00121">
       <name>Mõdriku hiieallikad</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -7125,30 +6337,25 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.301529</td>
-</tr>
-<tr>
-<td>E</td>
-<td>26.455165</td>
-</tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.45516462500007,59.30152858500003,1.13686837721616e-13</coordinates>
+        <coordinates> 26.45518999300003,59.30149700117262,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
-    <Placemark id="ID_00125">
+    <Placemark id="ID_00122">
       <name>Vetiku Söeoru allikad</name>
-      <Snippet></Snippet>
+      <snippet></snippet>
       <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html">
@@ -7172,7 +6379,7 @@
 </tr>
 <tr>
 <td>Allika KKR kood</td>
-<td>VEE4110101, VEE4110102</td>
+<td>VEE4110101</td>
 </tr>
 <tr bgcolor="#D4E4F3">
 <td>Andmed KESEs</td>
@@ -7182,27 +6389,192 @@
 <td>Link</td>
 <td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
-<tr bgcolor="#D4E4F3">
-<td>N</td>
-<td>59.3233</td>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 26.44267277200004,59.32329996317295,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00123">
+      <name>Teeääre kinnistu , Liimala küla allikas</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Teeääre kinnistu , Liimala küla allikas</td>
 </tr>
 <tr>
-<td>E</td>
-<td>26.442673</td>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama kood</td>
+<td>1320446800</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Teeääre kinnistu , Liimala küla allikas</td>
+</tr>
+<tr>
+<td>Allika KKR kood</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
 </tr>
 </table>
 </td>
 </tr>
 </table>
-</body>
-</html>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 26.44267277200004,59.32329996400006,1.13686837721616e-13</coordinates>
+        <coordinates> 26.95863665800004,59.42809542117461,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00124">
+      <name>Piibelehe kinnistu allikas</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Piibelehe kinnistu allikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama kood</td>
+<td>937612058</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Piibelehe kinnistu allikas</td>
+</tr>
+<tr>
+<td>Allika KKR kood</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 27.52947511700006,59.20393003417105,1.13686837721616e-13</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00125">
+      <name>Lüganuse tee 50, allikas</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Lüganuse tee 50, allikas</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Seirejaama kood</td>
+<td>1320817578</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Nimi</td>
+<td>Lüganuse tee 50, allikas</td>
+</tr>
+<tr>
+<td>Allika KKR kood</td>
+<td>&lt;Null&gt;</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Andmed KESEs</td>
+<td>Jah</td>
+</tr>
+<tr>
+<td>Link</td>
+<td><a target="_blank" href="https://kese.envir.ee/kese/listParameterValueNew.action">https://kese.envir.ee/kese/listParameterValueNew.action</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 27.03838300000007,59.38578999917392,1.13686837721616e-13</coordinates>
       </Point>
     </Placemark>
   </Folder>
+  <Style id="IconStyle00">
+    <IconStyle>
+      <scale>1.000000</scale>
+      <Icon><href>Layer0_Symbol_bcb46af0_0.png</href></Icon>
+    </IconStyle>
+    <LabelStyle>
+      <color>00000000</color>
+      <scale>0.000000</scale>
+    </LabelStyle>
+    <PolyStyle>
+      <color>ff000000</color>
+      <outline>0</outline>
+    </PolyStyle>
+  </Style>
 </Document>
 </kml>
