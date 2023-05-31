@@ -28,9 +28,10 @@ class ObservationController extends Controller
     public function index(string $spring_code)
     {
         $spring = Spring::where('code', $spring_code)->first();
+
         $observations = Observation::where('spring_id', $spring->id)
             ->where('status', 'submitted')
-            ->with('user')->with('photos')->get();
+            ->with('user')->with('photos')->orderBy('measurement_time', 'desc')->get();
         return Inertia::render('Observations/Index', [
             'spring' => $spring,
             'observations' => $observations,
